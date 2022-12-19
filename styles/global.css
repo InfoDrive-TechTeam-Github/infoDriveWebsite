@@ -1,0 +1,147 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* navbar */
+.navbarMenu{
+  height: 60px;
+}
+.navbarMenu nav{
+  background: #fff;
+  color: #000;
+  box-shadow: none;
+}
+.navbarMenu nav button{
+  color:#000;
+  text-transform: capitalize;
+}
+.homePage{
+  padding-top: 60px;
+  background: #fafafa;
+}
+/* sectionbox */
+.sectionBox{
+  background: #fafafa;
+  text-align: center;
+  padding: 50px 150px !important;
+}
+.sectionBox .customButton{
+  background: #ccc;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 30px;
+  color: #fff;
+  margin-top: 60px;
+}
+.sectionBox p{
+  font-size: 14px;
+}
+/* .cardBox{
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+} */
+.cardBox .MuiGrid-item > div{
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-align: left;
+}
+.meetTeamSection{
+  text-align: left;
+}
+.meetTeamSection img{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.discoverNFT h2{
+  float: left;
+}
+.discoverNFTTabs > div{
+  float:right;
+}
+.discoverNFTTabs > div button{
+  text-transform: capitalize;
+    padding: 2px 15px;
+    min-height: 30px;
+    font-size: 16px;
+    text-decoration: none !important;
+}
+.discoverNFTTabs > div button svg{
+  font-size: 19px;
+}
+.discoverNFT .MuiTabPanel-root{
+  padding: 0;
+}
+.discoverNFT .MuiGrid-item > div{
+  padding:15px;
+  border: none;
+  box-shadow: none;
+  background: none;
+}
+.discoverNFT .MuiGrid-item .MuiTypography-h5{
+  font-size: 16px;
+  text-align: left;
+}
+.discoverNFT .MuiGrid-item .MuiTypography-h5 span{
+  float: right;
+}
+.discoverNFT .MuiCardContent-root{
+  border-bottom: 1px solid #ccc;
+  padding: 10px 16px;
+}
+.discoverNFT .viewButton{
+  float: right;
+  margin-top: 15px;
+  border-radius: 30px;
+  border: none;
+  padding: 5px 20px;
+  font-size: 14px;
+  color: #888;
+}
+.ourInsights .MuiPaper-root{
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.ourInsights .MuiPaper-root img{
+  padding: 0;
+}
+.ourInsights .MuiCardContent-root{
+  padding-left: 0;
+  padding-right: 0;
+}
+.ourInsightsBox{
+  border-bottom: 1px solid #ccc;
+}
+
+.footerNavbar{
+  padding-bottom: 30px;
+}
+.footerNavbar a{
+  font-size: 16px;
+  color: #000;
+}
