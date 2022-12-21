@@ -1,9 +1,15 @@
+@font-face {
+  font-family: GeneralSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/GeneralSans-Regular.otf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: GeneralSans;
   line-height: 1.6;
   font-size: 18px;
 }
@@ -33,6 +39,7 @@ img {
   background: #fff;
   color: #000;
   box-shadow: none;
+  padding: 15px 0px;
 }
 .navbarMenu nav button{
   color:#000;
@@ -44,9 +51,29 @@ img {
 }
 /* sectionbox */
 .sectionBox{
-  background: #fafafa;
-  text-align: center;
-  padding: 50px 150px !important;
+  background: #fff;
+  padding: 97px 97px;
+}
+.sectionBox .MuiTypography-h3{
+  font-size: 22px;
+  color: #070D0C;
+}
+.sectionBox .MuiTypography-h2{
+  font-size: 35px;
+  width: 760px;
+  font-weight: 600;
+  padding-top: 30px;
+  line-height: 47px;
+  color: #070D0C;
+}
+.sectionBox .MuiTypography-h5{
+  font-size: 22px;
+  line-height: 36px;
+  width: 668px;
+  font-weight: 300;
+  color: #070D0C;
+  font-style: normal;
+  padding-top: 30px;
 }
 .sectionBox .customButton{
   background: #ccc;
@@ -63,81 +90,173 @@ img {
   padding-left: 30px !important;
   padding-right: 30px !important;
 } */
-.cardBox .MuiGrid-item > div{
-  background: none;
+.sliderBox{
+  height: 702px;
+  position: relative;
+  padding-left: 68px;
+  overflow: hidden;
+}
+.sliderBox img{
+  position: absolute;
+  z-index: 9;
+  left: 0;
+}
+.sliderContent p{
+  color: #fff;
+  font-size: 56px;
+  width: 100%;
+  line-height: 68px;
+  height: 310px;
+  margin-top: 210px;
+}
+.sliderContent{
+  position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}
+.sliderContent button.readmore{
+  font-size: 20px;
+  color: #fff;
+}
+.readmore{
+  font-size: 20px;
+  color: #fff;
+}
+.sliderContent .socical-network{
+  position: absolute;
+  right: 0;
+  top: 40%;
+  width: 150px;
+}
+.sliderContent .socical-network svg{
+  color: #fff;
+}
+.solutionBox{
+  background: url('images/pexels-michelangelo-buonarroti-8728382.jpeg');
+  background-size: cover;
+    margin-left: 97px;
+    margin-right: 97px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.solutionBox p{
+  font-size: 30px;
+    color: #fff;
+    padding-left: 97px;
+    padding-right: 97px;
+}
+.whyUsBox .MuiTypography-h2{
+  margin-bottom: 80px;
+}
+.whyUsBox .MuiCard-root{
   border: none;
   box-shadow: none;
-  text-align: left;
 }
-.meetTeamSection{
-  text-align: left;
+.whyUsBox .MuiCardContent-root{
+  font-size: 18px;
 }
-.meetTeamSection img{
-  padding-left: 16px;
-  padding-right: 16px;
+.whyUsBox .MuiTypography-h7{
+  font-weight: 600;
+    padding: 15px 0px;
+}
+.whyUsBox .MuiGrid-item{
+  margin-bottom: 50px;
 }
 
-.discoverNFT h2{
-  float: left;
+.aboutUsBox{
+  height: 580px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
-.discoverNFTTabs > div{
-  float:right;
+.aboutUsBox .MuiPaper-root{
+  border-radius: 0;
+  height: 100%;
+  background: #000;
 }
-.discoverNFTTabs > div button{
-  text-transform: capitalize;
-    padding: 2px 15px;
-    min-height: 30px;
-    font-size: 16px;
-    text-decoration: none !important;
+.aboutUsBox .MuiCardContent-root{
+  padding: 30px 30px;
 }
-.discoverNFTTabs > div button svg{
-  font-size: 19px;
+.aboutUsBox .MuiTypography-h3{
+  color: #fff;
+  padding-top: 50px;
+  margin-bottom: 30px;
 }
-.discoverNFT .MuiTabPanel-root{
-  padding: 0;
+.aboutUsBox p{
+  font-size: 27px;
+  color: #fff;
+  margin-bottom: 50px;
 }
-.discoverNFT .MuiGrid-item > div{
-  padding:15px;
-  border: none;
-  box-shadow: none;
+.aboutUsBox2 .MuiTypography-h3{
+  padding-top: 0px;
+}
+.aboutUsBox2 .MuiTypography-h2{
+  color:#fff;
+  font-size: 55px;
+}
+.locationBox{
+  margin-top: 80px;
+}
+.locationContent{
+  background: url('images/pexels-timo-volz-1842332.jpg');
+  background-size: cover;
+    padding-left: 0;
+    padding-right: 0;
+    height: 453px;
+}
+.locationContent > div{
+  height: 100%;
+}
+.locationContent .MuiPaper-root{
   background: none;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    position: relative;
+    height: 100%;
+    max-width: 100%;
 }
-.discoverNFT .MuiGrid-item .MuiTypography-h5{
-  font-size: 16px;
-  text-align: left;
-}
-.discoverNFT .MuiGrid-item .MuiTypography-h5 span{
-  float: right;
-}
-.discoverNFT .MuiCardContent-root{
-  border-bottom: 1px solid #ccc;
-  padding: 10px 16px;
-}
-.discoverNFT .viewButton{
-  float: right;
-  margin-top: 15px;
-  border-radius: 30px;
-  border: none;
-  padding: 5px 20px;
-  font-size: 14px;
-  color: #888;
-}
-.ourInsights .MuiPaper-root{
+.locationContent .MuiCardContent-root{
   background: none;
-  border: none;
+  font-size: 25px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  padding-top: 45%;
+}
+.locationContent .MuiCardContent-root:hover{
+  background:#DE3854
+}
+.locationContent .MuiTypography-h7{
+  font-weight: 600;
+}
+.locationContent p{
+  font-size: 25px;
+    color: #fff;
+    font-weight: 300;
+}
+.aboutUsBox3 .MuiPaper-root{
+  background: none;
+  color: #000;
+}
+.aboutUsBox3 .MuiTypography-h3{
+  color: #000;
+  padding-top: 0;
+  font-weight: 300;
+  line-height: 32px;
+}
+.aboutUsBox3 .MuiPaper-root{
   box-shadow: none;
 }
-.ourInsights .MuiPaper-root img{
-  padding: 0;
+.aboutUsBox3 .MuiCardContent-root{
+ padding-top: 0;
 }
-.ourInsights .MuiCardContent-root{
-  padding-left: 0;
-  padding-right: 0;
+.footerSection{
+  margin-left: -97px;
+  margin-right: -97px;
+  background: #000;
 }
-.ourInsightsBox{
-  border-bottom: 1px solid #ccc;
-}
-
 .footerNavbar{
   padding-bottom: 30px;
 }

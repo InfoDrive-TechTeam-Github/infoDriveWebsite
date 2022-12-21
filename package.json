@@ -12,6 +12,7 @@
     "@mui/lab": "^5.0.0-alpha.111",
     "@mui/material": "^5.10.17",
     "@mui/styled-engine-sc": "^5.10.16",
+    "@next/font": "^13.0.7",
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
     "next": "latest",
