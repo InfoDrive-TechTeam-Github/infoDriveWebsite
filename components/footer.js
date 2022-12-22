@@ -14,56 +14,116 @@ import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
 import Avatar from '@mui/material/Avatar';
 
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Divider from '@mui/material/Divider';
+import InboxIcon from '@mui/icons-material/Inbox';
+import DraftsIcon from '@mui/icons-material/Drafts';
+
 export default function Footer() {
   return (
-      <section className={`sectionBox footerSection`}>
+      <section className={`sectionBox footerSection pb0`}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
-              <Grid item xs={5}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                    InfoDrive Solutions Pte Ltd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                    Phone: +65-9238 4299
-                    </Typography>
-                  </CardContent>
-                </Card>
+              <Grid item xs={4} className="logoFooter">
+                <img src="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"/>
+                <Typography variant="h3" sx={{ my: 2 }}>
+                Driven by technology
+                </Typography>
               </Grid>
-              <Grid item xs={7}>
+              <Grid item xs={8}>
+              <Grid container spacing={0}>
                 <Grid item xs={4}>
-                
+                        <Typography gutterBottom variant="h3" component="div">
+                            Company
+                        </Typography>
+                        <nav aria-label="main mailbox folders">
+                            <List>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#about-us">
+                                        <ListItemText primary="About" />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#contact">
+                                        <ListItemText primary="Contact" />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#blogs">
+                                        <ListItemText primary="Blogs" />
+                                    </ListItemButton>
+                                </ListItem>
+                            </List>
+                        </nav>
                 </Grid>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                    InfoDrive Solutions Sdn Bhd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                    Phone: +60-1 2327 5811 
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                    InfoDriven Solutions Pvt Ltd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                    Phone: +91-960 61880 81
-                    </Typography>
-                  </CardContent>
-                </Card>
+                <Grid item xs={4}>
+                <Typography gutterBottom variant="h3" component="div">
+                            Legal
+                        </Typography>
+                        <nav aria-label="main mailbox folders">
+                            <List>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#about-us">
+                                        <ListItemText primary="Privacy Policy" />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#contact">
+                                        <ListItemText primary="Terms & Services" />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#blogs">
+                                        <ListItemText primary="Terms of Use" />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#blogs">
+                                        <ListItemText primary="Refund Policy" />
+                                    </ListItemButton>
+                                </ListItem>
+                            </List>
+                        </nav>
+                </Grid>
+                <Grid item xs={4}>
+                <Typography gutterBottom variant="h3" component="div">
+                Quick Links
+                        </Typography>
+                        <nav aria-label="main mailbox folders">
+                            <List>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#about-us">
+                                        <ListItemText primary="Techlabz Keybox" />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#contact">
+                                        <ListItemText primary="Downloads" />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#blogs">
+                                        <ListItemText primary="Forum" />
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <ListItemButton component="a" href="#blogs">
+                                        <ListItemText primary="Refund Policy" />
+                                    </ListItemButton>
+                                </ListItem>
+                            </List>
+                        </nav>
+                </Grid>
+                </Grid>
               </Grid>
             </Grid>
         </Box>
+        <br/>
+        <p style={{textAlign:"center", color:"#fff", fontSize:"14px", margin:"0px", paddingBottom:"15px"}}>Copyright © 2023 InfoDrive Solutions Pte Ltd. All Rights Reserved.</p>
       </section>
   )
 }

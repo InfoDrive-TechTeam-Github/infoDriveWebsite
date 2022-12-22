@@ -61,7 +61,7 @@ export default function Index() {
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
+                  <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
                       Knowledgable team
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
@@ -78,7 +78,7 @@ export default function Index() {
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
+                  <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
                       Love for work
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
@@ -95,7 +95,7 @@ export default function Index() {
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
+                  <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
                       Profitable solutions
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
@@ -113,7 +113,7 @@ export default function Index() {
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
+                  <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
                       Assured client satisfaction
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
@@ -131,7 +131,7 @@ export default function Index() {
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
+                  <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
                      In-house staff
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
@@ -149,7 +149,7 @@ export default function Index() {
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
+                  <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
                       Excellent ROI
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
@@ -280,7 +280,7 @@ export default function Index() {
             </Grid>
         </Box>
       </section>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }

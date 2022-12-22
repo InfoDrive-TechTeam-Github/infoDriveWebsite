@@ -41,6 +41,12 @@ img {
   box-shadow: none;
   padding: 15px 0px;
 }
+.navbarMenu a{
+  display: inline-block;
+  padding: 0px 15px;
+  color: #000;
+  text-transform: uppercase;
+}
 .navbarMenu nav button{
   color:#000;
   text-transform: capitalize;
@@ -252,9 +258,103 @@ img {
 .aboutUsBox3 .MuiCardContent-root{
  padding-top: 0;
 }
+
+.ourMissionBox{
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+.ourMissionBox img{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+}
+.ourMissionBox .ourMissionContent{
+  position: relative;
+  z-index: 10;
+}
+.ourMissionBox .ourMissionContent .MuiPaper-root{
+  background: #fff;
+  color: #070D0C;
+}
+.ourMissionBox .ourMissionContent .MuiTypography-h3, .ourMissionBox .ourMissionContent p{
+  color: #070D0C;
+  margin-bottom: 15px;
+  padding-top: 25px;
+}
+.ourMissionContent .MuiGrid-item{
+  margin-top: 60px;
+}
+
+
+.ourValueBox{
+    background: #000;
+    padding-bottom: 0;
+}
+
+.ourValueBox .MuiTypography-h3, .ourValueBox .MuiTypography-h2, .ourValueBox .MuiTypography-h5{
+  color: #fff;
+  width: 100%;
+}
+
+.ourBeliefBox{
+  padding-top: 0px;
+}
+.ourBeliefBox img{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+
+.companiesBox{
+  background: url('images/pexels-ivan-samkov-8117421.jpg');
+  background-size: cover;
+    margin-left: 97px;
+    margin-right: 97px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.companiesBox::before{
+  position: absolute;
+  content: "";
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.companiesBox div{
+  font-size: 30px;
+    color: #fff;
+    padding-left: 97px;
+    padding-right: 97px;
+    position: relative;
+}
+.companiesBox .MuiTypography-h3, .companiesBox .MuiTypography-h5{
+  color: #fff;
+}
+.pt0{
+  padding-top: 0px;
+}
+.pb0{
+  padding-bottom: 0px;
+}
+.mb0{
+  margin-bottom: 0px !important;
+}
+.pt15{
+  padding-top: 15px;
+}
+.pb15{
+  padding-bottom: 15px;
+}
 .footerSection{
-  margin-left: -97px;
-  margin-right: -97px;
   background: #000;
 }
 .footerNavbar{
@@ -263,4 +363,22 @@ img {
 .footerNavbar a{
   font-size: 16px;
   color: #000;
+}
+.footerSection img{
+  width: 120px;
+}
+.footerSection .MuiTypography-h3{
+  color: #fff;
+  font-weight: 400;
+}
+.footerSection li{
+  padding: 0;
+}
+.footerSection li a{
+  color:#fff;
+  padding-left: 0;
+}
+.footerSection li a span{
+  font-size: 16px;
+  font-weight: 400;
 }

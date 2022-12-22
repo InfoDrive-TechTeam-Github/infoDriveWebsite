@@ -16,7 +16,10 @@ import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'About Us', 'Contact Us'];
+const navItems = [
+  {name:"Home", slug:"home"},
+  {name:"About Us", slug:"about-us"}
+];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -35,8 +38,8 @@ function DrawerAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+            <ListItemButton component="a" sx={{ textAlign: 'center' }}>
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -68,9 +71,9 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
-              </Button>
+              <a href={item.slug} key={item.name}>
+                {item.name}
+              </a>
             ))}
           </Box>
         </Toolbar>
