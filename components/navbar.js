@@ -17,8 +17,8 @@ import Avatar from '@mui/material/Avatar';
 
 const drawerWidth = 240;
 const navItems = [
-  {name:"Home", slug:"home"},
-  {name:"About Us", slug:"about-us"}
+  {name:"About Us", slug:"about-us"},
+  {name:"Contact Us", slug:"contact-us"}
 ];
 
 function DrawerAppBar(props) {
@@ -36,6 +36,11 @@ function DrawerAppBar(props) {
       </Typography>
       <Divider />
       <List>
+        <ListItem disablePadding>
+            <ListItemButton component="a" sx={{ textAlign: 'center' }}>
+              <ListItemText primary={'Home'} />
+            </ListItemButton>
+        </ListItem>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
             <ListItemButton component="a" sx={{ textAlign: 'center' }}>
@@ -70,6 +75,9 @@ function DrawerAppBar(props) {
             <img alt="Logo" style={{ width: 80, height: 60 }} src="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            <a href='/' >
+                Home            
+            </a>
             {navItems.map((item) => (
               <a href={item.slug} key={item.name}>
                 {item.name}

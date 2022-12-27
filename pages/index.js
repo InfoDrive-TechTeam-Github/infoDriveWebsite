@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Head from 'next/head'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import Slider from '../components/Slider'
+import Header from '../components/header'
+import Footer from '../components/footer'
+import Slider from '../components/slider'
 import utilStyles from '../styles/utils.module.css'
 import Box from '@mui/material/Box';
 //import Paper from '@mui/material/Paper';
@@ -276,7 +276,6 @@ export default function Index() {
                   </CardContent>
                 </Card>
               </Grid>
-
             </Grid>
         </Box>
       </section>

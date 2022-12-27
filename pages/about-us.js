@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Header from '../components/header'
+import Footer from '../components/footer'
 import utilStyles from '../styles/utils.module.css'
 import Box from '@mui/material/Box';
 import List from '@mui/material/List';
@@ -165,7 +165,7 @@ export default function About() {
                       />
                     </Card>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={6} style={{padding:"30px"}}>
                   <Typography gutterBottom variant="h3" component="div">
                   OUR BELIEF
                   </Typography>
@@ -247,7 +247,7 @@ export default function About() {
       </section>
 
 
-      <section className={`sectionBox whyUsBox pt0`}>
+      <section className={`sectionBox whyUsBox pt0 pb0`}>
       <Typography gutterBottom variant="h2" component="div">We offer a wide <br/>variety of IT services</Typography>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
@@ -363,6 +363,225 @@ export default function About() {
             </Grid>
         </Box>
       </section>
+
+      <section className={`sectionBox companiesBox weDelivery`}>
+            <div>
+              <Typography gutterBottom variant="h3" component="div">
+                  We deliver solution with <br/>
+                  the goal of trusting relationships
+              </Typography>
+              <br/>
+              <nav className="socical-network">
+                    <List>
+                      <ListItem>
+                        <ListItemButton>
+                          <ListItemIcon>
+                            <img src="images/internet.png"/>
+                          </ListItemIcon>
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem>
+                        <ListItemButton>
+                          <ListItemIcon>
+                          <img src="images/apple.png"/>
+                          </ListItemIcon>
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem>
+                        <ListItemButton>
+                          <ListItemIcon>
+                          <img src="images/android.png"/>
+                          </ListItemIcon>
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem>
+                        <ListItemButton>
+                          <ListItemIcon>
+                          <img src="images/internet-2.png"/>
+                          </ListItemIcon>
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem>
+                        <ListItemButton>
+                          <ListItemIcon>
+                          <img src="images/nft.png"/>
+                          </ListItemIcon>
+                        </ListItemButton>
+                      </ListItem>
+                      <ListItem>
+                        <ListItemButton>
+                          <ListItemIcon>
+                          <img src="images/blockchain.png"/>
+                          </ListItemIcon>
+                        </ListItemButton>
+                      </ListItem>
+                    </List>
+                  </nav>
+            </div>
+      </section>
+      <section className={`sectionBox ourCoreTeam pb0`}>
+          <Box sx={{ flexGrow: 1 }} >
+            <Grid container spacing={0}>
+              <Grid item xs={6} style={{padding:"30px"}}>
+                  <Typography className="widthInitial" gutterBottom variant="h2" component="div">
+                  Our core team
+                  </Typography>
+                  <Typography className="widthInitial" gutterBottom variant="h5" component="div">We help businesses elevate their value through custom software development,
+    product design, QA and consultancy services.</Typography>
+
+    <Button className='readmore black pl0' variant="text">JOIN OUR TEAM <ArrowRightAltIcon/></Button>
+
+              </Grid>
+              <Grid item xs={3} style={{padding:"30px"}}>
+                <Card>
+                    <CardMedia
+                      component="img"
+                      height="240"
+                      image="images/default.png"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography className="widthInitial" gutterBottom variant="h3" component="div">
+                      <span>Pradeep Chand</span>  <LinkedInIcon/>
+                      </Typography>
+                      <Typography className="widthInitial" gutterBottom variant="h4" component="div">Group CEO</Typography>
+                    </CardContent>
+                  </Card>
+              </Grid>
+
+              <Grid item xs={3} style={{padding:"30px"}}>
+                <Card>
+                    <CardMedia
+                      component="img"
+                      height="240"
+                      image="images/default.png"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography className="widthInitial" gutterBottom variant="h3" component="div">
+                      <span>Kapil Gairola</span>  <LinkedInIcon/>
+                      </Typography>
+                      <Typography className="widthInitial" gutterBottom variant="h4" component="div">CEO | MALAYSIA & INDIA</Typography>
+                    </CardContent>
+                  </Card>
+              </Grid>
+            </Grid>
+          </Box>
+      </section>
+
+      <section className={`sectionBox ourCoreTeam ourCoreTeamOther pt0`}>
+          <Box sx={{ flexGrow: 1 }} >
+            <Grid container spacing={0}>
+              <Grid item xs={2} style={{padding:"15px"}}>
+                <Card>
+                    <CardMedia
+                      component="img"
+                      height="240"
+                      image="images/default.png"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography className="widthInitial fs20" gutterBottom variant="h3" component="div">
+                      <span>Shashank Jain</span>  <LinkedInIcon/>
+                      </Typography>
+                      <Typography className="widthInitial fs18" gutterBottom variant="h4" component="div">VP | Europe & North America</Typography>
+                    </CardContent>
+                  </Card>
+              </Grid>
+
+              <Grid item xs={2} style={{padding:"15px"}}>
+                <Card>
+                    <CardMedia
+                      component="img"
+                      height="240"
+                      image="images/default.png"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography className="widthInitial fs20" gutterBottom variant="h3" component="div">
+                      <span>Bharani Kumar</span>  <LinkedInIcon/>
+                      </Typography>
+                      <Typography className="widthInitial fs18" gutterBottom variant="h4" component="div">CTO</Typography>
+                    </CardContent>
+                  </Card>
+              </Grid>
+
+              <Grid item xs={2} style={{padding:"15px"}}>
+                <Card>
+                    <CardMedia
+                      component="img"
+                      height="240"
+                      image="images/default.png"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography className="widthInitial fs20" gutterBottom variant="h3" component="div">
+                      <span>Maria Aileen</span>  <LinkedInIcon/>
+                      </Typography>
+                      <Typography className="widthInitial fs18" gutterBottom variant="h4" component="div">Head of Finance </Typography>
+                    </CardContent>
+                  </Card>
+              </Grid>
+
+              <Grid item xs={2} style={{padding:"15px"}}>
+                <Card>
+                    <CardMedia
+                      component="img"
+                      height="240"
+                      image="images/default.png"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography className="widthInitial fs20" gutterBottom variant="h3" component="div">
+                      <span>Sudhir Budakoti</span>  <LinkedInIcon/>
+                      </Typography>
+                      <Typography className="widthInitial fs18" gutterBottom variant="h4" component="div">Sales Director</Typography>
+                    </CardContent>
+                  </Card>
+              </Grid>
+
+              <Grid item xs={2} style={{padding:"15px"}}>
+                <Card>
+                    <CardMedia
+                      component="img"
+                      height="240"
+                      image="images/default.png"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography className="widthInitial fs20" gutterBottom variant="h3" component="div">
+                      <span>Kyna Lim</span>  <LinkedInIcon/>
+                      </Typography>
+                      <Typography className="widthInitial fs18" gutterBottom variant="h4" component="div">Senior Sales Executive | APAS</Typography>
+                    </CardContent>
+                  </Card>
+              </Grid>
+            </Grid>
+          </Box>
+      </section>
+
+      <section className={`sectionBox ourValueBox ourBeliefBox`}>
+           <Box sx={{ flexGrow: 1 }} >
+            <Grid container spacing={0}>
+            <Grid item xs={5} style={{padding:"30px"}}>
+                  <Typography gutterBottom variant="h5" component="div">
+                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  </Typography>
+                  <br/>
+                  <br/>
+                  <Button className='readmore pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  </Grid>
+                <Grid item xs={7}>
+                    <Card>
+                      <img
+                        alt="Remy Sharp"
+                        src="images/pexels-prakhar-bansal-732183.jpg"
+                      />
+                    </Card>
+                </Grid>
+            </Grid>
+          </Box>
+      </section>
+
       <Footer/>
     </div>
   )
