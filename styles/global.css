@@ -102,6 +102,17 @@ img {
   padding-left: 68px;
   overflow: hidden;
 }
+.sliderBox::after{
+  position: absolute;
+  content:"";
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width: 100%;
+  background:rgba(0,0,0,0.5);
+  z-index: 9;
+}
 .sliderBox img{
   position: absolute;
   z-index: 9;
@@ -329,6 +340,7 @@ img {
   width: 100%;
   height: 100%;
   top: 0;
+  left:0;
 }
 .companiesBox div{
   font-size: 30px;
@@ -475,6 +487,55 @@ img {
   width: 88%;
   max-width: 88%;
 }
+
+/* Android development  */
+.androidDevelopment{
+  position: relative;
+}
+.androidDevelopmentLeft{
+  background: #000;
+  padding: 60px;
+  margin-left: -60px;
+  position: relative;
+  z-index: 10;
+}
+.androidDevelopmentBox .MuiTypography-h2{
+  font-size: 25px;
+  color: #fff;
+  line-height: 35px;
+  font-weight: 600;
+  width: 100%;
+}
+.androidDevelopmentLeft .MuiTypography-h3{
+  color:#fff;
+  width: 100%;
+}
+.androidDevelopmentLeft .MuiTypography-h5{
+  color:#fff;
+  width: 100%;
+}
+.androidDevelopmentRight{
+  position: absolute;
+  right: 0;
+  top: -60px;
+  z-index: 9;
+}
+.serviceOffer{
+  background:#000;
+  color: #fff;
+}
+.serviceOffer .MuiTypography-h2{
+  color:#fff;
+}
+.serviceOffer .MuiCard-root{
+ background: transparent;
+}
+.serviceOffer .MuiTypography-h3 {
+  color: #fff;
+}
+.serviceOffer p{
+  color:#fff;
+}
 .footerSection{
   background: #000;
 }
@@ -525,9 +586,9 @@ img {
 }
   .sliderBox {
     height: 225px;
-      position: relative;
-      padding-left: 15px;
-      overflow: hidden;
+    position: relative;
+    padding-left: 15px;
+    overflow: hidden;
   }
   .sliderContent p {
       font-size: 18px;
@@ -597,5 +658,47 @@ img {
   width: 100%;
   max-width: 100%;
   flex-basis: 100%;
+}
+.ourValueBox .MuiGrid-item{
+  width:100%;
+  max-width: 100%;
+  flex-basis: 100%;
+  padding-top: 50px;
+}
+.companiesBox{
+  margin-top:0px;
+}
+.companiesBox div{
+  padding-left:0px;
+  padding-right:0px;
+}
+.weDelivery .socical-network ul li {
+  width: 25%;
+}
+.ourCoreTeam .MuiGrid-grid-xs-6,.ourCoreTeam .MuiGrid-grid-xs-3{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.ourCoreTeam .MuiGrid-grid-xs-2{
+  width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+} 
+.footerSection .MuiGrid-grid-xs-4{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+  text-align: center;
+}
+.footerSection img {
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.footerSection .MuiGrid-grid-xs-8 .MuiTypography-h3{
+  text-align: left;
 }
 }

@@ -18,7 +18,11 @@ import Avatar from '@mui/material/Avatar';
 const drawerWidth = 240;
 const navItems = [
   {name:"About Us", slug:"about-us"},
-  {name:"Contact Us", slug:"contact-us"}
+  {name:"Contact Us", slug:"contact-us"},
+  {name:"Web and mobile app development", slug:"web-and-mobile-app-development"},
+  {name:"Services for start ups", slug:"services-for-start-ups"},
+  {name:"Android App Development", slug:"android-app-development"}
+
 ];
 
 function DrawerAppBar(props) {
