@@ -25,6 +25,24 @@
   .pb15{
     padding-bottom: 15px;
   }
+  .pl15{
+    padding-left: 15px;
+  }
+  .pr15{
+    padding-right: 15px;
+  }
+  .pt30{
+    padding-top: 30px;
+  }
+  .pr30{
+    padding-right: 30px;
+  }
+  .pb30{
+    padding-bottom: 30px;
+  }
+  .pl30{
+    padding-left: 30px;
+  }
   .black{
     color:#000;
   }
