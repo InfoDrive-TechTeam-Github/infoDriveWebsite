@@ -18,7 +18,10 @@ import Avatar from '@mui/material/Avatar';
 const drawerWidth = 240;
 const navItems = [
   {name:"About Us", slug:"about-us"},
-  {name:"Contact Us", slug:"contact-us"}
+  {name:"Blockchain NFT", slug:"Blockchain-NFT"},
+  {name:"Robotic Process Automation", slug:"robotic-process-automation"},
+  {name:"Contact Us", slug:"contact-us"},
+  
 ];
 
 function DrawerAppBar(props) {
