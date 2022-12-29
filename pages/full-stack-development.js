@@ -47,7 +47,7 @@ export default function About() {
   const descrption = {
     fontFamily: 'General Sans',
     fontSize: '18px',
-    fontWeight: 400,
+    fontWeight: 'bold',
     lineHeight: '29px',
     letterSpacing: '0em',
     textAlign: 'left',
@@ -59,6 +59,9 @@ export default function About() {
     fontSize: '18px',
     lineHeight: '29px',
   };
+  const box = {
+    width: '33.33%' /* divide the container into 3 equal parts */,
+  };
   return (
     <div>
       <Header />
@@ -67,10 +70,11 @@ export default function About() {
         <img style={{ width: '100%' }} src='images/Rectangle.jpg' />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <p>
-            Infodrive has helped its
-            <br />
-            clients rationalize business <br /> developments, abetting <br />{' '}
-            development of specialized <br /> solutions at all stages
+            As a leading provider of full stack development <br /> services in
+            Singapore, Malaysia, and India, we are <br /> committed to
+            delivering top-quality solutions
+            <br /> that help businesses of all sizes <br />
+            succeed in today's digital landscape.
           </p>
           <Button className='readmore' variant='text'>
             Let's Talk <ArrowRightAltIcon />
@@ -105,21 +109,29 @@ export default function About() {
 
       <section className={`sectionBox`}>
         <Typography gutterBottom variant='h3' component='div'>
-          APPLICATION DEVELOPMENT,
+          Full Stack DEVELOPMENT,
           <br /> MAINTENANCE AND SUPPORT
         </Typography>
         <Typography gutterBottom variant='h2' component='div'>
-          Knowledge combined with quality gives our clients the edge over other
-          competitors. Value assurance practices and optimized delivery cycles
-          has been our focus from day one.
+          Our team of experienced developers specializes in a wide range of
+          technologies, including JavaScript, HTML, CSS, Python, Java, PHP, and
+          more. We have the expertise and tools to build custom web and mobile
+          applications that are tailored to your specific needs and goals.
         </Typography>
         <Typography gutterBottom variant='h5' component='div'>
-          Our niche solutions are one of a kind in the market. Our applications
-          maximize on key factors such as portability and scalability. Infodrive
-          enables clients to rationalize business developments and abet
-          development of specialized solutions at all stages. We provide you
-          highly differentiated and nifty solutions. Our applications provide
-          maximum portability and scalability
+          Our full stack development process is designed to be efficient, agile,
+          and transparent. We begin by understanding your business requirements
+          and objectives, and then we work closely with you to design and
+          develop a solution that meets your needs. Throughout the process, we
+          keep you informed of our progress and welcome your input and feedback.
+        </Typography>
+        <Typography gutterBottom variant='h5' component='div'>
+          One of the key benefits of working with InfoDrive Solutions is our
+          ability to provide end-to-end development services. This means that we
+          can handle every aspect of your project, from the initial concept and
+          design to the final deployment and maintenance. This allows us to
+          deliver a complete, turnkey solution that is ready to use as soon as
+          it is deployed.
         </Typography>
 
         <section
@@ -141,6 +153,7 @@ export default function About() {
                 color: '#FFFFFF',
                 height: '70px',
                 width: '738px',
+                marginLeft: '150px',
 
                 // marginTop: '136px',
               }}
@@ -173,9 +186,9 @@ export default function About() {
                     }}
                   ></div>
                   <p style={typographyStyles}>
-                    Visual
+                    Web application
                     <br />
-                    engineering
+                    development
                   </p>
                 </div>
                 <div>
@@ -188,7 +201,7 @@ export default function About() {
                     }}
                   ></div>
                   <p style={typographyStyles}>
-                    Product
+                    Mobile application
                     <br />
                     development
                   </p>
@@ -203,7 +216,7 @@ export default function About() {
                     }}
                   ></div>
                   <p style={typographyStyles}>
-                    Application
+                    E-commerce
                     <br />
                     development
                   </p>
@@ -227,9 +240,9 @@ export default function About() {
                     }}
                   ></div>
                   <p style={typographyStyles}>
-                    Porting/
+                    Custom software
                     <br />
-                    migration
+                    development
                   </p>
                 </div>
                 <div>
@@ -241,11 +254,7 @@ export default function About() {
                       backgroundImage: `url('images/vector6.png')`,
                     }}
                   ></div>
-                  <p style={typographyStyles}>
-                    Production
-                    <br />
-                    support
-                  </p>
+                  <p style={typographyStyles}>Responsiveness</p>
                 </div>
                 <div>
                   <div
@@ -257,8 +266,9 @@ export default function About() {
                     }}
                   ></div>
                   <p style={typographyStyles}>
-                    Product help desk
-                    <br />& support
+                    Customer
+                    <br />
+                    service
                   </p>
                 </div>
               </div>
@@ -267,6 +277,7 @@ export default function About() {
         </section>
       </section>
 
+      {/*we are speclised in section*/}
       <section
         className={`sectionBox aboutUsBox ourMissionBox`}
         style={{ background: 'white' }}
@@ -281,13 +292,18 @@ export default function About() {
             We ARE
             <br /> SPECIALIZED IN
           </Typography>
+          {/* container for 3 div*/}
           <div
             className='speclized'
-            style={{ display: 'flex', justifyContent: 'space-between' }}
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+            }}
           >
-            <div className='Salesforce partner'>
-              <p style={descrption}>WORLD’S #1 CRM</p>
-              <p
+            <div className='Salesforce partner' style={box}>
+              <p style={descrption}> Expertise</p>
+              {/*<p
                 style={{
                   fontFamily: ' General Sans',
                   fontSize: '22px',
@@ -298,16 +314,35 @@ export default function About() {
                 }}
               >
                 Salesforce partner
-              </p>
+              </p>*/}
               <p style={details}>
-                Salesforce is the World’s #1 CRM today, over 100,000 of the
-                world’s most innovative companies use Salesforce to close bigger
-                deals, faster.
+                Our developers have a wealth of experience in a wide range of
+                programming languages, frameworks, and technologies. This allows
+                us to deliver custom solutions that are tailored to meet the
+                specific needs of our clients.
               </p>
             </div>
-            <div className='Servicenow'>
-              <p style={descrption}>AI AND ANALYTICS</p>
-              <p
+            <div className='Servicenow' style={box}>
+              <p style={descrption}>Quality</p>
+
+              <p style={details}>
+                We have strict quality standards and always
+                <br /> strive to deliver projects that meet and exceed our
+                clients' expectations.
+              </p>
+            </div>
+            <div className='Mulesoft' style={box}>
+              <p style={descrption}>Responsiveness</p>
+
+              <p style={details}>
+                We understand that time is of the essence, especially in the
+                fast-paced world of web development. That's why we are dedicated
+                to delivering projects on time and on budget.
+              </p>
+            </div>
+            <div className='Salesforce partner' style={box}>
+              <p style={descrption}>Value</p>
+              {/*<p
                 style={{
                   fontFamily: ' General Sans',
                   fontSize: '22px',
@@ -317,31 +352,32 @@ export default function About() {
                   textAlign: 'left',
                 }}
               >
-                Servicenow
-              </p>
+                Salesforce partner
+              </p>*/}
               <p style={details}>
-                Unleash the power of AI and analytics to surface information,
-                make predictions, and automate repetitive tasks so you can focus
-                on strategic work.
+                We offer competitive pricing and strive to deliver the best
+                value for our clients' money.
               </p>
             </div>
-            <div className='Mulesoft'>
-              <p style={descrption}>ENTERPRISE APPLICATIONS</p>
-              <p
-                style={{
-                  fontFamily: ' General Sans',
-                  fontSize: '22px',
-                  fontWeight: 'bold',
-                  lineHeight: '29px',
-                  letterSpacing: '0em',
-                  textAlign: 'left',
-                }}
-              >
-                Mulesoft
-              </p>
+            <div className='Servicenow' style={box}>
+              <p style={descrption}> Customer service</p>
+
               <p style={details}>
-                Today’s enterprise needs a network of applications, data, and
-                devices connected by APIs, whether on-premises or in the cloud.
+                Our team is dedicated to providing excellent customer service
+                and going the extra mile to <br /> ensure that our clients are
+                satisfied with the results.
+              </p>
+            </div>
+            <div className='Mulesoft' style={box}>
+              <p style={descrption}>Commitment</p>
+
+              <p style={details}>
+                As a company, we are committed to delivering exceptional value
+                to our clients. We have a track record of success and a
+                reputation for delivering high-quality solutions on time and on
+                budget. Our team is dedicated to customer satisfaction, and we
+                take pride in the long-term relationships we have built with our
+                clients.
               </p>
             </div>
           </div>
@@ -355,7 +391,7 @@ export default function About() {
               <Typography gutterBottom variant='h5' component='div'>
                 Get in touch with us today for a <br /> non-obligation
                 discussion and start transforming your start-up ideas into
-                real-life products.{' '}
+                real-life products.
               </Typography>
               <br />
               <br />
