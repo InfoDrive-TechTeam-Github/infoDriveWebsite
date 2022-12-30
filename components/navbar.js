@@ -20,11 +20,10 @@ const navItems = [
   
   {name:"Blockchain NFT", slug:"Blockchain-NFT"},
   { name: 'Full stack development', slug: 'full-stack-development' },
-  {
-    name: 'Web and mobile app development',
-  },
+  // {name: 'Web and mobile app development'},
   { name: 'Services for start ups', slug: 'services-for-start-ups' },
   { name: 'Android App Development', slug: 'android-app-development' },
+  { name: 'Ios App Development', slug: 'ios-app-development' },
   {name:"About Us", slug:"about-us"},
   {name:"Contact Us", slug:"contact-us"},
 ];
