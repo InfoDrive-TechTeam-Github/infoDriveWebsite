@@ -122,6 +122,7 @@ img.chain_img {
 .blcnbtn {
   margin-top: 80px;
 }
+<<<<<<< HEAD
 .IosAppBox {
   padding: 0px;
 }
@@ -178,5 +179,18 @@ section.sectionBox.IosAppBox2 {
 .IodHdn {
   margin-bottom: 40px;
   color: #fff !important;
+=======
+.customIcon{
+  font-size: 20px;
+  width: 44px;
+  padding: 8px 15px 8px 12px;
+  height: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-right:10px;
+}
+.customIcon:hover{
+  background-color: rgba(0, 0, 0, 0.04);
+>>>>>>> 5f326e7f90e3f7a349e725045488bdf8d752e83e
 }
   /* End css */
