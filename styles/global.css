@@ -735,4 +735,59 @@ img {
 .footerSection .MuiGrid-grid-xs-8 .MuiTypography-h3{
   text-align: left;
 }
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .contInfo {
+    padding: 0px 0px 0px 0px !important;
+}
+  section.sectionBox.BlockchainUsBox {
+    height: auto;
+    padding: 0px 15px 0px 15px !important;
+  }
+  
+  .fp2 {
+    padding: 20px 15px 0px 15px !important;
+  }
+  .blcnt2 {
+    padding: 40px 0px 0px 15px !important;
+  }
+  .fp1 {
+    box-shadow: none;
+    padding: 40px 0px 0px 0px !important;
+  }
+  .css-1osj8n2-MuiGrid-root{
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .css-k3f0g4-MuiGrid-root{
+    flex-basis: 100%;max-width: 100%;
+  }
+  .css-uqwprf-MuiGrid-root{
+    flex-basis: 100%;max-width: 100%;
+  }
+  .IosAppBox .fp1 {
+    height: auto !important;
+    box-shadow: none;
+    padding: 40px 15px 0px 15px !important;
+  }
+    section.sectionBox.IosAppBox2 {
+      margin-left: 0px !important;
+  }
+  .whyUsBox.IosAppBox3 {
+    padding: 0px 0px 0px 0px !important;
+}
+.IosOurBoxPd {
+  padding: 40px 15px 0px 15px !important;
+}
+.bgf {
+  height: 490px !important;
+}
+.BlockchainUsBox.contInfo .blcntp {
+  margin-left: 25px !important;
+}
+.BlockchainUsBox.contInfo .blcnbtn {
+  margin-left: 25px !important;
+}
 }
