@@ -248,6 +248,9 @@ img {
   position: absolute;
   left: 0;
   padding-top: 45%;
+  right:0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .locationContent .MuiCardContent-root:hover{
   background:#DE3854
