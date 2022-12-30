@@ -145,7 +145,7 @@ function DrawerAppBar(props) {
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/blockchain-nft" >
+                      <ListItemButton component='a' to="/Blockchain-NFT" >
                         <ListItemText primary={'Blockchain and NFT'} />
                       </ListItemButton>
                     </ListItem>
@@ -163,7 +163,7 @@ function DrawerAppBar(props) {
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/services-for-start-ups" >
+                      <ListItemButton component='a' to="/ios-app-development" >
                         <ListItemText primary={'IOS app development'} />
                       </ListItemButton>
                     </ListItem>
@@ -247,7 +247,7 @@ function DrawerAppBar(props) {
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/blockchain-nft" >
+                      <ListItemButton component='a' to="/Blockchain-NFT" >
                         <ListItemText primary={'Blockchain and NFT'} />
                       </ListItemButton>
                     </ListItem>
@@ -265,7 +265,7 @@ function DrawerAppBar(props) {
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/services-for-start-ups" >
+                      <ListItemButton component='a' to="/ios-app-development" >
                         <ListItemText primary={'IOS app development'} />
                       </ListItemButton>
                     </ListItem>
