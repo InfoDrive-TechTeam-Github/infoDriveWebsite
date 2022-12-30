@@ -105,4 +105,16 @@ img.chain_img {
 .blcnbtn {
   margin-top: 80px;
 }
+.customIcon{
+  font-size: 20px;
+  width: 44px;
+  padding: 8px 15px 8px 12px;
+  height: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-right:10px;
+}
+.customIcon:hover{
+  background-color: rgba(0, 0, 0, 0.04);
+}
   /* End css */

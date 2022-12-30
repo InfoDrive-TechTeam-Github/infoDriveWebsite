@@ -69,7 +69,7 @@ export default function ServicesForStartUps() {
       
     </div>
 
-      <section className={`sectionBox aboutUsBox3`}>
+      <section className={`sectionBox aboutUsBox3 servicesForStartUp`}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={6} className="pr30">
