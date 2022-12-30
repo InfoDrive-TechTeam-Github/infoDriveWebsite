@@ -36,30 +36,7 @@ export default function About() {
     // textAlign: 'center',
     color: ' #FFFFFF',
   };
-  const thirdsectionheading = {
-    fontSize: '35px',
-    fontWeight: 600,
-    lineHeight: '47px',
-    letterSpacing: '0em',
-    textAlign: 'left',
-  };
-  const descrption = {
-    fontSize: '18px',
-    fontWeight: 'bold',
-    lineHeight: '29px',
-    letterSpacing: '0em',
-    textAlign: 'left',
-  };
-  const details = {
-    fontFamily: 'General Sans',
-    fontStyle: 'normal',
-    fontWeight: 300,
-    fontSize: '18px',
-    lineHeight: '29px',
-  };
-  const box = {
-    width: '33.33%' /* divide the container into 3 equal parts */,
-  };
+
   return (
     <div>
       <Header />
@@ -124,146 +101,145 @@ export default function About() {
           develop a solution that meets your needs. Throughout the process, we
           keep you informed of our progress and welcome your input and feedback.
         </Typography>
+      </section>
+      <section
+        className={`sectionBox aboutUsBox3 servicesForStartUp `}
+        style={{
+          backgroundImage: `url('images/Rectangle2.png')`,
+        }}
+      >
+        <Box sx={{ flexGrow: 1 }} className='ourMissionContent '>
+          <p
+            style={{
+              fontSize: '30px',
+              fontWeight: '600',
+              lineHeight: '37px',
+              letterSpacing: '0em',
+              textAlign: 'center',
+              color: '#FFFFFF',
+              height: '70px',
+              width: '738px',
+              marginLeft: '150px',
 
-        <section
-          className={`sectionBox aboutUsBox3 servicesForStartUp `}
-          style={{
-            backgroundImage: `url('images/Rectangle2.png')`,
-          }}
-        >
-          <Box sx={{ flexGrow: 1 }} className='ourMissionContent '>
-            <p
-              style={{
-                fontSize: '30px',
-                fontWeight: '600',
-                lineHeight: '37px',
-                letterSpacing: '0em',
-                textAlign: 'center',
-                color: '#FFFFFF',
-                height: '70px',
-                width: '738px',
-                marginLeft: '150px',
+              // marginTop: '136px',
+            }}
+          >
+            Stay ahead in the game with our full stack
+          </p>
 
-                // marginTop: '136px',
-              }}
-            >
-              Stay ahead in the game with our full stack
-            </p>
+          {/**container for icons */}
+          <div
+            style={{
+              marginTop: 138,
 
-            {/**container for icons */}
+              borderRadius: 6,
+            }}
+          >
             <div
               style={{
-                marginTop: 138,
-
-                borderRadius: 6,
+                display: 'flex',
+                justifyContent: 'space-evenly',
               }}
             >
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-evenly',
-                }}
-              >
-                {/*icons*/}
-                <div>
-                  <div
-                    className='vector1'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector2.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Web application
-                    <br />
-                    development
-                  </p>
-                </div>
-                <div>
-                  <div
-                    className='vector2'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector3.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Mobile application
-                    <br />
-                    development
-                  </p>
-                </div>
-                <div>
-                  <div
-                    className='vector4'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector1.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    E-commerce
-                    <br />
-                    development
-                  </p>
-                </div>
+              {/*icons*/}
+              <div>
+                <div
+                  className='vector1'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector2.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  Web application
+                  <br />
+                  development
+                </p>
               </div>
-
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-evenly',
-                  marginTop: 58,
-                }}
-              >
-                <div>
-                  <div
-                    className='vector4'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector4.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Custom software
-                    <br />
-                    development
-                  </p>
-                </div>
-                <div>
-                  <div
-                    className='vector4'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector6.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>Responsiveness</p>
-                </div>
-                <div>
-                  <div
-                    className='vector4'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector7.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Customer
-                    <br />
-                    service
-                  </p>
-                </div>
+              <div>
+                <div
+                  className='vector2'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector3.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  Mobile application
+                  <br />
+                  development
+                </p>
+              </div>
+              <div>
+                <div
+                  className='vector4'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector1.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  E-commerce
+                  <br />
+                  development
+                </p>
               </div>
             </div>
-          </Box>
-        </section>
+
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'space-evenly',
+                marginTop: 58,
+              }}
+            >
+              <div>
+                <div
+                  className='vector4'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector4.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  Custom software
+                  <br />
+                  development
+                </p>
+              </div>
+              <div>
+                <div
+                  className='vector4'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector6.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>Responsiveness</p>
+              </div>
+              <div>
+                <div
+                  className='vector4'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector7.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  Customer
+                  <br />
+                  service
+                </p>
+              </div>
+            </div>
+          </div>
+        </Box>
       </section>
 
       {/*we are speclised in section*/}
