@@ -19,22 +19,25 @@ import Tab from '@mui/material/Tab';
 import TabContext from '@mui/lab/TabContext';
 import TabList from '@mui/lab/TabList';
 import TabPanel from '@mui/lab/TabPanel';
-import Avatar from '@mui/material/Avatar';
+
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import Link from '@mui/material/Link';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import 'bootstrap/dist/css/bootstrap.css';
+import Avatar from '@mui/material/Avatar';
 export default function About() {
   const typographyStyles = {
     fontSize: '22px',
     fontWeight: '500',
-    lineHeight: '29px',
-    letterSpacing: '0em',
+    // lineHeight: '29px',
+    // letterSpacing: '0em',
     // textAlign: 'center',
     color: ' #FFFFFF',
+    textAlign: 'center',
+    width: '100%',
   };
 
   return (
@@ -102,143 +105,146 @@ export default function About() {
           keep you informed of our progress and welcome your input and feedback.
         </Typography>
       </section>
+
+      {/* new div box*/}
       <section
-        className={`sectionBox aboutUsBox3 servicesForStartUp `}
+        className={`sectionBox whyUsBox IosAppBox3 aboutUsBox3 servicesForStartUp`}
         style={{
           backgroundImage: `url('images/Rectangle2.png')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover',
         }}
       >
-        <Box sx={{ flexGrow: 1 }} className='ourMissionContent '>
-          <p
-            style={{
-              fontSize: '30px',
-              fontWeight: '600',
-              lineHeight: '37px',
-              letterSpacing: '0em',
-              textAlign: 'center',
-              color: '#FFFFFF',
-              height: '70px',
-              width: '738px',
-              marginLeft: '150px',
-
-              // marginTop: '136px',
-            }}
-          >
-            Stay ahead in the game with our full stack
-          </p>
-
-          {/**container for icons */}
-          <div
-            style={{
-              marginTop: 138,
-
-              borderRadius: 6,
-            }}
-          >
-            <div
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <p
               style={{
-                display: 'flex',
-                justifyContent: 'space-evenly',
+                fontSize: '30px',
+                fontWeight: '600',
+                lineHeight: '37px',
+                letterSpacing: '0em',
+                textAlign: 'center',
+                color: '#FFFFFF',
+                height: '70px',
+                width: '50vw',
+                maxWidth: '738px',
+                marginLeft: '5rem',
+
+                marginTop: '60px',
               }}
             >
-              {/*icons*/}
-              <div>
-                <div
-                  className='vector1'
-                  style={{
-                    width: '52px',
-                    height: '52px',
-                    backgroundImage: `url('images/vector2.png')`,
-                  }}
-                ></div>
-                <p style={typographyStyles}>
-                  Web application
-                  <br />
-                  development
-                </p>
-              </div>
-              <div>
-                <div
-                  className='vector2'
-                  style={{
-                    width: '52px',
-                    height: '52px',
-                    backgroundImage: `url('images/vector3.png')`,
-                  }}
-                ></div>
-                <p style={typographyStyles}>
-                  Mobile application
-                  <br />
-                  development
-                </p>
-              </div>
-              <div>
-                <div
-                  className='vector4'
-                  style={{
-                    width: '52px',
-                    height: '52px',
-                    backgroundImage: `url('images/vector1.png')`,
-                  }}
-                ></div>
-                <p style={typographyStyles}>
-                  E-commerce
-                  <br />
-                  development
-                </p>
-              </div>
-            </div>
+              Stay ahead in the game with our full stack
+            </p>
+            <Grid item xs={4}>
+              <Avatar
+                alt='Remy Sharp'
+                src='images/vector1.png'
+                sx={{ width: 65, height: 65, marginLeft: 2 }}
+              />
+              <CardContent>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  className='pt15 pb15'
+                  component='div'
+                  style={{ color: 'white' }}
+                >
+                  Web application <br /> development
+                </Typography>
+              </CardContent>
+            </Grid>
+            <Grid item xs={4}>
+              <Avatar
+                alt='Remy Sharp'
+                src='images/vector2.png'
+                sx={{ width: 65, height: 65, marginLeft: 2 }}
+              />
 
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'space-evenly',
-                marginTop: 58,
-              }}
-            >
-              <div>
-                <div
-                  className='vector4'
-                  style={{
-                    width: '52px',
-                    height: '52px',
-                    backgroundImage: `url('images/vector4.png')`,
-                  }}
-                ></div>
-                <p style={typographyStyles}>
-                  Custom software
-                  <br />
-                  development
-                </p>
-              </div>
-              <div>
-                <div
-                  className='vector4'
-                  style={{
-                    width: '52px',
-                    height: '52px',
-                    backgroundImage: `url('images/vector6.png')`,
-                  }}
-                ></div>
-                <p style={typographyStyles}>Responsiveness</p>
-              </div>
-              <div>
-                <div
-                  className='vector4'
-                  style={{
-                    width: '52px',
-                    height: '52px',
-                    backgroundImage: `url('images/vector7.png')`,
-                  }}
-                ></div>
-                <p style={typographyStyles}>
-                  Customer
-                  <br />
-                  service
-                </p>
-              </div>
-            </div>
-          </div>
+              <Typography
+                gutterBottom
+                variant='h3'
+                className='pt15 pb15'
+                component='div'
+                style={{ color: 'white' }}
+              >
+                Mobile application <br /> development
+              </Typography>
+            </Grid>
+            <Grid item xs={4}>
+              <Avatar
+                alt='Remy Sharp'
+                src='images/vector3.png'
+                sx={{ width: 65, height: 65, marginLeft: 2 }}
+              />
+
+              <Typography
+                gutterBottom
+                variant='h3'
+                className='pt15 pb15'
+                component='div'
+                style={{ color: 'white' }}
+              >
+                E-commerce <br /> development
+              </Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+              <Avatar
+                alt='Remy Sharp'
+                src='images/vector2.png'
+                sx={{ width: 65, height: 65, marginLeft: 2 }}
+              />
+
+              <Typography
+                gutterBottom
+                variant='h3'
+                className='pt15 pb15'
+                component='div'
+                style={{ color: 'white' }}
+              >
+                Custom software <br /> development
+              </Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+              <Avatar
+                alt='Remy Sharp'
+                src='images/vector4.png'
+                sx={{ width: 65, height: 65, marginLeft: 2 }}
+              />
+
+              <Typography
+                gutterBottom
+                variant='h3'
+                className='pt15 pb15'
+                component='div'
+                style={{ color: 'white' }}
+              >
+                Responsiveness
+              </Typography>
+            </Grid>
+
+            <Grid item xs={4}>
+              <Avatar
+                alt='Remy Sharp'
+                src='images/vector4.png'
+                sx={{ width: 65, height: 65, marginLeft: 2 }}
+              />
+
+              <Typography
+                gutterBottom
+                variant='h3'
+                className='pt15 pb15'
+                component='div'
+                style={{ color: 'white' }}
+              >
+                Customer
+                <br /> service
+              </Typography>
+            </Grid>
+
+            <Grid item xs={4}></Grid>
+          </Grid>
         </Box>
       </section>
 
