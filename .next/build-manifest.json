@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/full-stack-development": [
+    "/ios-app-development": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/full-stack-development.js"
+      "static/chunks/pages/ios-app-development.js"
     ]
   },
   "ampFirstPages": []

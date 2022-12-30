@@ -6,7 +6,24 @@
     font-size:18px !important;
   }
 
+.hdnclr{
+  color: #fff !important;
+}
+.BlockchainUsBox.contInfo {
+  padding: 0px 0px 0px 0px !important;
+}
+.BlockchainUsBox.contInfo .blcntp {
+  margin-left: 65px;
+}
+.BlockchainUsBox.contInfo .blcnbtn {
+  margin-left: 65px;
+}
 
+.bgf {
+  background-color: #3330 !important;
+  box-shadow: none;
+  height: 450px;
+}
 .pt0{
     padding-top: 0px;
   }
@@ -49,3 +66,129 @@
   .widthInitial{
     width: initial !important;
   }
+  /* Satya Add css  */
+  .sliderBox.blockNFT {
+    background: #070D0C;
+}
+section.sectionBox.BlockchainUsBox {
+  height: auto;
+  padding: 0px 0px 0px 80px;
+}
+img.chain_img {
+  width: 100%;
+    height: 600px;
+}
+.fp1 {
+  box-shadow: none;
+  padding: 150px 0px 0px 61px;
+}
+.fp1 .css-46bh2p-MuiCardContent-root {
+  padding: 20px 0px 0px 0px;
+}
+.bp2 {
+  font-size: 18px !important;
+  color: #070D0C !important;
+  font-weight: 300 !important;
+  line-height: 36px !important;
+}
+.css-bhp9pd-MuiPaper-root-MuiCard-root{
+  border-radius: 0px !important;
+}
+.fp2 {
+  box-shadow: none;
+  padding: 120px 0px 0px 100px;
+}
+.css-46bh2p-MuiCardContent-root {
+  padding: 0px;
+}
+.bp3 {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 30px 0px 0px 0px;
+}
+.blcnt {
+  background: #DE3854;
+}
+.blcnt2{
+  background: #DE3854;
+    box-shadow: none;
+    padding: 150px 0px 0px 70px;
+}
+.blcntp {
+  color: #fff !important;
+  line-height: 36px;
+  font-size: 22px !important;
+}
+.blcnbtn {
+  margin-top: 80px;
+}
+.IosAppBox {
+  padding: 0px;
+}
+.IosAppBox .fp1 {
+  box-shadow: none;
+  padding: 65px 0px 0px 150px;
+  background: #070D0C;
+  color: #fff;
+height: 700px;
+}
+.IosAppBox .bp2 {
+  font-size: 18px !important;
+  color: #fff !important;
+}
+.IosAppBox .MuiTypography-h3 {
+  font-size: 22px;
+  color: #fff;
+}
+.IosAppBox p {
+line-height: 30px;
+}
+img.Ios_img {
+  width: 100%;
+  height: 700px;
+}
+.ios-app2 {
+  box-shadow: none;
+}
+.whyUsBox.IosAppBox3 {
+  padding: 0px 150px 0px 150px;
+}
+section.sectionBox.IosAppBox2 {
+  margin-left: 70px;
+}
+.IosCard {
+  padding: 30px 40px 10px 40px;
+}
+.IosCard.bg {
+  background: #DE3854;
+}
+.MuiTypography-body2 {
+  color: #070D0C;
+  line-height: 26px;
+  font-size: 16px !important;
+}
+.sectionBox.IosOurBox {
+  padding: 0px;
+  background: #070D0C;
+}
+.IosOurBoxPd {
+  
+  padding: 40px 150px 70px 150px;
+}
+.IodHdn {
+  margin-bottom: 40px;
+  color: #fff !important;
+}
+.customIcon{
+  font-size: 20px;
+  width: 44px;
+  padding: 8px 15px 8px 12px;
+  height: 50px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-right:10px;
+}
+.customIcon:hover{
+  background-color: rgba(0, 0, 0, 0.04);
+}
+  /* End css */

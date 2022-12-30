@@ -29,7 +29,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function About() {
   const typographyStyles = {
-    fontFamily: 'General Sans',
     fontSize: '22px',
     fontWeight: '500',
     lineHeight: '29px',
@@ -45,7 +44,6 @@ export default function About() {
     textAlign: 'left',
   };
   const descrption = {
-    fontFamily: 'General Sans',
     fontSize: '18px',
     fontWeight: 'bold',
     lineHeight: '29px',
@@ -69,41 +67,42 @@ export default function About() {
       <div className='sliderBox'>
         <img style={{ width: '100%' }} src='images/Rectangle.jpg' />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
-          <p>
-            As a leading provider of full stack development <br /> services in
-            Singapore, Malaysia, and India, we are <br /> committed to
-            delivering top-quality solutions
-            <br /> that help businesses of all sizes <br />
-            succeed in today's digital landscape.
-          </p>
-          <Button className='readmore' variant='text'>
-            Let's Talk <ArrowRightAltIcon />
-          </Button>
-          <nav className='socical-network'>
-            <List>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemIcon>
-                    <FacebookIcon />
-                  </ListItemIcon>
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemIcon>
-                    <TwitterIcon />
-                  </ListItemIcon>
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemIcon>
-                    <InstagramIcon />
-                  </ListItemIcon>
-                </ListItemButton>
-              </ListItem>
-            </List>
-          </nav>
+          <Grid container spacing={0}>
+            <p>
+              We are a full stack development company
+              <br /> that serves businesses in Singapore <br />, Malaysia , and
+              India. Our goal is to <br /> provide top-quality solutions that
+              help <br /> businesses thrive in the digital world.
+            </p>
+            <Button className='readmore' variant='text'>
+              Let's Talk <ArrowRightAltIcon />
+            </Button>
+            <nav className='socical-network'>
+              <List>
+                <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <FacebookIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <TwitterIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <InstagramIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+              </List>
+            </nav>
+          </Grid>
         </Box>
       </div>
 
@@ -125,26 +124,16 @@ export default function About() {
           develop a solution that meets your needs. Throughout the process, we
           keep you informed of our progress and welcome your input and feedback.
         </Typography>
-        <Typography gutterBottom variant='h5' component='div'>
-          One of the key benefits of working with InfoDrive Solutions is our
-          ability to provide end-to-end development services. This means that we
-          can handle every aspect of your project, from the initial concept and
-          design to the final deployment and maintenance. This allows us to
-          deliver a complete, turnkey solution that is ready to use as soon as
-          it is deployed.
-        </Typography>
 
         <section
-          className={`sectionBox aboutUsBox ourMissionBox`}
+          className={`sectionBox aboutUsBox3 servicesForStartUp `}
           style={{
             backgroundImage: `url('images/Rectangle2.png')`,
-            marginTop: 128,
           }}
         >
-          <Box sx={{ flexGrow: 1 }} className='ourMissionContent'>
+          <Box sx={{ flexGrow: 1 }} className='ourMissionContent '>
             <p
               style={{
-                fontFamily: 'General Sans',
                 fontSize: '30px',
                 fontWeight: '600',
                 lineHeight: '37px',
@@ -278,109 +267,64 @@ export default function About() {
       </section>
 
       {/*we are speclised in section*/}
-      <section
-        className={`sectionBox aboutUsBox ourMissionBox`}
-        style={{ background: 'white' }}
-      >
-        <Box sx={{ flexGrow: 1 }} className='ourMissionContent'>
-          <Typography
-            gutterBottom
-            variant='h3'
-            component='div'
-            style={thirdsectionheading}
-          >
-            We ARE
-            <br /> SPECIALIZED IN
-          </Typography>
-          {/* container for 3 div*/}
-          <div
-            className='speclized'
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              flexWrap: 'wrap',
-            }}
-          >
-            <div className='Salesforce partner' style={box}>
-              <p style={descrption}> Expertise</p>
-              {/*<p
-                style={{
-                  fontFamily: ' General Sans',
-                  fontSize: '22px',
-                  fontWeight: 'bold',
-                  lineHeight: '29px',
-                  letterSpacing: '0em',
-                  textAlign: 'left',
-                }}
-              >
-                Salesforce partner
-              </p>*/}
-              <p style={details}>
-                Our developers have a wealth of experience in a wide range of
-                programming languages, frameworks, and technologies. This allows
-                us to deliver custom solutions that are tailored to meet the
-                specific needs of our clients.
-              </p>
-            </div>
-            <div className='Servicenow' style={box}>
-              <p style={descrption}>Quality</p>
 
-              <p style={details}>
-                We have strict quality standards and always
-                <br /> strive to deliver projects that meet and exceed our
-                clients' expectations.
-              </p>
-            </div>
-            <div className='Mulesoft' style={box}>
-              <p style={descrption}>Responsiveness</p>
+      <section className={`sectionBox whyUsBox`}>
+        <Typography gutterBottom variant='h2' className='mb0' component='div'>
+          {' '}
+          WE ARE <br /> SPECIALIZED IN
+        </Typography>
+        <br />
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <Grid item xs={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Expertise
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    Our developers have a wealth of experience in a wide range
+                    of programming languages, frameworks, and technologies. This
+                    allows us to deliver custom solutions that are tailored to
+                    meet the specific needs of our clients.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
 
-              <p style={details}>
-                We understand that time is of the essence, especially in the
-                fast-paced world of web development. That's why we are dedicated
-                to delivering projects on time and on budget.
-              </p>
-            </div>
-            <div className='Salesforce partner' style={box}>
-              <p style={descrption}>Value</p>
-              {/*<p
-                style={{
-                  fontFamily: ' General Sans',
-                  fontSize: '22px',
-                  fontWeight: 'bold',
-                  lineHeight: '29px',
-                  letterSpacing: '0em',
-                  textAlign: 'left',
-                }}
-              >
-                Salesforce partner
-              </p>*/}
-              <p style={details}>
-                We offer competitive pricing and strive to deliver the best
-                value for our clients' money.
-              </p>
-            </div>
-            <div className='Servicenow' style={box}>
-              <p style={descrption}> Customer service</p>
+            <Grid item xs={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Quality
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    We have strict quality standards and always strive to
+                    deliver projects that meet and exceed our clients'
+                    expectations.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
 
-              <p style={details}>
-                Our team is dedicated to providing excellent customer service
-                and going the extra mile to <br /> ensure that our clients are
-                satisfied with the results.
-              </p>
-            </div>
-            <div className='Mulesoft' style={box}>
-              <p style={descrption}>Commitment</p>
-
-              <p style={details}>
-                As a company, we are committed to delivering exceptional value
-                to our clients. We have a track record of success and a
-                reputation for delivering high-quality solutions on time and on
-                budget. Our team is dedicated to customer satisfaction, and we
-                take pride in the long-term relationships we have built with our
-                clients.
-              </p>
-            </div>
-          </div>
+            <Grid item xs={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Responsiveness
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    We understand that time is of the essence, especially in the
+                    fast-paced world of web development. That's why we are
+                    dedicated to delivering projects on time and on budget.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
         </Box>
       </section>
 
