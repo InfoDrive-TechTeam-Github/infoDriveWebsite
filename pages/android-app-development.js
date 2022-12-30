@@ -38,7 +38,7 @@ export default function AndroidAppDevelopment() {
             <Grid container spacing={0}>
             <p>
             We are one of the leading <br/> Android app development <br/> companies offering <br/> unmatched business <br/> results.</p>
-            <Button className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                   <List>
                     <ListItem>

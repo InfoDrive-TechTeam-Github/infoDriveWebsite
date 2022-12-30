@@ -35,7 +35,7 @@ export default function IosAppDevelopment() {
               <br /> apps that are quality tested <br />
               for perfection.
             </p>
-            <Button className='readmore' variant='text'>
+            <Button href="/contact-us" className='readmore' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
@@ -69,7 +69,7 @@ export default function IosAppDevelopment() {
       <section className={`sectionBox IosAppBox`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='fd1'>
-            <Grid item xs={7}>
+            <Grid item xs={8}>
               <Card className='fp1'>
                 <Typography gutterBottom variant='h3' component='div'>
                   iOS APP DEVELOPMENT
@@ -77,10 +77,9 @@ export default function IosAppDevelopment() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
+                    variant='h2'
                     component='div'
-                    className='bp2'
-                  >
+                    >
                     We are well-known for being a leading provider of full-
                     <br />
                     stack iPhone app development services. We provide a <br />{' '}
@@ -94,7 +93,11 @@ export default function IosAppDevelopment() {
                     applications.
                     <br />
                   </Typography>
-                  <Typography>
+                  <Typography
+                    gutterBottom
+                    variant='h5'
+                    component='div'
+                  >
                     Being a reliable iOS app development company with expertise
                     in <br /> multiple industries, we strive to provide our
                     customers with the <br /> solutions they need to lead their
@@ -108,7 +111,7 @@ export default function IosAppDevelopment() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={4}>
               <Card>
                 <img
                   alt='Exact analysis'
@@ -125,16 +128,14 @@ export default function IosAppDevelopment() {
           <Grid container spacing={0} className='fd1'>
             <Grid item xs={12}>
               <Card className='ios-app2'>
-                <Typography gutterBottom variant='h4' component='div'>
+                <Typography gutterBottom variant='h2' component='div'>
                   Key benefits of our iOS app
                   <br></br> development services
                 </Typography>
-                <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
+                    variant='h5'
                     component='div'
-                    className='bp2'
                   >
                     We are a full-stack iOS app development company that has
                     released <br />
@@ -143,7 +144,6 @@ export default function IosAppDevelopment() {
                     technologies to <br /> build apps with the best-in-class
                     features, functionality, and <br /> interface.
                   </Typography>
-                </CardContent>
               </Card>
             </Grid>
           </Grid>
@@ -306,161 +306,6 @@ export default function IosAppDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox IosAppBox3`}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0}>
-            <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard'>
-                <Avatar
-                  alt='Remy Sharp'
-                  src='images/Best-consumer-experience.png'
-                  sx={{ width: 65, height: 65, marginLeft: 2 }}
-                />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
-                  >
-                    Best consumer <br /> experience
-                  </Typography>
-                  <Typography variant='body2' color='text.secondary'>
-                    We have an excellent team of <br /> expert designers and
-                    developers <br /> with adequate experience to <br /> provide
-                    you with real value for
-                    <br /> money. We offer maintenance
-                    <br /> services for the developed apps to
-                    <br /> guarantee their consistent top
-                    <br /> performance while enhancing the
-                    <br /> experience of users.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard bg'>
-                <Avatar
-                  alt='Remy Sharp'
-                  src='images/Best-consumer-experience.png'
-                  sx={{ width: 65, height: 65, marginLeft: 2 }}
-                />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
-                  >
-                    Appealing app interface
-                  </Typography>
-                  <Typography variant='body2' color='text.secondary'>
-                    In iOS applications, it is possible <br /> to design
-                    interface elements and <br /> layouts to change shape and
-                    size <br /> on different devices, during iPad <br />{' '}
-                    multitasking, in split view, when <br /> the screen rotates,
-                    and more.
-                    <br /> In this way, users are provided with a <br /> better
-                    experience while building <br /> better relationships with{' '}
-                    <br /> customers.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-            <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard'>
-                <Avatar
-                  alt='Remy Sharp'
-                  src='images/Best-consumer-experience.png'
-                  sx={{ width: 65, height: 65, marginLeft: 2 }}
-                />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
-                  >
-                    High security
-                  </Typography>
-                  <Typography variant='body2' color='text.secondary'>
-                    Every business needs to choose a <br />
-                    platform that offers users not just
-                    <br /> appealing features but also the
-                    <br /> highest level of security. Your
-                    <br /> growth is in the safest possible
-                    <br /> hands because every member of
-                    <br /> our team abides by the rules and <br />
-                    never gives out your information to
-                    <br /> any third party.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard bg'>
-                <Avatar
-                  alt='Remy Sharp'
-                  src='images/Best-consumer-experience.png'
-                  sx={{ width: 65, height: 65, marginLeft: 2 }}
-                />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
-                  >
-                    Improved branding
-                  </Typography>
-                  <Typography variant='body2' color='text.secondary'>
-                    Being a leading iOS app <br /> development company, we are{' '}
-                    <br />
-                    very much familiar with the <br />
-                    importance of application
-                    <br /> branding. As, mobile app branding
-                    <br /> is how users will perceive the app: <br />
-                    its communication, its visual
-                    <br /> image, and its reputation.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard'>
-                <Avatar
-                  alt='Remy Sharp'
-                  src='images/Best-consumer-experience.png'
-                  sx={{ width: 65, height: 65, marginLeft: 2 }}
-                />
-                <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
-                  >
-                    Loyal user base
-                  </Typography>
-                  <Typography variant='body2' color='text.secondary'>
-                    Today people like to purchase just <br /> from the people
-                    they trust. Loyal
-                    <br /> customers are significant key <br /> resources that
-                    give the company a <br /> manageable upper hand over <br />{' '}
-                    competitors. Loyalty improves a <br /> firm's overall
-                    financial <br /> performance due to increased <br />
-                    purchases.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item xs={4}></Grid>
-          </Grid>
-        </Box>
-      </section>
       <section className={`sectionBox IosOurBox`}>
         <div className='IosOurBoxPd'>
           <Typography
