@@ -29,7 +29,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function About() {
   const typographyStyles = {
-    fontFamily: 'General Sans',
     fontSize: '22px',
     fontWeight: '500',
     lineHeight: '29px',
@@ -37,28 +36,7 @@ export default function About() {
     // textAlign: 'center',
     color: ' #FFFFFF',
   };
-  const thirdsectionheading = {
-    fontSize: '35px',
-    fontWeight: 600,
-    lineHeight: '47px',
-    letterSpacing: '0em',
-    textAlign: 'left',
-  };
-  const descrption = {
-    fontFamily: 'General Sans',
-    fontSize: '18px',
-    fontWeight: 400,
-    lineHeight: '29px',
-    letterSpacing: '0em',
-    textAlign: 'left',
-  };
-  const details = {
-    fontFamily: 'General Sans',
-    fontStyle: 'normal',
-    fontWeight: 300,
-    fontSize: '18px',
-    lineHeight: '29px',
-  };
+
   return (
     <div>
       <Header />
@@ -66,285 +44,263 @@ export default function About() {
       <div className='sliderBox'>
         <img style={{ width: '100%' }} src='images/Rectangle.jpg' />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
-          <p>
-            Infodrive has helped its
-            <br />
-            clients rationalize business <br /> developments, abetting <br />{' '}
-            development of specialized <br /> solutions at all stages
-          </p>
-          <Button className='readmore' variant='text'>
-            Let's Talk <ArrowRightAltIcon />
-          </Button>
-          <nav className='socical-network'>
-            <List>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemIcon>
-                    <FacebookIcon />
-                  </ListItemIcon>
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemIcon>
-                    <TwitterIcon />
-                  </ListItemIcon>
-                </ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>
-                  <ListItemIcon>
-                    <InstagramIcon />
-                  </ListItemIcon>
-                </ListItemButton>
-              </ListItem>
-            </List>
-          </nav>
+          <Grid container spacing={0}>
+            <p>
+              We are a full stack development company
+              <br /> that serves businesses in Singapore <br />, Malaysia , and
+              India. Our goal is to <br /> provide top-quality solutions that
+              help <br /> businesses thrive in the digital world.
+            </p>
+            <Button className='readmore' variant='text'>
+              Let's Talk <ArrowRightAltIcon />
+            </Button>
+            <nav className='socical-network'>
+              <List>
+                <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <FacebookIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <TwitterIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton>
+                    <ListItemIcon>
+                      <InstagramIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+              </List>
+            </nav>
+          </Grid>
         </Box>
       </div>
 
       <section className={`sectionBox`}>
         <Typography gutterBottom variant='h3' component='div'>
-          APPLICATION DEVELOPMENT,
+          Full Stack DEVELOPMENT,
           <br /> MAINTENANCE AND SUPPORT
         </Typography>
         <Typography gutterBottom variant='h2' component='div'>
-          Knowledge combined with quality gives our clients the edge over other
-          competitors. Value assurance practices and optimized delivery cycles
-          has been our focus from day one.
+          Our team of experienced developers specializes in a wide range of
+          technologies, including JavaScript, HTML, CSS, Python, Java, PHP, and
+          more. We have the expertise and tools to build custom web and mobile
+          applications that are tailored to your specific needs and goals.
         </Typography>
         <Typography gutterBottom variant='h5' component='div'>
-          Our niche solutions are one of a kind in the market. Our applications
-          maximize on key factors such as portability and scalability. Infodrive
-          enables clients to rationalize business developments and abet
-          development of specialized solutions at all stages. We provide you
-          highly differentiated and nifty solutions. Our applications provide
-          maximum portability and scalability
+          Our full stack development process is designed to be efficient, agile,
+          and transparent. We begin by understanding your business requirements
+          and objectives, and then we work closely with you to design and
+          develop a solution that meets your needs. Throughout the process, we
+          keep you informed of our progress and welcome your input and feedback.
         </Typography>
+      </section>
+      <section
+        className={`sectionBox aboutUsBox3 servicesForStartUp `}
+        style={{
+          backgroundImage: `url('images/Rectangle2.png')`,
+        }}
+      >
+        <Box sx={{ flexGrow: 1 }} className='ourMissionContent '>
+          <p
+            style={{
+              fontSize: '30px',
+              fontWeight: '600',
+              lineHeight: '37px',
+              letterSpacing: '0em',
+              textAlign: 'center',
+              color: '#FFFFFF',
+              height: '70px',
+              width: '738px',
+              marginLeft: '150px',
 
-        <section
-          className={`sectionBox aboutUsBox ourMissionBox`}
-          style={{
-            backgroundImage: `url('images/Rectangle2.png')`,
-            marginTop: 128,
-          }}
-        >
-          <Box sx={{ flexGrow: 1 }} className='ourMissionContent'>
-            <p
-              style={{
-                fontFamily: 'General Sans',
-                fontSize: '30px',
-                fontWeight: '600',
-                lineHeight: '37px',
-                letterSpacing: '0em',
-                textAlign: 'center',
-                color: '#FFFFFF',
-                height: '70px',
-                width: '738px',
+              // marginTop: '136px',
+            }}
+          >
+            Stay ahead in the game with our full stack
+          </p>
 
-                // marginTop: '136px',
-              }}
-            >
-              Stay ahead in the game with our full stack
-            </p>
+          {/**container for icons */}
+          <div
+            style={{
+              marginTop: 138,
 
-            {/**container for icons */}
+              borderRadius: 6,
+            }}
+          >
             <div
               style={{
-                marginTop: 138,
-
-                borderRadius: 6,
+                display: 'flex',
+                justifyContent: 'space-evenly',
               }}
             >
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-evenly',
-                }}
-              >
-                {/*icons*/}
-                <div>
-                  <div
-                    className='vector1'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector2.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Visual
-                    <br />
-                    engineering
-                  </p>
-                </div>
-                <div>
-                  <div
-                    className='vector2'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector3.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Product
-                    <br />
-                    development
-                  </p>
-                </div>
-                <div>
-                  <div
-                    className='vector4'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector1.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Application
-                    <br />
-                    development
-                  </p>
-                </div>
+              {/*icons*/}
+              <div>
+                <div
+                  className='vector1'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector2.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  Web application
+                  <br />
+                  development
+                </p>
               </div>
-
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'space-evenly',
-                  marginTop: 58,
-                }}
-              >
-                <div>
-                  <div
-                    className='vector4'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector4.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Porting/
-                    <br />
-                    migration
-                  </p>
-                </div>
-                <div>
-                  <div
-                    className='vector4'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector6.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Production
-                    <br />
-                    support
-                  </p>
-                </div>
-                <div>
-                  <div
-                    className='vector4'
-                    style={{
-                      width: '52px',
-                      height: '52px',
-                      backgroundImage: `url('images/vector7.png')`,
-                    }}
-                  ></div>
-                  <p style={typographyStyles}>
-                    Product help desk
-                    <br />& support
-                  </p>
-                </div>
+              <div>
+                <div
+                  className='vector2'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector3.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  Mobile application
+                  <br />
+                  development
+                </p>
+              </div>
+              <div>
+                <div
+                  className='vector4'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector1.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  E-commerce
+                  <br />
+                  development
+                </p>
               </div>
             </div>
-          </Box>
-        </section>
-      </section>
 
-      <section
-        className={`sectionBox aboutUsBox ourMissionBox`}
-        style={{ background: 'white' }}
-      >
-        <Box sx={{ flexGrow: 1 }} className='ourMissionContent'>
-          <Typography
-            gutterBottom
-            variant='h3'
-            component='div'
-            style={thirdsectionheading}
-          >
-            We ARE
-            <br /> SPECIALIZED IN
-          </Typography>
-          <div
-            className='speclized'
-            style={{ display: 'flex', justifyContent: 'space-between' }}
-          >
-            <div className='Salesforce partner'>
-              <p style={descrption}>WORLD’S #1 CRM</p>
-              <p
-                style={{
-                  fontFamily: ' General Sans',
-                  fontSize: '22px',
-                  fontWeight: 'bold',
-                  lineHeight: '29px',
-                  letterSpacing: '0em',
-                  textAlign: 'left',
-                }}
-              >
-                Salesforce partner
-              </p>
-              <p style={details}>
-                Salesforce is the World’s #1 CRM today, over 100,000 of the
-                world’s most innovative companies use Salesforce to close bigger
-                deals, faster.
-              </p>
-            </div>
-            <div className='Servicenow'>
-              <p style={descrption}>AI AND ANALYTICS</p>
-              <p
-                style={{
-                  fontFamily: ' General Sans',
-                  fontSize: '22px',
-                  fontWeight: 'bold',
-                  lineHeight: '29px',
-                  letterSpacing: '0em',
-                  textAlign: 'left',
-                }}
-              >
-                Servicenow
-              </p>
-              <p style={details}>
-                Unleash the power of AI and analytics to surface information,
-                make predictions, and automate repetitive tasks so you can focus
-                on strategic work.
-              </p>
-            </div>
-            <div className='Mulesoft'>
-              <p style={descrption}>ENTERPRISE APPLICATIONS</p>
-              <p
-                style={{
-                  fontFamily: ' General Sans',
-                  fontSize: '22px',
-                  fontWeight: 'bold',
-                  lineHeight: '29px',
-                  letterSpacing: '0em',
-                  textAlign: 'left',
-                }}
-              >
-                Mulesoft
-              </p>
-              <p style={details}>
-                Today’s enterprise needs a network of applications, data, and
-                devices connected by APIs, whether on-premises or in the cloud.
-              </p>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'space-evenly',
+                marginTop: 58,
+              }}
+            >
+              <div>
+                <div
+                  className='vector4'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector4.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  Custom software
+                  <br />
+                  development
+                </p>
+              </div>
+              <div>
+                <div
+                  className='vector4'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector6.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>Responsiveness</p>
+              </div>
+              <div>
+                <div
+                  className='vector4'
+                  style={{
+                    width: '52px',
+                    height: '52px',
+                    backgroundImage: `url('images/vector7.png')`,
+                  }}
+                ></div>
+                <p style={typographyStyles}>
+                  Customer
+                  <br />
+                  service
+                </p>
+              </div>
             </div>
           </div>
+        </Box>
+      </section>
+
+      {/*we are speclised in section*/}
+
+      <section className={`sectionBox whyUsBox`}>
+        <Typography gutterBottom variant='h2' className='mb0' component='div'>
+          {' '}
+          WE ARE <br /> SPECIALIZED IN
+        </Typography>
+        <br />
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <Grid item xs={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Expertise
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    Our developers have a wealth of experience in a wide range
+                    of programming languages, frameworks, and technologies. This
+                    allows us to deliver custom solutions that are tailored to
+                    meet the specific needs of our clients.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item xs={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Quality
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    We have strict quality standards and always strive to
+                    deliver projects that meet and exceed our clients'
+                    expectations.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item xs={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Responsiveness
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    We understand that time is of the essence, especially in the
+                    fast-paced world of web development. That's why we are
+                    dedicated to delivering projects on time and on budget.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
         </Box>
       </section>
 
@@ -355,7 +311,7 @@ export default function About() {
               <Typography gutterBottom variant='h5' component='div'>
                 Get in touch with us today for a <br /> non-obligation
                 discussion and start transforming your start-up ideas into
-                real-life products.{' '}
+                real-life products.
               </Typography>
               <br />
               <br />

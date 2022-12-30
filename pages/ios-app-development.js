@@ -23,8 +23,8 @@ export default function IosAppDevelopment() {
         <div >
            <Header/>
            <div className="sliderBox blockNFT">
-        <img style={{width: '100%',opacity: '0.5'}} src="images/Blockchain_background.png"/>
-        <Box sx={{ flexGrow: 1 }} className="sliderContent">
+            <img style={{width: '100%',opacity: '0.5'}} src="images/Blockchain_background.png"/>
+           <Box sx={{ flexGrow: 1 }} className="sliderContent">
               <Grid container spacing={0}>
               <p>
               Our team of expert iOS app <br/> developers uses cutting-<br/>edge technologies to build<br/> apps that are quality tested <br/>for perfection.
@@ -57,7 +57,6 @@ export default function IosAppDevelopment() {
                   </nav>
               </Grid>
         </Box>
-        
       </div>
       <section className={`sectionBox IosAppBox`}>
             <Box sx={{ flexGrow: 1 }}>
@@ -72,9 +71,8 @@ export default function IosAppDevelopment() {
                       We are well-known for being a leading provider of full-<br/>stack iPhone app development services. We provide a <br/> wide range of custom iOS apps that empower<br/> businesses and help them in turning ideas into reality.<br/> Our proficiency, vast experience, professionalism,<br/> technical know-how, and unmatched services make us a <br/> reliable place for creating dependable and scalable iOS <br/>applications.<br/>
                       </Typography>
                       <Typography>
-                        <p>Being a reliable iOS app development company with expertise in <br/> multiple industries, we strive to provide our customers with the <br/> solutions they need to lead their industries. Our iOS app development<br/> services help in improving your company's productivity while improving <br/> customer satisfaction. Our iOS app developers have a comprehensive <br/> understanding of the latest technologies and adequate experience <br/> using them to create iOS applications.</p>
+                        Being a reliable iOS app development company with expertise in <br/> multiple industries, we strive to provide our customers with the <br/> solutions they need to lead their industries. Our iOS app development<br/> services help in improving your company's productivity while improving <br/> customer satisfaction. Our iOS app developers have a comprehensive <br/> understanding of the latest technologies and adequate experience <br/> using them to create iOS applications.
                       </Typography>
-                      
                     </CardContent>
                   </Card>
                 </Grid>
@@ -330,7 +328,6 @@ export default function IosAppDevelopment() {
         </section>
            <Footer/>
         </div>
-      
       )
 }
 
