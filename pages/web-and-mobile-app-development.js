@@ -38,7 +38,7 @@ export default function WebMobileApp() {
             <Grid container spacing={0}>
             <p>
             We build custom web and <br/>mobile applications and <br/>provide consulting for startups, small and <br/>mid-large scale businesses</p>
-            <Button className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                   <List>
                     <ListItem>

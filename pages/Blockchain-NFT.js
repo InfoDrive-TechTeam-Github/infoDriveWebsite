@@ -27,7 +27,7 @@ export default function blockchain() {
             <Grid container spacing={0}>
             <p>
             We offer reliable and advanced <br/> blockchain solutions to secure a <br/> formidable position for our clients when <br/>the future unfolds</p>
-            <Button className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                   <List>
                     <ListItem>

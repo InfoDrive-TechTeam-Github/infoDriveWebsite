@@ -43,7 +43,7 @@ export default function About() {
               We believe technology brings us <br />
               together and makes our lives better.
             </p>
-            <Button className='readmore' variant='text'>
+            <Button href="/contact-us" className='readmore' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>

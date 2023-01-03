@@ -127,10 +127,9 @@ img.chain_img {
 }
 .IosAppBox .fp1 {
   box-shadow: none;
-  padding: 65px 0px 0px 150px;
+  padding: 65px 0px 25px 150px;
   background: #070D0C;
   color: #fff;
-height: 700px;
 }
 .IosAppBox .bp2 {
   font-size: 18px !important;
@@ -143,9 +142,23 @@ height: 700px;
 .IosAppBox p {
 line-height: 30px;
 }
+.IosAppBox .MuiTypography-h2{
+  color: #fff;
+  font-size:25px;
+  line-height: 35px;
+  padding-top: 0;
+  width: 698px;
+}
+.IosAppBox .MuiTypography-h5{
+  color:#fff;
+  width: 698px;
+}
+.IosAppBox .MuiGrid-item .MuiPaper-elevation{
+  height: 100%;
+}
 img.Ios_img {
   width: 100%;
-  height: 700px;
+  height: 100%;
 }
 .ios-app2 {
   box-shadow: none;

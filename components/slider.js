@@ -40,7 +40,7 @@ export default function Slider() {
             <p>
         Technology service <br/> company helping transform <br/> business through digital <br/> technology
       </p>
-            <Button className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                   <List>
                     <ListItem>

@@ -546,6 +546,44 @@ img {
 .serviceOffer p{
   color:#fff;
 }
+.fullstackGame{
+  text-align: center;
+}
+.fullstackGame .MuiAvatar-circular{
+  margin:0 auto;
+}
+.fullstackGame .MuiTypography-h2{
+  margin: 0 auto 80px auto;
+  text-transform: capitalize;
+  color:#fff;
+  z-index: 10;
+  position: relative;
+}
+.fullstackGame{
+  background: url('images/Rectangle2.png');
+  background-size: cover;
+  margin-left: 97px;
+  margin-right: 97px;
+  position: relative;
+}
+.fullstackGame::before{
+  position: absolute;
+  content: "";
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;
+  z-index: 9;
+}
+.fullstackGame .MuiCard-root{
+  background:none;
+  position: relative;
+  z-index: 10;
+}
+.fullstackGame .MuiTypography-h3{
+  color:#fff;
+}
 .footerSection{
   background: #000;
 }
@@ -789,5 +827,20 @@ img {
 }
 .BlockchainUsBox.contInfo .blcnbtn {
   margin-left: 25px !important;
+}
+.IosAppBox .MuiGrid-grid-xs-8 ,.IosAppBox .MuiGrid-grid-xs-4{
+  flex-basis: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+.IosAppBox .MuiTypography-h2{
+ width: 100% !important;
+ font-size: 18px;
+ line-height: 25px;
+}
+.IosAppBox .MuiTypography-h5{
+  width: 100% !important;
+  font-size: 16px;
+  line-height: 22px;
 }
 }
