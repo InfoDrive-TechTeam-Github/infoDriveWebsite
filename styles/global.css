@@ -651,8 +651,23 @@ img {
   font-weight: 400;
 }
 
+.logoMobile{
+  display:none !important;
+}
 /* Responsive */
 @media only screen and (max-width: 600px) and (min-width: 320px)  {
+  .aboutUsBox{
+    height: initial;
+  }
+  .locationBox {
+    margin-top: 2px;
+}
+.locationBox .MuiTypography-body2{
+  line-height: 22px;
+}
+  .logoMobile{
+    display:block !important;
+  }
   .sectionBox {
     padding: 15px 15px;
     margin-left: 0;

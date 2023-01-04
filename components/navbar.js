@@ -106,13 +106,6 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant='h6' sx={{ my: 2 }}>
-        <Avatar
-          alt='Logo'
-          src='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
-        />
-      </Typography>
-      <Divider />
       <List>
               <ListItem disablePadding>
                 <ListItemButton component='a' to="/">
@@ -203,10 +196,23 @@ function DrawerAppBar(props) {
             aria-label='open drawer'
             edge='start'
             onClick={handleDrawerMobileToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: 'none' }}}
           >
             <MenuIcon />
           </IconButton>
+          <Button 
+            href="/" 
+            variant="text"
+            style={{ float: 'right', position: 'absolute', right: '0px' }}
+            className="logoMobile"
+          >
+            <img
+              alt='Logo'
+              style={{ width: 53, height: 43}}
+              src='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+            />
+            </Button>
+
           <Typography
             variant='h4'
             component='div'
@@ -246,6 +252,10 @@ function DrawerAppBar(props) {
                       <ArrowForwardIosIcon 
                         onClick={recordSubButtonPosition}
                         className="customIcon"
+                        style={{width: "43px",
+                          height: "35px",
+                          fontWeight: "bolder",
+                          marginLeft: "-12px"}}
                       />
                     </ListItem>
                     <ListItem disablePadding>
@@ -270,6 +280,7 @@ function DrawerAppBar(props) {
                 <Menu
                   anchorEl={subAnchorEl}
                   open={subMenuOpen}
+                  className="subMenuOptions"
                   onClose={closeSubMenu}>
                   <List>
                     <ListItem disablePadding>

@@ -233,7 +233,7 @@ export default function Index() {
       </section>
 
       <section className={`sectionBox locationBox`}>
-          <Typography gutterBottom variant="h2" component="div">Where we are?</Typography>
+          <Typography gutterBottom variant="h2" className="pb30" component="div">Where we are?</Typography>
           <Box sx={{ flexGrow: 1 }} className="locationContent">
             <Grid container spacing={0}>
               <Grid item xs={4}>
