@@ -50,7 +50,7 @@ export default function Index() {
           </p>
       </section>
       <section className={`sectionBox whyUsBox`}>
-      <Typography gutterBottom variant="h2" component="div">Why Infodrive <br/>solutions?</Typography>
+      <Typography gutterBottom variant="h2" component="div">Why Infodrive solutions?</Typography>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={4}>
@@ -208,7 +208,7 @@ export default function Index() {
                       Delivering our very best in all we do, holding ourselves accountable for results with a commitment to integrity, fairness and responsibility.
                     </Typography>
                     <Typography gutterBottom variant="h2" component="div">
-                      100+
+                      123
                     </Typography>
                     <Typography gutterBottom variant="h3" component="div">
                       SUCCESSFUL PROJECTS

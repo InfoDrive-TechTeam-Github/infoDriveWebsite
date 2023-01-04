@@ -5,6 +5,13 @@
   src: url("fonts/GeneralSans-Regular.otf");
 }
 
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Poppins/Poppins-Regular.ttf");
+}
+
 html,
 body {
   padding: 0;
@@ -48,15 +55,32 @@ img {
   text-transform: normal;
 }
 .navbarMenu a span{
-  font-weight: 300;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #51668a;
 }
 .navbarMenu nav button{
   color:#000;
   text-transform: capitalize;
 }
 .navbarMenu .MuiListItemButton-root{
-  font-weight: 400;
-  height: 35px;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #51668a;
+}
+.subMenuOptions .MuiListItemText-primary{
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #51668a;
+}
+.subMenuOptions .customIcon{
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #51668a;
 }
 .homePage{
   padding-top: 60px;
@@ -68,25 +92,29 @@ img {
   padding: 97px 97px;
 }
 .sectionBox .MuiTypography-h3{
-  font-size: 22px;
-  color: #070D0C;
+  font-size: 16px;
+  color: #E13D4B;
+  font-family: Poppins;
+  font-weight: 700;
 }
 .sectionBox .MuiTypography-h2{
-  font-size: 35px;
+  font-size: 24px;
+  font-family: Poppins;
   width: 760px;
-  font-weight: 600;
+  font-weight: 700;
   padding-top: 30px;
-  line-height: 47px;
-  color: #070D0C;
+  line-height: 43px;
+  color: #0b2653;
 }
 .sectionBox .MuiTypography-h5{
-  font-size: 22px;
-  line-height: 36px;
   width: 668px;
-  font-weight: 300;
-  color: #070D0C;
   font-style: normal;
-  padding-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #4E4E50;
+    padding-top: 10px;
 }
 .sectionBox .customButton{
   background: #ccc;
@@ -126,6 +154,7 @@ img {
   left: 0;
 }
 .sliderContent p{
+  font-family: Poppins;
   color: #fff;
   font-size: 56px;
   width: 100%;
@@ -174,6 +203,12 @@ img {
 .whyUsBox .MuiTypography-h2{
   margin-bottom: 80px;
 }
+.sectionBox .MuiTypography-h3{
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #dd3952;
+}
 .whyUsBox .MuiCard-root{
   border: none;
   box-shadow: none;
@@ -216,8 +251,9 @@ img {
   padding-top: 0px;
 }
 .aboutUsBox2 .MuiTypography-h2{
-  color:#fff;
+  /* color:#fff; */
   font-size: 55px;
+  color: #dd3952;
 }
 .locationBox{
   margin-top: 80px;
@@ -257,6 +293,7 @@ img {
 }
 .locationContent .MuiTypography-h7{
   font-weight: 600;
+  color: #f8932b;
 }
 .locationContent p{
   font-size: 25px;
@@ -598,8 +635,9 @@ img {
   width: 120px;
 }
 .footerSection .MuiTypography-h3{
-  color: #fff;
+  /* color: #fff; */
   font-weight: 400;
+  color: #dd3952;
 }
 .footerSection li{
   padding: 0;
