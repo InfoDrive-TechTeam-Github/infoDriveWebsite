@@ -82,35 +82,35 @@ export default function WebMobileApp() {
         <Box sx={{ flexGrow: 1 }} >
             <Grid container spacing={0}>
               <Grid item xs={6} className="pb30">
-                <Typography gutterBottom variant="h2" component="div">
+                <Typography gutterBottom variant="h2" className="red" component="div">
                 Various technology stack
                 </Typography>
                 <Typography gutterBottom variant="h5" component="div">We divide complex problems into simpler <br/> solutions that are a combination of frontend, <br/>backend, and full stacks.</Typography>
               </Grid>
 
               <Grid item xs={6} className="pb30">
-                <Typography gutterBottom variant="h2" component="div">
+                <Typography gutterBottom variant="h2" className="red" component="div">
                 Hands-on experience
                 </Typography>
                 <Typography gutterBottom variant="h5" component="div">We have worked with multiple frameworks, <br/> tools, domains to have to hands-on <br/>experience which can be of great advantage. <br/>These experiences are accumulated from past projects.</Typography>
               </Grid>
 
               <Grid item xs={6} className="pb30">
-                <Typography gutterBottom variant="h2" component="div">
+                <Typography gutterBottom variant="h2" className="red" component="div">
                 Results oriented
                 </Typography>
                 <Typography gutterBottom variant="h5" component="div">Understanding the requirement is the key,<br/> so our design and development process <br/> starts with a deep understanding of your company or <br/> organization and we work keeping the output in mind.</Typography>
               </Grid>
 
               <Grid item xs={6} className="pb30">
-                <Typography gutterBottom variant="h2" component="div">
+                <Typography gutterBottom variant="h2" className="red" component="div">
                 Unique design
                 </Typography>
                 <Typography gutterBottom variant="h5" component="div">We work with you to ensure that your digital <br/> marketing goals are realized with the designs we create.</Typography>
               </Grid>
 
               <Grid item xs={6} className="pb30">
-                <Typography gutterBottom variant="h2" component="div">
+                <Typography gutterBottom variant="h2" className="red" component="div">
                 Unique products
                 </Typography>
                 <Typography gutterBottom variant="h5" component="div">We learn about who you are and what your <br/> goals are to create a unique website <br/> experience for your target audience.</Typography>
@@ -120,8 +120,8 @@ export default function WebMobileApp() {
       </section>
 
 
-      <section className={`sectionBox whyUsBox`}>
-      <Typography gutterBottom variant="h2" className='mb0' component="div"> Our expertise lies in <br/> various technologies</Typography>
+      <section className={`sectionBox whyUsBox pb0`}>
+      <Typography gutterBottom variant="h2" className='' component="div"> Our expertise lies in various technologies</Typography>
       <br/>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
@@ -129,7 +129,7 @@ export default function WebMobileApp() {
                 <Card sx={{ maxWidth: 345 }}>
                   <CardContent>
                     <Typography gutterBottom variant="h3" component="div">
-                    Our expertise lies in <br/> various technologies
+                    Our expertise lies in various technologies
                     </Typography>
                     <br/>
                     <Typography variant="body2" color="text.secondary">

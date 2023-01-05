@@ -136,7 +136,7 @@ export default function About() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant='h3' className="red" component='div'>
                     OUR MISSION
                   </Typography>
                   <Typography variant='body2' color='text.secondary'>
@@ -145,7 +145,7 @@ export default function About() {
                     ensuring right people and technology.
                   </Typography>
 
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant='h3' className="red" component='div'>
                     OUR VISION
                   </Typography>
                   <Typography variant='body2' color='text.secondary'>
@@ -164,7 +164,7 @@ export default function About() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={6}>
-              <Typography gutterBottom variant='h3' component='div'>
+              <Typography gutterBottom variant='h3' className="red" component='div'>
                 OUR VALUES
               </Typography>
               <Typography gutterBottom variant='h2' component='div'>
@@ -197,7 +197,7 @@ export default function About() {
               </Card>
             </Grid>
             <Grid item xs={6} style={{ padding: '30px' }}>
-              <Typography gutterBottom variant='h3' component='div'>
+              <Typography gutterBottom variant='h3' className="red" component='div'>
                 OUR BELIEF
               </Typography>
               <Typography gutterBottom variant='h2' component='div'>
@@ -218,7 +218,7 @@ export default function About() {
 
       <section className={`sectionBox companiesBox`}>
         <div>
-          <Typography gutterBottom variant='h3' component='div'>
+          <Typography gutterBottom variant='h2' className="red" component='div'>
             Companies don't make people, people make companies!
           </Typography>
 
@@ -298,7 +298,7 @@ export default function About() {
 
       <section className={`sectionBox whyUsBox pt0 pb0`}>
         <Typography gutterBottom variant='h2' component='div'>
-          We offer a wide <br />
+          We offer a wide 
           variety of IT services
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
@@ -518,7 +518,7 @@ export default function About() {
           <Grid container spacing={0}>
             <Grid item xs={6} style={{ padding: '30px' }}>
               <Typography
-                className='widthInitial'
+                className='widthInitial red'
                 gutterBottom
                 variant='h2'
                 component='div'
@@ -539,7 +539,7 @@ export default function About() {
                 JOIN OUR TEAM <ArrowRightAltIcon />
               </Button>
             </Grid>
-            <Grid item xs={3} style={{ padding: '30px' }}>
+            <Grid item xs={3} className="rightOurCoreTeam" style={{ padding: '30px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -568,7 +568,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={3} style={{ padding: '30px' }}>
+            <Grid item xs={3} className="rightOurCoreTeam" style={{ padding: '30px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -603,7 +603,7 @@ export default function About() {
       <section className={`sectionBox ourCoreTeam ourCoreTeamOther pt0`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -632,7 +632,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -661,7 +661,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -690,7 +690,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -719,7 +719,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'

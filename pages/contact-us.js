@@ -39,8 +39,8 @@ export default function Contact() {
   return (
     <div >
       <Header/>
-    <section className={`sectionBox contactUs pb0`}>
-            <Typography className="widthInitial" gutterBottom variant="h2" component="div">
+    <section className={`sectionBox contactUs`}>
+            <Typography className="widthInitial red" gutterBottom variant="h2" component="div">
             Contact Us
             </Typography>
             <Typography className="widthInitial" gutterBottom variant="h5" component="div">Need to get in touch with us? Either call one of the numbers of the responding country

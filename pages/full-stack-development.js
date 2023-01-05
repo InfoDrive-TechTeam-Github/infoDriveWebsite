@@ -77,7 +77,7 @@ export default function FullstackDevelopment() {
 
       <section className={`sectionBox`}>
         <Typography gutterBottom variant='h3' component='div'>
-          APPLICATION DEVELOPMENT, <br/>MAINTENANCE AND SUPPORT
+          APPLICATION DEVELOPMENT, MAINTENANCE AND SUPPORT
         </Typography>
         <Typography gutterBottom variant='h2' component='div'>
           Knowledge combined with quality gives our clients the edge over other competitors.
@@ -294,7 +294,7 @@ export default function FullstackDevelopment() {
               {/* <Button className='readmore pl0' variant='text'>
                
               </Button> */}
-              <ListItemButton className="pl0" component="a" sx={{ textAlign: 'center' }}>
+              <ListItemButton className="pl0 readmore" component="a" sx={{ textAlign: 'center' }}>
               CONTACT US <ArrowRightAltIcon />
             </ListItemButton>
             </Grid>

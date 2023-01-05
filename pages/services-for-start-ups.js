@@ -111,11 +111,11 @@ export default function ServicesForStartUps() {
         </Box>
       </section>
 
-      <section className={`sectionBox ourValueBox pt30`}>
+      <section className={`sectionBox ourValueBox`}>
             <Box sx={{ flexGrow: 1 }} >
                 <Grid container spacing={0}>
                     <Grid item xs={6}>
-                        <Typography gutterBottom variant="h3" component="div">
+                        <Typography gutterBottom variant="h3" className="red" component="div">
                         TECHONOLGY SOLUTIONS FOR START UPS
                         </Typography>
                         <Typography gutterBottom variant="h2" component="div">
@@ -148,8 +148,8 @@ export default function ServicesForStartUps() {
           </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox pb0`}>
-      <Typography gutterBottom variant="h2" className='mb0' component="div">Why Your Start-Up <br/>Should Work With Us?</Typography>
+      <section className={`sectionBox whyUsBox`}>
+      <Typography gutterBottom variant="h2" className='' component="div">Why Your Start-Up Should Work With Us?</Typography>
       <br/>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
