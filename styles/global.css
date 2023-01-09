@@ -839,6 +839,46 @@ img {
 .aboutUsBoxHome{
   height: 550px
 }
+.navCarouselBox{
+  margin-top: 124px;
+}
+.navCarouselBox .navCarouselNext{
+  width: 35px;
+  right: 0;
+  height: 35px;
+  max-width: 35px;
+  color: red;
+  border: 1px solid red;
+
+}
+.navCarouselBox .navCarouselNext:hover{
+  background: red;
+  color: #fff;
+}
+.navCarouselBox .navCarouselPrevious{
+  width: 35px;
+  left: 0;
+  background: #fff;
+  height: 35px;
+  max-width: 35px;
+}
+.testmonial .MuiPaper-elevation{
+  width: 100%;
+  max-width: 95%;
+  padding: 15px;
+  box-shadow: none;
+    border: 1px solid #ccc;
+    margin-left: 15px;
+}
+.testmonial .MuiPaper-elevation{
+  position: relative;
+}
+.testmonialStar{
+  position: absolute;
+    top: 30px;
+    right: 15px;
+    color: #ffc107;
+}
 /* Responsive */
 @media only screen and (max-width: 600px) and (min-width: 320px)  {
   .leadForm .leadFormBox {

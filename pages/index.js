@@ -29,6 +29,11 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
+import Carousel from 'react-material-ui-carousel'
+import { Paper } from '@mui/material'
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import StarIcon from '@mui/icons-material/Star';
 export default function Index() {
   const [value, setValue] = React.useState('1');
 
@@ -36,6 +41,16 @@ export default function Index() {
     setValue(newValue);
   };
   
+  var items = [
+    {
+        name: "Random Name #1",
+        description: "Probably the most random thing you have ever seen!"
+    },
+    {
+        name: "Random Name #2",
+        description: "Hello World!"
+    }
+]
   return (
     <div >
       <Header/>
@@ -248,8 +263,85 @@ export default function Index() {
             </Grid>
         </Box>
       </section>
+      <br/>
+      <br/>
+      <section className={`sectionBox locationBox mt30 testmonial`}>
+      <Typography gutterBottom variant="h2" component="div">
+      What others say about us?
+                    </Typography>
+                    <br/>
 
-      <section className={`sectionBox locationBox mt30`}>
+<Carousel
+    NavButton={({onClick, className, style, next, prev}) => {
+        // Other logic
+
+        return (
+            <div className='navCarouselBox'>
+              <Button onClick={onClick} className={'navCarouselNext '}>
+                {next && <KeyboardArrowRightIcon/>}
+                {prev && <KeyboardArrowLeftIcon/>}
+              </Button>
+            </div>
+        )
+    }}
+>
+            {
+                items.map( (item, i) => 
+                <Box sx={{ flexGrow: 1 }}>
+                  <Grid container spacing={0}>
+                    <Grid item xs={6}>
+                      <Card sx={{ maxWidth: 345 }}>
+                        <Avatar
+                          alt="Remy Sharp"
+                          src="images/c1a0b62fe5e42bf0f9af1ac1d77a35aqb.png"
+                          sx={{ width: 65, height: 65, marginLeft: 2 }}
+                        />
+                        <div className="testmonialStar">
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                        </div>
+                        <CardContent>
+                        <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
+                            Knowledgable team
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                            We have the professional team with hands-on experience in their respective fields, which is the icing on the cake. We have adequate and sources to accomplish and acquire the superior technology platform required to run the business.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Card sx={{ maxWidth: 345 }}>
+                        <Avatar
+                          alt="Remy Sharp"
+                          src="images/c1a0b62fe5e42bf0f9af1ac1d77a35abq.png"
+                          sx={{ width: 65, height: 65, marginLeft: 2 }}
+                        />
+                        <div className="testmonialStar">
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                        </div>
+                        <CardContent>
+                        <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
+                            Love for work
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                            We have a passionate team striving to make a space where access to knowledge and technology is for everyone equally. To manage the quality level and give the best performance, we regulate our services according to our clients’ expectations.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                  </Grid>
+              </Box>
+                )
+            }
+</Carousel>
       </section>
       <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
           <Box sx={{ flexGrow: 1 }} className="locationContent">
