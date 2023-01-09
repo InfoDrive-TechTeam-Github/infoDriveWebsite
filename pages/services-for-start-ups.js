@@ -159,7 +159,7 @@ export default function ServicesForStartUps() {
             <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
             Get in touch with our team and learn how we can help your startup succeed
             </Typography>
-            <Button href="/contact-us" className='bgRed pl15 pr15 poppin normalCase'>
+            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
               Connect with Our Expert
             </Button>
       </section>

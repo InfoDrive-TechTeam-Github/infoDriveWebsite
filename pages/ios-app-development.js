@@ -517,7 +517,7 @@ export default function IosAppDevelopment() {
                   </Typography>
                   <br/>
                   <br/>
-                  <Button href="/contact-us" className='readmore pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
                   </Grid>
                 <Grid item xs={7}>
                     <Card>

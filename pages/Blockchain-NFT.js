@@ -127,7 +127,7 @@ export default function blockchain() {
                   </Typography>
                   <br/>
                   <br/>
-                  <Button href="/contact-us" className='readmore pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
                   </Grid>
                 <Grid item xs={7}>
                     <Card>
@@ -247,7 +247,7 @@ export default function blockchain() {
                             variant="standard"
                         />
                         <Stack spacing={2} direction="row">
-                            <Button className="bgRed" variant="contained">Send Message</Button>
+                            <Button className="bgRed white" variant="contained">Send Message</Button>
                         </Stack>
                     </Box>
                </Grid>

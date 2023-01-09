@@ -101,7 +101,7 @@ export default function WebMobileApp() {
             <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
               Ready to take your business to the next level with a custom web or mobile app?
             </Typography>
-            <Button href="/contact-us" className='bgRed pl15 pr15 poppin normalCase'>
+            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
               Connect with Our Expert
             </Button>
       </section>
