@@ -38,25 +38,25 @@ export default function WebMobileApp() {
             <Grid container spacing={0}>
             <p>
             We build custom web and <br/>mobile applications and <br/>provide consulting for startups, small and <br/>mid-large scale businesses</p>
-            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
-                  <List>
+                <List>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
                         <ListItemIcon>
                           <FacebookIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="/">
                         <ListItemIcon>
                           <TwitterIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
                         <ListItemIcon>
                           <InstagramIcon />
                         </ListItemIcon>
@@ -74,8 +74,29 @@ export default function WebMobileApp() {
               INTRO
             </Typography>
             <Typography gutterBottom variant="h2" component="div">
-            We use a wide range of full-stack technologies connecting a variety of people, businesses, and industries which are responsive for different platforms and devices.
+             We use a wide range of full-stack technologies connecting a variety of people, businesses, and industries which are responsive for different platforms and devices.
+             InfoDrive Solutions is a leading web and mobile app development company with a strong presence in Singapore, Malaysia, and India. we specialize in creating high-quality and user-friendly web and mobile applications that help businesses of all sizes achieve their goals. Our team of experienced developers has a track record of delivering successful projects on time and within budget. <br/>
+            We understand that every business is unique, which is why we offer custom web and mobile app development solutions to fit your specific needs. Whether you are looking to create a new application from scratch or upgrade an existing one, we have the skills and expertise to bring your vision to life.
+            Our web and mobile app development process is designed to be efficient and transparent. We begin by understanding your business objectives and gathering requirements. From there, we move on to the design and development phase, where we create prototypes and conduct user testing to ensure that the final product meets your expectations.
+            We use the latest technologies and frameworks to build web and mobile applications that are fast, secure, and scalable. Some of the technologies we work with include:
+            <ul>
+               <li>HTML, CSS, and JavaScript for front-end development</li>
+               <li>Python, Ruby, and Java for back-end development</li>
+               <li>React, Angular, and Vue for front-end JavaScript libraries</li>
+               <li>iOS and Android for mobile app development</li>
+            </ul>
+            In addition to our technical expertise, we also place a strong emphasis on user experience (UX) design. We believe that the key to a successful web or mobile app is a seamless and intuitive user interface (UI). Our designers work closely with our developers to create engaging and easy-to-use interfaces that meet the needs of your target audience.
+            At InfoDrive Solutions, we are committed to delivering top-quality web and mobile app development services at competitive prices. We offer flexible pricing options to fit your budget, including fixed-price contracts and hourly rates.
             </Typography>
+      </section>
+
+      <section className={`sectionBox connectUs backDrop`}>
+            <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
+              Ready to take your business to the next level with a custom web or mobile app?
+            </Typography>
+            <Button href="/contact-us" className='bgRed pl15 pr15 poppin normalCase'>
+              Connect with Our Expert
+            </Button>
       </section>
 
       <section className={`sectionBox ourValueBox`}>
@@ -161,7 +182,7 @@ export default function WebMobileApp() {
                     </Typography>
                     <br/>
                     <Typography variant="body2" color="text.secondary">
-                    no content here. To provide
+                    We are dedicated to delivering high quality software solutions in a timely and cost-effective manner. Our experienced team of developers is committed to meeting the specific needs of our clients and delivering results that exceed expectations. We understand that every project is unique, which is why we offer flexible pricing and delivery options to ensure that our clients receive the best value for their investment.
                     </Typography>
                   </CardContent>
                 </Card>

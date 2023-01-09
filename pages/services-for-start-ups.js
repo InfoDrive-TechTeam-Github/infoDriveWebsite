@@ -38,25 +38,25 @@ export default function ServicesForStartUps() {
             <Grid container spacing={0}>
             <p>
             InfoDrive Solutions is a leading <br/>Technology solution provider and <br/>we are helping many start-ups <br/> and small-medium businesses to <br/> build products from scratch.</p>
-            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
-                  <List>
+                <List>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
                         <ListItemIcon>
                           <FacebookIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="/">
                         <ListItemIcon>
                           <TwitterIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
                         <ListItemIcon>
                           <InstagramIcon />
                         </ListItemIcon>

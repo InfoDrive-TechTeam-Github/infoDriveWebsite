@@ -749,16 +749,59 @@ img {
   font-size: 16px;
   font-weight: 400;
   font-family: Poppins;
-
 }
 
 .logoMobile{
   display:none !important;
 }
+.connectUs{
+  text-align: center;
+  background: url('images/pexels-cottonbro-studio-5473298.jpg');
+  background-size: cover;
+  position: relative;
+}
+.backDrop{
+  position: relative;
+}
+.backDrop::before{
+  position: absolute;
+  content:"";
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width: 100%;
+  background:rgba(0,0,0,0.5);
+  z-index: 9;
+}
+.backDrop *{
+  position: relative;
+  z-index: 10;
+}
 /* Responsive */
 @media only screen and (max-width: 600px) and (min-width: 320px)  {
   .sliderBox .readmore {
     font-size: 16px;
+}
+.contactUsArea .locationContent{
+  height: initial;
+}
+.contactUsArea .locationContent .MuiGrid-grid-xs-8{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.contactUsArea .locationContent .MuiGrid-grid-xs-8 .MuiTextField-root, .contactUsArea .locationContent .MuiGrid-grid-xs-8 .MuiFormControl-fullWidth{
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+}
+.locationContent .MuiBox-root div{
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
 }
   .aboutUsBox{
     height: initial;

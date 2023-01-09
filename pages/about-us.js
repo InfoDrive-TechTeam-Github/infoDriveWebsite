@@ -43,33 +43,33 @@ export default function About() {
               We believe technology brings us <br />
               together and makes our lives better.
             </p>
-            <Button href="/contact-us" className='readmore' variant='text'>
+            <Button href="/contact-us" className='readmore white' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
-              <List>
-                <ListItem>
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <FacebookIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <TwitterIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <InstagramIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-              </List>
+            <List>
+                    <ListItem>
+                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
+                        <ListItemIcon>
+                          <FacebookIcon />
+                        </ListItemIcon>
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton component="a" href="/">
+                        <ListItemIcon>
+                          <TwitterIcon />
+                        </ListItemIcon>
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
+                        <ListItemIcon>
+                          <InstagramIcon />
+                        </ListItemIcon>
+                      </ListItemButton>
+                    </ListItem>
+                  </List>
             </nav>
           </Grid>
         </Box>

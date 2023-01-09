@@ -174,7 +174,7 @@ export default function Index() {
                     <Typography variant="body2" color="text.secondary">
                       Delivering our very best in all we do, holding ourselves accountable for results with a commitment to integrity, fairness and responsibility.
                     </Typography>
-                    <Button className='readmore' variant="text">LEARN MORE ABOUT US <ArrowRightAltIcon/></Button>
+                    <Button className='readmore white' variant="text">LEARN MORE ABOUT US <ArrowRightAltIcon/></Button>
                   </CardContent>
                 </Card>
               </Grid>

@@ -40,25 +40,25 @@ export default function Slider() {
             <p>
         Technology service <br/> company helping transform <br/> business through digital <br/> technology
       </p>
-            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                   <List>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
                         <ListItemIcon>
                           <FacebookIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="/">
                         <ListItemIcon>
                           <TwitterIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
                         <ListItemIcon>
                           <InstagramIcon />
                         </ListItemIcon>
