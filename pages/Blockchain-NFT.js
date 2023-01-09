@@ -22,6 +22,9 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+
 export default function blockchain() {
   
     return (
@@ -44,9 +47,9 @@ export default function blockchain() {
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component="a" href="/">
+                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
                         <ListItemIcon>
-                          <TwitterIcon />
+                          <LinkedInIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>

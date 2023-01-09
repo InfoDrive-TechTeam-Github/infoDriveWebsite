@@ -26,7 +26,6 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
 export default function About() {
   return (
     <div>
@@ -56,9 +55,9 @@ export default function About() {
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component="a" href="/">
+                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
                         <ListItemIcon>
-                          <TwitterIcon />
+                          <LinkedInIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
@@ -752,30 +751,29 @@ export default function About() {
       </section>
 
       <section className={`sectionBox ourValueBox ourBeliefBox`}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0}>
-            <Grid item xs={5} style={{ padding: '30px' }}>
-              <Typography gutterBottom variant='h5' component='div'>
-                Get in touch with us today for a <br /> non-obligation
-                discussion and start transforming your start-up ideas into
-                real-life products.{' '}
-              </Typography>
-              <br />
-              <br />
-              <Button className='readmore pl0' variant='text'>
-                CONTACT US <ArrowRightAltIcon />
-              </Button>
+           <Box sx={{ flexGrow: 1 }} >
+            <Grid container spacing={0}>
+            <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
+                  <Typography gutterBottom variant="h5" component="div">
+                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  
+                  <br/>
+                  <br/>
+                  InfoDrive Solutions is 24X7 <br/> Available To Help You
+                  </Typography>
+                  <br/>
+                  <br/>
+                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  </Grid>
+                <Grid item xs={7}>
+                    <Card>
+                      <img
+                        alt="Remy Sharp"
+                        src="images/pexels-prakhar-bansal-732183.jpg"
+                      />
+                    </Card>
+                </Grid>
             </Grid>
-            <Grid item xs={7}>
-              <Card>
-                <img
-                  alt='Remy Sharp'
-                  src='images/pexels-prakhar-bansal-732183.jpg'
-                />
-              </Card>
-            </Grid>
-          </Grid>
-        </Box>
+          </Box>
       </section>
 
       <Footer />

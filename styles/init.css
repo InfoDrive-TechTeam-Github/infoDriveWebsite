@@ -251,4 +251,7 @@ section.sectionBox.IosAppBox2 {
 .mb30{
   margin-bottom:30px;
 }
+.mt0{
+  margin-top: 0 !important;
+}
   /* End css */

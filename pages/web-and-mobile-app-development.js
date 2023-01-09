@@ -33,6 +33,7 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
+
 export default function WebMobileApp() {
   
   return (
@@ -55,9 +56,9 @@ export default function WebMobileApp() {
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component="a" href="/">
+                      <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
                         <ListItemIcon>
-                          <TwitterIcon />
+                          <LinkedInIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>

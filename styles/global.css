@@ -778,11 +778,14 @@ img {
   position: relative;
   z-index: 10;
 }
+
 .introSectionBox .MuiTypography-h5{
   width: 100%;
 }
 .leadForm{
-  background: #38373b;
+  /* background: #38373b; */
+  background: url('images/pexels-timo-volz-1842332.jpg');
+  background-size: cover;
 }
 .leadForm .leadFormBox{
   background: #000;
@@ -829,8 +832,18 @@ img {
 .leadForm .locationContent .MuiCardContent-root {
   padding-top: 15px;
 }
+.connectUsHome{
+  margin-left: 97px;
+  margin-right: 97px;
+}
+.aboutUsBoxHome{
+  height: 550px
+}
 /* Responsive */
 @media only screen and (max-width: 600px) and (min-width: 320px)  {
+  .leadForm .leadFormBox {
+    padding: 0px 15px;
+}
   .sliderBox .readmore {
     font-size: 16px;
 }

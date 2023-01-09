@@ -33,6 +33,7 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
+
 export default function FullstackDevelopment() {
   return (
     <div>
@@ -62,9 +63,9 @@ export default function FullstackDevelopment() {
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component="a" href="/">
+                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
                         <ListItemIcon>
-                          <TwitterIcon />
+                          <LinkedInIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
@@ -287,33 +288,29 @@ export default function FullstackDevelopment() {
       </section>
 
       <section className={`sectionBox ourValueBox ourBeliefBox`}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0}>
-            <Grid item xs={5} style={{ padding: '30px' }}>
-              <Typography gutterBottom variant='h5' component='div'>
-                Get in touch with us today for a <br /> non-obligation
-                discussion and start transforming your start-up ideas into
-                real-life products.{' '}
-              </Typography>
-              <br />
-              <br />
-              {/* <Button className='readmore pl0' variant='text'>
-               
-              </Button> */}
-              <ListItemButton href="/contact-us.html" className="pl0 readmore white" component="a" sx={{ textAlign: 'center' }}>
-              CONTACT US <ArrowRightAltIcon />
-            </ListItemButton>
+           <Box sx={{ flexGrow: 1 }} >
+            <Grid container spacing={0}>
+            <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
+                  <Typography gutterBottom variant="h5" component="div">
+                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  
+                  <br/>
+                  <br/>
+                  InfoDrive Solutions is 24X7 <br/> Available To Help You
+                  </Typography>
+                  <br/>
+                  <br/>
+                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  </Grid>
+                <Grid item xs={7}>
+                    <Card>
+                      <img
+                        alt="Remy Sharp"
+                        src="images/pexels-prakhar-bansal-732183.jpg"
+                      />
+                    </Card>
+                </Grid>
             </Grid>
-            <Grid item xs={7}>
-              <Card>
-                <img
-                  alt='Remy Sharp'
-                  src='images/pexels-prakhar-bansal-732183.jpg'
-                />
-              </Card>
-            </Grid>
-          </Grid>
-        </Box>
+          </Box>
       </section>
       <section className={`sectionBox locationBox contactUsArea leadForm`}>
           <Box sx={{ flexGrow: 1 }} className="locationContent">

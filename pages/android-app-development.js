@@ -33,6 +33,7 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
+
 export default function AndroidAppDevelopment() {
   
   return (
@@ -55,9 +56,9 @@ export default function AndroidAppDevelopment() {
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component="a" href="/">
+                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
                         <ListItemIcon>
-                          <TwitterIcon />
+                          <LinkedInIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
@@ -292,30 +293,13 @@ export default function AndroidAppDevelopment() {
           </Box>
       </section>
 
-      <section className={`sectionBox ourValueBox ourBeliefBox`}>
-           <Box sx={{ flexGrow: 1 }} >
-            <Grid container spacing={0}>
-            <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
-                  <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  
-                  <br/>
-                  <br/>
-                  InfoDrive Solutions is 24X7 <br/> Available To Help You
-                  </Typography>
-                  <br/>
-                  <br/>
-                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
-                  </Grid>
-                <Grid item xs={7}>
-                    <Card>
-                      <img
-                        alt="Remy Sharp"
-                        src="images/pexels-prakhar-bansal-732183.jpg"
-                      />
-                    </Card>
-                </Grid>
-            </Grid>
-          </Box>
+      <section className={`sectionBox connectUs backDrop mb0`}>
+            <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
+              Ready to take your business to the next level with a custom web or mobile app?
+            </Typography>
+            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
+              Connect with Our Expert
+            </Button>
       </section>
 
       {/* <section className={`sectionBox connectUs backDrop`}>
@@ -326,7 +310,7 @@ export default function AndroidAppDevelopment() {
               Connect with Our Expert
             </Button>
       </section> */}
-<section className={`sectionBox locationBox contactUsArea leadForm`}>
+<section className={`sectionBox locationBox contactUsArea leadForm mt0`} style={{marginTop:"0px"}}>
           <Box sx={{ flexGrow: 1 }} className="locationContent">
             <Grid container spacing={0}>
                <Grid item xs={6}>

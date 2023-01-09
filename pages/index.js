@@ -168,7 +168,7 @@ export default function Index() {
         </Box>
       </section>
 
-      <section className={`sectionBox aboutUsBox`}>
+      <section className={`sectionBox aboutUsBox aboutUsBoxHome`}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={5}>
@@ -196,7 +196,7 @@ export default function Index() {
         </Box>
       </section>
 
-      <section className={`sectionBox connectUs backDrop mb30`}>
+      <section className={`sectionBox connectUs backDrop connectUsHome mb30`}>
             <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
               Ready to take your business to the next level with a custom web or mobile app?
             </Typography>
@@ -249,54 +249,9 @@ export default function Index() {
         </Box>
       </section>
 
-      <section className={`sectionBox locationBox`}>
-          <Typography gutterBottom variant="h2" className="pb30" component="div">Where we are?</Typography>
-          <Box sx={{ flexGrow: 1 }} className="locationContent">
-            <Grid container spacing={0}>
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                    InfoDrive Solutions Pte Ltd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                    Phone: +65-9238 4299
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                    InfoDrive Solutions Sdn Bhd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                    Phone: +60-1 2327 5811 
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                    InfoDriven Solutions Pvt Ltd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                    Phone: +91-960 61880 81
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            </Grid>
-        </Box>
+      <section className={`sectionBox locationBox mt30`}>
       </section>
-      <section className={`sectionBox locationBox contactUsArea leadForm`}>
+      <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
           <Box sx={{ flexGrow: 1 }} className="locationContent">
             <Grid container spacing={0}>
                <Grid item xs={6}>
