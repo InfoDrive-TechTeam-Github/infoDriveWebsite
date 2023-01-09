@@ -26,7 +26,13 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import Input from '@mui/material/Input';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormControl from '@mui/material/FormControl';
+import TextField from '@mui/material/TextField';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import Stack from '@mui/material/Stack';
 export default function FullstackDevelopment() {
   return (
     <div>
@@ -294,7 +300,7 @@ export default function FullstackDevelopment() {
               {/* <Button className='readmore pl0' variant='text'>
                
               </Button> */}
-              <ListItemButton className="pl0 readmore" component="a" sx={{ textAlign: 'center' }}>
+              <ListItemButton href="/contact-us.html" className="pl0 readmore" component="a" sx={{ textAlign: 'center' }}>
               CONTACT US <ArrowRightAltIcon />
             </ListItemButton>
             </Grid>
@@ -307,6 +313,120 @@ export default function FullstackDevelopment() {
               </Card>
             </Grid>
           </Grid>
+        </Box>
+      </section>
+      <section className={`sectionBox locationBox contactUsArea leadForm`}>
+          <Box sx={{ flexGrow: 1 }} className="locationContent">
+            <Grid container spacing={0}>
+               <Grid item xs={6}>
+                    <Grid item xs={12} className='contactUsB contactUsB1'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Pte Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
+                            Phone: +65-9238 4299
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12}  className='contactUsB contactUsB2'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Sdn Bhd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
+                            Phone: +60-1 2327 5811 
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+
+                    <Grid item xs={12}  className='contactUsB contactUsB3'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDriven Solutions Pvt Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
+                            Phone: +91-960 61880 81
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+               </Grid>
+               <Grid item xs="6"  className="leadFormBox">
+                <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
+               
+                <Typography gutterBottom variant="h2" className='white' component="div">
+                Request a call back
+                            </Typography>
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Full Name"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Email Address"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Contact Number"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Message"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <Stack spacing={2} direction="row">
+                            <Button className="bgRed" variant="contained">Send Message</Button>
+                        </Stack>
+                    </Box>
+               </Grid>
+            </Grid>
         </Box>
       </section>
       <Footer />

@@ -233,7 +233,7 @@ img {
 
 }
 .sectionBox .MuiTypography-h3{
-  font-size: 16px;
+  font-size: 18px;
   font-family: Poppins;
   font-weight: 600;
   color: #dd3952;
@@ -777,6 +777,57 @@ img {
 .backDrop *{
   position: relative;
   z-index: 10;
+}
+.introSectionBox .MuiTypography-h5{
+  width: 100%;
+}
+.leadForm{
+  background: #38373b;
+}
+.leadForm .leadFormBox{
+  background: #000;
+}
+.leadForm .leadFormBox .MuiTextField-root label{
+  color:#fff;
+}
+.leadForm .leadFormBox .MuiTextField-root .MuiInput-root{
+  margin-top: 30px;
+    background: #fff;
+}
+.leadForm .leadFormBox #standard-message{
+  color:#fff;
+}
+.leadForm .leadFormBox #standard-message::placeholder {
+  color: #fff;
+}
+.leadForm .MuiGrid-grid-xs-12{
+  height: 241.6px;
+}
+.leadForm .contactUsB1, .leadForm .contactUsB2, .leadForm .contactUsB3{
+  background: #000;
+  margin-bottom: 0px;
+}
+.leadForm .contactUsB1:hover, .leadForm .contactUsB2:hover, .leadForm .contactUsB3:hover{
+  background: #000;
+}
+.leadForm .locationContent .MuiPaper-root{
+    top: 20%;
+}
+.leadForm .leadFormBox #standard-message:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #fff;
+}
+
+.leadForm .leadFormBox #standard-message::-ms-input-placeholder { /* Microsoft Edge */
+ color: #fff;
+}
+.leadForm .leadFormBox .MuiFormControl-fullWidth{
+  margin-top: 30px;
+}
+.leadForm .locationContent{
+  overflow: hidden;
+}
+.leadForm .locationContent .MuiCardContent-root {
+  padding-top: 15px;
 }
 /* Responsive */
 @media only screen and (max-width: 600px) and (min-width: 320px)  {

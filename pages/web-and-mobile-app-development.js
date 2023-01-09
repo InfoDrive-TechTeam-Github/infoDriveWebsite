@@ -26,7 +26,13 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import Input from '@mui/material/Input';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormControl from '@mui/material/FormControl';
+import TextField from '@mui/material/TextField';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import Stack from '@mui/material/Stack';
 export default function WebMobileApp() {
   
   return (
@@ -69,13 +75,14 @@ export default function WebMobileApp() {
       
     </div>
 
-    <section className={`sectionBox`}>
+    <section className={`sectionBox introSectionBox`}>
             <Typography gutterBottom variant="h3" component="div">
               INTRO
             </Typography>
-            <Typography gutterBottom variant="h2" component="div">
+            <Typography gutterBottom variant="h5" component="div">
              We use a wide range of full-stack technologies connecting a variety of people, businesses, and industries which are responsive for different platforms and devices.
              InfoDrive Solutions is a leading web and mobile app development company with a strong presence in Singapore, Malaysia, and India. we specialize in creating high-quality and user-friendly web and mobile applications that help businesses of all sizes achieve their goals. Our team of experienced developers has a track record of delivering successful projects on time and within budget. <br/>
+            <br/>
             We understand that every business is unique, which is why we offer custom web and mobile app development solutions to fit your specific needs. Whether you are looking to create a new application from scratch or upgrade an existing one, we have the skills and expertise to bring your vision to life.
             Our web and mobile app development process is designed to be efficient and transparent. We begin by understanding your business objectives and gathering requirements. From there, we move on to the design and development phase, where we create prototypes and conduct user testing to ensure that the final product meets your expectations.
             We use the latest technologies and frameworks to build web and mobile applications that are fast, secure, and scalable. Some of the technologies we work with include:
@@ -188,6 +195,120 @@ export default function WebMobileApp() {
                 </Card>
               </Grid>
 
+            </Grid>
+        </Box>
+      </section>
+      <section className={`sectionBox locationBox contactUsArea leadForm`}>
+          <Box sx={{ flexGrow: 1 }} className="locationContent">
+            <Grid container spacing={0}>
+               <Grid item xs={6}>
+                    <Grid item xs={12} className='contactUsB contactUsB1'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Pte Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
+                            Phone: +65-9238 4299
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12}  className='contactUsB contactUsB2'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Sdn Bhd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
+                            Phone: +60-1 2327 5811 
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+
+                    <Grid item xs={12}  className='contactUsB contactUsB3'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDriven Solutions Pvt Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
+                            Phone: +91-960 61880 81
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+               </Grid>
+               <Grid item xs="6"  className="leadFormBox">
+                <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
+               
+                <Typography gutterBottom variant="h2" className='white' component="div">
+                Request a call back
+                            </Typography>
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Full Name"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Email Address"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Contact Number"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Message"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <Stack spacing={2} direction="row">
+                            <Button className="bgRed" variant="contained">Send Message</Button>
+                        </Stack>
+                    </Box>
+               </Grid>
             </Grid>
         </Box>
       </section>

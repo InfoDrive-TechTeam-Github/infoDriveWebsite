@@ -149,7 +149,7 @@ or fill the form and we will get back to you</Typography>
                         </FormControl>
 
                         <Stack spacing={2} direction="row">
-                            <Button style={{background:"#000"}} variant="contained">Send Message</Button>
+                            <Button style={{background:"#000"}} className="bgRed white" variant="contained">Send Message</Button>
                         </Stack>
                     </Box>
                </Grid>
