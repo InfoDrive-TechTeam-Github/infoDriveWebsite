@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Head from 'next/head'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import utilStyles from '../styles/utils.module.css'
