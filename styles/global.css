@@ -5,11 +5,18 @@
   src: url("fonts/GeneralSans-Regular.otf");
 }
 
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/Poppins/Poppins-Regular.ttf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: GeneralSans;
+  font-family: Poppins;
   line-height: 1.6;
   font-size: 18px;
 }
@@ -21,6 +28,7 @@ body {
 a {
   color: #0070f3;
   text-decoration: none;
+  font-family: Poppins;
 }
 
 a:hover {
@@ -48,14 +56,39 @@ img {
   text-transform: normal;
 }
 .navbarMenu a span{
-  font-weight: 300;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #51668a;
 }
 .navbarMenu nav button{
   color:#000;
   text-transform: capitalize;
+  font-family: Poppins;
+
 }
 .navbarMenu .MuiListItemButton-root{
-  font-weight: 400;
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #51668a;
+}
+.subMenuOptions .MuiListItemText-primary{
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #51668a;
+}
+.subMenuOptions .customIcon{
+  font-weight: 500;
+  font-family: Poppins;
+  font-size: 14px;
+  color: #51668a;
+}
+.subMenuOptions ul li a{
+  height: 35px;
+}
+.navbarMenu ul li div.MuiListItemButton-gutters{
   height: 35px;
 }
 .homePage{
@@ -68,25 +101,30 @@ img {
   padding: 97px 97px;
 }
 .sectionBox .MuiTypography-h3{
-  font-size: 22px;
-  color: #070D0C;
+  font-size: 16px;
+  color: #E13D4B;
+  font-family: Poppins;
+  font-weight: 700;
 }
 .sectionBox .MuiTypography-h2{
-  font-size: 35px;
+  font-size: 24px;
+  font-family: Poppins;
   width: 760px;
-  font-weight: 600;
+  font-weight: 700;
   padding-top: 30px;
-  line-height: 47px;
-  color: #070D0C;
+  line-height: 33px;
+  color: #0b2653;
 }
 .sectionBox .MuiTypography-h5{
-  font-size: 22px;
-  line-height: 36px;
   width: 668px;
-  font-weight: 300;
-  color: #070D0C;
   font-style: normal;
-  padding-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #4E4E50;
+    padding-top: 10px;
+  font-family: Poppins;
 }
 .sectionBox .customButton{
   background: #ccc;
@@ -95,9 +133,13 @@ img {
   border-radius: 30px;
   color: #fff;
   margin-top: 60px;
+  font-family: Poppins;
+
 }
 .sectionBox p{
   font-size: 14px;
+  font-family: Poppins;
+
 }
 /* .cardBox{
   padding-left: 30px !important;
@@ -126,6 +168,7 @@ img {
   left: 0;
 }
 .sliderContent p{
+  font-family: Poppins;
   color: #fff;
   font-size: 56px;
   width: 100%;
@@ -139,15 +182,26 @@ img {
     z-index: 10;
     width: 100%;
     height: 100%;
+  font-family: Poppins;
+
+}
+.readmore{
+  font-size: 16px;
+  color: #fff;
+  font-family: Poppins;
+
+}
+.sliderBox .readmore{
+  font-size: 20px;
+  padding-left: 0;
 }
 .sliderContent button.readmore{
   font-size: 20px;
   color: #fff;
+  font-family: Poppins;
+
 }
-.readmore{
-  font-size: 20px;
-  color: #fff;
-}
+
 .sliderContent .socical-network{
   position: absolute;
   right: 0;
@@ -170,9 +224,20 @@ img {
     color: #fff;
     padding-left: 97px;
     padding-right: 97px;
+  font-family: Poppins;
+
 }
 .whyUsBox .MuiTypography-h2{
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+  font-family: Poppins;
+
+}
+.sectionBox .MuiTypography-h3{
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: #dd3952;
+  position: relative;
 }
 .whyUsBox .MuiCard-root{
   border: none;
@@ -180,10 +245,15 @@ img {
 }
 .whyUsBox .MuiCardContent-root{
   font-size: 18px;
+  padding:0px 10px 0px 0px;
+  font-family: Poppins;
+
 }
 .whyUsBox .MuiTypography-h7{
   font-weight: 600;
     padding: 15px 0px;
+  font-family: Poppins;
+
 }
 .whyUsBox .MuiGrid-item{
   margin-bottom: 50px;
@@ -206,18 +276,27 @@ img {
   color: #fff;
   padding-top: 50px;
   margin-bottom: 30px;
+  font-family: Poppins;
+
 }
 .aboutUsBox p{
   font-size: 27px;
   color: #fff;
   margin-bottom: 50px;
+  font-family: Poppins;
+
 }
 .aboutUsBox2 .MuiTypography-h3{
   padding-top: 0px;
+  font-family: Poppins;
+
 }
 .aboutUsBox2 .MuiTypography-h2{
-  color:#fff;
+  /* color:#fff; */
   font-size: 55px;
+  color: #dd3952;
+  font-family: Poppins;
+
 }
 .locationBox{
   margin-top: 80px;
@@ -257,11 +336,16 @@ img {
 }
 .locationContent .MuiTypography-h7{
   font-weight: 600;
+  color: #f8932b;
+  font-family: Poppins;
+
 }
 .locationContent p{
   font-size: 25px;
     color: #fff;
     font-weight: 300;
+  font-family: Poppins;
+
 }
 .aboutUsBox3 .MuiPaper-root{
   background: none;
@@ -272,6 +356,8 @@ img {
   padding-top: 0;
   font-weight: 300;
   line-height: 32px;
+  font-family: Poppins;
+
 }
 .aboutUsBox3 .MuiPaper-root{
   box-shadow: none;
@@ -301,11 +387,15 @@ img {
 .ourMissionBox .ourMissionContent .MuiPaper-root{
   background: #fff;
   color: #070D0C;
+  font-family: Poppins;
+
 }
 .ourMissionBox .ourMissionContent .MuiTypography-h3, .ourMissionBox .ourMissionContent p{
   color: #070D0C;
   margin-bottom: 15px;
   padding-top: 25px;
+  font-family: Poppins;
+
 }
 .ourMissionContent .MuiGrid-item{
   margin-top: 60px;
@@ -314,12 +404,14 @@ img {
 
 .ourValueBox{
     background: #000;
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
 }
 
 .ourValueBox .MuiTypography-h3, .ourValueBox .MuiTypography-h2, .ourValueBox .MuiTypography-h5{
   color: #fff;
   width: 100%;
+  font-family: Poppins;
+
 }
 
 .ourBeliefBox{
@@ -358,14 +450,20 @@ img {
     padding-left: 97px;
     padding-right: 97px;
     position: relative;
+  font-family: Poppins;
+
 }
-.companiesBox .MuiTypography-h3, .companiesBox .MuiTypography-h5{
+.companiesBox .MuiTypography-h3, .companiesBox .MuiTypography-h5, .companiesBox .MuiTypography-h2{
   color: #fff;
+  font-family: Poppins;
+  width: 100%;
 }
 
 .weDelivery .MuiTypography-h3{
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
+  font-family: Poppins;
+
 }
 .weDelivery .socical-network li{
   float: left;
@@ -423,6 +521,8 @@ img {
 .ourCoreTeam .MuiTypography-h4{
   font-size: 20px;
   font-weight: 300;
+  font-family: Poppins;
+
 }
 .ourCoreTeam .MuiGrid-grid-xs-2{
   width: 20%;
@@ -430,10 +530,22 @@ img {
   flex-basis: 20%;
   -webkit-flex-basis: 20%;
 }
+.ourCoreTeam .rightOurCoreTeam .MuiTypography-h3{
+  margin-top: 15px;
+}
+.ourCoreTeam .rightOurCoreTeam span{
+  padding-right: 10px;
+}
+.ourCoreTeam .rightOurCoreTeam svg{
+  position: absolute;
+  top: -5px;
+}
 .contactUs{
   text-align: center;
     width: 850px;
     margin: 0 auto;
+  font-family: Poppins;
+
 }
 .contactUsArea .MuiGrid-item{
   height: 100%;
@@ -441,6 +553,8 @@ img {
 .contactUsArea .locationContent{
   height: 725px;
   background: none;
+  font-family: Poppins;
+
 }
 .contactUsArea .locationContent .MuiCardContent-root{
   padding-top: 30px;
@@ -462,6 +576,8 @@ img {
 }
 .contactUsArea .locationContent p{
   color: #fff;
+  font-family: Poppins;
+
 }
 .contactUsArea .contactUsB{
   position: relative;
@@ -515,14 +631,20 @@ img {
   line-height: 35px;
   font-weight: 600;
   width: 100%;
+  font-family: Poppins;
+
 }
 .androidDevelopmentLeft .MuiTypography-h3{
   color:#fff;
   width: 100%;
+  font-family: Poppins;
+
 }
 .androidDevelopmentLeft .MuiTypography-h5{
   color:#fff;
   width: 100%;
+  font-family: Poppins;
+
 }
 .androidDevelopmentRight{
   position: absolute;
@@ -536,15 +658,21 @@ img {
 }
 .serviceOffer .MuiTypography-h2{
   color:#fff;
+  font-family: Poppins;
+
 }
 .serviceOffer .MuiCard-root{
  background: transparent;
 }
 .serviceOffer .MuiTypography-h3 {
   color: #fff;
+  font-family: Poppins;
+
 }
 .serviceOffer p{
   color:#fff;
+  font-family: Poppins;
+
 }
 .fullstackGame{
   text-align: center;
@@ -558,6 +686,8 @@ img {
   color:#fff;
   z-index: 10;
   position: relative;
+  font-family: Poppins;
+
 }
 .fullstackGame{
   background: url('images/Rectangle2.png');
@@ -583,6 +713,8 @@ img {
 }
 .fullstackGame .MuiTypography-h3{
   color:#fff;
+  font-family: Poppins;
+
 }
 .footerSection{
   background: #000;
@@ -593,13 +725,18 @@ img {
 .footerNavbar a{
   font-size: 16px;
   color: #000;
+  font-family: Poppins;
+
 }
 .footerSection img{
   width: 120px;
 }
 .footerSection .MuiTypography-h3{
-  color: #fff;
+  /* color: #fff; */
   font-weight: 400;
+  color: #dd3952;
+  font-family: Poppins;
+
 }
 .footerSection li{
   padding: 0;
@@ -611,10 +748,180 @@ img {
 .footerSection li a span{
   font-size: 16px;
   font-weight: 400;
+  font-family: Poppins;
 }
 
+.logoMobile{
+  display:none !important;
+}
+.connectUs{
+  text-align: center;
+  background: url('images/pexels-cottonbro-studio-5473298.jpg');
+  background-size: cover;
+  position: relative;
+}
+.backDrop{
+  position: relative;
+}
+.backDrop::before{
+  position: absolute;
+  content:"";
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width: 100%;
+  background:rgba(0,0,0,0.5);
+  z-index: 9;
+}
+.backDrop *{
+  position: relative;
+  z-index: 10;
+}
+
+.introSectionBox .MuiTypography-h5{
+  width: 100%;
+}
+.leadForm{
+  /* background: #38373b; */
+  background: url('images/pexels-timo-volz-1842332.jpg');
+  background-size: cover;
+}
+.leadForm .leadFormBox{
+  background: #000;
+}
+.leadForm .leadFormBox .MuiTextField-root label{
+  color:#fff;
+}
+.leadForm .leadFormBox .MuiTextField-root .MuiInput-root{
+  margin-top: 30px;
+    background: #fff;
+}
+.leadForm .leadFormBox #standard-message{
+  color:#fff;
+}
+.leadForm .leadFormBox #standard-message::placeholder {
+  color: #fff;
+}
+.leadForm .MuiGrid-grid-xs-12{
+  height: 241.6px;
+}
+.leadForm .contactUsB1, .leadForm .contactUsB2, .leadForm .contactUsB3{
+  background: #000;
+  margin-bottom: 0px;
+}
+.leadForm .contactUsB1:hover, .leadForm .contactUsB2:hover, .leadForm .contactUsB3:hover{
+  background: #000;
+}
+.leadForm .locationContent .MuiPaper-root{
+    top: 20%;
+}
+.leadForm .leadFormBox #standard-message:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #fff;
+}
+
+.leadForm .leadFormBox #standard-message::-ms-input-placeholder { /* Microsoft Edge */
+ color: #fff;
+}
+.leadForm .leadFormBox .MuiFormControl-fullWidth{
+  margin-top: 30px;
+}
+.leadForm .locationContent{
+  overflow: hidden;
+}
+.leadForm .locationContent .MuiCardContent-root {
+  padding-top: 15px;
+}
+.connectUsHome{
+  margin-left: 97px;
+  margin-right: 97px;
+}
+.aboutUsBoxHome{
+  height: 550px
+}
+.navCarouselBox{
+  margin-top: 124px;
+}
+.navCarouselBox .navCarouselNext{
+  width: 35px;
+  right: 0;
+  height: 35px;
+  max-width: 35px;
+  color: red;
+  border: 1px solid red;
+
+}
+.navCarouselBox .navCarouselNext:hover{
+  background: red;
+  color: #fff;
+}
+.navCarouselBox .navCarouselPrevious{
+  width: 35px;
+  left: 0;
+  background: #fff;
+  height: 35px;
+  max-width: 35px;
+}
+.testmonial .MuiPaper-elevation{
+  width: 100%;
+  max-width: 95%;
+  padding: 15px;
+  box-shadow: none;
+    border: 1px solid #ccc;
+    margin-left: 15px;
+}
+.testmonial .MuiPaper-elevation{
+  position: relative;
+}
+.testmonialStar{
+  position: absolute;
+    top: 30px;
+    right: 15px;
+    color: #ffc107;
+}
 /* Responsive */
 @media only screen and (max-width: 600px) and (min-width: 320px)  {
+  .leadForm .leadFormBox {
+    padding: 0px 15px;
+}
+  .sliderBox .readmore {
+    font-size: 16px;
+}
+.contactUsArea .locationContent{
+  height: initial;
+}
+.contactUsArea .locationContent .MuiGrid-grid-xs-8{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.contactUsArea .locationContent .MuiGrid-grid-xs-8 .MuiTextField-root, .contactUsArea .locationContent .MuiGrid-grid-xs-8 .MuiFormControl-fullWidth{
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+}
+.locationContent .MuiBox-root div{
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+}
+  .aboutUsBox{
+    height: initial;
+  }
+  .locationBox {
+    margin-top: 2px;
+}
+.contactUs{
+  width: initial;
+}
+.locationBox .MuiTypography-body2{
+  line-height: 22px;
+}
+  .logoMobile{
+    display:block !important;
+  }
   .sectionBox {
     padding: 15px 15px;
     margin-left: 0;
@@ -622,13 +929,13 @@ img {
   }
   .sectionBox .MuiTypography-h2{
     width: initial;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 28px;
     padding-top: 15px;
   }
   .sectionBox .MuiTypography-h5 {
     width: initial;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     padding-top: 15px;
 }
@@ -656,16 +963,20 @@ img {
     font-size: 16px;
     padding-left: 0;
   }
+
   .sliderContent {
     top: 10%;
   }
   .sectionBox .MuiTypography-h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
   .solutionBox p {
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 0;
     padding-right: 0;
+}
+.locationContent .MuiTypography-h7{
+  font-size: 18px;
 }
 .whyUsBox .MuiTypography-h2 {
   margin-bottom: 30px;

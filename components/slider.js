@@ -30,7 +30,6 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
 export default function Slider() {
   return (
     <div className="sliderBox">
@@ -40,25 +39,25 @@ export default function Slider() {
             <p>
         Technology service <br/> company helping transform <br/> business through digital <br/> technology
       </p>
-            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                   <List>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
                         <ListItemIcon>
                           <FacebookIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
                         <ListItemIcon>
-                          <TwitterIcon />
+                          <LinkedInIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
                         <ListItemIcon>
                           <InstagramIcon />
                         </ListItemIcon>

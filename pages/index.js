@@ -22,7 +22,18 @@ import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import Link from '@mui/material/Link';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import Container from '@mui/material/Container';
-
+import Input from '@mui/material/Input';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormControl from '@mui/material/FormControl';
+import TextField from '@mui/material/TextField';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import Stack from '@mui/material/Stack';
+import Carousel from 'react-material-ui-carousel'
+import { Paper } from '@mui/material'
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import StarIcon from '@mui/icons-material/Star';
 export default function Index() {
   const [value, setValue] = React.useState('1');
 
@@ -30,6 +41,16 @@ export default function Index() {
     setValue(newValue);
   };
   
+  var items = [
+    {
+        name: "Random Name #1",
+        description: "Probably the most random thing you have ever seen!"
+    },
+    {
+        name: "Random Name #2",
+        description: "Hello World!"
+    }
+]
   return (
     <div >
       <Header/>
@@ -50,7 +71,7 @@ export default function Index() {
           </p>
       </section>
       <section className={`sectionBox whyUsBox`}>
-      <Typography gutterBottom variant="h2" component="div">Why Infodrive <br/>solutions?</Typography>
+      <Typography gutterBottom variant="h2" component="div">Why Infodrive solutions?</Typography>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={4}>
@@ -162,7 +183,7 @@ export default function Index() {
         </Box>
       </section>
 
-      <section className={`sectionBox aboutUsBox`}>
+      <section className={`sectionBox aboutUsBox aboutUsBoxHome`}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={5}>
@@ -174,7 +195,7 @@ export default function Index() {
                     <Typography variant="body2" color="text.secondary">
                       Delivering our very best in all we do, holding ourselves accountable for results with a commitment to integrity, fairness and responsibility.
                     </Typography>
-                    <Button className='readmore' variant="text">LEARN MORE ABOUT US <ArrowRightAltIcon/></Button>
+                    <Button className='readmore white' variant="text">LEARN MORE ABOUT US <ArrowRightAltIcon/></Button>
                   </CardContent>
                 </Card>
               </Grid>
@@ -189,6 +210,17 @@ export default function Index() {
             </Grid>
         </Box>
       </section>
+
+      <section className={`sectionBox connectUs backDrop connectUsHome mb30`}>
+            <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
+              Ready to take your business to the next level with a custom web or mobile app?
+            </Typography>
+            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
+              Connect with Our Expert
+            </Button>
+      </section>
+
+      <br/>
 
       <section className={`sectionBox aboutUsBox aboutUsBox2`}>
           <Box sx={{ flexGrow: 1 }}>
@@ -208,7 +240,7 @@ export default function Index() {
                       Delivering our very best in all we do, holding ourselves accountable for results with a commitment to integrity, fairness and responsibility.
                     </Typography>
                     <Typography gutterBottom variant="h2" component="div">
-                      100+
+                      123
                     </Typography>
                     <Typography gutterBottom variant="h3" component="div">
                       SUCCESSFUL PROJECTS
@@ -231,51 +263,197 @@ export default function Index() {
             </Grid>
         </Box>
       </section>
+      <br/>
+      <br/>
+      <section className={`sectionBox locationBox mt30 testmonial`}>
+      <Typography gutterBottom variant="h2" component="div">
+      What others say about us?
+                    </Typography>
+                    <br/>
 
-      <section className={`sectionBox locationBox`}>
-          <Typography gutterBottom variant="h2" component="div">Where we are?</Typography>
+<Carousel
+    NavButton={({onClick, className, style, next, prev}) => {
+        // Other logic
+
+        return (
+            <div className='navCarouselBox'>
+              <Button onClick={onClick} className={'navCarouselNext '}>
+                {next && <KeyboardArrowRightIcon/>}
+                {prev && <KeyboardArrowLeftIcon/>}
+              </Button>
+            </div>
+        )
+    }}
+>
+            {
+                items.map( (item, i) => 
+                <Box sx={{ flexGrow: 1 }}>
+                  <Grid container spacing={0}>
+                    <Grid item xs={6}>
+                      <Card sx={{ maxWidth: 345 }}>
+                        <Avatar
+                          alt="Remy Sharp"
+                          src="images/c1a0b62fe5e42bf0f9af1ac1d77a35aqb.png"
+                          sx={{ width: 65, height: 65, marginLeft: 2 }}
+                        />
+                        <div className="testmonialStar">
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                        </div>
+                        <CardContent>
+                        <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
+                            Knowledgable team
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                            We have the professional team with hands-on experience in their respective fields, which is the icing on the cake. We have adequate and sources to accomplish and acquire the superior technology platform required to run the business.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Card sx={{ maxWidth: 345 }}>
+                        <Avatar
+                          alt="Remy Sharp"
+                          src="images/c1a0b62fe5e42bf0f9af1ac1d77a35abq.png"
+                          sx={{ width: 65, height: 65, marginLeft: 2 }}
+                        />
+                        <div className="testmonialStar">
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                        </div>
+                        <CardContent>
+                        <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
+                            Love for work
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                            We have a passionate team striving to make a space where access to knowledge and technology is for everyone equally. To manage the quality level and give the best performance, we regulate our services according to our clients’ expectations.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                  </Grid>
+              </Box>
+                )
+            }
+</Carousel>
+      </section>
+      <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
           <Box sx={{ flexGrow: 1 }} className="locationContent">
             <Grid container spacing={0}>
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                    InfoDrive Solutions Pte Ltd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                    Phone: +65-9238 4299
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                    InfoDrive Solutions Sdn Bhd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                    Phone: +60-1 2327 5811 
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
+               <Grid item xs={6}>
+                    <Grid item xs={12} className='contactUsB contactUsB1'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Pte Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
+                            Phone: +65-9238 4299
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12}  className='contactUsB contactUsB2'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Sdn Bhd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
+                            Phone: +60-1 2327 5811 
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
 
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                    InfoDriven Solutions Pvt Ltd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                    Phone: +91-960 61880 81
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
+                    <Grid item xs={12}  className='contactUsB contactUsB3'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDriven Solutions Pvt Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
+                            Phone: +91-960 61880 81
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+               </Grid>
+               <Grid item xs="6"  className="leadFormBox">
+                <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
+               
+                <Typography gutterBottom variant="h2" className='white' component="div">
+                Request a call back
+                            </Typography>
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Full Name"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Email Address"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Contact Number"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Message"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <Stack spacing={2} direction="row">
+                            <Button className="bgRed" variant="contained">Send Message</Button>
+                        </Stack>
+                    </Box>
+               </Grid>
             </Grid>
         </Box>
       </section>

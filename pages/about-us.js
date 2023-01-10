@@ -26,7 +26,6 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
 export default function About() {
   return (
     <div>
@@ -43,33 +42,33 @@ export default function About() {
               We believe technology brings us <br />
               together and makes our lives better.
             </p>
-            <Button href="/contact-us" className='readmore' variant='text'>
+            <Button href="/contact-us" className='readmore white' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
-              <List>
-                <ListItem>
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <FacebookIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <TwitterIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <InstagramIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-              </List>
+            <List>
+                    <ListItem>
+                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
+                        <ListItemIcon>
+                          <FacebookIcon />
+                        </ListItemIcon>
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
+                        <ListItemIcon>
+                          <LinkedInIcon />
+                        </ListItemIcon>
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
+                        <ListItemIcon>
+                          <InstagramIcon />
+                        </ListItemIcon>
+                      </ListItemButton>
+                    </ListItem>
+                  </List>
             </nav>
           </Grid>
         </Box>
@@ -136,7 +135,7 @@ export default function About() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant='h3' className="red" component='div'>
                     OUR MISSION
                   </Typography>
                   <Typography variant='body2' color='text.secondary'>
@@ -145,7 +144,7 @@ export default function About() {
                     ensuring right people and technology.
                   </Typography>
 
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant='h3' className="red" component='div'>
                     OUR VISION
                   </Typography>
                   <Typography variant='body2' color='text.secondary'>
@@ -164,7 +163,7 @@ export default function About() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={6}>
-              <Typography gutterBottom variant='h3' component='div'>
+              <Typography gutterBottom variant='h3' className="red" component='div'>
                 OUR VALUES
               </Typography>
               <Typography gutterBottom variant='h2' component='div'>
@@ -197,7 +196,7 @@ export default function About() {
               </Card>
             </Grid>
             <Grid item xs={6} style={{ padding: '30px' }}>
-              <Typography gutterBottom variant='h3' component='div'>
+              <Typography gutterBottom variant='h3' className="red" component='div'>
                 OUR BELIEF
               </Typography>
               <Typography gutterBottom variant='h2' component='div'>
@@ -218,7 +217,7 @@ export default function About() {
 
       <section className={`sectionBox companiesBox`}>
         <div>
-          <Typography gutterBottom variant='h3' component='div'>
+          <Typography gutterBottom variant='h2' className="red" component='div'>
             Companies don't make people, people make companies!
           </Typography>
 
@@ -298,7 +297,7 @@ export default function About() {
 
       <section className={`sectionBox whyUsBox pt0 pb0`}>
         <Typography gutterBottom variant='h2' component='div'>
-          We offer a wide <br />
+          We offer a wide 
           variety of IT services
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
@@ -518,7 +517,7 @@ export default function About() {
           <Grid container spacing={0}>
             <Grid item xs={6} style={{ padding: '30px' }}>
               <Typography
-                className='widthInitial'
+                className='widthInitial red'
                 gutterBottom
                 variant='h2'
                 component='div'
@@ -539,7 +538,7 @@ export default function About() {
                 JOIN OUR TEAM <ArrowRightAltIcon />
               </Button>
             </Grid>
-            <Grid item xs={3} style={{ padding: '30px' }}>
+            <Grid item xs={3} className="rightOurCoreTeam" style={{ padding: '30px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -568,7 +567,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={3} style={{ padding: '30px' }}>
+            <Grid item xs={3} className="rightOurCoreTeam" style={{ padding: '30px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -603,7 +602,7 @@ export default function About() {
       <section className={`sectionBox ourCoreTeam ourCoreTeamOther pt0`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -632,7 +631,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -661,7 +660,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -690,7 +689,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -719,7 +718,7 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} style={{ padding: '15px' }}>
+            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
               <Card>
                 <CardMedia
                   component='img'
@@ -752,30 +751,29 @@ export default function About() {
       </section>
 
       <section className={`sectionBox ourValueBox ourBeliefBox`}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0}>
-            <Grid item xs={5} style={{ padding: '30px' }}>
-              <Typography gutterBottom variant='h5' component='div'>
-                Get in touch with us today for a <br /> non-obligation
-                discussion and start transforming your start-up ideas into
-                real-life products.{' '}
-              </Typography>
-              <br />
-              <br />
-              <Button className='readmore pl0' variant='text'>
-                CONTACT US <ArrowRightAltIcon />
-              </Button>
+           <Box sx={{ flexGrow: 1 }} >
+            <Grid container spacing={0}>
+            <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
+                  <Typography gutterBottom variant="h5" component="div">
+                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  
+                  <br/>
+                  <br/>
+                  InfoDrive Solutions is 24X7 <br/> Available To Help You
+                  </Typography>
+                  <br/>
+                  <br/>
+                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  </Grid>
+                <Grid item xs={7}>
+                    <Card>
+                      <img
+                        alt="Remy Sharp"
+                        src="images/pexels-prakhar-bansal-732183.jpg"
+                      />
+                    </Card>
+                </Grid>
             </Grid>
-            <Grid item xs={7}>
-              <Card>
-                <img
-                  alt='Remy Sharp'
-                  src='images/pexels-prakhar-bansal-732183.jpg'
-                />
-              </Card>
-            </Grid>
-          </Grid>
-        </Box>
+          </Box>
       </section>
 
       <Footer />

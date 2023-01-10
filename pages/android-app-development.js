@@ -26,6 +26,13 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Input from '@mui/material/Input';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormControl from '@mui/material/FormControl';
+import TextField from '@mui/material/TextField';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import Stack from '@mui/material/Stack';
 
 export default function AndroidAppDevelopment() {
   
@@ -38,25 +45,25 @@ export default function AndroidAppDevelopment() {
             <Grid container spacing={0}>
             <p>
             We are one of the leading <br/> Android app development <br/> companies offering <br/> unmatched business <br/> results.</p>
-            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
-                  <List>
+                <List>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
                         <ListItemIcon>
                           <FacebookIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
                         <ListItemIcon>
-                          <TwitterIcon />
+                          <LinkedInIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
                         <ListItemIcon>
                           <InstagramIcon />
                         </ListItemIcon>
@@ -286,28 +293,137 @@ export default function AndroidAppDevelopment() {
           </Box>
       </section>
 
-      <section className={`sectionBox ourValueBox ourBeliefBox`}>
-           <Box sx={{ flexGrow: 1 }} >
-            <Grid container spacing={0}>
-            <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
-                  <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  </Typography>
-                  <br/>
-                  <br/>
-                  <Button className='readmore pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
-                  </Grid>
-                <Grid item xs={7}>
-                    <Card>
-                      <img
-                        alt="Remy Sharp"
-                        src="images/pexels-prakhar-bansal-732183.jpg"
-                      />
-                    </Card>
-                </Grid>
-            </Grid>
-          </Box>
+      <section className={`sectionBox connectUs backDrop mb0`}>
+            <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
+              Ready to take your business to the next level with a custom web or mobile app?
+            </Typography>
+            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
+              Connect with Our Expert
+            </Button>
       </section>
 
+      {/* <section className={`sectionBox connectUs backDrop`}>
+            <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
+              Ready to take your business to the next level with a custom web or mobile app?
+            </Typography>
+            <Button href="/contact-us" className='bgRed pl15 pr15 poppin normalCase'>
+              Connect with Our Expert
+            </Button>
+      </section> */}
+<section className={`sectionBox locationBox contactUsArea leadForm mt0`} style={{marginTop:"0px"}}>
+          <Box sx={{ flexGrow: 1 }} className="locationContent">
+            <Grid container spacing={0}>
+               <Grid item xs={6}>
+                    <Grid item xs={12} className='contactUsB contactUsB1'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Pte Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
+                            Phone: +65-9238 4299
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12}  className='contactUsB contactUsB2'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Sdn Bhd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
+                            Phone: +60-1 2327 5811 
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+
+                    <Grid item xs={12}  className='contactUsB contactUsB3'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDriven Solutions Pvt Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
+                            Phone: +91-960 61880 81
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+               </Grid>
+               <Grid item xs="6"  className="leadFormBox">
+                <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
+               
+                <Typography gutterBottom variant="h2" className='white' component="div">
+                Request a call back
+                            </Typography>
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Full Name"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Email Address"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Contact Number"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Message"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <Stack spacing={2} direction="row">
+                            <Button className="bgRed" variant="contained">Send Message</Button>
+                        </Stack>
+                    </Box>
+               </Grid>
+            </Grid>
+        </Box>
+      </section>
       <Footer/>
     </div>
   )

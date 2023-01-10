@@ -26,13 +26,13 @@ const drawerWidth = 240;
 const navItems = [
   
   {name:"Blockchain NFT", slug:"Blockchain-NFT"},
-  { name: 'Full stack development', slug: 'full-stack-development' },
+  { name: 'Full stack development', slug: 'full-stack-development.html' },
   // {name: 'Web and mobile app development'},
-  { name: 'Services for start ups', slug: 'services-for-start-ups' },
-  { name: 'Android App Development', slug: 'android-app-development' },
-  { name: 'Ios App Development', slug: 'ios-app-development' },
-  {name:"About Us", slug:"about-us"},
-  {name:"Contact Us", slug:"contact-us"},
+  { name: 'Services for start ups', slug: 'services-for-start-ups.html' },
+  { name: 'Android App Development', slug: 'android-app-development.html' },
+  { name: 'Ios App Development', slug: 'ios-app-development.html' },
+  {name:"About Us", slug:"about-us.html"},
+  {name:"Contact Us", slug:"contact-us.html"},
 ];
 
 function DrawerAppBar(props) {
@@ -106,13 +106,6 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant='h6' sx={{ my: 2 }}>
-        <Avatar
-          alt='Logo'
-          src='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
-        />
-      </Typography>
-      <Divider />
       <List>
               <ListItem disablePadding>
                 <ListItemButton component='a' to="/">
@@ -131,7 +124,7 @@ function DrawerAppBar(props) {
                   onClose={closeMobileMenu}>
                   <List>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/web-and-mobile-app-development">
+                      <ListItemButton component='a' to="/web-and-mobile-app-development.html">
                         <ListItemText primary={'Web and app development '} />
                       </ListItemButton>
                       <ArrowForwardIosIcon 
@@ -140,18 +133,18 @@ function DrawerAppBar(props) {
                       />
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/services-for-start-ups" >
+                      <ListItemButton component='a' to="/services-for-start-ups.html" >
                         <ListItemText primary={'Services for start ups'} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/Blockchain-NFT" >
+                      <ListItemButton component='a' to="/blockchain-nft.html" >
                         <ListItemText primary={'Blockchain and NFT'} />
                       </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/full-stack-development" >
+                      <ListItemButton component='a' to="/full-stack-development.html" >
                         <ListItemText primary={'Full stack development'} />
                       </ListItemButton>
                     </ListItem>
@@ -164,12 +157,12 @@ function DrawerAppBar(props) {
                   onClose={closeSubMobileMenu}>
                   <List>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/android-app-development">
+                      <ListItemButton component='a' to="/android-app-development.html">
                         <ListItemText primary={'Android app development'} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/ios-app-development" >
+                      <ListItemButton component='a' to="/ios-app-development.html" >
                         <ListItemText primary={'IOS app development'} />
                       </ListItemButton>
                     </ListItem>
@@ -177,13 +170,13 @@ function DrawerAppBar(props) {
                 </Menu>
                 </ListItem>
                 <ListItem disablePadding>
-                  <ListItemButton component='a' to="/about-us">
+                  <ListItemButton component='a' to="/about-us.html">
                     <ListItemText primary={'About us'} />
                   </ListItemButton>
                 </ListItem>
 
                 <ListItem disablePadding>
-                  <ListItemButton component='a' to="/contact-us">
+                  <ListItemButton component='a' to="/contact-us.html">
                     <ListItemText primary={'Contact us'} />
                   </ListItemButton>
                 </ListItem>
@@ -203,10 +196,23 @@ function DrawerAppBar(props) {
             aria-label='open drawer'
             edge='start'
             onClick={handleDrawerMobileToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: 'none' }}}
           >
             <MenuIcon />
           </IconButton>
+          <Button 
+            href="/" 
+            variant="text"
+            style={{ float: 'right', position: 'absolute', right: '0px' }}
+            className="logoMobile"
+          >
+            <img
+              alt='Logo'
+              style={{ width: 53, height: 43}}
+              src='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+            />
+            </Button>
+
           <Typography
             variant='h4'
             component='div'
@@ -236,30 +242,35 @@ function DrawerAppBar(props) {
                 <Menu
                   anchorEl={anchorEl}
                   open={menuOpen}
+                  className="subMenuOptions"
                   onClose={closeMenu}>
                   <List>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/web-and-mobile-app-development">
+                      <ListItemButton component='a' to="/web-and-mobile-app-development.html">
                         <ListItemText primary={'Web and app development '} />
                       </ListItemButton>
                       <ArrowForwardIosIcon 
                         onClick={recordSubButtonPosition}
                         className="customIcon"
+                        style={{width: "43px",
+                          height: "35px",
+                          fontWeight: "bolder",
+                          marginLeft: "-12px"}}
                       />
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/services-for-start-ups" >
+                      <ListItemButton component='a' to="/services-for-start-ups.html" >
                         <ListItemText primary={'Services for start ups'} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/Blockchain-NFT" >
+                      <ListItemButton component='a' to="/blockchain-nft.html" >
                         <ListItemText primary={'Blockchain and NFT'} />
                       </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/full-stack-development" >
+                      <ListItemButton component='a' to="/full-stack-development.html" >
                         <ListItemText primary={'Full stack development'} />
                       </ListItemButton>
                     </ListItem>
@@ -269,15 +280,16 @@ function DrawerAppBar(props) {
                 <Menu
                   anchorEl={subAnchorEl}
                   open={subMenuOpen}
+                  className="subMenuOptions"
                   onClose={closeSubMenu}>
                   <List>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/android-app-development">
+                      <ListItemButton component='a' to="/android-app-development.html">
                         <ListItemText primary={'Android app development'} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/ios-app-development" >
+                      <ListItemButton component='a' to="/ios-app-development.html" >
                         <ListItemText primary={'IOS app development'} />
                       </ListItemButton>
                     </ListItem>
@@ -285,10 +297,10 @@ function DrawerAppBar(props) {
                 </Menu>
 
 
-                <ListItemButton component='a' to="/about-us">
+                <ListItemButton component='a' to="/about-us.html">
                   <ListItemText primary={'About us'} />
                 </ListItemButton>
-                <ListItemButton component='a' to="/contact-us">
+                <ListItemButton component='a' to="/contact-us.html">
                   <ListItemText primary={'Contact us'} />
                 </ListItemButton>
               </ListItem>

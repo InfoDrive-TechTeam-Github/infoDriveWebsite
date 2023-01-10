@@ -26,6 +26,13 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Input from '@mui/material/Input';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormControl from '@mui/material/FormControl';
+import TextField from '@mui/material/TextField';
+import AccountCircle from '@mui/icons-material/AccountCircle';
+import Stack from '@mui/material/Stack';
 
 export default function ServicesForStartUps() {
   
@@ -38,25 +45,25 @@ export default function ServicesForStartUps() {
             <Grid container spacing={0}>
             <p>
             InfoDrive Solutions is a leading <br/>Technology solution provider and <br/>we are helping many start-ups <br/> and small-medium businesses to <br/> build products from scratch.</p>
-            <Button href="/contact-us" className="readmore" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
-                  <List>
+                <List>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
                         <ListItemIcon>
                           <FacebookIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
                         <ListItemIcon>
-                          <TwitterIcon />
+                          <LinkedInIcon />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton>
+                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
                         <ListItemIcon>
                           <InstagramIcon />
                         </ListItemIcon>
@@ -111,11 +118,11 @@ export default function ServicesForStartUps() {
         </Box>
       </section>
 
-      <section className={`sectionBox ourValueBox pt30`}>
+      <section className={`sectionBox ourValueBox`}>
             <Box sx={{ flexGrow: 1 }} >
                 <Grid container spacing={0}>
                     <Grid item xs={6}>
-                        <Typography gutterBottom variant="h3" component="div">
+                        <Typography gutterBottom variant="h3" className="red" component="div">
                         TECHONOLGY SOLUTIONS FOR START UPS
                         </Typography>
                         <Typography gutterBottom variant="h2" component="div">
@@ -148,8 +155,17 @@ export default function ServicesForStartUps() {
           </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox pb0`}>
-      <Typography gutterBottom variant="h2" className='mb0' component="div">Why Your Start-Up <br/>Should Work With Us?</Typography>
+      <section className={`sectionBox connectUs backDrop`}>
+            <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
+            Get in touch with our team and learn how we can help your startup succeed
+            </Typography>
+            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
+              Connect with Our Expert
+            </Button>
+      </section>
+
+      <section className={`sectionBox whyUsBox`}>
+      <Typography gutterBottom variant="h2" className='' component="div">Why Your Start-Up Should Work With Us?</Typography>
       <br/>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
@@ -212,6 +228,122 @@ export default function ServicesForStartUps() {
             </Grid>
         </Box>
       </section>
+
+      <section className={`sectionBox locationBox contactUsArea leadForm`}>
+          <Box sx={{ flexGrow: 1 }} className="locationContent">
+            <Grid container spacing={0}>
+               <Grid item xs={6}>
+                    <Grid item xs={12} className='contactUsB contactUsB1'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Pte Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
+                            Phone: +65-9238 4299
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12}  className='contactUsB contactUsB2'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Sdn Bhd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
+                            Phone: +60-1 2327 5811 
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+
+                    <Grid item xs={12}  className='contactUsB contactUsB3'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDriven Solutions Pvt Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
+                            Phone: +91-960 61880 81
+                            <br/>
+                            Email: info@infodrive-solutions.com
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+               </Grid>
+               <Grid item xs="6"  className="leadFormBox">
+                <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
+               
+                <Typography gutterBottom variant="h2" className='white' component="div">
+                Request a call back
+                            </Typography>
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Full Name"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Email Address"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Contact Number"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <TextField
+                            id="input-with-icon-textfield"
+                            label="Message"
+                            fullWidth sx={{ m: 1 }}
+                            InputProps={{
+                            startAdornment: (
+                                <InputAdornment position="start">
+                                </InputAdornment>
+                            ),
+                            }}
+                            variant="standard"
+                        />
+                        <Stack spacing={2} direction="row">
+                            <Button className="bgRed" variant="contained">Send Message</Button>
+                        </Stack>
+                    </Box>
+               </Grid>
+            </Grid>
+        </Box>
+      </section>
+
       <Footer/>
     </div>
   )

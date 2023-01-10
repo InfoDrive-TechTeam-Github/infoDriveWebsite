@@ -39,8 +39,8 @@ export default function Contact() {
   return (
     <div >
       <Header/>
-    <section className={`sectionBox contactUs pb0`}>
-            <Typography className="widthInitial" gutterBottom variant="h2" component="div">
+    <section className={`sectionBox contactUs`}>
+            <Typography className="widthInitial red" gutterBottom variant="h2" component="div">
             Contact Us
             </Typography>
             <Typography className="widthInitial" gutterBottom variant="h5" component="div">Need to get in touch with us? Either call one of the numbers of the responding country
@@ -149,7 +149,7 @@ or fill the form and we will get back to you</Typography>
                         </FormControl>
 
                         <Stack spacing={2} direction="row">
-                            <Button style={{background:"#000"}} variant="contained">Send Message</Button>
+                            <Button style={{background:"#000"}} className="bgRed white" variant="contained">Send Message</Button>
                         </Stack>
                     </Box>
                </Grid>
