@@ -22,6 +22,14 @@ import Link from '@mui/material/Link';
 export default function Header() {
   return (
     <div >
+      <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>InfoDrive Solutions is a Software Development and Digital Transformation Solutions company</title>
+            <meta name="description" content="InfoDrive Solutions is a Software Development and Digital Transformation Solutions company, we are headquartered in Singapore with regional offices in Malaysia (KL) & India (Bangalore). We deliver cutting-edge Digital Transformation Solutions to many of our prestigious customers in South East Asia." />
+            <meta property="og:title" content="InfoDrive Solutions is a Software Development and Digital Transformation Solutions company" />
+            <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
+            <link rel="icon" href="/favicon.png" />
+      </Head>
       <Navbar/>
     </div>
   )

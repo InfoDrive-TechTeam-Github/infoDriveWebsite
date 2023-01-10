@@ -34,6 +34,7 @@ import { Paper } from '@mui/material'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import StarIcon from '@mui/icons-material/Star';
+
 export default function Index() {
   const [value, setValue] = React.useState('1');
 
@@ -52,7 +53,7 @@ export default function Index() {
     }
 ]
   return (
-    <div >
+    <>
       <Header/>
       <Slider/>
       <section className={`sectionBox`}>
@@ -458,6 +459,6 @@ export default function Index() {
         </Box>
       </section>
       <Footer/>
-    </div>
+    </>
   )
 }

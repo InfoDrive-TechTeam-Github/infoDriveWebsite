@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head'
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Box from '@mui/material/Box';
