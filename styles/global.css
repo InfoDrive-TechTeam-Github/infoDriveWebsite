@@ -840,20 +840,31 @@ img {
   height: 550px
 }
 .navCarouselBox{
-  margin-top: 124px;
+  margin-top: -72px;
+  width: 100px;
+  border: 1px solid #070D0C;
+  border-radius: 5px;
+  text-align: center;
+  color: #070D0C;
+  font-weight: bold;
+}
+.navCarouselBox:hover{
+  color: #fff;
 }
 .navCarouselBox .navCarouselNext{
   width: 35px;
   right: 0;
   height: 35px;
   max-width: 35px;
-  color: red;
-  border: 1px solid red;
-
+  color: #070D0C !important;
+  background: transparent !important;
+}
+.navCarouselBox .navCarouselNext:hover .navCarouselNext{
+  color: #fff !important;
 }
 .navCarouselBox .navCarouselNext:hover{
-  background: red;
   color: #fff;
+  background: transparent !important;
 }
 .navCarouselBox .navCarouselPrevious{
   width: 35px;
@@ -879,8 +890,16 @@ img {
     right: 15px;
     color: #ffc107;
 }
+.css-hn784z{
+  right: 120px;
+  left: initial;
+}
+.css-ohwg9z{
+  overflow: initial;
+}
 /* Responsive */
 @media only screen and (max-width: 600px) and (min-width: 320px)  {
+
   .leadForm .leadFormBox {
     padding: 0px 15px;
 }
@@ -1083,6 +1102,9 @@ img {
 }
 .footerSection .MuiGrid-grid-xs-8 .MuiTypography-h3{
   text-align: left;
+}
+.testmonial .MuiTypography-h2{
+  margin-bottom: 70px;
 }
 
 }

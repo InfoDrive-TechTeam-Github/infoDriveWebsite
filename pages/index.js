@@ -279,8 +279,10 @@ export default function Index() {
         return (
             <div className='navCarouselBox'>
               <Button onClick={onClick} className={'navCarouselNext '}>
-                {next && <KeyboardArrowRightIcon/>}
-                {prev && <KeyboardArrowLeftIcon/>}
+                {/* {next && <KeyboardArrowRightIcon/>}
+                {prev && <KeyboardArrowLeftIcon/>} */}
+                {next && 'Next'}
+                {prev && 'Previous'}
               </Button>
             </div>
         )
