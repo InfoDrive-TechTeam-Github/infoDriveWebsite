@@ -181,6 +181,14 @@ function DrawerAppBar(props) {
                   </ListItemButton>
                 </ListItem>
             </List>
+
+            <List className='partnerButtonMobile'>
+              <ListItem>
+                <ListItemButton component='a' to="/contact-us.html">
+                  <ListItemText primary={"Let's partner"} />
+                </ListItemButton>
+              </ListItem>
+            </List>
     </Box>
   );
 
@@ -208,8 +216,8 @@ function DrawerAppBar(props) {
           >
             <img
               alt='Logo'
-              style={{ width: 53, height: 43}}
-              src='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+              style={{ width: 60, height: 43}}
+              src='images/logoHeader.png'
             />
             </Button>
 
@@ -224,11 +232,20 @@ function DrawerAppBar(props) {
           >
             <img
               alt='Logo'
-              style={{ width: 80, height: 60 }}
-              src='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+              style={{ width: 115, height: 77 }}
+              src='images/logoHeader.png'
             />
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box className="mainMenu" sx={{ display: { xs: 'none', sm: 'block' } }}>
+            
+            <List className="partnerButton ">
+              <ListItem>
+                <ListItemButton component='a' to="/contact-us.html">
+                  <ListItemText primary={"Let's partner"} />
+                </ListItemButton>
+              </ListItem>
+            </List>
+
             <List>
               <ListItem disablePadding>
                 <ListItemButton component='a' to="/">
@@ -306,6 +323,7 @@ function DrawerAppBar(props) {
               </ListItem>
             </List>
           </Box>
+         
         </Toolbar>
       </AppBar>
       <Box component='nav'>

@@ -39,6 +39,28 @@ img {
   max-width: 100%;
   display: block;
 }
+.mainMenu{
+  width: 100%;
+}
+.mainMenu ul{
+  float: right;
+  width: initial;
+}
+.partnerButton{
+  margin-left: 140px;
+}
+.partnerButton li{
+  height: 29px;
+}
+.partnerButton li a{
+    background: #000;
+}
+.partnerButton li a:hover{
+  background: #dd3952;
+}
+.partnerButton li a span{
+  color: #fff;
+}
 /* navbar */
 .navbarMenu{
   height: 60px;
@@ -55,11 +77,34 @@ img {
   color: #000;
   text-transform: normal;
 }
+.navbarMenu a:hover{
+  background: #dd3952;
+  color: #fff;
+}
 .navbarMenu a span{
   font-weight: 500;
   font-family: Poppins;
   font-size: 14px;
   color: #51668a;
+  font-weight: bolder;
+}
+.navbarMenu a:hover span{
+  color: #fff;
+}
+.navbarMenu ul li div.MuiListItemButton-gutters:hover{
+  background: #dd3952;
+  color: #fff;
+}
+.subMenuOptions ul li a:hover {
+  background: #dd3952;
+  color: #fff;
+}
+.subMenuOptions ul li a:hover span{
+  color: #fff;
+}
+.subMenuOptions .customIcon:hover{
+  background: #dd3952;
+  color: #fff;
 }
 .navbarMenu nav button{
   color:#000;
@@ -72,12 +117,14 @@ img {
   font-family: Poppins;
   font-size: 14px;
   color: #51668a;
+  font-weight: bolder;
 }
 .subMenuOptions .MuiListItemText-primary{
   font-weight: 500;
   font-family: Poppins;
   font-size: 14px;
   color: #51668a;
+  font-weight: bolder;
 }
 .subMenuOptions .customIcon{
   font-weight: 500;
@@ -89,7 +136,7 @@ img {
   height: 35px;
 }
 .navbarMenu ul li div.MuiListItemButton-gutters{
-  height: 35px;
+  height: 29px;
 }
 .homePage{
   padding-top: 60px;
@@ -732,9 +779,9 @@ img {
   width: 120px;
 }
 .footerSection .MuiTypography-h3{
-  /* color: #fff; */
+  color: #fff;
   font-weight: 400;
-  color: #dd3952;
+  /* color: #dd3952; */
   font-family: Poppins;
 
 }
@@ -824,7 +871,7 @@ img {
  color: #fff;
 }
 .leadForm .leadFormBox .MuiFormControl-fullWidth{
-  margin-top: 30px;
+  margin-top: 15px;
 }
 .leadForm .locationContent{
   overflow: hidden;
@@ -896,6 +943,10 @@ img {
 }
 .css-ohwg9z{
   overflow: initial;
+}
+.partnerButtonMobile li a{
+  background: #000;
+  color: #fff;
 }
 /* Responsive */
 @media only screen and (max-width: 600px) and (min-width: 320px)  {

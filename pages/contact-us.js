@@ -33,9 +33,18 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-
+import emailjs from 'emailjs-com';
 export default function Contact() {
-  
+    const sendEmail = (e) =>{
+        e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+    
+        emailjs.sendForm('service_rmekdda', 'template_ehreu88', e.target, 'UoPxEApZCTTKzvxnN')
+          .then((result) => {
+              window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+          }, (error) => {
+              console.log(error.text);
+          });
+      }
   return (
     <div >
       <Header/>
@@ -58,45 +67,50 @@ or fill the form and we will get back to you</Typography>
                             InfoDrive Solutions Pte Ltd
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                            2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                            Phone: +65-9238 4299
+                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
+                            Phone: +65-9238 4299 <br/>
+                            Email: info@infodrive-solutions.com
                             </Typography>
                         </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item xs={12}  className='contactUsB contactUsB2'>
+                    <Grid item xs={12}  className='contactUsB contactUsB1'>
                         <Card >
                         <CardContent>
                             <Typography gutterBottom variant="h7" component="div">
                             InfoDrive Solutions Sdn Bhd
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                            32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                            Phone: +60-1 2327 5811 
+                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
+                            Phone: +60-1 2327 5811 <br/>
+                            Email: info@infodrive-solutions.com
                             </Typography>
                         </CardContent>
                         </Card>
                     </Grid>
 
-                    <Grid item xs={12}  className='contactUsB contactUsB3'>
+                    <Grid item xs={12}  className='contactUsB contactUsB1'>
                         <Card >
                         <CardContent>
                             <Typography gutterBottom variant="h7" component="div">
                             InfoDriven Solutions Pvt Ltd
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
-                            #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                            Phone: +91-960 61880 81
+                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
+                            Phone: +91-960 61880 81 <br/>
+                            Email: info@infodrive-solutions.com
                             </Typography>
                         </CardContent>
                         </Card>
                     </Grid>
                </Grid>
                <Grid item xs="8">
+               <form className="contact-form" onSubmit={sendEmail}>
                 <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
                         <TextField
                             id="input-with-icon-textfield"
                             label="Name"
+                            name="full_name"
                             InputProps={{
                             startAdornment: (
                                 <InputAdornment position="start">
@@ -108,6 +122,7 @@ or fill the form and we will get back to you</Typography>
                         <TextField
                             id="input-with-icon-textfield"
                             label="Email"
+                            name="email_address"
                             InputProps={{
                             startAdornment: (
                                 <InputAdornment position="start">
@@ -120,6 +135,7 @@ or fill the form and we will get back to you</Typography>
                         <TextField
                             id="input-with-icon-textfield"
                             label="Phone"
+                            name="contact_number"
                             InputProps={{
                             startAdornment: (
                                 <InputAdornment position="start">
@@ -131,6 +147,7 @@ or fill the form and we will get back to you</Typography>
                         <TextField
                             id="input-with-icon-textfield"
                             label="Industry"
+                            name="industry"
                             InputProps={{
                             startAdornment: (
                                 <InputAdornment position="start">
@@ -145,13 +162,15 @@ or fill the form and we will get back to you</Typography>
                                 id="standard-adornment-amount"
                                 startAdornment={''}
                                 placeholder="Message"
+                                name="message"
                             />
                         </FormControl>
 
                         <Stack spacing={2} direction="row">
-                            <Button style={{background:"#000"}} className="bgRed white" variant="contained">Send Message</Button>
+                            <Button type="submit" style={{background:"#000"}} className="bgRed white" variant="contained">Send Message</Button>
                         </Stack>
                     </Box>
+                    </form>
                </Grid>
             </Grid>
         </Box>

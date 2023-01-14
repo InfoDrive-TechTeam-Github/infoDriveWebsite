@@ -29,7 +29,7 @@ export default function Footer() {
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={4} className="logoFooter">
-                <img src="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"/>
+                <img src="images/logoFooter.png"/>
                 <Typography variant="h3" sx={{ my: 2 }}>
                 Driven by technology
                 </Typography>
