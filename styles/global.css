@@ -949,7 +949,7 @@ img {
   color: #fff;
 }
 /* Responsive */
-@media only screen and (max-width: 600px) and (min-width: 320px)  {
+@media only screen and (max-width: 620px) and (min-width: 320px)  {
 
   .leadForm .leadFormBox {
     padding: 0px 15px;
@@ -1159,7 +1159,7 @@ img {
 }
 
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 620px) {
   .contInfo {
     padding: 0px 0px 0px 0px !important;
 }
