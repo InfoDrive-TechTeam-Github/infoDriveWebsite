@@ -303,7 +303,7 @@ export default function Index() {
                 items.map( (item, i) => 
                 <Box sx={{ flexGrow: 1 }}>
                   <Grid container spacing={0}>
-                    <Grid item xs={6}>
+                    <Grid item xs={6} >
                       <Card sx={{ maxWidth: 345 }}>
                         <Avatar
                           alt="Remy Sharp"
@@ -360,7 +360,7 @@ export default function Index() {
       <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
           <Box sx={{ flexGrow: 1 }} className="locationContent">
             <Grid container spacing={0}>
-               <Grid item xs={6}>
+               <Grid item xs={6} className="leftLeadFormBox">
                     <Grid item xs={12} className='contactUsB contactUsB1'>
                         <Card >
                         <CardContent>
