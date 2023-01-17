@@ -949,10 +949,18 @@ img {
   color: #fff;
 }
 /* Responsive */
-@media only screen and (max-width: 620px) and (min-width: 320px)  {
-
+@media (min-width: 320px) and (max-width: 620px) {
   .leadForm .leadFormBox {
     padding: 0px 15px;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.leftLeadFormBox{
+  padding: 0px 15px;
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
   .sliderBox .readmore {
     font-size: 16px;
@@ -1157,9 +1165,6 @@ img {
 .testmonial .MuiTypography-h2{
   margin-bottom: 70px;
 }
-
-}
-@media (min-width: 320px) and (max-width: 620px) {
   .contInfo {
     padding: 0px 0px 0px 0px !important;
 }
