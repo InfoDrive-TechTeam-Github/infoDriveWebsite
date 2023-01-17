@@ -948,6 +948,9 @@ img {
   background: #000;
   color: #fff;
 }
+.footerContactUs{
+  color:#fff;
+}
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
   .leadForm .leadFormBox {
@@ -957,7 +960,7 @@ img {
     margin-bottom: 20px;
 }
 .leftLeadFormBox{
-  padding: 0px 15px;
+  padding: 0px 0px;
   flex-basis: 100%;
   max-width: 100%;
   margin-bottom: 20px;

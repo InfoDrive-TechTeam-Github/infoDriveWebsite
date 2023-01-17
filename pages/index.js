@@ -35,23 +35,43 @@ import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import StarIcon from '@mui/icons-material/Star';
 import emailjs from 'emailjs-com';
+import { useState } from 'react'
+import axios from 'axios'
 
 export default function Index() {
   const [value, setValue] = React.useState('1');
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-  const sendEmail = (e) =>{
-    e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+  const [inputData, setInputData] = useState({
+    full_name: "",
+    email_address: "",
+    contact_number: "",
+    industry: "",
+    message: "",
+  });
 
-    emailjs.sendForm('service_rmekdda', 'template_ehreu88', e.target, 'UoPxEApZCTTKzvxnN')
-      .then((result) => {
-          window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
-      }, (error) => {
-          console.log(error.text);
-      });
+  const handleChange = (e) => {
+    setInputData({...inputData, [e.target.name]: e.target.value});
   }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(inputData);
+    const response = await axios.post(`/api/contact`, inputData)
+    console.log(response);
+    alert("Contact successfully sent!!")
+  }
+
+
+  // const sendEmail = (e) =>{
+  //   e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+
+  //   emailjs.sendForm('service_rmekdda', 'template_ehreu88', e.target, 'UoPxEApZCTTKzvxnN')
+  //     .then((result) => {
+  //         window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // }
   
   var items = [
     {
@@ -406,7 +426,7 @@ export default function Index() {
                     </Grid>
                </Grid>
                <Grid item xs="6"  className="leadFormBox">
-               <form className="contact-form" onSubmit={sendEmail}>
+               <form className="contact-form" onSubmit={handleSubmit}>
                 <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
                 <Typography gutterBottom variant="h2" className='white' component="div">
                 Request a call back
@@ -422,6 +442,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -435,6 +456,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
+                            onChange={handleChange}
                             variant="standard"
                         />
 
@@ -449,6 +471,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -464,6 +487,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <Stack spacing={2} direction="row">

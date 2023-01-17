@@ -33,7 +33,8 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
-import emailjs from 'emailjs-com';
+import axios from 'axios'
+
 export default function Contact() {
     const sendEmail = (e) =>{
         e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
@@ -44,6 +45,26 @@ export default function Contact() {
           }, (error) => {
               console.log(error.text);
           });
+      }
+
+      const [inputData, setInputData] = useState({
+        full_name: "",
+        email_address: "",
+        contact_number: "",
+        industry: "",
+        message: "",
+      });
+    
+      const handleChange = (e) => {
+        setInputData({...inputData, [e.target.name]: e.target.value});
+      }
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log(inputData);
+        const response = await axios.post(`/api/contact`, inputData)
+        console.log(response);
+        alert("Contact successfully sent!!")
       }
   return (
     <div >
@@ -105,7 +126,7 @@ or fill the form and we will get back to you</Typography>
                     </Grid>
                </Grid>
                <Grid item xs="8">
-               <form className="contact-form" onSubmit={sendEmail}>
+               <form className="contact-form"  onSubmit={handleSubmit}>
                 <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
                         <TextField
                             id="input-with-icon-textfield"
@@ -117,6 +138,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -129,6 +151,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
+                            onChange={handleChange}
                             variant="standard"
                         />
 
@@ -142,6 +165,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -154,6 +178,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <FormControl fullWidth sx={{ m: 1 }} variant="standard">
@@ -163,6 +188,7 @@ or fill the form and we will get back to you</Typography>
                                 startAdornment={''}
                                 placeholder="Message"
                                 name="message"
+                                onChange={handleChange}
                             />
                         </FormControl>
 
