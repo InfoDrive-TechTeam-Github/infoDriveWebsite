@@ -369,9 +369,8 @@ export default function Index() {
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                             Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                            Phone: +65-9238 4299
-                            <br/>
-                            Email: info@infodrive-solutions.com
+                            Phone: <a href="tel:+6592384299" style={{color:"#fff"}}>+65-9238 4299 </a><br/>
+                            Email: contact@infodrive-solutions.com
                             </Typography>
                         </CardContent>
                         </Card>
@@ -384,9 +383,8 @@ export default function Index() {
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                             Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                            Phone: +60-1 2327 5811 
-                            <br/>
-                            Email: info@infodrive-solutions.com
+                            Phone: <a href="tel:+60123275811" style={{color:"#fff"}}>+60-1 2327 5811</a><br/>
+                            Email: contact@infodrive-solutions.com
                             </Typography>
                         </CardContent>
                         </Card>
@@ -400,9 +398,8 @@ export default function Index() {
                             </Typography>
                             <Typography variant="body2" color="text.secondary">
                             Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                            Phone: +91-960 61880 81
-                            <br/>
-                            Email: info@infodrive-solutions.com
+                            Phone: <a href="tel:+919606188081" style={{color:"#fff"}}>+91-960 61880 81 </a><br/>
+                            Email: contact@infodrive-solutions.com
                             </Typography>
                         </CardContent>
                         </Card>
