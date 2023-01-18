@@ -1283,4 +1283,13 @@ img {
   flex-basis: 100%;
   -webkit-flex-basis: 100%;
 }
+.footerSection .MuiGrid-grid-xs-6{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+}
+.footerSection .footerContactUs img{
+  margin: 0;
+}
 }

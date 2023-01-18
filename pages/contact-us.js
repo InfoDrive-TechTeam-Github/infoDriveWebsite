@@ -40,7 +40,7 @@ export default function Contact() {
     const sendEmail = (e) =>{
         e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
     
-        emailjs.sendForm('service_rmekdda', 'template_ehreu88', e.target, 'UoPxEApZCTTKzvxnN')
+        emailjs.sendForm('service_mrxeobj', 'template_bwbn41u', e.target, '8A4PON3sVCyhdpw3U')
           .then((result) => {
               window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
           }, (error) => {
@@ -67,6 +67,8 @@ export default function Contact() {
         console.log(response);
         alert("Contact successfully sent!!")
       }
+
+ 
   return (
     <div >
       <Header/>
@@ -127,7 +129,7 @@ or fill the form and we will get back to you</Typography>
                     </Grid>
                </Grid>
                <Grid item xs="8">
-               <form className="contact-form"  onSubmit={handleSubmit}>
+               <form className="contact-form" onSubmit={sendEmail}>
                 <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
                         <TextField
                             id="input-with-icon-textfield"
@@ -139,7 +141,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -152,7 +154,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             variant="standard"
                         />
 
@@ -166,7 +168,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -179,7 +181,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             variant="standard"
                         />
                         <FormControl fullWidth sx={{ m: 1 }} variant="standard">
@@ -189,7 +191,7 @@ or fill the form and we will get back to you</Typography>
                                 startAdornment={''}
                                 placeholder="Message"
                                 name="message"
-                                onChange={handleChange}
+                                // onChange={handleChange}
                             />
                         </FormControl>
 

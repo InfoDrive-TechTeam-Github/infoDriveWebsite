@@ -49,18 +49,13 @@ export default function Footer() {
                         <nav aria-label="main mailbox folders">
                             <List>
                                 <ListItem >
-                                    <ListItemButton component="a" href="#about-us">
+                                    <ListItemButton component="a" href="/about-us.html">
                                         <ListItemText primary="About" />
                                     </ListItemButton>
                                 </ListItem>
                                 <ListItem >
-                                    <ListItemButton component="a" href="#contact">
+                                    <ListItemButton component="a" href="/contact-us.html">
                                         <ListItemText primary="Contact" />
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem >
-                                    <ListItemButton component="a" href="#blogs">
-                                        <ListItemText primary="Blogs" />
                                     </ListItemButton>
                                 </ListItem>
                             </List>
@@ -102,13 +97,34 @@ export default function Footer() {
                         <nav className="footerContactUs" aria-label="main mailbox folders">
                             <List>
                                 <ListItem >
-                                    <PhoneIcon/>
+                                    <CardMedia
+                                    component='img'
+                                    style={{width:'30px', height:'30px'}}
+                                    image='images/singapore.png'
+                                    alt='green iguana'
+                                    />
                                     <ListItemButton component="a" href="tel:+6592384299" style={{color:"#fff", display:"inline-block", flexGrow:0, paddingRight:0}}>
                                         <ListItemText className="pl15" primary="+65-9238 4299" />
-                                    </ListItemButton>,
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <CardMedia
+                                    component='img'
+                                    image='images/malaysia.png'
+                                    style={{width:'30px', height:'30px'}}
+                                    alt='green iguana'
+                                    />
                                     <ListItemButton component="a" href="tel:+60123275811" style={{color:"#fff", display:"inline-block", flexGrow:0, paddingRight:0}}>
                                         <ListItemText className="pl15" primary="+60-1 2327 5811" />
-                                    </ListItemButton>,
+                                    </ListItemButton>
+                                </ListItem>
+                                <ListItem >
+                                    <CardMedia
+                                    component='img'
+                                    image='images/india.png'
+                                    alt='green iguana'
+                                    style={{width:'30px', height:'30px'}}
+                                    />
                                     <ListItemButton component="a" href="tel:+919606188081" style={{color:"#fff", display:"inline-block", flexGrow:0, paddingRight:0}}>
                                         <ListItemText className="pl15" primary="+91-960 61880 81" />
                                     </ListItemButton>

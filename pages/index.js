@@ -62,16 +62,16 @@ export default function Index() {
   }
 
 
-  // const sendEmail = (e) =>{
-  //   e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
+  const sendEmail = (e) =>{
+    e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
 
-  //   emailjs.sendForm('service_rmekdda', 'template_ehreu88', e.target, 'UoPxEApZCTTKzvxnN')
-  //     .then((result) => {
-  //         window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // }
+    emailjs.sendForm('service_mrxeobj', 'template_bwbn41u', e.target, '8A4PON3sVCyhdpw3U')
+      .then((result) => {
+          window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
   
   var items = [
     {
@@ -426,7 +426,8 @@ export default function Index() {
                     </Grid>
                </Grid>
                <Grid item xs="6"  className="leadFormBox">
-               <form className="contact-form" onSubmit={handleSubmit}>
+
+               <form className="contact-form" onSubmit={sendEmail}>
                 <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
                 <Typography gutterBottom variant="h2" className='white' component="div">
                 Request a call back
@@ -442,7 +443,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -456,7 +457,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             variant="standard"
                         />
 
@@ -471,7 +472,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -487,7 +488,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
-                            onChange={handleChange}
+                            // onChange={handleChange}
                             variant="standard"
                         />
                         <Stack spacing={2} direction="row">

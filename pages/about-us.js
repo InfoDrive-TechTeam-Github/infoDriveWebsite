@@ -286,7 +286,7 @@ export default function About() {
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                    no content here. To provide
+                  We understand the importance of timely delivery and cost-effectiveness for our clients. That's why we strive to provide fast delivery of our products and services at reasonable costs. Our team of experts works efficiently to ensure that our clients receive their orders as soon as possible without compromising on the quality.
                   </Typography>
                 </CardContent>
               </Card>
@@ -553,7 +553,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Pradeep Chand</span> <LinkedInIcon />
+                    <span>Pradeep Chand</span> 
+                    <a className='red' href="https://www.linkedin.com/in/pradeepchand1/">
+                    <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial'
@@ -582,7 +585,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Kapil Gairola</span> <LinkedInIcon />
+                    <span>Kapil Gairola</span> 
+                    <a className='red' href="https://www.linkedin.com/in/kapilgairola/">
+                    <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial'
@@ -617,7 +623,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Shashank Jain</span> <LinkedInIcon />
+                    <span>Shashank Jain</span> 
+                    <a className='red' href="https://www.linkedin.com/in/shashank-jain-%E2%98%81-00913550/">
+                      <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -646,7 +655,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Bharani Kumar</span> <LinkedInIcon />
+                    <span>Bharani Kumar</span> 
+                    <a href="https://www.linkedin.com/in/bharani-kumar-8b929641/" className='red'>
+                      <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -675,7 +687,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Maria Aileen</span> <LinkedInIcon />
+                    <span>Maria Aileen</span> 
+                    <a href="https://www.linkedin.com/in/maria-aileen-abendanio-b6802518/" className='red'>
+                    <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -704,7 +719,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Sudhir Budakoti</span> <LinkedInIcon />
+                    <span>Sudhir Budakoti</span> 
+                    <a className="red" href="https://www.linkedin.com/in/sudhirbudakoti/">
+                      <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -733,7 +751,8 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Kyna Lim</span> <LinkedInIcon />
+                    <span>Kyna Lim</span> 
+                    <a href="https://www.linkedin.com/in/lxmyitian/" className='red'><LinkedInIcon /></a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -755,7 +774,7 @@ export default function About() {
             <Grid container spacing={0}>
             <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
                   <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  
+                  Get in touch with us today for a <br/> non-obligation discussion                  
                   <br/>
                   <br/>
                   InfoDrive Solutions is 24X7 <br/> Available To Help You

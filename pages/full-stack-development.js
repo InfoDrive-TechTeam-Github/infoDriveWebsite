@@ -292,7 +292,7 @@ export default function FullstackDevelopment() {
             <Grid container spacing={0}>
             <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
                   <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  
+                  Get in touch with us today for a <br/> non-obligation discussion                  
                   <br/>
                   <br/>
                   InfoDrive Solutions is 24X7 <br/> Available To Help You
