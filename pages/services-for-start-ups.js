@@ -45,8 +45,8 @@ export default function ServicesForStartUps() {
       <Box sx={{ flexGrow: 1 }} className="sliderContent">
             <Grid container spacing={0}>
             <p>
-            InfoDrive Solutions is a leading <br/>Technology solution provider and <br/>we are helping many start-ups <br/> and small-medium businesses to <br/> build products from scratch.</p>
-            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            InfoDrive Solutions is a leading <br/>Technology solution provider and <br/>we are helping many start-ups <br/> and small-medium businesses to <br/> build products from scratch</p>
+            <Button href="/contact-us.html" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                 <List>
                     <ListItem>
@@ -101,7 +101,7 @@ export default function ServicesForStartUps() {
                     <ul>
                         <li>mobile and/ or web applications</li>
                         <li>blockchain-based applications</li>
-                        <li>enterprise solutions(salesforce)</li>
+                        <li>enterprise solutions (salesforce)</li>
                     </ul>
                     <Button className='readmore' variant="text">LEARN MORE ABOUT US <ArrowRightAltIcon/></Button>
                   </CardContent>
@@ -124,7 +124,7 @@ export default function ServicesForStartUps() {
                 <Grid container spacing={0}>
                     <Grid item xs={6}>
                         <Typography gutterBottom variant="h3" className="red" component="div">
-                        TECHONOLGY SOLUTIONS FOR START UPS
+                        TECHNOLOGY SOLUTIONS FOR START UPS
                         </Typography>
                         <Typography gutterBottom variant="h2" component="div">
                         Finding and running a start-up could be an extremely exciting yet highly challenging endeavour.
@@ -138,7 +138,7 @@ export default function ServicesForStartUps() {
                         <Typography gutterBottom variant="h5" component="div">Today, close to 90% of start-ups face failure due to the challenges faced with the fast pace of technology development as well as the growth of well-known companies in the market.</Typography>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography gutterBottom variant="h5" component="div">Employing the services provided by software development outsourcing vendors like us will allow start-ups to have better technical execution, by ensuring product quality is ready for pitching and fund-rising.</Typography>
+                        <Typography gutterBottom variant="h5" component="div">Employing the services provided by software development outsourcing vendors like us will allow start-ups to have better technical execution, by ensuring product quality is ready for pitching and fund-raising.</Typography>
                     </Grid>
                 </Grid>
             </Box>
@@ -160,7 +160,7 @@ export default function ServicesForStartUps() {
             <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
             Get in touch with our team and learn how we can help your startup succeed
             </Typography>
-            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
+            <Button href="/contact-us.html" className='bgRed white pl15 pr15 poppin upperCase'>
               Connect with Our Expert
             </Button>
       </section>
@@ -174,7 +174,7 @@ export default function ServicesForStartUps() {
                 <Card sx={{ maxWidth: 345 }}>
                   <CardContent>
                     <Typography gutterBottom variant="h3" component="div">
-                    Faster product 
+                    Faster product launch
                     </Typography>
                     <br/>
                     <Typography variant="body2" color="text.secondary">

@@ -237,7 +237,10 @@ section.sectionBox.IosAppBox2 {
   color: #fff;
 }
 .normalCase{
-  text-transform: lowercase;
+  text-transform: initial !important;
+}
+.upperCase{
+  text-transform: uppercase !important;
 }
 .mt30{
   margin-top:30px;
