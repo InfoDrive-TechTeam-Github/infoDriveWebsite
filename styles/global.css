@@ -81,6 +81,9 @@ img {
   background: #dd3952;
   color: #fff;
 }
+.logoPC:hover{
+  background: transparent !important;
+}
 .navbarMenu a span{
   font-weight: 500;
   font-family: Poppins;
@@ -561,6 +564,7 @@ img {
   padding-left: -0px;
   border: none;
   box-shadow: none;
+  padding: 10px;
 }
 .ourCoreTeam .MuiCardContent-root{
   padding-left: 0px;
@@ -793,7 +797,7 @@ img {
   padding-left: 0;
 }
 .footerSection li a span{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   font-family: Poppins;
 }
@@ -1186,16 +1190,13 @@ img {
     box-shadow: none;
     padding: 40px 0px 0px 0px !important;
   }
-  .css-1osj8n2-MuiGrid-root{
+  .css-k3f0g4-MuiGrid-root{
     flex-basis: 100%;
     max-width: 100%;
-    margin-bottom: 20px;
-  }
-  .css-k3f0g4-MuiGrid-root{
-    flex-basis: 100%;max-width: 100%;
   }
   .css-uqwprf-MuiGrid-root{
-    flex-basis: 100%;max-width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
   }
   .IosAppBox .fp1 {
     height: auto !important;
@@ -1234,5 +1235,52 @@ img {
   width: 100% !important;
   font-size: 16px;
   line-height: 22px;
+}
+.leftLeadFormBox{
+  flex-basis: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.leadForm .MuiGrid-grid-xs-12{
+  height: initial;
+  padding-top: 0;
+}
+.contact-form .MuiInputAdornment-root{
+  display: none;
+}
+.contact-form .MuiInput-input{
+  padding-left: 15px;
+}
+.contactUsArea .locationContent .MuiPaper-root{
+  position: relative;
+}
+.locationContent .MuiCardContent-root{
+  position: relative;
+}
+.testmonial .MuiGrid-item{
+  width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    margin-bottom: 15px;
+}
+.infoFooter{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+  text-align: center;
+}
+.infoFooter .MuiGrid-container{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
+}
+.infoFooter .MuiGrid-container .MuiGrid-grid-xs-3{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+  -webkit-flex-basis: 100%;
 }
 }

@@ -44,7 +44,7 @@ export default function IosAppDevelopment() {
               <br /> apps that are quality tested <br />
               for perfection.
             </p>
-            <Button href="/contact-us" className='readmore white' variant='text'>
+            <Button href="/contact-us.html" className='readmore white normalCase' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
@@ -520,7 +520,7 @@ export default function IosAppDevelopment() {
                   </Typography>
                   <br/>
                   <br/>
-                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  <Button href="/contact-us.html" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
                   </Grid>
                 <Grid item xs={7}>
                     <Card>

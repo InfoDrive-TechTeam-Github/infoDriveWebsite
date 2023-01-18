@@ -45,7 +45,7 @@ export default function AndroidAppDevelopment() {
             <Grid container spacing={0}>
             <p>
             We are one of the leading <br/> Android app development <br/> companies offering <br/> unmatched business <br/> results.</p>
-            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us.html" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                 <List>
                     <ListItem>
@@ -297,7 +297,7 @@ export default function AndroidAppDevelopment() {
             <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
               Ready to take your business to the next level with a custom web or mobile app?
             </Typography>
-            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
+            <Button href="/contact-us.html" className='bgRed white pl15 pr15 poppin upperCase'>
               Connect with Our Expert
             </Button>
       </section>

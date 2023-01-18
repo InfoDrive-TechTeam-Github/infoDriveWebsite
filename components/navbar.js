@@ -230,11 +230,17 @@ function DrawerAppBar(props) {
               maxWidth: 445,
             }}
           >
+            <Button 
+            href="/" 
+            variant="text"
+            className='logoPC'
+          >
             <img
               alt='Logo'
               style={{ width: 115, height: 77 }}
               src='images/logoHeader.png'
             />
+            </Button>
           </Typography>
           <Box className="mainMenu" sx={{ display: { xs: 'none', sm: 'block' } }}>
             

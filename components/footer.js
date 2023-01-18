@@ -2,7 +2,6 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 //import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
@@ -22,6 +21,13 @@ import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import InboxIcon from '@mui/icons-material/Inbox';
 import DraftsIcon from '@mui/icons-material/Drafts';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 export default function Footer() {
   return (
@@ -34,9 +40,9 @@ export default function Footer() {
                 Driven by technology
                 </Typography>
               </Grid>
-              <Grid item xs={8}>
+              <Grid item xs={8} className="infoFooter">
               <Grid container spacing={0}>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                         <Typography gutterBottom variant="h3" component="div">
                             Company
                         </Typography>
@@ -60,7 +66,7 @@ export default function Footer() {
                             </List>
                         </nav>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                 <Typography gutterBottom variant="h3" component="div">
                             Legal
                         </Typography>
@@ -89,30 +95,45 @@ export default function Footer() {
                             </List>
                         </nav>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={6}>
                 <Typography gutterBottom variant="h3" component="div">
-                Quick Links
+                Contact Us
                         </Typography>
-                        <nav aria-label="main mailbox folders">
+                        <nav className="footerContactUs" aria-label="main mailbox folders">
                             <List>
                                 <ListItem >
-                                    <ListItemButton component="a" href="#about-us">
-                                        <ListItemText primary="Techlabz Keybox" />
+                                    <PhoneIcon/>
+                                    <ListItemButton component="a" href="tel:+6592384299" style={{color:"#fff", display:"inline-block", flexGrow:0, paddingRight:0}}>
+                                        <ListItemText className="pl15" primary="+65-9238 4299" />
+                                    </ListItemButton>,
+                                    <ListItemButton component="a" href="tel:+60123275811" style={{color:"#fff", display:"inline-block", flexGrow:0, paddingRight:0}}>
+                                        <ListItemText className="pl15" primary="+60-1 2327 5811" />
+                                    </ListItemButton>,
+                                    <ListItemButton component="a" href="tel:+919606188081" style={{color:"#fff", display:"inline-block", flexGrow:0, paddingRight:0}}>
+                                        <ListItemText className="pl15" primary="+91-960 61880 81" />
                                     </ListItemButton>
                                 </ListItem>
                                 <ListItem >
-                                    <ListItemButton component="a" href="#contact">
-                                        <ListItemText primary="Downloads" />
+                                    <EmailIcon/>
+                                    <ListItemButton component="a" href="mailto:contact@infodrive-solutions.com">
+                                        <ListItemText className="pl15" primary="contact@infodrive-solutions.com" />
                                     </ListItemButton>
                                 </ListItem>
                                 <ListItem >
-                                    <ListItemButton component="a" href="#blogs">
-                                        <ListItemText primary="Forum" />
+                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://www.instagram.com/infodrivesolutions/">
+                                        <InstagramIcon/>
                                     </ListItemButton>
-                                </ListItem>
-                                <ListItem >
-                                    <ListItemButton component="a" href="#blogs">
-                                        <ListItemText primary="Refund Policy" />
+                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://www.facebook.com/InfoDrivesolutions/">
+                                        <FacebookIcon />
+                                    </ListItemButton>
+                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://in.linkedin.com/company/infodrive-solutions/">
+                                        <LinkedInIcon />
+                                    </ListItemButton>
+                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://www.youtube.com/@infodrivesolutions9178">
+                                        <YouTubeIcon />
+                                    </ListItemButton>
+                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://twitter.com/infodrives">
+                                        <TwitterIcon />
                                     </ListItemButton>
                                 </ListItem>
                             </List>

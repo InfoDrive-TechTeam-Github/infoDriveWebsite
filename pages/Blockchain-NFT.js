@@ -36,7 +36,7 @@ export default function blockchain() {
             <Grid container spacing={0}>
             <p>
             We offer reliable and advanced <br/> blockchain solutions to secure a <br/> formidable position for our clients when <br/>the future unfolds</p>
-            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us.html" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                 <List>
                     <ListItem>
@@ -130,7 +130,7 @@ export default function blockchain() {
                   </Typography>
                   <br/>
                   <br/>
-                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  <Button href="/contact-us.html" className='readmore white pl0 ' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
                   </Grid>
                 <Grid item xs={7}>
                     <Card>

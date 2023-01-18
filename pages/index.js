@@ -92,7 +92,7 @@ export default function Index() {
               WHO IS INFODRIVE SOLUTIONS
             </Typography>
             <Typography gutterBottom variant="h2" component="div">
-              InfoDrive Solutions helps its Customer achieve their desired business outcome, improve efficiencies in their processes and enable people to make collaborative & informed Data-Driven Decisions.
+              InfoDrive Solutions helps its Customer achieve their desired business outcome, improve efficiencies in their processes and enable people to make collaborative & informed Data-Driven Decisions
             </Typography>
             <Typography gutterBottom variant="h5" component="div">InfoDrive Solutions is a Software Development and Digital Transformation Solutions company, we are headquartered in Singapore with regional offices in Malaysia (KL) & India (Bangalore). We deliver cutting-edge Digital Transformation Solutions to many of our prestigious customers in South East Asia.
             Our expertise lies in providing cutting edge IT Development, Digital Transformation, Salesforce Consulting Services & Outsourcing Engineering Services.</Typography>
@@ -115,7 +115,7 @@ export default function Index() {
                   />
                   <CardContent>
                   <Typography gutterBottom variant="h3" className="pt15 pb15" component="div">
-                      Knowledgable team
+                      Knowledgeable team
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       We have the professional team with hands-on experience in their respective fields, which is the icing on the cake. We have adequate and sources to accomplish and acquire the superior technology platform required to run the business.
@@ -227,7 +227,7 @@ export default function Index() {
                     <Typography variant="body2" color="text.secondary">
                       Delivering our very best in all we do, holding ourselves accountable for results with a commitment to integrity, fairness and responsibility.
                     </Typography>
-                    <Button className='readmore white' variant="text">LEARN MORE ABOUT US <ArrowRightAltIcon/></Button>
+                    <Button className='readmore white ' href="/about-us.html" variant="text">LEARN MORE ABOUT US <ArrowRightAltIcon/></Button>
                   </CardContent>
                 </Card>
               </Grid>
@@ -247,7 +247,7 @@ export default function Index() {
             <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
               Ready to take your business to the next level with a custom web or mobile app?
             </Typography>
-            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
+            <Button href="/contact-us.html" className='bgRed white pl15 pr15 poppin upperCase'>
               Connect with Our Expert
             </Button>
       </section>
@@ -299,7 +299,7 @@ export default function Index() {
       <br/>
       <section className={`sectionBox locationBox mt30 testmonial`}>
       <Typography gutterBottom variant="h2" component="div">
-      What others say about us?
+      What do others say about us?
                     </Typography>
                     <br/>
 
