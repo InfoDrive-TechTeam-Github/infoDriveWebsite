@@ -35,8 +35,10 @@ import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import StarIcon from '@mui/icons-material/Star';
 import emailjs from 'emailjs-com';
-import { useState } from 'react'
-import axios from 'axios'
+import { useState } from 'react';
+import axios from 'axios';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Index() {
   const [value, setValue] = React.useState('1');
@@ -55,10 +57,30 @@ export default function Index() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(inputData);
-    const response = await axios.post(`/api/contact`, inputData)
-    console.log(response);
-    alert("Contact successfully sent!!")
+    console.log("input____",inputData);
+    const response = await axios.post(`http://206.189.149.207:4001/GetEmailQuery`, inputData)
+    console.log(response.status,response);
+    if(response.statusText == "OK"){
+      toast.success("Contact Form Submit Sucessfully", {
+        position: 'top-right',
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }else{
+      toast.success("Please Try Again", {
+        position: 'top-right',
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+    }
   }
 
 
@@ -500,6 +522,7 @@ export default function Index() {
         </Box>
       </section>
       <Footer/>
+      <ToastContainer />
     </>
   )
 }
