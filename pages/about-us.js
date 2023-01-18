@@ -40,9 +40,9 @@ export default function About() {
             <p>
               We are a world of people. <br /> We believe in the future. <br />{' '}
               We believe technology brings us <br />
-              together and makes our lives better.
+              together and makes our lives better
             </p>
-            <Button href="/contact-us" className='readmore white' variant='text'>
+            <Button href="/contact-us.html" className='readmore white' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
@@ -110,7 +110,7 @@ export default function About() {
                     offer the right technology solutions. Our leading technology
                     experts will bring you the latest technologies with a
                     variety of great benefits and catered solutions that will
-                    accelerate and elevate your start-up.  <br />
+                    accelerate and elevate your start-up. <br />
                     At InfoDrive Solutions, we work together with start-ups to
                     build custom applications for product-market fit, including
                     mobile and/or web solutions, blockchain-based applications,
@@ -118,7 +118,7 @@ export default function About() {
                     engagement, with the help of tools like Salesforce or other
                     enterprise software.
                   </Typography>
-                  <Button className='readmore' variant='text'>
+                  <Button className='readmore' href="/contact-us.html" variant='text'>
                     LEARN MORE ABOUT US <ArrowRightAltIcon />
                   </Button>
                 </CardContent>
@@ -208,7 +208,7 @@ export default function About() {
                 We have a passionate team striving to make a space where access
                 to knowledge and technology is for everyone equally.To manage
                 the quality level and give the best performance, we regulate our
-                services according to our clients’ expectations
+                services according to our clients’ expectations.
               </Typography>
             </Grid>
           </Grid>
@@ -228,12 +228,12 @@ export default function About() {
             provides the services & solutions to global companies and works in
             the manners of IT Technologies.
           </Typography>
-          <br />
+          {/* <br />
           <br />
           <br />
           <Typography gutterBottom variant='h3' component='div'>
             InfoDrive Technologies “Driven By Technology”
-          </Typography>
+          </Typography> */}
         </div>
       </section>
 
@@ -286,7 +286,7 @@ export default function About() {
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                    no content here. To provide
+                  We understand the importance of timely delivery and cost-effectiveness for our clients. That's why we strive to provide fast delivery of our products and services at reasonable costs. Our team of experts works efficiently to ensure that our clients receive their orders as soon as possible without compromising on the quality.
                   </Typography>
                 </CardContent>
               </Card>
@@ -543,7 +543,7 @@ export default function About() {
                 <CardMedia
                   component='img'
                   height='240'
-                  image='images/default.png'
+                  image='images/team-photos/pradeep.png'
                   alt='green iguana'
                 />
                 <CardContent>
@@ -553,7 +553,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Pradeep Chand</span> <LinkedInIcon />
+                    <span>Pradeep Chand</span> 
+                    <a className='red' href="https://www.linkedin.com/in/pradeepchand1/">
+                    <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial'
@@ -572,7 +575,7 @@ export default function About() {
                 <CardMedia
                   component='img'
                   height='240'
-                  image='images/default.png'
+                  image='images/team-photos/kapil.png'
                   alt='green iguana'
                 />
                 <CardContent>
@@ -582,7 +585,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Kapil Gairola</span> <LinkedInIcon />
+                    <span>Kapil Gairola</span> 
+                    <a className='red' href="https://www.linkedin.com/in/kapilgairola/">
+                    <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial'
@@ -607,7 +613,7 @@ export default function About() {
                 <CardMedia
                   component='img'
                   height='240'
-                  image='images/default.png'
+                  image='images/team-photos/shashank.png'
                   alt='green iguana'
                 />
                 <CardContent>
@@ -617,7 +623,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Shashank Jain</span> <LinkedInIcon />
+                    <span>Shashank Jain</span> 
+                    <a className='red' href="https://www.linkedin.com/in/shashank-jain-%E2%98%81-00913550/">
+                      <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -636,7 +645,7 @@ export default function About() {
                 <CardMedia
                   component='img'
                   height='240'
-                  image='images/default.png'
+                  image='images/team-photos/bharani.png'
                   alt='green iguana'
                 />
                 <CardContent>
@@ -646,7 +655,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Bharani Kumar</span> <LinkedInIcon />
+                    <span>Bharani Kumar</span> 
+                    <a href="https://www.linkedin.com/in/bharani-kumar-8b929641/" className='red'>
+                      <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -665,7 +677,7 @@ export default function About() {
                 <CardMedia
                   component='img'
                   height='240'
-                  image='images/default.png'
+                  image='images/team-photos/maria.png'
                   alt='green iguana'
                 />
                 <CardContent>
@@ -675,7 +687,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Maria Aileen</span> <LinkedInIcon />
+                    <span>Maria Aileen</span> 
+                    <a href="https://www.linkedin.com/in/maria-aileen-abendanio-b6802518/" className='red'>
+                    <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -694,7 +709,7 @@ export default function About() {
                 <CardMedia
                   component='img'
                   height='240'
-                  image='images/default.png'
+                  image='images/team-photos/Sudhir-2.JPG'
                   alt='green iguana'
                 />
                 <CardContent>
@@ -704,7 +719,10 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Sudhir Budakoti</span> <LinkedInIcon />
+                    <span>Sudhir Budakoti</span> 
+                    <a className="red" href="https://www.linkedin.com/in/sudhirbudakoti/">
+                      <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -723,7 +741,7 @@ export default function About() {
                 <CardMedia
                   component='img'
                   height='240'
-                  image='images/default.png'
+                  image='images/team-photos/kyna.png'
                   alt='green iguana'
                 />
                 <CardContent>
@@ -733,7 +751,8 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Kyna Lim</span> <LinkedInIcon />
+                    <span>Kyna Lim</span> 
+                    <a href="https://www.linkedin.com/in/lxmyitian/" className='red'><LinkedInIcon /></a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -741,7 +760,7 @@ export default function About() {
                     variant='h4'
                     component='div'
                   >
-                    Senior Sales Executive | APAS
+                    Senior Sales Executive | APAC
                   </Typography>
                 </CardContent>
               </Card>
@@ -755,14 +774,14 @@ export default function About() {
             <Grid container spacing={0}>
             <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
                   <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  
+                  Get in touch with us today for a <br/> non-obligation discussion                  
                   <br/>
                   <br/>
                   InfoDrive Solutions is 24X7 <br/> Available To Help You
                   </Typography>
                   <br/>
                   <br/>
-                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  <Button href="/contact-us.html" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
                   </Grid>
                 <Grid item xs={7}>
                     <Card>

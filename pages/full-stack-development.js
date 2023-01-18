@@ -50,7 +50,7 @@ export default function FullstackDevelopment() {
             clients rationalize business <br/> developments, 
             abetting <br/> development of specialized <br/> solutions at all stages
             </p>
-            <Button href="/contact-us" className='readmore white' variant='text'>
+            <Button href="/contact-us.html" className='readmore white normalCase' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
@@ -88,7 +88,7 @@ export default function FullstackDevelopment() {
         </Typography>
         <Typography gutterBottom variant='h2' component='div'>
           Knowledge combined with quality gives our clients the edge over other competitors.
-          Value assurance practices and optimized delivery cycles has been our focus from day one.
+          Value assurance practices and optimized delivery cycles have been our focus from day one.
         </Typography>
         <Typography gutterBottom variant='h5' component='div'>
           Our niche solutions are one of a kind in the market. Our applications maximize on key factors such as portability and scalability.  Infodrive enables clients to rationalize business developments and abet development of specialized solutions at all stages. We provide you highly differentiated and nifty solutions. Our applications provide maximum portability and scalability
@@ -227,7 +227,7 @@ export default function FullstackDevelopment() {
 
       <section className={`sectionBox whyUsBox pb0`}>
         <Typography gutterBottom variant='h2' className='mb0' component='div'>
-          We ARE <br/>SPECIALIZED IN
+          WE ARE <br/>SPECIALIZED IN
         </Typography>
         <br />
         <Box sx={{ flexGrow: 1 }}>
@@ -292,14 +292,14 @@ export default function FullstackDevelopment() {
             <Grid container spacing={0}>
             <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
                   <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  
+                  Get in touch with us today for a <br/> non-obligation discussion                  
                   <br/>
                   <br/>
                   InfoDrive Solutions is 24X7 <br/> Available To Help You
                   </Typography>
                   <br/>
                   <br/>
-                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  <Button href="/contact-us.html" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
                   </Grid>
                 <Grid item xs={7}>
                     <Card>

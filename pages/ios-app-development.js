@@ -44,7 +44,7 @@ export default function IosAppDevelopment() {
               <br /> apps that are quality tested <br />
               for perfection.
             </p>
-            <Button href="/contact-us" className='readmore white' variant='text'>
+            <Button href="/contact-us.html" className='readmore white normalCase' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
@@ -513,14 +513,14 @@ export default function IosAppDevelopment() {
             <Grid container spacing={0}>
             <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
                   <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion and start transforming your start-up ideas into real-life products.                  
+                  Get in touch with us today for a <br/> non-obligation discussion                 
                   <br/>
                   <br/>
                   InfoDrive Solutions is 24X7 <br/> Available To Help You
                   </Typography>
                   <br/>
                   <br/>
-                  <Button href="/contact-us" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
+                  <Button href="/contact-us.html" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
                   </Grid>
                 <Grid item xs={7}>
                     <Card>

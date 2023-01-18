@@ -46,7 +46,7 @@ export default function WebMobileApp() {
             <Grid container spacing={0}>
             <p>
             We build custom web and <br/>mobile applications and <br/>provide consulting for startups, small and <br/>mid-large scale businesses</p>
-            <Button href="/contact-us" className="readmore white" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Button href="/contact-us" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                 <List>
                     <ListItem>
@@ -78,8 +78,8 @@ export default function WebMobileApp() {
     </div>
 
     <section className={`sectionBox introSectionBox`}>
-            <Typography gutterBottom variant="h3" component="div">
-              INTRO
+            <Typography gutterBottom variant="h3" className='upperCase' component="div">
+              Introduction
             </Typography>
             <Typography gutterBottom variant="h5" component="div">
              We use a wide range of full-stack technologies connecting a variety of people, businesses, and industries which are responsive for different platforms and devices.
@@ -103,7 +103,7 @@ export default function WebMobileApp() {
             <Typography gutterBottom variant="h3" className='white pb15 pt15 poppin' component="div">
               Ready to take your business to the next level with a custom web or mobile app?
             </Typography>
-            <Button href="/contact-us" className='bgRed white pl15 pr15 poppin normalCase'>
+            <Button href="/contact-us.html" className='bgRed white pl15 pr15 poppin upperCase'>
               Connect with Our Expert
             </Button>
       </section>
