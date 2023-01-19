@@ -34,8 +34,9 @@ export default function blockchain() {
       <img style={{width: '100%',opacity: '0.5'}} src="images/Blockchain_background.png"/>
       <Box sx={{ flexGrow: 1 }} className="sliderContent">
             <Grid container spacing={0}>
-            <p>
-            We offer reliable and advanced <br/> blockchain solutions to secure a <br/> formidable position for our clients when <br/>the future unfolds</p>
+            <Typography gutterBottom variant="h1" component="div">
+            We offer reliable and advanced <br/> blockchain solutions to secure a <br/> formidable position for our clients when <br/>the future unfolds
+            </Typography>
             <Button href="/contact-us.html" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                 <List>

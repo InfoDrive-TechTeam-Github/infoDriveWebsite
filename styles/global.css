@@ -176,6 +176,8 @@ img {
     padding-top: 10px;
   font-family: Poppins;
 }
+
+
 .footerSection .MuiTypography-h5{
   color:#fff;
   width: initial;
@@ -223,6 +225,15 @@ img {
   left: 0;
 }
 .sliderContent p{
+  font-family: Poppins;
+  color: #fff;
+  font-size: 45px;
+  width: 100%;
+  line-height: 60px;
+  height: 310px;
+  margin-top: 210px;
+}
+.sliderContent .MuiTypography-h1{
   font-family: Poppins;
   color: #fff;
   font-size: 45px;
@@ -610,6 +621,17 @@ img {
     margin: 0 auto;
   font-family: Poppins;
 
+}
+.contactUs .MuiTypography-h1{
+  width: 668px;
+  font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #4E4E50;
+    padding-top: 10px;
+  font-family: Poppins;
 }
 .contactUsArea .MuiGrid-item{
   height: 100%;
@@ -1044,6 +1066,13 @@ img {
     padding-top: 15px;
 }
 
+.contactUs .MuiTypography-h1 {
+  width: initial;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 15px;
+}
+
 .footerSection .MuiTypography-h5 {
   text-align: left;
 }
@@ -1061,6 +1090,13 @@ img {
       height: initial;
       margin-top: 30px;
   }
+  .sliderContent .MuiTypography-h1 {
+    font-size: 18px;
+    width: 100%;
+    line-height: 20px;
+    height: initial;
+    margin-top: 30px;
+}
   .sliderContent .socical-network {
       top: 10%;
       width: 75px;

@@ -44,8 +44,9 @@ export default function ServicesForStartUps() {
       <img style={{width: '100%'}} src="images/pexels-helena-lopes-933964.jpg"/>
       <Box sx={{ flexGrow: 1 }} className="sliderContent">
             <Grid container spacing={0}>
-            <p>
-            InfoDrive Solutions is a leading <br/>Technology solution provider and <br/>we are helping many start-ups <br/> and small-medium businesses to <br/> build products from scratch</p>
+            <Typography gutterBottom variant='h1' component='div'>
+            InfoDrive Solutions is a leading <br/>Technology solution provider and <br/>we are helping many start-ups <br/> and small-medium businesses to <br/> build products from scratch
+            </Typography>
             <Button href="/contact-us.html" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                 <List>

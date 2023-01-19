@@ -45,11 +45,12 @@ export default function FullstackDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
-            <p>
+          <Typography gutterBottom variant='h1' component='div'>
+
             Infodrive has helped its <br/>
             clients rationalize business <br/> developments, 
             abetting <br/> development of specialized <br/> solutions at all stages
-            </p>
+            </Typography>
             <Button href="/contact-us.html" className='readmore white normalCase' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>

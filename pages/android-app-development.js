@@ -43,8 +43,9 @@ export default function AndroidAppDevelopment() {
       <img style={{width: '100%'}} src="images/pexels-helena-lopes-933964.jpg"/>
       <Box sx={{ flexGrow: 1 }} className="sliderContent">
             <Grid container spacing={0}>
-            <p>
-            We are one of the leading <br/> Android app development <br/> companies offering <br/> unmatched business <br/> results.</p>
+            <Typography gutterBottom variant="h1" component="div">
+            We are one of the leading <br/> Android app development <br/> companies offering <br/> unmatched business <br/> results.
+            </Typography>
             <Button href="/contact-us.html" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                 <List>

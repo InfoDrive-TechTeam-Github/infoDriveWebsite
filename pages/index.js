@@ -61,7 +61,7 @@ export default function Index() {
     const response = await axios.post(`http://206.189.149.207:4001/GetEmailQuery`, inputData)
     console.log(response.status,response);
     if(response.statusText == "OK"){
-      toast.success("Contact Form Submit Sucessfully", {
+      toast.success("Thank you for your message. We will Response in 2 business days", {
         position: 'top-right',
         autoClose: 2000,
         hideProgressBar: false,
@@ -449,7 +449,7 @@ export default function Index() {
                </Grid>
                <Grid item xs="6"  className="leadFormBox">
 
-               <form className="contact-form" onSubmit={sendEmail}>
+               <form className="contact-form" onSubmit={handleSubmit}>
                 <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
                 <Typography gutterBottom variant="h2" className='white' component="div">
                 Request a call back
@@ -465,7 +465,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
-                            // onChange={handleChange}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -479,7 +479,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
-                            // onChange={handleChange}
+                            onChange={handleChange}
                             variant="standard"
                         />
 
@@ -487,6 +487,7 @@ export default function Index() {
                             id="input-with-icon-textfield"
                             label="Contact Number"
                             name="contact_number"
+                            type='number' 
                             fullWidth sx={{ m: 1 }}
                             InputProps={{
                             startAdornment: (
@@ -494,7 +495,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
-                            // onChange={handleChange}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -510,7 +511,7 @@ export default function Index() {
                                 </InputAdornment>
                             ),
                             }}
-                            // onChange={handleChange}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <Stack spacing={2} direction="row">

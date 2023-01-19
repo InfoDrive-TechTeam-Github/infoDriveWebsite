@@ -44,8 +44,9 @@ export default function WebMobileApp() {
       <img style={{width: '100%'}} src="images/pexels-djordje-petrovic-2102416.jpeg"/>
       <Box sx={{ flexGrow: 1 }} className="sliderContent">
             <Grid container spacing={0}>
-            <p>
-            We build custom web and <br/>mobile applications and <br/>provide consulting for startups, small and <br/>mid-large scale businesses</p>
+            <Typography gutterBottom variant='h1' component='div'>
+            We build custom web and <br/>mobile applications and <br/>provide consulting for startups, small and <br/>mid-large scale businesses
+            </Typography>
             <Button href="/contact-us.html" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                 <List>

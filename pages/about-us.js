@@ -37,11 +37,11 @@ export default function About() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
-            <p className='mb0'>
+          <Typography gutterBottom variant="h1" component="div">
               We are a world of people. <br /> We believe in the future. <br />{' '}
               We believe technology brings us <br />
               together and makes our lives better
-            </p>
+            </Typography>
             <Button href="/contact-us.html" className='readmore white' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>

@@ -62,10 +62,30 @@ export default function Contact() {
     
       const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(inputData);
-        const response = await axios.post(`/api/contact`, inputData)
-        console.log(response);
-        alert("Contact successfully sent!!")
+        console.log("input____",inputData);
+        const response = await axios.post(`http://206.189.149.207:4001/GetEmailQuery`, inputData)
+        console.log(response.status,response);
+        if(response.statusText == "OK"){
+          toast.success("Thank you for your message. We will Response in 2 business days", {
+            position: 'top-right',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }else{
+          toast.success("Please Try Again", {
+            position: 'top-right',
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+          });
+        }
       }
 
  
@@ -76,7 +96,7 @@ export default function Contact() {
             <Typography className="widthInitial red" gutterBottom variant="h2" component="div">
             Contact Us
             </Typography>
-            <Typography className="widthInitial" gutterBottom variant="h5" component="div">Need to get in touch with us? Either call one of the numbers of the responding country
+            <Typography className="widthInitial" gutterBottom variant="h1" component="div">Need to get in touch with us? Either call one of the numbers of the responding country
 or fill the form and we will get back to you</Typography>
       </section>
 
@@ -129,7 +149,7 @@ or fill the form and we will get back to you</Typography>
                     </Grid>
                </Grid>
                <Grid item xs="8">
-               <form className="contact-form" onSubmit={sendEmail}>
+               <form className="contact-form" onSubmit={handleSubmit}>
                 <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
                         <TextField
                             id="input-with-icon-textfield"
@@ -141,7 +161,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
-                            // onChange={handleChange}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -154,7 +174,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
-                            // onChange={handleChange}
+                            onChange={handleChange}
                             variant="standard"
                         />
 
@@ -168,7 +188,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
-                            // onChange={handleChange}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <TextField
@@ -181,7 +201,7 @@ or fill the form and we will get back to you</Typography>
                                 </InputAdornment>
                             ),
                             }}
-                            // onChange={handleChange}
+                            onChange={handleChange}
                             variant="standard"
                         />
                         <FormControl fullWidth sx={{ m: 1 }} variant="standard">
@@ -191,7 +211,7 @@ or fill the form and we will get back to you</Typography>
                                 startAdornment={''}
                                 placeholder="Message"
                                 name="message"
-                                // onChange={handleChange}
+                                onChange={handleChange}
                             />
                         </FormControl>
 
