@@ -28,6 +28,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 export default function Footer() {
   return (
@@ -38,6 +39,9 @@ export default function Footer() {
                 <img src="images/logoFooter.png"/>
                 <Typography variant="h3" sx={{ my: 2 }}>
                 Driven by technology
+                </Typography>
+                <Typography variant="h5" sx={{ my: 2 }}>
+                    InfoDrive Solutions is a premier software development company that specializes in providing innovative solutions using the latest technologies. Our team of highly skilled developers and architects are dedicated to delivering exceptional results to our clients globally. 
                 </Typography>
               </Grid>
               <Grid item xs={8} className="infoFooter">
@@ -161,6 +165,14 @@ export default function Footer() {
         </Box>
         <br/>
         <p style={{textAlign:"center", color:"#fff", fontSize:"14px", margin:"0px", paddingBottom:"15px"}}>Copyright © 2023 InfoDrive Solutions Pte Ltd. All Rights Reserved.</p>
+        <a
+            href="https://wa.me/84915679986"
+            class="whatsapp_float"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <WhatsAppIcon/>
+        </a>
       </section>
   )
 }

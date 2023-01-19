@@ -107,7 +107,7 @@ export default function blockchain() {
                     <Typography gutterBottom variant="h2" component="div" className="bp2">
                     Infodrive Solutions has over 9 years of <br/>experience in eCommerce and <br/> blockchain to assist you in successfully<br/> adopting NFT.
                     </Typography>
-                    <Typography gutterBottom variant="h4" component="div" className="bp3">
+                    <Typography gutterBottom variant="h2" component="div" className="bp2">
                     We have flawlessly deployed more than 10 <br/> tokenization-related projects.
                     </Typography>
                     

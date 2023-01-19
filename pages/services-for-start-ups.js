@@ -230,7 +230,7 @@ export default function ServicesForStartUps() {
         </Box>
       </section>
 
-      <section className={`sectionBox locationBox contactUsArea leadForm`}>
+      <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
           <Box sx={{ flexGrow: 1 }} className="locationContent">
             <Grid container spacing={0}>
                <Grid item xs={6}>

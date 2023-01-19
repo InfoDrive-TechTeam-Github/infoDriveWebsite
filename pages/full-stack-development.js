@@ -227,7 +227,7 @@ export default function FullstackDevelopment() {
 
       <section className={`sectionBox whyUsBox pb0`}>
         <Typography gutterBottom variant='h2' className='mb0' component='div'>
-          WE ARE <br/>SPECIALIZED IN
+          WE ARE SPECIALIZED IN
         </Typography>
         <br />
         <Box sx={{ flexGrow: 1 }}>
