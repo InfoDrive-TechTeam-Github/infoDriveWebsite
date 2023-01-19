@@ -1366,6 +1366,12 @@ img {
 .BlockchainUsBox img.chain_img{
   height: initial;
 }
+.ourCoreTeam .MuiPaper-elevation{
+  padding: 0px 50px 0px 50px;
+}
+.ourCoreTeam .MuiCardContent-root{
+  padding-bottom:0px;
+}
 }
 
 @media (min-width: 621px) and (max-width: 1270px) {
