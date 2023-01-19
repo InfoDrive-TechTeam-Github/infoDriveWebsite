@@ -1374,6 +1374,15 @@ img {
 }
 }
 
+@media (min-width: 376px) and (max-width: 619px) {
+  .ourCoreTeam .MuiPaper-elevation{
+    padding: 0px 60px 0px 60px;
+  }
+  .ourCoreTeam .MuiCardContent-root{
+    padding-bottom:0px;
+  }
+}
+
 @media (min-width: 621px) and (max-width: 1270px) {
   .locationContent .MuiTypography-h7{
     font-size: 18px !important;

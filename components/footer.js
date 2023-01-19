@@ -166,7 +166,7 @@ export default function Footer() {
         <br/>
         <p style={{textAlign:"center", color:"#fff", fontSize:"14px", margin:"0px", paddingBottom:"15px"}}>Copyright © 2023 InfoDrive Solutions Pte Ltd. All Rights Reserved.</p>
         <a
-            href="https://wa.me/84915679986"
+            href="https://wa.me/6592384299"
             class="whatsapp_float"
             target="_blank"
             rel="noopener noreferrer"
