@@ -1,5 +1,5 @@
 import React from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Box from '@mui/material/Box';
@@ -29,6 +29,24 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default function IosAppDevelopment() {
   return (
     <div>
+      <Head>
+        <title>
+          Top iPhone App Development Company & IOS Developers in Singapore,
+          Malaysia, and India
+        </title>
+        <meta
+          name='description'
+          content='At InfoDrive, we are dedicated to providing top-quality software solutions for businesses and individuals. With a team of experienced and skilled developers, we are able to deliver high-performing iOS applications that meet the unique needs of our clients.'
+        />
+        <meta
+          name='keywords'
+          content='IOS App Development Company, IOS App Development Company in Singapore, IOS App Development Company in Malaysia, IOS App Development Company in Kuala Lumpur, IOS App Development Company in Bangalore, Top IOS App Development Company in Singapore, Top IOS App Development Company in Malaysia, IOS App Developers in Singapore, Top IOS App Developers in Malaysia, IOS App Developers in India, IOS App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, iPhone App Development Companies, Top iPhone App Developers in Singapore, iPhone App Developers in Malaysia, iPhone App Development Company in India'
+        />
+        <link
+          rel='canonical'
+          href='https://infodrive-solutions.com/ios-app-development.html'
+        />
+      </Head>
       <Header />
       <div className='sliderBox blockNFT'>
         <img
@@ -37,40 +55,53 @@ export default function IosAppDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
-          <Typography gutterBottom variant='h1' component='div'>
+            <Typography gutterBottom variant='h1' component='div'>
               Our team of expert iOS app <br /> developers uses cutting-
               <br />
               edge technologies to build
               <br /> apps that are quality tested <br />
               for perfection.
             </Typography>
-            <Button href="/contact-us.html" className='readmore white normalCase' variant='text'>
+            <Button
+              href='/contact-us.html'
+              className='readmore white normalCase'
+              variant='text'
+            >
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
-            <List>
-                    <ListItem>
-                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
-                        <ListItemIcon>
-                          <FacebookIcon />
-                        </ListItemIcon>
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
-                        <ListItemIcon>
-                          <LinkedInIcon />
-                        </ListItemIcon>
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
-                        <ListItemIcon>
-                          <InstagramIcon />
-                        </ListItemIcon>
-                      </ListItemButton>
-                    </ListItem>
-                  </List>
+              <List>
+                <ListItem>
+                  <ListItemButton
+                    component='a'
+                    href='https://www.facebook.com/InfoDrivesolutions/'
+                  >
+                    <ListItemIcon>
+                      <FacebookIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton
+                    component='a'
+                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                  >
+                    <ListItemIcon>
+                      <LinkedInIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton
+                    component='a'
+                    href='https://www.instagram.com/infodrivesolutions/'
+                  >
+                    <ListItemIcon>
+                      <InstagramIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+              </List>
             </nav>
           </Grid>
         </Box>
@@ -84,11 +115,7 @@ export default function IosAppDevelopment() {
                   iOS APP DEVELOPMENT
                 </Typography>
                 <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant='h2'
-                    component='div'
-                    >
+                  <Typography gutterBottom variant='h2' component='div'>
                     We are well-known for being a leading provider of full-
                     <br />
                     stack iPhone app development services. We provide a <br />{' '}
@@ -102,11 +129,7 @@ export default function IosAppDevelopment() {
                     applications.
                     <br />
                   </Typography>
-                  <Typography
-                    gutterBottom
-                    variant='h5'
-                    component='div'
-                  >
+                  <Typography gutterBottom variant='h5' component='div'>
                     Being a reliable iOS app development company with expertise
                     in <br /> multiple industries, we strive to provide our
                     customers with the <br /> solutions they need to lead their
@@ -141,18 +164,14 @@ export default function IosAppDevelopment() {
                   Key benefits of our iOS app
                   <br></br> development services
                 </Typography>
-                  <Typography
-                    gutterBottom
-                    variant='h5'
-                    component='div'
-                  >
-                    We are a full-stack iOS app development company that has
-                    released <br />
-                    hundreds of native iOS apps with high App Store ratings and{' '}
-                    <br /> success rates. We use advanced methodologies and
-                    technologies to <br /> build apps with the best-in-class
-                    features, functionality, and <br /> interface.
-                  </Typography>
+                <Typography gutterBottom variant='h5' component='div'>
+                  We are a full-stack iOS app development company that has
+                  released <br />
+                  hundreds of native iOS apps with high App Store ratings and{' '}
+                  <br /> success rates. We use advanced methodologies and
+                  technologies to <br /> build apps with the best-in-class
+                  features, functionality, and <br /> interface.
+                </Typography>
               </Card>
             </Grid>
           </Grid>
@@ -509,142 +528,172 @@ export default function IosAppDevelopment() {
       </section>
 
       <section className={`sectionBox ourValueBox ourBeliefBox`}>
-           <Box sx={{ flexGrow: 1 }} >
-            <Grid container spacing={0}>
-            <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
-                  <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion                 
-                  <br/>
-                  <br/>
-                  InfoDrive Solutions is 24X7 <br/> Available To Help You
-                  </Typography>
-                  <br/>
-                  <br/>
-                  <Button href="/contact-us.html" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
-                  </Grid>
-                <Grid item xs={7}>
-                    <Card>
-                      <img
-                        alt="Remy Sharp"
-                        src="images/pexels-prakhar-bansal-732183.jpg"
-                      />
-                    </Card>
-                </Grid>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <Grid
+              item
+              xs={5}
+              style={{ padding: '30px', background: '#DE3854' }}
+            >
+              <Typography gutterBottom variant='h5' component='div'>
+                Get in touch with us today for a <br /> non-obligation
+                discussion
+                <br />
+                <br />
+                InfoDrive Solutions is 24X7 <br /> Available To Help You
+              </Typography>
+              <br />
+              <br />
+              <Button
+                href='/contact-us.html'
+                className='readmore white pl0'
+                variant='text'
+              >
+                CONTACT US <ArrowRightAltIcon />
+              </Button>
             </Grid>
-          </Box>
+            <Grid item xs={7}>
+              <Card>
+                <img
+                  alt='Remy Sharp'
+                  src='images/pexels-prakhar-bansal-732183.jpg'
+                />
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
       </section>
       <section className={`sectionBox locationBox contactUsArea leadForm`}>
-          <Box sx={{ flexGrow: 1 }} className="locationContent">
-            <Grid container spacing={0}>
-               <Grid item xs={6}>
-                    <Grid item xs={12} className='contactUsB contactUsB1'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Pte Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                            Phone: +65-9238 4299
-                            <br/>
-                            Email: info@infodrive-solutions.com
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12}  className='contactUsB contactUsB2'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Sdn Bhd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                            Phone: +60-1 2327 5811 
-                            <br/>
-                            Email: info@infodrive-solutions.com
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
+        <Box sx={{ flexGrow: 1 }} className='locationContent'>
+          <Grid container spacing={0}>
+            <Grid item xs={6}>
+              <Grid item xs={12} className='contactUsB contactUsB1'>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant='h7' component='div'>
+                      InfoDrive Solutions Pte Ltd
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Address: 2 Changi Business Park avenue 1. #02-00,
+                      Singapore <br />
+                      Phone: +65-9238 4299
+                      <br />
+                      Email: info@infodrive-solutions.com
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} className='contactUsB contactUsB2'>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant='h7' component='div'>
+                      InfoDrive Solutions Sdn Bhd
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen
+                      Sentral 2, 50470 Kuala Lumpur, Malaysia <br />
+                      Phone: +60-1 2327 5811
+                      <br />
+                      Email: info@infodrive-solutions.com
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
 
-                    <Grid item xs={12}  className='contactUsB contactUsB3'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDriven Solutions Pvt Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                            Phone: +91-960 61880 81
-                            <br/>
-                            Email: info@infodrive-solutions.com
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-               </Grid>
-               <Grid item xs="6"  className="leadFormBox">
-                <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
-               
-                <Typography gutterBottom variant="h2" className='white' component="div">
-                Request a call back
-                            </Typography>
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Full Name"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Email Address"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Contact Number"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Message"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-                        <Stack spacing={2} direction="row">
-                            <Button className="bgRed" variant="contained">Send Message</Button>
-                        </Stack>
-                    </Box>
-               </Grid>
+              <Grid item xs={12} className='contactUsB contactUsB3'>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant='h7' component='div'>
+                      InfoDriven Solutions Pvt Ltd
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Address: #88, Borewell Road, opposite Whitefield Post
+                      Office, Whitefield, Bangalore – 560066
+                      <br />
+                      Phone: +91-960 61880 81
+                      <br />
+                      Email: info@infodrive-solutions.com
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
             </Grid>
+            <Grid item xs='6' className='leadFormBox'>
+              <Box
+                sx={{
+                  '& > :not(style)': {
+                    ml: 6,
+                    mt: 7,
+                    maxWidth: '41%',
+                    width: '41%',
+                  },
+                }}
+              >
+                <Typography
+                  gutterBottom
+                  variant='h2'
+                  className='white'
+                  component='div'
+                >
+                  Request a call back
+                </Typography>
+                <TextField
+                  id='input-with-icon-textfield'
+                  label='Full Name'
+                  fullWidth
+                  sx={{ m: 1 }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'></InputAdornment>
+                    ),
+                  }}
+                  variant='standard'
+                />
+                <TextField
+                  id='input-with-icon-textfield'
+                  label='Email Address'
+                  fullWidth
+                  sx={{ m: 1 }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'></InputAdornment>
+                    ),
+                  }}
+                  variant='standard'
+                />
+
+                <TextField
+                  id='input-with-icon-textfield'
+                  label='Contact Number'
+                  fullWidth
+                  sx={{ m: 1 }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'></InputAdornment>
+                    ),
+                  }}
+                  variant='standard'
+                />
+                <TextField
+                  id='input-with-icon-textfield'
+                  label='Message'
+                  fullWidth
+                  sx={{ m: 1 }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'></InputAdornment>
+                    ),
+                  }}
+                  variant='standard'
+                />
+                <Stack spacing={2} direction='row'>
+                  <Button className='bgRed' variant='contained'>
+                    Send Message
+                  </Button>
+                </Stack>
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
       </section>
       <Footer />

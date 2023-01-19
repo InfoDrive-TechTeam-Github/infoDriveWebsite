@@ -33,10 +33,29 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
+import Head from 'next/head';
 
 export default function FullstackDevelopment() {
   return (
     <div>
+      <Head>
+        <title>
+          Full Stack Development Services & Developers in Singapore, Malaysia,
+          and India
+        </title>
+        <meta
+          name='description'
+          content='InfoDrive Solutions is a leading full stack development company in Singapore, Malaysia, and India. Our expert developers provide end-to-end solutions for businesses of all sizes. From front-end to back-end, we have got you covered.'
+        />
+        <meta
+          name='keywords'
+          content='Full Stack Development Services in Singapore, Full Stack Development Services in Malaysia, Full Stack Development Services in Bangalore, Full Stack Development Services in Kuala Lumpur, Full Stack Development in Singapore, Full Stack Development in Malaysia, Full Stack Developers in Singapore, Full Stack Developers in Malaysia, Full Stack Developers in India, Full Stack Development'
+        />
+        <link
+          rel='canonical'
+          href='https://infodrive-solutions.com/full-stack-development.html'
+        />
+      </Head>
       <Header />
       <div className='sliderBox'>
         <img
@@ -45,39 +64,51 @@ export default function FullstackDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
-          <Typography gutterBottom variant='h1' component='div'>
-
-            Infodrive has helped its <br/>
-            clients rationalize business <br/> developments, 
-            abetting <br/> development of specialized <br/> solutions at all stages
+            <Typography gutterBottom variant='h1' component='div'>
+              Infodrive has helped its <br />
+              clients rationalize business <br /> developments, abetting <br />{' '}
+              development of specialized <br /> solutions at all stages
             </Typography>
-            <Button href="/contact-us.html" className='readmore white normalCase' variant='text'>
+            <Button
+              href='/contact-us.html'
+              className='readmore white normalCase'
+              variant='text'
+            >
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
-            <List>
-                    <ListItem>
-                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
-                        <ListItemIcon>
-                          <FacebookIcon />
-                        </ListItemIcon>
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
-                        <ListItemIcon>
-                          <LinkedInIcon />
-                        </ListItemIcon>
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
-                        <ListItemIcon>
-                          <InstagramIcon />
-                        </ListItemIcon>
-                      </ListItemButton>
-                    </ListItem>
-                  </List>
+              <List>
+                <ListItem>
+                  <ListItemButton
+                    component='a'
+                    href='https://www.facebook.com/InfoDrivesolutions/'
+                  >
+                    <ListItemIcon>
+                      <FacebookIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton
+                    component='a'
+                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                  >
+                    <ListItemIcon>
+                      <LinkedInIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton
+                    component='a'
+                    href='https://www.instagram.com/infodrivesolutions/'
+                  >
+                    <ListItemIcon>
+                      <InstagramIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+              </List>
             </nav>
           </Grid>
         </Box>
@@ -88,21 +119,26 @@ export default function FullstackDevelopment() {
           APPLICATION DEVELOPMENT, MAINTENANCE AND SUPPORT
         </Typography>
         <Typography gutterBottom variant='h2' component='div'>
-          Knowledge combined with quality gives our clients the edge over other competitors.
-          Value assurance practices and optimized delivery cycles have been our focus from day one.
+          Knowledge combined with quality gives our clients the edge over other
+          competitors. Value assurance practices and optimized delivery cycles
+          have been our focus from day one.
         </Typography>
         <Typography gutterBottom variant='h5' component='div'>
-          Our niche solutions are one of a kind in the market. Our applications maximize on key factors such as portability and scalability.  Infodrive enables clients to rationalize business developments and abet development of specialized solutions at all stages. We provide you highly differentiated and nifty solutions. Our applications provide maximum portability and scalability
+          Our niche solutions are one of a kind in the market. Our applications
+          maximize on key factors such as portability and scalability. Infodrive
+          enables clients to rationalize business developments and abet
+          development of specialized solutions at all stages. We provide you
+          highly differentiated and nifty solutions. Our applications provide
+          maximum portability and scalability
         </Typography>
       </section>
 
       <section className={`sectionBox whyUsBox pb0 fullstackGame`}>
         <Typography gutterBottom variant='h2' component='div'>
-        Stay ahead in the game with our full stack
+          Stay ahead in the game with our full stack
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
@@ -117,7 +153,9 @@ export default function FullstackDevelopment() {
                     className='pt15 pb15'
                     component='div'
                   >
-                    Visual<br/>engineering
+                    Visual
+                    <br />
+                    engineering
                   </Typography>
                 </CardContent>
               </Card>
@@ -137,7 +175,7 @@ export default function FullstackDevelopment() {
                     className='pt15 pb15'
                     component='div'
                   >
-                    Product <br/> development
+                    Product <br /> development
                   </Typography>
                 </CardContent>
               </Card>
@@ -157,7 +195,9 @@ export default function FullstackDevelopment() {
                     className='pt15 pb15'
                     component='div'
                   >
-                    Application<br/>development
+                    Application
+                    <br />
+                    development
                   </Typography>
                 </CardContent>
               </Card>
@@ -165,63 +205,63 @@ export default function FullstackDevelopment() {
 
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
-                  <Avatar
-                    alt='Remy Sharp'
-                    src='images/vector4.png'
-                    sx={{ width: 65, height: 65, marginLeft: 2 }}
-                  />
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant='h3'
-                      className='pt15 pb15'
-                      component='div'
-                    >
-                      Porting <br/> migration
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
+                <Avatar
+                  alt='Remy Sharp'
+                  src='images/vector4.png'
+                  sx={{ width: 65, height: 65, marginLeft: 2 }}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='pt15 pb15'
+                    component='div'
+                  >
+                    Porting <br /> migration
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
 
-              <Grid item xs={4}>
+            <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
-                  <Avatar
-                    alt='Remy Sharp'
-                    src='images/vector6.png'
-                    sx={{ width: 65, height: 65, marginLeft: 2 }}
-                  />
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant='h3'
-                      className='pt15 pb15'
-                      component='div'
-                    >
-                      Production <br/> support
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
+                <Avatar
+                  alt='Remy Sharp'
+                  src='images/vector6.png'
+                  sx={{ width: 65, height: 65, marginLeft: 2 }}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='pt15 pb15'
+                    component='div'
+                  >
+                    Production <br /> support
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
 
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 345 }}>
-                  <Avatar
-                    alt='Remy Sharp'
-                    src='images/vector7.png'
-                    sx={{ width: 65, height: 65, marginLeft: 2 }}
-                  />
-                  <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant='h3'
-                      className='pt15 pb15'
-                      component='div'
-                    >
-                      Product help desk <br/> & support
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
+            <Grid item xs={4}>
+              <Card sx={{ maxWidth: 345 }}>
+                <Avatar
+                  alt='Remy Sharp'
+                  src='images/vector7.png'
+                  sx={{ width: 65, height: 65, marginLeft: 2 }}
+                />
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='pt15 pb15'
+                    component='div'
+                  >
+                    Product help desk <br /> & support
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
           </Grid>
         </Box>
       </section>
@@ -236,15 +276,22 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <CardContent>
-                  <Typography gutterBottom variant='h5' className="pb10" component='div'>
-                  WORLD’S #1 CRM
+                  <Typography
+                    gutterBottom
+                    variant='h5'
+                    className='pb10'
+                    component='div'
+                  >
+                    WORLD’S #1 CRM
                   </Typography>
                   <Typography gutterBottom variant='h3' component='div'>
-                  Salesforce partner
+                    Salesforce partner
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  Salesforce is the World’s #1 CRM today, over 100,000 of the world’s most innovative companies use Salesforce to close bigger deals, faster.
+                    Salesforce is the World’s #1 CRM today, over 100,000 of the
+                    world’s most innovative companies use Salesforce to close
+                    bigger deals, faster.
                   </Typography>
                 </CardContent>
               </Card>
@@ -253,15 +300,22 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <CardContent>
-                  <Typography gutterBottom variant='h5' className="pb10" component='div'>
-                  AI AND ANALYTICS
+                  <Typography
+                    gutterBottom
+                    variant='h5'
+                    className='pb10'
+                    component='div'
+                  >
+                    AI AND ANALYTICS
                   </Typography>
                   <Typography gutterBottom variant='h3' component='div'>
-                  Servicenow
+                    Servicenow
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  Unleash the power of AI and analytics to surface information, make predictions, and automate repetitive tasks so you can focus on strategic work.
+                    Unleash the power of AI and analytics to surface
+                    information, make predictions, and automate repetitive tasks
+                    so you can focus on strategic work.
                   </Typography>
                 </CardContent>
               </Card>
@@ -270,161 +324,197 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <CardContent>
-                  <Typography gutterBottom variant='h5' className="pb10" component='div'>
-                  ENTERPRISE APPLICATIONS
+                  <Typography
+                    gutterBottom
+                    variant='h5'
+                    className='pb10'
+                    component='div'
+                  >
+                    ENTERPRISE APPLICATIONS
                   </Typography>
                   <Typography gutterBottom variant='h3' component='div'>
-                  Mulesoft
+                    Mulesoft
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  Today’s enterprise needs a network of applications, data, and devices connected by APIs, whether on-premises or in the cloud. 
+                    Today’s enterprise needs a network of applications, data,
+                    and devices connected by APIs, whether on-premises or in the
+                    cloud.
                   </Typography>
                 </CardContent>
               </Card>
             </Grid>
-
           </Grid>
         </Box>
       </section>
 
       <section className={`sectionBox ourValueBox ourBeliefBox`}>
-           <Box sx={{ flexGrow: 1 }} >
-            <Grid container spacing={0}>
-            <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
-                  <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion                  
-                  <br/>
-                  <br/>
-                  InfoDrive Solutions is 24X7 <br/> Available To Help You
-                  </Typography>
-                  <br/>
-                  <br/>
-                  <Button href="/contact-us.html" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
-                  </Grid>
-                <Grid item xs={7}>
-                    <Card>
-                      <img
-                        alt="Remy Sharp"
-                        src="images/pexels-prakhar-bansal-732183.jpg"
-                      />
-                    </Card>
-                </Grid>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <Grid
+              item
+              xs={5}
+              style={{ padding: '30px', background: '#DE3854' }}
+            >
+              <Typography gutterBottom variant='h5' component='div'>
+                Get in touch with us today for a <br /> non-obligation
+                discussion
+                <br />
+                <br />
+                InfoDrive Solutions is 24X7 <br /> Available To Help You
+              </Typography>
+              <br />
+              <br />
+              <Button
+                href='/contact-us.html'
+                className='readmore white pl0'
+                variant='text'
+              >
+                CONTACT US <ArrowRightAltIcon />
+              </Button>
             </Grid>
-          </Box>
+            <Grid item xs={7}>
+              <Card>
+                <img
+                  alt='Remy Sharp'
+                  src='images/pexels-prakhar-bansal-732183.jpg'
+                />
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
       </section>
       <section className={`sectionBox locationBox contactUsArea leadForm`}>
-          <Box sx={{ flexGrow: 1 }} className="locationContent">
-            <Grid container spacing={0}>
-               <Grid item xs={6}>
-                    <Grid item xs={12} className='contactUsB contactUsB1'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Pte Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                            Phone: +65-9238 4299
-                            <br/>
-                            Email: info@infodrive-solutions.com
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12}  className='contactUsB contactUsB2'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Sdn Bhd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                            Phone: +60-1 2327 5811 
-                            <br/>
-                            Email: info@infodrive-solutions.com
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
+        <Box sx={{ flexGrow: 1 }} className='locationContent'>
+          <Grid container spacing={0}>
+            <Grid item xs={6}>
+              <Grid item xs={12} className='contactUsB contactUsB1'>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant='h7' component='div'>
+                      InfoDrive Solutions Pte Ltd
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Address: 2 Changi Business Park avenue 1. #02-00,
+                      Singapore <br />
+                      Phone: +65-9238 4299
+                      <br />
+                      Email: info@infodrive-solutions.com
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} className='contactUsB contactUsB2'>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant='h7' component='div'>
+                      InfoDrive Solutions Sdn Bhd
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen
+                      Sentral 2, 50470 Kuala Lumpur, Malaysia <br />
+                      Phone: +60-1 2327 5811
+                      <br />
+                      Email: info@infodrive-solutions.com
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
 
-                    <Grid item xs={12}  className='contactUsB contactUsB3'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDriven Solutions Pvt Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                            Phone: +91-960 61880 81
-                            <br/>
-                            Email: info@infodrive-solutions.com
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-               </Grid>
-               <Grid item xs="6"  className="leadFormBox">
-                <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
-               
-                <Typography gutterBottom variant="h2" className='white' component="div">
-                Request a call back
-                            </Typography>
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Full Name"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Email Address"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Contact Number"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Message"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-                        <Stack spacing={2} direction="row">
-                            <Button className="bgRed" variant="contained">Send Message</Button>
-                        </Stack>
-                    </Box>
-               </Grid>
+              <Grid item xs={12} className='contactUsB contactUsB3'>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant='h7' component='div'>
+                      InfoDriven Solutions Pvt Ltd
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Address: #88, Borewell Road, opposite Whitefield Post
+                      Office, Whitefield, Bangalore – 560066
+                      <br />
+                      Phone: +91-960 61880 81
+                      <br />
+                      Email: info@infodrive-solutions.com
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
             </Grid>
+            <Grid item xs='6' className='leadFormBox'>
+              <Box
+                sx={{
+                  '& > :not(style)': {
+                    ml: 6,
+                    mt: 7,
+                    maxWidth: '41%',
+                    width: '41%',
+                  },
+                }}
+              >
+                <Typography
+                  gutterBottom
+                  variant='h2'
+                  className='white'
+                  component='div'
+                >
+                  Request a call back
+                </Typography>
+                <TextField
+                  id='input-with-icon-textfield'
+                  label='Full Name'
+                  fullWidth
+                  sx={{ m: 1 }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'></InputAdornment>
+                    ),
+                  }}
+                  variant='standard'
+                />
+                <TextField
+                  id='input-with-icon-textfield'
+                  label='Email Address'
+                  fullWidth
+                  sx={{ m: 1 }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'></InputAdornment>
+                    ),
+                  }}
+                  variant='standard'
+                />
+
+                <TextField
+                  id='input-with-icon-textfield'
+                  label='Contact Number'
+                  fullWidth
+                  sx={{ m: 1 }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'></InputAdornment>
+                    ),
+                  }}
+                  variant='standard'
+                />
+                <TextField
+                  id='input-with-icon-textfield'
+                  label='Message'
+                  fullWidth
+                  sx={{ m: 1 }}
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position='start'></InputAdornment>
+                    ),
+                  }}
+                  variant='standard'
+                />
+                <Stack spacing={2} direction='row'>
+                  <Button className='bgRed' variant='contained'>
+                    Send Message
+                  </Button>
+                </Stack>
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
       </section>
       <Footer />
