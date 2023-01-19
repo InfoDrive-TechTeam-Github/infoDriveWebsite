@@ -24,7 +24,7 @@
     "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0",
     "react-material-ui-carousel": "^3.4.2",
-    "react-meta-tags": "^1.0.1",
+    "react-toastify": "^9.1.1",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
     "styled-components": "^5.3.6"

@@ -37,13 +37,13 @@ export default function IosAppDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
-            <p>
+          <Typography gutterBottom variant='h1' component='div'>
               Our team of expert iOS app <br /> developers uses cutting-
               <br />
               edge technologies to build
               <br /> apps that are quality tested <br />
               for perfection.
-            </p>
+            </Typography>
             <Button href="/contact-us.html" className='readmore white normalCase' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>

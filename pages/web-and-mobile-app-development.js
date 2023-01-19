@@ -44,9 +44,10 @@ export default function WebMobileApp() {
       <img style={{width: '100%'}} src="images/pexels-djordje-petrovic-2102416.jpeg"/>
       <Box sx={{ flexGrow: 1 }} className="sliderContent">
             <Grid container spacing={0}>
-            <p>
-            We build custom web and <br/>mobile applications and <br/>provide consulting for startups, small and <br/>mid-large scale businesses</p>
-            <Button href="/contact-us" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
+            <Typography gutterBottom variant='h1' component='div'>
+            We build custom web and <br/>mobile applications and <br/>provide consulting for startups, small and <br/>mid-large scale businesses
+            </Typography>
+            <Button href="/contact-us.html" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                 <List>
                     <ListItem>
@@ -191,7 +192,7 @@ export default function WebMobileApp() {
                     </Typography>
                     <br/>
                     <Typography variant="body2" color="text.secondary">
-                    We are dedicated to delivering high quality software solutions in a timely and cost-effective manner. Our experienced team of developers is committed to meeting the specific needs of our clients and delivering results that exceed expectations. We understand that every project is unique, which is why we offer flexible pricing and delivery options to ensure that our clients receive the best value for their investment.
+                    We are dedicated to delivering high quality software solutions in a timely and cost-effective manner. Our experienced team of developers is committed to meeting the specific needs of our clients and delivering results that exceed expectations.
                     </Typography>
                   </CardContent>
                 </Card>

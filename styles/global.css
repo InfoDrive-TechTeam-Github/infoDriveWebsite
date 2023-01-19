@@ -157,7 +157,7 @@ img {
   font-weight: 700;
 }
 .sectionBox .MuiTypography-h2{
-  font-size: 24px;
+  font-size: 22px;
   font-family: Poppins;
   width: 760px;
   font-weight: 700;
@@ -175,6 +175,13 @@ img {
     color: #4E4E50;
     padding-top: 10px;
   font-family: Poppins;
+}
+
+
+.footerSection .MuiTypography-h5{
+  color:#fff;
+  width: initial;
+  font-size: 13px;
 }
 .sectionBox .customButton{
   background: #ccc;
@@ -220,9 +227,18 @@ img {
 .sliderContent p{
   font-family: Poppins;
   color: #fff;
-  font-size: 56px;
+  font-size: 45px;
   width: 100%;
-  line-height: 68px;
+  line-height: 60px;
+  height: 310px;
+  margin-top: 210px;
+}
+.sliderContent .MuiTypography-h1{
+  font-family: Poppins;
+  color: #fff;
+  font-size: 45px;
+  width: 100%;
+  line-height: 60px;
   height: 310px;
   margin-top: 210px;
 }
@@ -239,11 +255,19 @@ img {
   font-size: 16px;
   color: #fff;
   font-family: Poppins;
-
+  background: #000;
+  padding-left: 10px !important;
+}
+.readmore:hover{
+  background: #dd3952;
 }
 .sliderBox .readmore{
   font-size: 20px;
-  padding-left: 0;
+  padding-left: 15px;
+  background: #000;
+}
+.sliderBox .readmore:hover{
+  background: #dd3952;
 }
 .sliderContent button.readmore{
   font-size: 20px;
@@ -388,7 +412,7 @@ img {
   font-weight: 600;
   color: #f8932b;
   font-family: Poppins;
-
+  font-size: 24px;
 }
 .locationContent p{
   font-size: 25px;
@@ -597,6 +621,17 @@ img {
     margin: 0 auto;
   font-family: Poppins;
 
+}
+.contactUs .MuiTypography-h1{
+  width: 668px;
+  font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #4E4E50;
+    padding-top: 10px;
+  font-family: Poppins;
 }
 .contactUsArea .MuiGrid-item{
   height: 100%;
@@ -955,6 +990,12 @@ img {
 .footerContactUs{
   color:#fff;
 }
+.servicesForStartUp li{
+  font-size: 16px;
+}
+.servicesForStartUp .MuiTypography-h3{
+  font-size: 16px;
+}
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
   .leadForm .leadFormBox {
@@ -1024,6 +1065,18 @@ img {
     line-height: 22px;
     padding-top: 15px;
 }
+
+.contactUs .MuiTypography-h1 {
+  width: initial;
+  font-size: 16px;
+  line-height: 22px;
+  padding-top: 15px;
+}
+
+.footerSection .MuiTypography-h5 {
+  text-align: left;
+}
+
   .sliderBox {
     height: 225px;
     position: relative;
@@ -1037,6 +1090,13 @@ img {
       height: initial;
       margin-top: 30px;
   }
+  .sliderContent .MuiTypography-h1 {
+    font-size: 18px;
+    width: 100%;
+    line-height: 20px;
+    height: initial;
+    margin-top: 30px;
+}
   .sliderContent .socical-network {
       top: 10%;
       width: 75px;
@@ -1292,4 +1352,33 @@ img {
 .footerSection .footerContactUs img{
   margin: 0;
 }
+.contactUsArea .MuiGrid-item {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.BlockchainUsBox .MuiGrid-item{
+  width: 100%;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+.BlockchainUsBox img.chain_img{
+  height: initial;
+}
+.ourCoreTeam .MuiPaper-elevation{
+  padding: 0px 50px 0px 50px;
+}
+.ourCoreTeam .MuiCardContent-root{
+  padding-bottom:0px;
+}
+}
+
+@media (min-width: 621px) and (max-width: 1270px) {
+  .locationContent .MuiTypography-h7{
+    font-size: 18px !important;
+  }
+  .contactUsArea .locationContent p{
+    font-size: 14px !important;
+  }
 }

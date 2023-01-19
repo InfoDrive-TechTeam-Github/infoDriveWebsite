@@ -37,11 +37,11 @@ export default function About() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
-            <p>
+          <Typography gutterBottom variant="h1" component="div">
               We are a world of people. <br /> We believe in the future. <br />{' '}
               We believe technology brings us <br />
               together and makes our lives better
-            </p>
+            </Typography>
             <Button href="/contact-us.html" className='readmore white' variant='text'>
               Let's Talk <ArrowRightAltIcon />
             </Button>
@@ -534,7 +534,7 @@ export default function About() {
                 development, product design, QA and consultancy services.
               </Typography>
 
-              <Button className='readmore black pl0' variant='text'>
+              <Button className='readmore white pl0' href="/about-us.html" variant='text'>
                 JOIN OUR TEAM <ArrowRightAltIcon />
               </Button>
             </Grid>
@@ -554,7 +554,7 @@ export default function About() {
                     component='div'
                   >
                     <span>Pradeep Chand</span> 
-                    <a className='red' href="https://www.linkedin.com/in/pradeepchand1/">
+                    <a className='red' target="_blank" href="https://www.linkedin.com/in/pradeepchand1/">
                     <LinkedInIcon />
                     </a>
                   </Typography>
@@ -586,7 +586,7 @@ export default function About() {
                     component='div'
                   >
                     <span>Kapil Gairola</span> 
-                    <a className='red' href="https://www.linkedin.com/in/kapilgairola/">
+                    <a className='red' target="_blank" href="https://www.linkedin.com/in/kapilgairola/">
                     <LinkedInIcon />
                     </a>
                   </Typography>
@@ -624,7 +624,7 @@ export default function About() {
                     component='div'
                   >
                     <span>Shashank Jain</span> 
-                    <a className='red' href="https://www.linkedin.com/in/shashank-jain-%E2%98%81-00913550/">
+                    <a target="_blank" className='red' href="https://www.linkedin.com/in/shashank-jain-%E2%98%81-00913550/">
                       <LinkedInIcon />
                     </a>
                   </Typography>
@@ -656,7 +656,7 @@ export default function About() {
                     component='div'
                   >
                     <span>Bharani Kumar</span> 
-                    <a href="https://www.linkedin.com/in/bharani-kumar-8b929641/" className='red'>
+                    <a target="_blank" href="https://www.linkedin.com/in/bharani-kumar-8b929641/" className='red'>
                       <LinkedInIcon />
                     </a>
                   </Typography>
@@ -688,7 +688,7 @@ export default function About() {
                     component='div'
                   >
                     <span>Maria Aileen</span> 
-                    <a href="https://www.linkedin.com/in/maria-aileen-abendanio-b6802518/" className='red'>
+                    <a target="_blank" href="https://www.linkedin.com/in/maria-aileen-abendanio-b6802518/" className='red'>
                     <LinkedInIcon />
                     </a>
                   </Typography>
@@ -720,7 +720,7 @@ export default function About() {
                     component='div'
                   >
                     <span>Sudhir Budakoti</span> 
-                    <a className="red" href="https://www.linkedin.com/in/sudhirbudakoti/">
+                    <a className="red" target="_blank" href="https://www.linkedin.com/in/sudhirbudakoti/">
                       <LinkedInIcon />
                     </a>
                   </Typography>

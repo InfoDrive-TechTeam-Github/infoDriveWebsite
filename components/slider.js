@@ -36,9 +36,9 @@ export default function Slider() {
       <img style={{width: '100%'}} src="images/ezgif.com-gif-maker-4.gif"/>
       <Box sx={{ flexGrow: 1 }} className="sliderContent">
             <Grid container spacing={0}>
-            <p>
+            <Typography gutterBottom variant="h1" component="div">
         Technology service <br/> company helping transform <br/> business through digital <br/> technology
-      </p>
+      </Typography>
             <Button href="/contact-us.html" className="readmore white normalCase" variant="text">Let's Talk <ArrowRightAltIcon/></Button>
                 <nav className="socical-network">
                   <List>
