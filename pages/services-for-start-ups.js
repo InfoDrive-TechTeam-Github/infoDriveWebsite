@@ -34,7 +34,7 @@ import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
-
+import LeadForm from '../components/leadForm';
 export default function ServicesForStartUps() {
   
   return (
@@ -85,17 +85,18 @@ export default function ServicesForStartUps() {
                 <Card>
                   <CardContent>
                     <Typography gutterBottom variant="h3" component="div">
-                    We analyse your start-up model in entirely, consult and offer the right technology solutions
+                    We analyse your start-up model in entirely, consult and offer the right technology solutions.
+                    <br/>
+                    We are a leading provider of digital solutions for start-ups, helping them to get their business off the ground and achieve success in the highly competitive world of entrepreneurship. With our comprehensive range of services, we can support you every step of the way, from building a professional website to developing a comprehensive digital marketing strategy.
+                    <br/>
+                    {/* As a start-up, you need to make the most of every opportunity to get your business noticed and attract new customers. That's where we come in. Our team of experienced professionals has a deep understanding of the challenges faced by start-ups and can provide the guidance and support you need to succeed. */}
                     </Typography>
-                    <br/>
                     <hr/>
-                    <br/>
                     <Typography gutterBottom variant="h3" component="div">
-                    Our leading technology experts will bring you the latest technologies with a variety of great benefits and catered solutions.
+                    Our leading technology experts will bring you the latest technologies with a variety of great benefits and catered solutions. <br/>
+                    {/* One of our key services is website design and development. Your website is often the first point of contact with potential customers, and it's crucial that it reflects your brand, values, and vision. Our team of skilled designers and developers can create a custom website that meets your specific needs and helps you stand out from the competition. Another important service we offer is branding and identity development. As a start-up, it's crucial that you establish a strong brand identity that differentiates you from the competition and helps you build trust and loyalty with your customers. Our team can help you develop a professional logo and brand guidelines that showcase your unique value proposition and establish your brand as a leader in your industry. */}
                     </Typography>
-                    <br/>
                     <hr/>
-                    <br/>
                     <Typography gutterBottom variant="h3" component="div">
                     We build custom applications for product-market fit:
                     </Typography>
@@ -104,6 +105,11 @@ export default function ServicesForStartUps() {
                         <li>blockchain-based applications</li>
                         <li>enterprise solutions (salesforce)</li>
                     </ul>
+
+                    <Typography gutterBottom variant="h3" component="div">
+                    {/* We also offer a range of other solutions designed specifically for start-ups. These include business planning and strategy development, market research, and business process automation. Whatever your needs, we have the expertise and experience to help you succeed. At InfoDrive Solutions, we are committed to helping start-ups grow and succeed. We understand the challenges you face and are here to provide the support and guidance you need to take your business to the next level.  */}
+                    </Typography>
+                    <br/>
                     <Button className='readmore' variant="text">LEARN MORE ABOUT US <ArrowRightAltIcon/></Button>
                   </CardContent>
                 </Card>
@@ -230,121 +236,7 @@ export default function ServicesForStartUps() {
             </Grid>
         </Box>
       </section>
-
-      <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
-          <Box sx={{ flexGrow: 1 }} className="locationContent">
-            <Grid container spacing={0}>
-               <Grid item xs={6}>
-                    <Grid item xs={12} className='contactUsB contactUsB1'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Pte Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                            Phone: +65-9238 4299
-                            <br/>
-                            Email: info@infodrive-solutions.com
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12}  className='contactUsB contactUsB2'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Sdn Bhd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                            Phone: +60-1 2327 5811 
-                            <br/>
-                            Email: info@infodrive-solutions.com
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-
-                    <Grid item xs={12}  className='contactUsB contactUsB3'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDriven Solutions Pvt Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                            Phone: +91-960 61880 81
-                            <br/>
-                            Email: info@infodrive-solutions.com
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-               </Grid>
-               <Grid item xs="6"  className="leadFormBox">
-                <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
-               
-                <Typography gutterBottom variant="h2" className='white' component="div">
-                Request a call back
-                            </Typography>
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Full Name"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Email Address"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Contact Number"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Message"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            variant="standard"
-                        />
-                        <Stack spacing={2} direction="row">
-                            <Button className="bgRed" variant="contained">Send Message</Button>
-                        </Stack>
-                    </Box>
-               </Grid>
-            </Grid>
-        </Box>
-      </section>
+      <LeadForm />
 
       <Footer/>
     </div>
