@@ -121,7 +121,24 @@ export default function Contact() {
           rel='canonical'
           href='https://infodrive-solutions.com/contact-us.html'
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MB38MVS');`,
+          }}
+        />
       </Head>
+      <noscript>
+        <iframe
+          src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
+          height='0'
+          width='0'
+          style={{ display: 'none', visibility: 'hidden' }}
+        ></iframe>
+      </noscript>
       <Header />
       <section className={`sectionBox contactUs`}>
         <Typography
@@ -144,130 +161,175 @@ export default function Contact() {
       </section>
 
       <section className={`sectionBox locationBox contactUsArea pt0`}>
-          <Box sx={{ flexGrow: 1 }} className="locationContent">
-            <Grid container spacing={0}>
-               <Grid item xs={4}>
-                    <Grid item xs={12} className='contactUsB contactUsB1'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Pte Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                            Phone: <a href="tel:+6592384299" style={{color:"#fff"}}>+65-9238 4299</a><br/>
-                            Email: <a href="mailto: contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
-
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12}  className='contactUsB contactUsB1'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Sdn Bhd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                            Phone: <a href="tel:+60123275811" style={{color:"#fff"}}>+60-1 2327 5811</a><br/>
-                            Email: <a href="mailto: contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
-
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12}  className='contactUsB contactUsB1'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDriven Solutions Pvt Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                            Phone: <a href="tel:+919606188081" style={{color:"#fff"}}>+91-960 61880 81 </a><br/>
-                            Email: <a href="mailto: contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
-
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-               </Grid>
-               <Grid item xs="8">
-                <form className="contact-form" onSubmit={handleSubmit}>
-                  <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
-                          <TextField
-                              id="input-with-icon-textfield"
-                              label="Name"
-                              name="full_name"
-                              InputProps={{
-                              startAdornment: (
-                                  <InputAdornment position="start">
-                                  </InputAdornment>
-                              ),
-                              }}
-                              onChange={handleChange}
-                              variant="standard"
-                          />
-                          <TextField
-                              id="input-with-icon-textfield"
-                              label="Email"
-                              name="email_address"
-                              InputProps={{
-                              startAdornment: (
-                                  <InputAdornment position="start">
-                                  </InputAdornment>
-                              ),
-                              }}
-                              onChange={handleChange}
-                              variant="standard"
-                          />
-
-                          <TextField
-                              id="input-with-icon-textfield"
-                              label="Phone"
-                              name="contact_number"
-                              InputProps={{
-                              startAdornment: (
-                                  <InputAdornment position="start">
-                                  </InputAdornment>
-                              ),
-                              }}
-                              onChange={handleChange}
-                              variant="standard"
-                          />
-                          <TextField
-                              id="input-with-icon-textfield"
-                              label="Industry"
-                              name="industry"
-                              InputProps={{
-                              startAdornment: (
-                                  <InputAdornment position="start">
-                                  </InputAdornment>
-                              ),
-                              }}
-                              onChange={handleChange}
-                              variant="standard"
-                          />
-                          <FormControl fullWidth sx={{ m: 1 }} variant="standard">
-                              <InputLabel htmlFor="standard-adornment-amount">Message</InputLabel>
-                              <Input
-                                  id="standard-adornment-amount"
-                                  startAdornment={''}
-                                  placeholder="Message"
-                                  name="message"
-                                  onChange={handleChange}
-                              />
-                          </FormControl>
-
-                          <Stack spacing={2} direction="row">
-                              <Button type="submit" style={{background:"#000"}} className="bgRed white" variant="contained">Send Message</Button>
-                          </Stack>
-                      </Box>
-                  </form>
-               </Grid>
+        <Box sx={{ flexGrow: 1 }} className='locationContent'>
+          <Grid container spacing={0}>
+            <Grid item xs={4}>
+              <Grid item xs={12} className='contactUsB contactUsB1'>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant='h7' component='div'>
+                      InfoDrive Solutions Pte Ltd
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Address: 2 Changi Business Park avenue 1. #02-00,
+                      Singapore <br />
+                      Phone:{' '}
+                      <a href='tel:+6592384299' style={{ color: '#fff' }}>
+                        +65-9238 4299
+                      </a>
+                      <br />
+                      Email:{' '}
+                      <a
+                        href='mailto: contact@infodrive-solutions.com'
+                        style={{ color: '#fff' }}
+                      >
+                        contact@infodrive-solutions.com
+                      </a>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} className='contactUsB contactUsB1'>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant='h7' component='div'>
+                      InfoDrive Solutions Sdn Bhd
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen
+                      Sentral 2, 50470 Kuala Lumpur, Malaysia <br />
+                      Phone:{' '}
+                      <a href='tel:+60123275811' style={{ color: '#fff' }}>
+                        +60-1 2327 5811
+                      </a>
+                      <br />
+                      Email:{' '}
+                      <a
+                        href='mailto: contact@infodrive-solutions.com'
+                        style={{ color: '#fff' }}
+                      >
+                        contact@infodrive-solutions.com
+                      </a>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={12} className='contactUsB contactUsB1'>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant='h7' component='div'>
+                      InfoDriven Solutions Pvt Ltd
+                    </Typography>
+                    <Typography variant='body2' color='text.secondary'>
+                      Address: #88, Borewell Road, opposite Whitefield Post
+                      Office, Whitefield, Bangalore – 560066
+                      <br />
+                      Phone:{' '}
+                      <a href='tel:+919606188081' style={{ color: '#fff' }}>
+                        +91-960 61880 81{' '}
+                      </a>
+                      <br />
+                      Email:{' '}
+                      <a
+                        href='mailto: contact@infodrive-solutions.com'
+                        style={{ color: '#fff' }}
+                      >
+                        contact@infodrive-solutions.com
+                      </a>
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </Grid>
             </Grid>
-          </Box>
+            <Grid item xs='8'>
+              <form className='contact-form' onSubmit={handleSubmit}>
+                <Box
+                  sx={{
+                    '& > :not(style)': {
+                      ml: 6,
+                      mt: 7,
+                      maxWidth: '41%',
+                      width: '41%',
+                    },
+                  }}
+                >
+                  <TextField
+                    id='input-with-icon-textfield'
+                    label='Name'
+                    name='full_name'
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position='start'></InputAdornment>
+                      ),
+                    }}
+                    onChange={handleChange}
+                    variant='standard'
+                  />
+                  <TextField
+                    id='input-with-icon-textfield'
+                    label='Email'
+                    name='email_address'
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position='start'></InputAdornment>
+                      ),
+                    }}
+                    onChange={handleChange}
+                    variant='standard'
+                  />
+
+                  <TextField
+                    id='input-with-icon-textfield'
+                    label='Phone'
+                    name='contact_number'
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position='start'></InputAdornment>
+                      ),
+                    }}
+                    onChange={handleChange}
+                    variant='standard'
+                  />
+                  <TextField
+                    id='input-with-icon-textfield'
+                    label='Industry'
+                    name='industry'
+                    InputProps={{
+                      startAdornment: (
+                        <InputAdornment position='start'></InputAdornment>
+                      ),
+                    }}
+                    onChange={handleChange}
+                    variant='standard'
+                  />
+                  <FormControl fullWidth sx={{ m: 1 }} variant='standard'>
+                    <InputLabel htmlFor='standard-adornment-amount'>
+                      Message
+                    </InputLabel>
+                    <Input
+                      id='standard-adornment-amount'
+                      startAdornment={''}
+                      placeholder='Message'
+                      name='message'
+                      onChange={handleChange}
+                    />
+                  </FormControl>
+
+                  <Stack spacing={2} direction='row'>
+                    <Button
+                      type='submit'
+                      style={{ background: '#000' }}
+                      className='bgRed white'
+                      variant='contained'
+                    >
+                      Send Message
+                    </Button>
+                  </Stack>
+                </Box>
+              </form>
+            </Grid>
+          </Grid>
+        </Box>
       </section>
       <Footer />
       <ToastContainer />
