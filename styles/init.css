@@ -123,6 +123,9 @@
   .widthInitial{
     width: initial !important;
   }
+  .w100{
+    width: 100% !important;
+  }
   /* Satya Add css  */
   .sliderBox.blockNFT {
     background: #070D0C;

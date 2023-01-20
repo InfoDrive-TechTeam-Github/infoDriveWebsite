@@ -140,19 +140,19 @@ export default function Footer() {
                                     </ListItemButton>
                                 </ListItem>
                                 <ListItem >
-                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://www.instagram.com/infodrivesolutions/">
+                                    <ListItemButton target="_blank" component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://www.instagram.com/infodrivesolutions/">
                                         <InstagramIcon/>
                                     </ListItemButton>
-                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://www.facebook.com/InfoDrivesolutions/">
+                                    <ListItemButton target="_blank" component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://www.facebook.com/InfoDrivesolutions/">
                                         <FacebookIcon />
                                     </ListItemButton>
-                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://in.linkedin.com/company/infodrive-solutions/">
+                                    <ListItemButton target="_blank" component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://in.linkedin.com/company/infodrive-solutions/">
                                         <LinkedInIcon />
                                     </ListItemButton>
-                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://www.youtube.com/@infodrivesolutions9178">
+                                    <ListItemButton target="_blank" component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://www.youtube.com/@infodrivesolutions9178">
                                         <YouTubeIcon />
                                     </ListItemButton>
-                                    <ListItemButton component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://twitter.com/infodrives">
+                                    <ListItemButton target="_blank" component="a" style={{color:"#fff", display:"inline-block", flexGrow:0}} href="https://twitter.com/infodrives">
                                         <TwitterIcon />
                                     </ListItemButton>
                                 </ListItem>

@@ -39,6 +39,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import LeadForm from '../components/leadForm';
 
 export default function Index() {
   const [value, setValue] = React.useState('1');
@@ -111,14 +112,35 @@ export default function Index() {
 
   var items = [
     {
-      name: 'Random Name #1',
-      description: 'Probably the most random thing you have ever seen!',
+       item0:[
+        { 
+        name: "Aidin Mahmoodi",
+        role: "Product Lead at ServiceRocket",
+        description: `We reached out to InfoDrive to help us build a few technical POC (Proof of Concept) as our internal development teams were extremely busy with other products/projects. InfoDrive was very particularly quick and responsive, they quickly jumped on a call together requirements from us and provided their estimate and proposal in a short time.\n After a lengthy onboarding process from our side, InfoDrive assigned one of their remarkably capable, knowledgeable Salesforce certified engineers as our main technical person.\n I’d also like to point out that the entire team at Info Drive is resourceful, responsive, and flexible. Our assigned engineer easily adopted our internal agile practices and was able to provide feedback on our sprint review and planning, similar to our internal development teams.`
+        },
+        { 
+          name: "Kester Poh",
+          role: "CEO at AiChat",
+          description: "Infodrive team has provided support in a POC setup and configured a Email-to-Case demo.   The team has also provided professional consultation on the approach for the project.    Thanks Pradeep and team for the support, looking forward to working on the next project together!"
+        }
+      ]
     },
     {
-      name: 'Random Name #2',
-      description: 'Hello World!',
-    },
-  ];
+      item0:[
+        { 
+        name: "Mark Durante",
+        role: "Vice President of Product and Engineering at Jabmo",
+        description: "After a rigorous vendor selection process undertaken by my team, we settled on InfoDrive for our SFDC app implementation project. InfoDrive's relevant experience, prompt communication, and positive attitude won us over. And I'm happy to say we made the right decision. Interactions with the team were fluid and pleasant, and they delivered a quality work product on time.  We look forward to future engagements with InfoDrive as our needs require."
+        },
+        { 
+          name: "Sivachanthiran Belasamy",
+          role: "Founder & CEO at Falaina",
+          description: "Info Drive Team had provided constant support to our Organisation by helping us in building the Custom tables and related API in Salesforce.   The team has always been reachable on the approach for the project. Further, the team has been more than happy to clarify any doubts that we may have had, and done several knowledge transfers for us to better understand Salesforce and its functionalities.   Thanks, Pradeep and team for the support, looking forward to working on the upcoming projects!"
+        }
+      ]
+    }
+]
+console.log('items', items);
   return (
     <>
       <Head>
@@ -139,23 +161,24 @@ export default function Index() {
       <Header />
       <Slider />
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h3' component='div'>
-          WHO IS INFODRIVE SOLUTIONS
-        </Typography>
-        <Typography gutterBottom variant='h2' component='div'>
-          InfoDrive Solutions helps its Customer achieve their desired business
-          outcome, improve efficiencies in their processes and enable people to
-          make collaborative & informed Data-Driven Decisions
-        </Typography>
-        <Typography gutterBottom variant='h5' component='div'>
-          InfoDrive Solutions is a Software Development and Digital
-          Transformation Solutions company, we are headquartered in Singapore
-          with regional offices in Malaysia (KL) & India (Bangalore). We deliver
-          cutting-edge Digital Transformation Solutions to many of our
-          prestigious customers in South East Asia. Our expertise lies in
-          providing cutting edge IT Development, Digital Transformation,
-          Salesforce Consulting Services & Outsourcing Engineering Services.
-        </Typography>
+            <Typography gutterBottom variant="h3" component="div">
+              WHO IS INFODRIVE SOLUTIONS
+            </Typography>
+            <Typography className="w100" gutterBottom variant="h2" component="div">
+              InfoDrive Solutions helps its Customer achieve their desired business outcome, improve efficiencies in their processes and enable people to make collaborative & informed Data-Driven Decisions
+            </Typography>
+            <Typography className="w100" gutterBottom variant="h5" component="div">InfoDrive Solutions is a Software Development and Digital Transformation Solutions company, we are headquartered in Singapore with regional offices in Malaysia (KL) & India (Bangalore). We deliver cutting-edge Digital Transformation Solutions to many of our prestigious customers in South East Asia.
+            Our expertise lies in providing cutting edge IT Development, Digital Transformation, Salesforce Consulting Services & Outsourcing Engineering Services. 
+            </Typography>
+
+            <Typography className="w100" gutterBottom variant="h5" component="div">InfoDrive Solutions is a Software Development and Digital Transformation Solutions company, we are headquartered in Singapore with regional offices in Malaysia (KL) & India (Bangalore). We deliver cutting-edge Digital Transformation Solutions to many of our prestigious customers in South East Asia.
+            Our Company helps its customer achieve their desired business outcome, improve efficiencies in their processes and enable people to make collaborative & informed Data-Driven Decisions. <br/>
+            We specialize in creating custom software solutions that drive digital transformation for businesses of all sizes. Our team of experienced developers uses the latest technologies to build and implement solutions that streamline processes, improve efficiency, and enhance the user experience.
+                        </Typography>
+
+                        <Typography className="w100" gutterBottom variant="h5" component="div">Our services include web and mobile application development, cloud migration, API development, Digital Marketing, Salesforce Services and more. We work closely with our clients to understand their unique needs and goals, and we deliver solutions that are tailored to their specific requirements.<br/>
+                        In addition to our technical expertise, we also offer strategic consulting to help our clients navigate the constantly-evolving world of digital transformation. Our team can help you assess your current technology stack, identify areas for improvement, and create a roadmap for success. With a strong track record of delivering successful projects for clients across a range of industries, InfoDrive Solutions is a trusted partner for businesses seeking to drive innovation and growth through the power of technology.
+                        </Typography>
       </section>
       <section className={`sectionBox solutionBox`}>
         <p>
@@ -335,28 +358,29 @@ export default function Index() {
       </section>
 
       <section className={`sectionBox aboutUsBox aboutUsBoxHome`}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0}>
-            <Grid item xs={5}>
-              <Card>
-                <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    ABOUT US
-                  </Typography>
-                  <Typography variant='body2' color='text.secondary'>
-                    Delivering our very best in all we do, holding ourselves
-                    accountable for results with a commitment to integrity,
-                    fairness and responsibility.
-                  </Typography>
-                  <Button
-                    className='readmore white '
-                    href='/about-us.html'
-                    variant='text'
-                  >
-                    LEARN MORE ABOUT US <ArrowRightAltIcon />
-                  </Button>
-                </CardContent>
-              </Card>
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={0}>
+              <Grid item xs={5}>
+                <Card>
+                  <CardContent>
+                    <Typography gutterBottom variant="h3" component="div">
+                      ABOUT US
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      Delivering our very best in all we do, holding ourselves accountable for results with a commitment to integrity, fairness and responsibility. 
+                    </Typography>
+                    <Button className='readmore white ' href="/about-us.html" variant="text">LEARN MORE ABOUT US <ArrowRightAltIcon/></Button>
+                  </CardContent>
+                </Card>
+              </Grid>
+              <Grid item xs={7}>
+                <Card>
+                  <img
+                    alt="Remy Sharp"
+                    src="images/pexels-ketut-subiyanto-4350210.jpg"
+                  />
+                </Card>
+              </Grid>
             </Grid>
             <Grid item xs={7}>
               <Card>
@@ -366,8 +390,7 @@ export default function Index() {
                 />
               </Card>
             </Grid>
-          </Grid>
-        </Box>
+          </Box>
       </section>
 
       <section className={`sectionBox connectUs backDrop connectUsHome mb30`}>
@@ -438,253 +461,159 @@ export default function Index() {
         </Typography>
         <br />
 
-        <Carousel
-          NavButton={({ onClick, className, style, next, prev }) => {
-            // Other logic
+<Carousel
+    NavButton={({onClick, className, style, next, prev}) => {
+        // Other logic
 
-            return (
-              <div className='navCarouselBox'>
-                <Button onClick={onClick} className={'navCarouselNext '}>
-                  {/* {next && <KeyboardArrowRightIcon/>}
+        return (
+            <div className='navCarouselBox'>
+              <Button onClick={onClick} className={'navCarouselNext '}>
+                {/* {next && <KeyboardArrowRightIcon/>}
                 {prev && <KeyboardArrowLeftIcon/>} */}
-                  {next && 'Next'}
-                  {prev && 'Previous'}
-                </Button>
-              </div>
-            );
-          }}
-        >
-          {items.map((item, i) => (
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={0}>
-                <Grid item xs={6}>
-                  <Card sx={{ maxWidth: 345 }}>
-                    <Avatar
-                      alt='Remy Sharp'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35aqb.png'
-                      sx={{ width: 65, height: 65, marginLeft: 2 }}
-                    />
-                    <div className='testmonialStar'>
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                    </div>
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant='h3'
-                        className='pt15 pb15'
-                        component='div'
-                      >
-                        Knowledgable team
-                      </Typography>
-                      <Typography variant='body2' color='text.secondary'>
-                        We have the professional team with hands-on experience
-                        in their respective fields, which is the icing on the
-                        cake. We have adequate and sources to accomplish and
-                        acquire the superior technology platform required to run
-                        the business.
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Grid>
-                <Grid item xs={6}>
-                  <Card sx={{ maxWidth: 345 }}>
-                    <Avatar
-                      alt='Remy Sharp'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35abq.png'
-                      sx={{ width: 65, height: 65, marginLeft: 2 }}
-                    />
-                    <div className='testmonialStar'>
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                    </div>
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant='h3'
-                        className='pt15 pb15'
-                        component='div'
-                      >
-                        Love for work
-                      </Typography>
-                      <Typography variant='body2' color='text.secondary'>
-                        We have a passionate team striving to make a space where
-                        access to knowledge and technology is for everyone
-                        equally. To manage the quality level and give the best
-                        performance, we regulate our services according to our
-                        clients’ expectations.
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Grid>
-              </Grid>
-            </Box>
-          ))}
-        </Carousel>
-      </section>
-      <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
-        <Box sx={{ flexGrow: 1 }} className='locationContent'>
-          <Grid container spacing={0}>
-            <Grid item xs={6} className='leftLeadFormBox'>
-              <Grid item xs={12} className='contactUsB contactUsB1'>
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant='h7' component='div'>
-                      InfoDrive Solutions Pte Ltd
-                    </Typography>
-                    <Typography variant='body2' color='text.secondary'>
-                      Address: 2 Changi Business Park avenue 1. #02-00,
-                      Singapore <br />
-                      Phone:{' '}
-                      <a href='tel:+6592384299' style={{ color: '#fff' }}>
-                        +65-9238 4299{' '}
-                      </a>
-                      <br />
-                      Email: contact@infodrive-solutions.com
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item xs={12} className='contactUsB contactUsB2'>
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant='h7' component='div'>
-                      InfoDrive Solutions Sdn Bhd
-                    </Typography>
-                    <Typography variant='body2' color='text.secondary'>
-                      Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen
-                      Sentral 2, 50470 Kuala Lumpur, Malaysia <br />
-                      Phone:{' '}
-                      <a href='tel:+60123275811' style={{ color: '#fff' }}>
-                        +60-1 2327 5811
-                      </a>
-                      <br />
-                      Email: contact@infodrive-solutions.com
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
+                {next && 'Next'}
+                {prev && 'Previous'}
+              </Button>
+            </div>
+        )
+    }}
+>
+            {
+                <Box sx={{ flexGrow: 1 }}>
+                  <Grid container spacing={0}>
+                    <Grid item xs={6} >
+                      <Card sx={{ maxWidth: 345 }}>
+                        <Avatar
+                          alt="Aidin Mahmoodi"
+                          src="images/c1a0b62fe5e42bf0f9af1ac1d77a35aqb.png"
+                          sx={{ width: 65, height: 65, marginLeft: 2 }}
+                        />
+                        <div className="testmonialStar">
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                        </div>
+                        <CardContent>
+                          <Typography gutterBottom variant="h3" className="pt15 mb0" component="div">
+                            Aidin Mahmoodi
+                          </Typography>
+                          <Typography className="mt0 pt0 pb15" gutterBottom variant="h5" component="div">
+                          {"Product Lead at ServiceRocket"}
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                          We reached out to InfoDrive to help us build a few technical POC (Proof of Concept) as our internal development teams were extremely busy with other products/projects. InfoDrive was very particularly quick and responsive, they quickly jumped on a call together requirements from us and provided their estimate and proposal in a short time. <br/>
+                          After a lengthy onboarding process from our side, InfoDrive assigned one of their remarkably capable, knowledgeable Salesforce certified engineers as our main technical person. <br/>
+                          I’d also like to point out that the entire team at Info Drive is resourceful, responsive, and flexible. Our assigned engineer easily adopted our internal agile practices and was able to provide feedback on our sprint review and planning, similar to our internal development teams.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Card sx={{ maxWidth: 345 }}>
+                        <Avatar
+                          alt="Kester Poh"
+                          src="images/c1a0b62fe5e42bf0f9af1ac1d77a35abq.png"
+                          sx={{ width: 65, height: 65, marginLeft: 2 }}
+                        />
+                        <div className="testmonialStar">
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                        </div>
+                        <CardContent>
+                        <Typography gutterBottom variant="h3" className="pt15 mb0" component="div">
+                        Kester Poh
+                          </Typography>
+                          <Typography className="mt0 pt0 pb15" gutterBottom variant="h5" component="div">
+                          (CEO at AiChat)
+                          
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                          Infodrive team has provided support in a POC setup and configured a Email-to-Case demo. <br/>
+                          The team has also provided professional consultation on the approach for the project. <br/>
+                          Thanks Pradeep and team for the support, looking forward to working on the next project together! <br/>
 
-              <Grid item xs={12} className='contactUsB contactUsB3'>
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant='h7' component='div'>
-                      InfoDriven Solutions Pvt Ltd
-                    </Typography>
-                    <Typography variant='body2' color='text.secondary'>
-                      Address: #88, Borewell Road, opposite Whitefield Post
-                      Office, Whitefield, Bangalore – 560066
-                      <br />
-                      Phone:{' '}
-                      <a href='tel:+919606188081' style={{ color: '#fff' }}>
-                        +91-960 61880 81{' '}
-                      </a>
-                      <br />
-                      Email: contact@infodrive-solutions.com
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            </Grid>
-            <Grid item xs='6' className='leadFormBox'>
-              <form className='contact-form' onSubmit={handleSubmit}>
-                <Box
-                  sx={{
-                    '& > :not(style)': {
-                      ml: 6,
-                      mt: 7,
-                      maxWidth: '41%',
-                      width: '41%',
-                    },
-                  }}
-                >
-                  <Typography
-                    gutterBottom
-                    variant='h2'
-                    className='white'
-                    component='div'
-                  >
-                    Request a call back
-                  </Typography>
-                  <TextField
-                    id='input-with-icon-textfield'
-                    label='Full Name'
-                    name='full_name'
-                    fullWidth
-                    sx={{ m: 1 }}
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position='start'></InputAdornment>
-                      ),
-                    }}
-                    onChange={handleChange}
-                    variant='standard'
-                  />
-                  <TextField
-                    id='input-with-icon-textfield'
-                    label='Email Address'
-                    name='email_address'
-                    fullWidth
-                    sx={{ m: 1 }}
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position='start'></InputAdornment>
-                      ),
-                    }}
-                    onChange={handleChange}
-                    variant='standard'
-                  />
-
-                  <TextField
-                    id='input-with-icon-textfield'
-                    label='Contact Number'
-                    name='contact_number'
-                    type='number'
-                    fullWidth
-                    sx={{ m: 1 }}
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position='start'></InputAdornment>
-                      ),
-                    }}
-                    onChange={handleChange}
-                    variant='standard'
-                  />
-                  <TextField
-                    id='input-with-icon-textfield'
-                    label='Message'
-                    name='message'
-                    multiline
-                    rows={3}
-                    fullWidth
-                    sx={{ m: 1 }}
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position='start'></InputAdornment>
-                      ),
-                    }}
-                    onChange={handleChange}
-                    variant='standard'
-                  />
-                  <Stack spacing={2} direction='row'>
-                    <Button type='submit' className='bgRed' variant='contained'>
-                      Send Message
-                    </Button>
-                  </Stack>
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                  </Grid>
                 </Box>
-              </form>
-            </Grid>
-          </Grid>
-        </Box>
+            }
+
+            {
+                <Box sx={{ flexGrow: 1 }}>
+                  <Grid container spacing={0}>
+                    <Grid item xs={6} >
+                      <Card sx={{ maxWidth: 345 }}>
+                        <Avatar
+                          alt="Mark Durante"
+                          src="images/c1a0b62fe5e42bf0f9af1ac1d77a35aqb.png"
+                          sx={{ width: 65, height: 65, marginLeft: 2 }}
+                        />
+                        <div className="testmonialStar">
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                        </div>
+                        <CardContent>
+                          <Typography gutterBottom variant="h3" className="pt15 mb0" component="div">
+                          Mark Durante
+                          </Typography>
+                          <Typography className="mt0 pt0 pb15" gutterBottom variant="h5" component="div">
+                          Vice President of Product and Engineering at Jabmo
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                          After a rigorous vendor selection process undertaken by my team, we settled on InfoDrive for our SFDC app implementation project. InfoDrive's relevant experience, prompt communication, and positive attitude won us over. And I'm happy to say we made the right decision. <br/>
+                          Interactions with the team were fluid and pleasant, and they delivered a quality work product on time. <br/>
+                          We look forward to future engagements with InfoDrive as our needs require.
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <Card sx={{ maxWidth: 345 }}>
+                        <Avatar
+                          alt="Sivachanthiran Belasamy"
+                          src="images/c1a0b62fe5e42bf0f9af1ac1d77a35abq.png"
+                          sx={{ width: 65, height: 65, marginLeft: 2 }}
+                        />
+                        <div className="testmonialStar">
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                          <StarIcon/>
+                        </div>
+                        <CardContent>
+                        <Typography gutterBottom variant="h3" className="pt15 mb0" component="div">
+                        Sivachanthiran Belasamy
+                          </Typography>
+                          <Typography className="mt0 pt0 pb15" gutterBottom variant="h5" component="div">
+                          (Founder & CEO at Falaina)
+                          
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                          Info Drive Team had provided constant support to our Organisation by helping us in building the Custom tables and related API in Salesforce. <br/>
+                          The team has always been reachable on the approach for the project. Further, the team has been more than happy to clarify any doubts that we may have had, and done several knowledge transfers for us to better understand Salesforce and its functionalities. <br/>
+                          Thanks, Pradeep and team for the support, looking forward to working on the upcoming projects!"
+
+                          </Typography>
+                        </CardContent>
+                      </Card>
+                    </Grid>
+                  </Grid>
+                </Box>
+            }
+</Carousel>
       </section>
-      <Footer />
-      <ToastContainer />
+      <LeadForm />
+      <Footer/>
     </>
   );
 }
