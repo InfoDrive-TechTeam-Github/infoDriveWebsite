@@ -26,9 +26,29 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Head from 'next/head';
+
 export default function About() {
   return (
     <div>
+      <Head>
+        <title>
+          About Us - IT Solutions Company in Singapore, Malaysia, and India |
+          InfoDrive Solutions
+        </title>
+        <meta
+          name='description'
+          content='InfoDrive Solutions is a leading IT solution provider, and we are helping many start-ups and small-medium businesses to build products from scratch. We analyse your start-up model in its entirety, consult and offer the right technology solutions.'
+        />
+        <meta
+          name='keywords'
+          content='InfoDrive Solutions Company, IT Solutions Company in Singapore, IT Solutions Company in Malaysia, IT Solutions Company in India, IT Solutions Company in Kuala Lumpur'
+        />
+        <link
+          rel='canonical'
+          href='https://infodrive-solutions.com/about-us.html'
+        />
+      </Head>
       <Header />
       <div className='sliderBox'>
         <img
@@ -37,38 +57,51 @@ export default function About() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
-          <Typography gutterBottom variant="h1" component="div">
+            <Typography gutterBottom variant='h1' component='div'>
               We are a world of people. <br /> We believe in the future. <br />{' '}
               We believe technology brings us <br />
               together and makes our lives better
             </Typography>
-            <Button href="/contact-us.html" className='readmore white' variant='text'>
+            <Button
+              href='/contact-us.html'
+              className='readmore white'
+              variant='text'
+            >
               Let's Talk <ArrowRightAltIcon />
             </Button>
             <nav className='socical-network'>
-            <List>
-                    <ListItem>
-                      <ListItemButton component="a" href="https://www.facebook.com/InfoDrivesolutions/">
-                        <ListItemIcon>
-                          <FacebookIcon />
-                        </ListItemIcon>
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                    <ListItemButton component="a" href="https://in.linkedin.com/company/infodrive-solutions/">
-                        <ListItemIcon>
-                          <LinkedInIcon />
-                        </ListItemIcon>
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                      <ListItemButton component="a" href="https://www.instagram.com/infodrivesolutions/">
-                        <ListItemIcon>
-                          <InstagramIcon />
-                        </ListItemIcon>
-                      </ListItemButton>
-                    </ListItem>
-                  </List>
+              <List>
+                <ListItem>
+                  <ListItemButton
+                    component='a'
+                    href='https://www.facebook.com/InfoDrivesolutions/'
+                  >
+                    <ListItemIcon>
+                      <FacebookIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton
+                    component='a'
+                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                  >
+                    <ListItemIcon>
+                      <LinkedInIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+                <ListItem>
+                  <ListItemButton
+                    component='a'
+                    href='https://www.instagram.com/infodrivesolutions/'
+                  >
+                    <ListItemIcon>
+                      <InstagramIcon />
+                    </ListItemIcon>
+                  </ListItemButton>
+                </ListItem>
+              </List>
             </nav>
           </Grid>
         </Box>
@@ -118,7 +151,11 @@ export default function About() {
                     engagement, with the help of tools like Salesforce or other
                     enterprise software.
                   </Typography>
-                  <Button className='readmore' href="/contact-us.html" variant='text'>
+                  <Button
+                    className='readmore'
+                    href='/contact-us.html'
+                    variant='text'
+                  >
                     LEARN MORE ABOUT US <ArrowRightAltIcon />
                   </Button>
                 </CardContent>
@@ -135,7 +172,12 @@ export default function About() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' className="red" component='div'>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='red'
+                    component='div'
+                  >
                     OUR MISSION
                   </Typography>
                   <Typography variant='body2' color='text.secondary'>
@@ -144,7 +186,12 @@ export default function About() {
                     ensuring right people and technology.
                   </Typography>
 
-                  <Typography gutterBottom variant='h3' className="red" component='div'>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='red'
+                    component='div'
+                  >
                     OUR VISION
                   </Typography>
                   <Typography variant='body2' color='text.secondary'>
@@ -163,7 +210,12 @@ export default function About() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={6}>
-              <Typography gutterBottom variant='h3' className="red" component='div'>
+              <Typography
+                gutterBottom
+                variant='h3'
+                className='red'
+                component='div'
+              >
                 OUR VALUES
               </Typography>
               <Typography gutterBottom variant='h2' component='div'>
@@ -196,7 +248,12 @@ export default function About() {
               </Card>
             </Grid>
             <Grid item xs={6} style={{ padding: '30px' }}>
-              <Typography gutterBottom variant='h3' className="red" component='div'>
+              <Typography
+                gutterBottom
+                variant='h3'
+                className='red'
+                component='div'
+              >
                 OUR BELIEF
               </Typography>
               <Typography gutterBottom variant='h2' component='div'>
@@ -217,7 +274,7 @@ export default function About() {
 
       <section className={`sectionBox companiesBox`}>
         <div>
-          <Typography gutterBottom variant='h2' className="red" component='div'>
+          <Typography gutterBottom variant='h2' className='red' component='div'>
             Companies don't make people, people make companies!
           </Typography>
 
@@ -286,7 +343,12 @@ export default function About() {
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  We understand the importance of timely delivery and cost-effectiveness for our clients. That's why we strive to provide fast delivery of our products and services at reasonable costs. Our team of experts works efficiently to ensure that our clients receive their orders as soon as possible without compromising on the quality.
+                    We understand the importance of timely delivery and
+                    cost-effectiveness for our clients. That's why we strive to
+                    provide fast delivery of our products and services at
+                    reasonable costs. Our team of experts works efficiently to
+                    ensure that our clients receive their orders as soon as
+                    possible without compromising on the quality.
                   </Typography>
                 </CardContent>
               </Card>
@@ -297,8 +359,7 @@ export default function About() {
 
       <section className={`sectionBox whyUsBox pt0 pb0`}>
         <Typography gutterBottom variant='h2' component='div'>
-          We offer a wide 
-          variety of IT services
+          We offer a wide variety of IT services
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
@@ -534,11 +595,20 @@ export default function About() {
                 development, product design, QA and consultancy services.
               </Typography>
 
-              <Button className='readmore white pl0' href="/about-us.html" variant='text'>
+              <Button
+                className='readmore white pl0'
+                href='/about-us.html'
+                variant='text'
+              >
                 JOIN OUR TEAM <ArrowRightAltIcon />
               </Button>
             </Grid>
-            <Grid item xs={3} className="rightOurCoreTeam" style={{ padding: '30px' }}>
+            <Grid
+              item
+              xs={3}
+              className='rightOurCoreTeam'
+              style={{ padding: '30px' }}
+            >
               <Card>
                 <CardMedia
                   component='img'
@@ -553,9 +623,13 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Pradeep Chand</span> 
-                    <a className='red' target="_blank" href="https://www.linkedin.com/in/pradeepchand1/">
-                    <LinkedInIcon />
+                    <span>Pradeep Chand</span>
+                    <a
+                      className='red'
+                      target='_blank'
+                      href='https://www.linkedin.com/in/pradeepchand1/'
+                    >
+                      <LinkedInIcon />
                     </a>
                   </Typography>
                   <Typography
@@ -570,7 +644,12 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={3} className="rightOurCoreTeam" style={{ padding: '30px' }}>
+            <Grid
+              item
+              xs={3}
+              className='rightOurCoreTeam'
+              style={{ padding: '30px' }}
+            >
               <Card>
                 <CardMedia
                   component='img'
@@ -585,9 +664,13 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Kapil Gairola</span> 
-                    <a className='red' target="_blank" href="https://www.linkedin.com/in/kapilgairola/">
-                    <LinkedInIcon />
+                    <span>Kapil Gairola</span>
+                    <a
+                      className='red'
+                      target='_blank'
+                      href='https://www.linkedin.com/in/kapilgairola/'
+                    >
+                      <LinkedInIcon />
                     </a>
                   </Typography>
                   <Typography
@@ -608,7 +691,12 @@ export default function About() {
       <section className={`sectionBox ourCoreTeam ourCoreTeamOther pt0`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
+            <Grid
+              item
+              xs={2}
+              className='rightOurCoreTeam'
+              style={{ padding: '15px' }}
+            >
               <Card>
                 <CardMedia
                   component='img'
@@ -623,8 +711,12 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Shashank Jain</span> 
-                    <a target="_blank" className='red' href="https://www.linkedin.com/in/shashank-jain-%E2%98%81-00913550/">
+                    <span>Shashank Jain</span>
+                    <a
+                      target='_blank'
+                      className='red'
+                      href='https://www.linkedin.com/in/shashank-jain-%E2%98%81-00913550/'
+                    >
                       <LinkedInIcon />
                     </a>
                   </Typography>
@@ -640,7 +732,12 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
+            <Grid
+              item
+              xs={2}
+              className='rightOurCoreTeam'
+              style={{ padding: '15px' }}
+            >
               <Card>
                 <CardMedia
                   component='img'
@@ -655,8 +752,12 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Bharani Kumar</span> 
-                    <a target="_blank" href="https://www.linkedin.com/in/bharani-kumar-8b929641/" className='red'>
+                    <span>Bharani Kumar</span>
+                    <a
+                      target='_blank'
+                      href='https://www.linkedin.com/in/bharani-kumar-8b929641/'
+                      className='red'
+                    >
                       <LinkedInIcon />
                     </a>
                   </Typography>
@@ -672,7 +773,12 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
+            <Grid
+              item
+              xs={2}
+              className='rightOurCoreTeam'
+              style={{ padding: '15px' }}
+            >
               <Card>
                 <CardMedia
                   component='img'
@@ -687,9 +793,13 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Maria Aileen</span> 
-                    <a target="_blank" href="https://www.linkedin.com/in/maria-aileen-abendanio-b6802518/" className='red'>
-                    <LinkedInIcon />
+                    <span>Maria Aileen</span>
+                    <a
+                      target='_blank'
+                      href='https://www.linkedin.com/in/maria-aileen-abendanio-b6802518/'
+                      className='red'
+                    >
+                      <LinkedInIcon />
                     </a>
                   </Typography>
                   <Typography
@@ -704,7 +814,12 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
+            <Grid
+              item
+              xs={2}
+              className='rightOurCoreTeam'
+              style={{ padding: '15px' }}
+            >
               <Card>
                 <CardMedia
                   component='img'
@@ -719,8 +834,12 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Sudhir Budakoti</span> 
-                    <a className="red" target="_blank" href="https://www.linkedin.com/in/sudhirbudakoti/">
+                    <span>Sudhir Budakoti</span>
+                    <a
+                      className='red'
+                      target='_blank'
+                      href='https://www.linkedin.com/in/sudhirbudakoti/'
+                    >
                       <LinkedInIcon />
                     </a>
                   </Typography>
@@ -736,7 +855,12 @@ export default function About() {
               </Card>
             </Grid>
 
-            <Grid item xs={2} className="rightOurCoreTeam" style={{ padding: '15px' }}>
+            <Grid
+              item
+              xs={2}
+              className='rightOurCoreTeam'
+              style={{ padding: '15px' }}
+            >
               <Card>
                 <CardMedia
                   component='img'
@@ -751,8 +875,13 @@ export default function About() {
                     variant='h3'
                     component='div'
                   >
-                    <span>Kyna Lim</span> 
-                    <a href="https://www.linkedin.com/in/lxmyitian/" className='red'><LinkedInIcon /></a>
+                    <span>Kyna Lim</span>
+                    <a
+                      href='https://www.linkedin.com/in/lxmyitian/'
+                      className='red'
+                    >
+                      <LinkedInIcon />
+                    </a>
                   </Typography>
                   <Typography
                     className='widthInitial fs18'
@@ -770,29 +899,40 @@ export default function About() {
       </section>
 
       <section className={`sectionBox ourValueBox ourBeliefBox`}>
-           <Box sx={{ flexGrow: 1 }} >
-            <Grid container spacing={0}>
-            <Grid item xs={5} style={{padding:"30px", background:"#DE3854"}}>
-                  <Typography gutterBottom variant="h5" component="div">
-                  Get in touch with us today for a <br/> non-obligation discussion                  
-                  <br/>
-                  <br/>
-                  InfoDrive Solutions is 24X7 <br/> Available To Help You
-                  </Typography>
-                  <br/>
-                  <br/>
-                  <Button href="/contact-us.html" className='readmore white pl0' variant="text">CONTACT US <ArrowRightAltIcon/></Button>
-                  </Grid>
-                <Grid item xs={7}>
-                    <Card>
-                      <img
-                        alt="Remy Sharp"
-                        src="images/pexels-prakhar-bansal-732183.jpg"
-                      />
-                    </Card>
-                </Grid>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <Grid
+              item
+              xs={5}
+              style={{ padding: '30px', background: '#DE3854' }}
+            >
+              <Typography gutterBottom variant='h5' component='div'>
+                Get in touch with us today for a <br /> non-obligation
+                discussion
+                <br />
+                <br />
+                InfoDrive Solutions is 24X7 <br /> Available To Help You
+              </Typography>
+              <br />
+              <br />
+              <Button
+                href='/contact-us.html'
+                className='readmore white pl0'
+                variant='text'
+              >
+                CONTACT US <ArrowRightAltIcon />
+              </Button>
             </Grid>
-          </Box>
+            <Grid item xs={7}>
+              <Card>
+                <img
+                  alt='Remy Sharp'
+                  src='images/pexels-prakhar-bansal-732183.jpg'
+                />
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
       </section>
 
       <Footer />
