@@ -1401,6 +1401,17 @@ img {
   max-width: 100%;
   flex-basis: 100%;
 }
+.sliderContent .MuiTypography-h1{
+  font-size: 16px;
+}
+.salePart .MuiTypography-h3 {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.salePart .MuiTypography-h1 {
+  font-size: 16px;
+  margin-top: 15px;
+}
 }
 
 @media (min-width: 376px) and (max-width: 619px) {
