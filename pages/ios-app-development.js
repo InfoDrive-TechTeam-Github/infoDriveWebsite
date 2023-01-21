@@ -46,7 +46,28 @@ export default function IosAppDevelopment() {
           rel='canonical'
           href='https://infodrive-solutions.com/ios-app-development.html'
         />
+        <meta property="og:title" content="Top iPhone App Development Company & IOS Developers in Singapore,Malaysia, and India" />
+        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
+        <link rel="icon" href="/favicon.png" />
+        
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-MB38MVS');`,
+          }}
+        />
       </Head>
+      <noscript>
+        <iframe
+          src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
+          height='0'
+          width='0'
+          style={{ display: 'none', visibility: 'hidden' }}
+        ></iframe>
+      </noscript>
       <Header />
       <div className='sliderBox blockNFT'>
         <img

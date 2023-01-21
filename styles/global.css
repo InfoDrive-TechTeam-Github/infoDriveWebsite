@@ -251,6 +251,27 @@ img {
   font-family: Poppins;
 
 }
+
+.salePart .MuiTypography-h1{
+  margin-top: 60px;
+}
+.salePart .MuiTypography-h3{
+  margin-top: 140px;
+    font-size: 22px;
+    color: #fff;
+    font-family: Poppins;
+}
+.saleForcesDevelopmentBox{
+  background: url('images/35fd2c59d4eede2edd0c0031866136f9.jpeg');
+  background-size: cover;
+    padding-left: 0;
+    padding-right: 0;
+}
+.saleForcesDevelopment{
+  margin-left: 97px;
+  background: #fff;
+  padding: 30px 15px;
+}
 .readmore{
   font-size: 16px;
   color: #fff;
@@ -753,6 +774,8 @@ img {
 .serviceOffer .MuiTypography-h3 {
   color: #fff;
   font-family: Poppins;
+  font-weight: bolder;
+  font-size: 19px;
 
 }
 .serviceOffer p{
@@ -1371,6 +1394,12 @@ img {
 }
 .ourCoreTeam .MuiCardContent-root{
   padding-bottom:0px;
+}
+.androidDevelopment .saleForcesDevelopment{
+  width: 100%;
+  margin-left: 0;
+  max-width: 100%;
+  flex-basis: 100%;
 }
 }
 

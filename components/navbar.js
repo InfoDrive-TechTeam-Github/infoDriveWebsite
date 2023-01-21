@@ -59,13 +59,22 @@ function DrawerAppBar(props) {
   const [anchorEl, setAnchorEl] = useState();
 
   const [subMenuOpen, setSubMenuOpen] = useState(false);
+  const [subMenuSaleOpen, setSubMenuSaleOpen] = useState(false);
+
   const [subAnchorEl, setSubAnchorEl] = useState();
+  const [subAnchorSaleEl, setSubAnchorSaleEl] = useState();
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileMenuSaleOpen, setMobileMenuSaleOpen] = useState(false);
+
   const [mobileAnchorEl, setMobileAnchorEl] = useState();
+  const [mobileAnchorSaleEl, setMobileAnchorSaleEl] = useState();
 
   const [subMobileMenuOpen, setSubMobileMenuOpen] = useState(false);
+  const [subMobileMenuSaleOpen, setSubMobileMenuSaleOpen] = useState(false);
   const [subMobileAnchorEl, setSubMobileAnchorEl] = useState();
+  const [subMobileAnchorSaleEl, setSubMobileAnchorSaleEl] = useState();
+
 
   const recordButtonPosition = (event) => {
     setAnchorEl(event.currentTarget);
@@ -75,6 +84,13 @@ function DrawerAppBar(props) {
   const recordSubButtonPosition = (event) => {
     setSubAnchorEl(event.currentTarget);
     setSubMenuOpen(true);
+    setSubMenuSaleOpen(false);
+  }
+
+  const recordSubButtonPositionSale = (event) => {
+    setSubAnchorSaleEl(event.currentTarget);
+    setSubMenuOpen(false);
+    setSubMenuSaleOpen(true);
   }
   const recordMobileButtonPosition = (event) => {
    // alert(0);
@@ -85,6 +101,13 @@ function DrawerAppBar(props) {
   const recordSubMobileButtonPosition  = (event) => {
     setSubMobileAnchorEl(event.currentTarget);
     setSubMobileMenuOpen(true);
+    setSubMobileMenuSaleOpen(false);
+  }
+
+  const recordSubMobileButtonPositionSale  = (event) => {
+    setSubMobileAnchorSaleEl(event.currentTarget);
+    setSubMobileMenuOpen(false);
+    setSubMobileMenuSaleOpen(true);
   }
 
   let closeMenu = () => {
@@ -93,6 +116,7 @@ function DrawerAppBar(props) {
 
   let closeSubMenu = () => {
     setSubMenuOpen(false);
+    setSubMenuSaleOpen(false);
   }
 
   let closeMobileMenu = () => {
@@ -101,6 +125,8 @@ function DrawerAppBar(props) {
 
   let closeSubMobileMenu = () => {
     setSubMobileMenuOpen(false);
+    setSubMobileMenuSaleOpen(false);
+
   }
 
 
@@ -148,6 +174,16 @@ function DrawerAppBar(props) {
                         <ListItemText primary={'Full stack development'} />
                       </ListItemButton>
                     </ListItem>
+
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/salesforce-development.html">
+                        <ListItemText primary={'Saleforce Development'} />
+                      </ListItemButton>
+                      <ArrowForwardIosIcon 
+                        onClick={recordSubMobileButtonPositionSale}
+                        className="customIcon"
+                      />
+                    </ListItem>
                   </List>
                 </Menu>
 
@@ -168,6 +204,30 @@ function DrawerAppBar(props) {
                     </ListItem>
                   </List>
                 </Menu>
+
+                <Menu
+                  anchorEl={subMobileAnchorSaleEl}
+                  open={subMobileMenuSaleOpen}
+                  onClose={closeSubMobileMenu}>
+                  <List>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/sales-cloud.html">
+                        <ListItemText primary={'Sales Cloud'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/service-cloud.html" >
+                        <ListItemText primary={'Service Cloud'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/marketing-cloud.html" >
+                        <ListItemText primary={'Marketing Cloud'} />
+                      </ListItemButton>
+                    </ListItem>
+                  </List>
+                </Menu>
+                
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemButton component='a' to="/about-us.html">
@@ -297,6 +357,20 @@ function DrawerAppBar(props) {
                         <ListItemText primary={'Full stack development'} />
                       </ListItemButton>
                     </ListItem>
+
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/salesforce-development.html">
+                        <ListItemText primary={'Salesforce Development '} />
+                      </ListItemButton>
+                      <ArrowForwardIosIcon 
+                        onClick={recordSubButtonPositionSale}
+                        className="customIcon"
+                        style={{width: "43px",
+                          height: "35px",
+                          fontWeight: "bolder",
+                          marginLeft: "-12px"}}
+                      />
+                    </ListItem>
                   </List>
                 </Menu>
 
@@ -314,6 +388,30 @@ function DrawerAppBar(props) {
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/ios-app-development.html" >
                         <ListItemText primary={'IOS app development'} />
+                      </ListItemButton>
+                    </ListItem>
+                  </List>
+                </Menu>
+
+                <Menu
+                  anchorEl={subAnchorSaleEl}
+                  open={subMenuSaleOpen}
+                  className="subMenuOptions"
+                  onClose={closeSubMenu}>
+                  <List>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/sales-cloud.html">
+                        <ListItemText primary={'Sales Cloud'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/service-cloud.html" >
+                        <ListItemText primary={'Service Cloud'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/marketing-cloud.html" >
+                        <ListItemText primary={'Marketing Cloud'} />
                       </ListItemButton>
                     </ListItem>
                   </List>
