@@ -159,6 +159,9 @@ export default function Index() {
           name='keywords'
           content='Software Development Company in Singapore, Software Development Company in Malaysia, Software Development Company in India, Digital Transformation Solutions Company in Malaysia, Digital Transformation Solutions Company in Singapore, IT Solutions Company in Singapore, IT Services in Malaysia, Top Software Company in Singapore, Top Software Company in Malaysia, Software Development Agency Singapore, Custom Software Malaysia, Software Development Company in Kuala Lumpur'
         />
+        <meta property="og:title" content="Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - Info Drive Solution" />
+        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
+        <link rel="icon" href="/favicon.png" />
         <link rel='canonical' href='https://infodrive-solutions.com/' />
         <script
           dangerouslySetInnerHTML={{
@@ -200,14 +203,6 @@ export default function Index() {
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='div'>
-          InfoDrive Solutions is a Software Development and Digital
-          Transformation Solutions company, we are headquartered in Singapore
-          with regional offices in Malaysia (KL) & India (Bangalore). We deliver
-          cutting-edge Digital Transformation Solutions to many of our
-          prestigious customers in South East Asia. Our Company helps its
-          customer achieve their desired business outcome, improve efficiencies
-          in their processes and enable people to make collaborative & informed
-          Data-Driven Decisions. <br />
           We specialize in creating custom software solutions that drive digital
           transformation for businesses of all sizes. Our team of experienced
           developers uses the latest technologies to build and implement

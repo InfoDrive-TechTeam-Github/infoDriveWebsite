@@ -56,6 +56,9 @@ export default function ServicesForStartUps() {
             rel='canonical'
             href='https://infodrive-solutions.com/services-for-start-ups.html'
           />
+        <meta property="og:title" content=" IT Solutions for Start-up Business | Consulting Solutions, and Ideation & Development Services – InfoDrive Solutions" />
+        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
+        <link rel="icon" href="/favicon.png" />
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
