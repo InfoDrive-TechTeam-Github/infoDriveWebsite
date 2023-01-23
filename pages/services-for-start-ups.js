@@ -56,9 +56,15 @@ export default function ServicesForStartUps() {
             rel='canonical'
             href='https://infodrive-solutions.com/services-for-start-ups.html'
           />
-        <meta property="og:title" content=" IT Solutions for Start-up Business | Consulting Solutions, and Ideation & Development Services – InfoDrive Solutions" />
-        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
-        <link rel="icon" href="/favicon.png" />
+          <meta
+            property='og:title'
+            content=' IT Solutions for Start-up Business | Consulting Solutions, and Ideation & Development Services – InfoDrive Solutions'
+          />
+          <meta
+            property='og:image'
+            content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+          />
+          <link rel='icon' href='/favicon.png' />
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -154,6 +160,13 @@ export default function ServicesForStartUps() {
                       building a professional website to developing a
                       comprehensive digital marketing strategy.
                       <br />
+                      As a start-up, you need to make the most of every
+                      opportunity to get your business noticed and attract new
+                      customers. That's where we come in. Our team of
+                      experienced professionals has a deep understanding of the
+                      challenges faced by start-ups and can provide the guidance
+                      and support you need to succeed.
+                      <br />
                       {/* As a start-up, you need to make the most of every opportunity to get your business noticed and attract new customers. That's where we come in. Our team of experienced professionals has a deep understanding of the challenges faced by start-ups and can provide the guidance and support you need to succeed. */}
                     </Typography>
                     <hr />
@@ -161,9 +174,27 @@ export default function ServicesForStartUps() {
                       Our leading technology experts will bring you the latest
                       technologies with a variety of great benefits and catered
                       solutions. <br />
+                      One of our key services is website design and development.
+                      Your website is often the first point of contact with
+                      potential customers, and it's crucial that it reflects
+                      your brand, values, and vision. Our team of skilled
+                      designers and developers can create a custom website that
+                      meets your specific needs and helps you stand out from the
+                      competition.
                       {/* One of our key services is website design and development. Your website is often the first point of contact with potential customers, and it's crucial that it reflects your brand, values, and vision. Our team of skilled designers and developers can create a custom website that meets your specific needs and helps you stand out from the competition. Another important service we offer is branding and identity development. As a start-up, it's crucial that you establish a strong brand identity that differentiates you from the competition and helps you build trust and loyalty with your customers. Our team can help you develop a professional logo and brand guidelines that showcase your unique value proposition and establish your brand as a leader in your industry. */}
                     </Typography>
                     <hr />
+                    <Typography gutterBottom variant='h3' component='div'>
+                      We also offer a range of other solutions designed
+                      specifically for start-ups. These include business
+                      planning and strategy development, market research, and
+                      business process automation. Whatever your needs, we have
+                      the expertise and experience to help you succeed. At
+                      InfoDrive Solutions, we are committed to helping start-ups
+                      grow and succeed. We understand the challenges you face
+                      and are here to provide the support and guidance you need
+                      to take your business to the next level.
+                    </Typography>
                     <Typography gutterBottom variant='h3' component='div'>
                       We build custom applications for product-market fit:
                     </Typography>

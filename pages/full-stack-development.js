@@ -56,9 +56,15 @@ export default function FullstackDevelopment() {
           rel='canonical'
           href='https://infodrive-solutions.com/full-stack-development.html'
         />
-        <meta property="og:title" content="Full Stack Development Services & Developers in Singapore, Malaysia, and India" />
-        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
-        <link rel="icon" href="/favicon.png" />
+        <meta
+          property='og:title'
+          content='Full Stack Development Services & Developers in Singapore, Malaysia, and India'
+        />
+        <meta
+          property='og:image'
+          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+        />
+        <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -140,18 +146,53 @@ export default function FullstackDevelopment() {
           APPLICATION DEVELOPMENT, MAINTENANCE AND SUPPORT
         </Typography>
         <Typography gutterBottom variant='h2' component='div'>
-          Knowledge combined with quality gives our clients the edge over other
-          competitors. Value assurance practices and optimized delivery cycles
-          have been our focus from day one.
+          One-stop Solution for Your Development Needs
         </Typography>
         <Typography gutterBottom variant='h5' component='div'>
-          Our niche solutions are one of a kind in the market. Our applications
-          maximize on key factors such as portability and scalability. Infodrive
-          enables clients to rationalize business developments and abet
-          development of specialized solutions at all stages. We provide you
-          highly differentiated and nifty solutions. Our applications provide
-          maximum portability and scalability
+          As a leading provider of full stack development services in Singapore,
+          Malaysia, and India, we are committed to delivering top-quality
+          solutions that help businesses of all sizes succeed in today's digital
+          landscape. Our team of experienced developers specializes in a wide
+          range of technologies, including JavaScript, HTML, CSS, Python, Java,
+          PHP, and more. We have the expertise and tools to build custom web and
+          mobile applications that are tailored to your specific needs and
+          goals.
+          <br /> Our full stack development process is designed to be efficient,
+          agile, and transparent. We begin by understanding your business
+          requirements and objectives, and then we work closely with you to
+          design and develop a solution that meets your needs. One of the key
+          benefits of working with InfoDrive Solutions is our ability to provide
+          end-to-end development services. This means that we can handle every
+          aspect of your project, from the initial concept and design to the
+          final deployment and maintenance. This allows us to deliver a
+          complete, turnkey solution that is ready to use as soon as it is
+          deployed.
         </Typography>
+        <br />
+        <Typography gutterBottom variant='h3' component='div'>
+          Our full stack development services include:
+        </Typography>
+        <ul>
+          <li>Web application development</li>
+          <li>Mobile application development</li>
+          <li>E-commerce development</li>
+          <li>Custom software development</li>
+        </ul>
+        <hr style={{ width: '50%', marginLeft: 0 }} />
+        <Typography gutterBottom variant='h5' component='div'>
+          In addition to our full stack development services, we also offer a
+          range of other services, including website design, digital marketing,
+          and search engine optimization (SEO). As a company, we are committed
+          to delivering exceptional value to our clients. We have a track record
+          of success and a reputation for delivering high-quality solutions on
+          time and on budget. Our team is dedicated to customer satisfaction,
+          and we take pride in the long-term relationships we have built with
+          our clients. We pride ourselves on being a top full stack development
+          company. Our team of experienced developers has a strong track record
+          of delivering high-quality web solutions to clients in a variety of
+          industries.
+        </Typography>
+        <hr style={{ width: '50%', marginLeft: 0 }} />
       </section>
 
       <section className={`sectionBox whyUsBox pb0 fullstackGame`}>
