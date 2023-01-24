@@ -148,6 +148,15 @@ export default function ServicesForStartUps() {
               <Grid item xs={6} className='pr30'>
                 <Card>
                   <CardContent>
+                    <Typography
+                      gutterBottom
+                      variant='h2'
+                      component='div'
+                      style={{ color: '#dd3952' }}
+                    >
+                      IT Solutions for Start-up Business
+                    </Typography>
+
                     <Typography gutterBottom variant='h3' component='div'>
                       We analyse your start-up model in entirely, consult and
                       offer the right technology solutions.

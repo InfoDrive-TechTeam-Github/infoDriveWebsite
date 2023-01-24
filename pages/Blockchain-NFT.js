@@ -46,9 +46,15 @@ export default function blockchain() {
           rel='canonical'
           href='https://infodrive-solutions.com/blockchain-nft.html'
         />
-        <meta property="og:title" content=" Blockchain & NFT Development Services & Company | Developer in Singapore, Malaysia, and India" />
-        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
-        <link rel="icon" href="/favicon.png" />
+        <meta
+          property='og:title'
+          content=' Blockchain & NFT Development Services & Company | Developer in Singapore, Malaysia, and India'
+        />
+        <meta
+          property='og:image'
+          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+        />
+        <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -125,6 +131,42 @@ export default function blockchain() {
           </Grid>
         </Box>
       </div>
+      <section className={`sectionBox`}>
+        <Typography gutterBottom variant='h3' component='div'>
+          Blockchain and NFT Development
+        </Typography>
+        <Typography className='w100' gutterBottom variant='h2' component='div'>
+          Blockchain technology and non-fungible tokens (NFTs) are
+          revolutionizing the way we think about and use digital assets. At
+          InfoDrive Solutions, we have a team of experienced blockchain
+          developers and NFT specialists who can help your business tap into the
+          power of these cutting-edge technologies.
+        </Typography>
+        <br />
+        <Typography gutterBottom variant='h3' component='div'>
+          What are NFTs?
+        </Typography>
+
+        <Typography className='w100' gutterBottom variant='h5' component='div'>
+          NFTs, or non-fungible tokens, are digital assets that are unique and
+          cannot be exchanged for other assets of equal value. They are
+          typically used to represent ownership of a digital asset, such as a
+          piece of art or a collectible. NFTs have gained a lot of attention in
+          recent years due to their ability to authenticate and verify the
+          ownership of digital assets. They have also been used in a variety of
+          creative ways, such as for virtual real estate and digital art.
+        </Typography>
+
+        <Typography gutterBottom variant='h3' component='div'>
+          Our Blockchain and NFT Development Services :
+        </Typography>
+        <ul>
+          <li>Blockchain strategy consulting:</li>
+          <li>Blockchain development:</li>
+          <li>NFT development</li>
+          <li>Smart contract development:</li>
+        </ul>
+      </section>
       <section className={`sectionBox BlockchainUsBox`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='fd1'>
