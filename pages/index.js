@@ -159,9 +159,15 @@ export default function Index() {
           name='keywords'
           content='Software Development Company in Singapore, Software Development Company in Malaysia, Software Development Company in India, Digital Transformation Solutions Company in Malaysia, Digital Transformation Solutions Company in Singapore, IT Solutions Company in Singapore, IT Services in Malaysia, Top Software Company in Singapore, Top Software Company in Malaysia, Software Development Agency Singapore, Custom Software Malaysia, Software Development Company in Kuala Lumpur'
         />
-        <meta property="og:title" content="Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - Info Drive Solution" />
-        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
-        <link rel="icon" href="/favicon.png" />
+        <meta
+          property='og:title'
+          content='Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - Info Drive Solution'
+        />
+        <meta
+          property='og:image'
+          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+        />
+        <link rel='icon' href='/favicon.png' />
         <link rel='canonical' href='https://infodrive-solutions.com/' />
         <script
           dangerouslySetInnerHTML={{
@@ -188,9 +194,8 @@ export default function Index() {
           WHO IS INFODRIVE SOLUTIONS
         </Typography>
         <Typography className='w100' gutterBottom variant='h2' component='div'>
-          InfoDrive Solutions helps its Customer achieve their desired business
-          outcome, improve efficiencies in their processes and enable people to
-          make collaborative & informed Data-Driven Decisions
+          Expert Software Consulting and Development Services for Digital
+          Transformation
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>
           InfoDrive Solutions is a Software Development and Digital
