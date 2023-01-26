@@ -267,6 +267,9 @@ img {
     padding-left: 0;
     padding-right: 0;
 }
+.saleForcesDevelopmentBox .MuiTypography-h5{
+  width: initial;
+}
 .saleForcesDevelopment{
   margin-left: 97px;
   background: #fff;
@@ -1018,6 +1021,10 @@ img {
 }
 .servicesForStartUp .MuiTypography-h3{
   font-size: 16px;
+}
+
+.salesCloudService .MuiTypography-h2{
+  width: initial;
 }
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
