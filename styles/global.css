@@ -165,6 +165,15 @@ img {
   line-height: 33px;
   color: #0b2653;
 }
+.sectionBox .MuiTypography-h1{
+  font-size: 25px;
+  font-family: Poppins;
+  width: 760px;
+  font-weight: 700;
+  padding-top: 30px;
+  line-height: 33px;
+  color: #0b2653;
+}
 .sectionBox .MuiTypography-h5{
   width: 668px;
   font-style: normal;
@@ -267,11 +276,31 @@ img {
     padding-left: 0;
     padding-right: 0;
 }
+.saleForcesDevelopmentBox .MuiTypography-h5{
+  width: initial;
+}
 .saleForcesDevelopment{
   margin-left: 97px;
   background: #fff;
   padding: 30px 15px;
 }
+.serviceCloudBox{
+  background: url('images/5ab120900874e8a341580c56b490853e.jpeg');
+  background-size: cover;
+    padding-left: 0;
+    padding-right: 0;
+}
+.serviceCloud{
+  background: #000;
+}
+
+.marketCloudBox{
+  background: url('images/d1173e418c75c06c95f251d58a8b7051.jpeg');
+  background-size: cover;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .readmore{
   font-size: 16px;
   color: #fff;
@@ -321,6 +350,14 @@ img {
     padding-right: 97px;
   font-family: Poppins;
 
+}
+.marketSolutionBox{
+  background: url('images/1fdbb1cca39e2eee60ac689872bfd393.jpeg');
+  background-size: cover;
+    margin-left: 97px;
+    margin-right: 97px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .whyUsBox .MuiTypography-h2{
   margin-bottom: 60px;
@@ -1019,6 +1056,10 @@ img {
 .servicesForStartUp .MuiTypography-h3{
   font-size: 16px;
 }
+
+.salesCloudService .MuiTypography-h2{
+  width: initial;
+}
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
   .leadForm .leadFormBox {
@@ -1075,6 +1116,12 @@ img {
     padding: 15px 15px;
     margin-left: 0;
     margin-right: 0;
+  }
+  .sectionBox .MuiTypography-h1{
+    width: initial;
+    font-size: 18px;
+    line-height: 28px;
+    padding-top: 15px;
   }
   .sectionBox .MuiTypography-h2{
     width: initial;

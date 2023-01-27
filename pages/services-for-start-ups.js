@@ -145,7 +145,7 @@ export default function ServicesForStartUps() {
         <section className={`sectionBox aboutUsBox3 servicesForStartUp`}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
-              <Grid item xs={6} className='pr30'>
+              <Grid item xs={12} className='pr30'>
                 <Card>
                   <CardContent>
                     <Typography
@@ -223,22 +223,14 @@ export default function ServicesForStartUps() {
                   </CardContent>
                 </Card>
               </Grid>
-              <Grid item xs={6}>
+              {/* <Grid item xs={12}>
                 <Card>
                   <img
                     alt='Remy Sharp'
                     src='images/pexels-christina-morillo-1181271.jpeg'
                   />
                 </Card>
-              </Grid>
-            </Grid>
-            <Grid item xs={6}>
-              <Card>
-                <img
-                  alt='Remy Sharp'
-                  src='images/pexels-christina-morillo-1181271.jpeg'
-                />
-              </Card>
+              </Grid> */}
             </Grid>
           </Box>
         </section>

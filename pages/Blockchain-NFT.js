@@ -269,11 +269,19 @@ export default function blockchain() {
               <br />
               <Button
                 href='/contact-us.html'
-                className='readmore white pl0 '
+                className='readmore white pl0'
                 variant='text'
               >
                 CONTACT US <ArrowRightAltIcon />
               </Button>
+            </Grid>
+            <Grid item xs={7}>
+              <Card>
+                <img
+                  alt='Remy Sharp'
+                  src='images/pexels-prakhar-bansal-732183.jpg'
+                />
+              </Card>
             </Grid>
           </Grid>
         </Box>

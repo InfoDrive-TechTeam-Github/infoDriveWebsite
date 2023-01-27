@@ -193,9 +193,14 @@ export default function Index() {
         <Typography gutterBottom variant='h3' component='div'>
           WHO IS INFODRIVE SOLUTIONS
         </Typography>
+<<<<<<< HEAD
         <Typography className='w100' gutterBottom variant='h2' component='div'>
           Expert Software Consulting and Development Services for Digital
           Transformation
+=======
+        <Typography className='w100' gutterBottom variant='h1' component='div'>
+        Expert Software Consulting and Development Services for Digital Transformation
+>>>>>>> 72625424871d56a4d667089ecba97a690f6d6b08
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>
           InfoDrive Solutions is a Software Development and Digital
@@ -442,14 +447,6 @@ export default function Index() {
               </Card>
             </Grid>
           </Grid>
-          <Grid item xs={7}>
-            <Card>
-              <img
-                alt='Remy Sharp'
-                src='images/pexels-ketut-subiyanto-4350210.jpg'
-              />
-            </Card>
-          </Grid>
         </Box>
       </section>
 
@@ -490,22 +487,25 @@ export default function Index() {
                     fairness and responsibility.
                   </Typography>
                   <Typography gutterBottom variant='h2' component='div'>
-                    123
+                    130+
                   </Typography>
                   <Typography gutterBottom variant='h3' component='div'>
                     SUCCESSFUL PROJECTS
                   </Typography>
                   <Typography gutterBottom variant='h2' component='div'>
-                    10+
+                    25+
                   </Typography>
                   <Typography gutterBottom variant='h3' component='div'>
                     YEARS OF EXPERIENCE
                   </Typography>
                   <Typography gutterBottom variant='h2' component='div'>
-                    100+
+                    110+
                   </Typography>
                   <Typography gutterBottom variant='h3' component='div'>
                     HAPPY CLIENTS
+                  </Typography>
+                  <Typography gutterBottom variant='h2' component='div'>
+                    30+
                   </Typography>
                 </CardContent>
               </Card>
