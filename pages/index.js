@@ -187,10 +187,8 @@ export default function Index() {
         <Typography gutterBottom variant='h3' component='div'>
           WHO IS INFODRIVE SOLUTIONS
         </Typography>
-        <Typography className='w100' gutterBottom variant='h2' component='div'>
-          InfoDrive Solutions helps its Customer achieve their desired business
-          outcome, improve efficiencies in their processes and enable people to
-          make collaborative & informed Data-Driven Decisions
+        <Typography className='w100' gutterBottom variant='h1' component='div'>
+        Expert Software Consulting and Development Services for Digital Transformation
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>
           InfoDrive Solutions is a Software Development and Digital
