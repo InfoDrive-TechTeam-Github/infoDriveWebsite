@@ -159,23 +159,13 @@ export default function IosAppDevelopment() {
           experienced and skilled developers, we are able to deliver
           high-performing iOS applications that meet the unique needs of our
           clients.
-        </Typography>
-
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
-          We specialize in creating custom software solutions that drive digital
-          transformation for businesses of all sizes. Our team of experienced
-          developers uses the latest technologies to build and implement
-          solutions that streamline processes, improve efficiency, and enhance
-          the user experience.
+          <br />
           <br />
           iOS, the operating system used on Apple devices such as the iPhone and
           iPad, has a reputation for being intuitive, user-friendly, and
           visually appealing. These attributes make it an excellent platform for
           businesses to develop their own custom apps, and reach a wide audience
           of loyal Apple users.
-          <br />
-          <br />
-          <br />
         </Typography>
       </section>
       <section className={`sectionBox IosAppBox`}>
@@ -193,19 +183,17 @@ export default function IosAppDevelopment() {
                   we have the expertise and resources to help you bring your app
                   idea to life. Whether you have a clear vision for your app or
                   just a rough concept, our team can work with you to design and
-                  develop a solution that meets your goals.
-                  <br />
-                  <br /> Our process begins with a consultation to understand
-                  your needs and goals for the app. From there, we work with you
-                  to define the scope of the project, including the features and
-                  functionality that will be included. We then move on to the
-                  design phase, where we create wireframes and mockups to
-                  visualize the app's user interface and user experience. Once
-                  the design is approved, our developers begin the process of
-                  building the app using the latest technologies and best
-                  practices. We prioritize security, performance, and
-                  scalability to ensure that your app is reliable and able to
-                  handle heavy usage.
+                  develop a solution that meets your goals. Our process begins
+                  with a consultation to understand your needs and goals for the
+                  app. From there, we work with you to define the scope of the
+                  project, including the features and functionality that will be
+                  included. We then move on to the design phase, where we create
+                  wireframes and mockups to visualize the app's user interface
+                  and user experience. Once the design is approved, our
+                  developers begin the process of building the app using the
+                  latest technologies and best practices. We prioritize
+                  security, performance, and scalability to ensure that your app
+                  is reliable and able to handle heavy usage.
                 </Typography>
                 <Typography
                   gutterBottom
