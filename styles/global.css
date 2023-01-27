@@ -275,6 +275,23 @@ img {
   background: #fff;
   padding: 30px 15px;
 }
+.serviceCloudBox{
+  background: url('images/5ab120900874e8a341580c56b490853e.jpeg');
+  background-size: cover;
+    padding-left: 0;
+    padding-right: 0;
+}
+.serviceCloud{
+  background: #000;
+}
+
+.marketCloudBox{
+  background: url('images/d1173e418c75c06c95f251d58a8b7051.jpeg');
+  background-size: cover;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .readmore{
   font-size: 16px;
   color: #fff;
@@ -324,6 +341,14 @@ img {
     padding-right: 97px;
   font-family: Poppins;
 
+}
+.marketSolutionBox{
+  background: url('images/1fdbb1cca39e2eee60ac689872bfd393.jpeg');
+  background-size: cover;
+    margin-left: 97px;
+    margin-right: 97px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .whyUsBox .MuiTypography-h2{
   margin-bottom: 60px;

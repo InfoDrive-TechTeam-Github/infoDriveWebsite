@@ -253,7 +253,7 @@ export default function SalesForceDevelopment() {
               <Card>
                 <CardContent>
                   <Typography gutterBottom variant='h3' component='div'>
-                  SStrategy and planning
+                  Strategy and planning
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
