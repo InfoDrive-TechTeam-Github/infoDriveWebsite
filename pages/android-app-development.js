@@ -139,7 +139,7 @@ export default function AndroidAppDevelopment() {
           </Grid>
         </Box>
       </div>
-      <section className={`sectionBox`}>
+      <section className='sectionBox'>
         <Typography
           gutterBottom
           variant='h1'
@@ -153,7 +153,6 @@ export default function AndroidAppDevelopment() {
         >
           Android App Development Services
         </Typography>
-
         <Typography className='w100' gutterBottom variant='h5' component='div'>
           Android is the most widely used mobile operating system in the world,
           and it powers millions of devices in over 190 countries. As such, it
@@ -342,7 +341,7 @@ export default function AndroidAppDevelopment() {
               <Card>
                 <CardContent>
                   <Typography gutterBottom variant='h3' component='div'>
-                    Low investment and high ROI
+                    Low investment and high ROI
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>

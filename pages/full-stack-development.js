@@ -142,7 +142,17 @@ export default function FullstackDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h3' component='div'>
+        <Typography
+          gutterBottom
+          variant='h1'
+          component='div'
+          style={{
+            fontSize: '25px',
+            color: '#dd3952',
+            fontWeight: 600,
+            fontFamily: 'Poppins',
+          }}
+        >
           APPLICATION DEVELOPMENT, MAINTENANCE AND SUPPORT
         </Typography>
         <Typography gutterBottom variant='h2' component='div'>

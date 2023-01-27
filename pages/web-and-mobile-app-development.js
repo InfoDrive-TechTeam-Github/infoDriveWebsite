@@ -145,9 +145,14 @@ export default function WebMobileApp() {
       <section className={`sectionBox introSectionBox`}>
         <Typography
           gutterBottom
-          variant='h3'
-          className='upperCase'
+          variant='h1'
           component='div'
+          style={{
+            fontSize: '25px',
+            color: '#dd3952',
+            fontWeight: 600,
+            fontFamily: 'Poppins',
+          }}
         >
           Custom Web & Mobile App Development - Take Your Business to the Next
           Level

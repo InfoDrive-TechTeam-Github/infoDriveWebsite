@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/salesforce-development": [
+    "/ios-app-development": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/salesforce-development.js"
+      "static/chunks/pages/ios-app-development.js"
     ]
   },
   "ampFirstPages": []
