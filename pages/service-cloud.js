@@ -214,39 +214,25 @@ export default function SalesForceDevelopment() {
         </Box>
       </section>
 
-
-      <section className={`sectionBox aboutUsBox3 salesCloudService`}>
-          <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={0}>
-              <Grid item xs={6} className='pr30'>
-                <Card>
-                  <CardContent>
-                  <Typography gutterBottom variant='h2' component='div'>
-                  Our consulting services are designed to help you fully leverage the capabilities of Salesforce Sales Cloud and achieve your business goals. 
-                  </Typography>
-                  <br/>
-
-                    <Typography gutterBottom variant='h3' component='div'>
-                    Our team of experienced consultants can provide a range of services, including strategy and planning to help you develop a roadmap for using Salesforce Sales Cloud to drive business growth and efficiency. We can also assist with customization and optimization to ensure that the platform is tailored to meet the specific needs of your business.
-                    In addition to implementation services, we also offer a range of consulting services to help you get the most out of Salesforce Sales Cloud.
-                    This includes:
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item xs={6}>
-                <Card>
-                  <img
-                    alt='Remy Sharp'
-                    src='images/491c67e4b1055317d0f23ddd3ee7af54.jpeg'
-                  />
-                </Card>
-              </Grid>
+      <section className={`sectionBox saleForcesDevelopmentBox serviceCloudBox`}>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0} className='androidDevelopment'>
+            <Grid item xs={6} className='saleForcesDevelopment'>
+              <Typography gutterBottom variant='h5' component='div'>
+              As a trusted Salesforce partner, InfoDrive Solutions can help you get the most out of Service Cloud by providing expert implementation and consulting services. Our team has in-depth knowledge of the platform and can guide you through every step of the process, from planning and design to deployment and ongoing support.              
+              </Typography>
             </Grid>
-          </Box>
-        </section>
+          </Grid>
+        </Box>
+      </section>
+      <br/>
+      <br/>
 
       <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2`}>
+      <Typography gutterBottom variant='h2' className='mb0' component='div'>
+        Our implementation services include:
+        </Typography>
+        <br />
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             
@@ -254,11 +240,12 @@ export default function SalesForceDevelopment() {
               <Card>
                 <CardContent>
                   <Typography gutterBottom variant='h3' component='div'>
-                  SStrategy and planning
+                  Needs assessment and planning
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  Our consultants can help you develop a strategy for using Salesforce Sales Cloud to drive business growth and efficiency. We'll work with you to identify key areas for improvement and develop a plan to achieve your goals.                  </Typography>
+                  We work with you to understand your business goals and customer service needs, and help you design a Service Cloud solution that aligns with your specific requirements.
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
@@ -271,7 +258,7 @@ export default function SalesForceDevelopment() {
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  Salesforce Sales Cloud is highly customizable, and our team can help you optimize the platform to meet your specific needs. This includes customizing fields, workflows, and other settings to ensure that the platform is optimized for your business.                   </Typography>
+                  We configure and customize Service Cloud to meet your specific needs, including integrating it with other systems and setting up workflows and processes.                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
@@ -280,11 +267,11 @@ export default function SalesForceDevelopment() {
               <Card>
                     <CardContent>
                         <Typography gutterBottom variant='h3' component='div'>
-                        Reporting and analytics                        
+                        Training and adoption                        
                         </Typography>
                         <br />
                         <Typography variant='body2' color='text.secondary'>
-                        Salesforce Sales Cloud provides a range of reporting and analytics tools that can help you better understand your customers and sales processes. Our team can help you set up and interpret these reports to gain insights and make data-driven decisions.                        
+                        We provide training to your team on how to use Service Cloud effectively and ensure a smooth transition to the new platform.
                         </Typography>       
                     </CardContent>
               </Card>
@@ -294,11 +281,13 @@ export default function SalesForceDevelopment() {
               <Card>
                     <CardContent>
                         <Typography gutterBottom variant='h3' component='div'>
-                        Ongoing support and maintenance                        
+                        Data migration
+                        
                         </Typography>
                         <br />
                         <Typography variant='body2' color='text.secondary'>
-                        We offer ongoing support and maintenance to help you get the most out of Salesforce Sales Cloud. This includes answering questions, providing guidance on best practices, and helping you troubleshoot any issues that may arise.                        </Typography>
+                        We can help you migrate your existing customer service data to Service Cloud, ensuring a seamless transition and minimal disruption to your business.
+                        </Typography>
                     </CardContent>
                 </Card>
             </Grid>
@@ -306,6 +295,58 @@ export default function SalesForceDevelopment() {
           </Grid>
         </Box>
       </section>
+
+      <section className={`sectionBox aboutUsBox3 salesCloudService serviceCloud`}>
+          <Box sx={{ flexGrow: 1 }}>
+            <Grid container spacing={0}>
+              <Grid item xs={6}>
+                <Card>
+                  <img
+                    alt='Remy Sharp'
+                    src='images/8985be05557b74f0f6f08fbba7b8c805.jpeg'
+                  />
+                </Card>
+              </Grid>
+              <Grid item xs={6} className='pl30'>
+                <Card>
+                  <CardContent>
+                  <Typography className="white" gutterBottom variant='h2' component='div'>
+                  In addition to implementation services, we also offer ongoing consulting and support to ensure the success of your Service Cloud deployment. This includes:
+                  </Typography>
+                  <br/>
+
+                    <Typography className="white" gutterBottom variant='h3' component='div'>
+                    Technical support
+                    </Typography>
+
+                    <Typography className="white" gutterBottom variant='h5' component='div'>
+                    We provide technical support and troubleshooting to help you resolve any issues that may arise with your Service Cloud implementation.
+                    </Typography>
+                    <br/>
+                    <Typography className="white" gutterBottom variant='h3' component='div'>
+                    Best practices and optimization
+                    </Typography>
+
+                    <Typography className="white" gutterBottom variant='h5' component='div'>
+                    We share best practices and provide guidance on how to optimize your use of Service Cloud to get the most value from the platform.
+                    </Typography>
+
+                    <br/>
+                    <Typography className="white" gutterBottom variant='h3' component='div'>
+                    Customization and integration
+                    </Typography>
+
+                    <Typography className="white" gutterBottom variant='h5' component='div'>
+                    We can help you customize and integrate Service Cloud with other systems, such as CRM, ERP, and marketing automation, to create a seamless customer experience.
+                    </Typography>
+
+                  </CardContent>
+                </Card>
+              </Grid>
+            </Grid>
+          </Box>
+        </section>
+
 
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
