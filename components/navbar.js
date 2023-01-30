@@ -225,6 +225,21 @@ function DrawerAppBar(props) {
                         <ListItemText primary={'Marketing Cloud'} />
                       </ListItemButton>
                     </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/salesforce-einstein-analytics.html" >
+                        <ListItemText primary={'Salesforce Einstein Analytics'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/salesforce-support.html" >
+                        <ListItemText primary={'Salesforce Support'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/salesforce-lightning.html" >
+                        <ListItemText primary={'Salesforce Lightning'} />
+                      </ListItemButton>
+                    </ListItem>
                   </List>
                 </Menu>
                 
@@ -412,6 +427,21 @@ function DrawerAppBar(props) {
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/marketing-cloud.html" >
                         <ListItemText primary={'Marketing Cloud'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/salesforce-einstein-analytics.html" >
+                        <ListItemText primary={'Salesforce Einstein Analytics'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/salesforce-support.html" >
+                        <ListItemText primary={'Salesforce Support'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/salesforce-lightning.html" >
+                        <ListItemText primary={'Salesforce Lightning'} />
                       </ListItemButton>
                     </ListItem>
                   </List>

@@ -359,6 +359,15 @@ img {
     padding-left: 0;
     padding-right: 0;
 }
+
+.analyticsBox{
+  background: url('images/27438e2c1b5ef15fae5bea18375900bb.jpeg');
+  background-size: cover;
+    margin-left: 97px;
+    margin-right: 97px;
+    padding-left: 0;
+    padding-right: 0;
+}
 .whyUsBox .MuiTypography-h2{
   margin-bottom: 60px;
   font-family: Poppins;
@@ -861,6 +870,9 @@ img {
   color:#fff;
   font-family: Poppins;
 
+}
+.applicationDevelopmentBox .MuiTypography-h2{
+  width: 100%;
 }
 .footerSection{
   background: #000;
