@@ -303,8 +303,26 @@ export default function ServicesForStartUps() {
           </Button>
         </section>
         <section className={`sectionBox whyUsBox`}>
-          <Typography gutterBottom variant='h2' className='' component='div'>
+          <Typography
+            gutterBottom
+            variant='h2'
+            className=''
+            component='div'
+            style={{ marginBottom: '-2px' }}
+          >
             Why Your Start-Up Should Work With Us?
+          </Typography>
+          <Typography gutterBottom variant='h5' component='div'>
+            InfoDrive Solutions is devoted to assisting new businesses to get
+            off the ground and become successful. Our team of specialists has a
+            vast knowledge of delivering specialist services that address the
+            specialized needs of start-ups. We offer market investigation,
+            strategy creation, product launch, and advertising services. We are
+            aware of the difficulties that start-ups encounter and are dedicated
+            to providing inventive solutions to help them navigate these issues.
+            With our company, you can be sure that your start-up is in capable
+            hands. Our mission is to help you accomplish business success, and
+            we will work alongside you to make that a reality.
           </Typography>
           <br />
           <Box sx={{ flexGrow: 1 }}>

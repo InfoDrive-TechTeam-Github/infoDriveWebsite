@@ -141,14 +141,24 @@ export default function FullstackDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h3' component='div'>
+      <section className={`sectionBox applicationDevelopmentBox`}>
+        <Typography
+          gutterBottom
+          variant='h1'
+          component='div'
+          style={{
+            fontSize: '25px',
+            color: '#dd3952',
+            fontWeight: 600,
+            fontFamily: 'Poppins',
+          }}
+        >
           APPLICATION DEVELOPMENT, MAINTENANCE AND SUPPORT
         </Typography>
-        <Typography gutterBottom variant='h2' component='div'>
+        <Typography className='w100' gutterBottom variant='h2' component='div'>
           One-stop Solution for Your Development Needs
         </Typography>
-        <Typography gutterBottom variant='h5' component='div'>
+        <Typography className='w100' gutterBottom variant='h5' component='div'>
           As a leading provider of full stack development services in Singapore,
           Malaysia, and India, we are committed to delivering top-quality
           solutions that help businesses of all sizes succeed in today's digital
@@ -169,7 +179,7 @@ export default function FullstackDevelopment() {
           deployed.
         </Typography>
         <br />
-        <Typography gutterBottom variant='h3' component='div'>
+        <Typography className='w100' gutterBottom variant='h3' component='div'>
           Our full stack development services include:
         </Typography>
         <ul>
@@ -178,8 +188,8 @@ export default function FullstackDevelopment() {
           <li>E-commerce development</li>
           <li>Custom software development</li>
         </ul>
-        <hr style={{ width: '50%', marginLeft: 0 }} />
-        <Typography gutterBottom variant='h5' component='div'>
+        <hr className='w100' style={{ marginLeft: 0 }} />
+        <Typography className='w100' gutterBottom variant='h5' component='div'>
           In addition to our full stack development services, we also offer a
           range of other services, including website design, digital marketing,
           and search engine optimization (SEO). As a company, we are committed
@@ -192,7 +202,7 @@ export default function FullstackDevelopment() {
           of delivering high-quality web solutions to clients in a variety of
           industries.
         </Typography>
-        <hr style={{ width: '50%', marginLeft: 0 }} />
+        <hr className='w100' style={{ marginLeft: 0 }} />
       </section>
 
       <section className={`sectionBox whyUsBox pb0 fullstackGame`}>

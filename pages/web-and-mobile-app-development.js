@@ -56,9 +56,15 @@ export default function WebMobileApp() {
           rel='canonical'
           href='https://infodrive-solutions.com/web-and-mobile-app-development.html'
         />
-        <meta property="og:title" content="Web and Mobile App Development Services & Company in Singapore, Malaysia, and India" />
-        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
-        <link rel="icon" href="/favicon.png" />
+        <meta
+          property='og:title'
+          content='Web and Mobile App Development Services & Company in Singapore, Malaysia, and India'
+        />
+        <meta
+          property='og:image'
+          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+        />
+        <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -139,11 +145,17 @@ export default function WebMobileApp() {
       <section className={`sectionBox introSectionBox`}>
         <Typography
           gutterBottom
-          variant='h3'
-          className='upperCase'
+          variant='h1'
           component='div'
+          style={{
+            fontSize: '25px',
+            color: '#dd3952',
+            fontWeight: 600,
+            fontFamily: 'Poppins',
+          }}
         >
-          Introduction
+          Custom Web & Mobile App Development - Take Your Business to the Next
+          Level
         </Typography>
         <Typography gutterBottom variant='h5' component='div'>
           We use a wide range of full-stack technologies connecting a variety of
