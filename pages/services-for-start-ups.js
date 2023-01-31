@@ -148,12 +148,7 @@ export default function ServicesForStartUps() {
               <Grid item xs={12} className='pr30'>
                 <Card>
                   <CardContent>
-                    <Typography
-                      gutterBottom
-                      variant='h2'
-                      component='div'
-                      style={{ color: '#dd3952' }}
-                    >
+                  <Typography className='w100 red' gutterBottom variant='h1' component='div'>
                       IT Solutions for Start-up Business
                     </Typography>
 
