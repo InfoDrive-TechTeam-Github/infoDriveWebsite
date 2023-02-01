@@ -191,18 +191,21 @@ export default function Index() {
       <Slider />
       <section className={`sectionBox`}>
         <Typography
-          className='w100'
+          className='w100 heading'
           gutterBottom
           variant='h1'
           component='div'
-          style={{
-            fontSize: '25px',
-            color: '#dd3952',
-            fontWeight: 600,
-            fontFamily: 'Poppins',
-          }}
         >
           WHO IS INFODRIVE SOLUTIONS
+        </Typography>
+        <Typography
+          className='w100 fs'
+          gutterBottom
+          variant='h2'
+          component='h1'
+        >
+          Expert Software Consulting and Development Services for Digital
+          Transformation
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>
           InfoDrive Solutions is a Software Development and Digital

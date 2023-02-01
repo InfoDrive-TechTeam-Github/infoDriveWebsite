@@ -141,15 +141,10 @@ export default function AndroidAppDevelopment() {
       </div>
       <section className='sectionBox'>
         <Typography
+          className='w100 heading'
           gutterBottom
           variant='h1'
-          component='div'
-          style={{
-            fontSize: '25px',
-            color: '#dd3952',
-            fontWeight: 600,
-            fontFamily: 'Poppins',
-          }}
+          component='h1'
         >
           Android App Development Services
         </Typography>
@@ -181,7 +176,7 @@ export default function AndroidAppDevelopment() {
           support the success of your android app, including testing,
           deployment, and ongoing maintenance.
         </Typography>
-        <Typography className='w100' gutterBottom variant='h2' component='div'>
+        <Typography className='w100' gutterBottom variant='h2' component='h2'>
           Why Choose Us for Your Android App Development Needs
         </Typography>
 

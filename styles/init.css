@@ -2,7 +2,7 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Poppins/Poppins-Regular.ttf");
+  src: url('fonts/Poppins/Poppins-Regular.ttf');
 }
 
 /* for desktop */
@@ -13,7 +13,7 @@
   bottom: 40px;
   left: 40px;
   background-color: #25d366;
-  color: #FFF;
+  color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
@@ -21,7 +21,7 @@
   z-index: 100;
   line-height: 72px;
 }
-.whatsapp_float svg{
+.whatsapp_float svg {
   font-size: 35px;
 }
 .whatsapp-icon {
@@ -30,27 +30,27 @@
 
 /* for mobile */
 @media screen and (max-width: 767px) {
-  .whatsapp_float svg{
+  .whatsapp_float svg {
     font-size: 28px;
   }
   .whatsapp_float {
-      width: 40px;
-      height: 40px;
-      bottom: 20px;
-      right: 10px;
-      font-size: 22px;
-      line-height: 55px;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 10px;
+    font-size: 22px;
+    line-height: 55px;
   }
 }
 
-.fs20{
-    font-size: 20px !important;
-  }
-  .fs18{
-    font-size:18px !important;
-  }
+.fs20 {
+  font-size: 20px !important;
+}
+.fs18 {
+  font-size: 18px !important;
+}
 
-.hdnclr{
+.hdnclr {
   color: #fff !important;
 }
 .BlockchainUsBox.contInfo {
@@ -68,67 +68,77 @@
   box-shadow: none;
   height: 450px;
 }
-.pt0{
-    padding-top: 0px;
-  }
-  .pb0{
-    padding-bottom: 0px;
-  }
-  .mb0{
-    margin-bottom: 0px !important;
-  }
-  .pl0{
-    padding-left: 0px;
-  }
-  .pt15{
-    padding-top: 15px;
-  }
-  .pb15{
-    padding-bottom: 15px;
-  }
-  .pl15{
-    padding-left: 15px;
-  }
-  .pr15{
-    padding-right: 15px;
-  }
+.pt0 {
+  padding-top: 0px;
+}
+.pb0 {
+  padding-bottom: 0px;
+}
+.mb0 {
+  margin-bottom: 0px !important;
+}
+.pl0 {
+  padding-left: 0px;
+}
+.pt15 {
+  padding-top: 15px;
+}
+.pb15 {
+  padding-bottom: 15px;
+}
+.pl15 {
+  padding-left: 15px;
+}
+.pr15 {
+  padding-right: 15px;
+}
 
-  .pt10{
-    padding-top: 10px;
-  }
-  .pb10{
-    padding-bottom: 10px;
-  }
-  .pl10{
-    padding-left: 10px;
-  }
-  .pr10{
-    padding-right: 10px;
-  }
-  .pt30{
-    padding-top: 30px;
-  }
-  .pr30{
-    padding-right: 30px;
-  }
-  .pb30{
-    padding-bottom: 30px;
-  }
-  .pl30{
-    padding-left: 30px;
-  }
-  .black{
-    color:#000;
-  }
-  .widthInitial{
-    width: initial !important;
-  }
-  .w100{
-    width: 100% !important;
-  }
-  /* Satya Add css  */
-  .sliderBox.blockNFT {
-    background: #070D0C;
+.pt10 {
+  padding-top: 10px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.pr10 {
+  padding-right: 10px;
+}
+.pt30 {
+  padding-top: 30px;
+}
+.pr30 {
+  padding-right: 30px;
+}
+.pb30 {
+  padding-bottom: 30px;
+}
+.pl30 {
+  padding-left: 30px;
+}
+.black {
+  color: #000;
+}
+.widthInitial {
+  width: initial !important;
+}
+.w100 {
+  width: 100% !important;
+}
+.heading {
+  font-size: 22px !important;
+  color: #dd3952 !important;
+  font-weight: 600;
+  font-family: Poppins;
+}
+.fs {
+  margin-top: -15px;
+  font-size: 25px;
+}
+/* Satya Add css  */
+.sliderBox.blockNFT {
+  background: #070d0c;
 }
 section.sectionBox.BlockchainUsBox {
   height: auto;
@@ -136,7 +146,7 @@ section.sectionBox.BlockchainUsBox {
 }
 img.chain_img {
   width: 100%;
-    height: 600px;
+  height: 600px;
 }
 .fp1 {
   box-shadow: none;
@@ -147,11 +157,11 @@ img.chain_img {
 }
 .bp2 {
   font-size: 16px !important;
-  color: #070D0C !important;
+  color: #070d0c !important;
   font-weight: 300 !important;
   line-height: 36px !important;
 }
-.css-bhp9pd-MuiPaper-root-MuiCard-root{
+.css-bhp9pd-MuiPaper-root-MuiCard-root {
   border-radius: 0px !important;
 }
 .fp2 {
@@ -167,12 +177,12 @@ img.chain_img {
   padding: 30px 0px 0px 0px;
 }
 .blcnt {
-  background: #DE3854;
+  background: #de3854;
 }
-.blcnt2{
-  background: #DE3854;
-    box-shadow: none;
-    padding: 150px 0px 0px 70px;
+.blcnt2 {
+  background: #de3854;
+  box-shadow: none;
+  padding: 150px 0px 0px 70px;
 }
 .blcntp {
   color: #fff !important;
@@ -188,7 +198,7 @@ img.chain_img {
 .IosAppBox .fp1 {
   box-shadow: none;
   padding: 65px 0px 25px 150px;
-  background: #070D0C;
+  background: #070d0c;
   color: #fff;
 }
 .IosAppBox .bp2 {
@@ -200,20 +210,20 @@ img.chain_img {
   color: #fff;
 }
 .IosAppBox p {
-line-height: 30px;
+  line-height: 30px;
 }
-.IosAppBox .MuiTypography-h2{
+.IosAppBox .MuiTypography-h2 {
   color: #fff;
-  font-size:25px;
+  font-size: 25px;
   line-height: 35px;
   padding-top: 0;
   width: 698px;
 }
-.IosAppBox .MuiTypography-h5{
-  color:#fff;
+.IosAppBox .MuiTypography-h5 {
+  color: #fff;
   width: 698px;
 }
-.IosAppBox .MuiGrid-item .MuiPaper-elevation{
+.IosAppBox .MuiGrid-item .MuiPaper-elevation {
   height: 100%;
 }
 img.Ios_img {
@@ -233,70 +243,69 @@ section.sectionBox.IosAppBox2 {
   padding: 30px 40px 10px 40px;
 }
 .IosCard.bg {
-  background: #DE3854;
+  background: #de3854;
 }
 .MuiTypography-body2 {
-  color: #070D0C;
+  color: #070d0c;
   line-height: 26px;
   font-size: 16px !important;
   font-family: Poppins;
 }
 .sectionBox.IosOurBox {
   padding: 0px;
-  background: #070D0C;
+  background: #070d0c;
 }
 .IosOurBoxPd {
-  
   padding: 40px 150px 70px 150px;
 }
 .IodHdn {
   margin-bottom: 40px;
   color: #fff !important;
 }
-.customIcon{
+.customIcon {
   font-size: 20px;
   width: 44px;
   padding: 8px 15px 8px 12px;
   height: 50px;
   font-weight: bolder;
   cursor: pointer;
-  margin-right:10px;
+  margin-right: 10px;
 }
-.customIcon:hover{
+.customIcon:hover {
   background-color: rgba(0, 0, 0, 0.04);
 }
-.poppin{
+.poppin {
   font-family: Poppins;
 }
-.red{
+.red {
   color: #dd3952 !important;
 }
-.white{
+.white {
   color: #ffffff !important;
 }
-.bgRed{
+.bgRed {
   background-color: #dd3952 !important;
   color: #fff;
 }
-.normalCase{
+.normalCase {
   text-transform: initial !important;
 }
-.upperCase{
+.upperCase {
   text-transform: uppercase !important;
 }
-.mt30{
-  margin-top:30px;
+.mt30 {
+  margin-top: 30px;
 }
-.mr30{
-  margin-right:30px;
+.mr30 {
+  margin-right: 30px;
 }
-.ml30{
-  margin-left:30px;
+.ml30 {
+  margin-left: 30px;
 }
-.mb30{
-  margin-bottom:30px;
+.mb30 {
+  margin-bottom: 30px;
 }
-.mt0{
+.mt0 {
   margin-top: 0 !important;
 }
-  /* End css */
+/* End css */

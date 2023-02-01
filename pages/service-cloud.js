@@ -56,9 +56,15 @@ export default function SalesForceDevelopment() {
           rel='canonical'
           href='https://infodrive-solutions.com/android-app-development.html'
         />
-        <meta property="og:title" content="Top Android App Development Company & Developers in Singapore,Malaysia, and India" />
-        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
-        <link rel="icon" href="/favicon.png" />
+        <meta
+          property='og:title'
+          content='Top Android App Development Company & Developers in Singapore,Malaysia, and India'
+        />
+        <meta
+          property='og:image'
+          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+        />
+        <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -85,13 +91,14 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>Salesforce SERVICE Cloud Services
+            <Typography gutterBottom variant='h3' component='div'>
+              Salesforce SERVICE Cloud Services
             </Typography>
             <Typography gutterBottom variant='h1' component='div'>
-            Our Company InfoDrive Solutions is a <br/>
-            leading provider of Salesforce Service <br/>
-            Cloud implementation and consulting <br/>
-            services in Singapore, Malaysia, and India.
+              Our Company InfoDrive Solutions is a <br />
+              leading provider of Salesforce Service <br />
+              Cloud implementation and consulting <br />
+              services in Singapore, Malaysia, and India.
             </Typography>
             <Button
               href='/contact-us.html'
@@ -139,33 +146,58 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h2' component='div'>
-        With a team of certified Salesforce experts and a track record of successful projects, we have helped numerous organizations streamline their customer service processes and improve their overall customer experience.        
+        <Typography className='w100' gutterBottom variant='h2' component='h1'>
+          Empowering Businesses with Exceptional Customer Service through
+          Salesforce Service Cloud
         </Typography>
 
-        <Typography gutterBottom variant='h5' component='div'>
-        Salesforce Service Cloud is a powerful customer service platform that helps businesses manage customer interactions and support inquiries across various channels, including phone, email, chat, and social media.
-        It offers a range of tools and features, including case management, knowledge management, and community engagement, that enable businesses to deliver personalized, efficient, and consistent support to their customers.        
+        <Typography className='w100' gutterBottom variant='h5' component='div'>
+          Our Company InfoDrive Solutions is a leading provider of Salesforce
+          Service Cloud implementation and consulting services in Singapore,
+          Malaysia, and India. With a team of certified Salesforce experts and a
+          track record of successful projects, we have helped numerous
+          organizations streamline their customer service processes and improve
+          their overall customer experience. Salesforce Service Cloud is a
+          powerful customer service platform that helps businesses manage
+          customer interactions and support inquiries across various channels,
+          including phone, email, chat, and social media. It offers a range of
+          tools and features, including case management, knowledge management,
+          and community engagement, that enable businesses to deliver
+          personalized, efficient, and consistent support to their customers.
         </Typography>
       </section>
 
-      <section className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}>
-        <Typography className="mb0" gutterBottom variant='h2' component='div'>
-        Implementing Salesforce Service Cloud can bring numerous benefits to your organization, including:
+      <section
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
+      >
+        <Typography className='mb0' gutterBottom variant='h2' component='h2'>
+          Implementing Salesforce Service Cloud can bring numerous benefits to
+          your organization, including:
         </Typography>
-        <br/>
-        <br/>
+        <br />
+        <br />
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={6} className>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' className='mb0' component='div'>
-                  Improved customer satisfaction
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='mb0'
+                    component='h3'
+                  >
+                    Improved customer satisfaction
                   </Typography>
                   <br />
-                  <Typography className="pr30" variant='body2' color='text.secondary'>
-                  With Service Cloud, you can provide faster, more accurate, and more personalized support to your customers, leading to higher levels of satisfaction and loyalty.
+                  <Typography
+                    className='pr30'
+                    variant='body2'
+                    color='text.secondary'
+                  >
+                    With Service Cloud, you can provide faster, more accurate,
+                    and more personalized support to your customers, leading to
+                    higher levels of satisfaction and loyalty.
                   </Typography>
                 </CardContent>
               </Card>
@@ -174,12 +206,22 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' className='mb0' component='div'>
-                  Enhanced productivity
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='mb0'
+                    component='div'
+                  >
+                    Enhanced productivity
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  Service Cloud automates many manual tasks, such as routing and prioritizing cases, and provides your agents with the tools and information they need to resolve issues quickly. This helps them be more productive and efficient, enabling them to handle more cases in less time.                  </Typography>
+                    Service Cloud automates many manual tasks, such as routing
+                    and prioritizing cases, and provides your agents with the
+                    tools and information they need to resolve issues quickly.
+                    This helps them be more productive and efficient, enabling
+                    them to handle more cases in less time.{' '}
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
@@ -187,12 +229,24 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' className='mb0' component='div'>
-                  Increased visibility and accountability                  
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='mb0'
+                    component='div'
+                  >
+                    Increased visibility and accountability
                   </Typography>
                   <br />
-                  <Typography className="pr30" variant='body2' color='text.secondary'>
-                  Service Cloud provides a central repository for all customer interactions and support inquiries, giving you a complete view of the customer journey and enabling you to track and measure the performance of your customer service team.                  
+                  <Typography
+                    className='pr30'
+                    variant='body2'
+                    color='text.secondary'
+                  >
+                    Service Cloud provides a central repository for all customer
+                    interactions and support inquiries, giving you a complete
+                    view of the customer journey and enabling you to track and
+                    measure the performance of your customer service team.
                   </Typography>
                 </CardContent>
               </Card>
@@ -201,50 +255,66 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' className='mb0' component='div'>
-                  Greater scalability                  
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='mb0'
+                    component='div'
+                  >
+                    Greater scalability
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  Service Cloud is designed to scale as your business grows, enabling you to handle more cases and support more customers without adding additional staff or infrastructure.                  </Typography>
+                    Service Cloud is designed to scale as your business grows,
+                    enabling you to handle more cases and support more customers
+                    without adding additional staff or infrastructure.{' '}
+                  </Typography>
                 </CardContent>
               </Card>
-            </Grid> 
+            </Grid>
           </Grid>
         </Box>
       </section>
 
-      <section className={`sectionBox saleForcesDevelopmentBox serviceCloudBox`}>
+      <section
+        className={`sectionBox saleForcesDevelopmentBox serviceCloudBox`}
+      >
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='androidDevelopment'>
             <Grid item xs={6} className='saleForcesDevelopment'>
               <Typography gutterBottom variant='h5' component='div'>
-              As a trusted Salesforce partner, InfoDrive Solutions can help you get the most out of Service Cloud by providing expert implementation and consulting services. Our team has in-depth knowledge of the platform and can guide you through every step of the process, from planning and design to deployment and ongoing support.              
+                As a trusted Salesforce partner, InfoDrive Solutions can help
+                you get the most out of Service Cloud by providing expert
+                implementation and consulting services. Our team has in-depth
+                knowledge of the platform and can guide you through every step
+                of the process, from planning and design to deployment and
+                ongoing support.
               </Typography>
             </Grid>
           </Grid>
         </Box>
       </section>
-      <br/>
-      <br/>
+      <br />
+      <br />
 
       <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2`}>
-      <Typography gutterBottom variant='h2' className='mb0' component='div'>
-        Our implementation services include:
+        <Typography gutterBottom variant='h2' className='mb0' component='div'>
+          Our implementation services include:
         </Typography>
         <br />
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-            
             <Grid item xs={6}>
               <Card>
                 <CardContent>
                   <Typography gutterBottom variant='h3' component='div'>
-                  Needs assessment and planning
+                    Needs assessment and planning
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  We work with you to understand your business goals and customer service needs, and help you design a Service Cloud solution that aligns with your specific requirements.
+                    We work with you to understand your business goals and
+                    customer service needs, and help you design a Service Cloud
+                    solution that aligns with your specific requirements.
                   </Typography>
                 </CardContent>
               </Card>
@@ -254,99 +324,147 @@ export default function SalesForceDevelopment() {
               <Card>
                 <CardContent>
                   <Typography gutterBottom variant='h3' component='div'>
-                  Customization and optimization                  
+                    Customization and optimization
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  We configure and customize Service Cloud to meet your specific needs, including integrating it with other systems and setting up workflows and processes.                  </Typography>
+                    We configure and customize Service Cloud to meet your
+                    specific needs, including integrating it with other systems
+                    and setting up workflows and processes.{' '}
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
 
             <Grid item xs={6}>
               <Card>
-                    <CardContent>
-                        <Typography gutterBottom variant='h3' component='div'>
-                        Training and adoption                        
-                        </Typography>
-                        <br />
-                        <Typography variant='body2' color='text.secondary'>
-                        We provide training to your team on how to use Service Cloud effectively and ensure a smooth transition to the new platform.
-                        </Typography>       
-                    </CardContent>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Training and adoption
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    We provide training to your team on how to use Service Cloud
+                    effectively and ensure a smooth transition to the new
+                    platform.
+                  </Typography>
+                </CardContent>
               </Card>
             </Grid>
-            
+
             <Grid item xs={6}>
               <Card>
-                    <CardContent>
-                        <Typography gutterBottom variant='h3' component='div'>
-                        Data migration
-                        
-                        </Typography>
-                        <br />
-                        <Typography variant='body2' color='text.secondary'>
-                        We can help you migrate your existing customer service data to Service Cloud, ensuring a seamless transition and minimal disruption to your business.
-                        </Typography>
-                    </CardContent>
-                </Card>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Data migration
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    We can help you migrate your existing customer service data
+                    to Service Cloud, ensuring a seamless transition and minimal
+                    disruption to your business.
+                  </Typography>
+                </CardContent>
+              </Card>
             </Grid>
-
           </Grid>
         </Box>
       </section>
 
-      <section className={`sectionBox aboutUsBox3 salesCloudService serviceCloud`}>
-          <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={0}>
-              <Grid item xs={6}>
-                <Card>
-                  <img
-                    alt='Remy Sharp'
-                    src='images/8985be05557b74f0f6f08fbba7b8c805.jpeg'
-                  />
-                </Card>
-              </Grid>
-              <Grid item xs={6} className='pl30'>
-                <Card>
-                  <CardContent>
-                  <Typography className="white" gutterBottom variant='h2' component='div'>
-                  In addition to implementation services, we also offer ongoing consulting and support to ensure the success of your Service Cloud deployment. This includes:
-                  </Typography>
-                  <br/>
-
-                    <Typography className="white" gutterBottom variant='h3' component='div'>
-                    Technical support
-                    </Typography>
-
-                    <Typography className="white" gutterBottom variant='h5' component='div'>
-                    We provide technical support and troubleshooting to help you resolve any issues that may arise with your Service Cloud implementation.
-                    </Typography>
-                    <br/>
-                    <Typography className="white" gutterBottom variant='h3' component='div'>
-                    Best practices and optimization
-                    </Typography>
-
-                    <Typography className="white" gutterBottom variant='h5' component='div'>
-                    We share best practices and provide guidance on how to optimize your use of Service Cloud to get the most value from the platform.
-                    </Typography>
-
-                    <br/>
-                    <Typography className="white" gutterBottom variant='h3' component='div'>
-                    Customization and integration
-                    </Typography>
-
-                    <Typography className="white" gutterBottom variant='h5' component='div'>
-                    We can help you customize and integrate Service Cloud with other systems, such as CRM, ERP, and marketing automation, to create a seamless customer experience.
-                    </Typography>
-
-                  </CardContent>
-                </Card>
-              </Grid>
+      <section
+        className={`sectionBox aboutUsBox3 salesCloudService serviceCloud`}
+      >
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <Grid item xs={6}>
+              <Card>
+                <img
+                  alt='Remy Sharp'
+                  src='images/8985be05557b74f0f6f08fbba7b8c805.jpeg'
+                />
+              </Card>
             </Grid>
-          </Box>
-        </section>
+            <Grid item xs={6} className='pl30'>
+              <Card>
+                <CardContent>
+                  <Typography
+                    className='white'
+                    gutterBottom
+                    variant='h2'
+                    component='div'
+                  >
+                    In addition to implementation services, we also offer
+                    ongoing consulting and support to ensure the success of your
+                    Service Cloud deployment. This includes:
+                  </Typography>
+                  <br />
 
+                  <Typography
+                    className='white'
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                  >
+                    Technical support
+                  </Typography>
+
+                  <Typography
+                    className='white'
+                    gutterBottom
+                    variant='h5'
+                    component='div'
+                  >
+                    We provide technical support and troubleshooting to help you
+                    resolve any issues that may arise with your Service Cloud
+                    implementation.
+                  </Typography>
+                  <br />
+                  <Typography
+                    className='white'
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                  >
+                    Best practices and optimization
+                  </Typography>
+
+                  <Typography
+                    className='white'
+                    gutterBottom
+                    variant='h5'
+                    component='div'
+                  >
+                    We share best practices and provide guidance on how to
+                    optimize your use of Service Cloud to get the most value
+                    from the platform.
+                  </Typography>
+
+                  <br />
+                  <Typography
+                    className='white'
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                  >
+                    Customization and integration
+                  </Typography>
+
+                  <Typography
+                    className='white'
+                    gutterBottom
+                    variant='h5'
+                    component='div'
+                  >
+                    We can help you customize and integrate Service Cloud with
+                    other systems, such as CRM, ERP, and marketing automation,
+                    to create a seamless customer experience.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
+      </section>
 
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography

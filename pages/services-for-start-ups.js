@@ -149,10 +149,10 @@ export default function ServicesForStartUps() {
                 <Card>
                   <CardContent>
                     <Typography
+                      className='heading'
                       gutterBottom
                       variant='h2'
-                      component='div'
-                      style={{ color: '#dd3952' }}
+                      component='h1'
                     >
                       IT Solutions for Start-up Business
                     </Typography>
@@ -240,9 +240,15 @@ export default function ServicesForStartUps() {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  variant='h3'
+                  variant='h1'
                   className='red'
-                  component='div'
+                  component='h2'
+                  style={{
+                    fontSize: '25px',
+                    color: '#dd3952',
+                    fontWeight: 600,
+                    fontFamily: 'Poppins',
+                  }}
                 >
                   TECHNOLOGY SOLUTIONS FOR START UPS
                 </Typography>
@@ -307,7 +313,7 @@ export default function ServicesForStartUps() {
             gutterBottom
             variant='h2'
             className=''
-            component='div'
+            component='h2'
             style={{ marginBottom: '-2px' }}
           >
             Why Your Start-Up Should Work With Us?

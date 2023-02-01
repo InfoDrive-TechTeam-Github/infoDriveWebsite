@@ -141,72 +141,107 @@ export default function FullstackDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
-        <Typography
-          gutterBottom
-          variant='h1'
-          component='div'
-          style={{
-            fontSize: '25px',
-            color: '#dd3952',
-            fontWeight: 600,
-            fontFamily: 'Poppins',
-          }}
-        >
-          APPLICATION DEVELOPMENT, MAINTENANCE AND SUPPORT
-        </Typography>
-        <Typography gutterBottom variant='h2' component='div'>
-          One-stop Solution for Your Development Needs
-        </Typography>
-        <Typography gutterBottom variant='h5' component='div'>
-          As a leading provider of full stack development services in Singapore,
-          Malaysia, and India, we are committed to delivering top-quality
-          solutions that help businesses of all sizes succeed in today's digital
-          landscape. Our team of experienced developers specializes in a wide
-          range of technologies, including JavaScript, HTML, CSS, Python, Java,
-          PHP, and more. We have the expertise and tools to build custom web and
-          mobile applications that are tailored to your specific needs and
-          goals.
-          <br /> Our full stack development process is designed to be efficient,
-          agile, and transparent. We begin by understanding your business
-          requirements and objectives, and then we work closely with you to
-          design and develop a solution that meets your needs. One of the key
-          benefits of working with InfoDrive Solutions is our ability to provide
-          end-to-end development services. This means that we can handle every
-          aspect of your project, from the initial concept and design to the
-          final deployment and maintenance. This allows us to deliver a
-          complete, turnkey solution that is ready to use as soon as it is
-          deployed.
-        </Typography>
-        <br />
-        <Typography gutterBottom variant='h3' component='div'>
-          Our full stack development services include:
-        </Typography>
-        <ul>
-          <li>Web application development</li>
-          <li>Mobile application development</li>
-          <li>E-commerce development</li>
-          <li>Custom software development</li>
-        </ul>
-        <hr style={{ width: '50%', marginLeft: 0 }} />
-        <Typography gutterBottom variant='h5' component='div'>
-          In addition to our full stack development services, we also offer a
-          range of other services, including website design, digital marketing,
-          and search engine optimization (SEO). As a company, we are committed
-          to delivering exceptional value to our clients. We have a track record
-          of success and a reputation for delivering high-quality solutions on
-          time and on budget. Our team is dedicated to customer satisfaction,
-          and we take pride in the long-term relationships we have built with
-          our clients. We pride ourselves on being a top full stack development
-          company. Our team of experienced developers has a strong track record
-          of delivering high-quality web solutions to clients in a variety of
-          industries.
-        </Typography>
-        <hr style={{ width: '50%', marginLeft: 0 }} />
+      <section className={`sectionBox aboutUsBox3 servicesForStartUp`}>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <Grid item xs={12} className='pr30'>
+              <Card>
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant='h1'
+                    component='h1'
+                    className='heading w100'
+                  >
+                    APPLICATION DEVELOPMENT, MAINTENANCE AND SUPPORT
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant='h2'
+                    component='h2'
+                    className='w100'
+                  >
+                    One-stop Solution for Your Development Needs
+                  </Typography>
+
+                  <Typography
+                    gutterBottom
+                    variant='h5'
+                    component='div'
+                    className='w100'
+                  >
+                    As a leading provider of full stack development services in
+                    Singapore, Malaysia, and India, we are committed to
+                    delivering top-quality solutions that help businesses of all
+                    sizes succeed in today's digital landscape. Our team of
+                    experienced developers specializes in a wide range of
+                    technologies, including JavaScript, HTML, CSS, Python, Java,
+                    PHP, and more. We have the expertise and tools to build
+                    custom web and mobile applications that are tailored to your
+                    specific needs and goals.
+                    <br /> Our full stack development process is designed to be
+                    efficient, agile, and transparent. We begin by understanding
+                    your business requirements and objectives, and then we work
+                    closely with you to design and develop a solution that meets
+                    your needs. One of the key benefits of working with
+                    InfoDrive Solutions is our ability to provide end-to-end
+                    development services. This means that we can handle every
+                    aspect of your project, from the initial concept and design
+                    to the final deployment and maintenance. This allows us to
+                    deliver a complete, turnkey solution that is ready to use as
+                    soon as it is deployed.
+                  </Typography>
+                  <br />
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Our full stack development services include:
+                  </Typography>
+                  <ul>
+                    <li>Web application development</li>
+                    <li>Mobile application development</li>
+                    <li>E-commerce development</li>
+                    <li>Custom software development</li>
+                  </ul>
+                  <br />
+                  <hr />
+
+                  <Typography
+                    gutterBottom
+                    variant='h5'
+                    component='div'
+                    className='w100'
+                  >
+                    In addition to our full stack development services, we also
+                    offer a range of other services, including website design,
+                    digital marketing, and search engine optimization (SEO). As
+                    a company, we are committed to delivering exceptional value
+                    to our clients. We have a track record of success and a
+                    reputation for delivering high-quality solutions on time and
+                    on budget. Our team is dedicated to customer satisfaction,
+                    and we take pride in the long-term relationships we have
+                    built with our clients. We pride ourselves on being a top
+                    full stack development company. Our team of experienced
+                    developers has a strong track record of delivering
+                    high-quality web solutions to clients in a variety of
+                    industries.
+                  </Typography>
+                  <hr />
+                </CardContent>
+              </Card>
+            </Grid>
+            {/* <Grid item xs={12}>
+                <Card>
+                  <img
+                    alt='Remy Sharp'
+                    src='images/pexels-christina-morillo-1181271.jpeg'
+                  />
+                </Card>
+              </Grid> */}
+          </Grid>
+        </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox pb0 fullstackGame`}>
-        <Typography gutterBottom variant='h2' component='div'>
+      <section className={`sectionBox whyUsBox pb0 fullstackGame w100`}>
+        <Typography gutterBottom variant='h2' component='div' className='w100'>
           Stay ahead in the game with our full stack
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
@@ -339,7 +374,7 @@ export default function FullstackDevelopment() {
       </section>
 
       <section className={`sectionBox whyUsBox pb0`}>
-        <Typography gutterBottom variant='h2' className='mb0' component='div'>
+        <Typography gutterBottom variant='h2' className='mb0' component='h2'>
           WE ARE SPECIALIZED IN
         </Typography>
         <br />
