@@ -2,14 +2,14 @@
   font-family: GeneralSans;
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/GeneralSans-Regular.otf");
+  src: url('fonts/GeneralSans-Regular.otf');
 }
 
 @font-face {
   font-family: Poppins;
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/Poppins/Poppins-Regular.ttf");
+  src: url('fonts/Poppins/Poppins-Regular.ttf');
 }
 
 html,
@@ -39,62 +39,62 @@ img {
   max-width: 100%;
   display: block;
 }
-.mainMenu{
+.mainMenu {
   width: 100%;
 }
-.mainMenu ul{
+.mainMenu ul {
   float: right;
   width: initial;
 }
-.partnerButton{
+.partnerButton {
   margin-left: 140px;
 }
-.partnerButton li{
+.partnerButton li {
   height: 29px;
 }
-.partnerButton li a{
-    background: #000;
+.partnerButton li a {
+  background: #000;
 }
-.partnerButton li a:hover{
+.partnerButton li a:hover {
   background: #dd3952;
 }
-.partnerButton li a span{
+.partnerButton li a span {
   color: #fff;
 }
 /* navbar */
-.navbarMenu{
+.navbarMenu {
   height: 60px;
 }
-.navbarMenu nav{
+.navbarMenu nav {
   background: #fff;
   color: #000;
   box-shadow: none;
   padding: 15px 0px;
 }
-.navbarMenu a{
+.navbarMenu a {
   display: inline-block;
   padding: 0px 15px;
   color: #000;
   text-transform: normal;
 }
-.navbarMenu a:hover{
+.navbarMenu a:hover {
   background: #dd3952;
   color: #fff;
 }
-.logoPC:hover{
+.logoPC:hover {
   background: transparent !important;
 }
-.navbarMenu a span{
+.navbarMenu a span {
   font-weight: 500;
   font-family: Poppins;
   font-size: 14px;
   color: #51668a;
   font-weight: bolder;
 }
-.navbarMenu a:hover span{
+.navbarMenu a:hover span {
   color: #fff;
 }
-.navbarMenu ul li div.MuiListItemButton-gutters:hover{
+.navbarMenu ul li div.MuiListItemButton-gutters:hover {
   background: #dd3952;
   color: #fff;
 }
@@ -102,61 +102,60 @@ img {
   background: #dd3952;
   color: #fff;
 }
-.subMenuOptions ul li a:hover span{
+.subMenuOptions ul li a:hover span {
   color: #fff;
 }
-.subMenuOptions .customIcon:hover{
+.subMenuOptions .customIcon:hover {
   background: #dd3952;
   color: #fff;
 }
-.navbarMenu nav button{
-  color:#000;
+.navbarMenu nav button {
+  color: #000;
   text-transform: capitalize;
   font-family: Poppins;
-
 }
-.navbarMenu .MuiListItemButton-root{
+.navbarMenu .MuiListItemButton-root {
   font-weight: 500;
   font-family: Poppins;
   font-size: 14px;
   color: #51668a;
   font-weight: bolder;
 }
-.subMenuOptions .MuiListItemText-primary{
+.subMenuOptions .MuiListItemText-primary {
   font-weight: 500;
   font-family: Poppins;
   font-size: 14px;
   color: #51668a;
   font-weight: bolder;
 }
-.subMenuOptions .customIcon{
+.subMenuOptions .customIcon {
   font-weight: 500;
   font-family: Poppins;
   font-size: 14px;
   color: #51668a;
 }
-.subMenuOptions ul li a{
+.subMenuOptions ul li a {
   height: 35px;
 }
-.navbarMenu ul li div.MuiListItemButton-gutters{
+.navbarMenu ul li div.MuiListItemButton-gutters {
   height: 29px;
 }
-.homePage{
+.homePage {
   padding-top: 60px;
   background: #fafafa;
 }
 /* sectionbox */
-.sectionBox{
+.sectionBox {
   background: #fff;
   padding: 97px 97px;
 }
-.sectionBox .MuiTypography-h3{
+.sectionBox .MuiTypography-h3 {
   font-size: 16px;
-  color: #E13D4B;
+  color: #e13d4b;
   font-family: Poppins;
   font-weight: 700;
 }
-.sectionBox .MuiTypography-h2{
+.sectionBox .MuiTypography-h2 {
   font-size: 22px;
   font-family: Poppins;
   width: 760px;
@@ -165,7 +164,7 @@ img {
   line-height: 33px;
   color: #0b2653;
 }
-.sectionBox .MuiTypography-h1{
+.sectionBox .MuiTypography-h1 {
   font-size: 23px;
   font-family: Poppins;
   width: 760px;
@@ -174,25 +173,24 @@ img {
   line-height: 33px;
   color: #0b2653;
 }
-.sectionBox .MuiTypography-h5{
+.sectionBox .MuiTypography-h5 {
   width: 668px;
   font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 29px;
-    letter-spacing: 0.02em;
-    color: #4E4E50;
-    padding-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #4e4e50;
+  padding-top: 10px;
   font-family: Poppins;
 }
 
-
-.footerSection .MuiTypography-h5{
-  color:#fff;
+.footerSection .MuiTypography-h5 {
+  color: #fff;
   width: initial;
   font-size: 13px;
 }
-.sectionBox .customButton{
+.sectionBox .customButton {
   background: #ccc;
   border: none;
   padding: 12px 40px;
@@ -200,40 +198,38 @@ img {
   color: #fff;
   margin-top: 60px;
   font-family: Poppins;
-
 }
-.sectionBox p{
+.sectionBox p {
   font-size: 14px;
   font-family: Poppins;
-
 }
 /* .cardBox{
   padding-left: 30px !important;
   padding-right: 30px !important;
 } */
-.sliderBox{
+.sliderBox {
   height: 702px;
   position: relative;
   padding-left: 68px;
   overflow: hidden;
 }
-.sliderBox::after{
+.sliderBox::after {
   position: absolute;
-  content:"";
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  background:rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 9;
 }
-.sliderBox img{
+.sliderBox img {
   position: absolute;
   z-index: 9;
   left: 0;
 }
-.sliderContent p{
+.sliderContent p {
   font-family: Poppins;
   color: #fff;
   font-size: 45px;
@@ -242,7 +238,7 @@ img {
   height: 310px;
   margin-top: 210px;
 }
-.sliderContent .MuiTypography-h1{
+.sliderContent .MuiTypography-h1 {
   font-family: Poppins;
   color: #fff;
   font-size: 45px;
@@ -251,268 +247,256 @@ img {
   height: 310px;
   margin-top: 210px;
 }
-.sliderContent{
+.sliderContent {
   position: absolute;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
   font-family: Poppins;
-
 }
 
-.salePart .MuiTypography-h1{
+.salePart .MuiTypography-h1 {
   margin-top: 60px;
 }
-.salePart .MuiTypography-h3{
+.salePart .MuiTypography-h3 {
   margin-top: 140px;
-    font-size: 22px;
-    color: #fff;
-    font-family: Poppins;
+  font-size: 22px;
+  color: #fff;
+  font-family: Poppins;
 }
-.saleForcesDevelopmentBox{
+.saleForcesDevelopmentBox {
   background: url('images/35fd2c59d4eede2edd0c0031866136f9.jpeg');
   background-size: cover;
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-.saleForcesDevelopmentBox .MuiTypography-h5{
+.saleForcesDevelopmentBox .MuiTypography-h5 {
   width: initial;
 }
-.saleForcesDevelopment{
+.saleForcesDevelopment {
   margin-left: 97px;
   background: #fff;
   padding: 30px 15px;
 }
-.serviceCloudBox{
+.serviceCloudBox {
   background: url('images/5ab120900874e8a341580c56b490853e.jpeg');
   background-size: cover;
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
-.serviceCloud{
+.serviceCloud {
   background: #000;
 }
 
-.marketCloudBox{
+.marketCloudBox {
   background: url('images/d1173e418c75c06c95f251d58a8b7051.jpeg');
   background-size: cover;
-    padding-left: 0;
-    padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.readmore{
+.readmore {
   font-size: 16px;
   color: #fff;
   font-family: Poppins;
   background: #000;
   padding-left: 10px !important;
 }
-.readmore:hover{
+.readmore:hover {
   background: #dd3952;
 }
-.sliderBox .readmore{
+.sliderBox .readmore {
   font-size: 20px;
   padding-left: 15px;
   background: #000;
 }
-.sliderBox .readmore:hover{
+.sliderBox .readmore:hover {
   background: #dd3952;
 }
-.sliderContent button.readmore{
+.sliderContent button.readmore {
   font-size: 20px;
   color: #fff;
   font-family: Poppins;
-
 }
 
-.sliderContent .socical-network{
+.sliderContent .socical-network {
   position: absolute;
   right: 0;
   top: 40%;
   width: 150px;
 }
-.sliderContent .socical-network svg{
+.sliderContent .socical-network svg {
   color: #fff;
 }
-.solutionBox{
+.solutionBox {
   background: url('images/pexels-michelangelo-buonarroti-8728382.jpeg');
   background-size: cover;
-    margin-left: 97px;
-    margin-right: 97px;
-    padding-left: 0;
-    padding-right: 0;
+  margin-left: 97px;
+  margin-right: 97px;
+  padding-left: 0;
+  padding-right: 0;
 }
-.solutionBox p{
+.solutionBox p {
   font-size: 30px;
-    color: #fff;
-    padding-left: 97px;
-    padding-right: 97px;
+  color: #fff;
+  padding-left: 97px;
+  padding-right: 97px;
   font-family: Poppins;
-
 }
-.marketSolutionBox{
+.marketSolutionBox {
   background: url('images/1fdbb1cca39e2eee60ac689872bfd393.jpeg');
   background-size: cover;
-    margin-left: 97px;
-    margin-right: 97px;
-    padding-left: 0;
-    padding-right: 0;
+  margin-left: 97px;
+  margin-right: 97px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.analyticsBox{
+.analyticsBox {
   background: url('images/27438e2c1b5ef15fae5bea18375900bb.jpeg');
   background-size: cover;
-    margin-left: 97px;
-    margin-right: 97px;
-    padding-left: 0;
-    padding-right: 0;
+  margin-left: 97px;
+  margin-right: 97px;
+  padding-left: 0;
+  padding-right: 0;
 }
-.whyUsBox .MuiTypography-h2{
+.whyUsBox .MuiTypography-h2 {
   margin-bottom: 60px;
   font-family: Poppins;
-
 }
-.sectionBox .MuiTypography-h3{
+.sectionBox .MuiTypography-h3 {
   font-size: 18px;
   font-family: Poppins;
   font-weight: 600;
   color: #dd3952;
   position: relative;
 }
-.whyUsBox .MuiCard-root{
+.whyUsBox .MuiCard-root {
   border: none;
   box-shadow: none;
 }
-.whyUsBox .MuiCardContent-root{
+.whyUsBox .MuiCardContent-root {
   font-size: 18px;
-  padding:0px 10px 0px 0px;
+  padding: 0px 10px 0px 0px;
   font-family: Poppins;
-
 }
-.whyUsBox .MuiTypography-h7{
+.whyUsBox .MuiTypography-h7 {
   font-weight: 600;
-    padding: 15px 0px;
+  padding: 15px 0px;
   font-family: Poppins;
-
 }
-.whyUsBox .MuiGrid-item{
+.whyUsBox .MuiGrid-item {
   margin-bottom: 50px;
 }
 
-.aboutUsBox{
+.aboutUsBox {
   height: 580px;
   padding-top: 0;
   padding-bottom: 0;
 }
-.aboutUsBox .MuiPaper-root{
+.aboutUsBox .MuiPaper-root {
   border-radius: 0;
   height: 100%;
   background: #000;
 }
-.aboutUsBox .MuiCardContent-root{
+.aboutUsBox .MuiCardContent-root {
   padding: 30px 30px;
 }
-.aboutUsBox .MuiTypography-h3{
+.aboutUsBox .MuiTypography-h3 {
   color: #fff;
   padding-top: 50px;
   margin-bottom: 30px;
   font-family: Poppins;
-
 }
-.aboutUsBox p{
+.aboutUsBox p {
   font-size: 27px;
   color: #fff;
   margin-bottom: 50px;
   font-family: Poppins;
-
 }
-.aboutUsBox2 .MuiTypography-h3{
+.aboutUsBox2 .MuiTypography-h3 {
   padding-top: 0px;
   font-family: Poppins;
-
 }
-.aboutUsBox2 .MuiTypography-h2{
+.aboutUsBox2 .MuiTypography-h2 {
   /* color:#fff; */
   font-size: 55px;
   color: #dd3952;
   font-family: Poppins;
-
 }
-.locationBox{
+.locationBox {
   margin-top: 80px;
 }
-.locationContent{
+.locationContent {
   background: url('images/pexels-timo-volz-1842332.jpg');
   background-size: cover;
-    padding-left: 0;
-    padding-right: 0;
-    height: 453px;
+  padding-left: 0;
+  padding-right: 0;
+  height: 453px;
 }
-.locationContent > div{
+.locationContent > div {
   height: 100%;
 }
-.locationContent .MuiPaper-root{
+.locationContent .MuiPaper-root {
   background: none;
-    border: none;
-    box-shadow: none;
-    color: #fff;
-    position: relative;
-    height: 100%;
-    max-width: 100%;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  position: relative;
+  height: 100%;
+  max-width: 100%;
 }
-.locationContent .MuiCardContent-root{
+.locationContent .MuiCardContent-root {
   background: none;
   font-size: 25px;
   height: 100%;
   position: absolute;
   left: 0;
   padding-top: 45%;
-  right:0;
+  right: 0;
   padding-left: 15px;
   padding-right: 15px;
 }
-.locationContent .MuiCardContent-root:hover{
-  background:#DE3854
+.locationContent .MuiCardContent-root:hover {
+  background: #de3854;
 }
-.locationContent .MuiTypography-h7{
+.locationContent .MuiTypography-h7 {
   font-weight: 600;
   color: #f8932b;
   font-family: Poppins;
   font-size: 24px;
 }
-.locationContent p{
+.locationContent p {
   font-size: 25px;
-    color: #fff;
-    font-weight: 300;
+  color: #fff;
+  font-weight: 300;
   font-family: Poppins;
-
 }
-.aboutUsBox3 .MuiPaper-root{
+.aboutUsBox3 .MuiPaper-root {
   background: none;
   color: #000;
 }
-.aboutUsBox3 .MuiTypography-h3{
+.aboutUsBox3 .MuiTypography-h3 {
   color: #000;
   padding-top: 0;
   font-weight: 300;
   line-height: 32px;
   font-family: Poppins;
-
 }
-.aboutUsBox3 .MuiPaper-root{
+.aboutUsBox3 .MuiPaper-root {
   box-shadow: none;
 }
-.aboutUsBox3 .MuiCardContent-root{
- padding-top: 0;
+.aboutUsBox3 .MuiCardContent-root {
+  padding-top: 0;
 }
 
-.ourMissionBox{
+.ourMissionBox {
   position: relative;
   height: 700px;
   overflow: hidden;
 }
-.ourMissionBox img{
+.ourMissionBox img {
   width: 100%;
   position: absolute;
   top: 0;
@@ -521,119 +505,117 @@ img {
   bottom: 0;
   z-index: 9;
 }
-.ourMissionBox .ourMissionContent{
+.ourMissionBox .ourMissionContent {
   position: relative;
   z-index: 10;
 }
-.ourMissionBox .ourMissionContent .MuiPaper-root{
+.ourMissionBox .ourMissionContent .MuiPaper-root {
   background: #fff;
-  color: #070D0C;
+  color: #070d0c;
   font-family: Poppins;
-
 }
-.ourMissionBox .ourMissionContent .MuiTypography-h3, .ourMissionBox .ourMissionContent p{
-  color: #070D0C;
+.ourMissionBox .ourMissionContent .MuiTypography-h3,
+.ourMissionBox .ourMissionContent p {
+  color: #070d0c;
   margin-bottom: 15px;
   padding-top: 25px;
   font-family: Poppins;
-
 }
-.ourMissionContent .MuiGrid-item{
+.ourMissionContent .MuiGrid-item {
   margin-top: 60px;
 }
 
-
-.ourValueBox{
-    background: #000;
-    /* padding-bottom: 0; */
+.ourValueBox {
+  background: #000;
+  /* padding-bottom: 0; */
 }
 
-.ourValueBox .MuiTypography-h3, .ourValueBox .MuiTypography-h2, .ourValueBox .MuiTypography-h5{
+.ourValueBox .MuiTypography-h3,
+.ourValueBox .MuiTypography-h2,
+.ourValueBox .MuiTypography-h5 {
   color: #fff;
   width: 100%;
   font-family: Poppins;
-
 }
 
-.ourBeliefBox{
+.ourBeliefBox {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.ourBeliefBox img{
+.ourBeliefBox img {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-
-.companiesBox{
+.companiesBox {
   background: url('images/pexels-ivan-samkov-8117421.jpg');
   background-size: cover;
-    margin-left: 97px;
-    margin-right: 97px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    position: relative;
+  margin-left: 97px;
+  margin-right: 97px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
 }
-.companiesBox::before{
+.companiesBox::before {
   position: absolute;
-  content: "";
-  background: rgba(0,0,0,0.6);
+  content: '';
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   top: 0;
-  left:0;
+  left: 0;
 }
-.companiesBox div{
+.companiesBox div {
   font-size: 30px;
-    color: #fff;
-    padding-left: 97px;
-    padding-right: 97px;
-    position: relative;
+  color: #fff;
+  padding-left: 97px;
+  padding-right: 97px;
+  position: relative;
   font-family: Poppins;
-
 }
-.companiesBox .MuiTypography-h3, .companiesBox .MuiTypography-h5, .companiesBox .MuiTypography-h2{
+.companiesBox .MuiTypography-h3,
+.companiesBox .MuiTypography-h5,
+.companiesBox .MuiTypography-h2 {
   color: #fff;
   font-family: Poppins;
   width: 100%;
 }
 
-.weDelivery .MuiTypography-h3{
+.weDelivery .MuiTypography-h3 {
   font-size: 24px;
   text-align: center;
   font-family: Poppins;
-
 }
-.weDelivery .socical-network li{
+.weDelivery .socical-network li {
   float: left;
   width: 100px;
   height: 100px;
 }
-.weDelivery .socical-network li div{
-  padding:0;
+.weDelivery .socical-network li div {
+  padding: 0;
 }
-.weDelivery .socical-network li div img{
+.weDelivery .socical-network li div img {
   width: 76px;
 }
-.weDelivery .socical-network{
+.weDelivery .socical-network {
   text-align: center;
 }
-.weDelivery .socical-network ul{
+.weDelivery .socical-network ul {
   overflow: hidden;
   display: inline-block;
   text-align: center;
 }
-.weDelivery .socical-network ul li{
+.weDelivery .socical-network ul li {
   float: left;
   width: 100px;
   height: 100px;
 }
-.weDelivery .socical-network ul li div{
+.weDelivery .socical-network ul li div {
   padding: 0;
 }
-.weDelivery .socical-network ul li img{
+.weDelivery .socical-network ul li img {
   width: 76px;
   height: 100%;
 }
@@ -642,434 +624,426 @@ img {
   height: 397px;
   background-size: cover;
 }
-.weDelivery::before{
+.weDelivery::before {
   position: absolute;
-  content: "";
+  content: '';
   background: rgba(222, 56, 84, 0.6);
   width: 100%;
   height: 100%;
   top: 0;
 }
 
-.ourCoreTeam .MuiPaper-elevation{
+.ourCoreTeam .MuiPaper-elevation {
   padding-left: -0px;
   border: none;
   box-shadow: none;
   padding: 10px;
 }
-.ourCoreTeam .MuiCardContent-root{
+.ourCoreTeam .MuiCardContent-root {
   padding-left: 0px;
 }
-.ourCoreTeam .MuiTypography-h4{
+.ourCoreTeam .MuiTypography-h4 {
   font-size: 20px;
   font-weight: 300;
   font-family: Poppins;
-
 }
-.ourCoreTeam .MuiGrid-grid-xs-2{
+.ourCoreTeam .MuiGrid-grid-xs-2 {
   width: 20%;
   max-width: 20%;
   flex-basis: 20%;
   -webkit-flex-basis: 20%;
 }
-.ourCoreTeam .rightOurCoreTeam .MuiTypography-h3{
+.ourCoreTeam .rightOurCoreTeam .MuiTypography-h3 {
   margin-top: 15px;
 }
-.ourCoreTeam .rightOurCoreTeam span{
+.ourCoreTeam .rightOurCoreTeam span {
   padding-right: 10px;
 }
-.ourCoreTeam .rightOurCoreTeam svg{
+.ourCoreTeam .rightOurCoreTeam svg {
   position: absolute;
   top: -5px;
 }
-.contactUs{
+.contactUs {
   text-align: center;
-    width: 850px;
-    margin: 0 auto;
+  width: 850px;
+  margin: 0 auto;
   font-family: Poppins;
-
 }
-.contactUs .MuiTypography-h1{
+.contactUs .MuiTypography-h1 {
   width: 668px;
   font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 29px;
-    letter-spacing: 0.02em;
-    color: #4E4E50;
-    padding-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #4e4e50;
+  padding-top: 10px;
   font-family: Poppins;
 }
-.contactUsArea .MuiGrid-item{
+.contactUsArea .MuiGrid-item {
   height: 100%;
 }
-.contactUsArea .locationContent{
+.contactUsArea .locationContent {
   height: 725px;
   background: none;
   font-family: Poppins;
-
 }
-.contactUsArea .locationContent .MuiCardContent-root{
+.contactUsArea .locationContent .MuiCardContent-root {
   padding-top: 30px;
 }
-.contactUsArea .MuiGrid-grid-xs-12{
+.contactUsArea .MuiGrid-grid-xs-12 {
   height: 240px;
-  padding:60px 15px 20px 15px;
+  padding: 60px 15px 20px 15px;
 }
-.contactUsArea .locationContent .MuiPaper-root{
+.contactUsArea .locationContent .MuiPaper-root {
   color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
-.contactUsArea .locationContent p{
+.contactUsArea .locationContent p {
   color: #fff;
   font-family: Poppins;
-
 }
-.contactUsArea .contactUsB{
+.contactUsArea .contactUsB {
   position: relative;
 }
-.contactUsArea .contactUsB::after{
+.contactUsArea .contactUsB::after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
-  right:0;
-  bottom:0;
+  right: 0;
+  bottom: 0;
   left: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
-.contactUsArea .contactUsB1{
+.contactUsArea .contactUsB1 {
   background: url('images/pexels-timo-volz-1842332.jpg');
   background-size: cover;
   margin-bottom: 15px;
   position: relative;
 }
-.contactUsArea .contactUsB2{
+.contactUsArea .contactUsB2 {
   background: url('images/pexels-thisisengineering-3862132.jpg');
   background-size: cover;
   margin-bottom: 15px;
   position: relative;
 }
-.contactUsArea .contactUsB3{
+.contactUsArea .contactUsB3 {
   background: url('images/pexels-vivek-chugh-739987.jpg');
   background-size: cover;
   margin-bottom: 15px;
   position: relative;
 }
-.contactUsArea .MuiFormControl-fullWidth{
+.contactUsArea .MuiFormControl-fullWidth {
   width: 88%;
   max-width: 88%;
 }
 
 /* Android development  */
-.androidDevelopment{
+.androidDevelopment {
   position: relative;
 }
-.androidDevelopmentLeft{
+.androidDevelopmentLeft {
   background: #000;
   padding: 60px;
   margin-left: -60px;
   position: relative;
   z-index: 10;
 }
-.androidDevelopmentBox .MuiTypography-h2{
+.androidDevelopmentBox .MuiTypography-h2 {
   font-size: 25px;
   color: #fff;
   line-height: 35px;
   font-weight: 600;
   width: 100%;
   font-family: Poppins;
-
 }
-.androidDevelopmentLeft .MuiTypography-h3{
-  color:#fff;
+.androidDevelopmentLeft .MuiTypography-h3 {
+  color: #fff;
   width: 100%;
   font-family: Poppins;
-
 }
-.androidDevelopmentLeft .MuiTypography-h5{
-  color:#fff;
+.androidDevelopmentLeft .MuiTypography-h5 {
+  color: #fff;
   width: 100%;
   font-family: Poppins;
-
 }
-.androidDevelopmentRight{
+.androidDevelopmentRight {
   position: absolute;
   right: 0;
   top: -60px;
   z-index: 9;
 }
-.serviceOffer{
-  background:#000;
+.serviceOffer {
+  background: #000;
   color: #fff;
 }
-.serviceOffer .MuiTypography-h2{
-  color:#fff;
+.serviceOffer .MuiTypography-h2 {
+  color: #fff;
   font-family: Poppins;
-
 }
-.serviceOffer .MuiCard-root{
- background: transparent;
+.serviceOffer .MuiCard-root {
+  background: transparent;
 }
 .serviceOffer .MuiTypography-h3 {
   color: #fff;
   font-family: Poppins;
   font-weight: bolder;
   font-size: 19px;
-
 }
-.serviceOffer p{
-  color:#fff;
+.serviceOffer p {
+  color: #fff;
   font-family: Poppins;
-
 }
-.fullstackGame{
+.fullstackGame {
   text-align: center;
 }
-.fullstackGame .MuiAvatar-circular{
-  margin:0 auto;
+.fullstackGame .MuiAvatar-circular {
+  margin: 0 auto;
 }
-.fullstackGame .MuiTypography-h2{
+.fullstackGame .MuiTypography-h2 {
   margin: 0 auto 80px auto;
   text-transform: capitalize;
-  color:#fff;
+  color: #fff;
   z-index: 10;
   position: relative;
   font-family: Poppins;
-
 }
-.fullstackGame{
+.fullstackGame {
   background: url('images/Rectangle2.png');
   background-size: cover;
   margin-left: 97px;
   margin-right: 97px;
   position: relative;
 }
-.fullstackGame::before{
+.fullstackGame::before {
   position: absolute;
-  content: "";
-  background: rgba(0,0,0,0.6);
+  content: '';
+  background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
   top: 0;
-  left:0;
+  left: 0;
   z-index: 9;
 }
-.fullstackGame .MuiCard-root{
-  background:none;
+.fullstackGame .MuiCard-root {
+  background: none;
   position: relative;
   z-index: 10;
 }
-.fullstackGame .MuiTypography-h3{
-  color:#fff;
+.fullstackGame .MuiTypography-h3 {
+  color: #fff;
   font-family: Poppins;
-
 }
-.applicationDevelopmentBox .MuiTypography-h2{
+.applicationDevelopmentBox .MuiTypography-h2 {
   width: 100%;
 }
-.footerSection{
+.footerSection {
   background: #000;
 }
-.footerNavbar{
+.footerNavbar {
   padding-bottom: 30px;
 }
-.footerNavbar a{
+.footerNavbar a {
   font-size: 16px;
   color: #000;
   font-family: Poppins;
-
 }
-.footerSection img{
+.footerSection img {
   width: 120px;
 }
-.footerSection .MuiTypography-h3{
+.footerSection .MuiTypography-h3 {
   color: #fff;
   font-weight: 400;
   /* color: #dd3952; */
   font-family: Poppins;
-
 }
-.footerSection li{
+.footerSection li {
   padding: 0;
 }
-.footerSection li a{
-  color:#fff;
+.footerSection li a {
+  color: #fff;
   padding-left: 0;
 }
-.footerSection li a span{
+.footerSection li a span {
   font-size: 14px;
   font-weight: 400;
   font-family: Poppins;
 }
 
-.logoMobile{
-  display:none !important;
+.logoMobile {
+  display: none !important;
 }
-.connectUs{
+.connectUs {
   text-align: center;
   background: url('images/pexels-cottonbro-studio-5473298.jpg');
   background-size: cover;
   position: relative;
 }
-.backDrop{
+.backDrop {
   position: relative;
 }
-.backDrop::before{
+.backDrop::before {
   position: absolute;
-  content:"";
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  background:rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 9;
 }
-.backDrop *{
+.backDrop * {
   position: relative;
   z-index: 10;
 }
 
-.introSectionBox .MuiTypography-h5{
+.introSectionBox .MuiTypography-h5 {
   width: 100%;
 }
-.leadForm{
+.leadForm {
   /* background: #38373b; */
   background: url('images/pexels-timo-volz-1842332.jpg');
   background-size: cover;
 }
-.leadForm .leadFormBox{
+.leadForm .leadFormBox {
   background: #000;
 }
-.leadForm .leadFormBox .MuiTextField-root label{
-  color:#fff;
+.leadForm .leadFormBox .MuiTextField-root label {
+  color: #fff;
 }
-.leadForm .leadFormBox .MuiTextField-root .MuiInput-root{
+.leadForm .leadFormBox .MuiTextField-root .MuiInput-root {
   margin-top: 30px;
-    background: #fff;
+  background: #fff;
 }
-.leadForm .leadFormBox #standard-message{
-  color:#fff;
+.leadForm .leadFormBox #standard-message {
+  color: #fff;
 }
 .leadForm .leadFormBox #standard-message::placeholder {
   color: #fff;
 }
-.leadForm .MuiGrid-grid-xs-12{
+.leadForm .MuiGrid-grid-xs-12 {
   height: 241.6px;
 }
-.leadForm .contactUsB1, .leadForm .contactUsB2, .leadForm .contactUsB3{
+.leadForm .contactUsB1,
+.leadForm .contactUsB2,
+.leadForm .contactUsB3 {
   background: #000;
   margin-bottom: 0px;
 }
-.leadForm .contactUsB1:hover, .leadForm .contactUsB2:hover, .leadForm .contactUsB3:hover{
+.leadForm .contactUsB1:hover,
+.leadForm .contactUsB2:hover,
+.leadForm .contactUsB3:hover {
   background: #000;
 }
-.leadForm .locationContent .MuiPaper-root{
-    top: 20%;
+.leadForm .locationContent .MuiPaper-root {
+  top: 20%;
 }
-.leadForm .leadFormBox #standard-message:-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: #fff;
+.leadForm .leadFormBox #standard-message:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
 }
 
-.leadForm .leadFormBox #standard-message::-ms-input-placeholder { /* Microsoft Edge */
- color: #fff;
+.leadForm .leadFormBox #standard-message::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
 }
-.leadForm .leadFormBox .MuiFormControl-fullWidth{
+.leadForm .leadFormBox .MuiFormControl-fullWidth {
   margin-top: 15px;
 }
-.leadForm .locationContent{
+.leadForm .locationContent {
   overflow: hidden;
 }
 .leadForm .locationContent .MuiCardContent-root {
   padding-top: 15px;
 }
-.connectUsHome{
+.connectUsHome {
   margin-left: 97px;
   margin-right: 97px;
 }
-.aboutUsBoxHome{
-  height: 550px
+.aboutUsBoxHome {
+  height: 550px;
 }
-.navCarouselBox{
+.navCarouselBox {
   margin-top: -72px;
   width: 100px;
-  border: 1px solid #070D0C;
+  border: 1px solid #070d0c;
   border-radius: 5px;
   text-align: center;
-  color: #070D0C;
+  color: #070d0c;
   font-weight: bold;
 }
-.navCarouselBox:hover{
+.navCarouselBox:hover {
   color: #fff;
 }
-.navCarouselBox .navCarouselNext{
+.navCarouselBox .navCarouselNext {
   width: 35px;
   right: 0;
   height: 35px;
   max-width: 35px;
-  color: #070D0C !important;
+  color: #070d0c !important;
   background: transparent !important;
 }
-.navCarouselBox .navCarouselNext:hover .navCarouselNext{
+.navCarouselBox .navCarouselNext:hover .navCarouselNext {
   color: #fff !important;
 }
-.navCarouselBox .navCarouselNext:hover{
+.navCarouselBox .navCarouselNext:hover {
   color: #fff;
   background: transparent !important;
 }
-.navCarouselBox .navCarouselPrevious{
+.navCarouselBox .navCarouselPrevious {
   width: 35px;
   left: 0;
   background: #fff;
   height: 35px;
   max-width: 35px;
 }
-.testmonial .MuiPaper-elevation{
+.testmonial .MuiPaper-elevation {
   width: 100%;
   max-width: 95%;
   padding: 15px;
   box-shadow: none;
-    border: 1px solid #ccc;
-    margin-left: 15px;
+  border: 1px solid #ccc;
+  margin-left: 15px;
 }
-.testmonial .MuiPaper-elevation{
+.testmonial .MuiPaper-elevation {
   position: relative;
 }
-.testmonialStar{
+.testmonialStar {
   position: absolute;
-    top: 30px;
-    right: 15px;
-    color: #ffc107;
+  top: 30px;
+  right: 15px;
+  color: #ffc107;
 }
-.css-hn784z{
+.css-hn784z {
   right: 120px;
   left: initial;
 }
-.css-ohwg9z{
+.css-ohwg9z {
   overflow: initial;
 }
-.partnerButtonMobile li a{
+.partnerButtonMobile li a {
   background: #000;
   color: #fff;
 }
-.footerContactUs{
-  color:#fff;
+.footerContactUs {
+  color: #fff;
 }
-.servicesForStartUp li{
+.servicesForStartUp li {
   font-size: 16px;
 }
-.servicesForStartUp .MuiTypography-h3{
+.servicesForStartUp .MuiTypography-h3 {
   font-size: 16px;
 }
 
-.salesCloudService .MuiTypography-h2{
+.salesCloudService .MuiTypography-h2 {
   width: initial;
 }
 /* Responsive */
@@ -1079,63 +1053,64 @@ img {
     flex-basis: 100%;
     max-width: 100%;
     margin-bottom: 20px;
-}
-.leftLeadFormBox{
-  padding: 0px 0px;
-  flex-basis: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
+  }
+  .leftLeadFormBox {
+    padding: 0px 0px;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
   .sliderBox .readmore {
     font-size: 16px;
-}
-.contactUsArea .locationContent{
-  height: initial;
-}
-.contactUsArea .locationContent .MuiGrid-grid-xs-8{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.contactUsArea .locationContent .MuiGrid-grid-xs-8 .MuiTextField-root, .contactUsArea .locationContent .MuiGrid-grid-xs-8 .MuiFormControl-fullWidth{
-  width: 100%;
-  max-width: 100%;
-  margin-left: 0;
-  margin-top: 10px;
-}
-.locationContent .MuiBox-root div{
-  width: 100%;
-  max-width: 100%;
-  margin-left: 0;
-  margin-top: 10px;
-}
-  .aboutUsBox{
+  }
+  .contactUsArea .locationContent {
+    height: initial;
+  }
+  .contactUsArea .locationContent .MuiGrid-grid-xs-8 {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .contactUsArea .locationContent .MuiGrid-grid-xs-8 .MuiTextField-root,
+  .contactUsArea .locationContent .MuiGrid-grid-xs-8 .MuiFormControl-fullWidth {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .locationContent .MuiBox-root div {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .aboutUsBox {
     height: initial;
   }
   .locationBox {
     margin-top: 2px;
-}
-.contactUs{
-  width: initial;
-}
-.locationBox .MuiTypography-body2{
-  line-height: 22px;
-}
-  .logoMobile{
-    display:block !important;
+  }
+  .contactUs {
+    width: initial;
+  }
+  .locationBox .MuiTypography-body2 {
+    line-height: 22px;
+  }
+  .logoMobile {
+    display: block !important;
   }
   .sectionBox {
     padding: 15px 15px;
     margin-left: 0;
     margin-right: 0;
   }
-  .sectionBox .MuiTypography-h1{
+  .sectionBox .MuiTypography-h1 {
     width: initial;
     font-size: 18px;
     line-height: 28px;
     padding-top: 15px;
   }
-  .sectionBox .MuiTypography-h2{
+  .sectionBox .MuiTypography-h2 {
     width: initial;
     font-size: 18px;
     line-height: 28px;
@@ -1146,18 +1121,18 @@ img {
     font-size: 16px;
     line-height: 22px;
     padding-top: 15px;
-}
+  }
 
-.contactUs .MuiTypography-h1 {
-  width: initial;
-  font-size: 16px;
-  line-height: 22px;
-  padding-top: 15px;
-}
+  .contactUs .MuiTypography-h1 {
+    width: initial;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 15px;
+  }
 
-.footerSection .MuiTypography-h5 {
-  text-align: left;
-}
+  .footerSection .MuiTypography-h5 {
+    text-align: left;
+  }
 
   .sliderBox {
     height: 225px;
@@ -1166,11 +1141,11 @@ img {
     overflow: hidden;
   }
   .sliderContent p {
-      font-size: 18px;
-      width: 100%;
-      line-height: 20px;
-      height: initial;
-      margin-top: 30px;
+    font-size: 18px;
+    width: 100%;
+    line-height: 20px;
+    height: initial;
+    margin-top: 30px;
   }
   .sliderContent .MuiTypography-h1 {
     font-size: 18px;
@@ -1178,13 +1153,13 @@ img {
     line-height: 20px;
     height: initial;
     margin-top: 30px;
-}
-  .sliderContent .socical-network {
-      top: 10%;
-      width: 75px;
   }
-  .sliderContent .socical-network ul li{
-    padding:0;
+  .sliderContent .socical-network {
+    top: 10%;
+    width: 75px;
+  }
+  .sliderContent .socical-network ul li {
+    padding: 0;
   }
   .sliderContent button.readmore {
     font-size: 16px;
@@ -1201,127 +1176,128 @@ img {
     font-size: 18px;
     padding-left: 0;
     padding-right: 0;
-}
-.locationContent .MuiTypography-h7{
-  font-size: 18px;
-}
-.whyUsBox .MuiTypography-h2 {
-  margin-bottom: 30px;
-}
-.whyUsBox .MuiGrid-item {
-  margin-bottom: 50px;
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.aboutUsBox .MuiGrid-item{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.aboutUsBox .MuiTypography-h3 {
-  padding-top: 20px;
-  margin-bottom: 15px;
-}
-.aboutUsBox p {
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 15px;
-}
-.readmore {
-  font-size: 16px;
-  padding-left: 0;
-}
-.locationContent .MuiCardContent-root {
-  font-size: 20px;
-  padding-top: 10px;
-}
-.locationContent p {
-  font-size: 18px;
-  color: #fff;
-}
-.locationContent .MuiGrid-grid-xs-4{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.ourValueBox .MuiGrid-item{
-  width:100%;
-  max-width: 100%;
-  flex-basis: 100%;
-  padding-top: 50px;
-}
-.companiesBox{
-  margin-top:0px;
-}
-.companiesBox div{
-  padding-left:0px;
-  padding-right:0px;
-}
-.weDelivery .socical-network ul li {
-  width: 25%;
-}
-.ourCoreTeam .MuiGrid-grid-xs-6,.ourCoreTeam .MuiGrid-grid-xs-3{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.ourCoreTeam .MuiGrid-grid-xs-2{
-  width: 100%;
+  }
+  .locationContent .MuiTypography-h7 {
+    font-size: 18px;
+  }
+  .whyUsBox .MuiTypography-h2 {
+    margin-bottom: 30px;
+  }
+  .whyUsBox .MuiGrid-item {
+    margin-bottom: 50px;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .aboutUsBox .MuiGrid-item {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .aboutUsBox .MuiTypography-h3 {
+    padding-top: 20px;
+    margin-bottom: 15px;
+  }
+  .aboutUsBox p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .readmore {
+    font-size: 16px;
+    padding-left: 0;
+  }
+  .locationContent .MuiCardContent-root {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .locationContent p {
+    font-size: 18px;
+    color: #fff;
+  }
+  .locationContent .MuiGrid-grid-xs-4 {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .ourValueBox .MuiGrid-item {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    padding-top: 50px;
+  }
+  .companiesBox {
+    margin-top: 0px;
+  }
+  .companiesBox div {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .weDelivery .socical-network ul li {
+    width: 25%;
+  }
+  .ourCoreTeam .MuiGrid-grid-xs-6,
+  .ourCoreTeam .MuiGrid-grid-xs-3 {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .ourCoreTeam .MuiGrid-grid-xs-2 {
+    width: 100%;
     max-width: 100%;
     flex-basis: 100%;
     -webkit-flex-basis: 100%;
-} 
+  }
 
-.androidDevelopmentLeft {
-  background: #000;
-  padding: 30px;
-  margin-left: 0;
-  position: relative;
-  z-index: 10;
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.androidDevelopmentRight {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.servicesForStartUp .MuiGrid-item{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-  padding-right: 0px;
-}
+  .androidDevelopmentLeft {
+    background: #000;
+    padding: 30px;
+    margin-left: 0;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .androidDevelopmentRight {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .servicesForStartUp .MuiGrid-item {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    padding-right: 0px;
+  }
 
-.footerSection .MuiGrid-grid-xs-4{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-  -webkit-flex-basis: 100%;
-  text-align: center;
-}
-.footerSection img {
-  width: 120px;
-  margin: 0 auto;
-  margin-top: 30px;
-}
-.footerSection .MuiGrid-grid-xs-8 .MuiTypography-h3{
-  text-align: left;
-}
-.testmonial .MuiTypography-h2{
-  margin-bottom: 70px;
-}
+  .footerSection .MuiGrid-grid-xs-4 {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    text-align: center;
+  }
+  .footerSection img {
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .footerSection .MuiGrid-grid-xs-8 .MuiTypography-h3 {
+    text-align: left;
+  }
+  .testmonial .MuiTypography-h2 {
+    margin-bottom: 70px;
+  }
   .contInfo {
     padding: 0px 0px 0px 0px !important;
-}
+  }
   section.sectionBox.BlockchainUsBox {
     height: auto;
     padding: 0px 15px 0px 15px !important;
   }
-  
+
   .fp2 {
     padding: 20px 15px 0px 15px !important;
   }
@@ -1332,11 +1308,11 @@ img {
     box-shadow: none;
     padding: 40px 0px 0px 0px !important;
   }
-  .css-k3f0g4-MuiGrid-root{
+  .css-k3f0g4-MuiGrid-root {
     flex-basis: 100%;
     max-width: 100%;
   }
-  .css-uqwprf-MuiGrid-root{
+  .css-uqwprf-MuiGrid-root {
     flex-basis: 100%;
     max-width: 100%;
   }
@@ -1345,149 +1321,150 @@ img {
     box-shadow: none;
     padding: 40px 15px 0px 15px !important;
   }
-    section.sectionBox.IosAppBox2 {
-      margin-left: 0px !important;
+  section.sectionBox.IosAppBox2 {
+    margin-left: 0px !important;
   }
   .whyUsBox.IosAppBox3 {
     padding: 0px 0px 0px 0px !important;
-}
-.IosOurBoxPd {
-  padding: 40px 15px 0px 15px !important;
-}
-.bgf {
-  height: 490px !important;
-}
-.BlockchainUsBox.contInfo .blcntp {
-  margin-left: 25px !important;
-}
-.BlockchainUsBox.contInfo .blcnbtn {
-  margin-left: 25px !important;
-}
-.IosAppBox .MuiGrid-grid-xs-8 ,.IosAppBox .MuiGrid-grid-xs-4{
-  flex-basis: 100%;
-  max-width: 100%;
-  width: 100%;
-}
-.IosAppBox .MuiTypography-h2{
- width: 100% !important;
- font-size: 18px;
- line-height: 25px;
-}
-.IosAppBox .MuiTypography-h5{
-  width: 100% !important;
-  font-size: 16px;
-  line-height: 22px;
-}
-.leftLeadFormBox{
-  flex-basis: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-  padding: 0px;
-}
-.leadForm .MuiGrid-grid-xs-12{
-  height: initial;
-  padding-top: 0;
-}
-.contact-form .MuiInputAdornment-root{
-  display: none;
-}
-.contact-form .MuiInput-input{
-  padding-left: 15px;
-}
-.contactUsArea .locationContent .MuiPaper-root{
-  position: relative;
-}
-.locationContent .MuiCardContent-root{
-  position: relative;
-}
-.testmonial .MuiGrid-item{
-  width: 100%;
+  }
+  .IosOurBoxPd {
+    padding: 40px 15px 0px 15px !important;
+  }
+  .bgf {
+    height: 490px !important;
+  }
+  .BlockchainUsBox.contInfo .blcntp {
+    margin-left: 25px !important;
+  }
+  .BlockchainUsBox.contInfo .blcnbtn {
+    margin-left: 25px !important;
+  }
+  .IosAppBox .MuiGrid-grid-xs-8,
+  .IosAppBox .MuiGrid-grid-xs-4 {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+  .IosAppBox .MuiTypography-h2 {
+    width: 100% !important;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .IosAppBox .MuiTypography-h5 {
+    width: 100% !important;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .leftLeadFormBox {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+  .leadForm .MuiGrid-grid-xs-12 {
+    height: initial;
+    padding-top: 0;
+  }
+  .contact-form .MuiInputAdornment-root {
+    display: none;
+  }
+  .contact-form .MuiInput-input {
+    padding-left: 15px;
+  }
+  .contactUsArea .locationContent .MuiPaper-root {
+    position: relative;
+  }
+  .locationContent .MuiCardContent-root {
+    position: relative;
+  }
+  .testmonial .MuiGrid-item {
+    width: 100%;
     max-width: 100%;
     flex-basis: 100%;
     margin-bottom: 15px;
-}
-.infoFooter{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-  -webkit-flex-basis: 100%;
-  text-align: center;
-}
-.infoFooter .MuiGrid-container{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-  -webkit-flex-basis: 100%;
-}
-.infoFooter .MuiGrid-container .MuiGrid-grid-xs-3{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-  -webkit-flex-basis: 100%;
-}
-.footerSection .MuiGrid-grid-xs-6{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-  -webkit-flex-basis: 100%;
-}
-.footerSection .footerContactUs img{
-  margin: 0;
-}
-.contactUsArea .MuiGrid-item {
-  height: 100%;
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.BlockchainUsBox .MuiGrid-item{
-  width: 100%;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.BlockchainUsBox img.chain_img{
-  height: initial;
-}
-.ourCoreTeam .MuiPaper-elevation{
-  padding: 0px 50px 0px 50px;
-}
-.ourCoreTeam .MuiCardContent-root{
-  padding-bottom:0px;
-}
-.androidDevelopment .saleForcesDevelopment{
-  width: 100%;
-  margin-left: 0;
-  max-width: 100%;
-  flex-basis: 100%;
-}
-.sliderContent .MuiTypography-h1{
-  font-size: 16px;
-}
-.salePart .MuiTypography-h3 {
-  margin-top: 15px;
-  font-size: 14px;
-}
-.salePart .MuiTypography-h1 {
-  font-size: 16px;
-  margin-top: 15px;
-}
+  }
+  .infoFooter {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    text-align: center;
+  }
+  .infoFooter .MuiGrid-container {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+  }
+  .infoFooter .MuiGrid-container .MuiGrid-grid-xs-3 {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+  }
+  .footerSection .MuiGrid-grid-xs-6 {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+  }
+  .footerSection .footerContactUs img {
+    margin: 0;
+  }
+  .contactUsArea .MuiGrid-item {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .BlockchainUsBox .MuiGrid-item {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .BlockchainUsBox img.chain_img {
+    height: initial;
+  }
+  .ourCoreTeam .MuiPaper-elevation {
+    padding: 0px 50px 0px 50px;
+  }
+  .ourCoreTeam .MuiCardContent-root {
+    padding-bottom: 0px;
+  }
+  .androidDevelopment .saleForcesDevelopment {
+    width: 100%;
+    margin-left: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .sliderContent .MuiTypography-h1 {
+    font-size: 16px;
+  }
+  .salePart .MuiTypography-h3 {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .salePart .MuiTypography-h1 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 619px) {
-  .ourCoreTeam .MuiCardContent-root{
-    padding-bottom:0px;
+  .ourCoreTeam .MuiCardContent-root {
+    padding-bottom: 0px;
   }
-  .ourCoreTeam .MuiPaper-elevation img{
+  .ourCoreTeam .MuiPaper-elevation img {
     width: 100%;
     height: 100%;
   }
 }
 
 @media (min-width: 621px) and (max-width: 1270px) {
-  .locationContent .MuiTypography-h7{
+  .locationContent .MuiTypography-h7 {
     font-size: 18px !important;
   }
-  .contactUsArea .locationContent p{
+  .contactUsArea .locationContent p {
     font-size: 14px !important;
   }
 }

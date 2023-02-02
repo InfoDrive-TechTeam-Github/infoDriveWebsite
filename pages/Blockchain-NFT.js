@@ -132,18 +132,27 @@ export default function blockchain() {
         </Box>
       </div>
       <section className={`sectionBox`}>
-        <Typography className='w100 red' gutterBottom variant='h1' component='h1'>
+        <Typography
+          className='w100 red'
+          gutterBottom
+          variant='h1'
+          component='h1'
+        >
           Blockchain and NFT Development
         </Typography>
-        <Typography className='w100' gutterBottom variant='h2' component='div'>
+        <Typography className='w100' gutterBottom variant='h5' component='div'>
           Blockchain technology and non-fungible tokens (NFTs) are
           revolutionizing the way we think about and use digital assets. At
           InfoDrive Solutions, we have a team of experienced blockchain
           developers and NFT specialists who can help your business tap into the
-          power of these cutting-edge technologies.
+          power of these cutting-edge technologies. One of the key benefits of
+          blockchain technology is that it allows for secure, decentralized
+          transactions without the need for intermediaries. This can
+          significantly reduce costs and increase the speed of transactions,
+          making it a highly attractive option for a wide range of industries
         </Typography>
         <br />
-        <Typography gutterBottom variant='h3' component='div'>
+        <Typography gutterBottom variant='h3' component='h2'>
           What are NFTs?
         </Typography>
 
@@ -161,11 +170,25 @@ export default function blockchain() {
           Our Blockchain and NFT Development Services :
         </Typography>
         <ul>
-          <li>Blockchain strategy consulting:</li>
-          <li>Blockchain development:</li>
+          <li>Blockchain strategy consulting</li>
+          <li>Blockchain development</li>
           <li>NFT development</li>
-          <li>Smart contract development:</li>
+          <li>Smart contract development</li>
         </ul>
+        <Typography gutterBottom variant='h3' component='h2'>
+          Why Choose InfoDrive Solutions for Blockchain and NFT Development?
+        </Typography>
+        <Typography className='w100' gutterBottom variant='h5' component='div'>
+          We have a team of highly skilled and experienced blockchain developers
+          and NFT specialists who can help you successfully implement these
+          technologies into your business. We have a proven track record of
+          delivering high-quality solutions for our clients and are committed to
+          helping you achieve your business goals. Our company also offer
+          flexible engagement models to fit your specific needs and budget.
+          Whether you need a full-scale blockchain implementation or just want
+          to explore the potential of NFTs, we have the expertise and resources
+          to help.
+        </Typography>
       </section>
       <section className={`sectionBox BlockchainUsBox`}>
         <Box sx={{ flexGrow: 1 }}>

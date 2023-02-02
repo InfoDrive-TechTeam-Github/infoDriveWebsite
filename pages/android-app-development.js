@@ -171,7 +171,7 @@ export default function AndroidAppDevelopment() {
           support the success of your android app, including testing,
           deployment, and ongoing maintenance.
         </Typography>
-        <Typography className='w100' gutterBottom variant='h2' component='div'>
+        <Typography className='w100' gutterBottom variant='h2' component='h2'>
           Why Choose Us for Your Android App Development Needs
         </Typography>
 

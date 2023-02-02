@@ -48,9 +48,15 @@ export default function About() {
           rel='canonical'
           href='https://infodrive-solutions.com/about-us.html'
         />
-        <meta property="og:title" content="About Us - IT Solutions Company in Singapore, Malaysia, and India |InfoDrive Solutions" />
-        <meta property="og:image" content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png" />
-        <link rel="icon" href="/favicon.png" />
+        <meta
+          property='og:title'
+          content='About Us - IT Solutions Company in Singapore, Malaysia, and India |InfoDrive Solutions'
+        />
+        <meta
+          property='og:image'
+          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+        />
+        <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

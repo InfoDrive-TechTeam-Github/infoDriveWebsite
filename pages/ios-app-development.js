@@ -134,7 +134,12 @@ export default function IosAppDevelopment() {
         </Box>
       </div>
       <section className={`sectionBox`}>
-      <Typography className='w100 red' gutterBottom variant='h1' component='h1'>
+        <Typography
+          className='w100 red'
+          gutterBottom
+          variant='h1'
+          component='h1'
+        >
           iOS App Development Services
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>
@@ -185,15 +190,10 @@ export default function IosAppDevelopment() {
                   is reliable and able to handle heavy usage.
                 </Typography>
                 <Typography
+                  className='heading'
                   gutterBottom
                   variant='h1'
                   component='div'
-                  style={{
-                    fontSize: '25px',
-                    color: '#dd3952',
-                    fontWeight: 600,
-                    fontFamily: 'Poppins',
-                  }}
                 >
                   In addition to custom app development, we also offer a range
                   of other services to help you succeed with your iOS app. These
@@ -226,7 +226,7 @@ export default function IosAppDevelopment() {
           <Grid container spacing={0} className='fd1'>
             <Grid item xs={12}>
               <Card className='ios-app2'>
-                <Typography gutterBottom variant='h2' component='div'>
+                <Typography gutterBottom variant='h2' component='h2'>
                   Key benefits of our iOS app
                   <br></br> development services
                 </Typography>
@@ -405,7 +405,7 @@ export default function IosAppDevelopment() {
           <Typography
             gutterBottom
             variant='h2'
-            component='div'
+            component='h3'
             className='IodHdn'
           >
             Our iOS application <br />

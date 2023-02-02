@@ -194,7 +194,8 @@ export default function Index() {
           WHO IS INFODRIVE SOLUTIONS
         </Typography>
         <Typography className='w100' gutterBottom variant='h1' component='h1'>
-        Expert Software Consulting and Development Services for Digital Transformation
+          Expert Software Consulting and Development Services for Digital
+          Transformation
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>
           InfoDrive Solutions is a Software Development and Digital
