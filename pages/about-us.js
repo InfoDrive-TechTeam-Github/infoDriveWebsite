@@ -130,7 +130,7 @@ export default function About() {
         <Typography gutterBottom variant='h3' component='div'>
           ABOUT US
         </Typography>
-        <Typography gutterBottom variant='h2' component='div'>
+        <Typography gutterBottom variant='h1' component='h1'>
           InfoDrive Solutions is a leading Technology solution provider and we
           are helping many start-ups and small-medium businesses to build
           products from scratch.

@@ -81,7 +81,7 @@ export default function SalesForceDevelopment() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/72250f50098664f9273c6d07e59ccdcd.jpeg'
+          src='images/7e086652d7d493b8a2f038e2f67d3984.jpeg'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -141,7 +141,7 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h2' component='div'>
+        <Typography gutterBottom variant='h1' component='h1'>
         With Einstein Analytics, you can easily access and analyze your data, create custom dashboards, and gain insights that can help you make informed business decisions.        
         </Typography>
 
