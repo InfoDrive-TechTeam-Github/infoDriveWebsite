@@ -89,12 +89,14 @@ export default function SalesForceDevelopment() {
           style={{ width: '100%' }}
           src='images/91347bcb5003e5f7f144c8d10079ab1e.jpeg'
         />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
+        <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
-              Salesforce Sales Cloud Services
-            </Typography>
-            <Typography gutterBottom variant='h1' component='div'>
+            <Typography
+              className='p15'
+              gutterBottom
+              variant='h1'
+              component='div'
+            >
               Revolutionize Your Sales Process with the <br />
               Power with the Power of Sales Cloud -<br />
               A Cutting-Edge Solution for Your Business <br />
@@ -148,9 +150,7 @@ export default function SalesForceDevelopment() {
 
       <section className={`sectionBox`}>
         <Typography gutterBottom variant='h1' component='h1'>
-          We have a team of certified Salesforce consultants who have extensive
-          experience in helping businesses streamline their sales processes and
-          drive growth through the use of Salesforce Sales Cloud.
+          Salesforce Sales Cloud Services
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='div'>
@@ -292,12 +292,16 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6} className='pr30'>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h2' component='div'>
+                  <Typography gutterBottom variant='h2' component='h2'>
+                    Maximize Your Potential with Salesforce Sales Cloud
+                    Consulting Services
+                  </Typography>
+                  <br />
+                  <Typography gutterBottom variant='h3' component='div'>
                     Our consulting services are designed to help you fully
                     leverage the capabilities of Salesforce Sales Cloud and
                     achieve your business goals.
                   </Typography>
-                  <br />
 
                   <Typography gutterBottom variant='h3' component='div'>
                     Our team of experienced consultants can provide a range of
@@ -408,8 +412,7 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Ready to take your business to the next level with a custom web or
-          mobile app?
+          Empower Your Sales Team with Advanced Sales Cloud Solutions
         </Typography>
         <Button
           href='/contact-us.html'

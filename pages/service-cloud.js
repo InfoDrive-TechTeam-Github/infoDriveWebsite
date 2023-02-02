@@ -94,11 +94,13 @@ export default function SalesForceDevelopment() {
             <Typography gutterBottom variant='h3' component='div'>
               Salesforce SERVICE Cloud Services
             </Typography>
+
             <Typography gutterBottom variant='h1' component='div'>
-              Our Company InfoDrive Solutions is a <br />
-              leading provider of Salesforce Service <br />
-              Cloud implementation and consulting <br />
-              services in Singapore, Malaysia, and India.
+              Empower Your Customer Service
+              <br />
+              Team with Advanced Service <br />
+              Cloud Solutions - Drive Customer <br />
+              Satisfaction and Boost Efficiency
             </Typography>
             <Button
               href='/contact-us.html'
@@ -473,8 +475,8 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Ready to take your business to the next level with a custom web or
-          mobile app?
+          Maximize Your Customer Satisfaction with Cutting-Edge Service Cloud
+          Solutions
         </Typography>
         <Button
           href='/contact-us.html'
