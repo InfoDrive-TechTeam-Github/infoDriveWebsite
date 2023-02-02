@@ -140,7 +140,7 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h2' component='div'>
+        <Typography gutterBottom variant='h1' component='h1'>
         Our team of certified experts has years of experience helping businesses of all sizes maximize the full potential of this powerful marketing platform.
         </Typography>
 

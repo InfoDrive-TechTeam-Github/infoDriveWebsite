@@ -81,7 +81,7 @@ export default function SalesForceDevelopment() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/72250f50098664f9273c6d07e59ccdcd.jpeg'
+          src='images/6ab9e62b9940c4bae59de46b69e54ecb.jpeg'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -140,7 +140,7 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h2' component='div'>
+        <Typography gutterBottom variant='h1' component='h1'>
           Salesforce is a powerful customer relationship management (CRM) platform that helps businesses streamline their sales, customer service, and marketing efforts.         
         </Typography>
 
@@ -234,28 +234,16 @@ export default function SalesForceDevelopment() {
       <br/>
 
       <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2`}>
-      <Typography gutterBottom variant='h2' className='mb0' component='div'>
-      Key benefits of Salesforce Marketing
-        </Typography>
-        <br/>
-        <Typography gutterBottom variant='h5' className='mb0' component='div'>
-        There are numerous benefits to using Salesforce Marketing Cloud as your marketing automation platform, and partnering with InfoDrive Solutions as your consultant can help you maximize these benefits and drive better results for your business.
-        </Typography>
-        <br />
-        <br/>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                  Personalization
-                  </Typography>
-                  <br />
-                  <Typography variant='body2' className="pr10" color='text.secondary'>
-                  The platform allows you to create highly targeted, personalized campaigns based on customer data and behaviors. This can help you better engage and convert your audience.
-                  </Typography>
+                <img
+                  style={{ width: '100%' }}
+                  src='images/d5843b19f3fd15ca5e0d2c4532996b0b.jpeg'
+                />
                 </CardContent>
               </Card>
             </Grid>
@@ -263,44 +251,14 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                  Omnichannel marketing                 
+                  <Typography gutterBottom variant='h2' component='div' className="w100 pl30">
+                  In addition to these core services, we also offer ongoing support and maintenance to ensure that your Salesforce platform is running smoothly and efficiently. Our team is always available to answer your questions, provide guidance, and offer solutions to any issues that may arise.               
                   </Typography>
-                  <br />
-                  <Typography variant='body2' color='text.secondary'>
-                  With Salesforce Marketing Cloud, you can reach your customers through email, mobile, social media, and other channels, all in one place. This allows you to create consistent, coordinated campaigns across multiple channels.
+                  <Typography variant='body2' color='text.secondary' className="pl30">
+                  At InfoDrive Solutions, we believe that exceptional Salesforce support is about more than just fixing problems. It's about helping you get the most value from your CRM investment and empowering you to achieve your business goals. Our team is dedicated to providing the highest level of support and service to our clients, and we are confident that we can help you succeed with Salesforce.
                   </Typography>
                  </CardContent>
               </Card>
-            </Grid>
-
-            <Grid item xs={6}>
-              <Card>
-                    <CardContent>
-                        <Typography gutterBottom variant='h3' component='div'>
-                        Data-driven insights                   
-                        </Typography>
-                        <br />
-                        <Typography variant='body2' color='text.secondary'>
-                        The platform's advanced analytics capabilities allow you to track and measure the performance of your campaigns in real-time, giving you valuable insights into what's working and what's not.
-                        </Typography>       
-                    </CardContent>
-              </Card>
-            </Grid>
-            
-            <Grid item xs={6}>
-              <Card>
-                    <CardContent>
-                        <Typography gutterBottom variant='h3' component='div'>
-                        Integration
-                        
-                        </Typography>
-                        <br />
-                        <Typography variant='body2' color='text.secondary'>
-                        Salesforce Marketing Cloud can be easily integrated with other systems, such as your CRM, e-commerce platform, and more. This allows you to get a complete view of your customer interactions and make informed decisions about your marketing efforts.
-                        </Typography>
-                    </CardContent>
-                </Card>
             </Grid>
 
           </Grid>

@@ -143,7 +143,7 @@ export default function WebMobileApp() {
       </div>
 
       <section className={`sectionBox introSectionBox`}>
-        <Typography className='w100 red' gutterBottom variant='h1' component='div'>
+        <Typography className='w100 red' gutterBottom variant='h1' component='h1'>
           Custom Web & Mobile App Development - Take Your Business to the Next
           Level
         </Typography>

@@ -140,7 +140,7 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h2' component='div'>
+        <Typography gutterBottom variant='h1' component='h1'>
           We have a team of certified Salesforce consultants who have extensive experience in helping businesses streamline their sales processes and drive growth through the use of Salesforce Sales Cloud.
         </Typography>
 

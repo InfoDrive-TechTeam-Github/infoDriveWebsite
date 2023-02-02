@@ -140,7 +140,7 @@ export default function AndroidAppDevelopment() {
         </Box>
       </div>
       <section className='sectionBox'>
-        <Typography className='w100 red' gutterBottom variant='h1' component='div'>
+        <Typography className='w100 red' gutterBottom variant='h1' component='h1'>
           Android App Development Services
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>

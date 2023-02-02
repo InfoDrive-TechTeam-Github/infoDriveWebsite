@@ -140,7 +140,7 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h2' component='div'>
+        <Typography gutterBottom variant='h1' component='h1'>
             With Salesforce, you can manage
             all of your customer data in one place,
             automating and simplifying 
