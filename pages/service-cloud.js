@@ -330,7 +330,7 @@ export default function SalesForceDevelopment() {
                   <Typography variant='body2' color='text.secondary'>
                     We configure and customize Service Cloud to meet your
                     specific needs, including integrating it with other systems
-                    and setting up workflows and processes.{' '}
+                    and setting up workflows and processes.
                   </Typography>
                 </CardContent>
               </Card>

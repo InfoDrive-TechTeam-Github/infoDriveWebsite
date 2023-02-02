@@ -164,8 +164,13 @@ img {
   line-height: 33px;
   color: #0b2653;
 }
+<<<<<<< HEAD
 .sectionBox .MuiTypography-h1 {
   font-size: 25px;
+=======
+.sectionBox .MuiTypography-h1{
+  font-size: 23px;
+>>>>>>> 2a719c4c6187c0aea9d97cd843c844d2a0b30d84
   font-family: Poppins;
   width: 760px;
   font-weight: 700;
@@ -352,7 +357,20 @@ img {
   padding-left: 0;
   padding-right: 0;
 }
+<<<<<<< HEAD
 .whyUsBox .MuiTypography-h2 {
+=======
+
+.analyticsBox{
+  background: url('images/27438e2c1b5ef15fae5bea18375900bb.jpeg');
+  background-size: cover;
+    margin-left: 97px;
+    margin-right: 97px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.whyUsBox .MuiTypography-h2{
+>>>>>>> 2a719c4c6187c0aea9d97cd843c844d2a0b30d84
   margin-bottom: 60px;
   font-family: Poppins;
 }
@@ -832,7 +850,14 @@ img {
   color: #fff;
   font-family: Poppins;
 }
+<<<<<<< HEAD
 .footerSection {
+=======
+.applicationDevelopmentBox .MuiTypography-h2{
+  width: 100%;
+}
+.footerSection{
+>>>>>>> 2a719c4c6187c0aea9d97cd843c844d2a0b30d84
   background: #000;
 }
 .footerNavbar {
