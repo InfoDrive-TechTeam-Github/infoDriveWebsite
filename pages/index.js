@@ -190,20 +190,10 @@ export default function Index() {
       <Header />
       <Slider />
       <section className={`sectionBox`}>
-        <Typography
-          className='w100 heading'
-          gutterBottom
-          variant='h1'
-          component='div'
-        >
+        <Typography gutterBottom variant='h3' component='h3'>
           WHO IS INFODRIVE SOLUTIONS
         </Typography>
-        <Typography
-          className='w100 fs'
-          gutterBottom
-          variant='h2'
-          component='h1'
-        >
+        <Typography className='w100' gutterBottom variant='h1' component='h1'>
           Expert Software Consulting and Development Services for Digital
           Transformation
         </Typography>

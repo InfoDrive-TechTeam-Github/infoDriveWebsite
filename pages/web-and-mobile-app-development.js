@@ -144,7 +144,7 @@ export default function WebMobileApp() {
 
       <section className={`sectionBox introSectionBox`}>
         <Typography
-          className='w100 heading'
+          className='w100 red'
           gutterBottom
           variant='h1'
           component='h1'

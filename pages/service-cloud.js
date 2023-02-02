@@ -146,7 +146,7 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography className='w100' gutterBottom variant='h2' component='h1'>
+        <Typography gutterBottom variant='h1' component='h1'>
           Empowering Businesses with Exceptional Customer Service through
           Salesforce Service Cloud
         </Typography>

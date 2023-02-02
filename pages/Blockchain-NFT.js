@@ -133,9 +133,9 @@ export default function blockchain() {
       </div>
       <section className={`sectionBox`}>
         <Typography
-          className='heading'
+          className='w100 red'
           gutterBottom
-          variant='h3'
+          variant='h1'
           component='h1'
         >
           Blockchain and NFT Development

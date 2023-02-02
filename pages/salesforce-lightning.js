@@ -81,18 +81,19 @@ export default function SalesForceDevelopment() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/72250f50098664f9273c6d07e59ccdcd.jpeg'
+          src='images/0959e7bad48d4a91f7e112136efad00a.jpeg'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>Salesforce MARKETING Cloud Services
+            <Typography gutterBottom variant='h3' component='div'>Salesforce LIGHTNING
 
             </Typography>
             <Typography gutterBottom variant='h1' component='div'>
-            Our Company InfoDrive Solutions is a <br/>
-            leading provider of Salesforce Marketing <br/>
-            Cloud implementation and consulting <br/>
-            services in Singapore, Malaysia, and India.
+            Salesforce Lightning is a powerful, user-friendly <br/>
+            platform that allows businesses <br/>
+            to streamline their operations, improve <br/>
+            customer experiences, and boost their <br/>
+            productivity.
             </Typography>
             <Button
               href='/contact-us.html'
@@ -140,119 +141,92 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h2' component='div'>
-        Our team of certified experts has years of experience helping businesses of all sizes maximize the full potential of this powerful marketing platform.
+
+        <Typography gutterBottom variant='h3' className="upperCase" component='h3'>
+        Why Salesforce Lightning Development
+        </Typography>
+
+        <Typography gutterBottom variant='h1' component='h1'>
+        With Lightning, you can access all of your Salesforce data and tools from a single, intuitive interface, making it easier to manage your business and drive growth.
         </Typography>
 
         <Typography gutterBottom variant='h5' component='div'>
-        Salesforce Marketing Cloud is a cloud-based, enterprise-level marketing automation platform that helps businesses reach, engage, and retain their customers through personalized, omnichannel marketing campaigns. It offers a wide range of tools and features for email marketing, social media marketing, mobile marketing, and more, all in one easy-to-use platform.
+        At InfoDrive Solutions, we are dedicated to helping our clients maximize the benefits of Salesforce Lightning. Our team of certified Salesforce consultants has years of experience working with the platform, and we are committed to delivering top-quality services to our clients. <br/>
+        One of the key benefits of Salesforce Lightning is its ability to provide a personalized, seamless experience for users. With lightning, you can tailor the interface to your specific needs, giving you the information and tools, you need to get your job done quickly and efficiently.
         </Typography>
       </section>
-
-      <section className={`sectionBox saleForcesDevelopmentBox marketCloudBox`}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0} className='androidDevelopment'>
-            <Grid item xs={6} className='saleForcesDevelopment'>
-            <Typography gutterBottom variant='h3' component='div'>
-            Salesforce Marketing Cloud Implementation              
-            </Typography>
-              <Typography gutterBottom variant='h5' component='div'>
-              At InfoDrive Solutions, we understand that implementing a new marketing platform can be a complex and time-consuming process. That's why we offer a range of services to help make the transition as smooth and seamless as possible.
-             </Typography>
-             <Typography gutterBottom variant='h5' component='div'>
-             Our team can help you with everything from planning and strategy to execution and optimization. We'll work with you to understand your business goals and objectives, and then help you design and implement a customized Marketing Cloud solution that meets your specific needs.
-              </Typography>
-              <Typography gutterBottom variant='h5' component='div'>
-              One of the key benefits of working with InfoDrive Solutions is our team's deep expertise in Salesforce Marketing Cloud. Our certified consultants have years of experience working with the platform, and we stay up-to-date on the latest features and best practices. This allows us to provide our clients with the highest level of service and support, ensuring that their Marketing Cloud implementation is a success.
-             </Typography>
-            </Grid>
-          </Grid>
-        </Box>
-      </section>
-
-
 
 
       <section className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}>
         <Typography className="mb0" gutterBottom variant='h2' component='div'>
-        In addition to our implementation services, we also offer ongoing support and consulting to help you get the most out of your Marketing Cloud investment. 
-                </Typography>
+        Another advantage of Lightning is its integration capabilities. With lightning, you can easily connect your Salesforce account to other systems and platforms, such as CRM software, marketing automation tools, and more.
+        </Typography>
                 <br/>
 
                 <Typography className="mb0" gutterBottom variant='body2' color="text.secondary">
-                This includes training and support for your team, as well as ongoing optimization and performance monitoring to ensure that your campaigns are delivering the best possible results.
-Some of the specific services we offer as part of our Salesforce Marketing Cloud implementation and consulting services include:
+                This allows you to bring all of your data together in one place, giving <br/>
+                you a complete view of your business and enabling you to make better, <br/>
+                more informed decisions.
+                In addition to these core features, Salesforce Lightning also offers a <br/>
+                wide range of advanced tools and features that can help your business <br/>
+                grow and thrive. These include:
                 </Typography>
         <br/>
         <br/>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-            <Grid item xs={4} className>
+            <Grid item xs={3} className>
               <Card>
                 <CardContent>
                   <Typography gutterBottom variant='h3' className='mb0' component='div'>
-                  Strategy and planning
+                  Salesforce Einstein
                   </Typography>
                   <br />
                   <Typography className="pr30" variant='body2' color='text.secondary'>
-                  With Service Cloud, you can provide faster, more accurate, and more personalized support to your customers, leading to higher levels of satisfaction and loyalty.
+                  This artificial intelligence platform uses machine learning to provide insights and predictions that can help you make better business decisions.
                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
 
-            <Grid item xs={4}>
+            <Grid item xs={3}>
               <Card>
                 <CardContent>
                   <Typography gutterBottom variant='h3' className='mb0' component='div'>
-                  Implementation
+                  Lightning app builder
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  Our team will handle the technical aspects of setting up your Marketing Cloud account, including data integration, email template design, and automation setup.
+                  This tool allows you to create custom, interactive apps that can be accessed from any device.
                   </Typography>
                   </CardContent>
               </Card>
             </Grid>
 
-            <Grid item xs={4}>
+            <Grid item xs={3}>
               <Card>
                 <CardContent>
                   <Typography gutterBottom variant='h3' className='mb0' component='div'>
-                  Training and support               
+                  Lightning flow             
                   </Typography>
                   <br />
                   <Typography className="pr30" variant='body2' color='text.secondary'>
-                  We'll provide training and support to ensure that your team is fully proficient in using the platform and able to get the most out of its features.
+                  This feature allows you to automate business processes and workflows, saving you time and improving efficiency.
                   </Typography>
                 </CardContent>
               </Card>
             </Grid>
 
-            <Grid item xs={4}>
+            <Grid item xs={3}>
               <Card>
                 <CardContent>
                   <Typography gutterBottom variant='h3' className='mb0' component='div'>
-                  Ongoing optimization            
+                  Lightning communities          
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  We'll work with you to continuously improve and optimize your Marketing Cloud campaigns, ensuring that you're getting the best possible results.
+                  With this feature, you can create online communities for your customers, partners, and employees, enabling them to collaborate and share information in real time.
                   </Typography>
-                  </CardContent>
-              </Card>
-            </Grid> 
-
-            <Grid item xs={4}>
-              <Card>
-                <CardContent>
-                  <Typography gutterBottom variant='h3' className='mb0' component='div'>
-                  Performance monitoring         
-                  </Typography>
-                  <br />
-                  <Typography variant='body2' color='text.secondary'>
-                  We'll monitor the performance of your campaigns and provide regular reports and recommendations for improvement.
-                                    </Typography>
                   </CardContent>
               </Card>
             </Grid> 
@@ -260,91 +234,80 @@ Some of the specific services we offer as part of our Salesforce Marketing Cloud
         </Box>
       </section>
 
-      <br/>
-      <br/>
+      <section className={`sectionBox whyUsBox  pb0 `}>
+        <Typography className="mb0" gutterBottom variant='h2' component='div'>
+        Our Lightning services includes:
+        </Typography>
+                <br/>
 
-      <section className={`sectionBox solutionBox marketSolutionBox mb30`}>
-        <p>
-        At InfoDrive Solutions, we pride ourselves on delivering top-quality Salesforce Marketing Cloud implementation and consulting services to our clients. Our team is dedicated to helping you achieve your marketing goals and maximize the full potential of this powerful platform.
-        </p>
-      </section>
-<br/>
-
-      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2`}>
-      <Typography gutterBottom variant='h2' className='mb0' component='div'>
-      Key benefits of Salesforce Marketing
+        <Typography className="mb0" gutterBottom variant='body2' color="text.secondary">
+           At InfoDrive Solutions, we offer a range of services to help our clients get the most out of Salesforce Lightning. These include:
         </Typography>
         <br/>
-        <Typography gutterBottom variant='h5' className='mb0' component='div'>
-        There are numerous benefits to using Salesforce Marketing Cloud as your marketing automation platform, and partnering with InfoDrive Solutions as your consultant can help you maximize these benefits and drive better results for your business.
-        </Typography>
-        <br />
         <br/>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-            
-            <Grid item xs={6}>
+            <Grid item xs={3} className>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                  Personalization
+                  <Typography gutterBottom variant='h3' className='mb0' component='div'>
+                  Lightning implementation
                   </Typography>
                   <br />
-                  <Typography variant='body2' className="pr10" color='text.secondary'>
-                  The platform allows you to create highly targeted, personalized campaigns based on customer data and behaviors. This can help you better engage and convert your audience.
+                  <Typography className="pr30" variant='body2' color='text.secondary'>
+                  We can help you set up and customize your Lightning platform, ensuring that it meets the specific needs of your business.
+                 </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item xs={3}>
+              <Card>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' className='mb0' component='div'>
+                  Lightning training
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                  Our team can provide training and support to help you and your team get up to speed on the Lightning platform, so you can take full advantage of its features and capabilities.
+                  </Typography>
+                  </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item xs={3}>
+              <Card>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' className='mb0' component='div'>
+                  Lightning consulting             
+                  </Typography>
+                  <br />
+                  <Typography className="pr30" variant='body2' color='text.secondary'>
+                  Our consultants can provide guidance and advice on how to use Lightning to drive business growth and improve your operations.
                   </Typography>
                 </CardContent>
               </Card>
             </Grid>
 
-            <Grid item xs={6}>
+            <Grid item xs={3}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                  Omnichannel marketing                 
+                  <Typography gutterBottom variant='h3' className='mb0' component='div'>
+                  Lightning support         
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  With Salesforce Marketing Cloud, you can reach your customers through email, mobile, social media, and other channels, all in one place. This allows you to create consistent, coordinated campaigns across multiple channels.
+                  We offer ongoing support and maintenance to ensure that your Lightning platform is always running smoothly and efficiently.
                   </Typography>
-                 </CardContent>
+                  </CardContent>
               </Card>
-            </Grid>
-
-            <Grid item xs={6}>
-              <Card>
-                    <CardContent>
-                        <Typography gutterBottom variant='h3' component='div'>
-                        Data-driven insights                   
-                        </Typography>
-                        <br />
-                        <Typography variant='body2' color='text.secondary'>
-                        The platform's advanced analytics capabilities allow you to track and measure the performance of your campaigns in real-time, giving you valuable insights into what's working and what's not.
-                        </Typography>       
-                    </CardContent>
-              </Card>
-            </Grid>
-            
-            <Grid item xs={6}>
-              <Card>
-                    <CardContent>
-                        <Typography gutterBottom variant='h3' component='div'>
-                        Integration
-                        
-                        </Typography>
-                        <br />
-                        <Typography variant='body2' color='text.secondary'>
-                        Salesforce Marketing Cloud can be easily integrated with other systems, such as your CRM, e-commerce platform, and more. This allows you to get a complete view of your customer interactions and make informed decisions about your marketing efforts.
-                        </Typography>
-                    </CardContent>
-                </Card>
-            </Grid>
-
+            </Grid> 
           </Grid>
         </Box>
       </section>
 
-
+      <br/>
+      
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
           gutterBottom

@@ -149,9 +149,9 @@ export default function ServicesForStartUps() {
                 <Card>
                   <CardContent>
                     <Typography
-                      className='heading'
+                      className='w100 red'
                       gutterBottom
-                      variant='h2'
+                      variant='h1'
                       component='h1'
                     >
                       IT Solutions for Start-up Business
