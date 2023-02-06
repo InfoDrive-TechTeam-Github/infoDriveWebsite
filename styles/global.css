@@ -338,11 +338,12 @@ img {
   padding-right: 0;
 }
 .solutionBox p {
-  font-size: 30px;
+  font-size: 22px;
   color: #fff;
   padding-left: 97px;
   padding-right: 97px;
   font-family: Poppins;
+  font-weight: 700;
 }
 .marketSolutionBox {
   background: url('images/1fdbb1cca39e2eee60ac689872bfd393.jpeg');

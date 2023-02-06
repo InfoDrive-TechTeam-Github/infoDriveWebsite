@@ -452,8 +452,8 @@ export default function Index() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Ready to take your business to the next level with a custom web or
-          mobile app?
+          Transform Your Business with Cutting-Edge Technology - Partner with
+          Infodrive Solutions Today!
         </Typography>
         <Button
           href='/contact-us.html'
