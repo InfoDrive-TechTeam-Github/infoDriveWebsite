@@ -151,7 +151,7 @@ export default function SalesForceDevelopment() {
       <section className={`sectionBox`}>
         <Typography className='w100' gutterBottom variant='h1' component='h1'>
           Power Your Marketing Efforts with Salesforce Marketing Cloud
-          Solutions"
+          Solutions
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='div'>
