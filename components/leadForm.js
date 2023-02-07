@@ -99,53 +99,7 @@ export default function leadForm() {
       <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
           <Box sx={{ flexGrow: 1 }} className="locationContent">
             <Grid container spacing={0}>
-               <Grid item xs={6} className="leftLeadFormBox">
-                    <Grid item xs={12} className='contactUsB contactUsB1'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Pte Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                            Phone: <a href="tel:+6592384299" style={{color:"#fff"}}>+65-9238 4299 </a><br/>
-                            Email: <a href="mailto:contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
-
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12}  className='contactUsB contactUsB2'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Sdn Bhd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                            Phone: <a href="tel:+60123275811" style={{color:"#fff"}}>+60-1 2327 5811</a><br/>
-                            Email: <a href="mailto:contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
-
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-
-                    <Grid item xs={12}  className='contactUsB contactUsB3'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDriven Solutions Pvt Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                            Phone: <a href="tel:+919606188081" style={{color:"#fff"}}>+91-960 61880 81 </a><br/>
-                            Email: <a href="mailto:contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-               </Grid>
+               
                <Grid item xs="6"  className="leadFormBox">
 
                <form className="contact-form" onSubmit={handleSubmit}>
@@ -218,6 +172,54 @@ export default function leadForm() {
                         </Stack>
                     </Box>
                     </form>
+               </Grid>
+
+               <Grid item xs={6} className="leftLeadFormBox">
+                    <Grid item xs={12} className='contactUsB contactUsB1'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Pte Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
+                            Phone: <a href="tel:+6592384299" style={{color:"#fff"}}>+65-9238 4299 </a><br/>
+                            Email: <a href="mailto:contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
+
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12}  className='contactUsB contactUsB2'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDrive Solutions Sdn Bhd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
+                            Phone: <a href="tel:+60123275811" style={{color:"#fff"}}>+60-1 2327 5811</a><br/>
+                            Email: <a href="mailto:contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
+
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
+
+                    <Grid item xs={12}  className='contactUsB contactUsB3'>
+                        <Card >
+                        <CardContent>
+                            <Typography gutterBottom variant="h7" component="div">
+                            InfoDriven Solutions Pvt Ltd
+                            </Typography>
+                            <Typography variant="body2" color="text.secondary">
+                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
+                            Phone: <a href="tel:+919606188081" style={{color:"#fff"}}>+91-960 61880 81 </a><br/>
+                            Email: <a href="mailto:contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
+                            </Typography>
+                        </CardContent>
+                        </Card>
+                    </Grid>
                </Grid>
             </Grid>
         </Box>

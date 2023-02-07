@@ -1049,6 +1049,36 @@ img {
 }
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
+  .IosOurBox .MuiGrid-grid-xs-6{
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .IosOurBox .MuiGrid-grid-xs-6 .IosCard{
+    height: initial !important;
+    padding: 15px 30px;
+  }
+  .BlockchainUsBox .MuiCardContent-root .MuiTypography-h3{
+    line-height: 25px !important;
+  }
+  .BlockchainUsBox .MuiCardContent-root .MuiTypography-h3 br{
+    display: none;
+  }
+  .BlockchainUsBox .MuiCardContent-root .MuiTypography-h2{
+    line-height: 25px !important;
+  }
+  .BlockchainUsBox .MuiCardContent-root .MuiTypography-h2 br{
+    display: none;
+  }
+  .salesCloudService{
+    margin-bottom: 30px;
+  }
+  .salesCloudService .MuiGrid-grid-xs-6{
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+    padding-right: 0px !important;
+  }
   .leadForm .leadFormBox {
     padding: 0px 15px;
     flex-basis: 100%;
@@ -1444,11 +1474,25 @@ img {
   .salePart .MuiTypography-h3 {
     margin-top: 15px;
     font-size: 14px;
+    padding-right: 35px;
   }
   .salePart .MuiTypography-h1 {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 15px;
+    padding-right: 35px;
   }
+  .salePart .MuiTypography-h1 br{
+    display: none;
+  }
+  .salesForceServices .MuiTypography-body2{
+    padding-right: 0px !important;
+  }
+  .salesForceServices .MuiTypography-h2 br{
+    display: none;
+  }
+  .connectUs.backDrop .MuiTypography-h3, .connectUs.backDrop a{
+    font-size: 15px ;
+  } 
 }
 
 @media (min-width: 376px) and (max-width: 619px) {
