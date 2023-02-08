@@ -126,6 +126,9 @@
 .w100 {
   width: 100% !important;
 }
+.w0{
+  width: 100% !important;
+}
 .m15 {
   margin: 15;
 }
