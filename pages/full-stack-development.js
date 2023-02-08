@@ -334,8 +334,8 @@ export default function FullstackDevelopment() {
       </section>
 
       <section className={`sectionBox whyUsBox pb0`}>
-        <Typography gutterBottom variant='h2' className='mb0' component='h2'>
-          WE ARE SPECIALIZED IN
+        <Typography gutterBottom variant='h2' className='mb0' component='h1'>
+          We Are Specialized in
         </Typography>
         <br />
         <Box sx={{ flexGrow: 1 }}>
@@ -343,18 +343,10 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant='h5'
-                    className='pb10'
-                    component='div'
-                  >
+                  <Typography gutterBottom variant='h3' component='div'>
                     WORLD’S #1 CRM
                   </Typography>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    Salesforce partner
-                  </Typography>
-                  <br />
+
                   <Typography variant='body2' color='text.secondary'>
                     Salesforce is the World’s #1 CRM today, over 100,000 of the
                     world’s most innovative companies use Salesforce to close
@@ -367,18 +359,10 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant='h5'
-                    className='pb10'
-                    component='div'
-                  >
+                  <Typography gutterBottom variant='h3' component='div'>
                     AI AND ANALYTICS
                   </Typography>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    Servicenow
-                  </Typography>
-                  <br />
+
                   <Typography variant='body2' color='text.secondary'>
                     Unleash the power of AI and analytics to surface
                     information, make predictions, and automate repetitive tasks
@@ -391,18 +375,10 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <CardContent>
-                  <Typography
-                    gutterBottom
-                    variant='h5'
-                    className='pb10'
-                    component='div'
-                  >
+                  <Typography gutterBottom variant='h3' component='div'>
                     ENTERPRISE APPLICATIONS
                   </Typography>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    Mulesoft
-                  </Typography>
-                  <br />
+
                   <Typography variant='body2' color='text.secondary'>
                     Today’s enterprise needs a network of applications, data,
                     and devices connected by APIs, whether on-premises or in the

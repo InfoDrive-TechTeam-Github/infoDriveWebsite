@@ -91,14 +91,15 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent '>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
-            Digital Marketing Services
-            </Typography>
+            <Typography gutterBottom variant='h3' component='div'></Typography>
 
             <Typography gutterBottom variant='h1' component='div'>
-            InfoDrive Solutions is a leading digital <br/>
-            marketing company with locations in <br/>
-            Singapore, Malaysia, and India.
+              Our goal is to help you establish
+              <br />
+              a strong online presence and convert <br />
+              leads into customers through effective
+              <br />
+              digital marketing strategies
             </Typography>
             <Button
               href='/contact-us.html'
@@ -146,29 +147,56 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h1' component='h1'>
-          At InfoDrive Solutions, we believe that the key to success in the modern world is a strong online presence. That's why we offer a range of digital marketing services designed to help businesses of all sizes reach their target audience and achieve their goals.
+        <Typography gutterBottom variant='h1' component='h1' className='w100'>
+          Driving traffic and Generating Lads with Our Digital Marketing
+          Services
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='div'>
-          Our team of experienced professionals is dedicated to providing the highest level of service and support to our clients. We understand that every business is unique, which is why we take the time to understand your specific needs and goals before developing a customized digital marketing strategy.
-          <br/>
-          One of our core services is search engine optimization (SEO). SEO is the process of optimizing your website and online content to rank higher in search engine results pages (SERPs). This is important because higher search rankings mean more visibility and traffic for your business. Our team of SEO experts will work with you to identify the right keywords to target, optimize your website's structure and content, and build high-quality backlinks to improve your search rankings.
+          InfoDrive Solutions is a leading digital marketing company with
+          locations in Singapore, Malaysia, and India. At InfoDrive Solutions,
+          we believe that the key to success in the modern world is a strong
+          online presence. That's why we offer a range of digital marketing
+          services designed to help businesses of all sizes reach their target
+          audience and achieve their goals.
+          <br />
+          Our team of experienced professionals is dedicated to providing the
+          highest level of service and support to our clients. We understand
+          that every business is unique, which is why we take the time to
+          understand your specific needs and goals before developing a
+          customized digital marketing strategy.
+          <br />
+          One of our core services is search engine optimization (SEO). SEO is
+          the process of optimizing your website and online content to rank
+          higher in search engine results pages (SERPs). This is important
+          because higher search rankings mean more visibility and traffic for
+          your business. Our team of SEO experts will work with you to identify
+          the right keywords to target, optimize your website's structure and
+          content, and build high-quality backlinks to improve your search
+          rankings.
         </Typography>
       </section>
 
       <section
         className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
       >
-        <Typography className='w100 mb0 pb10' gutterBottom variant='h2' component='div'>
-          Another important aspect of digital marketing is social media marketing.        
+        <Typography
+          className='w100 mb0 pb10'
+          gutterBottom
+          variant='h2'
+          component='div'
+        >
+          Another important aspect of digital marketing is social media
+          marketing.
         </Typography>
-        <Typography 
-          className='pr30'
-          variant='body2'
-          color='text.secondary'>
-          With billions of users on platforms like Facebook, Instagram, and LinkedIn, social media is a powerful tool for reaching and engaging with your target audience. Our team of social media experts will help you create and execute a social media strategy that aligns with your business goals and resonates with your audience.
-          In addition to SEO and social media marketing, we also offer a range of other digital marketing services, including:
+        <Typography className='pr30' variant='body2' color='text.secondary'>
+          With billions of users on platforms like Facebook, Instagram, and
+          LinkedIn, social media is a powerful tool for reaching and engaging
+          with your target audience. Our team of social media experts will help
+          you create and execute a social media strategy that aligns with your
+          business goals and resonates with your audience. In addition to SEO
+          and social media marketing, we also offer a range of other digital
+          marketing services, including:
         </Typography>
         <br />
         <br />
@@ -185,13 +213,15 @@ export default function SalesForceDevelopment() {
                   >
                     Email marketing
                   </Typography>
-                  <br/>
+                  <br />
                   <Typography
                     className='pr30'
                     variant='body2'
                     color='text.secondary'
                   >
-                    Email is a personal, direct way to reach and engage with your audience. Our team can help you create and send targeted email campaigns that drive conversions.
+                    Email is a personal, direct way to reach and engage with
+                    your audience. Our team can help you create and send
+                    targeted email campaigns that drive conversions.
                   </Typography>
                 </CardContent>
               </Card>
@@ -208,13 +238,17 @@ export default function SalesForceDevelopment() {
                   >
                     Content marketing
                   </Typography>
-                  <br/>
+                  <br />
                   <Typography
                     className='pr30'
                     variant='body2'
                     color='text.secondary'
                   >
-                  High-quality content is essential for attracting and retaining customers. We can help you create and distribute valuable, relevant, and consistent content to attract and retain a clearly defined audience.                  </Typography>
+                    High-quality content is essential for attracting and
+                    retaining customers. We can help you create and distribute
+                    valuable, relevant, and consistent content to attract and
+                    retain a clearly defined audience.{' '}
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
@@ -230,13 +264,15 @@ export default function SalesForceDevelopment() {
                   >
                     Pay-per-click (PPC) advertising
                   </Typography>
-                  <br/>
+                  <br />
                   <Typography
                     className='pr30'
                     variant='body2'
                     color='text.secondary'
                   >
-                  PPC is a form of advertising where you only pay when someone clicks on your ad. We can help you create and manage PPC campaigns on platforms like Google Ads and Bing Ads.                  
+                    PPC is a form of advertising where you only pay when someone
+                    clicks on your ad. We can help you create and manage PPC
+                    campaigns on platforms like Google Ads and Bing Ads.
                   </Typography>
                 </CardContent>
               </Card>
@@ -253,18 +289,20 @@ export default function SalesForceDevelopment() {
                   >
                     Online reputation management
                   </Typography>
-                  <br/>
+                  <br />
                   <Typography
                     className='pr30'
                     variant='body2'
                     color='text.secondary'
                   >
-                  Your online reputation is important, and it's essential to keep it in good standing. We can help you monitor and manage your online reputation to ensure that your business presents a positive image to potential customers.           
+                    Your online reputation is important, and it's essential to
+                    keep it in good standing. We can help you monitor and manage
+                    your online reputation to ensure that your business presents
+                    a positive image to potential customers.
                   </Typography>
                 </CardContent>
               </Card>
             </Grid>
-
           </Grid>
         </Box>
       </section>
@@ -278,7 +316,7 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Take Your Business to the Next Level with Custom SaaS Solutions.
+          Get in Touch with Us for a Custom Digital Marketing Solution
         </Typography>
         <Button
           href='/contact-us.html'
