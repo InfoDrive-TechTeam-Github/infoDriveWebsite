@@ -184,7 +184,16 @@ function DrawerAppBar(props) {
                         className="customIcon"
                       />
                     </ListItem>
-                    
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/sap-emarsys.html" >
+                        <ListItemText primary={'SAP Emarsys'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/careers.html" >
+                        <ListItemText primary={'Careers'} />
+                      </ListItemButton>
+                    </ListItem>
                   </List>
                 </Menu>
 
@@ -401,6 +410,16 @@ function DrawerAppBar(props) {
                           fontWeight: "bolder",
                           marginLeft: "-12px"}}
                       />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/sap-emarsys.html" >
+                        <ListItemText primary={'SAP Emarsys'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/careers.html" >
+                        <ListItemText primary={'Careers'} />
+                      </ListItemButton>
                     </ListItem>
                   </List>
                 </Menu>

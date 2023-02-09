@@ -296,6 +296,13 @@ img {
   padding-right: 0;
 }
 
+.sapEmarsysServices {
+  background: url('images/06a329493177b9463dd2ccc980fee2a5.jpeg');
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .readmore {
   font-size: 16px;
   color: #fff;

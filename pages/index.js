@@ -488,7 +488,7 @@ export default function Index() {
                     SUCCESSFUL PROJECTS
                   </Typography>
                   <Typography gutterBottom variant='h2' component='div'>
-                    25+
+                    65+
                   </Typography>
                   <Typography gutterBottom variant='h3' component='div'>
                     YEARS OF EXPERIENCE
@@ -498,9 +498,6 @@ export default function Index() {
                   </Typography>
                   <Typography gutterBottom variant='h3' component='div'>
                     HAPPY CLIENTS
-                  </Typography>
-                  <Typography gutterBottom variant='h2' component='div'>
-                    30+
                   </Typography>
                 </CardContent>
               </Card>
