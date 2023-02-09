@@ -41,21 +41,22 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Top Android App Development Company & Developers in Singapore,
-          Malaysia, and India
+          Salesforce Marketing Cloud Implementation and Consulting Services in
+          Singapore, Malaysia
         </title>
         <meta
           name='description'
-          content='At InfoDrive Solutions, we specialize in developing high-quality android applications for businesses and organizations across Singapore, Malaysia, and India. With a team of experienced and skilled android developers.'
+          content="Transform your marketing strategy with InfoDrive Solutions' Salesforce Marketing Cloud services. Our experts offer consultation, implementation, and customization solutions for businesses in Singapore, Malaysia, India, and ASEAN."
         />
         <meta
           name='keywords'
-          content='Android App Development Company, Android App Development Company in Singapore, Android App Development Company in Malaysia, Android App Development Company in Kuala Lumpur, Android App Development Company in Bangalore, Top Android App Development Company in Singapore, Top Android App Development Company in Malaysia, Android App Developers in Singapore, Top Android App Developers in Malaysia, Android App Developers in India, Android App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, Android App Development'
+          content='Salesforce Marketing Cloud Implementation, Salesforce Marketing Cloud Consulting Services, Salesforce Marketing Cloud Consulting Services in Singapore, Salesforce Marketing Cloud Consulting Services in Malaysia, Salesforce Marketing Cloud benefits, Salesforce Marketing Cloud Automation, Salesforce Marketing Cloud integrations, Salesforce Marketing Cloud Customization, Salesforce Marketing Cloud for Small business, Salesforce Marketing Cloud Consulting Services in India, Salesforce Marketing Cloud for ASEAN businesses, Salesforce Marketing Cloud customization in India'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/android-app-development.html'
+          href=' https://infodrive-solutions.com/marketing-cloud.html'
         />
+
         <meta
           property='og:title'
           content='Top Android App Development Company & Developers in Singapore,Malaysia, and India'
@@ -150,8 +151,7 @@ export default function SalesForceDevelopment() {
 
       <section className={`sectionBox`}>
         <Typography className='w100' gutterBottom variant='h1' component='h1'>
-          Power Your Marketing Efforts with Salesforce Marketing Cloud
-          Solutions
+          Power Your Marketing Efforts with Salesforce Marketing Cloud Solutions
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='div'>

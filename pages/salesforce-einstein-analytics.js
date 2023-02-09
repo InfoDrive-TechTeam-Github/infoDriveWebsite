@@ -41,21 +41,22 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Top Android App Development Company & Developers in Singapore,
-          Malaysia, and India
+          Salesforce Einstein Analytics, Features, Integrations, and
+          Customization
         </title>
         <meta
           name='description'
-          content='At InfoDrive Solutions, we specialize in developing high-quality android applications for businesses and organizations across Singapore, Malaysia, and India. With a team of experienced and skilled android developers.'
+          content="Discover actionable insights with InfoDrive Solutions' Salesforce Einstein Analytics services. Our experts offer customization, integration, and pricing solutions to help small businesses take advantage of the full features of Salesforce Einstein Analytics."
         />
         <meta
           name='keywords'
-          content='Android App Development Company, Android App Development Company in Singapore, Android App Development Company in Malaysia, Android App Development Company in Kuala Lumpur, Android App Development Company in Bangalore, Top Android App Development Company in Singapore, Top Android App Development Company in Malaysia, Android App Developers in Singapore, Top Android App Developers in Malaysia, Android App Developers in India, Android App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, Android App Development'
+          content='Salesforce Einstein Analytics features, Salesforce Einstein Analytics pricing, Salesforce Einstein Analytics integrations, Salesforce Einstein Analytics customization, Salesforce Einstein Analytics for small business, Salesforce Einstein Analytics'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/android-app-development.html'
+          href='https://infodrive-solutions.com/salesforce-einstein-analytics.html'
         />
+
         <meta
           property='og:title'
           content='Top Android App Development Company & Developers in Singapore,Malaysia, and India'
