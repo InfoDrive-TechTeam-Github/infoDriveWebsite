@@ -1499,7 +1499,17 @@ img {
   }
   .connectUs.backDrop .MuiTypography-h3, .connectUs.backDrop a{
     font-size: 15px ;
+  }
+  .cardcareer{
+    margin: 0 !important;
   } 
+  .cardcareer .MuiTypography-h1{
+    padding-top: 0;
+  }
+  .cardcareer .MuiTypography-h3{
+    text-align: right;
+    left:0 !important;
+  }
 }
 
 @media (min-width: 376px) and (max-width: 619px) {

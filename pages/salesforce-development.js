@@ -41,25 +41,22 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Top Android App Development Company & Developers in Singapore,
-          Malaysia, and India
+          Salesforce Consulting Service & Development Partner Company in
+          Singapore, Malaysia, and India - InfoDrive Solutions
         </title>
         <meta
           name='description'
-          content='At InfoDrive Solutions, we specialize in developing high-quality android applications for businesses and organizations across Singapore, Malaysia, and India. With a team of experienced and skilled android developers.'
+          content='InfoDrive Solutions is a leading Salesforce consulting and development partner company offering expert services in Singapore, Malaysia, and India. Partner with us for customized Salesforce solutions.'
         />
         <meta
           name='keywords'
-          content='Android App Development Company, Android App Development Company in Singapore, Android App Development Company in Malaysia, Android App Development Company in Kuala Lumpur, Android App Development Company in Bangalore, Top Android App Development Company in Singapore, Top Android App Development Company in Malaysia, Android App Developers in Singapore, Top Android App Developers in Malaysia, Android App Developers in India, Android App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, Android App Development'
+          content='Salesforce Consulting Company, Salesforce Development Partner Company, Salesforce Service Provider in Singapore, Salesforce Consulting Company in Singapore, Salesforce Consulting Company in Malaysia, Salesforce Service Provider in Malaysia, Salesforce Consulting Partner in Singapore, Salesforce Consulting Partner in Malaysia, Salesforce Partner Company in Singapore, Salesforce Partner Company in Malaysia, Salesforce Partner Company in India, Professional Salesforce Development services, Salesforce certified consultant'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/android-app-development.html'
+          href='https://infodrive-solutions.com/salesforce-development.html'
         />
-        <meta
-          property='og:title'
-          content='Top Android App Development Company & Developers in Singapore,Malaysia, and India'
-        />
+
         <meta
           property='og:image'
           content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
