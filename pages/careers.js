@@ -34,6 +34,8 @@ import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
 import Head from 'next/head';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 
 import LeadForm from '../components/leadForm';
 export default function SalesForceDevelopment() {
@@ -96,9 +98,9 @@ export default function SalesForceDevelopment() {
             </Typography>
 
             <Typography gutterBottom variant='h1' component='div'>
-              The team is growing with <br/>
-              a variety of opportunities <br/>
-              available 
+              The team is growing with <br />
+              a variety of opportunities <br />
+              available
             </Typography>
             <Button
               href='/contact-us.html'
@@ -146,13 +148,311 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography  gutterBottom variant='h1' component='h1'>
-          Explore popular jobs        
+        <Typography gutterBottom variant='h1' component='h1'>
+          Explore popular jobs
         </Typography>
 
-        <Typography  gutterBottom variant='h5' component='div'>
-          InfoDrive is always on a lookout for passionate, creative people who have the zeal to achieve the extraordinary. We welcome candidates who think they can contribute positively to our team and help us take InfoDrive to further levels of excellency. If you think, you're the perfect fit for our organization, please send your CV and cover letter to info@infodrive-solutions.com. You can find the latest openings here:
+        <Typography gutterBottom variant='h5' component='div'>
+          InfoDrive is always on a lookout for passionate, creative people who
+          have the zeal to achieve the extraordinary. We welcome candidates who
+          think they can contribute positively to our team and help us take
+          InfoDrive to further levels of excellency. If you think, you're the
+          perfect fit for our organization, please send your CV and cover letter
+          to info@infodrive-solutions.com. You can find the latest openings
+          here:
         </Typography>
+      </section>
+
+      <section className={`sectionBox nm `}>
+        <Grid container spacing={7} justify='center'>
+          <Grid item lg={6} xs={12}>
+            <Card className='cardcareer w100'>
+              <CardContent>
+                <Box
+                  className='mt30'
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                  }}
+                >
+                  <Typography gutterBottom variant='h1' component='div'>
+                    Talent <br />
+                    Acquisition
+                    <br /> Specialist
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='w100 ml'
+                  >
+                    9 days ago
+                  </Typography>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h5'
+                  component='div'
+                  className='w100 mt30'
+                >
+                  We are looking for an enthusiastic and confident individual
+                  who has experience in Recruitment. Join our wonderful team and
+                  elevate your career!
+                </Typography>
+                <Box className='mt30'>
+                  <Box className='careerbox'>
+                    <LocationOnIcon />
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      Sydney CBD, Inner West & Eastern Suburbs
+                    </Typography>
+                  </Box>
+                  <Box style={{ display: 'flex' }}>
+                    <MonetizationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      $80,000 - $99,999 + Super
+                    </Typography>
+                  </Box>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  className='mt30'
+                >
+                  Apply now
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item lg={6} xs={12}>
+            <Card className='cardcareer w100'>
+              <CardContent>
+                <Box
+                  className='mt30'
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                  }}
+                >
+                  <Typography gutterBottom variant='h1' component='div'>
+                    Talent <br />
+                    Acquisition
+                    <br /> Specialist
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='w100 ml'
+                  >
+                    9 days ago
+                  </Typography>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h5'
+                  component='div'
+                  className='w100 mt30'
+                >
+                  We are looking for an enthusiastic and confident individual
+                  who has experience in Recruitment. Join our wonderful team and
+                  elevate your career!
+                </Typography>
+                <Box className='mt30'>
+                  <Box className='careerbox'>
+                    <LocationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      Sydney CBD, Inner West & Eastern Suburbs
+                    </Typography>
+                  </Box>
+                  <Box style={{ display: 'flex' }}>
+                    <MonetizationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      $80,000 - $99,999 + Super
+                    </Typography>
+                  </Box>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  className='mt30'
+                >
+                  Apply now
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item lg={6} xs={12}>
+            <Card className='cardcareer w100'>
+              <CardContent>
+                <Box
+                  className='mt30'
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                  }}
+                >
+                  <Typography gutterBottom variant='h1' component='div'>
+                    Talent <br />
+                    Acquisition
+                    <br /> Specialist
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='w100 ml'
+                  >
+                    9 days ago
+                  </Typography>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h5'
+                  component='div'
+                  className='w100 mt30'
+                >
+                  We are looking for an enthusiastic and confident individual
+                  who has experience in Recruitment. Join our wonderful team and
+                  elevate your career!
+                </Typography>
+                <Box className='mt30'>
+                  <Box className='careerbox'>
+                    <LocationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      Sydney CBD, Inner West & Eastern Suburbs
+                    </Typography>
+                  </Box>
+                  <Box style={{ display: 'flex' }}>
+                    <MonetizationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      $80,000 - $99,999 + Super
+                    </Typography>
+                  </Box>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  className='mt30'
+                >
+                  Apply now
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          <Grid item lg={6} xs={12}>
+            <Card className='cardcareer w100'>
+              <CardContent>
+                <Box
+                  className='mt30'
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                  }}
+                >
+                  <Typography gutterBottom variant='h1' component='div'>
+                    Talent <br />
+                    Acquisition
+                    <br /> Specialist
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='w100 ml'
+                  >
+                    9 days ago
+                  </Typography>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h5'
+                  component='div'
+                  className='w100 mt30'
+                >
+                  We are looking for an enthusiastic and confident individual
+                  who has experience in Recruitment. Join our wonderful team and
+                  elevate your career!
+                </Typography>
+                <Box className='mt30'>
+                  <Box className='careerbox'>
+                    <LocationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      Sydney CBD, Inner West & Eastern Suburbs
+                    </Typography>
+                  </Box>
+                  <Box style={{ display: 'flex' }}>
+                    <MonetizationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      $80,000 - $99,999 + Super
+                    </Typography>
+                  </Box>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  className='mt30'
+                >
+                  Apply now
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        </Grid>
       </section>
 
       <section className={`sectionBox connectUs backDrop mb0`}>
