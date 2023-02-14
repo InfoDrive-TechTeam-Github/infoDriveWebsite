@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useEffect } from 'react';
 import Head from 'next/head';
 import Navbar from './navbar';
 import utilStyles from '../styles/utils.module.css';
@@ -18,8 +19,16 @@ import TabPanel from '@mui/lab/TabPanel';
 import Avatar from '@mui/material/Avatar';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import Link from '@mui/material/Link';
-
+function disableRightClick(event) {
+  event.preventDefault();
+}
 export default function Header() {
+  useEffect(() => {
+    window.addEventListener('contextmenu', disableRightClick);
+    return () => {
+      window.removeEventListener('contextmenu', disableRightClick);
+    };
+  }, []);
   return (
     <div>
       <Navbar />
