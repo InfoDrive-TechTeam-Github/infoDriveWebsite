@@ -34,11 +34,12 @@ import { Paper } from '@mui/material'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import StarIcon from '@mui/icons-material/Star';
-import emailjs from 'emailjs-com';
+
 import { useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+//import nodemailer from 'nodemailer';
 
 export default function leadForm() {
   const [value, setValue] = React.useState('1');
@@ -57,43 +58,55 @@ export default function leadForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("input____",inputData);
-    const response = await axios.post(`http://206.189.149.207:4001/GetEmailQuery`, inputData)
-    console.log(response.status,response);
-    if(response.statusText == "OK"){
-      toast.success("Thank you for your message. We will Response in 2 business days", {
-        position: 'top-right',
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    }else{
-      toast.success("Please Try Again", {
-        position: 'top-right',
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    }
+   
+    try {
+			const res = await fetch(`/api/contact`, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify(inputData),
+			})
+
+			const { error } = await res.json()
+
+			if (error) {
+				
+				toast.warning("Please Try Again", {
+              position: 'top-right',
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            });
+				return
+			}else{
+        toast.success("Thank you for your message. We will Response in 2 business days", {
+              position: 'top-right',
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            });
+			}
+		} catch (error) {
+    toast.error("Something went wrong", {
+          position: 'top-right',
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+		}
+
   }
 
-
-  const sendEmail = (e) =>{
-    e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
-
-    emailjs.sendForm('service_mrxeobj', 'template_bwbn41u', e.target, '8A4PON3sVCyhdpw3U')
-      .then((result) => {
-          window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
-      }, (error) => {
-          console.log(error.text);
-      });
-  }
   return (
     <>
       <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
