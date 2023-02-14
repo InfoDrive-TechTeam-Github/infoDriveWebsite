@@ -536,7 +536,7 @@ export default function Index() {
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
                       alt='Aidin Mahmoodi'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35aqb.png'
+                      src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
                     <div className='testmonialStar'>
@@ -589,7 +589,7 @@ export default function Index() {
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
                       alt='Kester Poh'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35abq.png'
+                      src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
                     <div className='testmonialStar'>
@@ -638,7 +638,7 @@ export default function Index() {
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
                       alt='Mark Durante'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35aqb.png'
+                      src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
                     <div className='testmonialStar'>
@@ -683,7 +683,7 @@ export default function Index() {
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
                       alt='Sivachanthiran Belasamy'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35abq.png'
+                      src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
                     <div className='testmonialStar'>
