@@ -43,40 +43,33 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Top Android App Development Company & Developers in Singapore,
-          Malaysia, and India
+          Join our team at Infodrive Solutions - Exciting Career Opportunities
+          Available
         </title>
         <meta
           name='description'
-          content='At InfoDrive Solutions, we specialize in developing high-quality android applications for businesses and organizations across Singapore, Malaysia, and India. With a team of experienced and skilled android developers.'
-        />
-        <meta
-          name='keywords'
-          content='Android App Development Company, Android App Development Company in Singapore, Android App Development Company in Malaysia, Android App Development Company in Kuala Lumpur, Android App Development Company in Bangalore, Top Android App Development Company in Singapore, Top Android App Development Company in Malaysia, Android App Developers in Singapore, Top Android App Developers in Malaysia, Android App Developers in India, Android App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, Android App Development'
+          content='Discover exciting career opportunities at Infodrive Solutions, a leading software development company. Apply now and join our team of talented professionals in delivering innovative solutions to our clients. Explore our current job openings and take the first step towards a rewarding career.'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/android-app-development.html'
+          href='https://infodrive-solutions.com/careers.html'
         />
-        <meta
-          property='og:title'
-          content='Top Android App Development Company & Developers in Singapore,Malaysia, and India'
-        />
-        <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
-        />
-        <link rel='icon' href='/favicon.png' />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      </Head>
+      <meta
+        property='og:image'
+        content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+      />
+      <link rel='icon' href='/favicon.png' />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-MB38MVS');`,
-          }}
-        />
-      </Head>
+        }}
+      />
+
       <noscript>
         <iframe
           src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
