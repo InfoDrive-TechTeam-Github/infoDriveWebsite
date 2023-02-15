@@ -919,6 +919,47 @@ export default function About() {
                 </CardContent>
               </Card>
             </Grid>
+
+
+            <Grid
+              item
+              xs={2}
+              className='rightOurCoreTeam'
+              style={{ padding: '15px' }}
+            >
+              <Card>
+                <CardMedia
+                  component='img'
+                  height='240'
+                  image='images/team-photos/dev.png'
+                  alt='Devraj Singh'
+                />
+                <CardContent>
+                  <Typography
+                    className='widthInitial fs20'
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                  >
+                    <span>Devraj Singh</span>
+                    <a
+                      href='https://www.linkedin.com/in/devrajsinghrawat/'
+                      className='red'
+                    >
+                      <LinkedInIcon />
+                    </a>
+                  </Typography>
+                  <Typography
+                    className='widthInitial fs18'
+                    gutterBottom
+                    variant='h4'
+                    component='div'
+                  >
+                    Blockchain Lead at InfoDrive Solutions
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
           </Grid>
         </Box>
       </section>
