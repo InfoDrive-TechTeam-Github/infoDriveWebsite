@@ -41,40 +41,33 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Salesforce Lightning App Development Services, Features,
-          Customization, and Implementation
+          Salesforce Support | Singapore, Malaysia, and India - Info Drive
+          Solutions
         </title>
         <meta
           name='description'
-          content="Revolutionize your Salesforce experience with InfoDrive Solutions' Lightning App Development Services. Our experts offer customization, implementation, and feature-rich solutions for small businesses in Singapore, Malaysia, and India."
-        />
-        <meta
-          name='keywords'
-          content='Salesforce Lightning App Development Services, Salesforce Lightning for small business, Salesforce Lightning Customization, Salesforce Lightning Features, Salesforce Lightning Implementation, Salesforce Lightning App Development Services in Singapore, Salesforce Lightning App Development Services in Malaysia, Salesforce Lightning App Development Services in India'
+          content='Info Drive Solution team has certified salesforce architects, developers and administrator. We monitor your system 24/7 that helps you predict and prevent issues.'
         />
         <link
           rel='canonical'
-          href=' https://infodrive-solutions.com/salesforce-lightning.html '
+          href='https://infodrive-solutions.com/salesforce-support.html'
         />
-        <meta
-          property='og:title'
-          content='Top Android App Development Company & Developers in Singapore,Malaysia, and India'
-        />
-        <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
-        />
-        <link rel='icon' href='/favicon.png' />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      </Head>
+      <meta
+        property='og:image'
+        content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+      />
+      <link rel='icon' href='/favicon.png' />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-MB38MVS');`,
-          }}
-        />
-      </Head>
+        }}
+      />
+
       <noscript>
         <iframe
           src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'

@@ -41,25 +41,21 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Top Android App Development Company & Developers in Singapore,
-          Malaysia, and India
+          SEO Service Provider & Company in Singapore, Malaysia, and India
         </title>
         <meta
           name='description'
-          content='At InfoDrive Solutions, we specialize in developing high-quality android applications for businesses and organizations across Singapore, Malaysia, and India. With a team of experienced and skilled android developers.'
+          content='InfoDrive Solutions is a leading search engine optimization company offering expert SEO services in Singapore, Malaysia, and India. As a top SEO consultant, we provide customized strategies for small businesses and startups to improve their online visibility.'
         />
         <meta
           name='keywords'
-          content='Android App Development Company, Android App Development Company in Singapore, Android App Development Company in Malaysia, Android App Development Company in Kuala Lumpur, Android App Development Company in Bangalore, Top Android App Development Company in Singapore, Top Android App Development Company in Malaysia, Android App Developers in Singapore, Top Android App Developers in Malaysia, Android App Developers in India, Android App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, Android App Development'
+          content='Search Engine Optimization Company, SEO Service Provider in Singapore, SEO Consultant in Singapore, SEO Company Near Me, SEO Strategy Provider in Singapore, SEO Company in Malaysia, SEO Company in Kuala Lumpur, SEO Services in Singapore, SEO Consultant in Malaysia, SEO Service Provider in Malaysia'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/android-app-development.html'
+          href='https://infodrive-solutions.com/search-engine-optimization.html'
         />
-        <meta
-          property='og:title'
-          content='Top Android App Development Company & Developers in Singapore,Malaysia, and India'
-        />
+
         <meta
           property='og:image'
           content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'

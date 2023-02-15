@@ -70,7 +70,7 @@ export default function leadForm() {
 
 			if (error) {
 				
-				toast.success("Please Try Again", {
+				toast.warning("Please Try Again", {
               position: 'top-right',
               autoClose: 2000,
               hideProgressBar: false,
@@ -92,7 +92,7 @@ export default function leadForm() {
             });
 			}
 		} catch (error) {
-    toast.success("Something went wrong", {
+    toast.error("Something went wrong", {
           position: 'top-right',
           autoClose: 2000,
           hideProgressBar: false,
