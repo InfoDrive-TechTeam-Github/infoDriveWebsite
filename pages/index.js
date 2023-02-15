@@ -39,7 +39,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-//import LeadForm from '../components/leadForm';
+import LeadForm from '../components/leadForm';
 
 export default function Index() {
   const [value, setValue] = React.useState('1');
@@ -55,56 +55,7 @@ export default function Index() {
   const handleChange = (e) => {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-   
-    try {
-			const res = await fetch(`/api/contact`, {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify(inputData),
-			})
 
-			const { error } = await res.json()
-
-			if (error) {
-				
-				toast.success("Please Try Again", {
-              position: 'top-right',
-              autoClose: 2000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-            });
-				return
-			}else{
-        toast.success("Thank you for your message. We will Response in 2 business days", {
-              position: 'top-right',
-              autoClose: 2000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-            });
-			}
-		} catch (error) {
-    toast.success("Something went wrong", {
-          position: 'top-right',
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
-		}
-
-  }
 
 
   var items = [
@@ -113,7 +64,7 @@ export default function Index() {
         {
           name: 'Aidin Mahmoodi',
           role: 'Product Lead at ServiceRocket',
-          description: `We reached out to InfoDrive to help us build a few technical POC (Proof of Concept) as our internal development teams were extremely busy with other products/projects. InfoDrive was very particularly quick and responsive, they quickly jumped on a call together requirements from us and provided their estimate and proposal in a short time.\n After a lengthy onboarding process from our side, InfoDrive assigned one of their remarkably capable, knowledgeable Salesforce certified engineers as our main technical person.\n I’d also like to point out that the entire team at InfoDrive is resourceful, responsive, and flexible. Our assigned engineer easily adopted our internal agile practices and was able to provide feedback on our sprint review and planning, similar to our internal development teams.`,
+          description: `We reached out to InfoDrive to help us build a few technical POC (Proof of Concept) as our internal development teams were extremely busy with other products/projects. InfoDrive was very particularly quick and responsive, they quickly jumped on a call together requirements from us and provided their estimate and proposal in a short time.\n After a lengthy onboarding process from our side, InfoDrive assigned one of their remarkably capable, knowledgeable Salesforce certified engineers as our main technical person.\n I’d also like to point out that the entire team at Info Drive is resourceful, responsive, and flexible. Our assigned engineer easily adopted our internal agile practices and was able to provide feedback on our sprint review and planning, similar to our internal development teams.`,
         },
         {
           name: 'Kester Poh',
@@ -135,7 +86,7 @@ export default function Index() {
           name: 'Sivachanthiran Belasamy',
           role: 'Founder & CEO at Falaina',
           description:
-            'InfoDrive Team had provided constant support to our Organisation by helping us in building the Custom tables and related API in Salesforce.   The team has always been reachable on the approach for the project. Further, the team has been more than happy to clarify any doubts that we may have had, and done several knowledge transfers for us to better understand Salesforce and its functionalities.   Thanks, Pradeep and team for the support, looking forward to working on the upcoming projects!',
+            'Info Drive Team had provided constant support to our Organisation by helping us in building the Custom tables and related API in Salesforce.   The team has always been reachable on the approach for the project. Further, the team has been more than happy to clarify any doubts that we may have had, and done several knowledge transfers for us to better understand Salesforce and its functionalities.   Thanks, Pradeep and team for the support, looking forward to working on the upcoming projects!',
         },
       ],
     },
@@ -146,7 +97,7 @@ export default function Index() {
       <Head>
         <title>
           Software Development & Digital Transformation Solutions Company in
-          Singapore, Malaysia & India - InfoDrive Solution
+          Singapore, Malaysia & India - Info Drive Solution
         </title>
         <meta
           name='description'
@@ -158,7 +109,7 @@ export default function Index() {
         />
         <meta
           property='og:title'
-          content='Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - InfoDrive Solution'
+          content='Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - Info Drive Solution'
         />
         <meta
           property='og:image'
@@ -708,7 +659,7 @@ export default function Index() {
                         (Founder & CEO at Falaina)
                       </Typography>
                       <Typography variant='body2' color='text.secondary'>
-                        InfoDrive Team had provided constant support to our
+                        Info Drive Team had provided constant support to our
                         Organisation by helping us in building the Custom tables
                         and related API in Salesforce. <br />
                         The team has always been reachable on the approach for
@@ -727,136 +678,8 @@ export default function Index() {
           }
         </Carousel>
       </section>
-      <section className={`sectionBox locationBox contactUsArea leadForm mt0`}>
-          <Box sx={{ flexGrow: 1 }} className="locationContent">
-            <Grid container spacing={0}>
-               
-               <Grid item xs="6"  className="leadFormBox">
-
-               <form className="contact-form" onSubmit={handleSubmit}>
-                <Box sx={{ '& > :not(style)': { ml: 6, mt: 7,maxWidth:'41%', width:'41%' } }}>
-                <Typography gutterBottom variant="h2" className='white' component="div">
-                Request a call back
-                            </Typography>
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Full Name"
-                            name="full_name"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            onChange={handleChange}
-                            variant="standard"
-                        />
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Email Address"
-                            name="email_address"
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            onChange={handleChange}
-                            variant="standard"
-                        />
-
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Contact Number"
-                            name="contact_number"
-                            type='number' 
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            onChange={handleChange}
-                            variant="standard"
-                        />
-                        <TextField
-                            id="input-with-icon-textfield"
-                            label="Message"
-                            name="message"
-                            multiline
-                            rows={3}
-                            fullWidth sx={{ m: 1 }}
-                            InputProps={{
-                            startAdornment: (
-                                <InputAdornment position="start">
-                                </InputAdornment>
-                            ),
-                            }}
-                            onChange={handleChange}
-                            variant="standard"
-                        />
-                        <Stack spacing={2} direction="row">
-                            <Button type="submit" className="bgRed" variant="contained">Send Message 3</Button>
-                        </Stack>
-                    </Box>
-                    </form>
-               </Grid>
-               <Grid item xs={6} className="leftLeadFormBox">
-                    <Grid item xs={12} className='contactUsB contactUsB1'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Pte Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 2 Changi Business Park avenue 1. #02-00, Singapore <br/>
-                            Phone: <a href="tel:+6592384299" style={{color:"#fff"}}>+65-9238 4299 </a><br/>
-                            Email: <a href="mailto:contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
-
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-                    <Grid item xs={12}  className='contactUsB contactUsB2'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDrive Solutions Sdn Bhd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br/>
-                            Phone: <a href="tel:+60123275811" style={{color:"#fff"}}>+60-1 2327 5811</a><br/>
-                            Email: <a href="mailto:contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
-
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-
-                    <Grid item xs={12}  className='contactUsB contactUsB3'>
-                        <Card >
-                        <CardContent>
-                            <Typography gutterBottom variant="h7" component="div">
-                            InfoDriven Solutions Pvt Ltd
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary">
-                            Address: #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066<br/>
-                            Phone: <a href="tel:+919606188081" style={{color:"#fff"}}>+91-960 61880 81 </a><br/>
-                            Email: <a href="mailto:contact@infodrive-solutions.com" style={{color:"#fff"}}>contact@infodrive-solutions.com</a>
-                            </Typography>
-                        </CardContent>
-                        </Card>
-                    </Grid>
-               </Grid>
-            </Grid>
-        </Box>
-      </section>
-              {/* <LeadForm /> */}
+      <LeadForm />
       <Footer />
-      <ToastContainer />
     </>
   );
 }
