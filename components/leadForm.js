@@ -39,8 +39,6 @@ import { useState } from 'react';
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-//import nodemailer from 'nodemailer';
-
 export default function leadForm() {
   const [value, setValue] = React.useState('1');
 
@@ -72,7 +70,7 @@ export default function leadForm() {
 
 			if (error) {
 				
-				toast.success("Please Try Again", {
+				toast.warning("Please Try Again", {
               position: 'top-right',
               autoClose: 2000,
               hideProgressBar: false,
@@ -94,7 +92,7 @@ export default function leadForm() {
             });
 			}
 		} catch (error) {
-    toast.success("Something went wrong", {
+    toast.error("Something went wrong", {
           position: 'top-right',
           autoClose: 2000,
           hideProgressBar: false,

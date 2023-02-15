@@ -57,30 +57,65 @@ export default function Footer() {
                 <nav aria-label='main mailbox folders'>
                   <List>
                     <ListItem>
-                      <ListItemButton component='a' href='/about-us.html'>
-                        <ListItemText primary='About' />
+                      <ListItemButton component='a' target="_blank" href='/about-us.html'>
+                        <ListItemText primary='About us' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component='a' href='/contact-us.html'>
-                        <ListItemText primary='Contact' />
+                      <ListItemButton component='a' target="_blank" href='/careers.html'>
+                        <ListItemText primary='Career' />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton component='a' target="_blank" href='/contact-us.html'>
+                        <ListItemText primary='Contact Us' />
                       </ListItemButton>
                     </ListItem>
                   </List>
                 </nav>
               </Grid>
-              <Grid item xs={3}>
+              <Grid item xs={4}>
                 <Typography gutterBottom variant='h3' component='div'>
-                  Legal
+                  Quick Links
                 </Typography>
                 <nav aria-label='main mailbox folders'>
                   <List>
                     <ListItem>
-                      <ListItemButton component='a' href='#about-us'>
-                        <ListItemText primary='Privacy Policy' />
+                      <ListItemButton component='a' target="_blank" href='/saas-application-development.html'>
+                        <ListItemText primary='SaaS Application Development' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
+                      <ListItemButton component='a' target="_blank" href='salesforce-development.html'>
+                        <ListItemText primary='Salesforce Consulting' />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton component='a' target="_blank" href='marketing-cloud.html'>
+                        <ListItemText primary='Marketing Cloud' />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton component='a' target="_blank" href='sales-cloud.html'>
+                        <ListItemText primary='Sales Cloud' />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton component='a' target="_blank" href='service-cloud.html'>
+                        <ListItemText primary='Service Cloud' />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
+                      <ListItemButton component='a' target="_blank" href='sap-emarsys.html'>
+                        <ListItemText primary='SAP Emarsys*' />
+                      </ListItemButton>
+                    </ListItem>
+                    {/* <ListItem>
+                      <ListItemButton component='a' href='#about-us'>
+                        <ListItemText primary='Privacy Policy' />
+                      </ListItemButton>
+                    </ListItem> */}
+                    {/* <ListItem>
                       <ListItemButton component='a' href='#contact'>
                         <ListItemText primary='Terms & Services' />
                       </ListItemButton>
@@ -94,11 +129,11 @@ export default function Footer() {
                       <ListItemButton component='a' href='#blogs'>
                         <ListItemText primary='Refund Policy' />
                       </ListItemButton>
-                    </ListItem>
+                    </ListItem> */}
                   </List>
                 </nav>
               </Grid>
-              <Grid item xs={6}>
+              <Grid item xs={5}>
                 <Typography gutterBottom variant='h3' component='div'>
                   Contact Us
                 </Typography>

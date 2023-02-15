@@ -56,59 +56,7 @@ export default function Index() {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   console.log('input____', inputData);
-  //   const response = await axios.post(
-  //     `http://206.189.149.207:4001/GetEmailQuery`,
-  //     inputData
-  //   );
-  //   console.log(response.status, response);
-  //   if (response.statusText == 'OK') {
-  //     toast.success(
-  //       'Thank you for your message. We will Response in 2 business days',
-  //       {
-  //         position: 'top-right',
-  //         autoClose: 2000,
-  //         hideProgressBar: false,
-  //         closeOnClick: true,
-  //         pauseOnHover: true,
-  //         draggable: true,
-  //         progress: undefined,
-  //       }
-  //     );
-  //   } else {
-  //     toast.success('Please Try Again', {
-  //       position: 'top-right',
-  //       autoClose: 2000,
-  //       hideProgressBar: false,
-  //       closeOnClick: true,
-  //       pauseOnHover: true,
-  //       draggable: true,
-  //       progress: undefined,
-  //     });
-  //   }
-  // };
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
-
-  //   emailjs
-  //     .sendForm(
-  //       'service_mrxeobj',
-  //       'template_bwbn41u',
-  //       e.target,
-  //       '8A4PON3sVCyhdpw3U'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
 
   var items = [
     {
@@ -537,7 +485,7 @@ export default function Index() {
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
                       alt='Aidin Mahmoodi'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35aqb.png'
+                      src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
                     <div className='testmonialStar'>
@@ -590,7 +538,7 @@ export default function Index() {
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
                       alt='Kester Poh'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35abq.png'
+                      src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
                     <div className='testmonialStar'>
@@ -639,7 +587,7 @@ export default function Index() {
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
                       alt='Mark Durante'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35aqb.png'
+                      src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
                     <div className='testmonialStar'>
@@ -684,7 +632,7 @@ export default function Index() {
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
                       alt='Sivachanthiran Belasamy'
-                      src='images/c1a0b62fe5e42bf0f9af1ac1d77a35abq.png'
+                      src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
                     <div className='testmonialStar'>
