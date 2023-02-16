@@ -41,24 +41,26 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Top Android App Development Company & Developers in Singapore,
+          SaaS application development company & Services in Singapore,
           Malaysia, and India
         </title>
         <meta
           name='description'
-          content='At InfoDrive Solutions, we specialize in developing high-quality android applications for businesses and organizations across Singapore, Malaysia, and India. With a team of experienced and skilled android developers.'
+          content='InfoDrive Solutions is a leading SaaS application development company offering comprehensive services in Singapore, Malaysia, and India. Our expertise in SaaS model software development and platform building helps clients build custom SaaS apps from scratch.'
         />
         <meta
           name='keywords'
-          content='Android App Development Company, Android App Development Company in Singapore, Android App Development Company in Malaysia, Android App Development Company in Kuala Lumpur, Android App Development Company in Bangalore, Top Android App Development Company in Singapore, Top Android App Development Company in Malaysia, Android App Developers in Singapore, Top Android App Developers in Malaysia, Android App Developers in India, Android App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, Android App Development'
+          content='SaaS application development, SaaS development company, SaaS application development services, SaaS application development company, SaaS software development company, SaaS application development platform, build a SaaS app from scratch, SaaS model software development, SaaS software development services, SaaS application development company in Singapore, SaaS application development company in Malaysia, SaaS application development company in Singapore'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/android-app-development.html'
+          href='https://infodrive-solutions.com/saas-application-development.html'
         />
+
         <meta
           property='og:title'
-          content='Top Android App Development Company & Developers in Singapore,Malaysia, and India'
+          content='SaaS application development company & Services in Singapore,
+          Malaysia, and India'
         />
         <meta
           property='og:image'

@@ -56,23 +56,27 @@ export default function SalesForceDevelopment() {
           rel='canonical'
           href='https://infodrive-solutions.com/search-engine-optimization.html'
         />
-      </Head>
+        <meta
+          property='og:title'
+          content='SAP Emarsys Customer Engagement | Services & Consulting – InfoDrive
+          Solutions'
+        />
 
-      <meta
-        property='og:image'
-        content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
-      />
-      <link rel='icon' href='/favicon.png' />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <meta
+          property='og:image'
+          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+        />
+        <link rel='icon' href='/favicon.png' />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-MB38MVS');`,
-        }}
-      />
-
+          }}
+        />
+      </Head>
       <noscript>
         <iframe
           src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
@@ -89,16 +93,13 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
-              SAP Emarsys Customer Engagement
-            </Typography>
-
+            <Typography gutterBottom variant='h3' component='div'></Typography>
+            automation capabilities of SAP Emarsys.
             <Typography gutterBottom variant='h1' component='div'>
-              Emarsys is the leading global provider of a <br />
-              cloud-based Omnichannel Customer <br />
-              Engagement Platform, designed for <br />
-              marketing automation and marketing <br />
-              cloud for retail and B2C-customer businesses.
+              Unlock the full potential of your marketing
+              <br />
+              strategy with the advanced <br />
+              automation capabilities of SAP Emarsys <br />
             </Typography>
             <Button
               href='/contact-us.html'
@@ -144,62 +145,60 @@ export default function SalesForceDevelopment() {
           </Grid>
         </Box>
       </div>
-      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2`}>
-        <Typography gutterBottom variant='h2' className='mb0' component='div'>
-          It is a platform trusted by leading brands and innovative marketers
-          across the globe. Build, launch, and scale personalized 1:1
-          cross-channel campaigns that drive business outcomes.
+      <section
+        className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 pb30`}
+      >
+        <Typography variant='h1' className='mb0' component='h1'>
+          SAP Emarsys Customer Engagement
         </Typography>
-        <br />
-        <br />
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0}>
-            <Grid item xs={6}>
-              <Card>
-                <CardContent>
-                  <Typography
-                    variant='body2'
-                    className='pr10'
-                    color='text.secondary'
-                  >
-                    SAP Emarsys Customer Engagement is a powerful and
-                    comprehensive customer engagement platform that enables
-                    businesses to deliver personalized and relevant
-                    communications to their customers across various channels.
-                    With SAP Emarsys, businesses can connect with their
-                    customers in real-time, using data-driven insights to drive
-                    customer engagement and loyalty. The SAP Emarsys platform is
-                    designed to help businesses manage their customer
-                    relationships and interactions in a more effective and
-                    efficient manner. It provides a range of tools and features
-                    that allow businesses to segment their customer base,
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
 
-            <Grid item xs={6}>
-              <Card>
-                <CardContent>
-                  <Typography variant='body2' color='text.secondary'>
-                    create targeted campaigns, and deliver personalized
-                    messaging to the right audience at the right time. One of
-                    the key benefits of SAP Emarsys is its ability to leverage
-                    data and analytics to drive customer engagement. The
-                    platform integrates with a wide range of data sources,
-                    including CRM systems, social media platforms, and web
-                    analytics tools, to provide businesses with a 360-degree
-                    view of their customers. This allows businesses to
-                    understand their customers' needs, preferences, and
-                    behaviors, and use this information to create targeted and
-                    personalized communications that drive engagement and
-                    loyalty.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          </Grid>
-        </Box>
+        <Typography
+          gutterBottom
+          variant='h5'
+          className='w100 mb15'
+          component='div'
+        >
+          Emarsys is the leading global provider of a cloud-based Omnichannel
+          Customer Engagement Platform, designed for marketing automation and
+          marketing cloud for retail and B2C-customer businesses. It is a
+          platform trusted by leading brands and innovative marketers across the
+          globe. Build, launch, and scale personalized 1:1 cross-channel
+          campaigns that drive business outcomes.
+        </Typography>
+        <Typography
+          gutterBottom
+          variant='h5'
+          className='w100 mb15'
+          component='div'
+        >
+          SAP Emarsys Customer Engagement is a powerful and comprehensive
+          customer engagement platform that enables businesses to deliver
+          personalized and relevant communications to their customers across
+          various channels. With SAP Emarsys, businesses can connect with their
+          customers in real-time, using data-driven insights to drive customer
+          engagement and loyalty. <br />
+          The SAP Emarsys platform is designed to help businesses manage their
+          customer relationships and interactions in a more effective and
+          efficient manner. It provides a range of tools and features that allow
+          businesses to segment their customer base, create targeted campaigns,
+          and deliver personalized messaging to the right audience at the right
+          time.{' '}
+        </Typography>
+        <Typography
+          gutterBottom
+          variant='h5'
+          className='w100 mb15'
+          component='div'
+        >
+          One of the key benefits of SAP Emarsys is its ability to leverage data
+          and analytics to drive customer engagement. The platform integrates
+          with a wide range of data sources, including CRM systems, social media
+          platforms, and web analytics tools, to provide businesses with a
+          360-degree view of their customers. This allows businesses to
+          understand their customers' needs, preferences, and behaviors, and use
+          this information to create targeted and personalized communications
+          that drive engagement and loyalty.
+        </Typography>
       </section>
 
       <section
@@ -246,6 +245,13 @@ export default function SalesForceDevelopment() {
           By leveraging data and analytics, businesses can create targeted and
           relevant communications that drive customer engagement and loyalty,
           ultimately leading to increased revenue and growth.
+          <br />
+          Whether you're a small business looking to grow your customer base or
+          a large enterprise looking to optimize your customer relationships,
+          SAP Emarsys has the tools and capabilities you need to succeed. With
+          its robust feature set and comprehensive approach to customer
+          engagement, SAP Emarsys is the ideal choice for businesses of all
+          sizes and industries.
         </Typography>
       </section>
 
@@ -256,7 +262,7 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Elevate Your Marketing Strategy with Salesforce Marketing Cloud
+          Boost Your Customer Engagement with SAP Emarsys
         </Typography>
         <Button
           href='/contact-us.html'
