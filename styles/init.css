@@ -80,6 +80,9 @@
 .pl0 {
   padding-left: 0px;
 }
+.pl5 {
+  padding-left: 20px;
+}
 .pt15 {
   padding-top: 15px;
 }
@@ -131,6 +134,9 @@
 }
 .m15 {
   margin: 15;
+}
+.mb15 {
+  margin-bottom: 15 !important;
 }
 .ml {
   left: 50px !important;

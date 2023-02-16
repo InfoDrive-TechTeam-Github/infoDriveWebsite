@@ -269,7 +269,12 @@ export default function ServicesForStartUps() {
                 </Typography>
               </Grid>
               <Grid item xs={6}>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography
+                  gutterBottom
+                  variant='h5'
+                  component='div'
+                  className='pl5'
+                >
                   Employing the services provided by software development
                   outsourcing vendors like us will allow start-ups to have
                   better technical execution, by ensuring product quality is
