@@ -23,12 +23,12 @@ function disableRightClick(event) {
   event.preventDefault();
 }
 export default function Header() {
-  useEffect(() => {
-    window.addEventListener('contextmenu', disableRightClick);
-    return () => {
-      window.removeEventListener('contextmenu', disableRightClick);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('contextmenu', disableRightClick);
+  //   return () => {
+  //     window.removeEventListener('contextmenu', disableRightClick);
+  //   };
+  // }, []);
   return (
     <div>
       <Navbar />

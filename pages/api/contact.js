@@ -29,22 +29,27 @@ export default async (req, res) => {
     }
     return res.status(200).json({ error: "" });
 
-    // const mailData = {
-    // from: {
-    //     name: 'InfoDrive Contact Us Query',
-    //     address: 'contact@infodrive-solutions.com'
-    // },
-    //   from: 'contact@infodrive-solutions.com',
-    //   to: 'contact@infodrive-solutions.com',
-    //   subject: `New Inquiry form`,
-    //   text: req.body.message + " | Sent from: " + req.body.email_address,
-    //   html:`<h3>Hello you have received new Inquiry form Email ${req.body.email_address}</h3> <br/><b>Name : ${req.body.full_name}<br/> Eamil Id : ${req.body.email_address}<br/> Industry : ${req.body.industry}<br/> Contact Number: ${req.body.email_address}<br/> Message : ${req.body.message}`
-    // }
-    // transporter.sendMail(mailData, function (err, info) {
-    //   if(err)
-    //     console.log(err)
-    //   else
-    //     console.log("mail send",info)
-    // })
-    // return res.status(200)
   }
+  // require('dotenv').config()
+
+  // const sgMail = require('@sendgrid/mail')
+
+  // const {SG_API_KEY,FROM_EMAIL,TO_EMAIL} = process.env
+
+  // sgMail.setApiKey(SG_API_KEY)
+
+  // export default async function handler(req,res){
+  //    const {name, email, message} = req.body;
+
+  //    const msg = {
+  //     to: TO_EMAIL,
+  //     from:FROM_EMAIL,
+  //     subject:"NEXT JS CONTACT FORM",
+  //     html:`<p><strong>Name:</strong>${name}</p>
+  //     <p><strong>Email:</strong>${name}</p>
+  //     <p><strong>Message:</strong>${name}</p>`,
+  //    };
+  //    await sgMail.send(msg);
+  //    res.json({success:true});
+
+  // }
