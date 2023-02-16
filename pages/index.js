@@ -62,7 +62,7 @@ export default function Index() {
         {
           name: 'Aidin Mahmoodi',
           role: 'Product Lead at ServiceRocket',
-          description: `We reached out to InfoDrive to help us build a few technical POC (Proof of Concept) as our internal development teams were extremely busy with other products/projects. InfoDrive was very particularly quick and responsive, they quickly jumped on a call together requirements from us and provided their estimate and proposal in a short time.\n After a lengthy onboarding process from our side, InfoDrive assigned one of their remarkably capable, knowledgeable Salesforce certified engineers as our main technical person.\n I’d also like to point out that the entire team at InfoDrive is resourceful, responsive, and flexible. Our assigned engineer easily adopted our internal agile practices and was able to provide feedback on our sprint review and planning, similar to our internal development teams.`,
+          description: `We reached out to InfoDrive to help us build a few technical POC (Proof of Concept) as our internal development teams were extremely busy with other products/projects. InfoDrive was very particularly quick and responsive, they quickly jumped on a call together requirements from us and provided their estimate and proposal in a short time.\n After a lengthy onboarding process from our side, InfoDrive assigned one of their remarkably capable, knowledgeable Salesforce certified engineers as our main technical person.\n I’d also like to point out that the entire team at Info Drive is resourceful, responsive, and flexible. Our assigned engineer easily adopted our internal agile practices and was able to provide feedback on our sprint review and planning, similar to our internal development teams.`,
         },
         {
           name: 'Kester Poh',
@@ -84,7 +84,7 @@ export default function Index() {
           name: 'Sivachanthiran Belasamy',
           role: 'Founder & CEO at Falaina',
           description:
-            'InfoDrive Team had provided constant support to our Organisation by helping us in building the Custom tables and related API in Salesforce.   The team has always been reachable on the approach for the project. Further, the team has been more than happy to clarify any doubts that we may have had, and done several knowledge transfers for us to better understand Salesforce and its functionalities.   Thanks, Pradeep and team for the support, looking forward to working on the upcoming projects!',
+            'Info Drive Team had provided constant support to our Organisation by helping us in building the Custom tables and related API in Salesforce.   The team has always been reachable on the approach for the project. Further, the team has been more than happy to clarify any doubts that we may have had, and done several knowledge transfers for us to better understand Salesforce and its functionalities.   Thanks, Pradeep and team for the support, looking forward to working on the upcoming projects!',
         },
       ],
     },
@@ -662,7 +662,7 @@ export default function Index() {
                         (Founder & CEO at Falaina)
                       </Typography>
                       <Typography variant='body2' color='text.secondary'>
-                        InfoDrive Team had provided constant support to our
+                        Info Drive Team had provided constant support to our
                         Organisation by helping us in building the Custom tables
                         and related API in Salesforce. <br />
                         The team has always been reachable on the approach for

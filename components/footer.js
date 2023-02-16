@@ -107,7 +107,7 @@ export default function Footer() {
                     </ListItem>
                     <ListItem>
                       <ListItemButton component='a' target="_blank" href='sap-emarsys.html'>
-                        <ListItemText primary='Sap Emarys' />
+                        <ListItemText primary='SAP Emarsys*' />
                       </ListItemButton>
                     </ListItem>
                     {/* <ListItem>
