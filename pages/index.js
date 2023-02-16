@@ -56,8 +56,6 @@ export default function Index() {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
 
-
-
   var items = [
     {
       item0: [
@@ -97,7 +95,7 @@ export default function Index() {
       <Head>
         <title>
           Software Development & Digital Transformation Solutions Company in
-          Singapore, Malaysia & India - Info Drive Solution
+          Singapore, Malaysia & India - InfoDrive Solutions
         </title>
         <meta
           name='description'
@@ -109,14 +107,19 @@ export default function Index() {
         />
         <meta
           property='og:title'
-          content='Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - Info Drive Solution'
+          content='Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - InfoDrive Solutions'
         />
         <meta
           property='og:image'
           content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
         />
+
         <link rel='icon' href='/favicon.png' />
         <link rel='canonical' href='https://infodrive-solutions.com/' />
+        <meta
+          name='google-site-verification'
+          content='JcRwQCIELBAZJX2iIdAkVHip-fPEjV_icDXuaLBIXfE'
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

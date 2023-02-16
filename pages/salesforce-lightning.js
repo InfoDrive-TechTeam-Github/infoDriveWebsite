@@ -41,24 +41,25 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Top Android App Development Company & Developers in Singapore,
-          Malaysia, and India
+          Salesforce Lightning App Development Services, Features,
+          Customization, and Implementation
         </title>
         <meta
           name='description'
-          content='At InfoDrive Solutions, we specialize in developing high-quality android applications for businesses and organizations across Singapore, Malaysia, and India. With a team of experienced and skilled android developers.'
+          content="Revolutionize your Salesforce experience with InfoDrive Solutions' Lightning App Development Services. Our experts offer customization, implementation, and feature-rich solutions for small businesses in Singapore, Malaysia, and India."
         />
         <meta
           name='keywords'
-          content='Android App Development Company, Android App Development Company in Singapore, Android App Development Company in Malaysia, Android App Development Company in Kuala Lumpur, Android App Development Company in Bangalore, Top Android App Development Company in Singapore, Top Android App Development Company in Malaysia, Android App Developers in Singapore, Top Android App Developers in Malaysia, Android App Developers in India, Android App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, Android App Development'
+          content='Salesforce Lightning App Development Services, Salesforce Lightning for small business, Salesforce Lightning Customization, Salesforce Lightning Features, Salesforce Lightning Implementation, Salesforce Lightning App Development Services in Singapore, Salesforce Lightning App Development Services in Malaysia, Salesforce Lightning App Development Services in India'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/android-app-development.html'
+          href='https://infodrive-solutions.com/salesforce-lightning.html'
         />
         <meta
           property='og:title'
-          content='Top Android App Development Company & Developers in Singapore,Malaysia, and India'
+          content=' Salesforce Lightning App Development Services, Features,
+          Customization, and Implementation'
         />
         <meta
           property='og:image'
