@@ -1054,6 +1054,13 @@ img {
 .salesCloudService .MuiTypography-h2 {
   width: initial;
 }
+.manageAction{
+  display:block;
+  text-align: right;
+}
+.addEditNewJob .form-control{
+  width: 100%;
+}
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
   .IosOurBox .MuiGrid-grid-xs-6{
