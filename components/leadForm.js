@@ -58,19 +58,19 @@ export default function leadForm() {
     e.preventDefault();
    
     try {
-			const res = await fetch("https://infodrive-solutions.com/api/contact", {
-				method: 'POST',
+			const res = await fetch("/api/contact", {
+				method: "POST",
 				headers: {
-					'Content-Type': 'application/json',
+					"Content-Type": "application/json",
 				},
 				body: JSON.stringify(inputData),
-			})
+			});
 
 			const { error } = await res.json()
 
 			if (error) {
 				
-				toast.warning("Please Try Again", {
+			toast.warning("Please Try Again", {
               position: 'top-right',
               autoClose: 2000,
               hideProgressBar: false,
@@ -92,7 +92,7 @@ export default function leadForm() {
             });
 			}
 		} catch (error) {
-    toast.error("Something went wrong", {
+        toast.error("Something went wrong", {
           position: 'top-right',
           autoClose: 2000,
           hideProgressBar: false,
@@ -179,7 +179,7 @@ export default function leadForm() {
                             variant="standard"
                         />
                         <Stack spacing={2} direction="row">
-                            <Button type="submit" className="bgRed" variant="contained">Send Message TT</Button>
+                            <Button type="submit" className="bgRed" variant="contained">Send Message T</Button>
                         </Stack>
                     </Box>
                     </form>
