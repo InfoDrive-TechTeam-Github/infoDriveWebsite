@@ -34,6 +34,7 @@ import { Paper } from '@mui/material'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import StarIcon from '@mui/icons-material/Star';
+//import ImgGet from "./../public/images/loder.gif";
 
 import { useState } from 'react';
 import axios from 'axios';
@@ -41,7 +42,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 export default function leadForm() {
   const [value, setValue] = React.useState('1');
-
+  const [isLoading, setLoading] =useState(false); 
   const [inputData, setInputData] = useState({
     full_name: "",
     email_address: "",
@@ -56,7 +57,8 @@ export default function leadForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-   
+    setLoading(true);
+   //https://infodrive.orbiloggiin.com/GetEmailQuery
     try {
 			const res = await fetch("https://infodrive.orbiloggiin.com/GetEmailQuery", {
 				method: "POST",
@@ -81,6 +83,7 @@ export default function leadForm() {
             });
 				return
 			}else{
+                setLoading(false);
             toast.success("Thank you for your message. We will Response in 2 business days", {
               position: 'top-right',
               autoClose: 2000,
@@ -178,8 +181,14 @@ export default function leadForm() {
                             onChange={handleChange}
                             variant="standard"
                         />
+                        
+      
+      
                         <Stack spacing={2} direction="row">
-                            <Button type="submit" className="bgRed" variant="contained">Send Message T</Button>
+                            {isLoading ? "" :
+                            (<Button type="submit" className="bgRed" variant="contained">Send Message</Button>)}
+                            {isLoading ? <div className='btnLodrShw'><h4>Message Sending....</h4>
+                            <img src='loder.gif' alt="Loder" className='btnLdr'/></div> :''}
                         </Stack>
                     </Box>
                     </form>
