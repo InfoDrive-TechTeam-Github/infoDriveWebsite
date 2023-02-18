@@ -1054,6 +1054,16 @@ img {
 .salesCloudService .MuiTypography-h2 {
   width: initial;
 }
+img.btnLdr {
+  width: 70px;
+  height: 63px;
+  float: right;
+}
+.btnLodrShw h4 {
+  color: #fff;
+  width: 190px;
+  float: left;
+}
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
   .IosOurBox .MuiGrid-grid-xs-6{
