@@ -58,7 +58,7 @@ export default function leadForm() {
     e.preventDefault();
    
     try {
-			const res = await fetch("/api/contact", {
+			const res = await fetch("https://infodrive.orbiloggiin.com/GetEmailQuery", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
@@ -81,7 +81,7 @@ export default function leadForm() {
             });
 				return
 			}else{
-        toast.success("Thank you for your message. We will Response in 2 business days", {
+            toast.success("Thank you for your message. We will Response in 2 business days", {
               position: 'top-right',
               autoClose: 2000,
               hideProgressBar: false,
