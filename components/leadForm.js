@@ -83,7 +83,8 @@ export default function leadForm() {
             });
 				return
 			}else{
-                setLoading(false);
+             setLoading(false);
+            
             toast.success("Thank you for your message. We will Response in 2 business days", {
               position: 'top-right',
               autoClose: 2000,
