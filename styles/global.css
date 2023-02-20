@@ -1064,8 +1064,23 @@ img.btnLdr {
   width: 190px;
   float: left;
 }
+.manageAction{
+  display:block;
+  text-align: right;
+}
+.addEditNewJob .form-control{
+  width: 100%;
+}
+.addEditNewJob h1{
+  margin-left:-15px;
+}
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
+  .footerSection li {
+    padding: 0;
+    width: 100%;
+    display: block;
+}
   .IosOurBox .MuiGrid-grid-xs-6{
     width: 100%;
     max-width: 100%;
@@ -1458,6 +1473,16 @@ img.btnLdr {
   }
   .footerSection .footerContactUs img {
     margin: 0;
+    float: left;
+  }
+  .footerSection li a span {
+    margin-top: -5px;
+    font-size: 13px;
+  }
+  .footerEmail svg{
+    width: 30px;
+    height: 30px;
+    float: left;
   }
   .contactUsArea .MuiGrid-item {
     height: 100%;

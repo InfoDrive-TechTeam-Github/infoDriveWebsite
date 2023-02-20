@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Talent  Acquisition Specialist",
+        "desc": "We are looking for an enthusiastic and confident individual who has experience in Recruitment. Join our wonderful team and elevate your career!",
+        "creationtime": "2023-02-01",
+        "location": "Sydney CBD, Inner West & Eastern Suburbs",
+        "salarayrange": "$80,000 - $99,999 + Super",
+        "status": "enable",
+        "id": 11,
+        "dateCreated": "2023-02-20T02:07:23.762Z",
+        "dateUpdated": "2023-02-20T02:07:23.763Z"
+    },
+    {
+        "title": "Talent Acquisition Specialist_1",
+        "desc": "We are looking for an enthusiastic and confident individual who has experience in Recruitment. Join our wonderful team and elevate your career!\n",
+        "creationtime": "2022-05-24",
+        "location": "Sydney CBD, Inner West & Eastern Suburbs",
+        "salarayrange": "$80,000 - $99,999 + Super",
+        "status": "disable",
+        "id": 12,
+        "dateCreated": "2023-02-20T02:18:54.217Z",
+        "dateUpdated": "2023-02-20T02:18:54.217Z"
+    },
+    {
+        "title": "Talent Acquisition Specialist_2",
+        "desc": "We are looking for an enthusiastic and confident individual who has experience in Recruitment. Join our wonderful team and elevate your career!",
+        "creationtime": "2022-05-24",
+        "location": "Sydney CBD, Inner West & Eastern Suburbs",
+        "salarayrange": "$80,000 - $99,999 + Super",
+        "status": "enable",
+        "id": 13,
+        "dateCreated": "2023-02-20T02:19:43.739Z",
+        "dateUpdated": "2023-02-20T02:19:43.739Z"
+    },
+    {
+        "title": "Talent Acquisition Specialist_3",
+        "desc": "We are looking for an enthusiastic and confident individual who has experience in Recruitment. Join our wonderful team and elevate your career!\n",
+        "creationtime": "2022-05-24",
+        "location": "Sydney CBD, Inner West & Eastern Suburbs",
+        "salarayrange": "$80,000 - $99,999 + Super",
+        "status": "enable",
+        "id": 14,
+        "dateCreated": "2023-02-20T02:20:30.214Z",
+        "dateUpdated": "2023-02-20T02:20:30.214Z"
+    }
+]

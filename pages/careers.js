@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { useState, useEffect } from 'react';
+
 import Header from '../components/header';
 import Footer from '../components/footer';
 import utilStyles from '../styles/utils.module.css';
@@ -38,7 +40,15 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
 
 import LeadForm from '../components/leadForm';
+import { jobService } from '../services';
+
 export default function SalesForceDevelopment() {
+  const [jobs, setJobs] = useState(null);
+useEffect(() => {
+  jobService.getAll().then(x => setJobs(x));
+}, []);
+console.log('jobs', jobs)
+
   return (
     <div>
       <Head>
@@ -163,7 +173,87 @@ export default function SalesForceDevelopment() {
 
       <section className={`sectionBox nm `}>
         <Grid container spacing={7} justify='center'>
+        {jobs && jobs.map((job, index) => (
+          <>
+          {job.status === 'enable' ? 
           <Grid item lg={6} xs={12}>
+            <Card className='cardcareer w100'>
+              <CardContent>
+                <Box
+                  className='mt30'
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                  }}
+                >
+                  <Typography gutterBottom variant='h2' className="pt0" component='div'>
+                  {job.title}
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='w100 ml pt5'
+                  >
+                     {job.creationtime}
+                  </Typography>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h5'
+                  component='div'
+                  className='w100 mt30'
+                >
+                  {job.desc}
+                </Typography>
+                <Box className='mt30'>
+                  <Box className='careerbox'>
+                    <LocationOnIcon />
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb pt5'
+                    >
+                       {job.location}
+                    </Typography>
+                  </Box>
+                  <Box style={{ display: 'flex' }}>
+                    <MonetizationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb pt5'
+                    >
+                     {job.salarayrange}
+                    </Typography>
+                  </Box>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  className='mt30'
+                >
+                  Apply now
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+          :""}
+          </>
+          ))}
+          {!jobs &&
+              <>loading...</>
+          }
+          {jobs && !jobs.length &&
+                      <>No Jobs To Display</>
+          }
+
+{/* <Grid item lg={6} xs={12}>
             <Card className='cardcareer w100'>
               <CardContent>
                 <Box
@@ -233,152 +323,8 @@ export default function SalesForceDevelopment() {
                 </Typography>
               </CardContent>
             </Card>
-          </Grid>
-          <Grid item lg={6} xs={12}>
-            <Card className='cardcareer w100'>
-              <CardContent>
-                <Box
-                  className='mt30'
-                  sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    width: '100%',
-                  }}
-                >
-                  <Typography gutterBottom variant='h1' component='div'>
-                    Talent <br />
-                    Acquisition
-                    <br /> Specialist
-                  </Typography>
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    component='div'
-                    className='w100 ml'
-                  >
-                    9 days ago
-                  </Typography>
-                </Box>
-                <Typography
-                  gutterBottom
-                  variant='h5'
-                  component='div'
-                  className='w100 mt30'
-                >
-                  We are looking for an enthusiastic and confident individual
-                  who has experience in Recruitment. Join our wonderful team and
-                  elevate your career!
-                </Typography>
-                <Box className='mt30'>
-                  <Box className='careerbox'>
-                    <LocationOnIcon />
-
-                    <Typography
-                      gutterBottom
-                      variant='h3'
-                      component='div'
-                      className='mlb'
-                    >
-                      Sydney CBD, Inner West & Eastern Suburbs
-                    </Typography>
-                  </Box>
-                  <Box style={{ display: 'flex' }}>
-                    <MonetizationOnIcon />
-
-                    <Typography
-                      gutterBottom
-                      variant='h3'
-                      component='div'
-                      className='mlb'
-                    >
-                      $80,000 - $99,999 + Super
-                    </Typography>
-                  </Box>
-                </Box>
-                <Typography
-                  gutterBottom
-                  variant='h3'
-                  component='div'
-                  className='mt30'
-                >
-                  Apply now
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item lg={6} xs={12}>
-            <Card className='cardcareer w100'>
-              <CardContent>
-                <Box
-                  className='mt30'
-                  sx={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    width: '100%',
-                  }}
-                >
-                  <Typography gutterBottom variant='h1' component='div'>
-                    Talent <br />
-                    Acquisition
-                    <br /> Specialist
-                  </Typography>
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    component='div'
-                    className='w100 ml'
-                  >
-                    9 days ago
-                  </Typography>
-                </Box>
-                <Typography
-                  gutterBottom
-                  variant='h5'
-                  component='div'
-                  className='w100 mt30'
-                >
-                  We are looking for an enthusiastic and confident individual
-                  who has experience in Recruitment. Join our wonderful team and
-                  elevate your career!
-                </Typography>
-                <Box className='mt30'>
-                  <Box className='careerbox'>
-                    <LocationOnIcon />
-
-                    <Typography
-                      gutterBottom
-                      variant='h3'
-                      component='div'
-                      className='mlb'
-                    >
-                      Sydney CBD, Inner West & Eastern Suburbs
-                    </Typography>
-                  </Box>
-                  <Box style={{ display: 'flex' }}>
-                    <MonetizationOnIcon />
-
-                    <Typography
-                      gutterBottom
-                      variant='h3'
-                      component='div'
-                      className='mlb'
-                    >
-                      $80,000 - $99,999 + Super
-                    </Typography>
-                  </Box>
-                </Box>
-                <Typography
-                  gutterBottom
-                  variant='h3'
-                  component='div'
-                  className='mt30'
-                >
-                  Apply now
-                </Typography>
-              </CardContent>
-            </Card>
-          </Grid>
-          <Grid item lg={6} xs={12}>
+          </Grid> */}
+          {/* <Grid item lg={6} xs={12}>
             <Card className='cardcareer w100'>
               <CardContent>
                 <Box
@@ -450,6 +396,150 @@ export default function SalesForceDevelopment() {
               </CardContent>
             </Card>
           </Grid>
+          <Grid item lg={6} xs={12}>
+            <Card className='cardcareer w100'>
+              <CardContent>
+                <Box
+                  className='mt30'
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                  }}
+                >
+                  <Typography gutterBottom variant='h1' component='div'>
+                    Talent <br />
+                    Acquisition
+                    <br /> Specialist
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='w100 ml'
+                  >
+                    9 days ago
+                  </Typography>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h5'
+                  component='div'
+                  className='w100 mt30'
+                >
+                  We are looking for an enthusiastic and confident individual
+                  who has experience in Recruitment. Join our wonderful team and
+                  elevate your career!
+                </Typography>
+                <Box className='mt30'>
+                  <Box className='careerbox'>
+                    <LocationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      Sydney CBD, Inner West & Eastern Suburbs
+                    </Typography>
+                  </Box>
+                  <Box style={{ display: 'flex' }}>
+                    <MonetizationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      $80,000 - $99,999 + Super
+                    </Typography>
+                  </Box>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  className='mt30'
+                >
+                  Apply now
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid> */}
+          {/* <Grid item lg={6} xs={12}>
+            <Card className='cardcareer w100'>
+              <CardContent>
+                <Box
+                  className='mt30'
+                  sx={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    width: '100%',
+                  }}
+                >
+                  <Typography gutterBottom variant='h1' component='div'>
+                    Talent <br />
+                    Acquisition
+                    <br /> Specialist
+                  </Typography>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='w100 ml'
+                  >
+                    9 days ago
+                  </Typography>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h5'
+                  component='div'
+                  className='w100 mt30'
+                >
+                  We are looking for an enthusiastic and confident individual
+                  who has experience in Recruitment. Join our wonderful team and
+                  elevate your career!
+                </Typography>
+                <Box className='mt30'>
+                  <Box className='careerbox'>
+                    <LocationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      Sydney CBD, Inner West & Eastern Suburbs
+                    </Typography>
+                  </Box>
+                  <Box style={{ display: 'flex' }}>
+                    <MonetizationOnIcon />
+
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      className='mlb'
+                    >
+                      $80,000 - $99,999 + Super
+                    </Typography>
+                  </Box>
+                </Box>
+                <Typography
+                  gutterBottom
+                  variant='h3'
+                  component='div'
+                  className='mt30'
+                >
+                  Apply now
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid> */}
         </Grid>
       </section>
 

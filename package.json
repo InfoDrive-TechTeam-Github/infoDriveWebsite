@@ -9,16 +9,19 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@hookform/resolvers": "^2.9.11",
     "@mui/icons-material": "^5.10.16",
     "@mui/lab": "^5.0.0-alpha.111",
     "@mui/material": "^5.10.17",
     "@mui/styled-engine-sc": "^5.10.16",
+    "@mui/x-date-pickers": "^5.0.19",
     "@next/font": "^13.0.7",
     "@sendgrid/mail": "^7.7.0",
     "axios": "^1.2.2",
     "bootstrap": "^5.2.3",
     "date-fns": "^2.29.3",
     "dotenv": "^16.0.3",
+    "dayjs": "^1.11.7",
     "emailjs-com": "^3.2.0",
     "gray-matter": "^4.0.3",
     "net": "^1.0.2",
@@ -27,10 +30,13 @@
     "react": "18.2.0",
     "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.1",
     "react-material-ui-carousel": "^3.4.2",
     "react-toastify": "^9.1.1",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
-    "styled-components": "^5.3.6"
+    "rxjs": "^7.8.0",
+    "styled-components": "^5.3.6",
+    "yup": "^1.0.0"
   }
 }
