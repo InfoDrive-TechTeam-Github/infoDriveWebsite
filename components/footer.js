@@ -36,7 +36,7 @@ export default function Footer() {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={0}>
           <Grid item xs={4} className='logoFooter'>
-            <img src='images/logoFooter.png' />
+            <img src='https://cdn.discordapp.com/attachments/949683263386054716/1076906970218508399/logoFooter.png' />
             <Typography variant='h3' sx={{ my: 2 }}>
               Driven by technology
             </Typography>

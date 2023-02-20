@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect,useRef } from 'react';
 
 import { Link } from './../../components';
 import { jobService } from '../../services';
@@ -46,12 +46,45 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Checkbox from '@mui/material/Checkbox';
-
+import Modal from '@mui/material/Modal';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as Yup from 'yup';
 import LeadForm from '../../components/leadForm';
     
 export default Index;
 
 function Index() {
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #fff',
+    boxShadow: 24,
+    p: 4,
+  };
+  const triggerClick= React.useRef(null);
+
+  const validationSchema = Yup.object().shape({
+    passCode: Yup.string(),
+});
+const formOptions = { resolver: yupResolver(validationSchema) };
+const { register, handleSubmit, reset, formState } = useForm(formOptions);
+const [isError, setError] = React.useState(false);
+
+function onSubmit(data) {
+  // triggerClick.current?.focus();
+  if(data.passCode === 'infoDrive'){
+    document.getElementsByClassName("triggerClick")[0].click();
+  }else{
+    setError(true);
+  }
+  console.log('onSubmit', data);
+}
+  
     const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -61,6 +94,10 @@ function Index() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const [openPasscode, setOpenPassCode] = React.useState(false);
+  const handlePassCodeOpen = () => setOpenPassCode(true);
+  const handlePassCodeClose = () => setOpenPassCode(false);
 
     const [jobs, setJobs] = useState(null);
 
@@ -219,10 +256,12 @@ function Index() {
           <Grid item lg={6} xs={12} key={job.id}>
             <Card className='cardcareer w100'>
               <CardContent>
-
               <Box className='manageAction'>
-                                    <Button variant="contained" color="warning" className="mr15" href={`/job-manage/edit/${job.id}`}>Edit</Button>
-                                    <Button variant="contained" component="label" color="error" onClick={() => deleteJob(job.id)} className="btn btn-sm btn-danger btn-delete-job" disabled={job.isDeleting}>
+                                    <Button variant="contained" color="warning" className="mr15" onClick={handlePassCodeOpen}>Edit</Button>
+                                    <Button variant="contained" color="error" className="mr15" onClick={handlePassCodeOpen}>Delete</Button>
+
+                                    <Button style={{display:'none'}} variant="contained" color="warning" className="mr15 triggerClick" href={`/job-manage/edit/${job.id}`}>Edit</Button>
+                                    <Button style={{display:'none'}} variant="contained" component="label" color="error" onClick={() => deleteJob(job.id)} className="btn btn-sm btn-danger btn-delete-job triggerClick" disabled={job.isDeleting}>
                                         {job.isDeleting 
                                             ? <span className="spinner-border spinner-border-sm"></span>
                                             : <span>Delete</span>
@@ -324,6 +363,40 @@ function Index() {
       </section>
       <LeadForm /> */}
       <Footer />
+
+      <Modal
+      open={openPasscode}
+      onClose={handlePassCodeClose}
+      aria-labelledby="modal-modal-title"
+      aria-describedby="modal-modal-description"
+    >
+  <Box sx={style}>
+    <Typography id="modal-modal-title" variant="h6" component="h2">
+      Please input the passcode
+    </Typography>
+    <form onSubmit={handleSubmit(onSubmit)} className="addEditNewJob">
+    <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+              <TextField
+                    id="standard-multiline-flexible"
+                    label="Pass Code"
+                    fullWidth
+                    multiline
+                    maxRows={4}
+                    variant="standard"
+                    name="passCode"
+                    {...register('passCode')}
+                />
+    </Typography>
+    <br/>
+    {isError == true ? 
+    <span style={{color:"red",textAlign:'center', display:'block'}}>Your Passcode is wrong!. <br/> Please input the correct Passcode</span>
+    :""}
+    <br/>
+    <Button type="submit" variant="contained" className="mr15">Submit</Button>
+    <Button variant="contained" color="warning" href="/job-manage" className="mr15">Cancel</Button>
+    </form>
+  </Box>
+</Modal>
         </>
     );
 }

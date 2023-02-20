@@ -36,9 +36,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
-import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import Stack from '@mui/material/Stack';
@@ -55,7 +53,10 @@ import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
-
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 
 import LeadForm from '../leadForm';
 
@@ -69,6 +70,7 @@ function AddEdit(props) {
     const handleDateChange = (newValue) => {
         setValueDate(newValue);
     };
+
     const validationSchema = Yup.object().shape({
         title: Yup.string(),
         desc: Yup.string(),
@@ -88,7 +90,7 @@ function AddEdit(props) {
     // get functions to build form with useForm() hook
     const { register, handleSubmit, reset, formState } = useForm(formOptions);
     const { errors } = formState;
-
+    console.log('props', props);
     function onSubmit(data) {
         console.log('onSubmit', data);
         // var newData = {
@@ -108,7 +110,7 @@ function AddEdit(props) {
         return jobService.create(data)
             .then(() => {
                 alertService.success('Job added', { keepAfterRouteChange: true });
-                router.push('.');
+                window.location.href='/job-manage';
             })
             .catch(alertService.error);
     }
@@ -117,15 +119,14 @@ function AddEdit(props) {
         return jobService.update(id, data)
             .then(() => {
                 alertService.success('Job updated', { keepAfterRouteChange: true });
-                router.push('..');
+                window.location.href='/job-manage';
             })
             .catch(alertService.error);
     }
 
     return (
         <>
-        
-        <Head>
+         <Head>
         <title>
           Join our team at Infodrive Solutions - Exciting Career Opportunities
           Available
@@ -148,7 +149,7 @@ function AddEdit(props) {
         property='og:image'
         content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
       />
-      <link rel='icon' href='/favicon.png' />
+      <link rel='icon' href='../favicon.png' />
       <script
         dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -158,7 +159,6 @@ function AddEdit(props) {
           })(window,document,'script','dataLayer','GTM-MB38MVS');`,
         }}
       />
-
       <noscript>
         <iframe
           src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
@@ -168,79 +168,21 @@ function AddEdit(props) {
         ></iframe>
       </noscript>
       <Header />
-      {/* <div className='sliderBox'>
-        <img
-          style={{ width: '100%' }}
-          src='images/25614380e49e0fd7742fc1e2e7973a1e.jpeg'
-        />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
-          <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
-              CAREERS AT INFODRIVE
-            </Typography>
-
-            <Typography gutterBottom variant='h1' component='div'>
-              The team is growing with <br />
-              a variety of opportunities <br />
-              available
-            </Typography>
-            <Button
-              href='/contact-us.html'
-              className='readmore white normalCase'
-              variant='text'
-            >
-              Let's Talk <ArrowRightAltIcon />
-            </Button>
-            <nav className='socical-network'>
-              <List>
-                <ListItem>
-                  <ListItemButton
-                    component='a'
-                    href='https://www.facebook.com/InfoDrivesolutions/'
-                  >
-                    <ListItemIcon>
-                      <FacebookIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton
-                    component='a'
-                    href='https://in.linkedin.com/company/infodrive-solutions/'
-                  >
-                    <ListItemIcon>
-                      <LinkedInIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton
-                    component='a'
-                    href='https://www.instagram.com/infodrivesolutions/'
-                  >
-                    <ListItemIcon>
-                      <InstagramIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            </nav>
-          </Grid>
-        </Box>
-      </div> */}
       <section className={`sectionBox`}>
         <Box
         component="div"
-        sx={{
-            '& .MuiTextField-root': { m: 1, width: '25ch' },
-        }}
+        style={{width:'800px',margin:'0 auto'}}
         noValidate
         autoComplete="off"
         >
+
+
         <form onSubmit={handleSubmit(onSubmit)} className="addEditNewJob">
             <h1>{isAddMode ? 'Add new job' : 'Edit job'}</h1>
             <div className="form-row">
-                <div className="form-group">
+            <Grid container spacing={2}>
+              <Grid  xs={12}>
+              <div className="form-group">
                 <TextField
                     id="standard-multiline-flexible"
                     label="Title"
@@ -257,7 +199,9 @@ function AddEdit(props) {
                     <div className="invalid-feedback">{errors.title?.message}</div>
                    
                 </div>
-                <div className="form-group col-5">
+              </Grid>
+              <Grid  xs={12}>
+              <div className="form-group col-5">
                 <TextField
                     id="standard-multiline-flexible"
                     label="Description"
@@ -274,7 +218,27 @@ function AddEdit(props) {
                     <input name="desc" type="text" {...register('desc')}  className={`form-control ${errors.desc ? 'is-invalid' : ''}`} /> */}
                     <div className="invalid-feedback">{errors.desc?.message}</div>
                 </div>
-                <div className="form-group col-5">
+              </Grid>
+              <Grid  xs={12}>
+              <div className="form-group col-5">
+                <TextField
+                    id="standard-multiline-flexible"
+                    label="Location"
+                    multiline
+                    maxRows={4}
+                    variant="standard"
+                    name="location"
+                    {...register('location')}
+                    className={`form-control ${errors.desc ? 'is-invalid' : ''}`}
+                />
+
+                    {/* <label>Location</label>
+                    <input name="location" type="text" {...register('location')}  className={`form-control ${errors.location ? 'is-invalid' : ''}`} /> */}
+                    <div className="invalid-feedback">{errors.location?.message}</div>
+                </div>
+              </Grid>
+              <Grid  xs={4}>
+              <div className="form-group mt30">
                 {/* <TextField
                     id="standard-multiline-flexible"
                     label="Creation time"
@@ -296,8 +260,9 @@ function AddEdit(props) {
         id="date"
         label="Creation time"
         type="date"
-        defaultValue="2017-05-24"
-        sx={{ width: 220 }}
+        defaultValue="2022-05-24"
+        fullWidth
+        style={{ width: '220px', marginTop: '0px' }}
         {...register('creationtime')}
         name="creationtime"
         InputLabelProps={{
@@ -307,23 +272,44 @@ function AddEdit(props) {
                         {/* </Stack>
                         </LocalizationProvider> */}
                 </div>
-                <div className="form-group col-5">
-                <TextField
+              </Grid>
+              <Grid  xs={4}>
+              <div className="form-group mt30">
+                <Box sx={{ width: '220px' }}>
+                  <FormControl style={{ width: '220px' }}>
+                    <InputLabel id="demo-simple-select-label">Status</InputLabel>
+                    <Select
+                      labelId="demo-simple-select-label"
+                      id="demo-simple-select"
+                      {...register("status")}
+                      name="status"
+                      label="Status"
+                      defaultValue={props.job?.status}
+                    >
+                      <MenuItem value={'enable'}>Enable</MenuItem>
+                      <MenuItem value={'disable'}>Disable</MenuItem>
+                    </Select>
+                  </FormControl>
+                </Box>
+
+                {/* <TextField
                     id="standard-multiline-flexible"
-                    label="Location"
+                    label="Status"
                     multiline
                     maxRows={4}
                     variant="standard"
-                    name="location"
-                    {...register('location')}
+                    name="status"
+                    {...register('status')}
                     className={`form-control ${errors.desc ? 'is-invalid' : ''}`}
-                />
-
-                    {/* <label>Location</label>
-                    <input name="location" type="text" {...register('location')}  className={`form-control ${errors.location ? 'is-invalid' : ''}`} /> */}
-                    <div className="invalid-feedback">{errors.location?.message}</div>
+                /> */}
+                    {/* <label>Status</label>
+                    <input name="status" type="text" {...register('status')}  className={`form-control  ${errors.status ? 'is-invalid' : ''}`} /> */}
+                    <div className="invalid-feedback">{errors.status?.message}</div>
                 </div>
-                <div className="form-group col-5">
+              </Grid>
+
+              <Grid  xs={4}>
+              <div className="form-group mt30">
                 <TextField
                     id="standard-multiline-flexible"
                     label="Salaray range"
@@ -338,23 +324,13 @@ function AddEdit(props) {
                     <input name="salarayrange" type="text" {...register('salarayrange')} className={`form-control ${errors.salarayrange ? 'is-invalid' : ''}`} /> */}
                     <div className="invalid-feedback">{errors.salarayrange?.message}</div>
                 </div>
-                <div className="form-group col-5">
-                <TextField
-                    id="standard-multiline-flexible"
-                    label="Status"
-                    multiline
-                    maxRows={4}
-                    variant="standard"
-                    name="status"
-                    {...register('status')}
-                    className={`form-control ${errors.desc ? 'is-invalid' : ''}`}
-                />
-                    {/* <label>Status</label>
-                    <input name="status" type="text" {...register('status')}  className={`form-control  ${errors.status ? 'is-invalid' : ''}`} /> */}
-                    <div className="invalid-feedback">{errors.status?.message}</div>
-                </div>
+              </Grid>
+             
+            </Grid>
+                
             </div>
-            <div className="form-group mt30">
+            <Grid  xs={12}>
+              <div className="form-group mt30">
                 <Button variant="contained" color="success" type="submit" disabled={formState.isSubmitting} className="mr15">
                     {formState.isSubmitting && <span className="spinner-border spinner-border-sm mr-1"></span>}
                     Save
@@ -362,27 +338,13 @@ function AddEdit(props) {
                 <Button variant="contained" onClick={() => reset(formOptions.defaultValues)} disabled={formState.isSubmitting} className="mr15">Reset</Button>
                 <Button variant="contained" color="warning" href="/job-manage" className="mr15">Cancel</Button>
             </div>
+              </Grid>
+
         </form>
     </Box>
         </section>
-        {/* <section className={`sectionBox connectUs backDrop mb0`}>
-        <Typography
-          gutterBottom
-          variant='h3'
-          className='white pb15 pt15 poppin'
-          component='div'
-        >
-          Empower Your Career Growth with Infodrive Solutions
-        </Typography>
-        <Button
-          href='/contact-us.html'
-          className='bgRed white pl15 pr15 poppin upperCase'
-        >
-          Connect with Our Expert
-        </Button>
-      </section>
-      <LeadForm /> */}
-      {/* <Footer /> */}
+      <Footer />
+
         </>
     );
 }

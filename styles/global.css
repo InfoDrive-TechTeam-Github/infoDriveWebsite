@@ -1061,6 +1061,9 @@ img {
 .addEditNewJob .form-control{
   width: 100%;
 }
+.addEditNewJob h1{
+  margin-left:-15px;
+}
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
   .IosOurBox .MuiGrid-grid-xs-6{
