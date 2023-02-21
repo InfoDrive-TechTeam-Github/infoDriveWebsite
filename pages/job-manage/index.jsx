@@ -128,6 +128,41 @@ function onSubmitDelete(data) {
             setJobs(jobs => jobs.filter(x => x.id !== id));
         });
     }
+    function handleJobStatus(id) {
+      console.log('id', id);
+      // setJobs(jobs.map(x => {
+      //     console.log('x',x);
+      //     if (x.id === id) { 
+      //       if(x.status === 'enable'){
+      //         x.status = 'disable';
+      //         var newParam = {...x,status: 'disable'}
+      //       }
+      //       if(x.status === 'disable'){
+      //         var newParam = {...x,status: 'enable'}
+      //       }
+      //     }
+      //     return newParam;
+      // }));
+      jobs.map(x => {
+        if (x.id === id) { 
+          console.log('status', x.status);
+          if(x.status === 'enable'){
+            var newParam = {...x,status: 'disable'}
+          }
+          if(x.status === 'disable'){
+            var newParam = {...x,status: 'enable'}
+          }
+          console.log('newParam', newParam);
+
+        jobService.update(id, newParam).then(() => {
+            setJobs(jobs => jobs.filter(x => x.id !== id));
+        });
+      }
+    })
+      
+      console.log('jobs', jobs);
+      
+  }
 
     return (
 
@@ -251,7 +286,7 @@ function onSubmitDelete(data) {
         </Typography>
       </section> */}
 
-      <section className={`sectionBox nm `}>
+      <section className={`sectionBox nm jobSection`}>
       <Box
         m={1}
       //margin
@@ -271,18 +306,17 @@ function onSubmitDelete(data) {
             <Card className='cardcareer w100'>
               <CardContent>
               <Box className='manageAction'>
-                                    <Button variant="contained" color="warning" className="mr15" onClick={handlePassCodeOpen}>Edit</Button>
-                                    <Button variant="contained" color="error" className="mr15" onClick={handleDeletePassCodeOpen}>Delete</Button>
+                  <Button variant="contained" color="warning" className="mr15" onClick={handlePassCodeOpen}>Edit</Button>
+                  <Button variant="contained" color="error" className="mr15" onClick={handleDeletePassCodeOpen}>Delete</Button>
 
-                                    <Button style={{display:'none'}} variant="contained" color="warning" className="mr15 triggerClick" href={`/job-manage/edit/${job.id}`}>Edit</Button>
-                                    <Button style={{display:'none'}} variant="contained" component="label" color="error" onClick={() => deleteJob(job.id)} className="btn btn-sm btn-danger btn-delete-job triggerClickDelete" disabled={job.isDeleting}>
+                  <Button style={{display:'none'}} variant="contained" color="warning" className="mr15 triggerClick" href={`/job-manage/edit/${job.id}`}>Edit</Button>
+                    <Button style={{display:'none'}} variant="contained" component="label" color="error" onClick={() => deleteJob(job.id)} className="btn btn-sm btn-danger btn-delete-job triggerClickDelete" disabled={job.isDeleting}>
                                         {job.isDeleting 
                                             ? <span className="spinner-border spinner-border-sm"></span>
                                             : <span>Delete</span>
                                         }
-                                    </Button>
-                                    <Button variant="contained" className="ml15" href={`/job-manage/edit/${job.id}`}>{job.status}</Button>
-
+                    </Button>
+                  <Button variant="contained" onClick={() => handleJobStatus(job.id)} className="ml15" >{job.status}</Button>
               </Box>
                 <Box
                   className='mt30'

@@ -302,7 +302,20 @@ img {
   padding-left: 0;
   padding-right: 0;
 }
-
+.businessProcessManagement {
+  background: url('images/1212e63413b1e90306a62b3c2a241a52.jpeg');
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+}
+.businessProcessManagementBox {
+  margin-right: 97px;
+  background: #fff;
+  padding: 30px 15px;
+}
+.businessProcessManagementService ul li{
+  color: #fff;
+}
 .readmore {
   font-size: 16px;
   color: #fff;
@@ -1074,8 +1087,31 @@ img.btnLdr {
 .addEditNewJob h1{
   margin-left:-15px;
 }
+.jobSection .MuiTypography-h5{
+  height: 132px;
+  overflow: scroll;
+}
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
+  .businessProcessManagement .businessProcessManagementBox{
+    width: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: 0;
+
+  }
+  .businessProcessManagementService ul{
+    padding-left: 20px;
+  }
+  .businessProcessManagementService{
+    margin-bottom: 0px !important;
+  }
+  .businessProcessManagementService .MuiGrid-grid-xs-6{
+    padding-left: 0px !important;
+  }
+  .businessProcessManagementService ul li {
+    font-size: 14px;
+}
   .footerSection li {
     padding: 0;
     width: 100%;

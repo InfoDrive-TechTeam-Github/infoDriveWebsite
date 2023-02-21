@@ -171,7 +171,7 @@ console.log('jobs', jobs)
         </Typography>
       </section>
 
-      <section className={`sectionBox nm `}>
+      <section className={`sectionBox nm jobSection`}>
         <Grid container spacing={7} justify='center'>
         {jobs && jobs.map((job, index) => (
           <>
