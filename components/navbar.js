@@ -377,7 +377,7 @@ function DrawerAppBar(props) {
             <img
               alt='Logo'
               style={{ width: 60, height: 43}}
-              src='images/logoHeader.png'
+              src='https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png'
             />
             </Button>
 
@@ -398,7 +398,7 @@ function DrawerAppBar(props) {
             <img
               alt='Logo'
               style={{ width: 115, height: 77 }}
-              src='images/logoHeader.png'
+              src='https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png'
             />
             </Button>
           </Typography>
