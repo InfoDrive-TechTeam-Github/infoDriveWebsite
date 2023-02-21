@@ -260,7 +260,7 @@ function AddEdit(props) {
         id="date"
         label="Creation time"
         type="date"
-        defaultValue="2022-05-24"
+        defaultValue="05-24-2022"
         fullWidth
         style={{ width: '220px', marginTop: '0px' }}
         {...register('creationtime')}

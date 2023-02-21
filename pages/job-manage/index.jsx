@@ -51,7 +51,8 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import LeadForm from '../../components/leadForm';
-    
+import { compareAsc, format } from 'date-fns'
+
 export default Index;
 
 function Index() {
@@ -335,7 +336,8 @@ function onSubmitDelete(data) {
                     component='div'
                     className='w100 ml pt5'
                   >
-                    {job.creationtime}
+                    
+                    {format(new Date(job.creationtime), 'MM-dd-yyyy')}
                   </Typography>
                 </Box>
                 <Typography
