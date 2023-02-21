@@ -38,6 +38,7 @@ import Stack from '@mui/material/Stack';
 import Head from 'next/head';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import MonetizationOnIcon from '@mui/icons-material/MonetizationOn';
+import { compareAsc, format } from 'date-fns'
 
 import LeadForm from '../components/leadForm';
 import { jobService } from '../services';
@@ -171,7 +172,7 @@ console.log('jobs', jobs)
         </Typography>
       </section>
 
-      <section className={`sectionBox nm `}>
+      <section className={`sectionBox nm jobSection`}>
         <Grid container spacing={7} justify='center'>
         {jobs && jobs.map((job, index) => (
           <>
@@ -196,7 +197,7 @@ console.log('jobs', jobs)
                     component='div'
                     className='w100 ml pt5'
                   >
-                     {job.creationtime}
+                    {format(new Date(job.creationtime), 'MM-dd-yyyy')}
                   </Typography>
                 </Box>
                 <Typography
