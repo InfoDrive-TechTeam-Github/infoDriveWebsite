@@ -79,6 +79,7 @@ export default function blockchain() {
         <img
           style={{ width: '100%', opacity: '0.5' }}
           src='images/Blockchain_background.png'
+          alt='Blockchain Application Development Services, Blockchain Development Services in Singapore, Blockchain Development Services in Malaysia, Blockchain Development Services in India, Blockchain Development Services in Bangalore, Blockchain Development Services in Kuala Lumpur, Blockchain Development Company in Singapore, Blockchain Development Company in Malaysia, Blockchain Development Company in Kuala Lumpur, Blockchain Development Company in India, Best Blockchain Developer in Singapore, Hire Blockchain Developer in Singapore'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>

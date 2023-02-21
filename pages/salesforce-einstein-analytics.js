@@ -90,6 +90,8 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/7e086652d7d493b8a2f038e2f67d3984.jpeg'
+          alt=' Salesforce Einstein Analytics, Features, Integrations, and
+          Customization'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>

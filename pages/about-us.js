@@ -79,6 +79,7 @@ export default function About() {
         <img
           style={{ width: '100%' }}
           src='images/pexels-helena-lopes-933964.jpg'
+          alt='InfoDrive Solutions Company, IT Solutions Company in Singapore, IT Solutions Company in Malaysia, IT Solutions Company in India, IT Solutions Company in Kuala Lumpur'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -919,7 +920,6 @@ export default function About() {
                 </CardContent>
               </Card>
             </Grid>
-
 
             <Grid
               item
