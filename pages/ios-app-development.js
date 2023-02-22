@@ -289,7 +289,7 @@ export default function IosAppDevelopment() {
                   <Typography
                     gutterBottom
                     variant='h3'
-                    className='pt15 pb15'
+                    className='pt15 pb15 white'
                     component='div'
                   >
                     Appealing app interface
@@ -349,7 +349,7 @@ export default function IosAppDevelopment() {
                   <Typography
                     gutterBottom
                     variant='h3'
-                    className='pt15 pb15'
+                    className='pt15 pb15 white'
                     component='div'
                   >
                     Improved branding

@@ -705,7 +705,7 @@ export default function About() {
                     variant='h4'
                     component='div'
                   >
-                    CEO | MALAYSIA & INDIA
+                    CEO Malaysia
                   </Typography>
                 </CardContent>
               </Card>
@@ -875,13 +875,13 @@ export default function About() {
                     variant='h4'
                     component='div'
                   >
-                    Sales Director
+                  CEO India
                   </Typography>
                 </CardContent>
               </Card>
             </Grid>
 
-            <Grid
+            {/* <Grid
               item
               xs={2}
               className='rightOurCoreTeam'
@@ -919,7 +919,7 @@ export default function About() {
                   </Typography>
                 </CardContent>
               </Card>
-            </Grid>
+            </Grid> */}
 
             <Grid
               item

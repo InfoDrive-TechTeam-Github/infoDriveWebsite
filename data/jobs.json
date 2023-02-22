@@ -5,10 +5,10 @@
         "creationtime": "2023-02-01",
         "location": "Sydney CBD, Inner West & Eastern Suburbs",
         "salarayrange": "$80,000 - $99,999 + Super",
-        "status": "enable",
+        "status": "disable",
         "id": 11,
         "dateCreated": "2023-02-20T02:07:23.762Z",
-        "dateUpdated": "2023-02-20T02:07:23.763Z"
+        "dateUpdated": "2023-02-22T04:29:01.947Z"
     },
     {
         "title": "Talent Acquisition Specialist_1",
@@ -19,7 +19,7 @@
         "status": "disable",
         "id": 12,
         "dateCreated": "2023-02-20T02:18:54.217Z",
-        "dateUpdated": "2023-02-20T02:18:54.217Z"
+        "dateUpdated": "2023-02-22T04:29:01.115Z"
     },
     {
         "title": "Talent Acquisition Specialist_2",
@@ -27,10 +27,10 @@
         "creationtime": "2022-05-24",
         "location": "Sydney CBD, Inner West & Eastern Suburbs",
         "salarayrange": "$80,000 - $99,999 + Super",
-        "status": "enable",
+        "status": "disable",
         "id": 13,
         "dateCreated": "2023-02-20T02:19:43.739Z",
-        "dateUpdated": "2023-02-20T02:19:43.739Z"
+        "dateUpdated": "2023-02-22T04:29:03.963Z"
     },
     {
         "title": "Talent Acquisition Specialist_3",

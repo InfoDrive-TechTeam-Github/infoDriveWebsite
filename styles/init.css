@@ -285,10 +285,13 @@ section.sectionBox.IosAppBox2 {
   margin-left: 70px;
 }
 .IosCard {
-  padding: 30px 40px 10px 40px;
+  padding: 15px 15px 25px 15px;
 }
 .IosCard.bg {
   background: #de3854;
+}
+.IosAppBox3 .IosCard .MuiCardContent-root {
+  padding-right: 0;
 }
 .MuiTypography-body2 {
   color: #070d0c;

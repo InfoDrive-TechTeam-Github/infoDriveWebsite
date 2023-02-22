@@ -487,6 +487,103 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
+                      alt='Mark Durante'
+                      src='images/user-icon.jpeg'
+                      sx={{ width: 65, height: 65, marginLeft: 2 }}
+                    />
+                    <div className='testmonialStar'>
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                    </div>
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant='h3'
+                        className='pt15 mb0'
+                        component='div'
+                      >
+                        Mark Durante
+                      </Typography>
+                      <Typography
+                        className='mt0 pt0 pb15'
+                        gutterBottom
+                        variant='h5'
+                        component='div'
+                      >
+                        Vice President of Product and Engineering at Jabmo
+                      </Typography>
+                      <Typography variant='body2' color='text.secondary'>
+                        After a rigorous vendor selection process undertaken by
+                        my team, we settled on InfoDrive for our SFDC app
+                        implementation project. InfoDrive's relevant experience,
+                        prompt communication, and positive attitude won us over.
+                        And I'm happy to say we made the right decision. <br />
+                        Interactions with the team were fluid and pleasant, and
+                        they delivered a quality work product on time. <br />
+                        We look forward to future engagements with InfoDrive as
+                        our needs require.
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+                <Grid item xs={6}>
+                  <Card sx={{ maxWidth: 345 }}>
+                    <Avatar
+                      alt='Sivachanthiran Belasamy'
+                      src='images/user-icon.jpeg'
+                      sx={{ width: 65, height: 65, marginLeft: 2 }}
+                    />
+                    <div className='testmonialStar'>
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                    </div>
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant='h3'
+                        className='pt15 mb0'
+                        component='div'
+                      >
+                        Sivachanthiran Belasamy
+                      </Typography>
+                      <Typography
+                        className='mt0 pt0 pb15'
+                        gutterBottom
+                        variant='h5'
+                        component='div'
+                      >
+                        (Founder & CEO at Falaina)
+                      </Typography>
+                      <Typography variant='body2' color='text.secondary'>
+                        Info Drive Team had provided constant support to our
+                        Organisation by helping us in building the Custom tables
+                        and related API in Salesforce. <br />
+                        The team has always been reachable on the approach for
+                        the project. Further, the team has been more than happy
+                        to clarify any doubts that we may have had, and done
+                        several knowledge transfers for us to better understand
+                        Salesforce and its functionalities. <br />
+                        Thanks, Pradeep and team for the support, looking
+                        forward to working on the upcoming projects!"
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              </Grid>
+            </Box>
+          }
+          {
+            <Box sx={{ flexGrow: 1 }}>
+              <Grid container spacing={0}>
+                <Grid item xs={6}>
+                  <Card sx={{ maxWidth: 345 }}>
+                    <Avatar
                       alt='Aidin Mahmoodi'
                       src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
@@ -583,103 +680,6 @@ export default function Index() {
             </Box>
           }
 
-          {
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={0}>
-                <Grid item xs={6}>
-                  <Card sx={{ maxWidth: 345 }}>
-                    <Avatar
-                      alt='Mark Durante'
-                      src='images/user-icon.jpeg'
-                      sx={{ width: 65, height: 65, marginLeft: 2 }}
-                    />
-                    <div className='testmonialStar'>
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                    </div>
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant='h3'
-                        className='pt15 mb0'
-                        component='div'
-                      >
-                        Mark Durante
-                      </Typography>
-                      <Typography
-                        className='mt0 pt0 pb15'
-                        gutterBottom
-                        variant='h5'
-                        component='div'
-                      >
-                        Vice President of Product and Engineering at Jabmo
-                      </Typography>
-                      <Typography variant='body2' color='text.secondary'>
-                        After a rigorous vendor selection process undertaken by
-                        my team, we settled on InfoDrive for our SFDC app
-                        implementation project. InfoDrive's relevant experience,
-                        prompt communication, and positive attitude won us over.
-                        And I'm happy to say we made the right decision. <br />
-                        Interactions with the team were fluid and pleasant, and
-                        they delivered a quality work product on time. <br />
-                        We look forward to future engagements with InfoDrive as
-                        our needs require.
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Grid>
-                <Grid item xs={6}>
-                  <Card sx={{ maxWidth: 345 }}>
-                    <Avatar
-                      alt='Sivachanthiran Belasamy'
-                      src='images/user-icon.jpeg'
-                      sx={{ width: 65, height: 65, marginLeft: 2 }}
-                    />
-                    <div className='testmonialStar'>
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                    </div>
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant='h3'
-                        className='pt15 mb0'
-                        component='div'
-                      >
-                        Sivachanthiran Belasamy
-                      </Typography>
-                      <Typography
-                        className='mt0 pt0 pb15'
-                        gutterBottom
-                        variant='h5'
-                        component='div'
-                      >
-                        (Founder & CEO at Falaina)
-                      </Typography>
-                      <Typography variant='body2' color='text.secondary'>
-                        Info Drive Team had provided constant support to our
-                        Organisation by helping us in building the Custom tables
-                        and related API in Salesforce. <br />
-                        The team has always been reachable on the approach for
-                        the project. Further, the team has been more than happy
-                        to clarify any doubts that we may have had, and done
-                        several knowledge transfers for us to better understand
-                        Salesforce and its functionalities. <br />
-                        Thanks, Pradeep and team for the support, looking
-                        forward to working on the upcoming projects!"
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Grid>
-              </Grid>
-            </Box>
-          }
         </Carousel>
       </section>
       <LeadForm />
