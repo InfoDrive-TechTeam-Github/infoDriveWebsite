@@ -236,6 +236,12 @@ function DrawerAppBar(props) {
                         <ListItemText primary={'Services for start ups'} />
                       </ListItemButton>
                     </ListItem>
+
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/business-process-management.html" >
+                        <ListItemText primary={'Business Process Management & Improvement (BPM&I)'} />
+                      </ListItemButton>
+                    </ListItem>
                     
 
                   <ListItem disablePadding>
@@ -248,7 +254,6 @@ function DrawerAppBar(props) {
                       />
                     </ListItem>
                     
-
                   </List>
                 </Menu>
 
@@ -480,6 +485,12 @@ function DrawerAppBar(props) {
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/services-for-start-ups.html" >
                         <ListItemText primary={'Services for start ups'} />
+                      </ListItemButton>
+                    </ListItem>
+
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/business-process-management.html" >
+                        <ListItemText primary={'Business Process Management & Improvement (BPM&I)'} />
                       </ListItemButton>
                     </ListItem>
                     
