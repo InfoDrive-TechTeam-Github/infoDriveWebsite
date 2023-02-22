@@ -90,12 +90,12 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/72250f50098664f9273c6d07e59ccdcd.jpeg'
+          alt='Salesforce Marketing Cloud Implementation and Consulting Services in
+          Singapore, Malaysia'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
-              Salesforce MARKETING Cloud Services
-            </Typography>
+            <Typography gutterBottom variant='h3' component='div'></Typography>
 
             <Typography gutterBottom variant='h1' component='div'>
               Boost Your Marketing Success with

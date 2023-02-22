@@ -79,6 +79,8 @@ export default function IosAppDevelopment() {
         <img
           style={{ width: '100%', opacity: '0.5' }}
           src='images/Blockchain_background.png'
+          alt='Top iPhone App Development Company & IOS Developers in Singapore,
+          Malaysia, and India'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>

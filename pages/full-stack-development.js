@@ -88,6 +88,8 @@ export default function FullstackDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/pexels-helena-lopes-933964.jpg'
+          alt='Full Stack Development Services & Developers in Singapore, Malaysia,
+          and India'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>

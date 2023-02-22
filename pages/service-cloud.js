@@ -90,6 +90,8 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/fbebc0b97f1366ba8a6298694de802ec.jpeg'
+          alt='Salesforce Service Cloud Implementation, Customization, Integrations,
+          and Consulting Services - InfoDrive Solutions'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>

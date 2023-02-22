@@ -88,6 +88,7 @@ export default function AndroidAppDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/pexels-helena-lopes-933964.jpg'
+          alt='Android App Development Company, Android App Development Company in Singapore, Android App Development Company in Malaysia, Android App Development Company in Kuala Lumpur, Android App Development Company in Bangalore, Top Android App Development Company in Singapore, Top Android App Development Company in Malaysia, Android App Developers in Singapore, Top Android App Developers in Malaysia, Android App Developers in India, Android App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, Android App Development'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -140,7 +141,12 @@ export default function AndroidAppDevelopment() {
         </Box>
       </div>
       <section className='sectionBox'>
-        <Typography className='w100 red' gutterBottom variant='h1' component='h1'>
+        <Typography
+          className='w100 red'
+          gutterBottom
+          variant='h1'
+          component='h1'
+        >
           Android App Development Services
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>

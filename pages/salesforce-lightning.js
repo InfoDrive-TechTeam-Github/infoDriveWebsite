@@ -89,6 +89,8 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/0959e7bad48d4a91f7e112136efad00a.jpeg'
+          alt='Salesforce Lightning App Development Services, Features,
+          Customization, and Implementation'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
