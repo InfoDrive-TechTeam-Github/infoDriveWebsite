@@ -1254,6 +1254,7 @@ img.btnLdr {
   .footerSection .MuiGrid-grid-xs-5{
     width: 100%;
     max-width: 100%;
+    flex-basis: 100%;
   }
   .businessProcessManagementService ul{
     padding-left: 20px;
