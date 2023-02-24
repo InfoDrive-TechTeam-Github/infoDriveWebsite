@@ -1244,6 +1244,11 @@ img.btnLdr {
 }
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
+  .footerSection .MuiGrid-grid-xs-5{
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
   .businessProcessManagement .businessProcessManagementBox{
     width: 100%;
     flex-basis: 100%;

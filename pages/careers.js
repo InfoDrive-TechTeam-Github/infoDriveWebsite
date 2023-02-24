@@ -68,7 +68,7 @@ export default function SalesForceDevelopment() {
 
   
   const handleClickApplyOpen = (data) => {
-    console.log('data',data);
+    console.log('dataJob',data);
     setJobDetail(data);
     setApplyJob(true);
   };
@@ -86,10 +86,10 @@ export default function SalesForceDevelopment() {
   console.log('valuePhone',valuePhone); 
 
   const onSubmitHandler = () => {
-    console.log('submit', applyValues);  
+    console.log('submit', jobDetail);  
     axios.post('http://206.189.149.207:4001/addCandiate', 
     {
-      OwnerId:applyValues.OwnerId,
+      OwnerId:jobDetail.OwnerId,
       FirstName:applyValues.FirstName,
       LastName:applyValues.LastName,
       Email:applyValues.Email,

@@ -113,7 +113,7 @@ export default function Footer() {
                   </List>
                 </nav>
               </Grid>
-              <Grid item xs={5}>
+              <Grid item xs={4}>
                 <Typography gutterBottom variant='h3' component='div'>
                   Contact Us
                 </Typography>
