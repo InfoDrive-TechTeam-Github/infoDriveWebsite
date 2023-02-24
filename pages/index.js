@@ -461,7 +461,7 @@ export default function Index() {
       <br />
       <section className={`sectionBox locationBox mt30 testmonial`}>
         <Typography gutterBottom variant='h2' component='div'>
-          What do others say about us?
+          What do clients say about us?
         </Typography>
         <br />
 
@@ -605,7 +605,7 @@ export default function Index() {
                         Aidin Mahmoodi
                       </Typography>
                       <Typography
-                        className='mt0 pt0 pb15'
+                        className='mt0 w100 pt0 pb15'
                         gutterBottom
                         variant='h5'
                         component='div'
