@@ -93,7 +93,7 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
+            <Typography className="hiddenElement" gutterBottom variant='h3' component='div'>
               Salesforce SERVICE Cloud Services
             </Typography>
 
@@ -104,7 +104,7 @@ export default function SalesForceDevelopment() {
             </Typography>
             <Button
               href='/contact-us.html'
-              className='readmore white normalCase mt30'
+              className='readmore white normalCase mt15'
               variant='text'
             >
               Let's Talk <ArrowRightAltIcon />

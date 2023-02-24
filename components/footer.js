@@ -140,7 +140,7 @@ export default function Footer() {
                         }}
                       >
                         <ListItemText
-                          className='pl15'
+                          className='pl5'
                           primary='+65-9238 4299'
                         />
                       </ListItemButton>
@@ -163,7 +163,7 @@ export default function Footer() {
                         }}
                       >
                         <ListItemText
-                          className='pl15'
+                          className='pl5'
                           primary='+60-1 2327 5811'
                         />
                       </ListItemButton>
@@ -186,7 +186,7 @@ export default function Footer() {
                         }}
                       >
                         <ListItemText
-                          className='pl15'
+                          className='pl5'
                           primary='+91-960 61880 81'
                         />
                       </ListItemButton>
@@ -198,7 +198,7 @@ export default function Footer() {
                         href='mailto:contact@infodrive-solutions.com'
                       >
                         <ListItemText
-                          className='pl15'
+                          className='pl5'
                           primary='contact@infodrive-solutions.com'
                         />
                       </ListItemButton>

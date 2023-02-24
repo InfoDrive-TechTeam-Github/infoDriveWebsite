@@ -343,9 +343,9 @@ console.log('jobs', jobs)
                     gutterBottom
                     variant='h3'
                     component='div'
-                    className='w100 ml pt5'
+                    className='w100 ml pt5 createdat'
                   >
-                    {format(new Date(job.created_at), 'dd-MM-yyyy')}
+                    Created at: {format(new Date(job.created_at), 'dd-MM-yyyy')}
                   </Typography>
                 </Box>
                 <Typography

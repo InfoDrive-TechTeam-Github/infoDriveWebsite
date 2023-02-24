@@ -554,42 +554,42 @@ export default function About() {
           <nav className='socical-network'>
             <List>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/">
                   <ListItemIcon>
                     <img src='images/internet.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/ios-app-development.html">
                   <ListItemIcon>
                     <img src='images/apple.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/android-app-development.html">
                   <ListItemIcon>
                     <img src='images/android.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/">
                   <ListItemIcon>
                     <img src='images/internet-2.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/blockchain-nft.html">
                   <ListItemIcon>
                     <img src='images/nft.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/blockchain-nft.html">
                   <ListItemIcon>
                     <img src='images/blockchain.png' />
                   </ListItemIcon>
@@ -622,7 +622,7 @@ export default function About() {
               </Typography>
 
               <Button
-                className='readmore white pl0'
+                className='readmore white'
                 href='/about-us.html'
                 variant='text'
               >
@@ -983,7 +983,7 @@ export default function About() {
               <br />
               <Button
                 href='/contact-us.html'
-                className='readmore white pl0'
+                className='readmore white'
                 variant='text'
               >
                 CONTACT US <ArrowRightAltIcon />

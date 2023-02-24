@@ -229,8 +229,7 @@ export default function IosAppDevelopment() {
             <Grid item xs={12}>
               <Card className='ios-app2'>
                 <Typography gutterBottom variant='h2' component='h2'>
-                  Key benefits of our iOS app
-                  <br></br> development services
+                  Key benefits of our iOS app development services
                 </Typography>
                 <Typography gutterBottom variant='h5' component='div'>
                   We are a full-stack iOS app development company that has
@@ -410,8 +409,7 @@ export default function IosAppDevelopment() {
             component='h3'
             className='IodHdn'
           >
-            Our iOS application <br />
-            development expertise
+            Our iOS application development expertise:
           </Typography>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>

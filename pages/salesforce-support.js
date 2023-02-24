@@ -92,7 +92,7 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
+            <Typography className='hiddenElement' gutterBottom variant='h3' component='div'>
               Salesforce SUPPORT
             </Typography>
 

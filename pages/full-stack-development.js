@@ -202,7 +202,7 @@ export default function FullstackDevelopment() {
         <hr className='w100' style={{ marginLeft: 0 }} />
       </section>
 
-      <section className={`sectionBox whyUsBox pb0 fullstackGame w100`}>
+      <section className={`sectionBox whyUsBox pb0 fullstackGame w100 ml0`}>
         <Typography gutterBottom variant='h2' component='div' className='w100'>
           Stay ahead in the game with our full stack
         </Typography>
