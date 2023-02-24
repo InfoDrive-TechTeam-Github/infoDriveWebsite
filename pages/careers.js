@@ -49,7 +49,7 @@ import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
 
 import LeadForm from '../components/leadForm';
-import { jobService } from '../services';
+//import { jobService } from '../services';
 
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
@@ -87,7 +87,7 @@ export default function SalesForceDevelopment() {
 
   const onSubmitHandler = () => {
     console.log('submit', jobDetail);  
-    axios.post('http://206.189.149.207:4001/addCandiate', 
+    axios.post('http://206.189.149.207:4001/addCandidate', 
     {
       OwnerId:jobDetail.OwnerId,
       FirstName:applyValues.FirstName,
@@ -97,7 +97,7 @@ export default function SalesForceDevelopment() {
       City:'dummy',
       Locality:'dummy',
       FullAddress:'dummy',
-      WillingToRelocate:'dummy',
+      WillingToRelocate:'0',
       Qualification:'dummy',
       Specialization:'dummy',
       CurrentOrganization:'dummy',
@@ -124,6 +124,8 @@ export default function SalesForceDevelopment() {
     })
     .then(function (response) {
       console.log('responseSubmit', response);
+      if(response.data.status == true){
+        // email send code here
         const inputData = {
           JobId:applyValues.Id,
           CandiateName:applyValues.FirstName + '/' + applyValues.LastName,
@@ -174,6 +176,8 @@ export default function SalesForceDevelopment() {
               progress: undefined,
             });
         }
+      }
+       
     })
     .catch(function (error) {
       console.log(error);
