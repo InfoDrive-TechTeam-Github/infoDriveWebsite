@@ -87,6 +87,8 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/11bea532234c8a762a4651a07ee3dff8.jpeg'
+          alt='Digital Marketing Strategy, Service Provider & Company in Singapore,
+          Malaysia'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent '>
           <Grid container spacing={0}>
@@ -305,9 +307,6 @@ export default function SalesForceDevelopment() {
           </Grid>
         </Box>
       </section>
-
-      <br />
-      <br />
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
           gutterBottom

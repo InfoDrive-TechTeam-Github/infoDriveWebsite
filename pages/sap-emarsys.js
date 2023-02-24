@@ -90,6 +90,8 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/ae292a98639663768aec9289f08dd823.jpeg'
+          alt='SAP Emarsys Customer Engagement | Services & Consulting – InfoDrive
+          Solutions'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -200,7 +202,7 @@ export default function SalesForceDevelopment() {
           that drive engagement and loyalty.
         </Typography>
       </section>
-
+          <br/>
       <section
         className={`sectionBox saleForcesDevelopmentBox marketCloudBox sapEmarsysServices`}
       >

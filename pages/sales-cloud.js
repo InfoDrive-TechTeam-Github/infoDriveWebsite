@@ -89,6 +89,8 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/91347bcb5003e5f7f144c8d10079ab1e.jpeg'
+          alt=' Salesforce Sales Cloud Implementation, Customization, and Consulting
+          Services in Singapore, Malaysia, and India - InfoDrive Solutions'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -98,8 +100,8 @@ export default function SalesForceDevelopment() {
               variant='h1'
               component='div'
             >
-              Revolutionize Your Sales Process with the <br />
-              Power with the Power of Sales Cloud -<br />
+              Revolutionize Your Sales Process <br />
+              with the Power of Sales Cloud -<br />
               A Cutting-Edge Solution for Your Business <br />
               with a comprehensive,integrated platform <br />
               for managing their sales activities.

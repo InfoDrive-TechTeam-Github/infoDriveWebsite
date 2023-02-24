@@ -81,7 +81,7 @@
   padding-left: 0px !important;
 }
 .pl5 {
-  padding-left: 20px;
+  padding-left: 5px;
 }
 .pt15 {
   padding-top: 15px;
@@ -100,13 +100,13 @@
   padding-top: 5px !important;
 }
 .pb5 {
-  padding-bottom: 15px !important;
+  padding-bottom: 5px !important;
 }
 .pl5 {
-  padding-left: 15px !important;
+  padding-left: 5px !important;
 }
 .pr5 {
-  padding-right: 15px !important;
+  padding-right: 5px !important;
 }
 
 .pt10 {
@@ -285,10 +285,13 @@ section.sectionBox.IosAppBox2 {
   margin-left: 70px;
 }
 .IosCard {
-  padding: 30px 40px 10px 40px;
+  padding: 15px 15px 25px 15px;
 }
 .IosCard.bg {
   background: #de3854;
+}
+.IosAppBox3 .IosCard .MuiCardContent-root {
+  padding-right: 0;
 }
 .MuiTypography-body2 {
   color: #070d0c;
@@ -365,5 +368,12 @@ section.sectionBox.IosAppBox2 {
   display: flex;
   align-items: center !important;
   margin-bottom: 10px;
+}
+.hiddenElement{
+  visibility: hidden;
+  opacity: 0;
+}
+.ml0{
+  margin-left: 0px !important;
 }
 /* End css */

@@ -461,7 +461,7 @@ export default function Index() {
       <br />
       <section className={`sectionBox locationBox mt30 testmonial`}>
         <Typography gutterBottom variant='h2' component='div'>
-          What do others say about us?
+          What do clients say about us?
         </Typography>
         <br />
 
@@ -481,108 +481,6 @@ export default function Index() {
             );
           }}
         >
-          {
-            <Box sx={{ flexGrow: 1 }}>
-              <Grid container spacing={0}>
-                <Grid item xs={6}>
-                  <Card sx={{ maxWidth: 345 }}>
-                    <Avatar
-                      alt='Aidin Mahmoodi'
-                      src='images/user-icon.jpeg'
-                      sx={{ width: 65, height: 65, marginLeft: 2 }}
-                    />
-                    <div className='testmonialStar'>
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                    </div>
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant='h3'
-                        className='pt15 mb0'
-                        component='div'
-                      >
-                        Aidin Mahmoodi
-                      </Typography>
-                      <Typography
-                        className='mt0 pt0 pb15'
-                        gutterBottom
-                        variant='h5'
-                        component='div'
-                      >
-                        {'Product Lead at ServiceRocket'}
-                      </Typography>
-                      <Typography variant='body2' color='text.secondary'>
-                        We reached out to InfoDrive to help us build a few
-                        technical POC (Proof of Concept) as our internal
-                        development teams were extremely busy with other
-                        products/projects. InfoDrive was very particularly quick
-                        and responsive, they quickly jumped on a call together
-                        requirements from us and provided their estimate and
-                        proposal in a short time. <br />
-                        After a lengthy onboarding process from our side,
-                        InfoDrive assigned one of their remarkably capable,
-                        knowledgeable Salesforce certified engineers as our main
-                        technical person. <br />
-                        I’d also like to point out that the entire team at Info
-                        Drive is resourceful, responsive, and flexible. Our
-                        assigned engineer easily adopted our internal agile
-                        practices and was able to provide feedback on our sprint
-                        review and planning, similar to our internal development
-                        teams.
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Grid>
-                <Grid item xs={6}>
-                  <Card sx={{ maxWidth: 345 }}>
-                    <Avatar
-                      alt='Kester Poh'
-                      src='images/user-icon.jpeg'
-                      sx={{ width: 65, height: 65, marginLeft: 2 }}
-                    />
-                    <div className='testmonialStar'>
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                      <StarIcon />
-                    </div>
-                    <CardContent>
-                      <Typography
-                        gutterBottom
-                        variant='h3'
-                        className='pt15 mb0'
-                        component='div'
-                      >
-                        Kester Poh
-                      </Typography>
-                      <Typography
-                        className='mt0 pt0 pb15'
-                        gutterBottom
-                        variant='h5'
-                        component='div'
-                      >
-                        (CEO at AiChat)
-                      </Typography>
-                      <Typography variant='body2' color='text.secondary'>
-                        Infodrive team has provided support in a POC setup and
-                        configured a Email-to-Case demo. <br />
-                        The team has also provided professional consultation on
-                        the approach for the project. <br />
-                        Thanks Pradeep and team for the support, looking forward
-                        to working on the next project together! <br />
-                      </Typography>
-                    </CardContent>
-                  </Card>
-                </Grid>
-              </Grid>
-            </Box>
-          }
-
           {
             <Box sx={{ flexGrow: 1 }}>
               <Grid container spacing={0}>
@@ -680,6 +578,108 @@ export default function Index() {
               </Grid>
             </Box>
           }
+          {
+            <Box sx={{ flexGrow: 1 }}>
+              <Grid container spacing={0}>
+                <Grid item xs={6}>
+                  <Card sx={{ maxWidth: 345 }}>
+                    <Avatar
+                      alt='Aidin Mahmoodi'
+                      src='images/user-icon.jpeg'
+                      sx={{ width: 65, height: 65, marginLeft: 2 }}
+                    />
+                    <div className='testmonialStar'>
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                    </div>
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant='h3'
+                        className='pt15 mb0'
+                        component='div'
+                      >
+                        Aidin Mahmoodi
+                      </Typography>
+                      <Typography
+                        className='mt0 w100 pt0 pb15'
+                        gutterBottom
+                        variant='h5'
+                        component='div'
+                      >
+                        {'Product Lead at ServiceRocket'}
+                      </Typography>
+                      <Typography variant='body2' color='text.secondary'>
+                        We reached out to InfoDrive to help us build a few
+                        technical POC (Proof of Concept) as our internal
+                        development teams were extremely busy with other
+                        products/projects. InfoDrive was very particularly quick
+                        and responsive, they quickly jumped on a call together
+                        requirements from us and provided their estimate and
+                        proposal in a short time. <br />
+                        After a lengthy onboarding process from our side,
+                        InfoDrive assigned one of their remarkably capable,
+                        knowledgeable Salesforce certified engineers as our main
+                        technical person. <br />
+                        I’d also like to point out that the entire team at Info
+                        Drive is resourceful, responsive, and flexible. Our
+                        assigned engineer easily adopted our internal agile
+                        practices and was able to provide feedback on our sprint
+                        review and planning, similar to our internal development
+                        teams.
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+                <Grid item xs={6}>
+                  <Card sx={{ maxWidth: 345 }}>
+                    <Avatar
+                      alt='Kester Poh'
+                      src='images/user-icon.jpeg'
+                      sx={{ width: 65, height: 65, marginLeft: 2 }}
+                    />
+                    <div className='testmonialStar'>
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                      <StarIcon />
+                    </div>
+                    <CardContent>
+                      <Typography
+                        gutterBottom
+                        variant='h3'
+                        className='pt15 mb0'
+                        component='div'
+                      >
+                        Kester Poh
+                      </Typography>
+                      <Typography
+                        className='mt0 pt0 pb15'
+                        gutterBottom
+                        variant='h5'
+                        component='div'
+                      >
+                        (CEO at AiChat)
+                      </Typography>
+                      <Typography variant='body2' color='text.secondary'>
+                        Infodrive team has provided support in a POC setup and
+                        configured a Email-to-Case demo. <br />
+                        The team has also provided professional consultation on
+                        the approach for the project. <br />
+                        Thanks Pradeep and team for the support, looking forward
+                        to working on the next project together! <br />
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              </Grid>
+            </Box>
+          }
+
         </Carousel>
       </section>
       <LeadForm />

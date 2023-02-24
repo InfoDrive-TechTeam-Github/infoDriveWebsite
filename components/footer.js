@@ -78,7 +78,7 @@ export default function Footer() {
                 <Typography gutterBottom variant='h3' component='div'>
                   Quick Links
                 </Typography>
-                <nav aria-label='main mailbox folders'>
+                <nav aria-label='main mailbox folders ' className='quickLinks'>
                   <List>
                     <ListItem>
                       <ListItemButton component='a' target="_blank" href='/saas-application-development.html'>
@@ -110,30 +110,10 @@ export default function Footer() {
                         <ListItemText primary='SAP Emarsys*' />
                       </ListItemButton>
                     </ListItem>
-                    {/* <ListItem>
-                      <ListItemButton component='a' href='#about-us'>
-                        <ListItemText primary='Privacy Policy' />
-                      </ListItemButton>
-                    </ListItem> */}
-                    {/* <ListItem>
-                      <ListItemButton component='a' href='#contact'>
-                        <ListItemText primary='Terms & Services' />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                      <ListItemButton component='a' href='#blogs'>
-                        <ListItemText primary='Terms of Use' />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem>
-                      <ListItemButton component='a' href='#blogs'>
-                        <ListItemText primary='Refund Policy' />
-                      </ListItemButton>
-                    </ListItem> */}
                   </List>
                 </nav>
               </Grid>
-              <Grid item xs={5}>
+              <Grid item xs={4}>
                 <Typography gutterBottom variant='h3' component='div'>
                   Contact Us
                 </Typography>
@@ -142,7 +122,7 @@ export default function Footer() {
                   aria-label='main mailbox folders'
                 >
                   <List>
-                    <ListItem>
+                    <ListItem className='ce'>
                       <CardMedia
                         component='img'
                         style={{ width: '30px', height: '30px' }}
@@ -160,12 +140,12 @@ export default function Footer() {
                         }}
                       >
                         <ListItemText
-                          className='pl15'
+                          className='pl5'
                           primary='+65-9238 4299'
                         />
                       </ListItemButton>
                     </ListItem>
-                    <ListItem>
+                    <ListItem className='ce'>
                       <CardMedia
                         component='img'
                         image='images/malaysia.png'
@@ -183,12 +163,12 @@ export default function Footer() {
                         }}
                       >
                         <ListItemText
-                          className='pl15'
+                          className='pl5'
                           primary='+60-1 2327 5811'
                         />
                       </ListItemButton>
                     </ListItem>
-                    <ListItem>
+                    <ListItem className='ce'>
                       <CardMedia
                         component='img'
                         image='images/india.png'
@@ -206,19 +186,19 @@ export default function Footer() {
                         }}
                       >
                         <ListItemText
-                          className='pl15'
+                          className='pl5'
                           primary='+91-960 61880 81'
                         />
                       </ListItemButton>
                     </ListItem>
-                    <ListItem className='footerEmail'>
+                    <ListItem className='footerEmail ce'>
                       <EmailIcon />
                       <ListItemButton
                         component='a'
                         href='mailto:contact@infodrive-solutions.com'
                       >
                         <ListItemText
-                          className='pl15'
+                          className='pl5'
                           primary='contact@infodrive-solutions.com'
                         />
                       </ListItemButton>

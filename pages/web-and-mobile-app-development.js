@@ -88,6 +88,8 @@ export default function WebMobileApp() {
         <img
           style={{ width: '100%' }}
           src='images/pexels-djordje-petrovic-2102416.jpeg'
+          alt='Web and Mobile App Development Services & Company in Singapore,
+          Malaysia, and India'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>

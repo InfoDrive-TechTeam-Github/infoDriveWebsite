@@ -90,6 +90,8 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/fbebc0b97f1366ba8a6298694de802ec.jpeg'
+          alt='Salesforce Service Cloud Implementation, Customization, Integrations,
+          and Consulting Services - InfoDrive Solutions'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -150,7 +152,7 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox`}>
-        <Typography gutterBottom variant='h1' component='h1'>
+        <Typography className='w100 pt0' gutterBottom variant='h1' component='h1'>
           Empowering Businesses with Exceptional Customer Service through
           Salesforce Service Cloud
         </Typography>

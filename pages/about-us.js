@@ -79,6 +79,7 @@ export default function About() {
         <img
           style={{ width: '100%' }}
           src='images/pexels-helena-lopes-933964.jpg'
+          alt='InfoDrive Solutions Company, IT Solutions Company in Singapore, IT Solutions Company in Malaysia, IT Solutions Company in India, IT Solutions Company in Kuala Lumpur'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -553,42 +554,42 @@ export default function About() {
           <nav className='socical-network'>
             <List>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/">
                   <ListItemIcon>
                     <img src='images/internet.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/ios-app-development.html">
                   <ListItemIcon>
                     <img src='images/apple.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/android-app-development.html">
                   <ListItemIcon>
                     <img src='images/android.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/">
                   <ListItemIcon>
                     <img src='images/internet-2.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/blockchain-nft.html">
                   <ListItemIcon>
                     <img src='images/nft.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton>
+                <ListItemButton href="/blockchain-nft.html">
                   <ListItemIcon>
                     <img src='images/blockchain.png' />
                   </ListItemIcon>
@@ -621,7 +622,7 @@ export default function About() {
               </Typography>
 
               <Button
-                className='readmore white pl0'
+                className='readmore white'
                 href='/about-us.html'
                 variant='text'
               >
@@ -704,7 +705,7 @@ export default function About() {
                     variant='h4'
                     component='div'
                   >
-                    CEO | MALAYSIA & INDIA
+                    CEO Malaysia
                   </Typography>
                 </CardContent>
               </Card>
@@ -874,13 +875,13 @@ export default function About() {
                     variant='h4'
                     component='div'
                   >
-                    Sales Director
+                  CEO India
                   </Typography>
                 </CardContent>
               </Card>
             </Grid>
 
-            <Grid
+            {/* <Grid
               item
               xs={2}
               className='rightOurCoreTeam'
@@ -918,8 +919,7 @@ export default function About() {
                   </Typography>
                 </CardContent>
               </Card>
-            </Grid>
-
+            </Grid> */}
 
             <Grid
               item
@@ -983,7 +983,7 @@ export default function About() {
               <br />
               <Button
                 href='/contact-us.html'
-                className='readmore white pl0'
+                className='readmore white'
                 variant='text'
               >
                 CONTACT US <ArrowRightAltIcon />
