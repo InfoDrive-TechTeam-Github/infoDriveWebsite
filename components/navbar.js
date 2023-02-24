@@ -167,7 +167,7 @@ function DrawerAppBar(props) {
 
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box  className='mobileMenu' onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <List>
               <ListItem disablePadding>
                 <ListItemButton component='a' to="/">
