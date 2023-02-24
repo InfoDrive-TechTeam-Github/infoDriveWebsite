@@ -1473,11 +1473,19 @@ img.btnLdr {
     padding-left: 0;
     padding-right: 0;
   }
-  .MuiTypography-body2{
+  .sectionBox .MuiTypography-body2{
     font-size: 14px !important;
   }
   .locationContent .MuiTypography-h7 {
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .sendMessage{
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .locationContent .MuiCardContent-root{
+    padding-left: 0;
+    padding-right: 0;
   }
   .whyUsBox .MuiTypography-h2 {
     margin-bottom: 30px;

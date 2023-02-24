@@ -259,8 +259,7 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Maximize Your Customer Satisfaction with Cutting-Edge Service Cloud
-          Solutions
+          Contact us today to learn more about our business process management solutions
         </Typography>
         <Button
           href='/contact-us.html'

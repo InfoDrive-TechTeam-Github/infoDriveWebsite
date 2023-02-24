@@ -187,7 +187,7 @@ export default function leadForm() {
       
                         <Stack spacing={2} direction="row">
                             {isLoading ? "" :
-                            (<Button type="submit" className="bgRed" variant="contained">Send Message</Button>)}
+                            (<Button type="submit" className="bgRed sendMessage" variant="contained">Send Message</Button>)}
                             {isLoading ? <div className='btnLodrShw'><h4>Message Sending....</h4>
                             <img src='loder.gif' alt="Loder" className='btnLdr'/></div> :''}
                         </Stack>
