@@ -1251,6 +1251,10 @@ img.btnLdr {
     margin-right: 0;
 
   }
+  .footerSection .MuiGrid-grid-xs-5{
+    width: 100%;
+    max-width: 100%;
+  }
   .businessProcessManagementService ul{
     padding-left: 20px;
   }
