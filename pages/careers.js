@@ -47,6 +47,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import parse from 'html-react-parser';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
+import OutlinedInput from '@mui/material/OutlinedInput';
 
 import LeadForm from '../components/leadForm';
 //import { jobService } from '../services';
@@ -520,21 +521,17 @@ console.log('jobs', jobs)
               />
             </Grid>
             <Grid item xs={12}>
-              <label>Skills</label>
-              <input className='w100 job-skills' 
-              onChange={handleChange}
-              placeholder='Please add comma after each skill'/>
-              {/* <TextField
-              autoFocus
-              margin="dense"
-              id="skills"
-              label="Skills"
-              type="text"
-              fullWidth
-              name="Skills"
-              variant="standard"
-              onChange={handleChange}
-            /> */}
+              <FormControl fullWidth  >
+                <InputLabel htmlFor="outlined-adornment-amount">Skills</InputLabel>
+                <OutlinedInput
+                  id="outlined-adornment-amount"
+                  startAdornment={<InputAdornment position="start"></InputAdornment>}
+                  label="Skills"
+                  placeholder='Please add comma after each skill'
+                  onChange={handleChange}
+                  name="Skills"
+                />
+              </FormControl>
             </Grid>
           </Grid>
         </DialogContent>
