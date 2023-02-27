@@ -47,9 +47,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import parse from 'html-react-parser';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
-import OutlinedInput from '@mui/material/OutlinedInput';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 import LeadForm from '../components/leadForm';
 //import { jobService } from '../services';
 
@@ -84,11 +82,12 @@ export default function SalesForceDevelopment() {
         [e.target.name]: e.target.value,
     });
   };
-  console.log('applyValues',applyValues); 
-  console.log('valuePhone',valuePhone); 
+  //var jbId = jobDetail.Id;
 
   const onSubmitHandler = () => {
-    console.log('submit', jobDetail);  
+   
+    let jbId = jobDetail.Id; 
+  
     axios.post('http://206.189.149.207:4001/addCandidate', 
     {
       OwnerId:jobDetail.OwnerId,
@@ -127,72 +126,83 @@ export default function SalesForceDevelopment() {
     .then(function (response) {
       console.log('responseSubmit', response);
       if(response.data.status == true){
-        toast.success("You have Sucessfully applied for Job", {
-          position: 'top-right',
-          autoClose: 2000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-        });
-        setApplyJob(false);
-        // email send code here
-        const inputData = {
-          JobId:applyValues.Id,
-          CandiateName:applyValues.FirstName + '/' + applyValues.LastName,
-          Skills:applyJob.Skills,
-          NoticePeriod:applyValues.AvailableFrom,
-          candidateCv:'',
-        };
-        try {
-          const res = axios.post("https://infodrive.orbiloggiin.com/GetEmailQuery", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(inputData),
+        // assign job to Candidate
+        const candidateId = response.data.payload.candidateId;
+          axios.post('http://206.189.149.207:4001/assignJobToCandidate', {
+            JobId: jbId,
+            candidateId:candidateId,
+            OwnrId:jobDetail.OwnerId
+          })
+          .then(function (response) {
+            //const getData = response.data.payload.payload
+            console.log('assignJob___', response);
+              // email send code here
+              //https://infodrive.orbiloggiin.com/SendEmailCandidate
+              const inputData = {
+                JobId:applyValues.Id,
+                CandiateName:applyValues.FirstName + '/' + applyValues.LastName,
+                Skills:applyJob.Skills,
+                NoticePeriod:applyValues.AvailableFrom,
+                candidateCv:'',
+              };
+              try {
+                const res = axios.post("https://infodrive.orbiloggiin.com/SendEmailCandidate", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(inputData),
+                });
+
+                const { error } = res.json()
+
+                if (error) {
+                  console.log("error_email",error);
+                  // toast.warning("Please Try Again", {
+                  //         position: 'top-right',
+                  //         autoClose: 2000,
+                  //         hideProgressBar: false,
+                  //         closeOnClick: true,
+                  //         pauseOnHover: true,
+                  //         draggable: true,
+                  //         progress: undefined,
+                  // });
+                }else{
+                  console.log("Email Send");
+                      // toast.success("Thank you for your message. We will Response in 2 business days", {
+                      //   position: 'top-right',
+                      //   autoClose: 2000,
+                      //   hideProgressBar: false,
+                      //   closeOnClick: true,
+                      //   pauseOnHover: true,
+                      //   draggable: true,
+                      //   progress: undefined,
+                      // });
+                }
+              } catch (error) {
+                console.log("error_email222",error);
+                  // toast.error("Something went wrong", {
+                  //   position: 'top-right',
+                  //   autoClose: 2000,
+                  //   hideProgressBar: false,
+                  //   closeOnClick: true,
+                  //   pauseOnHover: true,
+                  //   draggable: true,
+                  //   progress: undefined,
+                  // });
+              }
+
+          })
+          .catch(function (error) {
+            console.log(error);
           });
-    
-          const { error } = res.json()
-    
-          if (error) {
-            // toast.warning("Please Try Again", {
-            //         position: 'top-right',
-            //         autoClose: 2000,
-            //         hideProgressBar: false,
-            //         closeOnClick: true,
-            //         pauseOnHover: true,
-            //         draggable: true,
-            //         progress: undefined,
-            // });
-          }else{
-                // toast.success("Thank you for your message. We will Response in 2 business days", {
-                //   position: 'top-right',
-                //   autoClose: 2000,
-                //   hideProgressBar: false,
-                //   closeOnClick: true,
-                //   pauseOnHover: true,
-                //   draggable: true,
-                //   progress: undefined,
-                // });
-          }
-        } catch (error) {
-            // toast.error("Something went wrong", {
-            //   position: 'top-right',
-            //   autoClose: 2000,
-            //   hideProgressBar: false,
-            //   closeOnClick: true,
-            //   pauseOnHover: true,
-            //   draggable: true,
-            //   progress: undefined,
-            // });
-        }
+   
       }
        
     })
     .catch(function (error) {
-      console.log(error);
+      console.log(error.response.data.message);
+    
     });
   }
 useEffect(() => {
@@ -368,7 +378,7 @@ console.log('jobs', jobs)
                   gutterBottom
                   variant='h5'
                   component='div'
-                  className='w100 mt30 jd'
+                  className='w100 mt30'
                 >
                   <div
                   dangerouslySetInnerHTML={{__html:job.Jobdescription}}
@@ -532,17 +542,21 @@ console.log('jobs', jobs)
               />
             </Grid>
             <Grid item xs={12}>
-              <FormControl fullWidth  >
-                <InputLabel htmlFor="outlined-adornment-amount">Skills</InputLabel>
-                <OutlinedInput
-                  id="outlined-adornment-amount"
-                  startAdornment={<InputAdornment position="start"></InputAdornment>}
-                  label="Skills"
-                  placeholder='Please add comma after each skill'
-                  onChange={handleChange}
-                  name="Skills"
-                />
-              </FormControl>
+              <label>Skills</label>
+              <input className='w100 job-skills' 
+              onChange={handleChange}
+              placeholder='Please add comma after each skill'/>
+              {/* <TextField
+              autoFocus
+              margin="dense"
+              id="skills"
+              label="Skills"
+              type="text"
+              fullWidth
+              name="Skills"
+              variant="standard"
+              onChange={handleChange}
+            /> */}
             </Grid>
           </Grid>
         </DialogContent>
