@@ -147,7 +147,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox businessProcessManagementBox`}>
         <Typography gutterBottom variant='h1' component='h1'>
           Business Process Management & Improvement (BPM&I) is vital. Business Process Management (BPM) is a disciplined management approach and methodology to provide end-to-end process understanding, visibility and control while ensuring effective communication across the organization.
         </Typography>

@@ -85,7 +85,7 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox'>
+      <div className='sliderBox lightlingSlider'>
         <img
           style={{ width: '100%' }}
           src='images/0959e7bad48d4a91f7e112136efad00a.jpeg'

@@ -75,7 +75,7 @@ export default function IosAppDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox blockNFT'>
+      <div className='sliderBox blockNFT iosSlider'>
         <img
           style={{ width: '100%', opacity: '0.5' }}
           src='images/Blockchain_background.png'

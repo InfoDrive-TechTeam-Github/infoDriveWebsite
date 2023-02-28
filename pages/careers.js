@@ -47,15 +47,17 @@ import DialogTitle from '@mui/material/DialogTitle';
 import parse from 'html-react-parser';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import LeadForm from '../components/leadForm';
-import { jobService } from '../services';
+//import { jobService } from '../services';
 
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
   const [jobDetail, setJobDetail] = useState(null);
   const [applyJob, setApplyJob] = React.useState(false);
   const [valuePhone, setValuePhone] = useState()
+  const [jdHeight, setJdHeifht] = useState(false);
   const [applyValues, setApplyValues] = useState(
     {
       FirstName: "", 
@@ -72,6 +74,11 @@ export default function SalesForceDevelopment() {
     setJobDetail(data);
     setApplyJob(true);
   };
+  const handleClickShowMore = (data) =>{
+    setJobDetail(data);
+    setJdHeifht(current => !current);
+  }
+  console.log('jdHeight',jdHeight);
 
   const handleApplyClose = () => {
     setApplyJob(false);
@@ -82,12 +89,13 @@ export default function SalesForceDevelopment() {
         [e.target.name]: e.target.value,
     });
   };
-  console.log('applyValues',applyValues); 
-  console.log('valuePhone',valuePhone); 
+  //var jbId = jobDetail.Id;
 
   const onSubmitHandler = () => {
-    console.log('submit', jobDetail);  
-    axios.post('http://206.189.149.207:4001/addCandiate', 
+   
+    let jbId = jobDetail.Id; 
+  
+    axios.post('http://206.189.149.207:4001/addCandidate', 
     {
       OwnerId:jobDetail.OwnerId,
       FirstName:applyValues.FirstName,
@@ -97,7 +105,7 @@ export default function SalesForceDevelopment() {
       City:'dummy',
       Locality:'dummy',
       FullAddress:'dummy',
-      WillingToRelocate:'dummy',
+      WillingToRelocate:'0',
       Qualification:'dummy',
       Specialization:'dummy',
       CurrentOrganization:'dummy',
@@ -124,56 +132,90 @@ export default function SalesForceDevelopment() {
     })
     .then(function (response) {
       console.log('responseSubmit', response);
-        const inputData = {
-          JobId:applyValues.Id,
-          CandiateName:applyValues.FirstName + '/' + applyValues.LastName,
-          Skills:applyJob.Skills,
-          NoticePeriod:applyValues.AvailableFrom,
-          candidateCv:'',
-        };
-        try {
-          const res = axios.post("https://infodrive.orbiloggiin.com/GetEmailQuery", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(inputData),
-          });
-    
-          const { error } = res.json()
-    
-          if (error) {
-            toast.warning("Please Try Again", {
-                    position: 'top-right',
-                    autoClose: 2000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-            });
-          }else{
-                toast.success("Thank you for your message. We will Response in 2 business days", {
-                  position: 'top-right',
-                  autoClose: 2000,
-                  hideProgressBar: false,
-                  closeOnClick: true,
-                  pauseOnHover: true,
-                  draggable: true,
-                  progress: undefined,
+      if(response.data.status == true){
+        setApplyJob(false);
+        toast.success("You have Sucessfully applied for Job", {
+                        position: 'top-right',
+                        autoClose: 2000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                      });
+        // assign job to Candidate
+        const candidateId = response.data.payload.candidateId;
+          axios.post('http://206.189.149.207:4001/assignJobToCandidate', {
+            JobId: jbId,
+            candidateId:candidateId,
+            OwnrId:jobDetail.OwnerId
+          })
+          .then(function (response) {
+            //const getData = response.data.payload.payload
+            console.log('assignJob___', response);
+              // email send code here
+              //https://infodrive.orbiloggiin.com/SendEmailCandidate
+              const inputData = {
+                JobId:applyValues.Id,
+                CandiateName:applyValues.FirstName + '/' + applyValues.LastName,
+                Skills:applyJob.Skills,
+                NoticePeriod:applyValues.AvailableFrom,
+                candidateCv:'',
+              };
+              try {
+                const res = axios.post("https://infodrive.orbiloggiin.com/SendEmailCandidate", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/json",
+                  },
+                  body: JSON.stringify(inputData),
                 });
-          }
-        } catch (error) {
-            toast.error("Something went wrong", {
-              position: 'top-right',
-              autoClose: 2000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-            });
-        }
+
+                const { error } = res.json()
+
+                if (error) {
+                  console.log("error_email",error);
+                  // toast.warning("Please Try Again", {
+                  //         position: 'top-right',
+                  //         autoClose: 2000,
+                  //         hideProgressBar: false,
+                  //         closeOnClick: true,
+                  //         pauseOnHover: true,
+                  //         draggable: true,
+                  //         progress: undefined,
+                  // });
+                }else{
+                  console.log("Email Sent");
+                      // toast.success("Thank you for your message. We will Response in 2 business days", {
+                      //   position: 'top-right',
+                      //   autoClose: 2000,
+                      //   hideProgressBar: false,
+                      //   closeOnClick: true,
+                      //   pauseOnHover: true,
+                      //   draggable: true,
+                      //   progress: undefined,
+                      // });
+                }
+              } catch (error) {
+                console.log("error_email222",error);
+                  // toast.error("Something went wrong", {
+                  //   position: 'top-right',
+                  //   autoClose: 2000,
+                  //   hideProgressBar: false,
+                  //   closeOnClick: true,
+                  //   pauseOnHover: true,
+                  //   draggable: true,
+                  //   progress: undefined,
+                  // });
+              }
+
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+   
+      }
+       
     })
     .catch(function (error) {
       console.log(error);
@@ -352,12 +394,17 @@ console.log('jobs', jobs)
                   gutterBottom
                   variant='h5'
                   component='div'
-                  className='w100 mt30'
+                  className={`w100 mt30 jd ${jdHeight ? "setShowDescription" : ""}`}
                 >
                   <div
                   dangerouslySetInnerHTML={{__html:job.Jobdescription}}
                   />
                 </Typography>
+                {job.Jobdescription ? 
+                <span className='mt15 readMoreLink' onClick={() => handleClickShowMore(job)} >
+                  {jdHeight ? "Show less": "Show more"}
+                </span>
+                :""}
                 <Box className='mt30'>
                   <Box className='careerbox'>
                     <LocationOnIcon />
@@ -537,6 +584,21 @@ console.log('jobs', jobs)
         <DialogActions>
           <Button onClick={handleApplyClose}>Cancel</Button>
           <Button onClick={onSubmitHandler}>Submit</Button>
+        </DialogActions>
+      </Dialog>
+
+
+      <Dialog open={jdHeight} className="career-dialog" onClose={handleApplyClose}>
+        <DialogTitle>Job: {jobDetail?.JobTitle}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+                <div
+                  dangerouslySetInnerHTML={{__html:jobDetail?.Jobdescription}}
+                />
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClickShowMore}>Close</Button>
         </DialogActions>
       </Dialog>
     </div>
