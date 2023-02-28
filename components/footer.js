@@ -62,6 +62,11 @@ export default function Footer() {
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
+                      <ListItemButton component='a' target="_blank" href='/customer-relationship-management.html'>
+                        <ListItemText primary='CRM' />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem>
                       <ListItemButton component='a' target="_blank" href='/careers.html'>
                         <ListItemText primary='Career' />
                       </ListItemButton>

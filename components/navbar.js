@@ -225,13 +225,6 @@ function DrawerAppBar(props) {
                     </ListItem>
 
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/customer-relationship-management.html" >
-                        <ListItemText primary={'Customer Relationship Management'} />
-                      </ListItemButton>
-                    </ListItem>
-
-
-                    <ListItem disablePadding>
                       <ListItemButton component='a' to="/sap-emarsys.html" >
                         <ListItemText primary={'SAP Emarsys'} />
                       </ListItemButton>
@@ -337,6 +330,13 @@ function DrawerAppBar(props) {
                 </Menu>
                 
                 </ListItem>
+
+
+                <ListItem disablePadding>
+                      <ListItemButton component='a' to="/customer-relationship-management.html" >
+                        <ListItemText primary={'CRM'} />
+                      </ListItemButton>
+                    </ListItem>
                 <ListItem disablePadding>
                   <ListItemButton component='a' to="/about-us.html">
                     <ListItemText primary={'About us'} />
@@ -487,11 +487,6 @@ function DrawerAppBar(props) {
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/customer-relationship-management.html" >
-                        <ListItemText primary={'Customer Relationship Management'} />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
                       <ListItemButton component='a' to="/sap-emarsys.html" >
                         <ListItemText primary={'SAP Emarsys'} />
                       </ListItemButton>
@@ -597,7 +592,9 @@ function DrawerAppBar(props) {
                   </List>
                 </Menu>
 
-
+                      <ListItemButton component='a' to="/customer-relationship-management.html" >
+                        <ListItemText primary={'CRM'} />
+                      </ListItemButton>
                 <ListItemButton component='a' to="/about-us.html">
                   <ListItemText primary={'About us'} />
                 </ListItemButton>
