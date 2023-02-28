@@ -47,7 +47,8 @@ import DialogTitle from '@mui/material/DialogTitle';
 import parse from 'html-react-parser';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import LeadForm from '../components/leadForm';
 //import { jobService } from '../services';
 
@@ -56,6 +57,7 @@ export default function SalesForceDevelopment() {
   const [jobDetail, setJobDetail] = useState(null);
   const [applyJob, setApplyJob] = React.useState(false);
   const [valuePhone, setValuePhone] = useState()
+  const [jdHeight, setJdHeifht] = useState(false);
   const [applyValues, setApplyValues] = useState(
     {
       FirstName: "", 
@@ -72,6 +74,11 @@ export default function SalesForceDevelopment() {
     setJobDetail(data);
     setApplyJob(true);
   };
+  const handleClickShowMore = (data) =>{
+    setJobDetail(data);
+    setJdHeifht(current => !current);
+  }
+  console.log('jdHeight',jdHeight);
 
   const handleApplyClose = () => {
     setApplyJob(false);
@@ -126,6 +133,16 @@ export default function SalesForceDevelopment() {
     .then(function (response) {
       console.log('responseSubmit', response);
       if(response.data.status == true){
+        setApplyJob(false);
+        toast.success("You have Sucessfully applied for Job", {
+                        position: 'top-right',
+                        autoClose: 2000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                      });
         // assign job to Candidate
         const candidateId = response.data.payload.candidateId;
           axios.post('http://206.189.149.207:4001/assignJobToCandidate', {
@@ -168,7 +185,7 @@ export default function SalesForceDevelopment() {
                   //         progress: undefined,
                   // });
                 }else{
-                  console.log("Email Send");
+                  console.log("Email Sent");
                       // toast.success("Thank you for your message. We will Response in 2 business days", {
                       //   position: 'top-right',
                       //   autoClose: 2000,
@@ -201,8 +218,7 @@ export default function SalesForceDevelopment() {
        
     })
     .catch(function (error) {
-      console.log(error.response.data.message);
-    
+      console.log(error);
     });
   }
 useEffect(() => {
@@ -378,12 +394,17 @@ console.log('jobs', jobs)
                   gutterBottom
                   variant='h5'
                   component='div'
-                  className='w100 mt30'
+                  className={`w100 mt30 jd ${jdHeight ? "setShowDescription" : ""}`}
                 >
                   <div
                   dangerouslySetInnerHTML={{__html:job.Jobdescription}}
                   />
                 </Typography>
+                {job.Jobdescription ? 
+                <span className='mt15 readMoreLink' onClick={() => handleClickShowMore(job)} >
+                  {jdHeight ? "Show less": "Show more"}
+                </span>
+                :""}
                 <Box className='mt30'>
                   <Box className='careerbox'>
                     <LocationOnIcon />
@@ -563,6 +584,21 @@ console.log('jobs', jobs)
         <DialogActions>
           <Button onClick={handleApplyClose}>Cancel</Button>
           <Button onClick={onSubmitHandler}>Submit</Button>
+        </DialogActions>
+      </Dialog>
+
+
+      <Dialog open={jdHeight} className="career-dialog" onClose={handleApplyClose}>
+        <DialogTitle>Job: {jobDetail?.JobTitle}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+                <div
+                  dangerouslySetInnerHTML={{__html:jobDetail?.Jobdescription}}
+                />
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClickShowMore}>Close</Button>
         </DialogActions>
       </Dialog>
     </div>
