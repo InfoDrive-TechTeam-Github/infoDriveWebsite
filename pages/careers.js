@@ -51,7 +51,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import LeadForm from '../components/leadForm';
 //import { jobService } from '../services';
-
+import UploadIcon from '@mui/icons-material/Upload';
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
   const [jobDetail, setJobDetail] = useState(null);
@@ -578,6 +578,18 @@ console.log('jobs', jobs)
               variant="standard"
               onChange={handleChange}
             /> */}
+            </Grid>
+            <Grid item xs={12}>
+              <Button
+                variant="contained"
+                component="label"
+              > <UploadIcon/>
+                Upload Your CV File
+                <input
+                  type="file"
+                  hidden
+                />
+              </Button>
             </Grid>
           </Grid>
         </DialogContent>
