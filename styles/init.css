@@ -4,7 +4,12 @@
   font-weight: 400;
   src: url('fonts/Poppins/Poppins-Regular.ttf');
 }
-
+.bluecolor{
+color: #0b2653 !important;
+}
+.blackBackground{
+  background: #000 !important;
+}
 /* for desktop */
 .whatsapp_float {
   position: fixed;

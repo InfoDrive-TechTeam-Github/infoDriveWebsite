@@ -132,7 +132,7 @@ export default function blockchain() {
           </Grid>
         </Box>
       </div>
-      <section className={`sectionBox`}>
+      <section className={`sectionBox nftBox`}>
         <Typography
           className='w100 red'
           gutterBottom

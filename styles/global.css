@@ -454,8 +454,15 @@ img {
   padding-right: 0;
 }
 
+
 .sapEmarsysServices {
   background: url('images/06a329493177b9463dd2ccc980fee2a5.jpeg');
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+}
+.customerRelatinshipService {
+  background: url('images/617cf828ea2bd6894050ecc1fbcd3912_1.jpeg');
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -550,6 +557,7 @@ img {
   font-weight: 600;
   color: #dd3952;
   position: relative;
+  line-height: 30px;
 }
 .whyUsBox .MuiCard-root {
   border: none;
@@ -1263,6 +1271,25 @@ img.btnLdr {
 }
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
+  .IosAppBox2 .MuiTypography-h5 br{
+    display: none;
+  }
+  .IosAppBox3 .MuiTypography-body2 br{
+    display: none;
+  }
+  .iosSlider .readmore{
+    margin-top: 20px;
+  }
+  .webmobileappBox .MuiGrid-grid-xs-6{
+    padding-top: 0 !important;
+    padding-bottom: 15px !important;
+  }
+  .webmobileappBox .MuiGrid-grid-xs-6 .MuiTypography-h5 br{
+    display: none;
+  }
+  .salesForceServices p br{
+    display: none;
+  }
   .sliderBox img{
     height: 100%;
   }
@@ -1318,6 +1345,12 @@ img.btnLdr {
     height: initial !important;
     padding: 15px 30px;
   }
+  .IosOurBox .IosOurBoxPd .IosCard{
+    padding: 15px 0px;
+  }
+  .IosOurBox .IosOurBoxPd .IosCard br{
+    display: none;
+  }
   .BlockchainUsBox .MuiCardContent-root .MuiTypography-h3{
     line-height: 25px !important;
   }
@@ -1355,6 +1388,19 @@ img.btnLdr {
     font-size: 14px;
     padding-top: 2px;
     padding-bottom: 2px;
+    margin-top: 20px;
+  }
+  .salesForceServices2 .MuiTypography-h2 ,.salesForceServices2 .MuiTypography-body2{
+    padding-left: 0px !important;
+  }
+  .lightlingSlider .readmore{
+    margin-top: 10px;
+  }
+  .marketingSlider .readmore{
+    margin-top: 10px;
+  }
+  .customerRelationshipManagement .readmore{
+    margin-top: 0px;
   }
   .contactUsArea .locationContent {
     height: initial;
@@ -1376,6 +1422,12 @@ img.btnLdr {
     max-width: 100%;
     margin-left: 0;
     margin-top: 10px;
+  }
+  .nftBox ul li{
+    font-size:14px;
+  }
+  .applicationDevelopmentBox ul li{
+    font-size: 14px;
   }
   .aboutUsBox {
     height: initial;
@@ -1763,6 +1815,15 @@ img.btnLdr {
     margin-top: 15px;
     font-size: 14px;
     padding-right: 35px;
+  }
+  .sapSlider .salePart .MuiTypography-h3{
+    color: transparent;
+  }
+  .sapSlider .readmore{
+    margin-top: 20px;
+  }
+  .businessProcessManagementBox .MuiTypography-h5 br{
+    display: none;
   }
   .salePart .MuiTypography-h1 {
     font-size: 15px;

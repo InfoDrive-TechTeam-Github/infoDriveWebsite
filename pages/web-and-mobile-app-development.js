@@ -212,7 +212,7 @@ export default function WebMobileApp() {
         </Button>
       </section>
 
-      <section className={`sectionBox ourValueBox`}>
+      <section className={`sectionBox ourValueBox webmobileappBox`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={6} className='pb30'>
