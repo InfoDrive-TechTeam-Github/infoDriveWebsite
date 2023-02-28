@@ -58,6 +58,7 @@ export default function SalesForceDevelopment() {
   const [jobDetail, setJobDetail] = useState(null);
   const [applyJob, setApplyJob] = React.useState(false);
   const [valuePhone, setValuePhone] = useState()
+  const [jdHeight, setJdHeifht] = useState(false);
   const [applyValues, setApplyValues] = useState(
     {
       FirstName: "", 
@@ -74,6 +75,11 @@ export default function SalesForceDevelopment() {
     setJobDetail(data);
     setApplyJob(true);
   };
+  const handleClickShowMore = (data) =>{
+    setJobDetail(data);
+    setJdHeifht(current => !current);
+  }
+  console.log('jdHeight',jdHeight);
 
   const handleApplyClose = () => {
     setApplyJob(false);
@@ -368,12 +374,17 @@ console.log('jobs', jobs)
                   gutterBottom
                   variant='h5'
                   component='div'
-                  className='w100 mt30 jd'
+                  className={`w100 mt30 jd ${jdHeight ? "setShowDescription" : ""}`}
                 >
                   <div
                   dangerouslySetInnerHTML={{__html:job.Jobdescription}}
                   />
                 </Typography>
+                {job.Jobdescription ? 
+                <span className='mt15 readMoreLink' onClick={() => handleClickShowMore(job)} >
+                  {jdHeight ? "Show less": "Show more"}
+                </span>
+                :""}
                 <Box className='mt30'>
                   <Box className='careerbox'>
                     <LocationOnIcon />
@@ -549,6 +560,21 @@ console.log('jobs', jobs)
         <DialogActions>
           <Button onClick={handleApplyClose}>Cancel</Button>
           <Button onClick={onSubmitHandler}>Submit</Button>
+        </DialogActions>
+      </Dialog>
+
+
+      <Dialog open={jdHeight} className="career-dialog" onClose={handleApplyClose}>
+        <DialogTitle>Job: {jobDetail?.JobTitle}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+                <div
+                  dangerouslySetInnerHTML={{__html:jobDetail?.Jobdescription}}
+                />
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleClickShowMore}>Close</Button>
         </DialogActions>
       </Dialog>
     </div>
