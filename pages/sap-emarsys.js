@@ -86,7 +86,7 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox'>
+      <div className='sliderBox sapSlider'>
         <img
           style={{ width: '100%' }}
           src='images/ae292a98639663768aec9289f08dd823.jpeg'
@@ -95,8 +95,9 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'></Typography>
-            automation capabilities of SAP Emarsys.
+            <Typography gutterBottom variant='h3' component='div'>
+              automation capabilities of SAP Emarsys.
+            </Typography>
             <Typography gutterBottom variant='h1' component='div'>
               Unlock the full potential of your marketing
               <br />
@@ -202,7 +203,7 @@ export default function SalesForceDevelopment() {
           that drive engagement and loyalty.
         </Typography>
       </section>
-
+          <br/>
       <section
         className={`sectionBox saleForcesDevelopmentBox marketCloudBox sapEmarsysServices`}
       >

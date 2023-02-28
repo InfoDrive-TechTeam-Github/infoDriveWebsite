@@ -85,7 +85,7 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox'>
+      <div className='sliderBox lightlingSlider'>
         <img
           style={{ width: '100%' }}
           src='images/0959e7bad48d4a91f7e112136efad00a.jpeg'
@@ -94,10 +94,9 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
+            <Typography className="hiddenElement" gutterBottom variant='h3' component='div'>
               Salesforce LIGHTNING
             </Typography>
-
             <Typography gutterBottom variant='h1' component='div'>
               Transform Your Business Processes <br />
               and Enhance User Experience with <br />

@@ -86,7 +86,7 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox'>
+      <div className='sliderBox marketingSlider'>
         <img
           style={{ width: '100%' }}
           src='images/72250f50098664f9273c6d07e59ccdcd.jpeg'
@@ -95,7 +95,7 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'></Typography>
+            <Typography className="hiddenElement " gutterBottom variant='h3' component='div'>test</Typography>
 
             <Typography gutterBottom variant='h1' component='div'>
               Boost Your Marketing Success with

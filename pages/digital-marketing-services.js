@@ -307,9 +307,6 @@ export default function SalesForceDevelopment() {
           </Grid>
         </Box>
       </section>
-
-      <br />
-      <br />
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
           gutterBottom
