@@ -40,7 +40,7 @@ export default function Footer() {
             <Typography variant='h3' sx={{ my: 2 }}>
               Driven by technology
             </Typography>
-            <Typography variant='h5' sx={{ my: 2 }}>
+            <Typography variant='h5' sx={{ my: 2 }} className="pr30">
               InfoDrive Solutions is a premier software development company that
               specializes in providing innovative solutions using the latest
               technologies. Our team of highly skilled developers and architects
