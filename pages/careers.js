@@ -91,7 +91,7 @@ export default function SalesForceDevelopment() {
   //var jbId = jobDetail.Id;
 
   const onSubmitHandler = () => {
-    let jbId = jobDetail.Id;
+    let jbId = [jobDetail.Id];
 
     axios
       .post('http://206.189.149.207:4001/addCandidate', {
@@ -133,15 +133,6 @@ export default function SalesForceDevelopment() {
         console.log('responseSubmit', response);
         if (response.data.status == true) {
           setApplyJob(false);
-          toast.success('You have Sucessfully applied for Job', {
-            position: 'top-right',
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
           // assign job to Candidate
           const candidateId = response.data.payload.candidateId;
           axios
@@ -163,6 +154,16 @@ export default function SalesForceDevelopment() {
                 NoticePeriod: applyValues.AvailableFrom,
                 candidateCv: '',
               };
+              toast.success('You have Sucessfully applied for Job', {
+                position: 'top-right',
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              });
+
               try {
                 const res = axios.post(
                   'https://infodrive.orbiloggiin.com/SendEmailCandidate',
