@@ -945,6 +945,7 @@ export default function About() {
                     <a
                       href='https://www.linkedin.com/in/devrajsinghrawat/'
                       className='red'
+                      target='_blank'
                     >
                       <LinkedInIcon />
                     </a>
