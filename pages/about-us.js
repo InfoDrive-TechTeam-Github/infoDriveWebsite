@@ -575,7 +575,7 @@ export default function About() {
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton href="/">
+                <ListItemButton href="/customer-relationship-management.html">
                   <ListItemIcon>
                     <img src='images/internet-2.png' />
                   </ListItemIcon>
