@@ -40,26 +40,27 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact() {
-  const sendEmail = (e) => {
-    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+  // const sendEmail = (e) => {
+  //   e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
-    emailjs
-      .sendForm(
-        'service_mrxeobj',
-        'template_bwbn41u',
-        e.target,
-        '8A4PON3sVCyhdpw3U'
-      )
-      .then(
-        (result) => {
-          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
+  //   emailjs
+  //     .sendForm(
+  //       'service_mrxeobj',
+  //       'template_bwbn41u',
+  //       e.target,
+  //       '8A4PON3sVCyhdpw3U'
+  //     )
+  //     .then(
+  //       (result) => {
+  //         window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
+  const [isLoading, setLoading] =useState(false); 
+  ///onsole.log('isLoading', isLoading);
   const [inputData, setInputData] = useState({
     full_name: '',
     email_address: '',
@@ -74,16 +75,74 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('input____', inputData);
-    const response = await axios.post(
-      `http://206.189.149.207:4001/GetEmailQuery`,
-      inputData
-    );
-    console.log(response.status, response);
-    if (response.statusText == 'OK') {
-      toast.success(
-        'Thank you for your message. We will Response in 2 business days',
-        {
+    setLoading(true);
+    // console.log('input____', inputData);
+    // const response = await axios.post(
+    //   `https://infodrive.orbiloggiin.com/GetEmailQuery`,
+    //   inputData
+    // );
+    // console.log(response.status, response);
+    // if (response.statusText == 'OK') {
+    //   toast.success(
+    //     'Thank you for your message. We will Response in 2 business days',
+    //     {
+    //       position: 'top-right',
+    //       autoClose: 2000,
+    //       hideProgressBar: false,
+    //       closeOnClick: true,
+    //       pauseOnHover: true,
+    //       draggable: true,
+    //       progress: undefined,
+    //     }
+    //   );
+    // } else {
+    //   toast.success('Please Try Again', {
+    //     position: 'top-right',
+    //     autoClose: 2000,
+    //     hideProgressBar: false,
+    //     closeOnClick: true,
+    //     pauseOnHover: true,
+    //     draggable: true,
+    //     progress: undefined,
+    //   });
+    // }
+    try {
+			const res = await fetch("https://infodrive.orbiloggiin.com/GetEmailQuery", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(inputData),
+			});
+
+			const { error } = await res.json()
+
+			if (error) {
+				
+			toast.warning("Please Try Again", {
+              position: 'top-right',
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            });
+				return
+			}else{
+             setLoading(false);
+            toast.success("Thank you for your message. We will Response in 2 business days", {
+              position: 'top-right',
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            });
+			}
+		} catch (error) {
+        toast.error("Something went wrong", {
           position: 'top-right',
           autoClose: 2000,
           hideProgressBar: false,
@@ -91,19 +150,8 @@ export default function Contact() {
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-        }
-      );
-    } else {
-      toast.success('Please Try Again', {
-        position: 'top-right',
-        autoClose: 2000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-    }
+        });
+		}
   };
 
   return (
@@ -242,14 +290,17 @@ export default function Contact() {
                   </FormControl>
 
                   <Stack spacing={2} direction='row'>
-                    <Button
+                    {isLoading ? "" :
+                    (<Button
                       type='submit'
                       style={{ background: '#000' }}
                       className='bgRed white'
                       variant='contained'
                     >
                       Send Message
-                    </Button>
+                    </Button>)}
+                    {isLoading ? <div className='btnLodrShw'><h4 style={{color:"#000000"}}>Message Sending....</h4>
+                    <img style={{width:50, height:50, marginTop:15}} src='loading.gif' alt="Loder" className='btnLdr'/></div> :''}
                     <br/>
                   </Stack>
                   <br/>
