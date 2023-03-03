@@ -149,7 +149,7 @@ Remote Based Staff Augumation Services in USA,'
           className='mb0 bluecolor upperCase'
           gutterBottom
           variant='h3'
-          component='div'
+          component='h1'
         >
           What is Staff Augmentation?
         </Typography>
@@ -179,7 +179,7 @@ Remote Based Staff Augumation Services in USA,'
                     className='bluecolor'
                     gutterBottom
                     variant='h3'
-                    component='div'
+                    component='h2'
                   >
                     Benefits of Staff Augmentation
                   </Typography>

@@ -86,7 +86,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
+            <Typography gutterBottom variant='h3' component='h1'>
               Customer Relationship Management
             </Typography>
             <Typography gutterBottom variant='h1' component='div'>
