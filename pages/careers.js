@@ -663,12 +663,9 @@ export default function SalesForceDevelopment() {
             /> */}
             </Grid>
             <Grid item xs={12}>
-              <Button variant='contained' component='label'>
-                {' '}
-                <UploadIcon />
-                Upload Your CV File
-                <input type='file' onChange={fileUpload} />
-              </Button>
+            <label className='w100' style={{'marginBottom':'10px', 'marginTop':'10px', 'display':'block'}}>Upload Your CV File</label>
+              <input className="" type='file' onChange={fileUpload} />
+
             </Grid>
           </Grid>
         </DialogContent>
