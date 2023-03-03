@@ -94,7 +94,12 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography className="hiddenElement" gutterBottom variant='h3' component='div'>
+            <Typography
+              className='hiddenElement'
+              gutterBottom
+              variant='h3'
+              component='div'
+            >
               Salesforce LIGHTNING
             </Typography>
             <Typography gutterBottom variant='h1' component='div'>
@@ -156,7 +161,7 @@ export default function SalesForceDevelopment() {
           className='upperCase'
           component='h1'
         >
-          Why Salesforce Lightning Development
+          Why Salesforce Lightning Development ?
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='h3'>
