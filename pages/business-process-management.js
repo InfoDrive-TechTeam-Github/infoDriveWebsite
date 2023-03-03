@@ -40,32 +40,36 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
-        <title>
-          Salesforce Service Cloud Implementation, Customization, Integrations,
-          and Consulting Services - InfoDrive Solutions
-        </title>
         <meta
           name='description'
-          content="Enhance customer service with InfoDrive Solutions' Salesforce Service Cloud implementation and consulting services. Our team provides customization, automation, and integration solutions globally."
+          content='Looking to improve your business processes? Our comprehensive suite of services includes business process optimization, automation, streamlining, and reengineering, as well as workflow management software and process efficiency tools. Our experts utilize proven process improvement methodologies, such as Lean, and conduct in-depth process mapping and analysis to help you achieve your goals.'
         />
         <meta
           name='keywords'
-          content='Salesforce Service Cloud Implementation, Salesforce Service Cloud Consulting Services, Salesforce Service Cloud Integrations, Salesforce Service Cloud customization, Salesforce Service Cloud for small business, Salesforce Service Cloud Consulting Services in Singapore, Salesforce Service Cloud Consulting Services in Malaysia, Salesforce Service Cloud Consulting Services in India, Salesforce Service Cloud automation, Salesforce Service Cloud implementation services in Singapore, Salesforce Service Cloud for Southeast Asian businesses'
+          content='Business process optimization services, Process improvement consulting, Business process automation solutions, Process streamlining services, Workflow management software, Process efficiency tools, Business process reengineering services, Process improvement methodologies, Lean process improvement services, Process mapping and analysis services, Business Process Management & Improvement, Business process reengineering services in Singapore, Business Process Management Services in Malaysia, Business Process Management Services in India'
         />
-        <link
-          rel='canonical'
-          href='https://infodrive-solutions.com/service-cloud.html'
-        />
-
         <meta
           property='og:title'
-          content='Salesforce Service Cloud Implementation, Customization, Integrations,
-          and Consulting Services - InfoDrive Solutions'
+          content='Business Process Management &amp; Improvement (BPM&amp;I) | Optimization Services and Improvement Consulting'
+        />
+        <meta
+          property='og:description'
+          content='Looking to improve your business processes? Our comprehensive suite of services includes business process optimization, automation, streamlining, and reengineering, as well as workflow management software and process efficiency tools. Our experts utilize proven process improvement methodologies, such as Lean, and conduct in-depth process mapping and analysis to help you achieve your goals.'
+        />
+        <meta property='og:type' content='website' />
+        <meta
+          property='og:url'
+          content='https://infodrive-solutions.com/business-process-management.html'
         />
         <meta
           property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+          content='https://example.com/your-image.jpg'
         />
+        <link
+          rel='canonical'
+          href='https://infodrive-solutions.com/business-process-management.html'
+        />
+
         <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
@@ -93,14 +97,19 @@ export default function SalesForceDevelopment() {
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography className="hiddenElement" gutterBottom variant='h3' component='div'>
+            <Typography
+              className='hiddenElement'
+              gutterBottom
+              variant='h3'
+              component='div'
+            >
               Salesforce SERVICE Cloud Services
             </Typography>
 
             <Typography gutterBottom variant='h1' component='div'>
-              Effective business <br/>
-              processes are essential for <br/>
-              an organisation’s success. 
+              Effective business <br />
+              processes are essential for <br />
+              an organisation’s success.
             </Typography>
             <Button
               href='/contact-us.html'
@@ -149,14 +158,20 @@ export default function SalesForceDevelopment() {
 
       <section className={`sectionBox businessProcessManagementBox`}>
         <Typography gutterBottom variant='h1' component='h1'>
-          Business Process Management & Improvement (BPM&I) is vital. Business Process Management (BPM) is a disciplined management approach and methodology to provide end-to-end process understanding, visibility and control while ensuring effective communication across the organization.
+          Business Process Management & Improvement (BPM&I) is vital. Business
+          Process Management (BPM) is a disciplined management approach and
+          methodology to provide end-to-end process understanding, visibility
+          and control while ensuring effective communication across the
+          organization.
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='div'>
-          BPM offers many benefits to organizations aiming to grow in a <br/>
-          strategic, cost-effective manner. Broadly, the major benefits of this<br/>
-          business process methodology such as Increased business agility, <br/>
-          Decreased costs, Increased process transparency and Streamlined <br/>
+          BPM offers many benefits to organizations aiming to grow in a <br />
+          strategic, cost-effective manner. Broadly, the major benefits of this
+          <br />
+          business process methodology such as Increased business agility,{' '}
+          <br />
+          Decreased costs, Increased process transparency and Streamlined <br />
           technology solutions.
         </Typography>
       </section>
@@ -169,7 +184,11 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}></Grid>
             <Grid item xs={5} className='businessProcessManagementBox'>
               <Typography gutterBottom variant='h5' component='div'>
-              Business Process Improvement (BPI) focuses on increasing customer value through improving quality, enhancing service, eliminating wastes, reducing costs, and/or increasing productivity of activity or business process, through Lean Six Sigma methodology.
+                Business Process Improvement (BPI) focuses on increasing
+                customer value through improving quality, enhancing service,
+                eliminating wastes, reducing costs, and/or increasing
+                productivity of activity or business process, through Lean Six
+                Sigma methodology.
               </Typography>
             </Grid>
           </Grid>
@@ -190,7 +209,10 @@ export default function SalesForceDevelopment() {
                     className='mb0'
                     component='h3'
                   >
-                    BPM combined with BPI, performance management and organizational change management with technology, ensures the success and sustainability of process improvements while enabling a process excellence culture.
+                    BPM combined with BPI, performance management and
+                    organizational change management with technology, ensures
+                    the success and sustainability of process improvements while
+                    enabling a process excellence culture.
                   </Typography>
                   <br />
                   <Typography
@@ -198,7 +220,10 @@ export default function SalesForceDevelopment() {
                     variant='body2'
                     color='text.secondary'
                   >
-                    We at InfoDrive Solutions have been assisting organisations in terms of Business Process Management & Improvement (BPM&I), helping them transform their businesses and guiding them to new and efficient ways of working.
+                    We at InfoDrive Solutions have been assisting organisations
+                    in terms of Business Process Management & Improvement
+                    (BPM&I), helping them transform their businesses and guiding
+                    them to new and efficient ways of working.
                   </Typography>
                 </CardContent>
               </Card>
@@ -259,8 +284,8 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Maximize Your Customer Satisfaction with Cutting-Edge Service Cloud
-          Solutions
+          Contact us today to learn more about our business process
+          management solutions
         </Typography>
         <Button
           href='/contact-us.html'

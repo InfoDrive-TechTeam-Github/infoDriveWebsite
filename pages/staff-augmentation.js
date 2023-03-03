@@ -41,31 +41,22 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          SAP Emarsys Customer Engagement | Services & Consulting – InfoDrive
-          Solutions
+          Top IT Staff Augmentation Services in Singapore, Malaysia &amp; USA -
+          InfoDrive Solutions
         </title>
         <meta
           name='description'
-          content='InfoDrive Solutions offers expert SAP Emarsys solutions including integration, implementation, and consulting services. As a trusted SAP Emarsys partner, we provide customized support for marketing, customer engagement, e-commerce, B2B marketing, data management, personalization, and multichannel marketing.'
+          content='InfoDrive Solutions offers high-quality staff augmentation services in Singapore, Malaysia, and the USA. Get top-notch IT staff augmentation services, software development staffing, project-based staffing, and more. Contact us for temporary staff augmentation, contract staffing, and on-demand staffing solutions.'
         />
         <meta
           name='keywords'
-          content='SAP Emarsys Solutions, SAP Emarsys Integration, SAP Emarsys Implementation, SAP Emarsys Services, SAP Emarsys Consulting, SAP Emarsys Partner, SAP Emarsys Support, SAP Emarsys Platform, SAP Emarsys for Marketing, SAP Emarsys for Customer Engagement, SAP Emarsys for E-commerce, SAP Emarsys for B2B Marketing, SAP Emarsys for Data Management, SAP Emarsys for Personalization, SAP Emarsys for Multichannel Marketing, SAP Emarsys Consulting in Singapore, SAP Emarsys Services in Malaysia, SAP Emarsys Services in Singapore, SAP Emarsys Services in India, SAP Emarsys Services in Kuala Lumpur, SAP Emarsys Customer Engagement'
+          content='It Staffs Augmentation Services, IT Staff Augmentation Services in Singapore, IT Staff Augmentation Services in Malaysia, Resource And Staff Augmentation, Software Development Staff Augmentation, Staff Augmentation Firm, Technical Staff Augmentation, Top It Staffs Augmentation Companies, Project-Based Staff Augmentation Services, Benefits of Staff Augmentation, Technology Staffing Solutions, Contract Staffing Services, Staff Augmentation Consulting, On-Demand Staff Augmentation, Staff Augmentation for Software Development, Staffing Augmentation for Project Management, Temporary Staff Augmentation Services, Staff Augmentation for IT Infrastructure, Staff Augmentation for Software Development in Singapore, Staff Augmentation for Software Development in Malaysia, Temporary Staff Augmentation Services in Singapore, Staff Augmentation Consulting in Malaysia, Staff Augmentation Consulting in Singapore, Staff Augmentation Services in the USA, Project-Based Staff Augmentation Services In Singapore'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/search-engine-optimization.html'
-        />
-        <meta
-          property='og:title'
-          content='SAP Emarsys Customer Engagement | Services & Consulting – InfoDrive
-          Solutions'
+          href='https://infodrive-solutions.com/staff-augmentation.html'
         />
 
-        <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
-        />
         <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
@@ -97,14 +88,12 @@ export default function SalesForceDevelopment() {
           <Grid container spacing={0}>
             <Typography gutterBottom variant='h3' component='div'>
               Staff Augmentation
-             </Typography>
+            </Typography>
             <Typography gutterBottom variant='h1' component='div'>
-              At InfoDrive Solutions, we understand <br/>
-              that businesses often need additional 
-              resources <br/> to complete specific projects 
-              or to cover temporary <br/> staffing shortages.
-              That's where our  <br/> staff augmentation 
-              services come in. 
+              At InfoDrive Solutions, we understand <br />
+              that businesses often need additional resources <br /> to complete
+              specific projects or to cover temporary <br /> staffing shortages.
+              That's where our <br /> staff augmentation services come in.
             </Typography>
             <Button
               href='/contact-us.html'
@@ -152,12 +141,20 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox whyUsBox  pb0 `}>
-      <Typography className='mb0 bluecolor upperCase' gutterBottom variant='h3' component='div'>
-        What is Staff Augmentation?  
+        <Typography
+          className='mb0 bluecolor upperCase'
+          gutterBottom
+          variant='h3'
+          component='div'
+        >
+          What is Staff Augmentation?
         </Typography>
 
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
-        Staff augmentation is the process of adding temporary or project-based staff to your existing team in order to meet specific business needs. This can be a cost-effective solution for businesses that need additional resources on a short-term or project-based basis.
+          Staff augmentation is the process of adding temporary or project-based
+          staff to your existing team in order to meet specific business needs.
+          This can be a cost-effective solution for businesses that need
+          additional resources on a short-term or project-based basis.
         </Typography>
         <br />
 
@@ -166,8 +163,7 @@ export default function SalesForceDevelopment() {
           gutterBottom
           variant='body1'
           color='text.secondary'
-        >
-        </Typography>
+        ></Typography>
         <br />
         <br />
         <Box sx={{ flexGrow: 1 }}>
@@ -175,15 +171,21 @@ export default function SalesForceDevelopment() {
             <Grid item xs={12} className>
               <Card>
                 <CardContent>
-                <Typography className='bluecolor' gutterBottom variant='h3' component='div'>
-                Benefits of Staff Augmentation                
-                </Typography>
+                  <Typography
+                    className='bluecolor'
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                  >
+                    Benefits of Staff Augmentation
+                  </Typography>
                   <Typography
                     className='pr30 pt15'
                     variant='body2'
                     color='text.secondary'
                   >
-                    There are numerous benefits to using staff augmentation services, including:
+                    There are numerous benefits to using staff augmentation
+                    services, including:
                   </Typography>
                 </CardContent>
               </Card>
@@ -192,11 +194,22 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                <Typography className='bluecolor' gutterBottom variant='h3' component='div'>
-                Flexibility       
-                </Typography>
-                  <Typography variant='body2' className='pr10' color='text.secondary'>
-                  Staff augmentation allows you to add skilled professionals to your team on a temporary or project basis, giving you the flexibility to scale up or down as needed.
+                  <Typography
+                    className='bluecolor'
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                  >
+                    Flexibility
+                  </Typography>
+                  <Typography
+                    variant='body2'
+                    className='pr10'
+                    color='text.secondary'
+                  >
+                    Staff augmentation allows you to add skilled professionals
+                    to your team on a temporary or project basis, giving you the
+                    flexibility to scale up or down as needed.
                   </Typography>
                 </CardContent>
               </Card>
@@ -205,15 +218,23 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                <Typography className='bluecolor' gutterBottom variant='h3' component='div'>
-                Cost-effectiveness       
-                </Typography>
+                  <Typography
+                    className='bluecolor'
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                  >
+                    Cost-effectiveness
+                  </Typography>
                   <Typography
                     className='pr10'
                     variant='body2'
                     color='text.secondary'
                   >
-                   Staff augmentation can be a more cost-effective solution than hiring permanent employees, as you only pay for the services you need for the duration of the project or assignment.
+                    Staff augmentation can be a more cost-effective solution
+                    than hiring permanent employees, as you only pay for the
+                    services you need for the duration of the project or
+                    assignment.
                   </Typography>
                 </CardContent>
               </Card>
@@ -222,11 +243,22 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                <Typography className='bluecolor' gutterBottom variant='h3' component='div'>
-                Improved productivity  
-                </Typography>
-                  <Typography variant='body2' className="pr10" color='text.secondary'>
-                  By filling gaps in your team with skilled professionals, you can increase productivity and efficiency, allowing you to meet project deadlines and achieve your business goals.
+                  <Typography
+                    className='bluecolor'
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                  >
+                    Improved productivity
+                  </Typography>
+                  <Typography
+                    variant='body2'
+                    className='pr10'
+                    color='text.secondary'
+                  >
+                    By filling gaps in your team with skilled professionals, you
+                    can increase productivity and efficiency, allowing you to
+                    meet project deadlines and achieve your business goals.
                   </Typography>
                 </CardContent>
               </Card>
@@ -235,11 +267,23 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                <Typography className='bluecolor' gutterBottom variant='h3' component='div'>
-                Access to specialized skills
-                </Typography>
-                  <Typography variant='body2' className="pr10" color='text.secondary'>
-                  Staff augmentation gives you access to a pool of professionals with a wide range of skills and expertise. This can be particularly useful if you need specialized skills or knowledge for a specific project.
+                  <Typography
+                    className='bluecolor'
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                  >
+                    Access to specialized skills
+                  </Typography>
+                  <Typography
+                    variant='body2'
+                    className='pr10'
+                    color='text.secondary'
+                  >
+                    Staff augmentation gives you access to a pool of
+                    professionals with a wide range of skills and expertise.
+                    This can be particularly useful if you need specialized
+                    skills or knowledge for a specific project.
                   </Typography>
                 </CardContent>
               </Card>
@@ -248,8 +292,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </section>
 
-
-          <br/>
+      <br />
       <section
         className={`sectionBox saleForcesDevelopmentBox marketCloudBox sapEmarsysServices customerRelatinshipService`}
       >
@@ -262,12 +305,21 @@ export default function SalesForceDevelopment() {
                 variant='h2'
                 component='div'
               >
-              InfoDrive Solutions has a team of skilled professionals available for staff augmentation assignments in Singapore, Malaysia, and India. Our team includes experienced professionals in a variety of fields, including IT, engineering, finance, and marketing.
+                InfoDrive Solutions has a team of skilled professionals
+                available for staff augmentation assignments in Singapore,
+                Malaysia, and India. Our team includes experienced professionals
+                in a variety of fields, including IT, engineering, finance, and
+                marketing.
               </Typography>
 
               <Typography gutterBottom variant='h5' component='div'>
-              We work closely with you to understand your business needs and goals, and we carefully match the right professionals to your project or assignment. Our staff augmentation services are flexible and scalable, allowing you to add or remove resources as needed.
-In addition to providing skilled professionals, we also offer project management and support services to ensure that your project is completed successfully.
+                We work closely with you to understand your business needs and
+                goals, and we carefully match the right professionals to your
+                project or assignment. Our staff augmentation services are
+                flexible and scalable, allowing you to add or remove resources
+                as needed. In addition to providing skilled professionals, we
+                also offer project management and support services to ensure
+                that your project is completed successfully.
               </Typography>
             </Grid>
           </Grid>
@@ -276,12 +328,13 @@ In addition to providing skilled professionals, we also offer project management
 
       <section className={`sectionBox`}>
         <Typography gutterBottom variant='h1' component='h2'>
-        Why Choose InfoDrive Solutions?        
+          Why Choose InfoDrive Solutions?
         </Typography>
 
         <Typography gutterBottom variant='h5' component='div'>
-        There are many reasons to choose InfoDrive Solutions for your staff augmentation needs. Here are just a few:          
-          </Typography>
+          There are many reasons to choose InfoDrive Solutions for your staff
+          augmentation needs. Here are just a few:
+        </Typography>
       </section>
       <section className={`sectionBox whyUsBox  pb0 pt0 `}>
         <Box sx={{ flexGrow: 1 }}>
@@ -295,7 +348,7 @@ In addition to providing skilled professionals, we also offer project management
                     className='mb0 bluecolor'
                     component='div'
                   >
-                    Extensive <br/> experience
+                    Extensive <br /> experience
                   </Typography>
                   <br />
                   <Typography
@@ -303,7 +356,8 @@ In addition to providing skilled professionals, we also offer project management
                     variant='body2'
                     color='text.secondary'
                   >
-                    We have been providing staff augmentation services for many years and have a proven track record of success.
+                    We have been providing staff augmentation services for many
+                    years and have a proven track record of success.
                   </Typography>
                 </CardContent>
               </Card>
@@ -318,11 +372,14 @@ In addition to providing skilled professionals, we also offer project management
                     className='mb0 bluecolor'
                     component='div'
                   >
-                    Wide range <br/>of skills
+                    Wide range <br />
+                    of skills
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  Our team includes professionals with a wide range of skills and expertise, so you can find the right match for your project or assignment.
+                    Our team includes professionals with a wide range of skills
+                    and expertise, so you can find the right match for your
+                    project or assignment.
                   </Typography>
                 </CardContent>
               </Card>
@@ -345,7 +402,8 @@ In addition to providing skilled professionals, we also offer project management
                     variant='body2'
                     color='text.secondary'
                   >
-                    We offer flexible staffing solutions that can be tailored to meet your specific business needs.
+                    We offer flexible staffing solutions that can be tailored to
+                    meet your specific business needs.
                   </Typography>
                 </CardContent>
               </Card>
@@ -360,11 +418,13 @@ In addition to providing skilled professionals, we also offer project management
                     className='mb0 bluecolor'
                     component='div'
                   >
-                    Dedicated <br/>support
+                    Dedicated <br />
+                    support
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  We provide ongoing support and project management to ensure that your project is completed successfully.
+                    We provide ongoing support and project management to ensure
+                    that your project is completed successfully.
                   </Typography>
                 </CardContent>
               </Card>
@@ -379,11 +439,13 @@ In addition to providing skilled professionals, we also offer project management
                     className='mb0 bluecolor'
                     component='div'
                   >
-                    Strong <br/>reputation
+                    Strong <br />
+                    reputation
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                  We have a strong reputation in the industry for providing high-quality staff augmentation services.
+                    We have a strong reputation in the industry for providing
+                    high-quality staff augmentation services.
                   </Typography>
                 </CardContent>
               </Card>
@@ -395,19 +457,19 @@ In addition to providing skilled professionals, we also offer project management
       <section className={`sectionBox ourValueBox ourBeliefBox pt0 pb0`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-            <Grid
-              item
-              xs={5}
-              style={{ padding: '30px'}}
-            >
-              <br/>
+            <Grid item xs={5} style={{ padding: '30px' }}>
+              <br />
               <Typography gutterBottom variant='h3' component='div'>
-              If you're in need of temporary or project-based staff, don't hesitate to contact InfoDrive Solutions.
+                If you're in need of temporary or project-based staff, don't
+                hesitate to contact InfoDrive Solutions.
                 <br />
               </Typography>
 
               <Typography gutterBottom variant='h5' component='div'>
-              We can help you find the skilled professionals you need to meet your business goals. Contact us today to learn more about our staff augmentation services.<br />
+                We can help you find the skilled professionals you need to meet
+                your business goals. Contact us today to learn more about our
+                staff augmentation services.
+                <br />
               </Typography>
               <br />
               <Button
