@@ -305,7 +305,7 @@ export default function ServicesForStartUps() {
             className='white pb15 pt15 poppin'
             component='div'
           >
-            Get in touch with our team and learn how we can help your startup
+            Get in Touch with Our Team and Learn How We can Help Your Startup
             succeed
           </Typography>
           <Button
