@@ -312,6 +312,7 @@ export default function SalesForceDevelopment() {
           content=' Join our team at Infodrive Solutions - Exciting Career Opportunities
           Available'
         />
+        <link rel='icon' href='/favicon.png' />
       </Head>
       <meta
         property='og:image'
@@ -417,7 +418,7 @@ export default function SalesForceDevelopment() {
           here:
         </Typography>
       </section>
-      <br/>
+      <br />
 
       <section className={`sectionBox nm jobSection`}>
         <Grid container spacing={7} justify='center'>
@@ -664,9 +665,17 @@ export default function SalesForceDevelopment() {
             /> */}
             </Grid>
             <Grid item xs={12}>
-            <label className='w100' style={{'marginBottom':'10px', 'marginTop':'10px', 'display':'block'}}>Upload Your CV File</label>
-              <input className="" type='file' onChange={fileUpload} />
-
+              <label
+                className='w100'
+                style={{
+                  marginBottom: '10px',
+                  marginTop: '10px',
+                  display: 'block',
+                }}
+              >
+                Upload Your CV File
+              </label>
+              <input className='' type='file' onChange={fileUpload} />
             </Grid>
           </Grid>
         </DialogContent>

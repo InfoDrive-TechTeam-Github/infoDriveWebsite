@@ -513,8 +513,8 @@ export default function AndroidAppDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Ready to take your business to the next level with a custom web or
-          mobile app?
+          Ready to Take Your Business to the Next Level with a Custom Web or
+          Mobile App?
         </Typography>
         <Button
           href='/contact-us.html'

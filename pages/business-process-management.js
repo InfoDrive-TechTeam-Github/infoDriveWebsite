@@ -40,6 +40,11 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
+        <title>
+          Business Process Management & Improvement (BPM&I) | Optimization
+          Services and Improvement Consulting
+        </title>
+
         <meta
           name='description'
           content='Looking to improve your business processes? Our comprehensive suite of services includes business process optimization, automation, streamlining, and reengineering, as well as workflow management software and process efficiency tools. Our experts utilize proven process improvement methodologies, such as Lean, and conduct in-depth process mapping and analysis to help you achieve your goals.'
@@ -69,7 +74,6 @@ export default function SalesForceDevelopment() {
           rel='canonical'
           href='https://infodrive-solutions.com/business-process-management.html'
         />
-
         <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
@@ -284,8 +288,8 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Contact us today to learn more about our business process
-          management solutions
+          Contact Us Today to Learn More About Our Business Process
+          Management Solutions
         </Typography>
         <Button
           href='/contact-us.html'

@@ -53,6 +53,11 @@ export default function SalesForceDevelopment() {
 CRM implementation services in Singapore, CRM Implementation Services Malaysia, Sales Automation Software Singapore, Customer Service Management Solutions India, CRM Software Training and Support Malaysia, Customer Service Management Solutions Singapore, CRM Software Customization Services Singapore, Salesforce CRM Software Provider in Singapore, CRM Software Providers in Malaysia
 '
         />
+        <link
+          rel='canonical'
+          href='https://infodrive-solutions.com/business-process-management.html'
+        />
+        <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -81,7 +86,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
+            <Typography gutterBottom variant='h3' component='h1'>
               Customer Relationship Management
             </Typography>
             <Typography gutterBottom variant='h1' component='div'>
