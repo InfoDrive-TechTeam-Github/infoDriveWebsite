@@ -467,6 +467,12 @@ img {
   padding-left: 0;
   padding-right: 0;
 }
+.socialMediaService {
+  background: url('images/7722f61d3183870c9b6bea8eb5822e1b.jpeg');
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+}
 .businessProcessManagement {
   background: url('images/1212e63413b1e90306a62b3c2a241a52.jpeg');
   background-size: cover;
