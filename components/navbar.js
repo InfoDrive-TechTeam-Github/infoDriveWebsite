@@ -197,6 +197,11 @@ function DrawerAppBar(props) {
                       />
                     </ListItem>
                     <ListItem disablePadding>
+                      <ListItemButton component='a' to="/customer-relationship-management.html" >
+                        <ListItemText primary={'CRM'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemButton component='a' to="/web-and-mobile-app-development.html">
                         <ListItemText primary={'Web and app development '} />
                       </ListItemButton>
@@ -207,14 +212,14 @@ function DrawerAppBar(props) {
                     </ListItem>
 
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/blockchain-nft.html" >
-                        <ListItemText primary={'Blockchain and NFT'} />
+                      <ListItemButton component='a' to="/full-stack-development.html" >
+                        <ListItemText primary={'Full stack development'} />
                       </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/full-stack-development.html" >
-                        <ListItemText primary={'Full stack development'} />
+                      <ListItemButton component='a' to="/blockchain-nft.html" >
+                        <ListItemText primary={'Blockchain and NFT'} />
                       </ListItemButton>
                     </ListItem>
 
@@ -347,10 +352,11 @@ function DrawerAppBar(props) {
                 </ListItem>
 
                 <ListItem disablePadding>
-                      <ListItemButton component='a' to="/customer-relationship-management.html" >
-                        <ListItemText primary={'CRM'} />
-                      </ListItemButton>
-                    </ListItem>
+                  <ListItemButton component='a' to="/blog.html">
+                    <ListItemText primary={'Blog'} />
+                  </ListItemButton>
+                </ListItem>
+
                 <ListItem disablePadding>
                   <ListItemButton component='a' to="/about-us.html">
                     <ListItemText primary={'About us'} />
@@ -471,6 +477,11 @@ function DrawerAppBar(props) {
                       />
                     </ListItem>
                     <ListItem disablePadding>
+                      <ListItemButton component='a' to="/customer-relationship-management.html" >
+                        <ListItemText primary={'CRM'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemButton component='a' to="/web-and-mobile-app-development.html">
                         <ListItemText primary={'Web and app development '} />
                       </ListItemButton>
@@ -485,16 +496,17 @@ function DrawerAppBar(props) {
                     </ListItem>
 
                     <ListItem disablePadding>
+                      <ListItemButton component='a' to="/full-stack-development.html" >
+                        <ListItemText primary={'Full stack development'} />
+                      </ListItemButton>
+                    </ListItem>
+
+                    <ListItem disablePadding>
                       <ListItemButton component='a' to="/blockchain-nft.html" >
                         <ListItemText primary={'Blockchain and NFT'} />
                       </ListItemButton>
                     </ListItem>
 
-                    <ListItem disablePadding>
-                      <ListItemButton component='a' to="/full-stack-development.html" >
-                        <ListItemText primary={'Full stack development'} />
-                      </ListItemButton>
-                    </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/saas-application-development.html" >
                         <ListItemText primary={'SAAS Application Development'} />
@@ -619,9 +631,9 @@ function DrawerAppBar(props) {
                   </List>
                 </Menu>
 
-                      <ListItemButton component='a' to="/customer-relationship-management.html" >
-                        <ListItemText primary={'CRM'} />
-                      </ListItemButton>
+                <ListItemButton component='a' to="/blog.html">
+                  <ListItemText primary={'Blog'} />
+                </ListItemButton>
                 <ListItemButton component='a' to="/about-us.html">
                   <ListItemText primary={'About us'} />
                 </ListItemButton>

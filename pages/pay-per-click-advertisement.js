@@ -84,7 +84,7 @@ Remote Based Staff Augumation Services in USA,'
       <div className='sliderBox customerRelationshipManagement'>
         <img
           style={{ width: '100%' }}
-          src='images/bf888653390d9c64dce2d63f46b5f754.jpeg'
+          src='images/8c379a749146d0d08a88b518990cf8b4.jpeg'
           alt='SAP Emarsys Customer Engagement | Services & Consulting – InfoDrive
           Solutions'
         />
