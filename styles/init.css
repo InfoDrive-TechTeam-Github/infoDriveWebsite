@@ -26,6 +26,9 @@ color: #0b2653 !important;
   z-index: 100;
   line-height: 72px;
 }
+.textAlignCenter{
+  text-align: center;
+}
 .whatsapp_float svg {
   font-size: 35px;
 }
