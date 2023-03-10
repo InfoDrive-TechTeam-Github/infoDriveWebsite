@@ -197,11 +197,6 @@ function DrawerAppBar(props) {
                       />
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/customer-relationship-management.html" >
-                        <ListItemText primary={'CRM'} />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
                       <ListItemButton component='a' to="/web-and-mobile-app-development.html">
                         <ListItemText primary={'Web and app development '} />
                       </ListItemButton>
@@ -210,13 +205,6 @@ function DrawerAppBar(props) {
                         className="customIcon"
                       />
                     </ListItem>
-
-                    <ListItem disablePadding>
-                      <ListItemButton component='a' to="/full-stack-development.html" >
-                        <ListItemText primary={'Full stack development'} />
-                      </ListItemButton>
-                    </ListItem>
-
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/blockchain-nft.html" >
                         <ListItemText primary={'Blockchain and NFT'} />
@@ -263,16 +251,6 @@ function DrawerAppBar(props) {
                         className="customIcon"
                       />
                     </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemButton component='a' to="/social-media-optimization.html" >
-                        <ListItemText primary={'Social media optimization'} />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemButton component='a' to="/pay-per-click-advertisement.html" >
-                        <ListItemText primary={'Pay per click advertisement'} />
-                      </ListItemButton>
-                    </ListItem>
                     
                   </List>
                 </Menu>
@@ -291,6 +269,11 @@ function DrawerAppBar(props) {
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/ios-app-development.html" >
                         <ListItemText primary={'IOS app development'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/full-stack-development.html" >
+                        <ListItemText primary={'Full stack development'} />
                       </ListItemButton>
                     </ListItem>
                   </List>
@@ -332,6 +315,11 @@ function DrawerAppBar(props) {
                         <ListItemText primary={'Salesforce Lightning'} />
                       </ListItemButton>
                     </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/customer-relationship-management.html" >
+                        <ListItemText primary={'CRM'} />
+                      </ListItemButton>
+                    </ListItem>
                   </List>
                 </Menu>
 
@@ -346,6 +334,16 @@ function DrawerAppBar(props) {
                             <ListItemText primary={'Search Engine Optimization'} />
                           </ListItemButton>
                         </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/social-media-optimization.html" >
+                        <ListItemText primary={'Social media optimization'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/pay-per-click-advertisement.html" >
+                        <ListItemText primary={'Pay per click advertisement'} />
+                      </ListItemButton>
+                    </ListItem>
                   </List>
                 </Menu>
                 
@@ -477,11 +475,6 @@ function DrawerAppBar(props) {
                       />
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to="/customer-relationship-management.html" >
-                        <ListItemText primary={'CRM'} />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
                       <ListItemButton component='a' to="/web-and-mobile-app-development.html">
                         <ListItemText primary={'Web and app development '} />
                       </ListItemButton>
@@ -495,11 +488,6 @@ function DrawerAppBar(props) {
                       />
                     </ListItem>
 
-                    <ListItem disablePadding>
-                      <ListItemButton component='a' to="/full-stack-development.html" >
-                        <ListItemText primary={'Full stack development'} />
-                      </ListItemButton>
-                    </ListItem>
 
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/blockchain-nft.html" >
@@ -547,16 +535,6 @@ function DrawerAppBar(props) {
                           marginLeft: "-12px"}}
                       />
                     </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemButton component='a' to="/social-media-optimization.html" >
-                        <ListItemText primary={'Social media optimization'} />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemButton component='a' to="/pay-per-click-advertisement.html" >
-                        <ListItemText primary={'Pay per click advertisement'} />
-                      </ListItemButton>
-                    </ListItem>
                   </List>
                 </Menu>
                 <Menu
@@ -568,6 +546,16 @@ function DrawerAppBar(props) {
                         <ListItem disablePadding>
                           <ListItemButton component='a' to="/search-engine-optimization.html" >
                             <ListItemText primary={'Search Engine Optimization'} />
+                          </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                          <ListItemButton component='a' to="/social-media-optimization.html" >
+                            <ListItemText primary={'Social media optimization'} />
+                          </ListItemButton>
+                        </ListItem>
+                        <ListItem disablePadding>
+                          <ListItemButton component='a' to="/pay-per-click-advertisement.html" >
+                            <ListItemText primary={'Pay per click advertisement'} />
                           </ListItemButton>
                         </ListItem>
                       </List>
@@ -587,6 +575,12 @@ function DrawerAppBar(props) {
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/ios-app-development.html" >
                         <ListItemText primary={'IOS app development'} />
+                      </ListItemButton>
+                    </ListItem>
+
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/full-stack-development.html" >
+                        <ListItemText primary={'Full stack development'} />
                       </ListItemButton>
                     </ListItem>
                   </List>
@@ -626,6 +620,11 @@ function DrawerAppBar(props) {
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/salesforce-lightning.html" >
                         <ListItemText primary={'Salesforce Lightning'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to="/customer-relationship-management.html" >
+                        <ListItemText primary={'CRM'} />
                       </ListItemButton>
                     </ListItem>
                   </List>
