@@ -350,16 +350,16 @@ section.sectionBox.IosAppBox2 {
   text-transform: uppercase !important;
 }
 .mt30 {
-  margin-top: 40px;
+  margin-top: 30px !important;
 }
 .mr30 {
-  margin-right: 30px;
+  margin-right: 30px !important;
 }
 .ml30 {
-  margin-left: 30px;
+  margin-left: 30px !important;
 }
 .mb30 {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 .mt0 {
   margin-top: 0 !important;

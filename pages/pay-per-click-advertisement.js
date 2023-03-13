@@ -185,7 +185,7 @@ As a Google Premier Partner, we have the expertise and resources to create and m
       </section>
       <br />
       <section
-        className={`sectionBox saleForcesDevelopmentBox marketCloudBox sapEmarsysServices socialMediaService`}
+        className={`sectionBox saleForcesDevelopmentBox marketCloudBox sapEmarsysServices socialMediaService onlineService`}
       >
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='androidDevelopment'>
