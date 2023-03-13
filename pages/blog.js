@@ -72,7 +72,7 @@ import LeadForm from '../components/leadForm';
       <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
         <Box sx={{ flexGrow: 1 }}>
           {data.map((post,index) =>{
-            return <Link key={index} href={`/${post['slug']}`}>
+             return <Link key={index} href={`/${post['slug']}`}>
                <Grid container spacing={0}>
                <Grid item xs={6} className="mb1">
                   <Card>
@@ -117,7 +117,7 @@ import LeadForm from '../components/leadForm';
                 </Grid>
                </Grid>
              
-            </Link>
+            </Link> 
             
           })}
          
