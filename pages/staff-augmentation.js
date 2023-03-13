@@ -464,8 +464,8 @@ Remote Based Staff Augumation Services in USA,'
             <Grid item xs={5} style={{ padding: '30px' }}>
               <br />
               <Typography gutterBottom variant='h3' component='div'>
-                If you're in need of temporary or project-based staff, don't
-                hesitate to contact InfoDrive Solutions.
+                If you're in need of temporary, remote or project-based staff,
+                don't hesitate to contact InfoDrive Solutions.
                 <br />
               </Typography>
 

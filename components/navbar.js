@@ -175,6 +175,11 @@ function DrawerAppBar(props) {
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
+                  <ListItemButton component='a' to="/about-us.html">
+                    <ListItemText primary={'About us'} />
+                  </ListItemButton>
+                </ListItem>
+              <ListItem disablePadding>
                 <ListItemButton 
                   onClick={recordMobileButtonPosition}
                   disableElevation>
@@ -238,7 +243,7 @@ function DrawerAppBar(props) {
                     
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/staff-augmentation.html" >
-                        <ListItemText primary={'Staff Agumentation'} />
+                        <ListItemText primary={'Staff Augmentation'} />
                       </ListItemButton>
                     </ListItem>
 
@@ -360,12 +365,6 @@ function DrawerAppBar(props) {
                   </ListItemButton>
                 </ListItem>
 
-                <ListItem disablePadding>
-                  <ListItemButton component='a' to="/about-us.html">
-                    <ListItemText primary={'About us'} />
-                  </ListItemButton>
-                </ListItem>
-
 
                 <ListItem disablePadding>
                       <ListItemButton component='a' to="/careers.html" >
@@ -455,6 +454,9 @@ function DrawerAppBar(props) {
                 <ListItemButton component='a' to="/">
                   <ListItemText primary={'Home'} />
                 </ListItemButton>
+                <ListItemButton component='a' to="/about-us.html">
+                  <ListItemText primary={'About us'} />
+                </ListItemButton> 
                 <ListItemButton 
                   onClick={recordButtonPosition}
                   disableElevation>
@@ -524,7 +526,7 @@ function DrawerAppBar(props) {
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton component='a' to="/staff-augmentation.html" >
-                        <ListItemText primary={'Staff Agumentation'} />
+                        <ListItemText primary={'Staff Augmentation'} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
@@ -642,9 +644,6 @@ function DrawerAppBar(props) {
 
                 <ListItemButton component='a' to="/blog.html">
                   <ListItemText primary={'Blog'} />
-                </ListItemButton>
-                <ListItemButton component='a' to="/about-us.html">
-                  <ListItemText primary={'About us'} />
                 </ListItemButton>
                 <ListItemButton component='a' to="/careers.html" >
                         <ListItemText primary={'Careers'} />
