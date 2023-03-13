@@ -473,6 +473,12 @@ img {
   padding-left: 0;
   padding-right: 0;
 }
+.onlineService {
+  background: url('images/3a4cf9b4fdc854a7a8945787717706b5.jpeg');
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+}
 .businessProcessManagement {
   background: url('images/1212e63413b1e90306a62b3c2a241a52.jpeg');
   background-size: cover;
@@ -1315,6 +1321,9 @@ img.btnLdr {
   background: #fafafa;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+.onlineSlider .readmore{
+  margin-top: 30px;
 }
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
