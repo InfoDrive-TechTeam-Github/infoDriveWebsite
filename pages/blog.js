@@ -1,42 +1,20 @@
 import * as React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import utilStyles from '../styles/utils.module.css';
 import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 //import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import Avatar from '@mui/material/Avatar';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import Link from '@mui/material/Link';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormControl from '@mui/material/FormControl';
-import TextField from '@mui/material/TextField';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Stack from '@mui/material/Stack';
 import Head from 'next/head';
 
 import LeadForm from '../components/leadForm';
-export default function SalesForceDevelopment() {
+ function SalesForceDevelopment({ data }) {
+  console.log("data0000__",data);
   return (
     <div>
       <Head>
@@ -93,119 +71,59 @@ export default function SalesForceDevelopment() {
       </section>
       <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0}>
-            <Grid item xs={6} className="mb0">
-              <Card>
-                <CardContent>
-                  <img
-                    style={{ width: '100%' }}
-                    src='images/3f41e8b470a19936da4c15fc5a17ebf3.jpeg'
-                  />
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item xs={6} className="mb0">
-              <Card>
-                <CardContent>
-                <Typography
-                            gutterBottom
-                            variant='h5'
-                            component='div'
-                            className='w100 pl30 createdate black'
-                          >
-                            8/3/2023
-                          </Typography>
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    component='h2'
-                    className='w100 pl30'
-                  >
-                    Local Search Engine Optimization (SEO)
-                  </Typography>
-                  <Typography
-                    gutterBottom
-                    variant='h5'
-                    component='div'
-                    className='w100 pl30'
-                  >
-                    Local SEO is an important consideration for businesses that
-                    operate in specific geographic locations. By optimizing
-                    their websites and online profiles for local search terms,
-                    businesses can increase their visibility and attract more
-                    customers from their local area. At InfoDrive Solutions, we
-                    have a team of local SEO experts who can help businesses to
-                    optimize their online presence for local search and reach
-                    their target audience in their specific location.
-                  </Typography>
-                  <br/>
-                  <Button
-                    href='/contact-us.html'
-                    className='bgRed white pl15 pr15 poppin ml30 normalCase'
-                  >
-                    Read more
-                  </Button>
-                </CardContent>
-              </Card>
-            </Grid>
-          </Grid>
+          {data.map((post,index) =>{
+            return <Link key={index} href={`/${post['slug']}`}>
+               <Grid container spacing={0}>
+               <Grid item xs={6} className="mb1">
+                  <Card>
+                    <CardContent>
+                      <img
+                        style={{ width: '100%' }}
+                        src='images/3f41e8b470a19936da4c15fc5a17ebf3.jpeg'
+                      />
+                      {/* src={post['_embedded']['wp:featuredmedia'][0]['source_url']} */}
+                    </CardContent>
+                  </Card>
+                </Grid>
+                <Grid item xs={6} className="mb0">
+                  <Card>
+                    <CardContent>
+                   
+                      <Typography
+                        gutterBottom
+                        variant='h3'
+                        component='h2'
+                        className='w100 pl30'
+                      >
+                       <h3>{post['title']['rendered']}</h3> 
+                      </Typography>
+                      <Typography
+                        gutterBottom
+                        variant='h5'
+                        component='div'
+                        className='w100 pl30'
+                      >
+                        <div dangerouslySetInnerHTML={{__html:post['excerpt']['rendered']}}></div>
+                      </Typography>
+                      <br/>
+                      <Button
+                        href='/contact-us.html'
+                        className='bgRed white pl15 pr15 poppin ml30 normalCase'
+                      >
+                        Read more
+                      </Button>
+                    </CardContent>
+                  </Card>
+                </Grid>
+               </Grid>
+             
+            </Link>
+            
+          })}
+         
         </Box>
       </section>
-      <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0}>
-            <Grid item xs={6}  className="mb0">
-              <Card>
-                <CardContent>
-                  <img
-                    style={{ width: '100%' }}
-                    src='images/3f41e8b470a19936da4c15fc5a17ebf3.jpeg'
-                  />
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item xs={6}  className="mb0">
-              <Card>
-                <CardContent>
-                <Typography
-                            gutterBottom
-                            variant='h5'
-                            component='div'
-                            className='w100 pl30 createdate black'
-                          >
-                            8/3/2023
-                          </Typography>
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    component='h2'
-                    className='w100 pl30'
-                  >
-                    Local Search Engine Optimization (SEO)
-                  </Typography>
-                  <Typography
-                    gutterBottom
-                    variant='h5'
-                    component='div'
-                    className='w100 pl30'
-                  >
-                    Local SEO is an important consideration for businesses that
-                    operate in specific geographic locations. By optimizing
-                    their websites and online profiles for local search terms,
-                    businesses can increase their visibility and attract more
-                    customers from their local area. At InfoDrive Solutions, we
-                    have a team of local SEO experts who can help businesses to
-                    optimize their online presence for local search and reach
-                    their target audience in their specific location.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          </Grid>
-        </Box>
-      </section>
+     
 
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
@@ -228,3 +146,11 @@ export default function SalesForceDevelopment() {
     </div>
   );
 }
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed`)
+  const data = await res.json()
+  // Pass data to the page via props
+  return { props: { data } }
+}
+export default SalesForceDevelopment;
