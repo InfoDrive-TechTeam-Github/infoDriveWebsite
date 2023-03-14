@@ -23,18 +23,32 @@ export default function SalesForceDevelopment({data}) {
                             
                                 <Typography gutterBottom variant='h1' component='h2' className='w100 pl10'>
                                 {post['title']['rendered']}
-                                <img
-                          style={{ width: '100%' }}
-                          src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
-                        />
+                                
+                                {(() => {
+                                    if ((typeof post['_embedded']['wp:featuredmedia'] == 'undefined') && (post['_embedded']['wp:featuredmedia'] != '')) {
+                                        return (
+                                        //console.log("out____",post['_embedded'])
+                                        <div></div>
+                                        )
+                                    } else {
+                                        return (
+                                        <div>{/* <img
+                                        style={{ width: '100%' }}
+                                        src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
+                                        /> */} </div>
+                                        )
+                                    }
+                                })()}
+                                
                                 </Typography>
+                                
                                 <br/>
                             </section>
                             <Grid container spacing={0}>
                                 <Grid item xs={12} className="mb1">
                                 <Card> 
                                 <CardContent>
-                               
+                                
                                 <Typography
                                 gutterBottom
                                 variant='h5'
@@ -47,6 +61,7 @@ export default function SalesForceDevelopment({data}) {
                                 </Card>
                                 </Grid>
                             </Grid>
+                           
                             {/* <img className='mb-5 rounded-2xl w-full object-cover' src={post['']}></img>
                             <h1 className='text-4xl mb-3 font-medium'>{post['title']['rendered']}</h1>
                             <div className='text-sm mb-10'>Published on : {today}</div>

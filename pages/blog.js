@@ -75,19 +75,15 @@ export default function SalesForceDevelopment({ data }) {
           {data.map((post,index) =>{
             return(
               <div>
-                {/* <img
-
-                          src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
-                        /> */}
                {(() => {
                   if ((typeof post['_embedded']['wp:featuredmedia'] == 'undefined') && (post['_embedded']['wp:featuredmedia'] != '')) {
                     return (
                       //console.log("out____",post['_embedded'])
-                      <div>dnms</div>
+                      <div></div>
                     )
                   } else {
                     return (
-                      <div>catch all</div>
+                      <div></div>
                     )
                   }
                 })()}
