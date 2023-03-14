@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect, useState } from "react";
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Box from '@mui/material/Box';
@@ -12,8 +12,9 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Head from 'next/head';
 
+
 import LeadForm from '../components/leadForm';
- function SalesForceDevelopment({ data }) {
+export default function SalesForceDevelopment({ data }) {
   console.log("data0000__",data);
   return (
     <div>
@@ -72,30 +73,47 @@ import LeadForm from '../components/leadForm';
       <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
         <Box sx={{ flexGrow: 1 }}>
           {data.map((post,index) =>{
-             return <Link key={index} href={`/${post['slug']}`}>
-               <Grid container spacing={0}>
-               <Grid item xs={6} className="mb1">
+            return(
+              <div>
+                {/* <img
+
+                          src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
+                        /> */}
+               {(() => {
+                  if ((typeof post['_embedded']['wp:featuredmedia'] == 'undefined') && (post['_embedded']['wp:featuredmedia'] != '')) {
+                    return (
+                      //console.log("out____",post['_embedded'])
+                      <div>dnms</div>
+                    )
+                  } else {
+                    return (
+                      <div>catch all</div>
+                    )
+                  }
+                })()}
+
+                <Grid container spacing={0}>
+                <Grid item xs={6} className="mb1">
                   <Card>
                     <CardContent>
-                      <img
-                        style={{ width: '100%' }}
-                        src='images/3f41e8b470a19936da4c15fc5a17ebf3.jpeg'
-                      />
+                      <div> <img
+                          style={{ width: '100%' }}
+                          src='images/3f41e8b470a19936da4c15fc5a17ebf3.jpeg'
+                        /></div>
                       {/* src={post['_embedded']['wp:featuredmedia'][0]['source_url']} */}
                     </CardContent>
                   </Card>
                 </Grid>
                 <Grid item xs={6} className="mb0">
-                  <Card>
-                    <CardContent>
-                   
-                      <Typography
+                <Card>
+                <CardContent>
+                <Typography
                         gutterBottom
                         variant='h3'
                         component='h2'
                         className='w100 pl30'
                       >
-                       <h3>{post['title']['rendered']}</h3> 
+                      <div><h3>{post['title']['rendered']}</h3> </div>
                       </Typography>
                       <Typography
                         gutterBottom
@@ -105,25 +123,23 @@ import LeadForm from '../components/leadForm';
                       >
                         <div dangerouslySetInnerHTML={{__html:post['excerpt']['rendered']}}></div>
                       </Typography>
-                      <br/>
                       <Button
-                        href='/contact-us.html'
+                        href={`/${post['slug']}`}
                         className='bgRed white pl15 pr15 poppin ml30 normalCase'
                       >
                         Read more
                       </Button>
-                    </CardContent>
-                  </Card>
+                </CardContent>
+                </Card>
                 </Grid>
-               </Grid>
-             
-            </Link> 
-            
+                </Grid>
+
+              </div>
+          );
           })}
-         
         </Box>
       </section>
-     
+
 
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
@@ -153,4 +169,4 @@ export async function getServerSideProps() {
   // Pass data to the page via props
   return { props: { data } }
 }
-export default SalesForceDevelopment;
+
