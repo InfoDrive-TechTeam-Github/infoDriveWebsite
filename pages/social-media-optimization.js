@@ -41,20 +41,23 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Google Ads Management | Pay-Per-Click Advertising Services in
-          Singapore, Malaysia
+          Best SMO Services & Company in Singapore, Malaysia | InfoDrive
+          Solutions
         </title>
         <meta
           name='description'
-          content='Drive more traffic to your website with our professional pay-per-click advertising services. Our team at InfoDrive Solutions can help you increase your online visibility and reach your target audience.'
+          content='InfoDrive Solutions offers the best social media optimization services in Singapore, designed to improve your online presence and engage with your target audience effectively.'
         />
         <meta
           name='keywords'
-          content='Pay-per-click advertising services, Google Ads management services, Display advertising services, Remarketing advertising services, Shopping Ads management services, Local search advertising services, Mobile advertising services, Google Advertising Services in Singapore, Google Advertising Services in Malaysia, Google Ads Services in Malaysia, Google Ads Services in Singapore, Search Ads Services in Singapore, Search Ads Services in Malaysia, Google Ads management services in Singapore, Pay-per-click advertising services in Singapore, Pay-per-click advertising services in Malaysia'
+          content='Best social media optimization services in Singapore, Top social media marketing agency in Malaysia, Expert social media advertising services in Singapore, Affordable social media management company in Singapore, Experienced social media consulting services in Malaysia, SMO Company in Malaysia,
+Innovative Instagram marketing agency in Singapore, Specialized LinkedIn advertising services in Malaysia,
+SMO Company in Singapore, Creative Instagram advertising services in Singapore, Customized social media branding services in Malaysia, Engaging social media content creation services in Singapore, Interactive social media engagement services in Malaysia, Organic social media growth services in India, Facebook Advertising Services in Malaysia, Facebook Advertising Services in Singapore, SMO Services in Malaysia,
+SMO Services in Singapore, Facebook Advertising Services in Bangalore, Facebook Advertising Services in Kuala Lumpur'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/pay-per-click-advertisement.html'
+          href=' https://infodrive-solutions.com/social-media-optimization.html'
         />
 
         <link rel='icon' href='/favicon.png' />
