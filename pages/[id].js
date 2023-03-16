@@ -88,7 +88,14 @@ export default function SalesForceDevelopment({data}) {
     // </div>
   )
 }
-export async function getServerSideProps(context) {
+export const getStaticPaths = async () => {
+
+    return {
+        paths: [], //indicates that no page needs be created at build time
+        fallback: 'blocking' //indicates the type of fallback
+    }
+}
+export async function getStaticProps(context) {
     const { id } = context.params;
     // Fetch data from external API
     const res = await fetch(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed&slug=${id}`)
