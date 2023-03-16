@@ -158,7 +158,7 @@ export default function SalesForceDevelopment({ data }) {
     </div>
   );
 }
-export async function getServerSideProps() {
+export async function getStaticProps() {
   // Fetch data from external API
   const res = await fetch(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed`)
   const data = await res.json()
