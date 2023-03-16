@@ -41,24 +41,20 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Top IT Staff Augmentation Services in Singapore, Malaysia &amp; USA -
-          InfoDrive Solutions
+          Google Ads Management | Pay-Per-Click Advertising Services in
+          Singapore, Malaysia
         </title>
         <meta
           name='description'
-          content='InfoDrive Solutions offers high-quality staff augmentation services in Singapore, Malaysia, and the USA. Get top-notch IT staff augmentation services, software development staffing, project-based staffing, and more. Contact us for temporary staff augmentation, contract staffing, and on-demand staffing solutions.'
+          content='Drive more traffic to your website with our professional pay-per-click advertising services. Our team at InfoDrive Solutions can help you increase your online visibility and reach your target audience.'
         />
         <meta
           name='keywords'
-          content='It Staffs Augmentation Services, IT Staff Augmentation Services in Singapore, IT Staff Augmentation Services in Malaysia, Resource And Staff Augmentation, Software Development Staff Augmentation, Staff Augmentation Firm, Technical Staff Augmentation, Top It Staffs Augmentation Companies, Project-Based Staff Augmentation Services, Benefits of Staff Augmentation, Technology Staffing Solutions, Contract Staffing Services, Staff Augmentation Consulting, On-Demand Staff Augmentation, Staff Augmentation for Software Development, Staffing Augmentation for Project Management, Temporary Staff Augmentation Services, Staff Augmentation for IT Infrastructure, Staff Augmentation for Software Development in Singapore, Staff Augmentation for Software Development in Malaysia, Temporary Staff Augmentation Services in Singapore, Staff Augmentation Consulting in Malaysia, Staff Augmentation Consulting in Singapore, Staff Augmentation Services in the USA, Project-Based Staff Augmentation Services In Singapore Remote Based Staff Augumation Services in Singapore,
-Contract Based Staffing Services in Singapore,
-Remote Based Staff Augumation Services in Malaysia,
-Contract Based Staffing Services in Malaysia,
-Remote Based Staff Augumation Services in USA,'
+          content='Pay-per-click advertising services, Google Ads management services, Display advertising services, Remarketing advertising services, Shopping Ads management services, Local search advertising services, Mobile advertising services, Google Advertising Services in Singapore, Google Advertising Services in Malaysia, Google Ads Services in Malaysia, Google Ads Services in Singapore, Search Ads Services in Singapore, Search Ads Services in Malaysia, Google Ads management services in Singapore, Pay-per-click advertising services in Singapore, Pay-per-click advertising services in Malaysia'
         />
         <link
           rel='canonical'
-          href='https://infodrive-solutions.com/staff-augmentation.html'
+          href='https://infodrive-solutions.com/pay-per-click-advertisement.html'
         />
 
         <link rel='icon' href='/favicon.png' />
@@ -91,13 +87,13 @@ Remote Based Staff Augumation Services in USA,'
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
             <Typography gutterBottom variant='h3' component='div'>
-            Social Media Optimization
+              Social Media Optimization
             </Typography>
             <Typography gutterBottom variant='h1' component='div'>
-            In today's digital age, social media has <br/>
-            become an essential tool for businesses <br/>
-            and organizations looking to connect with <br/>
-            their audience and build brand awareness.
+              In today's digital age, social media has <br />
+              become an essential tool for businesses <br />
+              and organizations looking to connect with <br />
+              their audience and build brand awareness.
             </Typography>
             <Button
               href='/contact-us.html'
@@ -146,20 +142,23 @@ Remote Based Staff Augumation Services in USA,'
 
       <section className={`sectionBox whyUsBox  pb0 `}>
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
-        With over 3.6 billion people using social media worldwide, it's no wonder why so many businesses are turning to social media to reach their target audience.
+          With over 3.6 billion people using social media worldwide, it's no
+          wonder why so many businesses are turning to social media to reach
+          their target audience.
         </Typography>
         <br />
-        <Typography
-          className='mb0'
-          variant='body2'
-          color='text.secondary'
-        >
-         InfoDrive Solutions is a leading provider of social media optimization (SMO) <br/>
-         services in Singapore, Malaysia, and India. We understand the importance of <br/>
-         having a strong online presence and the role social media plays in today's <br/>
-         digital landscape. That's why we offer a range of SMO services designed to <br/>
-         help businesses and organizations in Singapore, Malaysia, and India increase <br/>
-         their visibility and reach on social media platforms.
+        <Typography className='mb0' variant='body2' color='text.secondary'>
+          InfoDrive Solutions is a leading provider of social media optimization
+          (SMO) <br />
+          services in Singapore, Malaysia, and India. We understand the
+          importance of <br />
+          having a strong online presence and the role social media plays in
+          today's <br />
+          digital landscape. That's why we offer a range of SMO services
+          designed to <br />
+          help businesses and organizations in Singapore, Malaysia, and India
+          increase <br />
+          their visibility and reach on social media platforms.
         </Typography>
         <br />
       </section>
@@ -171,7 +170,13 @@ Remote Based Staff Augumation Services in USA,'
           <Grid container spacing={0} className='androidDevelopment'>
             <Grid item xs={5} className='saleForcesDevelopment'>
               <Typography gutterBottom variant='h5' component='div'>
-              At InfoDrive Solutions, we specialize in providing comprehensive SMO services that help businesses and organizations in Singapore, Malaysia, and India increase their online presence and reach on social media platforms. Our team of experienced social media experts has the skills and expertise to help businesses and organizations effectively leverage social media to drive traffic, generate leads, and increase conversions
+                At InfoDrive Solutions, we specialize in providing comprehensive
+                SMO services that help businesses and organizations in
+                Singapore, Malaysia, and India increase their online presence
+                and reach on social media platforms. Our team of experienced
+                social media experts has the skills and expertise to help
+                businesses and organizations effectively leverage social media
+                to drive traffic, generate leads, and increase conversions
               </Typography>
             </Grid>
           </Grid>
@@ -202,7 +207,7 @@ Remote Based Staff Augumation Services in USA,'
                     className='mb0'
                     component='h3'
                   >
-                    Cultural media <br/>
+                    Cultural media <br />
                     strategy development
                   </Typography>
                   <br />
@@ -211,7 +216,11 @@ Remote Based Staff Augumation Services in USA,'
                     variant='body2'
                     color='text.secondary'
                   >
-                    Our team of social media experts will work with you to develop a customized social media strategy that aligns with your business goals and objectives. We'll help you determine the right social media channels and tactics to reach your target audience and drive engagement.
+                    Our team of social media experts will work with you to
+                    develop a customized social media strategy that aligns with
+                    your business goals and objectives. We'll help you determine
+                    the right social media channels and tactics to reach your
+                    target audience and drive engagement.
                   </Typography>
                 </CardContent>
               </Card>
@@ -226,7 +235,7 @@ Remote Based Staff Augumation Services in USA,'
                     className='mb0'
                     component='h3'
                   >
-                    Social media account <br/>
+                    Social media account <br />
                     setup and management
                   </Typography>
                   <br />
@@ -235,7 +244,11 @@ Remote Based Staff Augumation Services in USA,'
                     variant='body2'
                     color='text.secondary'
                   >
-                    We'll help you set up and manage your social media accounts on platforms like Facebook, Twitter, LinkedIn, Instagram, and more. We'll also provide training and support to ensure that you and your team are comfortable using these platforms to engage with your audience.
+                    We'll help you set up and manage your social media accounts
+                    on platforms like Facebook, Twitter, LinkedIn, Instagram,
+                    and more. We'll also provide training and support to ensure
+                    that you and your team are comfortable using these platforms
+                    to engage with your audience.
                   </Typography>
                 </CardContent>
               </Card>
@@ -250,7 +263,7 @@ Remote Based Staff Augumation Services in USA,'
                     className='mb0'
                     component='h3'
                   >
-                    Social media <br/>
+                    Social media <br />
                     content creation
                   </Typography>
                   <br />
@@ -259,7 +272,11 @@ Remote Based Staff Augumation Services in USA,'
                     variant='body2'
                     color='text.secondary'
                   >
-                    Our team of creative writers and designers will develop engaging and relevant social media content that resonates with your target audience. We'll create a content calendar and schedule posts to ensure a consistent presence on your social media channels.
+                    Our team of creative writers and designers will develop
+                    engaging and relevant social media content that resonates
+                    with your target audience. We'll create a content calendar
+                    and schedule posts to ensure a consistent presence on your
+                    social media channels.
                   </Typography>
                 </CardContent>
               </Card>
@@ -274,7 +291,7 @@ Remote Based Staff Augumation Services in USA,'
                     className='mb0'
                     component='h3'
                   >
-                    Social media <br/>
+                    Social media <br />
                     advertising
                   </Typography>
                   <br />
@@ -283,7 +300,11 @@ Remote Based Staff Augumation Services in USA,'
                     variant='body2'
                     color='text.secondary'
                   >
-                    We'll help you create and manage social media advertising campaigns to reach your target audience and drive traffic to your website. Our team is skilled in using targeting and retargeting techniques to ensure that your ads are seen by the right people.
+                    We'll help you create and manage social media advertising
+                    campaigns to reach your target audience and drive traffic to
+                    your website. Our team is skilled in using targeting and
+                    retargeting techniques to ensure that your ads are seen by
+                    the right people.
                   </Typography>
                 </CardContent>
               </Card>
@@ -298,7 +319,7 @@ Remote Based Staff Augumation Services in USA,'
                     className='mb0'
                     component='h3'
                   >
-                    Social media <br/>
+                    Social media <br />
                     analytics
                   </Typography>
                   <br />
@@ -307,7 +328,12 @@ Remote Based Staff Augumation Services in USA,'
                     variant='body2'
                     color='text.secondary'
                   >
-                  We'll provide regular reports on the performance of your social media campaigns, including metrics like reach, engagement, and conversions. We'll use this data to optimize your campaigns and continually improve your social media strategy.                  </Typography>
+                    We'll provide regular reports on the performance of your
+                    social media campaigns, including metrics like reach,
+                    engagement, and conversions. We'll use this data to optimize
+                    your campaigns and continually improve your social media
+                    strategy.{' '}
+                  </Typography>
                 </CardContent>
               </Card>
             </Grid>
@@ -317,7 +343,10 @@ Remote Based Staff Augumation Services in USA,'
 
       <section className={`sectionBox whyUsBox `}>
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
-        In addition to our comprehensive SMO services, we also offer a range of other digital marketing services, including search engine optimization (SEO), pay-per-click (PPC) advertising, website design and development, and email marketing.
+          In addition to our comprehensive SMO services, we also offer a range
+          of other digital marketing services, including search engine
+          optimization (SEO), pay-per-click (PPC) advertising, website design
+          and development, and email marketing.
         </Typography>
       </section>
 
@@ -327,11 +356,17 @@ Remote Based Staff Augumation Services in USA,'
             <Grid item xs={5} style={{ padding: '30px' }}>
               <br />
               <Typography gutterBottom variant='h3' component='div'>
-              We pride ourselves on delivering exceptional results for our clients. Our team is dedicated to helping businesses and organizations in Singapore, Malaysia, and India succeed online and achieve their business goals.                <br />
+                We pride ourselves on delivering exceptional results for our
+                clients. Our team is dedicated to helping businesses and
+                organizations in Singapore, Malaysia, and India succeed online
+                and achieve their business goals. <br />
               </Typography>
-              <br/>
+              <br />
               <Typography gutterBottom variant='h5' component='div'>
-              If you're interested in learning more about our SMO services, we encourage you to contact us for a consultation. We'd be happy to discuss your business needs and how we can help you succeed on social media.
+                If you're interested in learning more about our SMO services, we
+                encourage you to contact us for a consultation. We'd be happy to
+                discuss your business needs and how we can help you succeed on
+                social media.
                 <br />
               </Typography>
               <br />

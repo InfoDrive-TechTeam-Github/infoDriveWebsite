@@ -40,7 +40,7 @@ export default function Footer() {
             <Typography variant='h3' sx={{ my: 2 }}>
               Driven by technology
             </Typography>
-            <Typography variant='h5' sx={{ my: 2 }} className="pr30">
+            <Typography variant='h5' sx={{ my: 2 }} className='pr30'>
               InfoDrive Solutions is a premier software development company that
               specializes in providing innovative solutions using the latest
               technologies. Our team of highly skilled developers and architects
@@ -57,22 +57,38 @@ export default function Footer() {
                 <nav aria-label='main mailbox folders'>
                   <List>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='/about-us.html'>
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='/about-us.html'
+                      >
                         <ListItemText primary='About us' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='/customer-relationship-management.html'>
-                        <ListItemText primary='CRM' />
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='/customer-relationship-management.html'
+                      >
+                        <ListItemText primary='Blog' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='/careers.html'>
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='/careers.html'
+                      >
                         <ListItemText primary='Career' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='/contact-us.html'>
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='/contact-us.html'
+                      >
                         <ListItemText primary='Contact Us' />
                       </ListItemButton>
                     </ListItem>
@@ -86,32 +102,56 @@ export default function Footer() {
                 <nav aria-label='main mailbox folders ' className='quickLinks'>
                   <List>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='/saas-application-development.html'>
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='/saas-application-development.html'
+                      >
                         <ListItemText primary='SaaS Application Development' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='salesforce-development.html'>
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='salesforce-development.html'
+                      >
                         <ListItemText primary='Salesforce Consulting' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='marketing-cloud.html'>
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='marketing-cloud.html'
+                      >
                         <ListItemText primary='Marketing Cloud' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='sales-cloud.html'>
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='sales-cloud.html'
+                      >
                         <ListItemText primary='Sales Cloud' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='service-cloud.html'>
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='service-cloud.html'
+                      >
                         <ListItemText primary='Service Cloud' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem>
-                      <ListItemButton component='a' target="_blank" href='sap-emarsys.html'>
+                      <ListItemButton
+                        component='a'
+                        target='_blank'
+                        href='sap-emarsys.html'
+                      >
                         <ListItemText primary='SAP Emarsys*' />
                       </ListItemButton>
                     </ListItem>
@@ -144,10 +184,7 @@ export default function Footer() {
                           paddingRight: 0,
                         }}
                       >
-                        <ListItemText
-                          className='pl5'
-                          primary='+65-9238 4299'
-                        />
+                        <ListItemText className='pl5' primary='+65-9238 4299' />
                       </ListItemButton>
                     </ListItem>
                     <ListItem className='ce'>

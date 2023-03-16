@@ -135,12 +135,10 @@
 	transform: var(--PhoneInputCountrySelectArrow-transform);
 	opacity: var(--PhoneInputCountrySelectArrow-opacity);
 }
-
 .PhoneInputCountrySelect:focus + .PhoneInputCountryIcon + .PhoneInputCountrySelectArrow {
 	opacity: 1;
 	color: var(--PhoneInputCountrySelectArrow-color--focus);
 }
-
 .PhoneInputCountrySelect:focus + .PhoneInputCountryIcon--border {
 	box-shadow: 0 0 0 var(--PhoneInputCountryFlag-borderWidth) var(--PhoneInputCountryFlag-borderColor--focus),
 		inset 0 0 0 var(--PhoneInputCountryFlag-borderWidth) var(--PhoneInputCountryFlag-borderColor--focus);
@@ -469,12 +467,6 @@ img {
 }
 .socialMediaService {
   background: url('images/7722f61d3183870c9b6bea8eb5822e1b.jpeg');
-  background-size: cover;
-  padding-left: 0;
-  padding-right: 0;
-}
-.onlineService {
-  background: url('images/3a4cf9b4fdc854a7a8945787717706b5.jpeg');
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -1321,9 +1313,6 @@ img.btnLdr {
   background: #fafafa;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-.onlineSlider .readmore{
-  margin-top: 30px;
 }
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
