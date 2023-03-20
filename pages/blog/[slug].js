@@ -1,5 +1,6 @@
+import { useRouter } from 'next/router'
 import Head from 'next/head';
-import React from 'react'
+import React, { useState } from 'react'
 import Header from 'components/header';
 import Footer from 'components/footer';
 import Box from '@mui/material/Box';
@@ -7,15 +8,27 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import axios from 'axios';
 
-export default function SalesForceDevelopment({data}) {
+const Post = () => {
+  const router = useRouter()
+  //same name as name of your file, can be [slug].js; [specialId].js - any name you want
+  const slug = router.query.slug
+  //result will be '55' (string)
+  console.log(router.query.slug);
+  const [isData, setData] = useState('');
+  axios.get(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed&slug=${slug}`)
+      .then(res => {
+        const data = res;
+        setData(data);
+      })
+      .catch(error => console.log(error));
   return (
-    <div>
-        <Head></Head>
-        <Header />
+    <>
+       <Header />
              <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
              <Box sx={{ flexGrow: 1 }}>
-                {data.map((post,index) =>{
+                {isData && isData.map((post,index) =>{
                     var today = new Date(post['date']).toLocaleDateString();
                     return(
                         <div>
@@ -72,36 +85,8 @@ export default function SalesForceDevelopment({data}) {
                 </Box>
             </section>
         <Footer />
-    </div>
-    // <div className='max-w-6xl mx-auto py-20 px-4 md:px-8'>
-    //   {data.map((post,index) =>{
-    //     var today = new Date(post['date']).toLocaleDateString();
-    //     return(
-    //         <div>
-    //             <img className='mb-5 rounded-2xl w-full object-cover' src={post['']}></img>
-    //             <h1 className='text-4xl mb-3 font-medium'>{post['title']['rendered']}</h1>
-    //             <div className='text-sm mb-10'>Published on : {today}</div>
-    //             <div dangerouslySetInnerHTML={{__html:post['content']['rendered']}}></div>
-    //         </div>
-    //     );
-    //   })}
-    // </div>
+    </>
   )
 }
-export const getStaticPaths = async () => {
 
-    return {
-        paths: [], //indicates that no page needs be created at build time
-        fallback: 'blocking' //indicates the type of fallback
-    }
-}
-export async function getStaticProps(context) {
-    const { id } = context.params;
-    // Fetch data from external API
-    const res = await fetch(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed&slug=${id}`)
-    const data = await res.json()
-    // Pass data to the page via props
-    return { props: { data } }
-}
-
-
+export default Post
