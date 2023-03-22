@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Header from '../components/header';
-import Footer from '../components/footer';
+import Header from '../../components/header';
+import Footer from '../../components/footer';
 import Box from '@mui/material/Box';
 //import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
@@ -11,11 +11,18 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Head from 'next/head';
+import axios from 'axios';
 
-
-import LeadForm from '../components/leadForm';
-export default function SalesForceDevelopment({ data }) {
-  console.log("data0000__",data);
+import LeadForm from '../../components/leadForm';
+export default function SalesForceDevelopment() {
+    const [isData, setdata] = useState('');
+    axios.get(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed`)
+    .then(res => {
+      const data = res;
+      setdata(data)
+    })
+    .catch(error => console.log(error));
+  console.log("data0000__",isData);
   return (
     <div>
       <Head>
@@ -72,7 +79,7 @@ export default function SalesForceDevelopment({ data }) {
       </section>
       <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
         <Box sx={{ flexGrow: 1 }}>
-          {data.map((post,index) =>{
+          {isData && isData.map((post,index) =>{
             return(
               <div>
                {(() => {
@@ -120,7 +127,7 @@ export default function SalesForceDevelopment({ data }) {
                         <div dangerouslySetInnerHTML={{__html:post['excerpt']['rendered']}}></div>
                       </Typography>
                       <Button
-                        href={`/${post['slug']}`}
+                        href={`/${post['slug']}.html`}
                         className='bgRed white pl15 pr15 poppin ml30 normalCase'
                       >
                         Read more
@@ -158,11 +165,11 @@ export default function SalesForceDevelopment({ data }) {
     </div>
   );
 }
-export async function getStaticProps() {
-  // Fetch data from external API
-  const res = await fetch(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed`)
-  const data = await res.json()
-  // Pass data to the page via props
-  return { props: { data } }
-}
+// export async function getStaticProps() {
+//   // Fetch data from external API
+//   const res = await fetch(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed`)
+//   const data = await res.json()
+//   // Pass data to the page via props
+//   return { props: { data } }
+// }
 
