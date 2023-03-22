@@ -81,7 +81,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
         <img
           style={{ width: '100%' }}
           src='images/77583d4ad643e4d0d64104ade7c04e65.jpeg'
-          alt=' Top CRM Software Company in Singapore & Malaysia - InfoDrive Solutions'
+          alt='CRM software solutions India'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -433,7 +433,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='CRM software solutions in Singapore'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

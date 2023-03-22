@@ -89,8 +89,7 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/cc13ff8a13c84325124d7b7989be19e8.jpeg'
-          alt='Salesforce Consulting Service & Development Partner Company in
-          Singapore, Malaysia, and India - InfoDrive Solutions'
+          alt='Salesforce Consulting Service'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -383,7 +382,7 @@ export default function SalesForceDevelopment() {
           </Grid>
         </Box>
       </section>
-        <br/>
+      <br />
       <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2`}>
         <Typography gutterBottom variant='h2' className='mb0' component='div'>
           We specialize in a wide range of Salesforce products, including:

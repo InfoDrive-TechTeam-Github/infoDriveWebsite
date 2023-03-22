@@ -90,8 +90,7 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/8472ccba2259312408b9731d8ee9fcd1.jpeg'
-          alt='SaaS application development company & Services in Singapore,
-          Malaysia, and India'
+          alt='SaaS application development company in Singapore'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent '>
           <Grid container spacing={0}>

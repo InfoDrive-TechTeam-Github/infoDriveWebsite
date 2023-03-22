@@ -79,7 +79,7 @@ export default function About() {
         <img
           style={{ width: '100%' }}
           src='images/pexels-helena-lopes-933964.jpg'
-          alt='InfoDrive Solutions Company, IT Solutions Company in Singapore, IT Solutions Company in Malaysia, IT Solutions Company in India, IT Solutions Company in Kuala Lumpur'
+          alt='IT Solutions Company in Kuala Lumpur'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -159,8 +159,8 @@ export default function About() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='Consulting services to local and
+                multinational companies within Asia'
                   src='images/pexels-fauxels-3183145.jpg'
                 />
               </Card>
@@ -197,8 +197,7 @@ export default function About() {
 
       <section className={`sectionBox aboutUsBox ourMissionBox`}>
         <img
-          alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+          alt='IT Solutions Company in India '
           src='images/pexels-bradley-hook-123335.jpg'
         />
         <Box sx={{ flexGrow: 1 }} className='ourMissionContent'>
@@ -276,8 +275,7 @@ export default function About() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='IT Solutions Company in Malaysia'
                   src='images/pexels-harsch-shivam-2007647.jpg'
                 />
               </Card>
@@ -401,9 +399,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
-                  src='images/ideation.png'
+                  alt='IT Solutions Company in Singapore'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
@@ -428,8 +424,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='Salesforce consulting'
                   src='images/MVP.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -456,9 +451,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
-                  src='images/growth.png'
+                  alt='Our mission is to deliver highest standard of services'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
@@ -482,9 +475,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
-                  src='images/agile-software.png'
+                  alt=' accelerate  your start-up'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
@@ -509,8 +500,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='We are headquartered in Singapore'
                   src='images/consulting.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -534,8 +524,8 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='Digital
+          Transformation Solutions company'
                   src='images/team.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -573,8 +563,7 @@ export default function About() {
                   <ListItemIcon>
                     <img
                       src='images/internet.png'
-                      alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                      alt='Leading Technology solution provider'
                     />
                   </ListItemIcon>
                 </ListItemButton>
@@ -591,8 +580,7 @@ export default function About() {
                   <ListItemIcon>
                     <img
                       src='images/android.png'
-                      alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                      alt=' IT Solutions Company in Singapore'
                     />
                   </ListItemIcon>
                 </ListItemButton>
@@ -602,8 +590,7 @@ export default function About() {
                   <ListItemIcon>
                     <img
                       src='images/internet-2.png'
-                      alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                      alt='We analyse your start-up model in its entirety'
                     />
                   </ListItemIcon>
                 </ListItemButton>
@@ -624,8 +611,7 @@ export default function About() {
                   <ListItemIcon>
                     <img
                       src='images/blockchain.png'
-                      alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                      alt='small-medium businesses to build products from scratch'
                     />
                   </ListItemIcon>
                 </ListItemButton>
@@ -675,8 +661,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/pradeep.png'
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='we are helping many start-ups'
                 />
                 <CardContent>
                   <Typography
@@ -717,8 +702,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/kapil.png'
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='InfoDrive Solutions is a leading IT solution provider'
                 />
                 <CardContent>
                   <Typography
@@ -765,8 +749,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/shashank.png'
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='IT Solutions Company in Singapore'
                 />
                 <CardContent>
                   <Typography
@@ -807,8 +790,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/bharani.png'
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='IT Solutions Company in Kuala Lumpur'
                 />
                 <CardContent>
                   <Typography
@@ -849,8 +831,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/maria.png'
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='InfoDrive Solutions'
                 />
                 <CardContent>
                   <Typography
@@ -891,8 +872,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/Sudhir-2.JPG'
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='IT Solutions Company in  India'
                 />
                 <CardContent>
                   <Typography
@@ -974,8 +954,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/dev.png'
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='IT Solutions Company in Malaysia'
                 />
                 <CardContent>
                   <Typography
@@ -1036,8 +1015,7 @@ export default function About() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
+                  alt='IT Solutions Company in Singapore'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

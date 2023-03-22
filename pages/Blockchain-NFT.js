@@ -79,7 +79,7 @@ export default function blockchain() {
         <img
           style={{ width: '100%', opacity: '0.5' }}
           src='images/Blockchain_background.png'
-          alt='Blockchain Application Development Services, Blockchain Development Services in Singapore, Blockchain Development Services in Malaysia, Blockchain Development Services in India, Blockchain Development Services in Bangalore, Blockchain Development Services in Kuala Lumpur, Blockchain Development Company in Singapore, Blockchain Development Company in Malaysia, Blockchain Development Company in Kuala Lumpur, Blockchain Development Company in India, Best Blockchain Developer in Singapore, Hire Blockchain Developer in Singapore'
+          alt='Blockchain Application Development Services'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -220,8 +220,7 @@ export default function blockchain() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt=' Blockchain & NFT Development Services & Company | Developer in
-          Singapore, Malaysia, and India'
+                  alt='Blockchain Development Services in Singapore'
                   className='chain_img'
                   src='images/Exact-analysis.png'
                 />
@@ -236,8 +235,7 @@ export default function blockchain() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt=' Blockchain & NFT Development Services & Company | Developer in
-          Singapore, Malaysia, and India'
+                  alt='Blockchain Development Services in Malaysia'
                   className='chain_img'
                   src='images/on-time-deliverie.png'
                 />
@@ -304,8 +302,7 @@ export default function blockchain() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt=' Blockchain & NFT Development Services & Company | Developer in
-          Singapore, Malaysia, and India'
+                  alt='Blockchain Development Services in India'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

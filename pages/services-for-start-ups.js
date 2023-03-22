@@ -88,8 +88,7 @@ export default function ServicesForStartUps() {
           <img
             style={{ width: '100%' }}
             src='images/pexels-helena-lopes-933964.jpg'
-            alt='IT Solutions for Start-up Business | Consulting Solutions, and
-            Ideation & Development Services – InfoDrive Solutions'
+            alt='IT Solutions for Start-up Business'
           />
           <Box sx={{ flexGrow: 1 }} className='sliderContent'>
             <Grid container spacing={0}>
@@ -290,7 +289,7 @@ export default function ServicesForStartUps() {
               <Grid item xs={12}>
                 <Card>
                   <img
-                    alt='Remy Sharp'
+                    alt='IT Consulting Solutions'
                     src='images/pexels-cottonbro-studio-5473298.jpeg'
                   />
                 </Card>
