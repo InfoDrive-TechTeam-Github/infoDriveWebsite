@@ -81,8 +81,7 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/8c379a749146d0d08a88b518990cf8b4.jpeg'
-          alt='SAP Emarsys Customer Engagement | Services & Consulting – InfoDrive
-          Solutions'
+          alt='  Google Ads Management'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -427,7 +426,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Pay-Per-Click Advertising Services'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

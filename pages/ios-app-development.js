@@ -79,8 +79,7 @@ export default function IosAppDevelopment() {
         <img
           style={{ width: '100%', opacity: '0.5' }}
           src='images/Blockchain_background.png'
-          alt='Top iPhone App Development Company & IOS Developers in Singapore,
-          Malaysia, and India'
+          alt='Top iPhone App Development Company in Singapore'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -214,7 +213,7 @@ export default function IosAppDevelopment() {
             <Grid item xs={4}>
               <Card>
                 <img
-                  alt='Exact analysis'
+                  alt='IOS App Development Company in Malaysia'
                   className='Ios_img'
                   src='images/ios-app-development.png'
                 />
@@ -251,7 +250,7 @@ export default function IosAppDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 400 }} className='IosCard'>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='IOS App Development Company'
                   src='images/Best-consumer-experience.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -280,7 +279,7 @@ export default function IosAppDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 400 }} className='IosCard bg'>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='IOS App Development Company in Singapore'
                   src='images/Best-consumer-experience.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -309,7 +308,7 @@ export default function IosAppDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 400 }} className='IosCard'>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='IOS App Development Company in Malaysia'
                   src='images/Best-consumer-experience.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -340,7 +339,7 @@ export default function IosAppDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 400 }} className='IosCard bg'>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='IOS App Development Company in Kuala Lumpur'
                   src='images/Best-consumer-experience.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -370,7 +369,7 @@ export default function IosAppDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 400 }} className='IosCard'>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt=' IOS App Development Company in Bangalore'
                   src='images/Best-consumer-experience.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -416,7 +415,7 @@ export default function IosAppDevelopment() {
               <Grid item xs={6}>
                 <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
                   <Avatar
-                    alt='Remy Sharp'
+                    alt='Top IOS App Development Company in Singapore'
                     src='images/OurApplication_bg.png'
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
@@ -449,7 +448,7 @@ export default function IosAppDevelopment() {
               <Grid item xs={6}>
                 <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
                   <Avatar
-                    alt='Remy Sharp'
+                    alt='Mobile App Development Services in Malaysia'
                     src='images/OurApplication_bg.png'
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
@@ -485,7 +484,7 @@ export default function IosAppDevelopment() {
               <Grid item xs={6}>
                 <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
                   <Avatar
-                    alt='Remy Sharp'
+                    alt='Top iPhone App Developers in Singapore'
                     src='images/OurApplication_bg.png'
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
@@ -522,7 +521,7 @@ export default function IosAppDevelopment() {
               <Grid item xs={6}>
                 <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
                   <Avatar
-                    alt='Remy Sharp'
+                    alt='iPhone App Developers in Malaysia'
                     src='images/OurApplication_bg.png'
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
@@ -559,7 +558,7 @@ export default function IosAppDevelopment() {
               <Grid item xs={6}>
                 <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
                   <Avatar
-                    alt='Remy Sharp'
+                    alt='iPhone App Development Company in India'
                     src='images/OurApplication_bg.png'
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
@@ -621,7 +620,7 @@ export default function IosAppDevelopment() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='IOS App Development Company in Kuala Lumpur'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

@@ -89,8 +89,7 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/91347bcb5003e5f7f144c8d10079ab1e.jpeg'
-          alt=' Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in Singapore, Malaysia, and India - InfoDrive Solutions'
+          alt=' Salesforce Sales Cloud Implementatio'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -323,7 +322,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Salesforce Sales Cloud automation'
                   src='images/491c67e4b1055317d0f23ddd3ee7af54.jpeg'
                 />
               </Card>

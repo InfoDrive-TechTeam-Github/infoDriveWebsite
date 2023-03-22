@@ -79,7 +79,7 @@ export default function About() {
         <img
           style={{ width: '100%' }}
           src='images/pexels-helena-lopes-933964.jpg'
-          alt='InfoDrive Solutions Company, IT Solutions Company in Singapore, IT Solutions Company in Malaysia, IT Solutions Company in India, IT Solutions Company in Kuala Lumpur'
+          alt='IT Solutions Company in Kuala Lumpur'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -158,7 +158,11 @@ export default function About() {
           <Grid container spacing={0}>
             <Grid item xs={6}>
               <Card>
-                <img alt='Remy Sharp' src='images/pexels-fauxels-3183145.jpg' />
+                <img
+                  alt='Consulting services to local and
+                multinational companies within Asia'
+                  src='images/pexels-fauxels-3183145.jpg'
+                />
               </Card>
             </Grid>
             <Grid item xs={6}>
@@ -192,7 +196,10 @@ export default function About() {
       </section>
 
       <section className={`sectionBox aboutUsBox ourMissionBox`}>
-        <img alt='Remy Sharp' src='images/pexels-bradley-hook-123335.jpg' />
+        <img
+          alt='IT Solutions Company in India '
+          src='images/pexels-bradley-hook-123335.jpg'
+        />
         <Box sx={{ flexGrow: 1 }} className='ourMissionContent'>
           <Grid container spacing={0}>
             <Grid item xs={6}>
@@ -268,7 +275,7 @@ export default function About() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='IT Solutions Company in Malaysia'
                   src='images/pexels-harsch-shivam-2007647.jpg'
                 />
               </Card>
@@ -392,8 +399,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
-                  src='images/ideation.png'
+                  alt='IT Solutions Company in Singapore'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
@@ -418,7 +424,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Salesforce consulting'
                   src='images/MVP.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -445,8 +451,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
-                  src='images/growth.png'
+                  alt='Our mission is to deliver highest standard of services'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
@@ -470,8 +475,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
-                  src='images/agile-software.png'
+                  alt=' accelerate  your start-up'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
@@ -496,7 +500,7 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='We are headquartered in Singapore'
                   src='images/consulting.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -520,7 +524,8 @@ export default function About() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Digital
+          Transformation Solutions company'
                   src='images/team.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -554,44 +559,60 @@ export default function About() {
           <nav className='socical-network'>
             <List>
               <ListItem>
-                <ListItemButton href="/">
+                <ListItemButton href='/'>
                   <ListItemIcon>
-                    <img src='images/internet.png' />
+                    <img
+                      src='images/internet.png'
+                      alt='Leading Technology solution provider'
+                    />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton href="/ios-app-development.html">
+                <ListItemButton href='/ios-app-development.html'>
                   <ListItemIcon>
                     <img src='images/apple.png' />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton href="/android-app-development.html">
+                <ListItemButton href='/android-app-development.html'>
                   <ListItemIcon>
-                    <img src='images/android.png' />
+                    <img
+                      src='images/android.png'
+                      alt=' IT Solutions Company in Singapore'
+                    />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton href="/customer-relationship-management.html">
+                <ListItemButton href='/customer-relationship-management.html'>
                   <ListItemIcon>
-                    <img src='images/internet-2.png' />
+                    <img
+                      src='images/internet-2.png'
+                      alt='We analyse your start-up model in its entirety'
+                    />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton href="/blockchain-nft.html">
+                <ListItemButton href='/blockchain-nft.html'>
                   <ListItemIcon>
-                    <img src='images/nft.png' />
+                    <img
+                      src='images/nft.png'
+                      alt='IT Solutions Company in Singapore, Malaysia, and India |
+          InfoDrive Solutions'
+                    />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
               <ListItem>
-                <ListItemButton href="/blockchain-nft.html">
+                <ListItemButton href='/blockchain-nft.html'>
                   <ListItemIcon>
-                    <img src='images/blockchain.png' />
+                    <img
+                      src='images/blockchain.png'
+                      alt='small-medium businesses to build products from scratch'
+                    />
                   </ListItemIcon>
                 </ListItemButton>
               </ListItem>
@@ -640,7 +661,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/pradeep.png'
-                  alt='green iguana'
+                  alt='we are helping many start-ups'
                 />
                 <CardContent>
                   <Typography
@@ -681,7 +702,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/kapil.png'
-                  alt='green iguana'
+                  alt='InfoDrive Solutions is a leading IT solution provider'
                 />
                 <CardContent>
                   <Typography
@@ -728,7 +749,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/shashank.png'
-                  alt='green iguana'
+                  alt='IT Solutions Company in Singapore'
                 />
                 <CardContent>
                   <Typography
@@ -769,7 +790,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/bharani.png'
-                  alt='green iguana'
+                  alt='IT Solutions Company in Kuala Lumpur'
                 />
                 <CardContent>
                   <Typography
@@ -810,7 +831,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/maria.png'
-                  alt='green iguana'
+                  alt='InfoDrive Solutions'
                 />
                 <CardContent>
                   <Typography
@@ -851,7 +872,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/Sudhir-2.JPG'
-                  alt='green iguana'
+                  alt='IT Solutions Company in  India'
                 />
                 <CardContent>
                   <Typography
@@ -875,7 +896,7 @@ export default function About() {
                     variant='h4'
                     component='div'
                   >
-                  CEO India
+                    CEO India
                   </Typography>
                 </CardContent>
               </Card>
@@ -892,7 +913,8 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/kyna.png'
-                  alt='green iguana'
+                    alt='IT Solutions Company in Singapore, Malaysia, and India |
+          InfoDrive Solutions'
                 />
                 <CardContent>
                   <Typography
@@ -932,7 +954,7 @@ export default function About() {
                   component='img'
                   height='240'
                   image='images/team-photos/dev.png'
-                  alt='Devraj Singh'
+                  alt='IT Solutions Company in Malaysia'
                 />
                 <CardContent>
                   <Typography
@@ -993,7 +1015,7 @@ export default function About() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='IT Solutions Company in Singapore'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

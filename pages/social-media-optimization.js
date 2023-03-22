@@ -84,8 +84,7 @@ SMO Services in Singapore, Facebook Advertising Services in Bangalore, Facebook 
         <img
           style={{ width: '100%' }}
           src='images/bf888653390d9c64dce2d63f46b5f754.jpeg'
-          alt='SAP Emarsys Customer Engagement | Services & Consulting – InfoDrive
-          Solutions'
+          alt='Best social media optimization services in Singapore'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -384,7 +383,7 @@ SMO Services in Singapore, Facebook Advertising Services in Bangalore, Facebook 
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Top social media marketing agency in Malaysia'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

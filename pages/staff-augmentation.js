@@ -85,8 +85,7 @@ Remote Based Staff Augumation Services in USA,'
         <img
           style={{ width: '100%' }}
           src='images/77583d4ad643e4d0d64104ade7c04e65.jpeg'
-          alt='SAP Emarsys Customer Engagement | Services & Consulting – InfoDrive
-          Solutions'
+          alt='Best social media optimization services in Singapore'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -487,7 +486,7 @@ Remote Based Staff Augumation Services in USA,'
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Top social media marketing agency in Malaysia'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

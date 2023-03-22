@@ -47,12 +47,18 @@ export default function SalesForceDevelopment() {
 
         <meta
           name='description'
-          content='Looking to improve your business processes? Our comprehensive suite of services includes business process optimization, automation, streamlining, and reengineering, as well as workflow management software and process efficiency tools. Our experts utilize proven process improvement methodologies, such as Lean, and conduct in-depth process mapping and analysis to help you achieve your goals.'
+          content='Infodrive Solutions offers comprehensive Business Process Management and Improvement (BPM&I) services to help streamline your business operations and improve efficiency. Our expert consultants provide customized solutions for process automation, workflow optimization, and overall business process improvement.'
         />
         <meta
           name='keywords'
           content='Business process optimization services, Process improvement consulting, Business process automation solutions, Process streamlining services, Workflow management software, Process efficiency tools, Business process reengineering services, Process improvement methodologies, Lean process improvement services, Process mapping and analysis services, Business Process Management & Improvement, Business process reengineering services in Singapore, Business Process Management Services in Malaysia, Business Process Management Services in India'
         />
+        <link
+          rel='canonical'
+          href=' https://infodrive-solutions.com/business-process-management.html
+'
+        />
+
         <meta
           property='og:title'
           content='Business Process Management &amp; Improvement (BPM&amp;I) | Optimization Services and Improvement Consulting'
@@ -70,10 +76,7 @@ export default function SalesForceDevelopment() {
           property='og:image'
           content='https://example.com/your-image.jpg'
         />
-        <link
-          rel='canonical'
-          href='https://infodrive-solutions.com/business-process-management.html'
-        />
+
         <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
@@ -272,7 +275,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt=' Business Process Management & Improvement (BPM&I)'
                   src='images/3e5dbe73eee0198319d17e40571babb2.jpeg'
                 />
               </Card>
