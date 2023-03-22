@@ -272,7 +272,8 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt=' Business Process Management & Improvement (BPM&I) | Optimization
+          Services and Improvement Consulting'
                   src='images/3e5dbe73eee0198319d17e40571babb2.jpeg'
                 />
               </Card>

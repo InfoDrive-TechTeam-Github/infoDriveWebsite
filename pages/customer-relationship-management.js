@@ -81,8 +81,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
         <img
           style={{ width: '100%' }}
           src='images/77583d4ad643e4d0d64104ade7c04e65.jpeg'
-          alt='SAP Emarsys Customer Engagement | Services & Consulting – InfoDrive
-          Solutions'
+          alt=' Top CRM Software Company in Singapore & Malaysia - InfoDrive Solutions'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>

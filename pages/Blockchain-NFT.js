@@ -220,7 +220,8 @@ export default function blockchain() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='Exact analysis'
+                  alt=' Blockchain & NFT Development Services & Company | Developer in
+          Singapore, Malaysia, and India'
                   className='chain_img'
                   src='images/Exact-analysis.png'
                 />
@@ -235,7 +236,8 @@ export default function blockchain() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='On time deliverige'
+                  alt=' Blockchain & NFT Development Services & Company | Developer in
+          Singapore, Malaysia, and India'
                   className='chain_img'
                   src='images/on-time-deliverie.png'
                 />
@@ -302,7 +304,8 @@ export default function blockchain() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt=' Blockchain & NFT Development Services & Company | Developer in
+          Singapore, Malaysia, and India'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

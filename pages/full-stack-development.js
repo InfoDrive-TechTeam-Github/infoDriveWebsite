@@ -211,7 +211,8 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services & Developers in Singapore, Malaysia,
+          and India'
                   src='images/vector2.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -233,7 +234,8 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services & Developers in Singapore, Malaysia,
+          and India'
                   src='images/vector3.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -253,7 +255,8 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services & Developers in Singapore, Malaysia,
+          and India'
                   src='images/vector1.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -275,7 +278,8 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services & Developers in Singapore, Malaysia,
+          and India'
                   src='images/vector4.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -295,7 +299,8 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services & Developers in Singapore, Malaysia,
+          and India'
                   src='images/vector6.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -315,7 +320,8 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services & Developers in Singapore, Malaysia,
+          and India'
                   src='images/vector7.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -421,7 +427,8 @@ export default function FullstackDevelopment() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services & Developers in Singapore, Malaysia,
+          and India'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>

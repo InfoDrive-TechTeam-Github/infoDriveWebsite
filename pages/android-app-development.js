@@ -258,7 +258,8 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={7} className='androidDevelopmentRight'>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Top Android App Development Company & Developers in Singapore,
+          Malaysia, and India'
                   src='images/professional-programmer-working-late-dark-office.jpeg'
                 />
               </Card>
@@ -384,7 +385,8 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Top Android App Development Company & Developers in Singapore,
+          Malaysia, and India'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
@@ -409,7 +411,8 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Top Android App Development Company & Developers in Singapore,
+          Malaysia, and India'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
@@ -434,7 +437,8 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Top Android App Development Company & Developers in Singapore,
+          Malaysia, and India'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
@@ -458,7 +462,8 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Top Android App Development Company & Developers in Singapore,
+          Malaysia, and India'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
@@ -482,7 +487,8 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Top Android App Development Company & Developers in Singapore,
+          Malaysia, and India'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
