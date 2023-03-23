@@ -171,7 +171,7 @@ export default function Footer() {
                       <CardMedia
                         component='img'
                         style={{ width: '30px', height: '30px' }}
-                        image='images/singapore.png'
+                        image='https://cdn.discordapp.com/attachments/949683263386054716/1088292931959521280/singapore.png'
                         alt='green iguana'
                       />
                       <ListItemButton
@@ -190,7 +190,7 @@ export default function Footer() {
                     <ListItem className='ce'>
                       <CardMedia
                         component='img'
-                        image='images/malaysia.png'
+                        image='https://cdn.discordapp.com/attachments/949683263386054716/1088292931632386078/malaysia.png'
                         style={{ width: '30px', height: '30px' }}
                         alt='green iguana'
                       />
@@ -213,7 +213,7 @@ export default function Footer() {
                     <ListItem className='ce'>
                       <CardMedia
                         component='img'
-                        image='images/india.png'
+                        image='https://cdn.discordapp.com/attachments/949683263386054716/1088292931410075698/india.png'
                         alt='green iguana'
                         style={{ width: '30px', height: '30px' }}
                       />

@@ -16,13 +16,13 @@ import axios from 'axios';
 import LeadForm from '../../components/leadForm';
 export default function SalesForceDevelopment() {
     const [isData, setdata] = useState('');
-    axios.get(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed`)
+    axios.get(`https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`)
     .then(res => {
-      const data = res;
+      const data = res.data;
       setdata(data)
     })
     .catch(error => console.log(error));
-  console.log("data0000__",isData);
+  //console.log("data0000__",isData);
   return (
     <div>
       <Head>
@@ -127,7 +127,7 @@ export default function SalesForceDevelopment() {
                         <div dangerouslySetInnerHTML={{__html:post['excerpt']['rendered']}}></div>
                       </Typography>
                       <Button
-                        href={`/${post['slug']}.html`}
+                        href={`/blog/${post['slug']}.html`}
                         className='bgRed white pl15 pr15 poppin ml30 normalCase'
                       >
                         Read more

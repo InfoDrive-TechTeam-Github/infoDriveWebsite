@@ -13,13 +13,15 @@ import axios from 'axios';
 const Post = () => {
   const router = useRouter()
   //same name as name of your file, can be [slug].js; [specialId].js - any name you want
-  const slug = router.query.slug
+  const str = String(router.query.slug).slice(0, -5);
+
+//   const slugString = str.slice(0, -5);
   //result will be '55' (string)
-  console.log(router.query.slug);
+  //console.log(str.length);
   const [isData, setData] = useState('');
-  axios.get(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed&slug=${slug}`)
+  axios.get(`https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&slug=${str}`)
       .then(res => {
-        const data = res;
+        const data = res.data;
         setData(data);
       })
       .catch(error => console.log(error));
