@@ -94,7 +94,7 @@ export default function SalesForceDevelopment() {
     let jbId = [jobDetail.Id];
 
     axios
-      .post('http://206.189.149.207:4001/addCandidate', {
+      .post('https://mydryve.co/Api/addCandidate', {
         OwnerId: jobDetail.OwnerId,
         FirstName: applyValues.FirstName,
         LastName: applyValues.LastName,
@@ -136,7 +136,7 @@ export default function SalesForceDevelopment() {
           // assign job to Candidate
           const candidateId = response.data.payload.candidateId;
           axios
-            .post('http://206.189.149.207:4001/assignJobToCandidate', {
+            .post('https://mydryve.co/Api/assignJobToCandidate', {
               JobId: jbId,
               candidateId: candidateId,
               OwnrId: jobDetail.OwnerId,
@@ -236,7 +236,7 @@ export default function SalesForceDevelopment() {
     if (formData !== '') {
       axios
         .post(
-          `http://206.189.149.207:4001/candidateApplicationResume`,
+          `https://mydryve.co/Api/candidateApplicationResume`,
           formData
         )
         .then((res) => {
@@ -246,7 +246,7 @@ export default function SalesForceDevelopment() {
           // const lastName = name[name.length - 1];
           const msg = res.data.payload;
           resume =
-            `http://206.189.149.207:4001/uploads/Candidate/Resume/` + msg;
+            `https://mydryve.co/Api/uploads/Candidate/Resume/` + msg;
           setResume(resume);
         })
         .catch((err) => {
@@ -276,7 +276,7 @@ export default function SalesForceDevelopment() {
 
   useEffect(() => {
     axios
-      .post('http://206.189.149.207:4001/getJobsList', {
+      .post('https://mydryve.co/Api/getJobsList', {
         userId: 1,
       })
       .then(function (response) {
