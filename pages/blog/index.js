@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import Header from 'components/header';
+import Footer from 'components/footer';
 import Box from '@mui/material/Box';
 //import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
@@ -11,18 +11,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Head from 'next/head';
-import axios from 'axios';
 
-import LeadForm from '../../components/leadForm';
-export default function SalesForceDevelopment() {
-    const [isData, setdata] = useState('');
-    axios.get(`https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`)
-    .then(res => {
-      const data = res.data;
-      setdata(data)
-    })
-    .catch(error => console.log(error));
-  //console.log("data0000__",isData);
+
+import LeadForm from 'components/leadForm';
+export default function SalesForceDevelopment({ data }) {
+  console.log("data0000__",data);
   return (
     <div>
       <Head>
@@ -79,7 +72,7 @@ export default function SalesForceDevelopment() {
       </section>
       <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
         <Box sx={{ flexGrow: 1 }}>
-          {isData && isData.map((post,index) =>{
+          {data.map((post,index) =>{
             return(
               <div>
                {(() => {
@@ -95,7 +88,7 @@ export default function SalesForceDevelopment() {
                   }
                 })()}
 
-                <Grid container spacing={0}>
+                <Grid container spacing={0} className="mb30">
                 <Grid item xs={6} className="mb1">
                   <Card>
                     <CardContent>
@@ -127,7 +120,7 @@ export default function SalesForceDevelopment() {
                         <div dangerouslySetInnerHTML={{__html:post['excerpt']['rendered']}}></div>
                       </Typography>
                       <Button
-                        href={`/blog/${post['slug']}.html`}
+                        href={`/blog/${post['slug']}`}
                         className='bgRed white pl15 pr15 poppin ml30 normalCase'
                       >
                         Read more
@@ -165,11 +158,10 @@ export default function SalesForceDevelopment() {
     </div>
   );
 }
-// export async function getStaticProps() {
-//   // Fetch data from external API
-//   const res = await fetch(`https://mydryve.co/blog/wp-json/wp/v2/posts?_embed`)
-//   const data = await res.json()
-//   // Pass data to the page via props
-//   return { props: { data } }
-// }
-
+export async function getStaticProps() {
+  // Fetch data from external API
+  const res = await fetch(`https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`)
+  const data = await res.json()
+  // Pass data to the page via props
+  return { props: { data } }
+}

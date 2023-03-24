@@ -1,6 +1,5 @@
-import { useRouter } from 'next/router'
 import Head from 'next/head';
-import React, { useState } from 'react'
+import React from 'react'
 import Header from 'components/header';
 import Footer from 'components/footer';
 import Box from '@mui/material/Box';
@@ -10,27 +9,14 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
 
-const Post = () => {
-  const router = useRouter()
-  //same name as name of your file, can be [slug].js; [specialId].js - any name you want
-  const str = String(router.query.slug).slice(0, -5);
-
-//   const slugString = str.slice(0, -5);
-  //result will be '55' (string)
-  //console.log(str.length);
-  const [isData, setData] = useState('');
-  axios.get(`https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&slug=${str}`)
-      .then(res => {
-        const data = res.data;
-        setData(data);
-      })
-      .catch(error => console.log(error));
+export default function SalesForceDevelopment({data}) {
   return (
-    <>
-       <Header />
+    <div>
+        <Head></Head>
+        <Header />
              <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
              <Box sx={{ flexGrow: 1 }}>
-                {isData && isData.map((post,index) =>{
+                {data.map((post,index) =>{
                     var today = new Date(post['date']).toLocaleDateString();
                     return(
                         <div>
@@ -87,8 +73,39 @@ const Post = () => {
                 </Box>
             </section>
         <Footer />
-    </>
+    </div>
+    // <div className='max-w-6xl mx-auto py-20 px-4 md:px-8'>
+    //   {data.map((post,index) =>{
+    //     var today = new Date(post['date']).toLocaleDateString();
+    //     return(
+    //         <div>
+    //             <img className='mb-5 rounded-2xl w-full object-cover' src={post['']}></img>
+    //             <h1 className='text-4xl mb-3 font-medium'>{post['title']['rendered']}</h1>
+    //             <div className='text-sm mb-10'>Published on : {today}</div>
+    //             <div dangerouslySetInnerHTML={{__html:post['content']['rendered']}}></div>
+    //         </div>
+    //     );
+    //   })}
+    // </div>
   )
 }
 
-export default Post
+export async function getStaticPaths() {
+    const res = await fetch('https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed');
+    const posts = await res.json();
+    const paths = posts.map((post) => ({
+        params: { slug: post.slug },
+    }))
+    return { paths, fallback: false }
+}
+
+export async function getStaticProps({params}) {
+   // const { slug } = context.params;
+   // console.log('here',context.params);
+    // Fetch data from external API
+    const res = await fetch(`https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&slug=${params.slug}`)
+    const data = await res.json()
+    // Pass data to the page via props
+    return { props: { data } }
+}
+
