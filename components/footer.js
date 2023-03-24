@@ -69,7 +69,7 @@ export default function Footer() {
                       <ListItemButton
                         component='a'
                         target='_blank'
-                        href='/customer-relationship-management.html'
+                        href='/blog.html'
                       >
                         <ListItemText primary='Blog' />
                       </ListItemButton>
