@@ -41,13 +41,12 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Business Process Management & Improvement (BPM&I) | Optimization
-          Services and Improvement Consulting
+        Business Process Management & Improvement (BPM&I) | Services, Solutions, and Improvement Consulting
         </title>
 
         <meta
           name='description'
-          content='Infodrive Solutions offers comprehensive Business Process Management and Improvement (BPM&I) services to help streamline your business operations and improve efficiency. Our expert consultants provide customized solutions for process automation, workflow optimization, and overall business process improvement.'
+          content='InfoDrive Solutions offers comprehensive Business Process Management and Improvement (BPM&I) services to help streamline your business operations and improve efficiency. Our expert consultants provide customized solutions for process automation, workflow optimization, and overall business process improvement.'
         />
         <meta
           name='keywords'
@@ -61,7 +60,7 @@ export default function SalesForceDevelopment() {
 
         <meta
           property='og:title'
-          content='Business Process Management &amp; Improvement (BPM&amp;I) | Optimization Services and Improvement Consulting'
+          content='Business Process Management & Improvement (BPM&I) | Services, Solutions, and Improvement Consulting'
         />
         <meta
           property='og:description'

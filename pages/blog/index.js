@@ -120,7 +120,7 @@ export default function SalesForceDevelopment({ data }) {
                         <div dangerouslySetInnerHTML={{__html:post['excerpt']['rendered']}}></div>
                       </Typography>
                       <Button
-                        href={`/blog/${post['slug']}`}
+                        href={`/blog/${post['slug']}.html`}
                         className='bgRed white pl15 pr15 poppin ml30 normalCase'
                       >
                         Read more
