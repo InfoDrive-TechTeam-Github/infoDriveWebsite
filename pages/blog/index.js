@@ -30,6 +30,7 @@ export default function SalesForceDevelopment({ data }) {
   const goToPage = (pageNumber) => {
     if (pageNumber <= totalPages && pageNumber > 0) {
       setPage(pageNumber);
+      window.scrollTo(0, 0);
     }
   };
   return (
