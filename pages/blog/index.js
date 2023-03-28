@@ -28,7 +28,7 @@ export default function SalesForceDevelopment({ data }) {
 
   const totalPages = Math.ceil(data.length / itemsPerPage);
   const goToPage = (pageNumber) => {
-    if (pageNumber <= totalPages || pageNumber >= 0) {
+    if (pageNumber <= totalPages && pageNumber > 0) {
       setPage(pageNumber);
     }
   };
