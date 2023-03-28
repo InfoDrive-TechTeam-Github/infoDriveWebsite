@@ -94,7 +94,7 @@ export default function SalesForceDevelopment({ data }) {
                     <CardContent>
                       <div> <img
                           style={{ width: '100%' }}
-                          src='images/3f41e8b470a19936da4c15fc5a17ebf3.jpeg'
+                          src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
                         /></div>
                       {/* src={post['_embedded']['wp:featuredmedia'][0]['source_url']} */}
                     </CardContent>
