@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 import Header from 'components/header';
 import Footer from 'components/footer';
 import Box from '@mui/material/Box';
@@ -11,11 +11,27 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Head from 'next/head';
-
-
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import CssBaseline from '@mui/material/CssBaseline';
+import Container from '@mui/material/Container';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import Avatar from '@mui/material/Avatar';
 import LeadForm from 'components/leadForm';
+import { green, pink } from '@mui/material/colors';
 export default function SalesForceDevelopment({ data }) {
-  console.log("data0000__",data);
+  console.log('data0000__', data);
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 3;
+
+  const startIndex = (page - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  const totalPages = Math.ceil(data.length / itemsPerPage);
+  const goToPage = (pageNumber) => {
+    if (pageNumber <= totalPages || pageNumber >= 0) {
+      setPage(pageNumber);
+    }
+  };
   return (
     <div>
       <Head>
@@ -62,80 +78,126 @@ export default function SalesForceDevelopment({ data }) {
         ></iframe>
       </noscript>
       <Header />
-      <section className={`sectionBox pt30 pb30 textAlignCenter blog upperCase`}>
-      <br/>
-      <br/>
+      <section
+        className={`sectionBox pt30 pb30 textAlignCenter blog upperCase`}
+      >
+        <br />
+        <br />
         <Typography gutterBottom variant='h1' component='h1' className='w100'>
-           All Posts
+          All Posts
         </Typography>
-        <br/>
+        <br />
       </section>
       <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
         <Box sx={{ flexGrow: 1 }}>
-          {data.map((post,index) =>{
-            return(
+          {data.slice(startIndex, endIndex).map((post, index) => {
+            return (
               <div>
-               {(() => {
-                  if ((typeof post['_embedded']['wp:featuredmedia'] == 'undefined') && (post['_embedded']['wp:featuredmedia'] != '')) {
+                {(() => {
+                  if (
+                    typeof post['_embedded']['wp:featuredmedia'] ==
+                      'undefined' &&
+                    post['_embedded']['wp:featuredmedia'] != ''
+                  ) {
                     return (
                       //console.log("out____",post['_embedded'])
                       <div></div>
-                    )
+                    );
                   } else {
-                    return (
-                      <div></div>
-                    )
+                    return <div></div>;
                   }
                 })()}
 
-                <Grid container spacing={0} className="mb30">
-                <Grid item xs={6} className="mb1">
-                  <Card>
-                    <CardContent>
-                      <div> <img
-                          style={{ width: '100%' }}
-                          src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
-                        /></div>
-                      {/* src={post['_embedded']['wp:featuredmedia'][0]['source_url']} */}
-                    </CardContent>
-                  </Card>
+                <Grid container spacing={0} className='mb30'>
+                  <Grid item xs={6} className='mb1'>
+                    <Card>
+                      <CardContent>
+                        <div>
+                          {' '}
+                          <img
+                            style={{ width: '100%' }}
+                            src={
+                              post['_embedded']['wp:featuredmedia'][0][
+                                'source_url'
+                              ]
+                            }
+                          />
+                        </div>
+                        {/* src={post['_embedded']['wp:featuredmedia'][0]['source_url']} */}
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                  <Grid item xs={6} className='mb0'>
+                    <Card>
+                      <CardContent>
+                        <Typography
+                          gutterBottom
+                          variant='h3'
+                          component='h2'
+                          className='w100 pl30'
+                        >
+                          <div>
+                            <h3>{post['title']['rendered']}</h3>{' '}
+                          </div>
+                        </Typography>
+                        <Typography
+                          gutterBottom
+                          variant='h5'
+                          component='div'
+                          className='w100 pl30'
+                        >
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: post['excerpt']['rendered'],
+                            }}
+                          ></div>
+                        </Typography>
+                        <Button
+                          href={`/blog/${post['slug']}.html`}
+                          className='bgRed white pl15 pr15 poppin ml30 normalCase'
+                        >
+                          Read more
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  </Grid>
                 </Grid>
-                <Grid item xs={6} className="mb0">
-                <Card>
-                <CardContent>
-                <Typography
-                        gutterBottom
-                        variant='h3'
-                        component='h2'
-                        className='w100 pl30'
-                      >
-                      <div><h3>{post['title']['rendered']}</h3> </div>
-                      </Typography>
-                      <Typography
-                        gutterBottom
-                        variant='h5'
-                        component='div'
-                        className='w100 pl30'
-                      >
-                        <div dangerouslySetInnerHTML={{__html:post['excerpt']['rendered']}}></div>
-                      </Typography>
-                      <Button
-                        href={`/blog/${post['slug']}.html`}
-                        className='bgRed white pl15 pr15 poppin ml30 normalCase'
-                      >
-                        Read more
-                      </Button>
-                </CardContent>
-                </Card>
-                </Grid>
-                </Grid>
-
               </div>
-          );
+            );
           })}
         </Box>
       </section>
-
+      <section className='pagination'>
+        <CssBaseline />
+        <Container
+          maxWidth='sm'
+          component={'Box'}
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '20px',
+          }}
+        >
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 30,
+            }}
+          >
+            <ChevronLeftIcon
+              style={{ cursor: 'pointer' }}
+              onClick={() => goToPage(page - 1)}
+            />
+            <Avatar sx={{ bgcolor: pink[500] }}>{page}</Avatar>
+            <ChevronRightIcon
+              onClick={() => goToPage(page + 1)}
+              style={{ cursor: 'pointer' }}
+            />
+          </div>
+        </Container>
+      </section>
 
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
@@ -160,8 +222,10 @@ export default function SalesForceDevelopment({ data }) {
 }
 export async function getStaticProps() {
   // Fetch data from external API
-  const res = await fetch(`https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`)
-  const data = await res.json()
+  const res = await fetch(
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&&limit=2`
+  );
+  const data = await res.json();
   // Pass data to the page via props
-  return { props: { data } }
+  return { props: { data } };
 }
