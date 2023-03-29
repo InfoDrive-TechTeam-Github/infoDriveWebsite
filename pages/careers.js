@@ -52,6 +52,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import LeadForm from '../components/leadForm';
 //import { jobService } from '../services';
 import UploadIcon from '@mui/icons-material/Upload';
+import { green, pink } from '@mui/material/colors';
+import CssBaseline from '@mui/material/CssBaseline';
+import { Container } from '@mui/material';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
   const [jobDetail, setJobDetail] = useState(null);
@@ -235,18 +240,14 @@ export default function SalesForceDevelopment() {
     console.log('formData_____', formData.file);
     if (formData !== '') {
       axios
-        .post(
-          `https://mydryve.co/Api/candidateApplicationResume`,
-          formData
-        )
+        .post(`https://mydryve.co/Api/candidateApplicationResume`, formData)
         .then((res) => {
           console.log('file____chk__', res);
           // const name = res?.data?.name.split(' ');
           // const firstName = name[0];
           // const lastName = name[name.length - 1];
           const msg = res.data.payload;
-          resume =
-            `https://mydryve.co/Api/uploads/Candidate/Resume/` + msg;
+          resume = `https://mydryve.co/Api/uploads/Candidate/Resume/` + msg;
           setResume(resume);
         })
         .catch((err) => {
@@ -291,6 +292,21 @@ export default function SalesForceDevelopment() {
 
   // http://206.189.149.207:4001/getJobsList/userId=1
   console.log('jobs', jobs);
+
+  // pagination
+  const [page, setPage] = useState(1);
+  const itemsPerPage = 4;
+
+  const startIndex = (page - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  const totalPages = Math.ceil(jobs?.length / itemsPerPage);
+  const goToPage = (pageNumber) => {
+    if (pageNumber <= totalPages && pageNumber > 0) {
+      setPage(pageNumber);
+      window.scrollTo(0, 0);
+    }
+  };
 
   return (
     <div>
@@ -423,7 +439,7 @@ export default function SalesForceDevelopment() {
       <section className={`sectionBox nm jobSection`}>
         <Grid container spacing={7} justify='center'>
           {jobs &&
-            jobs.map((job, index) => (
+            jobs.slice(startIndex, endIndex).map((job, index) => (
               <>
                 {job.JobStatus === 'Open' ? (
                   <Grid item lg={6} xs={12}>
@@ -492,7 +508,9 @@ export default function SalesForceDevelopment() {
                               {job.Locality}
                             </Typography>
                           </Box>
-                          <Box style={{ display: 'flex' }}>
+                          <Box
+                            style={{ display: 'flex', alignItems: 'center' }}
+                          >
                             <MonetizationOnIcon />
 
                             <Typography
@@ -501,15 +519,11 @@ export default function SalesForceDevelopment() {
                               component='div'
                               className='mlb pt5'
                             >
-                              {job.MinSalary > 0
-                                ? job.MinSalary + ' ' + job.Currency
-                                : ''}
+                              {job.MinSalary > 0 ? job.MinSalary : ''}
                               {job.MinSalary > 0 && job.MaxSalary > 0
                                 ? ' - '
                                 : ''}
-                              {job.MaxSalary > 0
-                                ? job.MaxSalary + ' ' + job.Currency
-                                : ''}
+                              {job.MaxSalary > 0 ? job.MaxSalary : ''}
                             </Typography>
                           </Box>
                         </Box>
@@ -538,6 +552,37 @@ export default function SalesForceDevelopment() {
           {!jobs && <>loading...</>}
           {jobs && !jobs.length && <>No Jobs To Display</>}
         </Grid>
+      </section>
+      <section className='pagination'>
+        <CssBaseline />
+        <Container
+          maxWidth='sm'
+          component={'Box'}
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '20px',
+          }}
+        >
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 20,
+            }}
+          >
+            <ChevronLeftIcon
+              style={{ cursor: 'pointer' }}
+              onClick={() => goToPage(page - 1)}
+            />
+            <Avatar sx={{ bgcolor: pink[500] }}>{page}</Avatar>
+            <ChevronRightIcon
+              onClick={() => goToPage(page + 1)}
+              style={{ cursor: 'pointer' }}
+            />
+          </div>
+        </Container>
       </section>
 
       <section className={`sectionBox connectUs backDrop mb0`}>
@@ -698,7 +743,7 @@ export default function SalesForceDevelopment() {
             />
           </DialogContentText>
         </DialogContent>
-        <DialogActions>
+        <DialogActions className='px-10'>
           <Button onClick={handleClickShowMore}>Close</Button>
         </DialogActions>
       </Dialog>
