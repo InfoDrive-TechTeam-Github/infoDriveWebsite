@@ -8,7 +8,8 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
-
+import Button from '@mui/material/Button';
+import LeadForm from '../../components/leadForm';
 export default function SalesForceDevelopment({ data }) {
   return (
     <div>
@@ -21,7 +22,7 @@ export default function SalesForceDevelopment({ data }) {
             return (
               <div>
                 <section
-                  className={`sectionBox pt10 pb20 textAlignCenter blog`}
+                  className={`sectionBox pt10 pb10 textAlignCenter blog`}
                 >
                   <Typography
                     gutterBottom
@@ -31,27 +32,7 @@ export default function SalesForceDevelopment({ data }) {
                   >
                     {post['title']['rendered']}
 
-                    {(() => {
-                      if (
-                        typeof post['_embedded']['wp:featuredmedia'] ==
-                          'undefined' &&
-                        post['_embedded']['wp:featuredmedia'] != ''
-                      ) {
-                        return (
-                          //console.log("out____",post['_embedded'])
-                          <div></div>
-                        );
-                      } else {
-                        return (
-                          <div>
-                            {/* <img
-                                        style={{ width: '100%' }}
-                                        src={post['_embedded']['wp:featuredmedia'][0]['source_url']}
-                                        /> */}{' '}
-                          </div>
-                        );
-                      }
-                    })()}
+                   
                   </Typography>
 
                   <br />
@@ -60,6 +41,20 @@ export default function SalesForceDevelopment({ data }) {
                   <Grid item xs={12} className='mb1'>
                     <Card>
                       <CardContent>
+                      <div style={{
+          display: "flex",
+          justifyContent: "center",
+        }}>
+                          <img
+                            className='h-full rounded-xl'
+                            style={{ width: '70%' }}
+                            src={
+                              post['_embedded']['wp:featuredmedia'][0][
+                                'source_url'
+                              ]
+                            }
+                          />
+                        </div>
                         <Typography
                           gutterBottom
                           variant='h5'
@@ -76,31 +71,31 @@ export default function SalesForceDevelopment({ data }) {
                     </Card>
                   </Grid>
                 </Grid>
-
-                {/* <img className='mb-5 rounded-2xl w-full object-cover' src={post['']}></img>
-                            <h1 className='text-4xl mb-3 font-medium'>{post['title']['rendered']}</h1>
-                            <div className='text-sm mb-10'>Published on : {today}</div>
-                            <div dangerouslySetInnerHTML={{__html:post['content']['rendered']}}></div> */}
               </div>
             );
           })}
         </Box>
       </section>
+      <section className={`sectionBox connectUs backDrop mb0`}>
+        <Typography
+          gutterBottom
+          variant='h3'
+          className='white pb15 pt15 poppin'
+          component='div'
+        >
+          Sign Up For a Free Consultation With Our Experts Today.
+        </Typography>
+        <Button
+          href='/contact-us.html'
+          className='bgRed white pl15 pr15 poppin upperCase'
+        >
+          Connect with Our Expert
+        </Button>
+      </section>
+      <LeadForm />
       <Footer />
     </div>
-    // <div className='max-w-6xl mx-auto py-20 px-4 md:px-8'>
-    //   {data.map((post,index) =>{
-    //     var today = new Date(post['date']).toLocaleDateString();
-    //     return(
-    //         <div>
-    //             <img className='mb-5 rounded-2xl w-full object-cover' src={post['']}></img>
-    //             <h1 className='text-4xl mb-3 font-medium'>{post['title']['rendered']}</h1>
-    //             <div className='text-sm mb-10'>Published on : {today}</div>
-    //             <div dangerouslySetInnerHTML={{__html:post['content']['rendered']}}></div>
-    //         </div>
-    //     );
-    //   })}
-    // </div>
+    
   );
 }
 

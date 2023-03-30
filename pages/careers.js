@@ -592,7 +592,7 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Empower Your Career Growth with Infodrive Solutions
+          Empower Your Career Growth with InfoDrive Solutions
         </Typography>
         <Button
           href='/contact-us.html'
