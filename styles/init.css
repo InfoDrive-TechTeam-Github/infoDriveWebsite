@@ -4,10 +4,13 @@
   font-weight: 400;
   src: url('fonts/Poppins/Poppins-Regular.ttf');
 }
-.bluecolor{
-color: #0b2653 !important;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bluecolor {
+  color: #0b2653 !important;
 }
-.blackBackground{
+.blackBackground {
   background: #000 !important;
 }
 /* for desktop */
@@ -26,7 +29,7 @@ color: #0b2653 !important;
   z-index: 100;
   line-height: 72px;
 }
-.textAlignCenter{
+.textAlignCenter {
   text-align: center;
 }
 .whatsapp_float svg {
@@ -179,10 +182,10 @@ color: #0b2653 !important;
   font-weight: 600;
   font-family: Poppins;
 }
-.ml15{
+.ml15 {
   margin-left: 15px !important;
 }
-.mr15{
+.mr15 {
   margin-right: 15px !important;
 }
 .fs {
@@ -377,11 +380,11 @@ section.sectionBox.IosAppBox2 {
   align-items: center !important;
   margin-bottom: 10px;
 }
-.hiddenElement{
+.hiddenElement {
   visibility: hidden;
   opacity: 0;
 }
-.ml0{
+.ml0 {
   margin-left: 0px !important;
 }
 /* End css */

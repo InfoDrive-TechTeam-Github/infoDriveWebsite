@@ -21,7 +21,7 @@ import { green, pink } from '@mui/material/colors';
 export default function SalesForceDevelopment({ data }) {
   console.log('data0000__', data);
   const [page, setPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
 
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
@@ -113,9 +113,9 @@ export default function SalesForceDevelopment({ data }) {
                   <Grid item xs={6} className='mb1'>
                     <Card>
                       <CardContent>
-                        <div>
-                          {' '}
+                        <div className='flex items-center object-cover'>
                           <img
+                            className='h-full rounded-xl'
                             style={{ width: '100%' }}
                             src={
                               post['_embedded']['wp:featuredmedia'][0][
@@ -168,6 +168,7 @@ export default function SalesForceDevelopment({ data }) {
           })}
         </Box>
       </section>
+
       <section className='pagination'>
         <CssBaseline />
         <Container
@@ -184,7 +185,7 @@ export default function SalesForceDevelopment({ data }) {
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: 30,
+              gap: 20,
             }}
           >
             <ChevronLeftIcon
