@@ -25,6 +25,7 @@ export default function SalesForceDevelopment({ data }) {
 
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
+  const [active, setActive] = useState('all');
 
   const totalPages = Math.ceil(data.length / itemsPerPage);
   const goToPage = (pageNumber) => {
@@ -33,6 +34,10 @@ export default function SalesForceDevelopment({ data }) {
       window.scrollTo(0, 0);
     }
   };
+  const handleButtonClick = (category) => {
+    setActive(category);
+  };
+  console.log('active', active);
   return (
     <div>
       <Head>
@@ -87,9 +92,72 @@ export default function SalesForceDevelopment({ data }) {
         <Typography gutterBottom variant='h1' component='h1' className='w100'>
           All Posts
         </Typography>
+        {/**  category menu */}
+        <div className='category flex flex-wrap gap-10 mt-10'>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white rounded-lg ${
+              active == 'all'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('all')}
+          >
+            All categories
+          </div>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+              active == 'salesforce'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('salesforce')}
+          >
+            Salesforce
+          </div>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+              active == 'ai'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('ai')}
+          >
+            Artificial Intelligence
+          </div>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+              active == 'devops'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('devops')}
+          >
+            DevOps
+          </div>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+              active == 'microservices'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('microservices')}
+          >
+            Microservices
+          </div>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+              active == 'bigdata'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('bigdata')}
+          >
+            Big Data
+          </div>
+        </div>
         <br />
       </section>
-      <section className={`sectionBox whyUsBox salesForceServices2 blog news`}>
+      <section className={`sectionBox whyUsBox salesForceServices2 blog news `}>
         <Box sx={{ flexGrow: 1 }}>
           {data.slice(startIndex, endIndex).map((post, index) => {
             return (
@@ -109,8 +177,21 @@ export default function SalesForceDevelopment({ data }) {
                   }
                 })()}
 
-                <Grid container spacing={0} className='mb30'>
+                <Grid container spacing={0} className='mb30 items-center'>
                   <Grid item xs={6} className='mb1'>
+                    <div className='imgHeader flex items-center justify-between p-2'>
+                      <div className='text-gray-400 flex gap-2 items-center'>
+                        <Avatar src='/broken-image.jpg' className='h-7 w-7' />
+                        <p>InfoDrive Team</p>
+                      </div>
+
+                      <Button
+                        href={`/blog/${post['slug']}.html`}
+                        className='bgRed white  poppin ml30 normalCase h-7 w-fit'
+                      >
+                        Category
+                      </Button>
+                    </div>
                     <Card>
                       <CardContent>
                         <div className='flex items-center object-cover'>
