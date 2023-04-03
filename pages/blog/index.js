@@ -18,6 +18,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Avatar from '@mui/material/Avatar';
 import LeadForm from 'components/leadForm';
 import { green, pink } from '@mui/material/colors';
+import dateFormat, { masks } from "dateformat";
 export default function SalesForceDevelopment({ data }) {
   console.log('data0000__', data);
   const [page, setPage] = useState(1);
@@ -37,7 +38,7 @@ export default function SalesForceDevelopment({ data }) {
   const handleButtonClick = (category) => {
     setActive(category);
   };
-  console.log('active', active);
+ // console.log('active', active);
   return (
     <div>
       <Head>
@@ -93,7 +94,7 @@ export default function SalesForceDevelopment({ data }) {
           All Posts
         </Typography>
         {/**  category menu */}
-        <div className='category flex flex-wrap gap-10 mt-10'>
+        <div className='category flex flex-wrap gap-2 mt-10'>
           <div
             className={`button poppin hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
               active == 'all'
@@ -116,43 +117,86 @@ export default function SalesForceDevelopment({ data }) {
           </div>
           <div
             className={`button  hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out  hover:text-white hover:border-white  rounded-lg ${
-              active == 'ai'
+              active == 'blch'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
             }`}
-            onClick={() => handleButtonClick('ai')}
+            onClick={() => handleButtonClick('blch')}
           >
-            Artificial Intelligence
+            Blockchain
           </div>
           <div
             className={`button  hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'devops'
+              active == 'wbAp'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
             }`}
-            onClick={() => handleButtonClick('devops')}
+            onClick={() => handleButtonClick('wbAp')}
           >
-            DevOps
+            Web and APP Development
           </div>
           <div
             className={`button hover:bg-[#f50057] h-10 w-fit p-2    poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'microservices'
+              active == 'CRM'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
             }`}
-            onClick={() => handleButtonClick('microservices')}
+            onClick={() => handleButtonClick('CRM')}
           >
-            Microservices
+            CRM
           </div>
           <div
             className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'bigdata'
+              active == 'sapEm'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
             }`}
-            onClick={() => handleButtonClick('bigdata')}
+            onClick={() => handleButtonClick('sapEm')}
           >
-            Big Data
+            SAP Emarys
+
+          </div>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
+              active == 'Business'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('Business')}
+          >
+            Business
+
+          </div>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
+              active == 'DigitalMarketing'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('DigitalMarketing')}
+          >
+            Digital Marketing
+          </div>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
+              active == 'Technology'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('Technology')}
+          >
+            Technology
+
+          </div>
+          <div
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
+              active == 'ItSolu'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('ItSolu')}
+          >
+            IT Solution
           </div>
         </div>
         <br />
@@ -169,7 +213,6 @@ export default function SalesForceDevelopment({ data }) {
                     post['_embedded']['wp:featuredmedia'] != ''
                   ) {
                     return (
-                      //console.log("out____",post['_embedded'])
                       <div></div>
                     );
                   } else {
@@ -179,22 +222,11 @@ export default function SalesForceDevelopment({ data }) {
 
                 <Grid container spacing={0} className='mb30 items-center'>
                   <Grid item xs={6} className='mb1'>
-                    <div className='imgHeader flex items-center justify-between p-2'>
-                      <div className='text-gray-400 flex gap-2 items-center'>
-                        <Avatar src='/broken-image.jpg' className='h-7 w-7' />
-                        <p>InfoDrive Team</p>
-                      </div>
-
-                      <Button
-                        href={`/blog/${post['slug']}.html`}
-                        className='bgRed white  poppin ml30 normalCase h-7 w-fit'
-                      >
-                        Category
-                      </Button>
-                    </div>
+                    
                     <Card>
                       <CardContent>
                         <div className='flex items-center object-cover'>
+                          <a href={`/blog/${post['slug']}.html`}>
                           <img
                             className='h-full rounded-xl'
                             style={{ width: '100%' }}
@@ -204,12 +236,30 @@ export default function SalesForceDevelopment({ data }) {
                               ]
                             }
                           />
+                          </a>
                         </div>
-                        {/* src={post['_embedded']['wp:featuredmedia'][0]['source_url']} */}
+
                       </CardContent>
                     </Card>
                   </Grid>
-                  <Grid item xs={6} className='mb0'>
+                  <Grid item xs={6} >
+                  <div className='imgHeader flex items-center justify-between p-2'>
+                      <div className='text-gray-400 flex gap-2 items-center'>
+                        <Avatar src='/broken-image.jpg' className='h-7 w-7' />
+                        <p>{ post['_embedded']['author'][0][
+                                'name'
+                              ] }</p>
+                              
+                      </div>
+
+                      <Button
+                        href={`/blog/${post['slug']}.html`}
+                        className='bgRed white  poppin ml30 normalCase h-7 w-fit'
+                      >
+                        {post['_embedded']['wp:term'][0][0]['name']}
+                      </Button>
+                     
+                    </div>
                     <Card>
                       <CardContent>
                         <Typography
@@ -219,7 +269,8 @@ export default function SalesForceDevelopment({ data }) {
                           className='w100 pl30'
                         >
                           <div>
-                            <h3>{post['title']['rendered']}</h3>{' '}
+                            
+                            <a href={`/blog/${post['slug']}.html`}><h3>{post['title']['rendered']}</h3>{' '}</a>
                           </div>
                         </Typography>
                         <Typography
@@ -233,13 +284,17 @@ export default function SalesForceDevelopment({ data }) {
                               __html: post['excerpt']['rendered'],
                             }}
                           ></div>
+                         
                         </Typography>
-                        <Button
+                        {/* <Button
                           href={`/blog/${post['slug']}.html`}
                           className='bgRed white pl15 pr15 poppin ml30 normalCase'
                         >
                           Read more
-                        </Button>
+                        </Button> */}
+                        <h3 className='pr15 poppin ml30 normalCase'>Publish Date: {dateFormat(post['date'], "fullDate")}</h3>
+                       
+                       
                       </CardContent>
                     </Card>
                   </Grid>
@@ -306,9 +361,10 @@ export default function SalesForceDevelopment({ data }) {
 export async function getStaticProps() {
   // Fetch data from external API
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&&limit=2`
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&&limit=2&categories=3,4,5,6,7,8,9,10,11,12`
   );
   const data = await res.json();
+  console.log("API blog",data);
   // Pass data to the page via props
   return { props: { data } };
 }
