@@ -1329,6 +1329,11 @@ img.btnLdr {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.blog p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
   .IosAppBox2 .MuiTypography-h5 br {

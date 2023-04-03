@@ -18,7 +18,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Avatar from '@mui/material/Avatar';
 import LeadForm from 'components/leadForm';
 import { green, pink } from '@mui/material/colors';
-import dateFormat, { masks } from "dateformat";
+import dateFormat, { masks } from 'dateformat';
 export default function SalesForceDevelopment({ data }) {
   console.log('data0000__', data);
   const [page, setPage] = useState(1);
@@ -26,19 +26,35 @@ export default function SalesForceDevelopment({ data }) {
 
   const startIndex = (page - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const [active, setActive] = useState('all');
+  const [active, setActive] = useState('All Category');
+  const [filterData, setFilterData] = useState(data);
 
-  const totalPages = Math.ceil(data.length / itemsPerPage);
+  const totalPages = Math.ceil(filterData.length / itemsPerPage);
   const goToPage = (pageNumber) => {
     if (pageNumber <= totalPages && pageNumber > 0) {
       setPage(pageNumber);
       window.scrollTo(0, 0);
     }
   };
+  // creating unique Category names
+  const uniqueCategory = Array.from(
+    new Set(data.map((post) => post['_embedded']['wp:term'][0][0]['name']))
+  );
+
+  // Handle Category button
   const handleButtonClick = (category) => {
     setActive(category);
+    if (category == 'All Category') {
+      setFilterData(data);
+    } else {
+      const filtered = data.filter(
+        (post) => post['_embedded']['wp:term'][0][0]['name'] === category
+      );
+      setFilterData(filtered);
+    }
   };
- // console.log('active', active);
+
+  // console.log('active', active);
   return (
     <div>
       <Head>
@@ -94,116 +110,38 @@ export default function SalesForceDevelopment({ data }) {
           All Posts
         </Typography>
         {/**  category menu */}
-        <div className='category flex flex-wrap gap-2 mt-10'>
-          <div
-            className={`button poppin hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
-              active == 'all'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('all')}
-          >
-            All categories
-          </div>
-          <div
-            className={`button poppin hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'salesforce'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('salesforce')}
-          >
-            Salesforce
-          </div>
-          <div
-            className={`button  hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out  hover:text-white hover:border-white  rounded-lg ${
-              active == 'blch'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('blch')}
-          >
-            Blockchain
-          </div>
-          <div
-            className={`button  hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'wbAp'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('wbAp')}
-          >
-            Web and APP Development
-          </div>
-          <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2    poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'CRM'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('CRM')}
-          >
-            CRM
-          </div>
-          <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'sapEm'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('sapEm')}
-          >
-            SAP Emarys
 
-          </div>
+        <div className='category flex flex-wrap gap-5 mt-10 px-20 mx-auto'>
           <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'Business'
+            className={`button poppin hover:bg-[#f50057] lg:h-10 h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
+              active === 'All Category'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
             }`}
-            onClick={() => handleButtonClick('Business')}
+            onClick={() => handleButtonClick('All Category')}
           >
-            Business
-
+            All Category
           </div>
-          <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'DigitalMarketing'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('DigitalMarketing')}
-          >
-            Digital Marketing
-          </div>
-          <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'Technology'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('Technology')}
-          >
-            Technology
-
-          </div>
-          <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
-              active == 'ItSolu'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('ItSolu')}
-          >
-            IT Solution
-          </div>
+          {uniqueCategory.map((post, index) => (
+            <div
+              className={`button poppin hover:bg-[#f50057] md:h-10 h-fit w-fit p-2  poppin min-w-[150px] cursor-pointer text-center border transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
+                active === post
+                  ? 'bg-[#f50057] text-white border-white'
+                  : 'text-gray-500 border-gray-500'
+              }`}
+              onClick={() => handleButtonClick(post)}
+            >
+              {post}
+            </div>
+          ))}
         </div>
+
         <br />
       </section>
+      {/** blog section */}
       <section className={`sectionBox whyUsBox salesForceServices2 blog news `}>
         <Box sx={{ flexGrow: 1 }}>
-          {data.slice(startIndex, endIndex).map((post, index) => {
+          {filterData.slice(startIndex, endIndex).map((post, index) => {
             return (
               <div>
                 {(() => {
@@ -212,53 +150,45 @@ export default function SalesForceDevelopment({ data }) {
                       'undefined' &&
                     post['_embedded']['wp:featuredmedia'] != ''
                   ) {
-                    return (
-                      <div></div>
-                    );
+                    return <div></div>;
                   } else {
                     return <div></div>;
                   }
                 })()}
-
+                {/** blog left  section */}
                 <Grid container spacing={0} className='mb30 items-center'>
                   <Grid item xs={6} className='mb1'>
-                    
                     <Card>
                       <CardContent>
                         <div className='flex items-center object-cover'>
                           <a href={`/blog/${post['slug']}.html`}>
-                          <img
-                            className='h-full rounded-xl'
-                            style={{ width: '100%' }}
-                            src={
-                              post['_embedded']['wp:featuredmedia'][0][
-                                'source_url'
-                              ]
-                            }
-                          />
+                            <img
+                              className='h-full rounded-xl'
+                              style={{ width: '100%' }}
+                              src={
+                                post['_embedded']['wp:featuredmedia'][0][
+                                  'source_url'
+                                ]
+                              }
+                            />
                           </a>
                         </div>
-
                       </CardContent>
                     </Card>
                   </Grid>
-                  <Grid item xs={6} >
-                  <div className='imgHeader flex items-center justify-between p-2'>
-                      <div className='text-gray-400 flex gap-2 items-center'>
-                        <Avatar src='/broken-image.jpg' className='h-7 w-7' />
-                        <p>{ post['_embedded']['author'][0][
-                                'name'
-                              ] }</p>
-                              
+                  {/** blog right  section */}
+                  <Grid item xs={6}>
+                    <div className='imgHeader flex  flex-wrap grid-col-1 items-baseline  justify-between pl-[30px] py-3 '>
+                      <div className='text-gray-400 flex gap-2'>
+                        <Avatar src='/broken-image.jpg' className='h-6 w-6' />
+                        <p>{post['_embedded']['author'][0]['name']}</p>
                       </div>
-
                       <Button
                         href={`/blog/${post['slug']}.html`}
-                        className='bgRed white  poppin ml30 normalCase h-7 w-fit'
+                        className='bgRed white  poppin ml30 normalCase   min-h-7 w-auto text-center'
                       >
                         {post['_embedded']['wp:term'][0][0]['name']}
                       </Button>
-                     
                     </div>
                     <Card>
                       <CardContent>
@@ -266,11 +196,12 @@ export default function SalesForceDevelopment({ data }) {
                           gutterBottom
                           variant='h3'
                           component='h2'
-                          className='w100 pl30'
+                          className='w100 pl30 text-justify'
                         >
                           <div>
-                            
-                            <a href={`/blog/${post['slug']}.html`}><h3>{post['title']['rendered']}</h3>{' '}</a>
+                            <a href={`/blog/${post['slug']}.html`}>
+                              <h3>{post['title']['rendered']}</h3>{' '}
+                            </a>
                           </div>
                         </Typography>
                         <Typography
@@ -284,7 +215,6 @@ export default function SalesForceDevelopment({ data }) {
                               __html: post['excerpt']['rendered'],
                             }}
                           ></div>
-                         
                         </Typography>
                         {/* <Button
                           href={`/blog/${post['slug']}.html`}
@@ -292,9 +222,9 @@ export default function SalesForceDevelopment({ data }) {
                         >
                           Read more
                         </Button> */}
-                        <h3 className='pr15 poppin ml30 normalCase'>Publish Date: {dateFormat(post['date'], "fullDate")}</h3>
-                       
-                       
+                        <h3 className='pr15 poppin ml30 normalCase'>
+                          Publish Date: {dateFormat(post['date'], 'fullDate')}
+                        </h3>
                       </CardContent>
                     </Card>
                   </Grid>
@@ -364,7 +294,7 @@ export async function getStaticProps() {
     `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&&limit=2&categories=3,4,5,6,7,8,9,10,11,12`
   );
   const data = await res.json();
-  console.log("API blog",data);
+  console.log('API blog', data);
   // Pass data to the page via props
   return { props: { data } };
 }

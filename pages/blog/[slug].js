@@ -38,7 +38,7 @@ export default function SalesForceDevelopment({ data }) {
                   <br />
                 </section>
                 <Grid container spacing={0}>
-                  <Grid item xs={12} className='mb1'>
+                  <Grid item xs={12} className='mb1 blg'>
                     <Card>
                       <CardContent>
                       <div style={{
