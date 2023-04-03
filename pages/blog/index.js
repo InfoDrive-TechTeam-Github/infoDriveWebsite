@@ -89,13 +89,13 @@ export default function SalesForceDevelopment({ data }) {
       >
         <br />
         <br />
-        <Typography gutterBottom variant='h1' component='h1' className='w100'>
+        <Typography gutterBottom variant='h1' component='h1' className='w100 '>
           All Posts
         </Typography>
         {/**  category menu */}
         <div className='category flex flex-wrap gap-10 mt-10'>
           <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white rounded-lg ${
+            className={`button poppin hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
               active == 'all'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
@@ -105,7 +105,7 @@ export default function SalesForceDevelopment({ data }) {
             All categories
           </div>
           <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+            className={`button poppin hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
               active == 'salesforce'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
@@ -115,7 +115,7 @@ export default function SalesForceDevelopment({ data }) {
             Salesforce
           </div>
           <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+            className={`button  hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out  hover:text-white hover:border-white  rounded-lg ${
               active == 'ai'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
@@ -125,7 +125,7 @@ export default function SalesForceDevelopment({ data }) {
             Artificial Intelligence
           </div>
           <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+            className={`button  hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
               active == 'devops'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
@@ -135,7 +135,7 @@ export default function SalesForceDevelopment({ data }) {
             DevOps
           </div>
           <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2    poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
               active == 'microservices'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
@@ -145,7 +145,7 @@ export default function SalesForceDevelopment({ data }) {
             Microservices
           </div>
           <div
-            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border  hover:text-white hover:border-white  rounded-lg ${
+            className={`button hover:bg-[#f50057] h-10 w-fit p-2  poppin min-w-[150px] text-center border transition-all ease-out hover:text-white hover:border-white  rounded-lg ${
               active == 'bigdata'
                 ? 'bg-[#f50057] text-white border-white'
                 : 'text-gray-500 border-gray-500'
