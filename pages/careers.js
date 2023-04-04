@@ -597,6 +597,7 @@ export default function SalesForceDevelopment() {
 
             <div
               className='JOB CARD bg-white border-2 rounded-2xl p-10 shadow-md sectionBox   transition-all ease-in-out w-full'
+              // this for side button animation */
               onMouseEnter={() => setactiveButtonColor(index)}
               onMouseLeave={() => setactiveButtonColor(!index)}
             >

@@ -35,9 +35,9 @@ export default function SalesForceDevelopment({ data }) {
       <Head></Head>
       <Header />
       <section
-        className={`sectionBox whyUsBox salesForceServices2 blog news mt-32`}
+        className={`sectionBox whyUsBox salesForceServices2 blog news my-[50px] `}
       >
-        <Box sx={{ flexGrow: 1 }}>
+        <Box>
           {data.map((post, index) => {
             var today = new Date(post['date']).toLocaleDateString();
             return (
@@ -64,9 +64,18 @@ export default function SalesForceDevelopment({ data }) {
                     <Card>
                       <CardContent>
                         <div className='flex justify-center items-center py-3 '>
-                          {/**Image above section Category and User,Avtar */}
                           <div className=' w-[34rem]'>
-                            <div className='flex justify-between items-center '>
+                            {/**Image Div */}
+                            <img
+                              className='h-full rounded-xl w-[34rem]'
+                              src={
+                                post['_embedded']['wp:featuredmedia'][0][
+                                  'source_url'
+                                ]
+                              }
+                            />
+                            {/**Image below section Category and User,Avtar */}
+                            <div className='flex justify-between items-baseline py-3 '>
                               <div className='text-gray-400 flex gap-2'>
                                 <Avatar
                                   src='/broken-image.jpg'
@@ -81,15 +90,6 @@ export default function SalesForceDevelopment({ data }) {
                                 {post['_embedded']['wp:term'][0][0]['name']}
                               </Button>
                             </div>
-                            {/**Image Div */}
-                            <img
-                              className='h-full rounded-xl w-[34rem]'
-                              src={
-                                post['_embedded']['wp:featuredmedia'][0][
-                                  'source_url'
-                                ]
-                              }
-                            />
                           </div>
                         </div>
                         {/**content */}
