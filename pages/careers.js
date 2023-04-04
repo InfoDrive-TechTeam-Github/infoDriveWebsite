@@ -57,11 +57,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { Container } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import JobDescription from 'components/JobDescription';
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
-  const [activeButtonColor, setactiveButtonColor] = useState(null);
   const [jobDetail, setJobDetail] = useState(null);
   const [applyJob, setApplyJob] = React.useState(false);
   const [valuePhone, setValuePhone] = useState();
@@ -75,27 +72,6 @@ export default function SalesForceDevelopment() {
     AvailableFrom: '',
     Skills: '',
   });
-
-  // show div functionality
-  const [showDiv, setShowDiv] = useState(false);
-
-  useEffect(() => {
-    function checkSize() {
-      const screenWidth = window.innerWidth;
-      if (screenWidth < 768) {
-        setShowDiv(true);
-      } else {
-        setShowDiv(false);
-      }
-    }
-
-    checkSize();
-
-    window.addEventListener('resize', checkSize);
-    return () => {
-      window.removeEventListener('resize', checkSize);
-    };
-  }, []);
 
   const handleClickApplyOpen = (data) => {
     console.log('dataJob', data);
@@ -371,6 +347,7 @@ export default function SalesForceDevelopment() {
           })(window,document,'script','dataLayer','GTM-MB38MVS');`,
         }}
       />
+
       <noscript>
         <iframe
           src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
@@ -441,6 +418,7 @@ export default function SalesForceDevelopment() {
           </Grid>
         </Box>
       </div>
+
       <section className={`sectionBox`}>
         <Typography gutterBottom variant='h1' component='h1'>
           Explore popular jobs
@@ -457,249 +435,124 @@ export default function SalesForceDevelopment() {
         </Typography>
       </section>
       <br />
-      {/** this job horizonal div only show when below medium screen */}
-      {/*{showDiv && (
-        <section className={`sectionBox nm jobSection transition-all ease-in`}>
-          <Grid container spacing={7} justify='center'>
-            {jobs &&
-              jobs.slice(startIndex, endIndex).map((job, index) => (
-                <>
-                  {job.JobStatus === 'Open' ? (
-                    <Grid item lg={6} xs={12}>
-                      <Card className='cardcareer w100'>
-                        <CardContent>
-                          <Box
-                            className='mt30'
-                            sx={{
-                              display: 'flex',
-                              justifyContent: 'space-between',
-                              width: '100%',
-                            }}
-                            key={job.Id}
-                          >
-                            <Typography
-                              gutterBottom
-                              variant='h2'
-                              className='pt0'
-                              component='div'
-                            >
-                              {job.JobTitle}
-                            </Typography>
-                            <Typography
-                              gutterBottom
-                              variant='h3'
-                              component='div'
-                              className='w100 ml pt5 createdat'
-                            >
-                              Created at:{' '}
-                              {format(new Date(job.created_at), 'dd-MM-yyyy')}
-                            </Typography>
-                          </Box>
+
+      <section className={`sectionBox nm jobSection`}>
+        <Grid container spacing={7} justify='center'>
+          {jobs &&
+            jobs.slice(startIndex, endIndex).map((job, index) => (
+              <>
+                {job.JobStatus === 'Open' ? (
+                  <Grid item lg={6} xs={12}>
+                    <Card className='cardcareer w100'>
+                      <CardContent>
+                        <Box
+                          className='mt30'
+                          sx={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            width: '100%',
+                          }}
+                          key={job.Id}
+                        >
                           <Typography
                             gutterBottom
-                            variant='h5'
+                            variant='h2'
+                            className='pt0'
                             component='div'
-                            className={`w100 mt30 jd ${
-                              jdHeight ? 'setShowDescription' : ''
-                            }`}
                           >
-                            <div
-                              dangerouslySetInnerHTML={{
-                                __html: job.Jobdescription,
-                              }}
-                            />
+                            {job.JobTitle}
                           </Typography>
-                          {job.Jobdescription ? (
-                            <span
-                              className='mt15 readMoreLink'
-                              onClick={() => handleClickShowMore(job)}
-                            >
-                              {jdHeight ? 'Show less' : 'Show more'}
-                            </span>
-                          ) : (
-                            ''
-                          )}
-                          <Box className='mt30'>
-                            <Box className='careerbox'>
-                              <LocationOnIcon />
-                              <Typography
-                                gutterBottom
-                                variant='h3'
-                                component='div'
-                                className='mlb pt5'
-                              >
-                                {job.Locality}
-                              </Typography>
-                            </Box>
-                            <Box
-                              style={{ display: 'flex', alignItems: 'center' }}
-                            >
-                              <MonetizationOnIcon />
-
-                              <Typography
-                                gutterBottom
-                                variant='h3'
-                                component='div'
-                                className='mlb pt5'
-                              >
-                                {job.MinSalary > 0 ? job.MinSalary : ''}
-                                {job.MinSalary > 0 && job.MaxSalary > 0
-                                  ? ' - '
-                                  : ''}
-                                {job.MaxSalary > 0 ? job.MaxSalary : ''}
-                              </Typography>
-                            </Box>
-                          </Box>
-
-                          <Button
-                            className='mt30'
-                            onClick={() => handleClickApplyOpen(job)}
+                          <Typography
+                            gutterBottom
+                            variant='h3'
+                            component='div'
+                            className='w100 ml pt5 createdat'
                           >
+                            Created at:{' '}
+                            {format(new Date(job.created_at), 'dd-MM-yyyy')}
+                          </Typography>
+                        </Box>
+                        <Typography
+                          gutterBottom
+                          variant='h5'
+                          component='div'
+                          className={`w100 mt30 jd ${
+                            jdHeight ? 'setShowDescription' : ''
+                          }`}
+                        >
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: job.Jobdescription,
+                            }}
+                          />
+                        </Typography>
+                        {job.Jobdescription ? (
+                          <span
+                            className='mt15 readMoreLink'
+                            onClick={() => handleClickShowMore(job)}
+                          >
+                            {jdHeight ? 'Show less' : 'Show more'}
+                          </span>
+                        ) : (
+                          ''
+                        )}
+                        <Box className='mt30'>
+                          <Box className='careerbox'>
+                            <LocationOnIcon />
                             <Typography
                               gutterBottom
                               variant='h3'
-                              component='span'
-                              className='mb0'
+                              component='div'
+                              className='mlb pt5'
                             >
-                              Apply now
+                              {job.Locality}
                             </Typography>
-                          </Button>
-                        </CardContent>
-                      </Card>
-                    </Grid>
-                  ) : (
-                    ''
-                  )}
-                </>
-              ))}
-            {!jobs && <>loading...</>}
-            {jobs && !jobs.length && <>No Jobs To Display</>}
-          </Grid>
-        </section>
-                  )}*/}
+                          </Box>
+                          <Box
+                            style={{ display: 'flex', alignItems: 'center' }}
+                          >
+                            <MonetizationOnIcon />
 
-      {/**Jobs Card Start from here */}
-      {jobs &&
-        jobs.slice(startIndex, endIndex).map((job, index) => (
-          <section className=' container mx-auto flex gap-5 items-center mb-10  '>
-            {!showDiv && (
-              <div
-                className={`shadow-2xl border-white border rounded-full transition-all ease-in-out duration-1000 text-white h-[42px] w-[42px] text-center py-2 ${
-                  activeButtonColor == index ? 'bg-[#99B898]' : 'bg-[#eb6841]'
-                }`}
-              >
-                {console.log('start', index)}
-                {index + startIndex + 1}
-              </div>
-            )}
+                            <Typography
+                              gutterBottom
+                              variant='h3'
+                              component='div'
+                              className='mlb pt5'
+                            >
+                              {job.MinSalary > 0 ? job.MinSalary : ''}
+                              {job.MinSalary > 0 && job.MaxSalary > 0
+                                ? ' - '
+                                : ''}
+                              {job.MaxSalary > 0 ? job.MaxSalary : ''}
+                            </Typography>
+                          </Box>
+                        </Box>
 
-            {/* Start of main div*/}
-
-            <div
-              className='JOB CARD bg-white border-2 rounded-2xl p-10 shadow-md sectionBox   transition-all ease-in-out w-full'
-              // this for side button animation */
-              onMouseEnter={() => setactiveButtonColor(index)}
-              onMouseLeave={() => setactiveButtonColor(!index)}
-            >
-              <div className='flex justify-between  w-full '>
-                <Typography
-                  gutterBottom
-                  variant='h2'
-                  className='pt0'
-                  component='div'
-                >
-                  {job.JobTitle}
-                </Typography>
-                <div className='CreatedBox flex gap-1 text-[#dd3952]'>
-                  <CalendarMonthIcon />
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    component='div'
-                    className=''
-                  >
-                    Created at: {format(new Date(job.created_at), 'dd-MM-yyyy')}
-                  </Typography>
-                </div>
-              </div>
-
-              {/*<JobDescription job={job} />*/}
-
-              <Typography
-                gutterBottom
-                variant='h5'
-                component='div'
-                className={`w100  jd ${jdHeight ? 'setShowDescription' : ''}`}
-                sx={{ height: '125px', overflow: 'hidden' }}
-              >
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: job.Jobdescription,
-                  }}
-                  className='Poppins'
-                />
-              </Typography>
-
-              {job.Jobdescription ? (
-                <span
-                  className={`mt15 readMoreLink   rounded-lg p-2  transition-all ease-out shadow-lg 
-                   
-                     hover:bg-[#0047AB] hover:border hover:text-white Poppins
-                      
-                  `}
-                  onClick={() => handleClickShowMore(job)}
-                >
-                  {jdHeight ? 'Show less' : 'Show more'}
-                </span>
-              ) : (
-                ''
-              )}
-              {/*show location */}
-
-              <Box className='mt30'>
-                <Box className='careerbox'>
-                  <LocationOnIcon />
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    component='div'
-                    className='mlb pt5'
-                  >
-                    {job.Locality}
-                  </Typography>
-                </Box>
-                <Box style={{ display: 'flex', alignItems: 'center' }}>
-                  <MonetizationOnIcon />
-
-                  <Typography
-                    gutterBottom
-                    variant='h3'
-                    component='div'
-                    className='mlb pt5'
-                  >
-                    {job.MinSalary > 0 ? job.MinSalary : ''}
-                    {job.MinSalary > 0 && job.MaxSalary > 0 ? ' - ' : ''}
-                    {job.MaxSalary > 0 ? job.MaxSalary : ''}
-                  </Typography>
-                </Box>
-              </Box>
-              <Button
-                className='mt30'
-                onClick={() => handleClickApplyOpen(job)}
-              >
-                <Typography
-                  gutterBottom
-                  variant='h3'
-                  component='span'
-                  className='mb0'
-                >
-                  Apply now
-                </Typography>
-              </Button>
-            </div>
-            {/* End of main div*/}
-          </section>
-        ))}
+                        <Button
+                          className='mt30'
+                          onClick={() => handleClickApplyOpen(job)}
+                        >
+                          <Typography
+                            gutterBottom
+                            variant='h3'
+                            component='span'
+                            className='mb0'
+                          >
+                            Apply now
+                          </Typography>
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  </Grid>
+                ) : (
+                  ''
+                )}
+              </>
+            ))}
+          {!jobs && <>loading...</>}
+          {jobs && !jobs.length && <>No Jobs To Display</>}
+        </Grid>
+      </section>
       <section className='pagination'>
         <CssBaseline />
         <Container
@@ -731,6 +584,7 @@ export default function SalesForceDevelopment() {
           </div>
         </Container>
       </section>
+
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
           gutterBottom
@@ -749,6 +603,7 @@ export default function SalesForceDevelopment() {
       </section>
       <LeadForm />
       <Footer />
+
       <Dialog
         open={applyJob}
         className='career-dialog'
@@ -874,6 +729,7 @@ export default function SalesForceDevelopment() {
           <Button onClick={onSubmitHandler}>Submit</Button>
         </DialogActions>
       </Dialog>
+
       <Dialog
         open={jdHeight}
         className='career-dialog'
