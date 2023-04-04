@@ -57,7 +57,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { Container } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import CreateIcon from '@mui/icons-material/Create';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import JobDescription from 'components/JobDescription';
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
@@ -584,18 +584,19 @@ export default function SalesForceDevelopment() {
           <section className=' container mx-auto flex gap-5 items-center mb-10  '>
             {!showDiv && (
               <div
-                className={`shadow-2xl border-white border rounded-full transition-all ease-in-out duration-1000 text-white h-[42px] w-[105px] text-center py-2 ${
+                className={`shadow-2xl border-white border rounded-full transition-all ease-in-out duration-1000 text-white h-[42px] w-[42px] text-center py-2 ${
                   activeButtonColor == index ? 'bg-[#99B898]' : 'bg-[#eb6841]'
                 }`}
               >
-                {index + 1}
+                {console.log('start', index)}
+                {index + startIndex + 1}
               </div>
             )}
 
             {/* Start of main div*/}
 
             <div
-              className='JOB CARD bg-slate-400/5 border-2 rounded-2xl p-10 shadow-md sectionBox hover:bg-[#0047ab57]  transition-all ease-in-out'
+              className='JOB CARD bg-white border-2 rounded-2xl p-10 shadow-md sectionBox   transition-all ease-in-out w-full'
               onMouseEnter={() => setactiveButtonColor(index)}
               onMouseLeave={() => setactiveButtonColor(!index)}
             >
@@ -608,8 +609,8 @@ export default function SalesForceDevelopment() {
                 >
                   {job.JobTitle}
                 </Typography>
-                <div className='CreatedBox flex gap-1 '>
-                  <CreateIcon />
+                <div className='CreatedBox flex gap-1 text-[#dd3952]'>
+                  <CalendarMonthIcon />
                   <Typography
                     gutterBottom
                     variant='h3'
@@ -634,16 +635,17 @@ export default function SalesForceDevelopment() {
                   dangerouslySetInnerHTML={{
                     __html: job.Jobdescription,
                   }}
+                  className='Poppins'
                 />
               </Typography>
 
               {job.Jobdescription ? (
                 <span
-                  className={`mt15 readMoreLink   rounded-lg p-2  transition-all ease-out shadow-lg ${
-                    activeButtonColor == index
-                      ? 'bg-[#0047AB] border text-white'
-                      : ''
-                  }`}
+                  className={`mt15 readMoreLink   rounded-lg p-2  transition-all ease-out shadow-lg 
+                   
+                     hover:bg-[#0047AB] hover:border hover:text-white Poppins
+                      
+                  `}
                   onClick={() => handleClickShowMore(job)}
                 >
                   {jdHeight ? 'Show less' : 'Show more'}
