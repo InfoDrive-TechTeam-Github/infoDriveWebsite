@@ -134,6 +134,46 @@ export default function SalesForceDevelopment({ data }) {
               {post}
             </div>
           ))}
+          <div
+            className={`button poppin hover:bg-[#f50057] lg:h-10 h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
+              active === 'Blockchain'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('Blockchain')}
+          >
+            Blockchain
+          </div>
+          <div
+            className={`button poppin hover:bg-[#f50057] lg:h-10 h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
+              active === 'App Development'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('App Development')}
+          >
+            App Development
+          </div>
+          <div
+            className={`button poppin hover:bg-[#f50057] lg:h-10 h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
+              active === 'SAP Emarys'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('SAP Emarys')}
+          >
+            SAP Emarys
+          </div>
+          <div
+            className={`button poppin hover:bg-[#f50057] lg:h-10 h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
+              active === 'Staff Augmentation'
+                ? 'bg-[#f50057] text-white border-white'
+                : 'text-gray-500 border-gray-500'
+            }`}
+            onClick={() => handleButtonClick('SAP Emarys')}
+          >
+            Staff Augmentation
+          </div>
         </div>
 
         <br />
@@ -234,7 +274,7 @@ export default function SalesForceDevelopment({ data }) {
           })}
         </Box>
       </section>
-
+      {/**pagination */}
       <section className='pagination'>
         <CssBaseline />
         <Container
