@@ -37,13 +37,29 @@ export default function SalesForceDevelopment({ data }) {
     }
   };
   // creating unique Category names
-  const uniqueCategory = Array.from(
-    new Set(data.map((post) => post['_embedded']['wp:term'][0][0]['name']))
-  );
+
+  // const uniqueCategory = Array.from(
+  //   new Set(data.map((post) => post['_embedded']['wp:term'][0][0]['name']))
+  // );
+  // console.log('uniqueCategory: ' + uniqueCategory);
+
+  const uniqueCategory = [
+    'Web and APP Development',
+    'IT Solutions',
+    'Salesforce',
+    'App Development',
+    'CRM',
+    'SAP Emarys',
+    'Staff Augmentation',
+    'Business',
+    'Digital Marketing',
+    'Blockchain',
+  ];
 
   // Handle Category button
   const handleButtonClick = (category) => {
     setActive(category);
+    setPage(1);
     if (category == 'All Category') {
       setFilterData(data);
     } else {
@@ -111,7 +127,7 @@ export default function SalesForceDevelopment({ data }) {
         </Typography>
         {/**  category menu */}
 
-        <div className='category flex flex-wrap gap-5 mt-10 px-20 mx-auto'>
+        <div className='category flex flex-wrap gap-5 mt-10  mx-auto'>
           <div
             className={`button poppin hover:bg-[#f50057] lg:h-10 h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
               active === 'All Category'
@@ -234,7 +250,7 @@ export default function SalesForceDevelopment({ data }) {
           })}
         </Box>
       </section>
-
+      {/**pagination */}
       <section className='pagination'>
         <CssBaseline />
         <Container
