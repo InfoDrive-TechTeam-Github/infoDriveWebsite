@@ -58,7 +58,7 @@ import { Container } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-
+// import JobDescription from 'components/JobDescription';
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
   const [activeButtonColor, setactiveButtonColor] = useState(null);
@@ -625,6 +625,8 @@ export default function SalesForceDevelopment() {
                   </Typography>
                 </div>
               </div>
+
+              {/*<JobDescription job={job} />*/}
 
               <Typography
                 gutterBottom
