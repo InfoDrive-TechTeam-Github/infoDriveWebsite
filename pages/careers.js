@@ -581,7 +581,7 @@ export default function SalesForceDevelopment() {
       {/**Jobs Card Start from here */}
       {jobs &&
         jobs.slice(startIndex, endIndex).map((job, index) => (
-          <section className=' container mx-auto flex gap-5 items-center mb-10  '>
+          <Container maxWidth='xl' className='flex gap-5 items-center mb-10  '>
             {!showDiv && (
               <div
                 className={`shadow-2xl border-white border rounded-full transition-all ease-in-out duration-1000 text-white h-[42px] w-[42px] text-center py-2 ${
@@ -698,7 +698,7 @@ export default function SalesForceDevelopment() {
               </Button>
             </div>
             {/* End of main div*/}
-          </section>
+          </Container>
         ))}
       <section className='pagination'>
         <CssBaseline />
