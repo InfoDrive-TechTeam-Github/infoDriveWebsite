@@ -58,7 +58,7 @@ import { Container } from '@mui/material';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import JobDescription from 'components/JobDescription';
+
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
   const [activeButtonColor, setactiveButtonColor] = useState(null);
@@ -581,7 +581,10 @@ export default function SalesForceDevelopment() {
       {/**Jobs Card Start from here */}
       {jobs &&
         jobs.slice(startIndex, endIndex).map((job, index) => (
-          <Container maxWidth='xl' className='flex gap-5 items-center mb-10  '>
+          <Container
+            maxWidth='xl'
+            className='flex gap-5 items-center mb-10 mx-auto '
+          >
             {!showDiv && (
               <div
                 className={`shadow-2xl border-white border rounded-full transition-all ease-in-out duration-1000 text-white h-[42px] w-[42px] text-center py-2 ${
@@ -622,8 +625,6 @@ export default function SalesForceDevelopment() {
                   </Typography>
                 </div>
               </div>
-
-              {/*<JobDescription job={job} />*/}
 
               <Typography
                 gutterBottom
