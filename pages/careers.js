@@ -585,7 +585,7 @@ export default function SalesForceDevelopment() {
             {!showDiv && (
               <div
                 className={`shadow-2xl border-white border rounded-full transition-all ease-in-out duration-1000 text-white h-[42px] w-[105px] text-center py-2 ${
-                  activeButtonColor == index ? 'bg-[#eb6841]' : 'bg-[#8d5524]'
+                  activeButtonColor == index ? 'bg-[#99B898]' : 'bg-[#eb6841]'
                 }`}
               >
                 {index + 1}
