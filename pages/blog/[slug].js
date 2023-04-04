@@ -35,7 +35,7 @@ export default function SalesForceDevelopment({ data }) {
       <Head></Head>
       <Header />
       <section
-        className={`sectionBox whyUsBox salesForceServices2 blog news mt-10`}
+        className={`sectionBox whyUsBox salesForceServices2 blog news mt-32`}
       >
         <Box sx={{ flexGrow: 1 }}>
           {data.map((post, index) => {
