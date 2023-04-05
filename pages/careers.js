@@ -697,8 +697,8 @@ export default function SalesForceDevelopment() {
                   </Typography>
                 </Box>
               </Box>
-              <Button
-                className={`mt30  rounded-md px-1  shadow-md  hover:text-[#dd3952] transition-all ease-in
+              <button
+                className={`mt30 Poppins  rounded-md p-2  shadow-md  hover:text-[#dd3952] hover:bg-white transition-all ease-in-out font-semibold uppercase
                 ${
                   activeApplyButton
                     ? 'bg-white text-[#dd3952]'
@@ -706,15 +706,8 @@ export default function SalesForceDevelopment() {
                 }`}
                 onClick={() => handleClickApplyOpen(job)}
               >
-                <Typography
-                  gutterBottom
-                  // variant='h3'
-                  component='span'
-                  className='mb0  Poppins font-semibold'
-                >
-                  Apply now
-                </Typography>
-              </Button>
+                Apply now
+              </button>
             </div>
             {/* End of main div*/}
           </Container>
