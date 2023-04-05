@@ -583,16 +583,18 @@ export default function SalesForceDevelopment() {
         jobs.slice(startIndex, endIndex).map((job, index) => (
           <Container
             maxWidth='xl'
-            className='flex gap-5 items-center mb-10 mx-auto '
+            className='flex gap-3 items-center mb-10 mx-auto '
           >
             {!showDiv && (
               <div
-                className={`shadow-2xl border-white border rounded-full transition-all ease-in-out duration-1000 text-white h-[42px] w-[42px] text-center py-2 ${
+                className={`shadow-2xl border-4    border-slate-950/5  rounded-full transition-all ease-in-out duration-1000 text-white h-[2rem] w-[2rem]  flex justify-center items-center p-4 ${
                   activeButtonColor == index ? 'bg-[#99B898]' : 'bg-[#eb6841]'
                 }`}
               >
-                {console.log('start', index)}
-                {index + startIndex + 1}
+                <p className='Poppins font-semibold'>
+                  {console.log('start', index)}
+                  {index + startIndex + 1}
+                </p>
               </div>
             )}
 
@@ -647,7 +649,7 @@ export default function SalesForceDevelopment() {
                 <span
                   className={`mt15 readMoreLink   rounded-lg p-2  transition-all ease-out shadow-lg 
                    
-                     hover:bg-[#0047AB] hover:border hover:text-white Poppins
+                     hover:bg-[#dd3952] hover:border hover:text-white Poppins
                       
                   `}
                   onClick={() => handleClickShowMore(job)}
@@ -659,9 +661,9 @@ export default function SalesForceDevelopment() {
               )}
               {/*show location */}
 
-              <Box className='mt30'>
-                <Box className='careerbox'>
-                  <LocationOnIcon />
+              <Box className='mt30 '>
+                <Box className='careerbox gap-1'>
+                  <LocationOnIcon className='h-[2rem] w-[2rem] ' />
                   <Typography
                     gutterBottom
                     variant='h3'
@@ -671,8 +673,16 @@ export default function SalesForceDevelopment() {
                     {job.Locality}
                   </Typography>
                 </Box>
-                <Box style={{ display: 'flex', alignItems: 'center' }}>
-                  <MonetizationOnIcon />
+                <Box
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center text-slate-500',
+                    gap: '4px',
+                  }}
+                >
+                  <div className='Currency border-2 border-black p-3 rounded-full h-[2rem] w-[2rem] flex justify-center items-center'>
+                    <p className='Poppins font-semibold'>{job.Currency}</p>
+                  </div>
 
                   <Typography
                     gutterBottom
@@ -680,9 +690,7 @@ export default function SalesForceDevelopment() {
                     component='div'
                     className='mlb pt5'
                   >
-                    {job.MinSalary > 0 ? job.MinSalary : ''}
-                    {job.MinSalary > 0 && job.MaxSalary > 0 ? ' - ' : ''}
-                    {job.MaxSalary > 0 ? job.MaxSalary : ''}
+                    {job['MinSalary'] + ' - ' + job.MaxSalary}
                   </Typography>
                 </Box>
               </Box>
