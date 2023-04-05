@@ -216,7 +216,12 @@ export default function SalesForceDevelopment({ data }) {
                         >
                           <div>
                             <a href={`/blog/${post['slug']}.html`}>
-                              <h3>{post['title']['rendered']}</h3>{' '}
+                              <h3>
+                                {post['title']['rendered'].replace(
+                                  /&#8217;/g,
+                                  "'"
+                                )}
+                              </h3>
                             </a>
                           </div>
                         </Typography>

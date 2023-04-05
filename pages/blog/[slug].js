@@ -63,7 +63,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
                       component='h2'
                       className='w-fit pl10 border rounded-2xl flex items-center justify-center p-5  hover:bg-[#f50057] hover:text-white transition-all ease-in '
                     >
-                      {post['title']['rendered']}
+                      {post['title']['rendered'].replace(/&#8217;/g, "'")}
                     </Typography>
                   </div>
 
