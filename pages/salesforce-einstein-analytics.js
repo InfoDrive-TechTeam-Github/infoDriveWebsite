@@ -90,8 +90,7 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/7e086652d7d493b8a2f038e2f67d3984.jpeg'
-          alt=' Salesforce Einstein Analytics, Features, Integrations, and
-          Customization'
+          alt=' Salesforce Einstein Analytics'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -226,7 +225,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Salesforce Einstein Analytics integrations'
                   src='images/4fb9fbf86887668153dd106a0fff11c5.jpeg'
                 />
               </Card>

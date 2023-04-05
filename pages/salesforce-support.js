@@ -41,7 +41,7 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Salesforce Support | Singapore, Malaysia, and India - Info Drive
+          Salesforce Support | Singapore, Malaysia, and India - InfoDrive
           Solutions
         </title>
         <meta
@@ -87,12 +87,16 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/6ab9e62b9940c4bae59de46b69e54ecb.jpeg'
-          alt='Salesforce Support | Singapore, Malaysia, and India - Info Drive
-          Solutions'
+          alt='Salesforce Support'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography className='hiddenElement' gutterBottom variant='h3' component='div'>
+            <Typography
+              className='hiddenElement'
+              gutterBottom
+              variant='h3'
+              component='div'
+            >
               Salesforce SUPPORT
             </Typography>
 

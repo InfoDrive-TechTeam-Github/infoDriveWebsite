@@ -88,8 +88,7 @@ export default function ServicesForStartUps() {
           <img
             style={{ width: '100%' }}
             src='images/pexels-helena-lopes-933964.jpg'
-            alt='IT Solutions for Start-up Business | Consulting Solutions, and
-            Ideation & Development Services – InfoDrive Solutions'
+            alt='IT Solutions for Start-up Business'
           />
           <Box sx={{ flexGrow: 1 }} className='sliderContent'>
             <Grid container spacing={0}>
@@ -159,33 +158,41 @@ export default function ServicesForStartUps() {
                       IT Solutions for Start-up Business
                     </Typography>
 
-                    <Typography gutterBottom variant='h3' component='div'>
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      textAlign={'justify'}
+                    >
                       We analyse your start-up model in entirely, consult and
-                      offer the right technology solutions.
-                      <br />
-                      We are a leading provider of digital solutions for
-                      start-ups, helping them to get their business off the
-                      ground and achieve success in the highly competitive world
-                      of entrepreneurship. With our comprehensive range of
+                      offer the right technology & Business solutions after we
+                      complete our audit of your start-up. We are a leading
+                      provider of digital solutions for start-ups, helping them
+                      to setup their business in Singapore ,Malaysia or India
+                      and achieve success in the highly competitive world of
+                      entrepreneurship. With our comprehensive range of
                       services, we can support you every step of the way, from
-                      building a professional website to developing a
-                      comprehensive digital marketing strategy.
+                      Market research to hiring key staff to product building to
+                      a professional website or developing a comprehensive go to
+                      market strategy.
                       <br />
                       As a start-up, you need to make the most of every
                       opportunity to get your business noticed and attract new
                       customers. That's where we come in. Our team of
                       experienced professionals has a deep understanding of the
                       challenges faced by start-ups and can provide the guidance
-                      and support you need to succeed.
+                      and support you need to succeed due to our localised
+                      expertise..
                       <br />
                       {/* As a start-up, you need to make the most of every opportunity to get your business noticed and attract new customers. That's where we come in. Our team of experienced professionals has a deep understanding of the challenges faced by start-ups and can provide the guidance and support you need to succeed. */}
                     </Typography>
                     <hr />
-                    <Typography gutterBottom variant='h3' component='div'>
-                      Our leading technology experts will bring you the latest
-                      technologies with a variety of great benefits and catered
-                      solutions. <br />
-                      One of our key services is website design and development.
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      textAlign={'justify'}
+                    >
                       Your website is often the first point of contact with
                       potential customers, and it's crucial that it reflects
                       your brand, values, and vision. Our team of skilled
@@ -195,7 +202,12 @@ export default function ServicesForStartUps() {
                       {/* One of our key services is website design and development. Your website is often the first point of contact with potential customers, and it's crucial that it reflects your brand, values, and vision. Our team of skilled designers and developers can create a custom website that meets your specific needs and helps you stand out from the competition. Another important service we offer is branding and identity development. As a start-up, it's crucial that you establish a strong brand identity that differentiates you from the competition and helps you build trust and loyalty with your customers. Our team can help you develop a professional logo and brand guidelines that showcase your unique value proposition and establish your brand as a leader in your industry. */}
                     </Typography>
                     <hr />
-                    <Typography gutterBottom variant='h3' component='div'>
+                    <Typography
+                      gutterBottom
+                      variant='h3'
+                      component='div'
+                      textAlign={'justify'}
+                    >
                       We also offer a range of other solutions designed
                       specifically for start-ups. These include business
                       planning and strategy development, market research, and
@@ -211,8 +223,9 @@ export default function ServicesForStartUps() {
                     </Typography>
                     <ul>
                       <li>mobile and/ or web applications</li>
-                      <li>blockchain-based applications</li>
                       <li>enterprise solutions (salesforce)</li>
+                      <li>Custom Software development</li>
+                      <li>Digital Marketing & Research</li>
                     </ul>
 
                     <Typography gutterBottom variant='h3' component='div'>
@@ -290,7 +303,7 @@ export default function ServicesForStartUps() {
               <Grid item xs={12}>
                 <Card>
                   <img
-                    alt='Remy Sharp'
+                    alt='IT Consulting Solutions'
                     src='images/pexels-cottonbro-studio-5473298.jpeg'
                   />
                 </Card>
@@ -305,7 +318,7 @@ export default function ServicesForStartUps() {
             className='white pb15 pt15 poppin'
             component='div'
           >
-            Get in touch with our team and learn how we can help your startup
+            Get in Touch with Our Team and Learn How We can Help Your Startup
             succeed
           </Typography>
           <Button

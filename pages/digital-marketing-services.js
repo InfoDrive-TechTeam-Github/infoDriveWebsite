@@ -48,10 +48,21 @@ export default function SalesForceDevelopment() {
           name='description'
           content='InfoDrive Solutions is a leading digital marketing company offering internet marketing services in Singapore, Malaysia, and India. As a top digital marketing consultant, we provide customized strategies to help small businesses succeed online.'
         />
+        <meta
+          name='description'
+          content='InfoDrive Solutions is a leading digital marketing company offering internet marketing services in Singapore, Malaysia, and India. As a top digital marketing consultant, we provide customized strategies to help small businesses succeed online.'
+        />
+
+        <meta
+          name='keywords'
+          content='Digital Marketing Company, Internet Marketing Service, Digital Marketing Services, Online Marketing Small Business, Digital Marketing Consultant, Digital Marketing Company Near Me, Digital Marketing Consultant in Singapore, Digital Marketing Strategy Provider in Singapore, Digital Marketing Consultant in Malaysia, Digital Marketing Strategy Provider in Malaysia, Digital Marketing Company in Singapore, Digital Marketing Company in Malaysia, Digital Marketing Services in Singapore, Digital Marketing Company in Kuala Lumpur'
+        />
+
         <link
           rel='canonical'
           href='https://infodrive-solutions.com/digital-marketing-services.html'
         />
+
         <meta
           property='og:title'
           content=' Digital Marketing Strategy, Service Provider & Company in Singapore,
@@ -61,6 +72,7 @@ export default function SalesForceDevelopment() {
           property='og:image'
           content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
         />
+        <link rel='icon' href='/favicon.png' />
       </Head>
 
       <link rel='icon' href='/favicon.png' />
@@ -87,8 +99,7 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/11bea532234c8a762a4651a07ee3dff8.jpeg'
-          alt='Digital Marketing Strategy, Service Provider & Company in Singapore,
-          Malaysia'
+          alt='Digital Marketing  Company in Singapore'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent '>
           <Grid container spacing={0}>

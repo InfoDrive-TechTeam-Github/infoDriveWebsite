@@ -89,12 +89,16 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/0959e7bad48d4a91f7e112136efad00a.jpeg'
-          alt='Salesforce Lightning App Development Services, Features,
-          Customization, and Implementation'
+          alt='Salesforce Lightning App Development Services'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
-            <Typography className="hiddenElement" gutterBottom variant='h3' component='div'>
+            <Typography
+              className='hiddenElement'
+              gutterBottom
+              variant='h3'
+              component='div'
+            >
               Salesforce LIGHTNING
             </Typography>
             <Typography gutterBottom variant='h1' component='div'>
@@ -156,7 +160,7 @@ export default function SalesForceDevelopment() {
           className='upperCase'
           component='h1'
         >
-          Why Salesforce Lightning Development
+          Why Salesforce Lightning Development ?
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='h3'>

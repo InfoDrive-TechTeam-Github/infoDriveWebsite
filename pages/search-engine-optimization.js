@@ -87,7 +87,7 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/8472ccba2259312408b9731d8ee9fcd1.jpeg'
-          alt='SEO Service Provider & Company in Singapore, Malaysia, and India'
+          alt='SEO Service Provider'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent '>
           <Grid container spacing={0}>
@@ -164,20 +164,22 @@ export default function SalesForceDevelopment() {
           is why we provide regular updates and reports on the progress of our
           work.
           <br />
+          <br />
           One of the key benefits of working with us is that we use only white
           hat SEO techniques. This means that we follow all of the guidelines
           set out by search engines such as Google, and we do not engage in any
           unethical or spammy practices. This not only helps to ensure that our
           clients see long-term, sustainable results, but it also protects their
-          websites from being penalized by search engines. In addition to our
-          core SEO services, we also offer a range of related services that can
-          help businesses to improve their online presence and reach their
-          target audience. These include social media marketing, content
-          marketing, and local SEO services. Social media marketing is a
-          powerful tool for businesses of all sizes, as it allows them to
-          connect with their customers and build brand awareness in a more
-          personal and engaging way. At InfoDrive Solutions, we have a team of
-          social media experts who can help businesses to create and manage
+          websites from being penalized by search engines.
+          <br />
+          <br /> In addition to our core SEO services, we also offer a range of
+          related services that can help businesses to improve their online
+          presence and reach their target audience. These include social media
+          marketing, content marketing, and local SEO services. Social media
+          marketing is a powerful tool for businesses of all sizes, as it allows
+          them to connect with their customers and build brand awareness in a
+          more personal and engaging way. At InfoDrive Solutions, we have a team
+          of social media experts who can help businesses to create and manage
           effective social media campaigns that drive traffic to their websites
           and help to convert leads into customers.
         </Typography>
@@ -322,7 +324,7 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Transforming your website into a search engine powerhouse
+          Transforming Your Website Into a Search Egine Powerhouse
         </Typography>
         <Button
           href='/contact-us.html'

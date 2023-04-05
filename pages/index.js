@@ -203,7 +203,7 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Software Development'
                   src='images/knowledgable-team.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -228,7 +228,7 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Digital Transformation Solutions Company'
                   src='images/love-for-work.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -254,7 +254,8 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Software Development Company in
+          Singapore'
                   src='images/profitable-solutions.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -280,7 +281,8 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Software Development Company in
+ Malaysia'
                   src='images/clinet-satisfaction.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -307,7 +309,7 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Software Development Solutions Company in India'
                   src='images/in-house-staff.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -334,7 +336,7 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='InfoDrive Solutions'
                   src='images/ROI.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -388,7 +390,8 @@ export default function Index() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Digital Transformation Solutions Company in
+          Singapore'
                   src='images/pexels-ketut-subiyanto-4350210.jpg'
                 />
               </Card>
@@ -487,7 +490,8 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt='Mark Durante'
+                      alt='Digital Transformation Solutions Company in
+ Malaysia'
                       src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
@@ -532,7 +536,8 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt='Sivachanthiran Belasamy'
+                      alt='Digital Transformation Solutions Company in
+          India'
                       src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
@@ -584,7 +589,7 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt='Aidin Mahmoodi'
+                      alt='We are headquartered in Singapore'
                       src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
@@ -637,7 +642,7 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt='Kester Poh'
+                      alt='Providing cutting edge IT Development'
                       src='images/user-icon.jpeg'
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
@@ -679,7 +684,6 @@ export default function Index() {
               </Grid>
             </Box>
           }
-
         </Carousel>
       </section>
       <LeadForm />

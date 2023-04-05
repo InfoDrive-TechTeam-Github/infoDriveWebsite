@@ -88,7 +88,7 @@ export default function AndroidAppDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/pexels-helena-lopes-933964.jpg'
-          alt='Android App Development Company, Android App Development Company in Singapore, Android App Development Company in Malaysia, Android App Development Company in Kuala Lumpur, Android App Development Company in Bangalore, Top Android App Development Company in Singapore, Top Android App Development Company in Malaysia, Android App Developers in Singapore, Top Android App Developers in Malaysia, Android App Developers in India, Android App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, Android App Development'
+          alt='Android App Development Company'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -258,7 +258,7 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={7} className='androidDevelopmentRight'>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Android App Development Company in Singapore'
                   src='images/professional-programmer-working-late-dark-office.jpeg'
                 />
               </Card>
@@ -384,7 +384,7 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Android App Development Company in Bangalore'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
@@ -409,7 +409,7 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Android App Development Company in Kuala Lumpur'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
@@ -434,7 +434,7 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Android App Development Company in Bangalore'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
@@ -458,7 +458,7 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Mobile App Development Services in Malaysia'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
@@ -482,7 +482,7 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Android App Development'
                   src='images/33301.png'
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
@@ -513,8 +513,8 @@ export default function AndroidAppDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Ready to take your business to the next level with a custom web or
-          mobile app?
+          Ready to Take Your Business to the Next Level with a Custom Web or
+          Mobile App?
         </Typography>
         <Button
           href='/contact-us.html'

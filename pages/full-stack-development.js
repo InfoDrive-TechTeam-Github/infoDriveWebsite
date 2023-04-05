@@ -88,8 +88,7 @@ export default function FullstackDevelopment() {
         <img
           style={{ width: '100%' }}
           src='images/pexels-helena-lopes-933964.jpg'
-          alt='Full Stack Development Services & Developers in Singapore, Malaysia,
-          and India'
+          alt='Full Stack Development Services'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -211,7 +210,7 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services in Singapore'
                   src='images/vector2.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -233,7 +232,7 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services in Malaysia'
                   src='images/vector3.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -253,7 +252,7 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services in Bangalore'
                   src='images/vector1.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -275,7 +274,7 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services in Kuala Lumpur'
                   src='images/vector4.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -295,7 +294,7 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Developers in India'
                   src='images/vector6.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -315,7 +314,7 @@ export default function FullstackDevelopment() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Services  in Singapore'
                   src='images/vector7.png'
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -421,7 +420,8 @@ export default function FullstackDevelopment() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Remy Sharp'
+                  alt='Full Stack Development Developers in Singapore,
+          and India'
                   src='images/pexels-prakhar-bansal-732183.jpg'
                 />
               </Card>
