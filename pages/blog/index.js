@@ -127,7 +127,7 @@ export default function SalesForceDevelopment({ data }) {
         </Typography>
         {/**  category menu */}
 
-        <div className='category flex flex-wrap gap-3 mt-10  mx-auto'>
+        <div className='category flex flex-wrap gap-2 mt-10  mx-auto'>
           <div
             className={`button poppin hover:bg-[#f50057] lg:h-10 h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
               active === 'All Category'
