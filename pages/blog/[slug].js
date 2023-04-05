@@ -41,39 +41,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
   return (
     <div>
       <Head>
-        <title>
-          SEO Service Provider & Company in Singapore, Malaysia, and India
-        </title>
-        <meta
-          name='description'
-          content='InfoDrive Solutions is a leading search engine optimization company offering expert SEO services in Singapore, Malaysia, and India. As a top SEO consultant, we provide customized strategies for small businesses and startups to improve their online visibility.'
-        />
-        <meta
-          name='keywords'
-          content='Search Engine Optimization Company, SEO Service Provider in Singapore, SEO Consultant in Singapore, SEO Company Near Me, SEO Strategy Provider in Singapore, SEO Company in Malaysia, SEO Company in Kuala Lumpur, SEO Services in Singapore, SEO Consultant in Malaysia, SEO Service Provider in Malaysia'
-        />
-        <link
-          rel='canonical'
-          href='https://infodrive-solutions.com/search-engine-optimization.html'
-        />
-        <meta
-          property='og:title'
-          content='SEO Service Provider & Company in Singapore, Malaysia, and India'
-        />
-        <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
-        />
         <link rel='icon' href='/favicon.png' />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-MB38MVS');`,
-          }}
-        />
       </Head>
       <Header />
       <section
