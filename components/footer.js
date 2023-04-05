@@ -328,7 +328,7 @@ export default function Footer() {
       </p>
       <a
         href='https://wa.me/6592384299'
-        class='whatsapp_float'
+        className='whatsapp_float flex items-center justify-center'
         target='_blank'
         rel='noopener noreferrer'
       >

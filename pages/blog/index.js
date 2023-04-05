@@ -127,7 +127,7 @@ export default function SalesForceDevelopment({ data }) {
         </Typography>
         {/**  category menu */}
 
-        <div className='category flex flex-wrap gap-5 mt-10  mx-auto'>
+        <div className='category flex flex-wrap gap-3 mt-10  mx-auto'>
           <div
             className={`button poppin hover:bg-[#f50057] lg:h-10 h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
               active === 'All Category'
@@ -212,7 +212,7 @@ export default function SalesForceDevelopment({ data }) {
                           gutterBottom
                           variant='h3'
                           component='h2'
-                          className='w100 pl30 text-justify'
+                          className='w100 pl30 '
                         >
                           <div>
                             <a href={`/blog/${post['slug']}.html`}>
@@ -224,7 +224,7 @@ export default function SalesForceDevelopment({ data }) {
                           gutterBottom
                           variant='h5'
                           component='div'
-                          className='w100 pl30'
+                          className='w100 pl30 text-start'
                         >
                           <div
                             dangerouslySetInnerHTML={{
@@ -232,15 +232,18 @@ export default function SalesForceDevelopment({ data }) {
                             }}
                           ></div>
                         </Typography>
-                        {/* <Button
-                          href={`/blog/${post['slug']}.html`}
-                          className='bgRed white pl15 pr15 poppin ml30 normalCase'
-                        >
-                          Read more
-                        </Button> */}
-                        <h3 className='pr15 poppin ml30 normalCase'>
-                          Publish Date: {dateFormat(post['date'], 'fullDate')}
-                        </h3>
+                        {/* puslish date and remore*/}
+                        <div className='flex '>
+                          <h3 className='pr15 poppin ml30 font-semibold'>
+                            Publish Date: {dateFormat(post['date'], 'fullDate')}
+                          </h3>
+                          {/* <Button
+                            href={`/blog/${post['slug']}.html`}
+                            className='pl15 pr15 poppin  normalCase shadow-md text-gray-600 ml-20 bg-slate-950/5 rounded-lg mb-10 font-medium'
+                          >
+                            Read more
+                          </Button>*/}
+                        </div>
                       </CardContent>
                     </Card>
                   </Grid>
@@ -306,9 +309,13 @@ export default function SalesForceDevelopment({ data }) {
 }
 export async function getStaticProps() {
   // Fetch data from external API
+  // const res = await fetch(
+  //   `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&&limit=2&categories=3,4,5,6,7,8,9,10,11,12`
+  // );
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&&limit=2&categories=3,4,5,6,7,8,9,10,11,12`
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
   );
+
   const data = await res.json();
   console.log('API blog', data);
   // Pass data to the page via props
