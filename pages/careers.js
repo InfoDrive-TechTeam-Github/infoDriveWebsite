@@ -62,6 +62,7 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
   const [activeButtonColor, setactiveButtonColor] = useState(null);
+  const [activeApplyButton, setActiveApply] = useState(false);
   const [jobDetail, setJobDetail] = useState(null);
   const [applyJob, setApplyJob] = React.useState(false);
   const [valuePhone, setValuePhone] = useState();
@@ -653,6 +654,8 @@ export default function SalesForceDevelopment() {
                       
                   `}
                   onClick={() => handleClickShowMore(job)}
+                  onMouseEnter={() => setActiveApply(true)}
+                  onMouseLeave={() => setActiveApply(false)}
                 >
                   {jdHeight ? 'Show less' : 'Show more'}
                 </span>
@@ -695,14 +698,19 @@ export default function SalesForceDevelopment() {
                 </Box>
               </Box>
               <Button
-                className='mt30'
+                className={`mt30  rounded-md px-1  shadow-md  hover:text-[#dd3952] transition-all ease-in
+                ${
+                  activeApplyButton
+                    ? 'bg-white text-[#dd3952]'
+                    : 'bg-[#dd3952] text-white'
+                }`}
                 onClick={() => handleClickApplyOpen(job)}
               >
                 <Typography
                   gutterBottom
-                  variant='h3'
+                  // variant='h3'
                   component='span'
-                  className='mb0'
+                  className='mb0  Poppins font-semibold'
                 >
                   Apply now
                 </Typography>
