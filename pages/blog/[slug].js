@@ -27,11 +27,6 @@ export default function SalesForceDevelopment({ data, datafull }) {
 
   const totalPages = datafull.length;
 
-  const goToPage = (pageNumber) => {
-    if (pageNumber < totalPages && pageNumber >= 0) {
-      setDataIndex(pageNumber);
-    }
-  };
   useEffect(() => {
     const index = datafull.findIndex((item) => item.id === data[0].id);
     console.log('dataIndex', index);
@@ -104,6 +99,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
                               {post['_embedded']['wp:term'][0][0]['name']}
                             </Button>
                           </div>
+                          {/**contenten inserted here */}
                           <Typography
                             gutterBottom
                             variant='h5'
