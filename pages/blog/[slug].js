@@ -82,9 +82,9 @@ export default function SalesForceDevelopment({ data, datafull }) {
                           </div>
                         </div>
                         {/**content */}
-                        <div className='Content max-w-7xl px-10 mt-10'>
+                        <div className='Content max-w-7xl md:px-10 mt-10'>
                           {/**Image below section Category and User,Avtar */}
-                          <div className='md:flex justify-between items-baseline '>
+                          <div className='md:flex md:justify-between items-baseline whitespace-nowrap w-full'>
                             <div className='text-gray-400 flex gap-2'>
                               <Avatar
                                 src='/broken-image.jpg'
@@ -194,7 +194,14 @@ export default function SalesForceDevelopment({ data, datafull }) {
 
 export async function getStaticPaths() {
   const res = await fetch(
-    'https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed'
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`,
+    {
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        Pragma: 'no-cache',
+        Expires: 0,
+      },
+    }
   );
   const posts = await res.json();
 
