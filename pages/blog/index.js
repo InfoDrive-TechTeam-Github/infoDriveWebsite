@@ -85,15 +85,15 @@ export default function SalesForceDevelopment({ data }) {
         ></iframe>
       </noscript>
       <Header />
-      <section className={`   textAlignCenter blog upperCase mt-10 Poppins `}>
-        <div className='container mx-auto  bg-white p-5 Poppins rounded-lg shadow-sm'>
+      <section className={` textAlignCenter blog upperCase mt-10 Poppins `}>
+        <div className='container mx-auto  bg-white p-5 Poppins rounded-lg shadow-sm max-w-6xl'>
           <h1 className='w100 font-extrabold text-4xl text-blue-950 Poppins '>
             All Posts
           </h1>
 
           {/**  category menu */}
 
-          <div className='category flex flex-wrap  gap-2 mt-5  mx-auto '>
+          <div className='category flex flex-wrap  gap-2 mt-5  mx-auto md:pl-14 '>
             <div
               className={`button poppin hover:bg-[#f50057]  md:h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg  ${
                 active === 'All Category'
