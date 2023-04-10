@@ -85,42 +85,39 @@ export default function SalesForceDevelopment({ data }) {
         ></iframe>
       </noscript>
       <Header />
-      <section
-        className={`sectionBox pt30 pb30 textAlignCenter blog upperCase`}
-      >
-        <br />
-        <br />
-        <Typography gutterBottom variant='h1' component='h1' className='w100 '>
-          All Posts
-        </Typography>
-        {/**  category menu */}
+      <section className={`   textAlignCenter blog upperCase mt-10 Poppins `}>
+        <div className='container mx-auto  bg-white p-5 Poppins rounded-lg shadow-sm'>
+          <h1 className='w100 font-extrabold text-4xl text-blue-950 Poppins '>
+            All Posts
+          </h1>
 
-        <div className='category flex flex-wrap gap-2 mt-10  mx-auto'>
-          <div
-            className={`button poppin hover:bg-[#f50057] lg:h-10 h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
-              active === 'All Category'
-                ? 'bg-[#f50057] text-white border-white'
-                : 'text-gray-500 border-gray-500'
-            }`}
-            onClick={() => handleButtonClick('All Category')}
-          >
-            All Category
-          </div>
-          {uniqueCategory.map((post, index) => (
+          {/**  category menu */}
+
+          <div className='category flex flex-wrap  gap-2 mt-5  mx-auto '>
             <div
-              className={`button poppin hover:bg-[#f50057] md:h-10 h-fit w-fit p-2  poppin min-w-[150px] cursor-pointer text-center border transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
-                active === post
+              className={`button poppin hover:bg-[#f50057]  md:h-fit w-fit p-2  poppin min-w-[150px] text-center border cursor-pointer transition-all ease-out  hover:text-white hover:border-white rounded-lg  ${
+                active === 'All Category'
                   ? 'bg-[#f50057] text-white border-white'
                   : 'text-gray-500 border-gray-500'
               }`}
-              onClick={() => handleButtonClick(post)}
+              onClick={() => handleButtonClick('All Category')}
             >
-              {post}
+              All Category
             </div>
-          ))}
+            {uniqueCategory.map((post, index) => (
+              <div
+                className={`button poppin hover:bg-[#f50057] md:h-10 h-fit w-fit p-2  poppin min-w-[150px] cursor-pointer text-center border transition-all ease-out  hover:text-white hover:border-white rounded-lg ${
+                  active === post
+                    ? 'bg-[#f50057] text-white border-white'
+                    : 'text-gray-500 border-gray-500'
+                }`}
+                onClick={() => handleButtonClick(post)}
+              >
+                {post}
+              </div>
+            ))}
+          </div>
         </div>
-
-        <br />
       </section>
       {/** blog section */}
       <section className={`sectionBox whyUsBox salesForceServices2 blog news `}>
@@ -150,10 +147,13 @@ export default function SalesForceDevelopment({ data }) {
                               className='h-full rounded-xl'
                               style={{ width: '100%' }}
                               src={
-                                post['_embedded']['wp:featuredmedia'][0][
-                                  'source_url'
-                                ]
+                                post['_embedded']['wp:featuredmedia'][0]
+                                  ? post['_embedded']['wp:featuredmedia'][0][
+                                      'source_url'
+                                    ]
+                                  : 'https://example.com/placeholder-image.jpg'
                               }
+                              alt='infodrive blog post'
                             />
                           </a>
                         </div>
@@ -162,14 +162,14 @@ export default function SalesForceDevelopment({ data }) {
                   </Grid>
                   {/** blog right  section */}
                   <Grid item xs={6}>
-                    <div className='imgHeader flex  flex-wrap grid-col-1 items-baseline  justify-between pl-[30px] py-3 '>
+                    <div className='imgHeader flex  flex-wrap grid-col-1 items-baseline  justify-between md:pl-[30px] py-3 '>
                       <div className='text-gray-400 flex gap-2'>
                         <Avatar src='/broken-image.jpg' className='h-6 w-6' />
                         <p>{post['_embedded']['author'][0]['name']}</p>
                       </div>
                       <Button
                         href={`/blog/${post['slug']}.html`}
-                        className='bgRed white  poppin ml30 normalCase   min-h-7 w-auto text-center'
+                        className='bgRed white  poppin md:ml-[30px] normalCase   min-h-7 w-auto text-center'
                       >
                         {post['_embedded']['wp:term'][0][0]['name']}
                       </Button>
@@ -180,7 +180,7 @@ export default function SalesForceDevelopment({ data }) {
                           gutterBottom
                           variant='h3'
                           component='h2'
-                          className='w100 pl30 '
+                          className='w100 md:pl-[30px] '
                         >
                           <div>
                             <a href={`/blog/${post['slug']}.html`}>
@@ -197,7 +197,7 @@ export default function SalesForceDevelopment({ data }) {
                           gutterBottom
                           variant='h5'
                           component='div'
-                          className='w100 pl30 text-start'
+                          className='w100 md:pl-[30px] text-start'
                         >
                           <div
                             dangerouslySetInnerHTML={{
@@ -207,7 +207,7 @@ export default function SalesForceDevelopment({ data }) {
                         </Typography>
                         {/* puslish date and remore*/}
                         <div className='flex '>
-                          <h3 className='pr15 poppin ml30 font-semibold'>
+                          <h3 className='pr15 poppin md:ml-[30px] font-semibold'>
                             Publish Date: {dateFormat(post['date'], 'fullDate')}
                           </h3>
                           {/* <Button
@@ -281,16 +281,17 @@ export default function SalesForceDevelopment({ data }) {
   );
 }
 export async function getStaticProps() {
-  // Fetch data from external API
-  // const res = await fetch(
-  //   `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&&limit=2&categories=3,4,5,6,7,8,9,10,11,12`
-  // );
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&cacheBuster=${Date.now()}`
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`,
+    {
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        Pragma: 'no-cache',
+        Expires: 0,
+      },
+    }
   );
-
   const data = await res.json();
   console.log('API blog', data);
-  // Pass data to the page via props
   return { props: { data } };
 }

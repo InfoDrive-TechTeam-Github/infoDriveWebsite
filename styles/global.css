@@ -1510,7 +1510,7 @@ img.btnLdr {
     display: block !important;
   }
   .sectionBox {
-    padding: 15px 15px;
+    padding: 15px 0px;
     margin-left: 0;
     margin-right: 0;
   }
