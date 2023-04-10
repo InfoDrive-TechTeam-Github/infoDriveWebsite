@@ -286,7 +286,7 @@ export async function getStaticProps() {
   //   `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&&limit=2&categories=3,4,5,6,7,8,9,10,11,12`
   // );
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&cacheBuster=${Date.now()}`
   );
 
   const data = await res.json();
