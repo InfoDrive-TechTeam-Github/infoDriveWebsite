@@ -178,6 +178,7 @@ function DrawerAppBar(props) {
           <ListItemButton onClick={recordMobileButtonPosition} disableElevation>
             Our services <KeyboardArrowDownIcon />
           </ListItemButton>
+          {/* list for mobile menu*/}
           <Menu
             className='subMobileMenu'
             anchorEl={mobileAnchorEl}
@@ -460,6 +461,8 @@ function DrawerAppBar(props) {
               />
             </Button>
           </Typography>
+
+          {/**main Menu */}
           <Box
             className='mainMenu'
             sx={{ display: { xs: 'none', sm: 'block' } }}
@@ -670,6 +673,14 @@ function DrawerAppBar(props) {
                         to='/full-stack-development.html'
                       >
                         <ListItemText primary={'Full stack development'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton
+                        component='a'
+                        to='/custom-software-development.html'
+                      >
+                        <ListItemText primary={'Custom Software Development'} />
                       </ListItemButton>
                     </ListItem>
                   </List>
