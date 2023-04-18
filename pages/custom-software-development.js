@@ -175,17 +175,42 @@ function Development() {
           <Grid container spacing={0} className='androidDevelopment'>
             <Grid item xs={10} className='androidDevelopmentLeft'>
               <Typography gutterBottom variant='h2' component='div'>
-                Our Approach to Custom Software Development
+                Our Custom Software Development Process
               </Typography>
               <Typography gutterBottom variant='h5' component='div'>
-                Our approach to android app development is focused on creating
-                high-quality, user-friendly applications that are tailored to
-                the specific needs of our clients. We work closely with our
-                clients to understand their business goals and target audience,
-                and then use this information to create an app that is designed
-                to meet their needs and exceed their expectations.
+                Requirement Gathering: We work closely with our clients to
+                understand their specific needs and requirements. Our team
+                conducts a thorough analysis of the client's business processes
+                and operations to identify areas where a custom software
+                solution can provide the most value.
+                <br />
+                <br />
+                Design: Our team of designers creates a visual representation of
+                the software solution, ensuring that the user interface is
+                user-friendly and intuitive.
+                <br />
+                <br />
+                Development: Our team of developers uses the latest technologies
+                and programming languages to develop the software solution. We
+                use an agile development approach to ensure that the software
+                solution is developed in a timely and efficient manner.
+                <br />
+                <br />
+                Testing: Our team of testers performs comprehensive testing to
+                ensure that the software solution is bug-free and performs
+                optimally.
+                <br />
+                <br />
+                Deployment: We deploy the software solution to the client's
+                environment, ensuring that it integrates seamlessly with the
+                client's existing systems and processes.
+                <br />
+                <br />
+                Maintenance and Support: We provide ongoing maintenance and
+                support to ensure that the software solution continues to meet
+                the client's needs and requirements.
               </Typography>
-              <Typography gutterBottom variant='h3' component='div'>
+              {/*      <Typography gutterBottom variant='h3' component='div'>
                 Our Expertise in Android App Development
               </Typography>
               <Typography gutterBottom variant='h5' component='div'>
@@ -198,7 +223,7 @@ function Development() {
                   <li>Business apps</li>
                   <li>Educational apps</li>
                 </ul>
-              </Typography>
+        </Typography>*/}
             </Grid>
 
             <Grid item xs={7} className='androidDevelopmentRight'>
@@ -213,7 +238,6 @@ function Development() {
           </Grid>
         </Box>
       </section>
-
       <section className={`sectionBox whyUsBox pt0 pb0`}>
         <Typography gutterBottom variant='h2' className='mb0' component='div'>
           Key benefits of Custom software development services:
@@ -286,10 +310,9 @@ function Development() {
           </Grid>
         </Box>
       </section>
-
       <section className={`sectionBox whyUsBox serviceOffer pb0`}>
         <Typography gutterBottom variant='h2' component='div'>
-          Services we offer in Android app development:
+          Custom Software Development Services We Offer:
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
@@ -302,16 +325,13 @@ function Development() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant='h3' component='div'>
-                    Android app <br /> development consultation
+                    Web Application <br /> development
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                    We offer Android app consultation to help businesses become
-                    successful in the real world, integrating their ideas with
-                    customer expectations and an Android-specific customer base.
-                    Our consultants help you in choosing the best Android
-                    platform and the way by which you can conquer the store.
-                    This provides users with an amazing and thrilling
+                    We develop web applications that are responsive, scalable,
+                    and secure. Our web applications are designed to meet the
+                    unique needs of our clients and provide a seamless user
                     experience.
                   </Typography>
                 </CardContent>
@@ -327,17 +347,15 @@ function Development() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant='h3' component='div'>
-                    Android UI/UX <br />
-                    design
+                    Mobile Application <br />
+                    Development
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                    Being a world-class Android app development company, we
-                    consider UI/UX to be the most vital component of our Android
-                    app development services. This distinguishes us from the
-                    competition in the field. Our team of Android app designers
-                    is skilled at producing engaging experiences, regardless of
-                    the Android version or device.
+                    We develop mobile applications for iOS and Android
+                    platforms. Our mobile applications are designed to provide a
+                    seamless user experience and are optimized for performance
+                    and security.
                   </Typography>
                 </CardContent>
               </Card>
@@ -352,16 +370,14 @@ function Development() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant='h3' component='div'>
-                    Custom Android <br /> app development
+                    Cloud Application <br /> development
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                    Every organization is unique, and everyone has different
-                    needs when developing an Android app. Therefore, we use an
-                    approach where the client's needs are thoroughly discussed
-                    and analyzed, followed by brainstorming, design, testing,
-                    and launch. Our Android app developers are skilled in
-                    creating reliable and scalable Android solutions.
+                    We develop cloud-based applications that are scalable,
+                    secure, and accessible from anywhere. Our cloud applications
+                    are designed to meet the unique needs of our clients and
+                    provide a seamless user experience.
                   </Typography>
                 </CardContent>
               </Card>
@@ -376,40 +392,15 @@ function Development() {
                 />
                 <CardContent>
                   <Typography gutterBottom variant='h3' component='div'>
-                    Multi-platform <br /> deployment
+                    Enterprise Application <br />
+                    Integration:
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                    Businesses today aim to reach as many customers as possible
-                    with their products. Being a top Android app development
-                    company, we specialize in the deployment and integration of
-                    seamless Android apps. No matter what platform you want to
-                    be on, our experienced Android development team can help you
-                    in getting there.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-
-            <Grid item xs={6}>
-              <Card>
-                <Avatar
-                  alt='Android App Development'
-                  src='images/33301.png'
-                  sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    Android <br /> software testing
-                  </Typography>
-                  <br />
-                  <Typography variant='body2' color='text.secondary'>
-                    Testing, security, and performance are the main priorities
-                    in our Android mobile development approach. We do QA testing
-                    at every level of development, finding defects, reporting,
-                    bug tracking, fixing, and retesting. We combine manual and
-                    automated testing procedures, providing our clients with the
-                    best products.
+                    We integrate existing enterprise applications to ensure that
+                    they work seamlessly together. Our team has the expertise
+                    and experience to integrate various enterprise applications,
+                    including ERP, CRM, and more.
                   </Typography>
                 </CardContent>
               </Card>
@@ -417,7 +408,6 @@ function Development() {
           </Grid>
         </Box>
       </section>
-
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
           gutterBottom
@@ -425,8 +415,8 @@ function Development() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Ready to Take Your Business to the Next Level with a Custom Web or
-          Mobile App?
+          Transform your Business Processes with Our Customized
+          Software Solutions?
         </Typography>
         <Button
           href='/contact-us.html'
