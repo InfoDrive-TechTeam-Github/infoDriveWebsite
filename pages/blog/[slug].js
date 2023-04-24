@@ -74,9 +74,14 @@ export default function SalesForceDevelopment({ data, datafull }) {
                             <img
                               className='h-full rounded-xl w-fit'
                               src={
-                                post['_embedded']['wp:featuredmedia'][0][
-                                  'source_url'
-                                ]
+                                post &&
+                                post['_embedded'] &&
+                                post['_embedded']['wp:featuredmedia'] &&
+                                post['_embedded']['wp:featuredmedia'][0]
+                                  ? post['_embedded']['wp:featuredmedia'][0][
+                                      'source_url'
+                                    ]
+                                  : null
                               }
                             />
                           </div>
