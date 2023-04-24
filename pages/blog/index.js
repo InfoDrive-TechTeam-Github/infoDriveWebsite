@@ -299,14 +299,22 @@ export async function getStaticProps() {
   return { props: { data } };
 }
 
-// This gets called on every request
 // export async function getServerSideProps() {
-//   // Fetch data from external API
 //   const res = await fetch(
-//     `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
+//     `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`,
+//     {
+//       headers: {
+//         'Cache-Control': 'no-cache',
+//         Pragma: 'no-cache',
+//         'If-Modified-Since': '0',
+//         'If-None-Match': '',
+//         'Cache-Control': 'no-store',
+//         Expires: '0',
+//         'X-Date': new Date().toISOString(),
+//       },
+//     }
 //   );
 //   const data = await res.json();
-
-//   // Pass data to the page via props
+//   console.log('API blog', data);
 //   return { props: { data } };
 // }
