@@ -42,10 +42,25 @@ function Development() {
     <div>
       <Head>
         <title>
-          Top Custom Software Development Company & Developers in Singapore,
-          Malaysia, and India
+          Custom Software Development Company in Singapore, Malaysia, and India
         </title>
+        <meta
+          name='description'
+          content='InfoDrive Solutions is a custom software development company that provides services in Singapore, Malaysia, and India. We specialize in building custom software solutions for enterprises, startups, and healthcare organizations.'
+        />
+        <meta
+          name='keywords'
+          content='Custom Software Development Services,Custom Software Development Company,Custom Software Solutions,Custom Healthcare Software Development,Custom Mobile Application Development Company,Custom Software Development Consulting,Custom Software Development for Start-ups,Small Business Custom Software Development,Custom Enterprise Software Development Company,Custom Software Development Services in Singapore,Custom Software Development Company in Singapore,Custom Healthcare Software Development in Singapore,Custom Mobile Application Development Company in Malaysia,Custom Software Development Consulting in Singapore,Custom Software Development for Start-ups in Singapore,Custom Software Development Services in Malaysia,Custom Software Development Company in Malaysia,Custom Healthcare Software Development in Malaysia,Custom Mobile Application Development Company in Singapore,Custom Software Development for Start-ups in Malaysia,Custom Software Development Services in Kuala Lumpur, Malaysia,Custom Software Development Company in Kuala Lumpur,Custom Software Development Services in India,Custom Software Development Company in India,Custom Healthcare Software Development in India,Custom Mobile Application Development Company in India,Custom Software Development for Start-ups in India,Custom Software Development Services in Bangalore,Custom Software Development Company in Bangalore'
+        />
+        <link
+          rel='canonical'
+          href='https://infodrive-solutions.com/custom-software-development.html'
+        />
 
+        <meta
+          property='og:title'
+          content='Custom Software Development Company in Singapore, Malaysia, and India|InfoDrive Solutions'
+        />
         <meta
           property='og:image'
           content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
@@ -69,6 +84,7 @@ function Development() {
           style={{ display: 'none', visibility: 'hidden' }}
         ></iframe>
       </noscript>
+
       <Header />
       <div className='sliderBox'>
         <img
@@ -416,7 +432,7 @@ function Development() {
           component='div'
         >
           Transform your Business Processes with Our Customized
-          Software Solutions?
+          Software Solutions
         </Typography>
         <Button
           href='/contact-us.html'

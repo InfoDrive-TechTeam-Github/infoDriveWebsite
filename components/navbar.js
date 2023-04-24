@@ -289,6 +289,19 @@ function DrawerAppBar(props) {
                   <ListItemText primary={'Full stack development'} />
                 </ListItemButton>
               </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton component='a' to='/website-design.html'>
+                  <ListItemText primary={'Website Development'} />
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton
+                  component='a'
+                  to='/custom-software-development.html'
+                >
+                  <ListItemText primary={'Custom Software Development'} />
+                </ListItemButton>
+              </ListItem>
             </List>
           </Menu>
 
@@ -643,6 +656,7 @@ function DrawerAppBar(props) {
                   </List>
                 </Menu>
 
+                {/**Web Development menu */}
                 <Menu
                   anchorEl={subAnchorEl}
                   open={subMenuOpen}
@@ -676,6 +690,11 @@ function DrawerAppBar(props) {
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
+                      <ListItemButton component='a' to='/website-design.html'>
+                        <ListItemText primary={'Website Development'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
                       <ListItemButton
                         component='a'
                         to='/custom-software-development.html'
@@ -685,6 +704,8 @@ function DrawerAppBar(props) {
                     </ListItem>
                   </List>
                 </Menu>
+
+                {/**Sales Cloud */}
 
                 <Menu
                   anchorEl={subAnchorSaleEl}

@@ -147,11 +147,14 @@ export default function SalesForceDevelopment({ data }) {
                               className='h-full rounded-xl'
                               style={{ width: '100%' }}
                               src={
+                                post &&
+                                post['_embedded'] &&
+                                post['_embedded']['wp:featuredmedia'] &&
                                 post['_embedded']['wp:featuredmedia'][0]
                                   ? post['_embedded']['wp:featuredmedia'][0][
                                       'source_url'
                                     ]
-                                  : 'https://example.com/placeholder-image.jpg'
+                                  : null
                               }
                               alt='infodrive blog post'
                             />
@@ -280,14 +283,34 @@ export default function SalesForceDevelopment({ data }) {
     </div>
   );
 }
-// export async function getStaticProps() {
+export async function getStaticProps() {
+  const res = await fetch(
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`,
+    {
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        Pragma: 'no-cache',
+        Expires: 0,
+      },
+    }
+  );
+  const data = await res.json();
+  console.log('API blog', data);
+  return { props: { data } };
+}
+
+// export async function getServerSideProps() {
 //   const res = await fetch(
 //     `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`,
 //     {
 //       headers: {
-//         'Cache-Control': 'no-cache, no-store, must-revalidate',
+//         'Cache-Control': 'no-cache',
 //         Pragma: 'no-cache',
-//         Expires: 0,
+//         'If-Modified-Since': '0',
+//         'If-None-Match': '',
+//         'Cache-Control': 'no-store',
+//         Expires: '0',
+//         'X-Date': new Date().toISOString(),
 //       },
 //     }
 //   );
@@ -295,17 +318,3 @@ export default function SalesForceDevelopment({ data }) {
 //   console.log('API blog', data);
 //   return { props: { data } };
 // }
-
-// This gets called on every request
-export async function getServerSideProps() {
-  // Fetch data from external API
-  const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
-  );
-  const data = await res.json();
-
-  // Pass data to the page via props
-  return { props: { data } };
-}
-
-
