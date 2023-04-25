@@ -291,6 +291,7 @@ export default function SalesForceDevelopment({ data }) {
   );
 }
 
+{/* 
 export async function getStaticProps() {
   const res = await fetch(
     `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&per_page=100`
@@ -299,15 +300,15 @@ export async function getStaticProps() {
   console.log('API blog', data);
   return { props: { data } };
 }
+*/}
+// server side rendering
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const res = await fetch(
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
+  );
+  const data = await res.json();
 
-// // server side rendering
-// export async function getServerSideProps() {
-//   // Fetch data from external API
-//   const res = await fetch(
-//     `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
-//   );
-//   const data = await res.json();
-
-//   // Pass data to the page via props
-//   return { props: { data } };
-// }
+  // Pass data to the page via props
+  return { props: { data } };
+}
