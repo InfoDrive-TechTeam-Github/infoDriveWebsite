@@ -188,10 +188,17 @@ export default function SalesForceDevelopment({ data }) {
                           <div>
                             <a href={`/blog/${post['slug']}.html`}>
                               <h3>
-                                {post['title']['rendered'].replace(
-                                  /&#8217;/g,
-                                  "'"
-                                )}
+                                {post['title']['rendered']
+                                  .replace(/&#8217;/g, "'")
+                                  .replace(/&#8211;/g, '-')
+                                  .replace(/&amp;/g, '&')
+                                  .replace(/&nbsp;/g, ' ')
+                                  .replace(/&lt;/g, '<')
+                                  .replace(/&gt;/g, '>')
+                                  .replace(/&quot;/g, '"')
+                                  .replace(/&#039;/g, "'")
+                                  .replace(/&ldquo;/g, '"')
+                                  .replace(/&rdquo;/g, '"')}
                               </h3>
                             </a>
                           </div>
@@ -283,31 +290,24 @@ export default function SalesForceDevelopment({ data }) {
     </div>
   );
 }
-{/* 
+
 export async function getStaticProps() {
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`,
-    {
-      headers: {
-        'Cache-Control': 'no-cache, no-store, must-revalidate',
-        Pragma: 'no-cache',
-        Expires: 0,
-      },
-    }
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&per_page=100`
   );
   const data = await res.json();
   console.log('API blog', data);
   return { props: { data } };
 }
-*/}
-// server side rendering
-export async function getServerSideProps() {
-  // Fetch data from external API
-  const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
-  );
-  const data = await res.json();
 
-  // Pass data to the page via props
-  return { props: { data } };
-}
+// // server side rendering
+// export async function getServerSideProps() {
+//   // Fetch data from external API
+//   const res = await fetch(
+//     `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
+//   );
+//   const data = await res.json();
+
+//   // Pass data to the page via props
+//   return { props: { data } };
+// }
