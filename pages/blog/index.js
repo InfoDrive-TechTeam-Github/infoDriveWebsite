@@ -300,6 +300,7 @@ export async function getStaticProps() {
   return { props: { data } };
 }
 */}
+// server side rendering
 export async function getServerSideProps() {
   // Fetch data from external API
   const res = await fetch(
