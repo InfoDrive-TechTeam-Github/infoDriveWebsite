@@ -752,7 +752,29 @@ img {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+/* shape divider */
+.custom-shape-divider-bottom-1682618210 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-1682618210 svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 104px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1682618210 .shape-fill {
+  fill: #ffffff;
+}
+/* shape divider end */
 .companiesBox {
   background: url('images/pexels-ivan-samkov-8117421.jpg');
   background-size: cover;
@@ -1341,6 +1363,19 @@ img.btnLdr {
 .boxshadowInset {
   box-shadow: inset -3px -3px 8px rgba(11, 11, 11, 0.298),
     inset 3px 3px 5px rgba(249, 179, 109, 0.279);
+}
+/* advnce grid */
+.img4 {
+  /* row-start col-start row-end col-end */
+  grid-area: 1/1/5/4;
+}
+.img {
+  /* row-start col-start row-end col-end */
+  grid-area: 1/6/5/9;
+}
+.img5 {
+  /* row-start col-start row-end col-end */
+  grid-area: 3/3/9/7;
 }
 
 /* Responsive */
@@ -1938,6 +1973,60 @@ img.btnLdr {
   }
 }
 
+/* shape diverd custom saleforce */
+.custom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom svg {
+  position: relative;
+  display: block;
+  width: calc(204% + 1.3px);
+  height: 261px;
+  transform: rotateY(180deg);
+}
+
+.custom .shape-fill {
+  fill: #ffffff;
+}
+
+/* saaleforce app exchange */
+.cardSale {
+  @apply shadow-lg rounded-lg p-5 hover:text-white hover:bg-pink-600 transition duration-1000 ease-in-out;
+}
+.grid-rows-8 {
+  grid-template-rows: repeat(8, 1fr);
+}
+
+/* topp imgae divider */
+.custom-shape-divider-top-1682658498 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  border: 0;
+  outline: none;
+  overflow: hidden;
+}
+
+.custom-shape-divider-top-1682658498 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 59px;
+}
+
+.custom-shape-divider-top-1682658498 .shape-fill {
+  fill: #ffffff;
+}
+
 @media (min-width: 376px) and (max-width: 619px) {
   .ourCoreTeam .MuiCardContent-root {
     padding-bottom: 0px;
@@ -1960,5 +2049,13 @@ img.btnLdr {
 @media (min-width: 320px) and (max-width: 1200px) {
   .sliderBox img {
     height: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .custom-shape-divider-bottom-1682618210 {
+    display: none;
+  }
+  .custom-shape-divider-top-1682658498 {
+    display: none;
   }
 }
