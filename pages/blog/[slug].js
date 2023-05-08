@@ -199,7 +199,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
 
 export async function getStaticPaths() {
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`,
+    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&per_page=100`,
     {
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate',
