@@ -195,7 +195,6 @@ function SalesforceAppExchange() {
         <section
           className=' h-[1300px] md:h-auto   bg-white pt-10'
           style={{
-            /* Chrome 10-25, Safari 5.1-6 */
             background: 'linear-gradient(to right, #f7797d, #FBD786, #C6FFDD)',
           }}
         >
