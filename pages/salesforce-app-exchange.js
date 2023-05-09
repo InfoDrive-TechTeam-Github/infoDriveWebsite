@@ -132,7 +132,7 @@ function SalesforceAppExchange() {
         </Box>
       </motion.div>
       <section className='  '>
-        <div className=' w-screen h-full   text-gray-500 mx-auto p-10 text-md'>
+        <div className=' w-screen h-full   text-gray-700 mx-auto p-10 text-sm font-medium leading-7 max-w-6xl'>
           <p>
             As a leading Salesforce AppExchange Development Company, infoDrive
             Solutions offers a wide range of services to help businesses
@@ -177,43 +177,64 @@ function SalesforceAppExchange() {
           </p>
         </div>
       </section>
-      <section className=' h-[1300px] md:h-auto   bg-white mb-10 '>
-        <div className=' w-screen h-full md:p-10  text-gray-500 mx-auto max-w-6xl '>
-          <h3 className='font-bold text-pink-600 text-lg '>
-            Why Choose infoDrive Solutions for Salesforce AppExchange
-            Development Services?
-          </h3>
-          <p className=' text-gray-900 mt-3 p-2'>
-            When it comes to Salesforce AppExchange Development, businesses need
-            a partner they can trust to deliver high-quality
-            <br /> solutions that meet their specific requirements. Here are
-            just a few reasons why businesses choose infoDrive Solutions:
-          </p>
-          <div className='card flex md:flex-row flex-col md:gap-10 gap-5 mt-10 md:w-[90%] '>
-            <div className='cardSale'>
-              Experienced Salesforce Developers: Our team of Salesforce
-              developers has a wealth of experience in developing custom
-              applications on the Salesforce platform. We have worked on
-              projects of all sizes and complexities, and are equipped to handle
-              any project, big or small.
-            </div>
-            <div className='cardSale'>
-              Customized Solutions: We believe that every business is unique,
-              which is why we take a customized approach to Salesforce
-              AppExchange development. We work closely with clients to
-              understand their specific business needs and create tailored
-              solutions that meet their exact requirements.
-            </div>
-            <div className='cardSale'>
-              Proven Track Record: Our team has a proven track record of
-              delivering high-quality Salesforce AppExchange solutions that
-              drive business growth. We have worked with businesses of all
-              sizes, from small startups to large enterprises, and have helped
-              them to achieve their business goals
+      <div className='relative'>
+        {' '}
+        <div class='custom-shape-divider-top-1682658498'>
+          <svg
+            data-name='Layer 1'
+            xmlns='http://www.w3.org/2000/svg'
+            viewBox='0 0 1200 120'
+            preserveAspectRatio='none'
+          >
+            <path
+              d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z'
+              class='shape-fill'
+            ></path>
+          </svg>
+        </div>
+        <section
+          className=' h-[1300px] md:h-auto   bg-white pt-10'
+          style={{
+            background: 'linear-gradient(to right, #f7797d, #FBD786, #C6FFDD)',
+          }}
+        >
+          <div className=' w-screen h-full md:p-10  text-gray-700 mx-auto max-w-6xl '>
+            <h3 className='font-bold text-pink-600 text-lg '>
+              Why Choose infoDrive Solutions for Salesforce AppExchange
+              Development Services?
+            </h3>
+            <p className=' text-gray-700 mt-1 p-2 text-sm leading-7 font-medium'>
+              When it comes to Salesforce AppExchange Development, businesses
+              need a partner they can trust to deliver high-quality
+              <br /> solutions that meet their specific requirements. Here are
+              just a few reasons why businesses choose infoDrive Solutions:
+            </p>
+            <div className='card flex md:flex-row flex-col md:gap-10 gap-5 mt-10 md:w-[100%]  text-base '>
+              <div className='cardSale p-7 md:leading-7 text-sm'>
+                Experienced Salesforce Developers: Our team of Salesforce
+                developers has a wealth of experience in developing custom
+                applications on the Salesforce platform. We have worked on
+                projects of all sizes and complexities, and are equipped to
+                handle any project, big or small.
+              </div>
+              <div className='cardSale p-7 md:leading-7 text-sm'>
+                Customized Solutions: We believe that every business is unique,
+                which is why we take a customized approach to Salesforce
+                AppExchange development. We work closely with clients to
+                understand their specific business needs and create tailored
+                solutions that meet their exact requirements.
+              </div>
+              <div className='cardSale p-7 md:leading-7 text-sm'>
+                Proven Track Record: Our team has a proven track record of
+                delivering high-quality Salesforce AppExchange solutions that
+                drive business growth. We have worked with businesses of all
+                sizes, from small startups to large enterprises, and have helped
+                them to achieve their business goals
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section className='heroParagraph  h-max '>
         <div
           className='outerdrid grid grid-cols-1 gap-16 md:p-10 text-white'
