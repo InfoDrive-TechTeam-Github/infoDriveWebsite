@@ -17,6 +17,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Avatar from '@mui/material/Avatar';
 import { green, pink } from '@mui/material/colors';
 import Link from 'next/link';
+
 export default function SalesForceDevelopment({ data, datafull }) {
   const [dataIndex, setDataIndex] = useState(0);
   console.log('dataIndex', dataIndex);
@@ -58,7 +59,18 @@ export default function SalesForceDevelopment({ data, datafull }) {
                       component='h2'
                       className='w-fit pl10 border rounded-2xl flex items-center justify-center p-5  hover:bg-[#f50057] hover:text-white transition-all ease-in '
                     >
-                      {post['title']['rendered'].replace(/&#8217;/g, "'")}
+                      {post['title']['rendered']
+                        .replace(/&#8217;/g, "'")
+                        .replace(/&#8211;/g, '-')
+                        .replace(/&amp;/g, '&')
+                        .replace(/&nbsp;/g, ' ')
+                        .replace(/&lt;/g, '<')
+                        .replace(/&gt;/g, '>')
+                        .replace(/&quot;/g, '"')
+                        .replace(/&#039;/g, "'")
+                        .replace(/&ldquo;/g, '"')
+                        .replace(/&#8220;/g, '"')
+                        .replace(/&#8221;/g, '"')}
                     </Typography>
                   </div>
 
@@ -112,6 +124,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
                             className='w100  text-3xl'
                           >
                             <div
+                              className='prose prose-2xl prose-stone prose-a:text-blue-800 prose-h2:text-lg prose-li:text-sm  prose-p:text-[#4e4e50] prose-h2:text-pink-600 prose-h3:text-base prose-h4:text-base prose-h5:text-base prose-h6:text-base'
                               dangerouslySetInnerHTML={{
                                 __html: post['content']['rendered'],
                               }}
