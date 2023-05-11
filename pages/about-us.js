@@ -650,6 +650,7 @@ export default function About() {
                 JOIN OUR TEAM <ArrowRightAltIcon />
               </Button>
             </Grid>
+
             <Grid
               item
               xs={3}
@@ -659,7 +660,7 @@ export default function About() {
               <Card>
                 <CardMedia
                   component='img'
-                  height='240'
+                  className='h-[240px] boxshadow rounded-lg'
                   image='images/team-photos/pradeep.png'
                   alt='we are helping many start-ups'
                 />
@@ -700,7 +701,7 @@ export default function About() {
               <Card>
                 <CardMedia
                   component='img'
-                  height='240'
+                  className='h-[240px] boxshadow rounded-lg'
                   image='images/team-photos/kapil.png'
                   alt='InfoDrive Solutions is a leading IT solution provider'
                 />
@@ -747,7 +748,7 @@ export default function About() {
               <Card>
                 <CardMedia
                   component='img'
-                  height='240'
+                  className='h-[240px] boxshadow rounded-lg'
                   image='images/team-photos/shashank.png'
                   alt='IT Solutions Company in Singapore'
                 />
@@ -788,7 +789,7 @@ export default function About() {
               <Card>
                 <CardMedia
                   component='img'
-                  height='240'
+                  className='h-[240px] boxshadow rounded-lg'
                   image='images/team-photos/bharani.png'
                   alt='IT Solutions Company in Kuala Lumpur'
                 />
@@ -829,7 +830,7 @@ export default function About() {
               <Card>
                 <CardMedia
                   component='img'
-                  height='240'
+                  className='h-[240px] boxshadow rounded-lg'
                   image='images/team-photos/maria.png'
                   alt='InfoDrive Solutions'
                 />
@@ -870,7 +871,7 @@ export default function About() {
               <Card>
                 <CardMedia
                   component='img'
-                  height='240'
+                  className='h-[240px] boxshadow rounded-lg'
                   image='images/team-photos/Sudhir-2.JPG'
                   alt='IT Solutions Company in  India'
                 />
@@ -952,7 +953,7 @@ export default function About() {
               <Card>
                 <CardMedia
                   component='img'
-                  height='240'
+                  className='h-[240px] boxshadow rounded-lg'
                   image='images/team-photos/dev.png'
                   alt='IT Solutions Company in Malaysia'
                 />
