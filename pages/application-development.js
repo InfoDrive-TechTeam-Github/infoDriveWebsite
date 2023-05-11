@@ -50,6 +50,23 @@ function applicationDevelopment() {
   return (
     <div className='relative'>
       <Head>
+        <title>
+          Expert Application Development Services in Singapore, Malaysia, and
+          India | Top App Developers
+        </title>
+        <meta
+          name='description'
+          content='Looking for a reliable application development company? Our expert application developers in Singapore, Malaysia, & India can help you build custom solutions to meet your business needs.'
+        />
+        <meta
+          name='keywords'
+          content='Application Development Services, Application Development Services in Singapore, Application Development Services in Malaysia, Application Development Company, Application Development Company in Singapore, Application Development Company in Malaysia, Application Development Company in India, Application Developers in Singapore, best application developers in Malaysia'
+        />
+        <link
+          rel='canonical'
+          href='https://infodrive-solutions.com/application-development.html'
+        />
+
         <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
