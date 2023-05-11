@@ -58,6 +58,23 @@ function SalesforceAppExchange() {
   return (
     <div className='relative'>
       <Head>
+        <title>
+          Trusted Salesforce AppExchange Development Company in Singapore,
+          Malaysia, and India
+        </title>
+        <meta
+          name='description'
+          content='Looking for a reliable Salesforce AppExchange development company? We offer expert Salesforce AppExchange app development services in Singapore, Malaysia & India. Our certified developers can help you build custom solutions and integrations to meet your business needs.'
+        />
+        <meta
+          name='keywords'
+          content='Salesforce AppExchange Development Company, Salesforce AppExchange Development Company in Singapore, Salesforce AppExchange Development Company in Malaysia, Salesforce AppExchange Development Company in India, Salesforce Appexchange App Development Services in Singapore, Salesforce Appexchange App Development Services in Malaysia, salesforce appexchange partners, Salesforce AppExchange Developers, Salesforce AppExchange Developers in Singapore, Salesforce AppExchange Developers in Malaysia'
+        />
+        <link
+          rel='canonical'
+          href='https://infodrive-solutions.com/salesforce-app-exchange.html'
+        />
+
         <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{

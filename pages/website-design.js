@@ -26,6 +26,23 @@ export default function WebMobileApp() {
   return (
     <div>
       <Head>
+        <title>
+          Professional Website Development and Design Services in Singapore,
+          Malaysia, and India
+        </title>
+        <meta
+          name='description'
+          content='Looking for a reliable website development and design company? Our expert website developers and designers in Singapore, Malaysia, and India can help you build a custom website that reflects your brand and meets your business needs.'
+        />
+        <meta
+          name='keywords'
+          content='Website Development Services, Website Development Services in Singapore, Website Development Services in Malaysia, Website Development Company, Website Development Company in Singapore, Website Development Company in Malaysia, Website Development Company in India, Website Developers in Singapore, Best Website Developers in Malaysia, Web Design Services in Singapore, Web Design Services in Malaysia, Web Design Company in Malaysia'
+        />
+        <link
+          rel='canonical'
+          href='https://infodrive-solutions.com/website-design.html'
+        />
+
         <link rel='icon' href='/favicon.png' />
         <script
           dangerouslySetInnerHTML={{
@@ -43,6 +60,7 @@ export default function WebMobileApp() {
           style={{ width: '100%' }}
           src='https://img.freepik.com/free-photo/woman-using-computer_53876-47103.jpg?w=996&t=st=1682059962~exp=1682060562~hmac=3c195db29bb660b5f0a464a47f8cb6bfcb0b19c8b086060daecb587da242d746,
           Malaysia, and India'
+          alt='Professional Website Development'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
           <Grid container spacing={0}>
@@ -155,7 +173,7 @@ export default function WebMobileApp() {
         </div>
         <img
           src='images/website1.png'
-          alt=''
+          alt='user-friendly website '
           className='rounded-xl object-cover border-4 boxshadow'
         />
         <div className='cart'>
@@ -173,7 +191,7 @@ export default function WebMobileApp() {
         </div>
         <img
           src='images/website2.png'
-          alt=''
+          alt='optimizing your website'
           className='rounded-xl object-cover border-4 boxshadow'
         />
         <div className='cart'>
@@ -188,7 +206,7 @@ export default function WebMobileApp() {
         </div>
         <img
           src='images/website3.png'
-          alt=''
+          alt='digital marketing channels'
           className='rounded-xl object-cover border-4 boxshadow'
         />
         <div className='cart'>
@@ -203,7 +221,7 @@ export default function WebMobileApp() {
         </div>
         <img
           src='images/website4.png'
-          alt=''
+          alt='Mobile development'
           className='rounded-xl object-cover border-4 boxshadow'
         />
         <div className='cart'>
