@@ -17,13 +17,16 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Avatar from '@mui/material/Avatar';
 import { green, pink } from '@mui/material/colors';
 import Link from 'next/link';
+import Crousel from 'components/Crousel';
+import CardBlog from 'components/blogCard';
 
 export default function SalesForceDevelopment({ data, datafull }) {
   const [dataIndex, setDataIndex] = useState(0);
   console.log('dataIndex', dataIndex);
-
+  const { _embedded } = datafull;
+  console.log('media', _embedded);
   const itemsPerPage = 1;
-  console.log('datafull', datafull[dataIndex]);
+  console.log('datafull', datafull);
   console.log('data', data);
 
   const totalPages = datafull.length;
@@ -139,8 +142,46 @@ export default function SalesForceDevelopment({ data, datafull }) {
             );
           })}
         </Box>
+        <section className='releatedPost mx-auto bg-white  text-black p-3'>
+          <h3 className='text-center font-extrabold text-4xl text-pink-600'>
+            Read Related Articles
+          </h3>
+          <hr className='border-2 w-80 mx-auto mt-3 border-blue-900 rounded-md shadow-md' />
+
+          <div className='mt-20'>
+            <Crousel>
+              {datafull.map((data) => {
+                const descWords = data['excerpt']['rendered'].split(' ');
+                const limitedDesc = descWords.slice(0, 15).join(' ');
+
+                return (
+                  <CardBlog
+                    author={data['_embedded']['author'][0].name}
+                    desc={limitedDesc}
+                    created={data.date}
+                    img={data['_embedded']['wp:featuredmedia'][0]['source_url']}
+                    slug={data.slug}
+                    category={data['_embedded']['wp:term'][0][0]['name']}
+                    title={data['title']['rendered']
+                      .replace(/&#8217;/g, "'")
+                      .replace(/&#8211;/g, '-')
+                      .replace(/&amp;/g, '&')
+                      .replace(/&nbsp;/g, ' ')
+                      .replace(/&lt;/g, '<')
+                      .replace(/&gt;/g, '>')
+                      .replace(/&quot;/g, '"')
+                      .replace(/&#039;/g, "'")
+                      .replace(/&ldquo;/g, '"')
+                      .replace(/&#8220;/g, '"')
+                      .replace(/&#8221;/g, '"')}
+                  />
+                );
+              })}
+            </Crousel>
+          </div>
+        </section>
       </section>
-      {/**Pagination */}
+      {/**Pagination 
       <section className='pagination'>
         <CssBaseline />
         <Container
@@ -164,7 +205,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
               href={`/blog/${
                 datafull[dataIndex - 1 >= 0 ? dataIndex - 1 : 0]['slug']
               }.html`}
-              className='no-underline cursor-pointer flex  border rounded-lg justify-center items-center p-1 hover:bg-slate-950/5 '
+              className=' cursor-pointer flex  border rounded-lg justify-center items-center p-1 hover:bg-slate-950/5 '
             >
               <ChevronLeftIcon
                 style={{ cursor: 'pointer' }}
@@ -188,6 +229,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
           </div>
         </Container>
       </section>
+*/}
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
           gutterBottom
