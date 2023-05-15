@@ -4,7 +4,7 @@ import React from 'react';
 import { CgCalendarDates } from 'react-icons/cg';
 
 function blogCard({ slug, img, author, title, desc, created, category }) {
-  console.log(desc, 'card');
+  // console.log(desc, 'card');
   return (
     <Link
       href={`/blog/${slug}.html`}

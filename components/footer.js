@@ -32,7 +32,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export default function Footer() {
   return (
-    <section className={`sectionBox footerSection pb0`}>
+    <section className={`sectionBox footerSection pb0 p5`}>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={0}>
           <Grid item xs={4} className='logoFooter'>

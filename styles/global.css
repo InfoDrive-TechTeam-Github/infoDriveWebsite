@@ -534,12 +534,14 @@ img {
   color: #fff;
 }
 .solutionBox {
-  background: url('images/pexels-michelangelo-buonarroti-8728382.jpeg');
+  background: url('https://img.freepik.com/free-photo/girl-surprised-with-awesome-smartphone-features-portrait-delighted-amazed-cute-european-slend_1258-134243.jpg?w=1380&t=st=1684139725~exp=1684140325~hmac=992577739a8c5f8c1685718d877fabcf30d8fcbd6c7a1108d2690ae47f427aa8');
   background-size: cover;
   margin-left: 97px;
   margin-right: 97px;
   padding-left: 0;
   padding-right: 0;
+  /* width: 50%; */
+  @apply h-96;
 }
 .solutionBox p {
   font-size: 22px;
@@ -1379,6 +1381,28 @@ img.btnLdr {
   grid-area: 3/3/9/7;
 }
 
+/* homepage svg */
+.custom-shape-divider-top-1684137902 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1684137902 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1684137902 .shape-fill {
+  fill: #ffffff;
+}
+/* homepage svg end */
+
 /* Responsive */
 @media (min-width: 320px) and (max-width: 620px) {
   .IosAppBox2 .MuiTypography-h5 br {
@@ -2058,5 +2082,11 @@ img.btnLdr {
   }
   .custom-shape-divider-top-1682658498 {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .p5 {
+    @apply p-5;
   }
 }
