@@ -140,7 +140,7 @@ export default function Index() {
       </noscript>
       <Header />
       <Slider />
-      <section className={`sectionBox`}>
+      <section className={` sectionBox p5`}>
         <Typography gutterBottom variant='h3' component='h3'>
           WHO IS INFODRIVE SOLUTIONS
         </Typography>
@@ -184,8 +184,11 @@ export default function Index() {
           growth through the power of technology.
         </Typography>
       </section>
-      <section className={`sectionBox solutionBox`}>
-        <p>
+
+      <section
+        className={`sectionBox solutionBox flex items-center justify-center p5 backdrop-blur-md md:backdrop-blur-none rounded-md`}
+      >
+        <p className='md:ml-auto md:w-1/2 '>
           InfoDrive Solutions is a preferred partner in Business process
           improvement for many small & medium size corporations and built with
           the commitment, promise & passion to provide outstanding services in
@@ -194,7 +197,8 @@ export default function Index() {
           applications.
         </p>
       </section>
-      <section className={`sectionBox whyUsBox`}>
+
+      <section className={`sectionBox whyUsBox p5`}>
         <Typography gutterBottom variant='h2' component='div'>
           Why Infodrive solutions?
         </Typography>
@@ -404,7 +408,7 @@ export default function Index() {
         <Typography
           gutterBottom
           variant='h3'
-          className='white pb15 pt15 poppin'
+          className='white pb15 pt15 poppin p5'
           component='div'
         >
           Transform Your Business with Cutting-Edge Technology - Partner with
@@ -462,7 +466,7 @@ export default function Index() {
       </section>
       <br />
       <br />
-      <section className={`sectionBox locationBox mt30 testmonial`}>
+      <section className={`sectionBox locationBox mt30 testmonial p5`}>
         <Typography gutterBottom variant='h2' component='div'>
           What do clients say about us?
         </Typography>

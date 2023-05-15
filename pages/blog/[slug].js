@@ -28,6 +28,9 @@ export default function SalesForceDevelopment({ data, datafull }) {
   const itemsPerPage = 1;
   console.log('datafull', datafull);
   console.log('data', data);
+  // subdata
+  const subset = datafull.slice(dataIndex + 1);
+  console.log('subset', subset);
 
   const totalPages = datafull.length;
 
@@ -150,7 +153,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
 
           <div className='mt-20'>
             <Crousel>
-              {datafull.map((data) => {
+              {subset.map((data) => {
                 const descWords = data['excerpt']['rendered'].split(' ');
                 const limitedDesc = descWords.slice(0, 15).join(' ');
 
