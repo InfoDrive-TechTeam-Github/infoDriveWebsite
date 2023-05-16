@@ -556,6 +556,9 @@ img {
   /* width: 50%; */
   @apply h-max;
 }
+.Link {
+  text-decoration: none;
+}
 .solutionBox p {
   font-size: 22px;
   color: #fff;

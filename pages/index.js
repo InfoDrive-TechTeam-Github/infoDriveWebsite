@@ -267,7 +267,8 @@ export default function Index() {
           >
             <Link
               href='/salesforce-development.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md   cursor-pointer h-full '
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600'>
                 <FaSalesforce size={50} />
@@ -291,6 +292,7 @@ export default function Index() {
             <Link
               href='/custom-software-development.html'
               className='card  flex flex-col gap-5   text-gray-600 cursor-pointer h-full no-underline '
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600'>
                 <MdConnectedTv size={50} />
@@ -315,6 +317,7 @@ export default function Index() {
             <Link
               href='/staff-augmentation.html'
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 '>
                 <FaHandsHelping size={50} />
@@ -338,6 +341,7 @@ export default function Index() {
             <Link
               href='/blockchain-nft.html'
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full'
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600'>
                 <SiHiveBlockchain size={50} />
@@ -359,6 +363,7 @@ export default function Index() {
             <Link
               href='/sap-emarsys.html'
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline '
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600'>
                 <SiSap size={50} />
@@ -380,6 +385,7 @@ export default function Index() {
             <Link
               href='/digital-marketing-services.html'
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600'>
                 <SiDigitalocean size={50} />
@@ -414,6 +420,7 @@ export default function Index() {
             <Link
               href='/salesforce-development.html'
               className='no-underline text-gray-600 flex flex-col gap-5'
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600'>
                 <AiOutlineCloud size={50} />
@@ -436,7 +443,10 @@ export default function Index() {
             onMouseOver={() => setMouse('crm')}
             onMouseLeave={() => setMouse('none')}
           >
-            <Link className='text-gray-600 cursor-pointer no-underline flex flex-col gap-5'>
+            <Link
+              className='text-gray-600 cursor-pointer no-underline flex flex-col gap-5'
+              style={{ textDecoration: 'none', color: 'gray' }}
+            >
               <div className='top flex gap-2 items-center text-red-600'>
                 <AiOutlineAppstore size={50} />
                 <span> Custom Software </span>
@@ -458,6 +468,7 @@ export default function Index() {
             <Link
               href='/ios-app-development.html'
               className='p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 '>
                 <AiOutlineApple size={50} />
@@ -480,6 +491,7 @@ export default function Index() {
             <Link
               href='/android-app-development.html'
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline '
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600'>
                 <AiOutlineAndroid size={50} />
@@ -502,6 +514,7 @@ export default function Index() {
             <Link
               href='/full-stack-development.html'
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full'
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600'>
                 <CgWebsite size={50} />
@@ -524,6 +537,7 @@ export default function Index() {
             <Link
               href='/salesforce-app-exchange.html'
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full '
+              style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600'>
                 <GiCardExchange size={50} />
