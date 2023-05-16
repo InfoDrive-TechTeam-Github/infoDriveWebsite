@@ -21,28 +21,30 @@ import Avatar from '@mui/material/Avatar';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import Link from '@mui/material/Link';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import Container from '@mui/material/Container';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormControl from '@mui/material/FormControl';
-import TextField from '@mui/material/TextField';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Stack from '@mui/material/Stack';
+import { motion } from 'framer-motion';
+
 import Carousel from 'react-material-ui-carousel';
-import { Paper } from '@mui/material';
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
 import StarIcon from '@mui/icons-material/Star';
-import emailjs from 'emailjs-com';
+import {
+  AiOutlineAndroid,
+  AiOutlineApple,
+  AiOutlineAppstore,
+  AiOutlineCloud,
+} from 'react-icons/ai';
+import { CgWebsite } from 'react-icons/cg';
+import { GiCardExchange } from 'react-icons/gi';
 import { useState } from 'react';
-import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
+import { MdConnectedTv } from 'react-icons/md';
+import { FaHandsHelping, FaSalesforce } from 'react-icons/fa';
+import { SiDigitalocean, SiHiveBlockchain, SiSap } from 'react-icons/si';
+
 import 'react-toastify/dist/ReactToastify.css';
 import LeadForm from '../components/leadForm';
 
 export default function Index() {
   const [value, setValue] = React.useState('1');
+  const [mouse, setMouse] = useState('none');
 
   const [inputData, setInputData] = useState({
     full_name: '',
@@ -51,6 +53,19 @@ export default function Index() {
     industry: '',
     message: '',
   });
+  const [show, setShow] = useState(true);
+  const variants = {
+    open: { opacity: 1, scale: 1 },
+    closed: { opacity: 0, scale: 0.5 },
+  };
+  const variantsDiv = {
+    open: {
+      opacity: 1,
+
+      y: 20,
+    },
+    closed: { opacity: 1, y: 0 },
+  };
 
   const handleChange = (e) => {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
@@ -186,9 +201,9 @@ export default function Index() {
       </section>
 
       <section
-        className={`sectionBox solutionBox flex items-center justify-center p5 backdrop-blur-md md:backdrop-blur-none rounded-md`}
+        className={`sectionBox solutionBox  px-2 backdrop-blur-md md:backdrop-blur-none  p5 m-5 md:m-0`}
       >
-        <p className='md:ml-auto md:w-1/2 '>
+        <p className=' md:w-1/2 '>
           InfoDrive Solutions is a preferred partner in Business process
           improvement for many small & medium size corporations and built with
           the commitment, promise & passion to provide outstanding services in
@@ -196,6 +211,334 @@ export default function Index() {
           the desired outcome of their current business processes and
           applications.
         </p>
+      </section>
+
+      <section className='Offerbox max-w-6xl mx-auto mt-20 flex flex-col gap-10 p5'>
+        <h2 className='text-[#0b2653] font-bold text-xl'>What We Offer</h2>
+
+        <div className='heading flex  items-center w-full gap-2 '>
+          <div className='conditionbox2 bg-white w-full hover:text-red-600'>
+            <h3
+              className={`${
+                !show ? 'text-gray-500' : 'text-red-600'
+              } text-center mx-auto uppercase tracking-widest text-xl font-normal cursor-pointer mb-2`}
+              onClick={() => setShow(true)}
+            >
+              Services
+            </h3>
+            <hr
+              className={`border ${
+                !show ? 'border-gray-500' : 'border-red-600'
+              } w-full`}
+            />
+          </div>
+          <div className='conditionbox bg-white w-full text-black '>
+            <h3
+              className={`${
+                show ? 'text-gray-500' : 'text-red-600'
+              } text-center mx-auto uppercase tracking-widest font-normal text-xl cursor-pointer mb-2`}
+              onClick={() => setShow(false)}
+            >
+              Development
+            </h3>
+            <hr
+              className={`border ${
+                show ? 'border-gray-500' : 'border-red-600'
+              } w-full`}
+            />
+          </div>
+        </div>
+
+        <motion.article
+          animate={show ? 'open' : 'closed'}
+          variants={variants}
+          transition={{ duration: 0.5 }}
+          className={`${
+            !show ? 'hidden' : 'grid md:grid-cols-3 grid-cols-1 gap-10'
+          } transition-all duration-1000 ease-in-out p5 `}
+        >
+          <motion.div
+            animate={mouse == 'sf' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+            className='card   '
+            onMouseOver={() => setMouse('sf')}
+            onMouseLeave={() => setMouse('none')}
+          >
+            <Link
+              href='/salesforce-development.html'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+            >
+              <div className='top flex gap-2 items-center text-red-600'>
+                <FaSalesforce size={50} />
+                <span>Salesforce Support</span>
+              </div>
+              <p className='leading-6 text-xs'>
+                Maximize Your Salesforce Investment with Comprehensive Support
+                Services - Experience Peace of Mind with Our Expert Assistance!
+              </p>
+            </Link>
+          </motion.div>
+          <motion.div
+            href='/custom-software-development.html'
+            animate={mouse == 'crm' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+            className='card p-10  shadow-md rounded-md   '
+            onMouseOver={() => setMouse('crm')}
+            onMouseLeave={() => setMouse('none')}
+          >
+            <Link
+              href='/custom-software-development.html'
+              className='card  flex flex-col gap-5   text-gray-600 cursor-pointer h-full no-underline '
+            >
+              <div className='top flex gap-2 items-center text-red-600'>
+                <MdConnectedTv size={50} />
+                <span> CRM </span>
+              </div>
+              <p className='leading-6 text-xs'>
+                Our company understands the importance of customer relationships
+                in driving business success. That's why we offer a range of CRM
+                software solutions to help our clients manage and optimize their
+                customer interactions and relationships.
+              </p>
+            </Link>
+          </motion.div>
+          <motion.div
+            animate={mouse == 'sa' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+            onMouseOver={() => setMouse('sa')}
+            onMouseLeave={() => setMouse('none')}
+            className='h-full card '
+          >
+            <Link
+              href='/staff-augmentation.html'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+            >
+              <div className='top flex gap-2 items-center text-red-600 '>
+                <FaHandsHelping size={50} />
+                <span> Staff Augmentation </span>
+              </div>
+              <p className='leading-6 text-xs'>
+                At InfoDrive Solutions, we understand that businesses often need
+                additional resources to complete specific projects or to cover
+                temporary staffing shortages. That's where our staff
+                augmentation services come in.
+              </p>
+            </Link>
+          </motion.div>
+          <motion.div
+            onMouseOver={() => setMouse('bc')}
+            onMouseLeave={() => setMouse('none')}
+            animate={mouse == 'bc' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+          >
+            <Link
+              href='/blockchain-nft.html'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full'
+            >
+              <div className='top flex gap-2 items-center text-red-600'>
+                <SiHiveBlockchain size={50} />
+                <span> Blockcain and NFT </span>
+              </div>
+              <p className='leading-6 text-xs'>
+                We offer reliable and advanced blockchain solutions to secure a
+                formidable position for our clients when the future unfolds
+              </p>
+            </Link>
+          </motion.div>
+          <motion.div
+            animate={mouse == 'se' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+            onMouseOver={() => setMouse('se')}
+            onMouseLeave={() => setMouse('none')}
+          >
+            <Link
+              href='/sap-emarsys.html'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline '
+            >
+              <div className='top flex gap-2 items-center text-red-600'>
+                <SiSap size={50} />
+                <span> SAP Emarsys</span>
+              </div>
+              <p className='leading-6 text-xs'>
+                Unlock the full potential of your marketing strategy with the
+                advanced automation capabilities of SAP Emarsys
+              </p>
+            </Link>
+          </motion.div>
+          <motion.div
+            onMouseOver={() => setMouse('dm')}
+            onMouseLeave={() => setMouse('none')}
+            animate={mouse == 'dm' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+          >
+            <Link
+              href='/digital-marketing-services.html'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+            >
+              <div className='top flex gap-2 items-center text-red-600'>
+                <SiDigitalocean size={50} />
+                <span>Digital Marketing</span>
+              </div>
+              <p className='leading-6 text-xs'>
+                Our goal is to help you establish a strong online presence and
+                convert leads into customers through effective digital marketing
+                strategies
+              </p>
+            </Link>
+          </motion.div>
+        </motion.article>
+
+        {/**container grid  development*/}
+        <motion.article
+          animate={!show ? 'open' : 'closed'}
+          variants={variants}
+          transition={{ duration: 0.5 }}
+          className={`${
+            show ? 'hidden' : ' grid md:grid-cols-3 grid-cols-1 gap-10'
+          } transition-all duration-1000 ease-in-out p5`}
+        >
+          <motion.div
+            animate={mouse == 'sf' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+            className='card p-10  shadow-md rounded-md   cursor-pointer  '
+            onMouseOver={() => setMouse('sf')}
+            onMouseLeave={() => setMouse('none')}
+          >
+            <Link
+              href='/salesforce-development.html'
+              className='no-underline text-gray-600 flex flex-col gap-5'
+            >
+              <div className='top flex gap-2 items-center text-red-600'>
+                <AiOutlineCloud size={50} />
+                <span>SaaS Application Development </span>
+              </div>
+              <p className='leading-6 text-xs'>
+                Our team of certified Salesforce experts has extensive
+                experience in implementing and customizing Salesforce to meet
+                the specific needs of each business.
+              </p>
+            </Link>
+          </motion.div>
+
+          <motion.div
+            href='/custom-software-development.html'
+            animate={mouse == 'crm' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+            className='card p-10  shadow-md rounded-md   '
+            onMouseOver={() => setMouse('crm')}
+            onMouseLeave={() => setMouse('none')}
+          >
+            <Link className='text-gray-600 cursor-pointer no-underline flex flex-col gap-5'>
+              <div className='top flex gap-2 items-center text-red-600'>
+                <AiOutlineAppstore size={50} />
+                <span> Custom Software </span>
+              </div>
+              <p className='leading-6 text-xs'>
+                We are one of the leading Custom software development companies
+                offering unmatched business results.
+              </p>
+            </Link>
+          </motion.div>
+          <motion.div
+            animate={mouse == 'sa' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+            onMouseOver={() => setMouse('sa')}
+            onMouseLeave={() => setMouse('none')}
+            className='h-full card '
+          >
+            <Link
+              href='/ios-app-development.html'
+              className='p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+            >
+              <div className='top flex gap-2 items-center text-red-600 '>
+                <AiOutlineApple size={50} />
+                <span>IOS APP Development </span>
+              </div>
+              <p className='leading-6 text-xs'>
+                Our team of expert iOS app developers uses cutting- edge
+                technologies to build apps that are quality tested for
+                perfection.
+              </p>
+            </Link>
+          </motion.div>
+          <motion.div
+            onMouseOver={() => setMouse('bc')}
+            onMouseLeave={() => setMouse('none')}
+            animate={mouse == 'bc' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+          >
+            <Link
+              href='/android-app-development.html'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline '
+            >
+              <div className='top flex gap-2 items-center text-red-600'>
+                <AiOutlineAndroid size={50} />
+                <span> Android app Development </span>
+              </div>
+              <p className='leading-6 text-xs'>
+                Our developers have extensive experience in android app
+                development and a track record of delivering high-quality apps
+                for a wide range of clients.
+              </p>
+            </Link>
+          </motion.div>
+          <motion.div
+            animate={mouse == 'se' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+            onMouseOver={() => setMouse('se')}
+            onMouseLeave={() => setMouse('none')}
+          >
+            <Link
+              href='/full-stack-development.html'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full'
+            >
+              <div className='top flex gap-2 items-center text-red-600'>
+                <CgWebsite size={50} />
+                <span> Full stack Development </span>
+              </div>
+              <p className='leading-6 text-xs'>
+                Infodrive has helped its clients rationalize business
+                developments, abetting development of specialized solutions at
+                all stages.
+              </p>
+            </Link>
+          </motion.div>
+          <motion.div
+            onMouseOver={() => setMouse('dm')}
+            onMouseLeave={() => setMouse('none')}
+            animate={mouse == 'dm' ? 'open' : 'closed'}
+            variants={variantsDiv}
+            transition={{ duration: 0.5 }}
+          >
+            <Link
+              href='/salesforce-app-exchange.html'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full '
+            >
+              <div className='top flex gap-2 items-center text-red-600'>
+                <GiCardExchange size={50} />
+                <span>Salesforce App Exchange</span>
+              </div>
+              <p className='leading-6 text-xs'>
+                When it comes to Salesforce AppExchange Development, businesses
+                need a partner they can trust to deliver high-quality solutions
+                that meet their specific requirements.
+              </p>
+            </Link>
+          </motion.div>
+        </motion.article>
+
+        {/**container grid 2 */}
       </section>
 
       <section className={`sectionBox whyUsBox p5`}>

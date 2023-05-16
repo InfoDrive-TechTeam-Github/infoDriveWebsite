@@ -355,6 +355,19 @@ img {
   font-size: 14px;
   font-family: Poppins;
 }
+
+.conditionbox:hover hr {
+  @apply border border-red-600;
+}
+.conditionbox:hover h3 {
+  @apply text-red-600;
+}
+.conditionbox2:hover hr {
+  @apply border border-red-600;
+}
+.conditionbox2:hover h3 {
+  @apply text-red-600;
+}
 /* .cardBox{
   padding-left: 30px !important;
   padding-right: 30px !important;
@@ -534,14 +547,14 @@ img {
   color: #fff;
 }
 .solutionBox {
-  background: url('../public/homegirl.jpg');
+  background: url('../public/homegirl1.jpg');
   background-size: cover;
   margin-left: 97px;
   margin-right: 97px;
   padding-left: 0;
   padding-right: 0;
   /* width: 50%; */
-  @apply h-96;
+  @apply h-max;
 }
 .solutionBox p {
   font-size: 22px;
