@@ -321,14 +321,6 @@ function DrawerAppBar(props) {
           >
             <List>
               <ListItem disablePadding>
-                <ListItemButton
-                  component='a'
-                  to='/salesforce-app-exchange.html'
-                >
-                  <ListItemText primary={'Salesforce App Exchange'} />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
                 <ListItemButton component='a' to='/sales-cloud.html'>
                   <ListItemText primary={'Sales Cloud'} />
                 </ListItemButton>
@@ -344,14 +336,6 @@ function DrawerAppBar(props) {
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton
-                  component='a'
-                  to='/salesforce-einstein-analytics.html'
-                >
-                  <ListItemText primary={'Salesforce Einstein Analytics'} />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
                 <ListItemButton component='a' to='/salesforce-support.html'>
                   <ListItemText primary={'Salesforce Support'} />
                 </ListItemButton>
@@ -364,9 +348,26 @@ function DrawerAppBar(props) {
               <ListItem disablePadding>
                 <ListItemButton
                   component='a'
+                  to='/salesforce-einstein-analytics.html'
+                >
+                  <ListItemText primary={'Salesforce Einstein Analytics'} />
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton
+                  component='a'
+                  to='/salesforce-app-exchange.html'
+                >
+                  <ListItemText primary={'Salesforce App Exchange'} />
+                </ListItemButton>
+              </ListItem>
+
+              <ListItem disablePadding>
+                <ListItemButton
+                  component='a'
                   to='/customer-relationship-management.html'
                 >
-                  <ListItemText primary={'CRM'} />
+                  <ListItemText primary={'Customer Relationship Management'} />
                 </ListItemButton>
               </ListItem>
             </List>
@@ -739,15 +740,6 @@ function DrawerAppBar(props) {
                 >
                   <List>
                     <ListItem disablePadding>
-                      <ListItemButton
-                        component='a'
-                        to='/salesforce-app-exchange.html'
-                      >
-                        <ListItemText primary={'Salesforce App Exchange'} />
-                      </ListItemButton>
-                    </ListItem>
-
-                    <ListItem disablePadding>
                       <ListItemButton component='a' to='/sales-cloud.html'>
                         <ListItemText primary={'Sales Cloud'} />
                       </ListItemButton>
@@ -760,16 +752,6 @@ function DrawerAppBar(props) {
                     <ListItem disablePadding>
                       <ListItemButton component='a' to='/marketing-cloud.html'>
                         <ListItemText primary={'Marketing Cloud'} />
-                      </ListItemButton>
-                    </ListItem>
-                    <ListItem disablePadding>
-                      <ListItemButton
-                        component='a'
-                        to='/salesforce-einstein-analytics.html'
-                      >
-                        <ListItemText
-                          primary={'Salesforce Einstein Analytics'}
-                        />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
@@ -791,9 +773,30 @@ function DrawerAppBar(props) {
                     <ListItem disablePadding>
                       <ListItemButton
                         component='a'
+                        to='/salesforce-einstein-analytics.html'
+                      >
+                        <ListItemText
+                          primary={'Salesforce Einstein Analytics'}
+                        />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton
+                        component='a'
+                        to='/salesforce-app-exchange.html'
+                      >
+                        <ListItemText primary={'Salesforce App Exchange'} />
+                      </ListItemButton>
+                    </ListItem>
+
+                    <ListItem disablePadding>
+                      <ListItemButton
+                        component='a'
                         to='/customer-relationship-management.html'
                       >
-                        <ListItemText primary={'CRM'} />
+                        <ListItemText
+                          primary={'Customer Relationship Management'}
+                        />
                       </ListItemButton>
                     </ListItem>
                   </List>

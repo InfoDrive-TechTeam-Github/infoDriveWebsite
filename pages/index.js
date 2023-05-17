@@ -144,6 +144,24 @@ export default function Index() {
           })(window,document,'script','dataLayer','GTM-MB38MVS');`,
           }}
         />
+        <script type='application/ld+json'>
+          {`
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "InfoDrive Solutions",
+        "url": "https://infodrive-solutions.com/",
+        "logo": "https://infodrive-solutions.com/logo.html",
+        "sameAs": [
+          "https://www.facebook.com/InfoDrivesolutions/",
+          "https://twitter.com/infodrives",
+          "https://www.instagram.com/infodrivesolutions/",
+          "https://www.youtube.com/@infodrivesolutions9178",
+          "https://in.linkedin.com/company/infodrive-solutions/"
+        ]
+      }
+    `}
+        </script>
       </Head>
       <noscript>
         <iframe
@@ -203,7 +221,7 @@ export default function Index() {
       <section
         className={`sectionBox solutionBox  px-2 backdrop-blur-md md:backdrop-blur-none  p5 m-5 md:m-0`}
       >
-        <p className=' md:w-1/2 '>
+        <p className=' md:w-1/2'>
           InfoDrive Solutions is a preferred partner in Business process
           improvement for many small & medium size corporations and built with
           the commitment, promise & passion to provide outstanding services in
@@ -221,7 +239,7 @@ export default function Index() {
             <h3
               className={`${
                 !show ? 'text-gray-500' : 'text-red-600'
-              } text-center mx-auto uppercase tracking-widest text-xl font-normal cursor-pointer mb-2`}
+              } text-center mx-auto uppercase tracking-widest md:text-xl text-sm font-normal cursor-pointer mb-2`}
               onClick={() => setShow(true)}
             >
               Services
@@ -236,7 +254,7 @@ export default function Index() {
             <h3
               className={`${
                 show ? 'text-gray-500' : 'text-red-600'
-              } text-center mx-auto uppercase tracking-widest font-normal text-xl cursor-pointer mb-2`}
+              } text-center mx-auto uppercase tracking-widest font-normal md:text-xl text-sm cursor-pointer mb-2`}
               onClick={() => setShow(false)}
             >
               Development
@@ -255,7 +273,7 @@ export default function Index() {
           transition={{ duration: 0.5 }}
           className={`${
             !show ? 'hidden' : 'grid md:grid-cols-3 grid-cols-1 gap-10'
-          } transition-all duration-1000 ease-in-out p5 `}
+          } transition-all duration-1000 ease-in-out  `}
         >
           <motion.div
             animate={mouse == 'sf' ? 'open' : 'closed'}
@@ -270,13 +288,16 @@ export default function Index() {
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md   cursor-pointer h-full '
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <FaSalesforce size={50} />
-                <span>Salesforce Support</span>
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <FaSalesforce size={60} />
+                <span>Salesforce</span>
               </div>
-              <p className='leading-6 text-xs'>
-                Maximize Your Salesforce Investment with Comprehensive Support
-                Services - Experience Peace of Mind with Our Expert Assistance!
+              <p className='leading-6 text-sm'>
+                We are developing a revolutionary new technology that will
+                transform the way people interact with the world. Our technology
+                is designed to be intuitive, adaptable, and responsive, so that
+                it can keep up with the pace of change and meet the needs of
+                modern society.
               </p>
             </Link>
           </motion.div>
@@ -294,11 +315,11 @@ export default function Index() {
               className='card  flex flex-col gap-5   text-gray-600 cursor-pointer h-full no-underline '
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <MdConnectedTv size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <MdConnectedTv size={60} />
                 <span> CRM </span>
               </div>
-              <p className='leading-6 text-xs'>
+              <p className='leading-6 text-sm'>
                 Our company understands the importance of customer relationships
                 in driving business success. That's why we offer a range of CRM
                 software solutions to help our clients manage and optimize their
@@ -319,15 +340,14 @@ export default function Index() {
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600 '>
-                <FaHandsHelping size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold '>
+                <FaHandsHelping size={60} />
                 <span> Staff Augmentation </span>
               </div>
-              <p className='leading-6 text-xs'>
-                At InfoDrive Solutions, we understand that businesses often need
-                additional resources to complete specific projects or to cover
-                temporary staffing shortages. That's where our staff
-                augmentation services come in.
+              <p className='leading-6 text-sm'>
+                We carefully match the right professionals to your project or
+                assignment. Our staff augmentation services are flexible and
+                scalable, allowing you to add or remove resources as needed.
               </p>
             </Link>
           </motion.div>
@@ -343,13 +363,14 @@ export default function Index() {
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <SiHiveBlockchain size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <SiHiveBlockchain size={60} />
                 <span> Blockcain and NFT </span>
               </div>
-              <p className='leading-6 text-xs'>
-                We offer reliable and advanced blockchain solutions to secure a
-                formidable position for our clients when the future unfolds
+              <p className='leading-6 text-sm'>
+                Our goal is to help you establish a strong online presence and
+                convert leads into customers through effective digital marketing
+                strategies
               </p>
             </Link>
           </motion.div>
@@ -365,13 +386,14 @@ export default function Index() {
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline '
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <SiSap size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <SiSap size={60} />
                 <span> SAP Emarsys</span>
               </div>
-              <p className='leading-6 text-xs'>
-                Unlock the full potential of your marketing strategy with the
-                advanced automation capabilities of SAP Emarsys
+              <p className='leading-6 text-sm'>
+                SAP Emarsys Customer Engagement is a powerful and comprehensive
+                customer engagement platform that enables businesses to deliver
+                relevant communications to their customers.
               </p>
             </Link>
           </motion.div>
@@ -387,14 +409,15 @@ export default function Index() {
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <SiDigitalocean size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <SiDigitalocean size={60} />
                 <span>Digital Marketing</span>
               </div>
-              <p className='leading-6 text-xs'>
-                Our goal is to help you establish a strong online presence and
-                convert leads into customers through effective digital marketing
-                strategies
+              <p className='leading-6 text-sm'>
+                InfoDrive Solutions is a leading digital marketing company
+                offering marketing services. As a top digital marketing
+                consultant, we provide customized strategies to help businesses
+                succeed online.
               </p>
             </Link>
           </motion.div>
@@ -418,24 +441,23 @@ export default function Index() {
             onMouseLeave={() => setMouse('none')}
           >
             <Link
-              href='/salesforce-development.html'
+              href='/saas-application-development.html'
               className='no-underline text-gray-600 flex flex-col gap-5'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <AiOutlineCloud size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <AiOutlineCloud size={60} />
                 <span>SaaS Application Development </span>
               </div>
-              <p className='leading-6 text-xs'>
-                Our team of certified Salesforce experts has extensive
-                experience in implementing and customizing Salesforce to meet
-                the specific needs of each business.
+              <p className='leading-6 text-sm'>
+                We have extensive experience in developing SaaS applications for
+                a range of industries. Our team of skilled developers is
+                proficient in a variety of programming languages.
               </p>
             </Link>
           </motion.div>
 
           <motion.div
-            href='/custom-software-development.html'
             animate={mouse == 'crm' ? 'open' : 'closed'}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
@@ -444,16 +466,18 @@ export default function Index() {
             onMouseLeave={() => setMouse('none')}
           >
             <Link
+              href='/custom-software-development.html'
               className='text-gray-600 cursor-pointer no-underline flex flex-col gap-5'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <AiOutlineAppstore size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <AiOutlineAppstore size={60} />
                 <span> Custom Software </span>
               </div>
-              <p className='leading-6 text-xs'>
-                We are one of the leading Custom software development companies
-                offering unmatched business results.
+              <p className='leading-6 text-sm'>
+                Our team of experienced software developers is dedicated to
+                delivering high-quality custom solutions that are tailored to
+                your business.
               </p>
             </Link>
           </motion.div>
@@ -470,14 +494,14 @@ export default function Index() {
               className='p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600 '>
-                <AiOutlineApple size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold '>
+                <AiOutlineApple size={60} />
                 <span>IOS APP Development </span>
               </div>
-              <p className='leading-6 text-xs'>
-                Our team of expert iOS app developers uses cutting- edge
-                technologies to build apps that are quality tested for
-                perfection.
+              <p className='leading-6 text-sm'>
+                We are a full-stack iOS app development company that has
+                released hundreds of native iOS apps with high App Store ratings
+                and success rates.
               </p>
             </Link>
           </motion.div>
@@ -493,11 +517,11 @@ export default function Index() {
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline '
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <AiOutlineAndroid size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <AiOutlineAndroid size={60} />
                 <span> Android app Development </span>
               </div>
-              <p className='leading-6 text-xs'>
+              <p className='leading-6 text-sm'>
                 Our developers have extensive experience in android app
                 development and a track record of delivering high-quality apps
                 for a wide range of clients.
@@ -516,14 +540,14 @@ export default function Index() {
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <CgWebsite size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <CgWebsite size={60} />
                 <span> Full stack Development </span>
               </div>
-              <p className='leading-6 text-xs'>
-                Infodrive has helped its clients rationalize business
-                developments, abetting development of specialized solutions at
-                all stages.
+              <p className='leading-6 text-sm'>
+                Our full stack development process is designed to be efficient,
+                agile, and transparent. We begin by understanding your business
+                requirements and objectives.
               </p>
             </Link>
           </motion.div>
@@ -539,14 +563,14 @@ export default function Index() {
               className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full '
               style={{ textDecoration: 'none', color: 'gray' }}
             >
-              <div className='top flex gap-2 items-center text-red-600'>
-                <GiCardExchange size={50} />
+              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+                <GiCardExchange size={60} />
                 <span>Salesforce App Exchange</span>
               </div>
-              <p className='leading-6 text-xs'>
-                When it comes to Salesforce AppExchange Development, businesses
-                need a partner they can trust to deliver high-quality solutions
-                that meet their specific requirements.
+              <p className='leading-6 text-sm'>
+                Our team of Salesforce developers, designers, and project
+                managers have years of experience in developing custom
+                applications for businesses across a range of industries.
               </p>
             </Link>
           </motion.div>
@@ -823,7 +847,7 @@ export default function Index() {
       </section>
       <br />
       <br />
-      <section className={`sectionBox locationBox mt30 testmonial p5`}>
+      <section className={`sectionBox locationBox mt-28 testmonial p5`}>
         <Typography gutterBottom variant='h2' component='div'>
           What do clients say about us?
         </Typography>

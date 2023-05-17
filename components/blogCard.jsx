@@ -27,16 +27,8 @@ function blogCard({ slug, img, author, title, desc, created, category }) {
         </div>
       </div>
       <h1 className='text-white font-bold '>{title}</h1>
-      {/*   <div
-        className='prose prose-2xl prose-stone prose-a:text-blue-800 prose-h2:text-lg prose-li:text-sm  prose-p:text-white prose-h2:text-pink-600 prose-h3:text-base prose-h4:text-base prose-h5:text-base prose-h6:text-base'
-        dangerouslySetInnerHTML={{
-          __html: desc,
-        }}
-    ></div> */}
-      <div className='createdAt flex  h-full w-full  gap-2 text-white  '>
-        <CgCalendarDates size={24} />
-        <p>{created}</p>
-      </div>
+    
+    
     </Link>
   );
 }
