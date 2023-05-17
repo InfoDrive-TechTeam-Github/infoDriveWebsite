@@ -151,18 +151,13 @@ function SalesforceAppExchange() {
       <section className='  '>
         <div className=' w-screen h-full   text-gray-700 mx-auto p-10 text-sm font-medium leading-7 max-w-6xl'>
           <p>
-            As a leading Salesforce AppExchange Development Company, infoDrive
-            Solutions offers a wide range of services to help businesses
-            leverage the power of Salesforce and drive business growth. Our
-            experienced team of Salesforce developers, designers, and project
-            managers have a wealth of experience in developing custom
-            applications for businesses across a range of industries.{' '}
-          </p>
-          <br />
-          <p>
-            Our team of Salesforce developers, designers, and project managers
-            have years of experience in developing custom applications for
-            businesses across a range of industries. We have successfully
+            As a leading{' '}
+            <strong>Salesforce AppExchange App Development Company,</strong>{' '}
+            infoDrive Solutions offers a wide range of services to help
+            businesses leverage the power of Salesforce and drive business
+            growth. Our team of Salesforce developers, designers, and project
+            managers have years of experience in developing custom applications
+            for businesses across a range of industries. We have successfully
             delivered projects of all sizes and complexities, from simple
             Salesforce integrations to complex custom application development.
             Our team is equipped with the skills and expertise needed to handle
@@ -259,11 +254,9 @@ function SalesforceAppExchange() {
         >
           <div className=' w-screen h-full md:p-10 p-5  text-yellow-100 mx-auto max-w-6xl '>
             <p>
-              Our Salesforce AppExchange Development Services At infoDrive
-              Solutions, we offer a comprehensive range of Salesforce
-              AppExchange development services to help businesses leverage the
-              power of the Salesforce platform. Here are just a few of the
-              services we offer:
+              We offer a comprehensive range of Salesforce AppExchange app
+              development services to help businesses leverage the power of the
+              Salesforce platform. Here are just a few of the services we offer:
             </p>
           </div>
           <div className='inner  h-max grid md:grid-cols-2 grid-cols-1 gap-x-5 '>
@@ -345,12 +338,12 @@ function SalesforceAppExchange() {
       <section className='feature'>
         <h2 className='text-center font-bold text-blue-950 text-2xl mt-20 max-w-5xl mx-auto'>
           Why Choose infoDrive Solutions for Salesforce AppExchange Development
-          in Singapore, Malaysia, and India?
+          ?
         </h2>
 
         <p className='mt-5 text-gray-400 text-center mx-auto max-w-6xl'>
           At infoDrive Solutions, we are committed to providing high-quality
-          Salesforce AppExchange development services to businesses in
+          Salesforce AppExchange app development services to businesses in
           Singapore, Malaysia, and India. Here are just a few reasons why you
           should choose us as your Salesforce AppExchange development partner:
         </p>

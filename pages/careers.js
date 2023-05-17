@@ -453,7 +453,7 @@ export default function SalesForceDevelopment() {
           think they can contribute positively to our team and help us take
           InfoDrive to further levels of excellency. If you think, you're the
           perfect fit for our organization, please send your CV and cover letter
-          to info@infodrive-solutions.com. You can find the latest openings
+          to jobs@infodrive-solutions.com. You can find the latest openings
           here:
         </Typography>
       </section>
