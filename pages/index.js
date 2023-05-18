@@ -221,7 +221,7 @@ export default function Index() {
       <section
         className={`sectionBox solutionBox  px-2 backdrop-blur-md md:backdrop-blur-none  p5 m-5 md:m-0`}
       >
-        <p className=' md:w-1/2'>
+        <p className=' md:w-1/2 '>
           InfoDrive Solutions is a preferred partner in Business process
           improvement for many small & medium size corporations and built with
           the commitment, promise & passion to provide outstanding services in
@@ -292,12 +292,11 @@ export default function Index() {
                 <FaSalesforce size={60} />
                 <span>Salesforce</span>
               </div>
-              <p className='leading-6 text-sm'>
-                We are developing a revolutionary new technology that will
-                transform the way people interact with the world. Our technology
-                is designed to be intuitive, adaptable, and responsive, so that
-                it can keep up with the pace of change and meet the needs of
-                modern society.
+              <p className='leading-6 text-sm text-[#00000099]'>
+                Our company specializes in providing Salesforce services,
+                helping businesses harness the power of the Salesforce platform
+                to streamline operations, enhance customer engagement, and drive
+                growth.
               </p>
             </Link>
           </motion.div>
@@ -312,7 +311,7 @@ export default function Index() {
           >
             <Link
               href='/custom-software-development.html'
-              className='card  flex flex-col gap-5   text-gray-600 cursor-pointer h-full no-underline '
+              className='card  flex flex-col gap-5   text-[#00000099] cursor-pointer h-full no-underline '
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold'>
@@ -337,7 +336,7 @@ export default function Index() {
           >
             <Link
               href='/staff-augmentation.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold '>
@@ -360,7 +359,7 @@ export default function Index() {
           >
             <Link
               href='/blockchain-nft.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold'>
@@ -368,9 +367,9 @@ export default function Index() {
                 <span> Blockcain and NFT </span>
               </div>
               <p className='leading-6 text-sm'>
-                Our goal is to help you establish a strong online presence and
-                convert leads into customers through effective digital marketing
-                strategies
+                We have a team of highly skilled and experienced blockchain
+                developers and NFT specialists who can help you successfully
+                implement these technologies into your business.
               </p>
             </Link>
           </motion.div>
@@ -383,7 +382,7 @@ export default function Index() {
           >
             <Link
               href='/sap-emarsys.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline '
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline '
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold'>
@@ -406,7 +405,7 @@ export default function Index() {
           >
             <Link
               href='/digital-marketing-services.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold'>
@@ -429,8 +428,8 @@ export default function Index() {
           variants={variants}
           transition={{ duration: 0.5 }}
           className={`${
-            show ? 'hidden' : ' grid md:grid-cols-3 grid-cols-1 gap-10'
-          } transition-all duration-1000 ease-in-out p5`}
+            show ? 'hidden' : 'grid md:grid-cols-3 grid-cols-1 gap-10'
+          } transition-all duration-1000 ease-in-out`}
         >
           <motion.div
             animate={mouse == 'sf' ? 'open' : 'closed'}
@@ -442,7 +441,7 @@ export default function Index() {
           >
             <Link
               href='/saas-application-development.html'
-              className='no-underline text-gray-600 flex flex-col gap-5'
+              className='no-underline text-[#00000099] flex flex-col gap-5'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold'>
@@ -467,7 +466,7 @@ export default function Index() {
           >
             <Link
               href='/custom-software-development.html'
-              className='text-gray-600 cursor-pointer no-underline flex flex-col gap-5'
+              className='text-[#00000099] cursor-pointer no-underline flex flex-col gap-5'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold'>
@@ -491,7 +490,7 @@ export default function Index() {
           >
             <Link
               href='/ios-app-development.html'
-              className='p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline'
+              className='p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold '>
@@ -514,7 +513,7 @@ export default function Index() {
           >
             <Link
               href='/android-app-development.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer h-full no-underline '
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline '
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold'>
@@ -537,7 +536,7 @@ export default function Index() {
           >
             <Link
               href='/full-stack-development.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full'
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full'
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold'>
@@ -560,7 +559,7 @@ export default function Index() {
           >
             <Link
               href='/salesforce-app-exchange.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-gray-600 cursor-pointer no-underline h-full '
+              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full '
               style={{ textDecoration: 'none', color: 'gray' }}
             >
               <div className='top flex gap-2 items-center text-red-600 font-semibold'>
