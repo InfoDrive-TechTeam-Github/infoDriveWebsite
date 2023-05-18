@@ -146,7 +146,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
           })}
         </Box>
         <section className='releatedPost mx-auto bg-white  text-black p-3'>
-          <h3 className='text-center font-extrabold text-4xl text-pink-600'>
+          <h3 className='text-center font-extrabold text-4xl text-red-600'>
             Read Related Articles
           </h3>
           <hr className='border-2 w-80 mx-auto mt-3 border-blue-900 rounded-md shadow-md' />
@@ -161,7 +161,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
                   <CardBlog
                     author={data['_embedded']['author'][0].name}
                     desc={limitedDesc}
-                    created={data.date}
+                    created={data['date']}
                     img={data['_embedded']['wp:featuredmedia'][0]['source_url']}
                     slug={data.slug}
                     category={data['_embedded']['wp:term'][0][0]['name']}
