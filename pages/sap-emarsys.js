@@ -148,7 +148,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
       <section
-        className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 pb30`}
+        className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 pb30 p5`}
       >
         <Typography variant='h1' className='mb0' component='h1'>
           SAP Emarsys Customer Engagement
@@ -204,7 +204,7 @@ export default function SalesForceDevelopment() {
       </section>
       <br />
       <section
-        className={`sectionBox saleForcesDevelopmentBox marketCloudBox sapEmarsysServices`}
+        className={`sectionBox saleForcesDevelopmentBox marketCloudBox sapEmarsysServices p5`}
       >
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='androidDevelopment'>
@@ -236,7 +236,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox p5`}>
         <Typography gutterBottom variant='h1' component='h1'>
           Overall, SAP Emarsys is a powerful and comprehensive platform that
           helps businesses engage with their customers in a more meaningful and

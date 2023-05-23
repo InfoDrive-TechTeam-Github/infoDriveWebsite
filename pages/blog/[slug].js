@@ -146,10 +146,10 @@ export default function SalesForceDevelopment({ data, datafull }) {
           })}
         </Box>
         <section className='releatedPost mx-auto bg-white  text-black p-3'>
-          <h3 className='text-center font-extrabold text-4xl text-red-600'>
+          <h3 className='text-center font-extrabold md:text-4xl text-lg text-red-600'>
             Read Related Articles
           </h3>
-          <hr className='border-2 w-80 mx-auto mt-3 border-blue-900 rounded-md shadow-md' />
+          <hr className='border-2 md:w-80 mx-auto mt-3 border-blue-900 rounded-md shadow-md w-1/2' />
 
           <div className='mt-20'>
             <Crousel>

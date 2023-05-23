@@ -130,6 +130,115 @@
   cursor: default;
 }
 
+/*Timeline*/
+.timeline {
+  position: relative;
+  width: 100%;
+}
+
+.timeline-box {
+  padding: 5px;
+  width: 40%;
+  min-height: 150px;
+  position: relative;
+  left: 5%;
+  text-align: right;
+}
+
+.timeline-box::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: lightgrey;
+  top: 25%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+  left: 53%;
+}
+
+.timeline-box:nth-child(2n + 1)::after {
+  right: -13.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+  left: -8.5%;
+}
+
+.timeline-container {
+  padding: 8px;
+}
+
+.timeline-logo {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+  border: 2px solid gray;
+  border-radius: 50%;
+}
+
+.timeline-logo > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.timeline-divider {
+  position: absolute;
+  width: 0;
+  top: 10%;
+  left: 50%;
+  border: 1px dashed #0096fa6b;
+  height: 88%;
+  color: #433e3f;
+}
+
+.timeline-divider .timeline-traveller {
+  position: sticky;
+  top: 135px;
+  z-index: 2;
+}
+
+.timeline-divider .timeline-traveller div {
+  transform: rotate(90deg);
+  margin-top: -35px;
+  display: block;
+  color: #2857a4;
+}
+
+.experience-designation {
+  font-size: 1.4rem;
+}
+
+.experience-company-name {
+  margin: 5px 0 0;
+  color: #eb822d;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.experience-duration {
+  color: #9e9b9b;
+  font-weight: 100;
+  color: grey;
+  font-size: 1rem;
+}
+
+.experience-description {
+  font-size: 14px;
+  padding: 2px;
+  color: grey;
+  line-height: 20px;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+/* timeline end */
+
 .PhoneInputCountrySelectArrow {
   display: block;
   content: '';
@@ -456,6 +565,18 @@ img {
   padding-left: 0;
   padding-right: 0;
 }
+.wave {
+  background: url('images/wave.jpeg');
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+}
+.blob {
+  background: url('images/blob.jpg');
+  background-size: cover;
+  padding-left: 0;
+  padding-right: 0;
+}
 .saleForcesDevelopmentBox .MuiTypography-h5 {
   width: initial;
 }
@@ -613,11 +734,42 @@ img {
 .whyUsBox .MuiGrid-item {
   margin-bottom: 50px;
 }
+/* .polygon {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+} */
+
+/* crm wave customer says */
+
+.custom-shape-divider-top-1684756723 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1684756723 svg {
+  position: relative;
+  display: block;
+  width: calc(190% + 1.3px);
+  height: 150px;
+}
+
+.custom-shape-divider-top-1684756723 .shape-fill {
+  fill: #ffffff;
+}
 
 .aboutUsBox {
   height: 580px;
   padding-top: 0;
   padding-bottom: 0;
+}
+.style {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
 }
 .aboutUsBox .MuiPaper-root {
   border-radius: 0;
@@ -770,6 +922,9 @@ img {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+/* shape divide crm image 1 */
+
+/* shape divide crm image 1 end */
 /* shape divider */
 .custom-shape-divider-bottom-1682618210 {
   position: absolute;
@@ -1527,6 +1682,27 @@ img.btnLdr {
     max-width: 100%;
     margin-bottom: 20px;
   }
+  /* timeline start */
+
+  @layer components {
+    .timeline-img1 {
+      @apply h-24 w-24 object-cover rounded-full shadow-md border-4 border-white xs:absolute md:mx-auto md:left-0 md:right-0;
+    }
+    .timeline-container1 {
+      @apply relative pt-2 xs:pl-28 xs:pt-0 md:w-1/2 md:ml-auto md:pl-16;
+    }
+    .timeline-container-left1 {
+      @apply md:ml-0 md:mr-auto md:pl-0 md:pr-16;
+    }
+    .timeline-pointer {
+      @apply absolute inset-0 left-10 h-4 w-4 transform rotate-45 bg-white xs:top-11 xs:left-26 md:left-14;
+    }
+    .timeline-pointer-left {
+      @apply md:left-auto md:right-14;
+    }
+  }
+
+  /* timeline end */
   .leftLeadFormBox {
     padding: 0px 0px;
     flex-basis: 100%;
@@ -2104,5 +2280,27 @@ img.btnLdr {
 @media (max-width: 600px) {
   .p5 {
     @apply p-5;
+  }
+  .blob {
+    background-image: url('images/blobmobile.jpg');
+    height: 1100px;
+  }
+}
+@media only screen and (max-width: 572px) {
+  .timeline-box {
+    width: 90%;
+    left: 8% !important;
+  }
+  .timeline-box::after {
+    left: -5.3% !important;
+  }
+
+  .timeline-divider {
+    top: 10%;
+    left: 5%;
+  }
+  .timeline-logo {
+    height: 4rem !important;
+    width: 4rem !important;
   }
 }

@@ -158,7 +158,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox p5`}>
         <Typography gutterBottom variant='h1' component='h1' className='w100'>
           Driving traffic and Generating Lads with Our Digital Marketing
           Services
@@ -190,7 +190,7 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
         <Typography
           className='w100 mb0 pb10'
@@ -318,7 +318,7 @@ export default function SalesForceDevelopment() {
           </Grid>
         </Box>
       </section>
-      <section className={`sectionBox connectUs backDrop mb0`}>
+      <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
           variant='h3'

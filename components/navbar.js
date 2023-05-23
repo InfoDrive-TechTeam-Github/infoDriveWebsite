@@ -56,7 +56,11 @@ function DrawerAppBar(props) {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState();
-
+  // our products
+  const [anchorE2, setAnchorE2] = useState();
+  const [subAnchorE2, setSubAnchorE2] = useState();
+  const [opMenu, setOPMenu] = useState(false);
+  // our products end
   const [subMenuOpen, setSubMenuOpen] = useState(false);
   const [subMenuSaleOpen, setSubMenuSaleOpen] = useState(false);
   const [subMenuDigitalOpen, setSubMenuDigitalOpen] = useState(false);
@@ -83,8 +87,15 @@ function DrawerAppBar(props) {
   const [subMobileAnchorDigitalEl, setSubMobileAnchorDigitalEl] = useState();
 
   const recordButtonPosition = (event) => {
+    console.log(`recordButtonPosition`, event);
     setAnchorEl(event.currentTarget);
     setMenuOpen(true);
+  };
+  // our products
+  const recordButtonPositionOP = (event) => {
+    console.log(`recordButtonPosition`, event);
+    setAnchorE2(event.currentTarget);
+    setOPMenu(true);
   };
 
   const recordSubButtonPosition = (event) => {
@@ -139,6 +150,7 @@ function DrawerAppBar(props) {
 
   let closeMenu = () => {
     setMenuOpen(false);
+    setOPMenu(false);
   };
 
   let closeSubMenu = () => {
@@ -801,6 +813,38 @@ function DrawerAppBar(props) {
                     </ListItem>
                   </List>
                 </Menu>
+
+                {/**our Products web view */}
+                <ListItemButton
+                  onClick={recordButtonPositionOP}
+                  disableElevation
+                >
+                  Our Products <KeyboardArrowDownIcon />
+                </ListItemButton>
+                {/* our products menu */}
+                <Menu
+                  anchorEl={anchorE2}
+                  open={opMenu}
+                  className='subMenuOptions'
+                  onClose={closeMenu}
+                >
+                  <List>
+                    <ListItem disablePadding>
+                      <ListItemButton component='a' to='/project-crm.html'>
+                        <ListItemText primary={'Dryvn.io CRM'} />
+                      </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton
+                        component='a'
+                        to='/project-digital-will.html'
+                      >
+                        <ListItemText primary={'Digital Will'} />
+                      </ListItemButton>
+                    </ListItem>
+                  </List>
+                </Menu>
+                {/**our products menu ends */}
 
                 <ListItemButton component='a' to='/blog.html'>
                   <ListItemText primary={'Blog'} />

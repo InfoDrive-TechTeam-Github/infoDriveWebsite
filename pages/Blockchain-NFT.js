@@ -132,7 +132,7 @@ export default function blockchain() {
           </Grid>
         </Box>
       </div>
-      <section className={`sectionBox nftBox`}>
+      <section className={`sectionBox nftBox p5`}>
         <Typography
           className='w100 red'
           gutterBottom
@@ -191,7 +191,7 @@ export default function blockchain() {
           to help.
         </Typography>
       </section>
-      <section className={`sectionBox BlockchainUsBox`}>
+      <section className={`sectionBox BlockchainUsBox p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='fd1'>
             <Grid item xs={6}>
@@ -229,7 +229,7 @@ export default function blockchain() {
           </Grid>
         </Box>
       </section>
-      <section className={`sectionBox BlockchainUsBox`}>
+      <section className={`sectionBox BlockchainUsBox p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={6}>
@@ -274,7 +274,7 @@ export default function blockchain() {
         </Box>
       </section>
 
-      <section className={`sectionBox ourValueBox ourBeliefBox`}>
+      <section className={`sectionBox ourValueBox ourBeliefBox p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid
