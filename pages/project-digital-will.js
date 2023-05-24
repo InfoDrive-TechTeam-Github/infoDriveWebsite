@@ -107,30 +107,49 @@ function crm() {
           variant='h1'
           component='h1'
         >
-          APPLICATION DEVELOPMENT, MAINTENANCE AND SUPPORT
+          Streamline Your Billing Process with Our Cutting-Edge Digital Bill
+          Solution
         </Typography>
         <Typography className='w100' gutterBottom variant='h2' component='div'>
-          One-stop Solution for Your Development Needs
+          Welcome to the future of estate planning
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>
-          As a leading provider of full stack development services in Singapore,
-          Malaysia, and India, we are committed to delivering top-quality
-          solutions that help businesses of all sizes succeed in today's digital
-          landscape. Our team of experienced developers specializes in a wide
-          range of technologies, including JavaScript, HTML, CSS, Python, Java,
-          PHP, and more. We have the expertise and tools to build custom web and
-          mobile applications that are tailored to your specific needs and
-          goals.
-          <br /> Our full stack development process is designed to be efficient,
-          agile, and transparent. We begin by understanding your business
-          requirements and objectives, and then we work closely with you to
-          design and develop a solution that meets your needs. One of the key
-          benefits of working with InfoDrive Solutions is our ability to provide
-          end-to-end development services. This means that we can handle every
-          aspect of your project, from the initial concept and design to the
-          final deployment and maintenance. This allows us to deliver a
-          complete, turnkey solution that is ready to use as soon as it is
-          deployed.
+          At Infodrive Solutions, we are excited to introduce our revolutionary
+          digital will solution that will transform the way you manage your
+          legacy. Say goodbye to the complexities and limitations of traditional
+          paper wills and embrace the simplicity, security, and convenience of
+          our innovative digital platform.
+          <br />
+          <br />
+          Planning for the future and ensuring that your loved ones are taken
+          care of is of utmost importance. Our digital will solution is designed
+          to provide you with a seamless and efficient way to create, manage,
+          and update your will. With our user-friendly interface and intuitive
+          design, you can confidently navigate through the estate planning
+          process, even if you don't have legal expertise. We've taken the
+          complexities out of creating a will, allowing you to focus on what
+          truly matters – protecting your legacy.
+          <br />
+          <br />
+          Security and privacy are paramount when it comes to your personal and
+          sensitive information. Our digital will platform utilizes
+          state-of-the-art security measures, including advanced encryption
+          techniques, to ensure that your data is protected at all times. Rest
+          assured that your digital will is securely stored and accessible only
+          to authorized individuals. With our robust security protocols, you can
+          have peace of mind knowing that your wishes are confidential and
+          safeguarded.
+          <br />
+          <br />
+          Embracing a digital will also means accounting for your digital assets
+          in the modern era. From online accounts and digital subscriptions to
+          cryptocurrency and social media profiles, our platform allows you to
+          include instructions and details about your digital assets. By
+          addressing these assets in your digital will, you ensure that nothing
+          is overlooked and that your digital presence is managed according to
+          your wishes. Protecting your legacy means considering both physical
+          and digital aspects, and our digital will solution enables you to do
+          just that.
         </Typography>
       </section>
 
@@ -138,11 +157,15 @@ function crm() {
         <div className='container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 gap-5'>
           <div className='left  flex flex-col gap-5 mt-20 '>
             <h2 className='text-red-600 md:text-3xl font-bold text-xl'>
-              The Unified Stack For
-              <span className='text-black'> Modern Data Teams</span>
+              Empower Your Estate Planning with
+              <br />
+              <span className='text-black mt-5'>
+                the Unified Stack for Digital Wills
+              </span>
             </h2>
             <p>
-              The no-code data pipeline platform for your entire data journey
+              Simplify Your Estate Planning Journey with the No-Code Digital
+              Will Platform for All Your Needs
             </p>
             <div className='md:flex gap-5 h-full md:mt-24 '>
               <button
@@ -157,18 +180,21 @@ function crm() {
                 </Link>
               </button>
               <hr className='md:h-80 h-0 md:w-0 w-20 border-2 border-red-600 hidden md:block' />
-              <div className='md:mt-24' style={{ flex: 3 }}>
+              <div className='md:mt-16' style={{ flex: 3 }}>
                 <h2 className='text-red-600 font-bold text-xl mb-5 ml-16 md:ml-0'>
-                  Digit Bill offers you
+                  Digit Will offers you
                 </h2>
-                <p className='text-[#4e4e50] leading-7'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugiat iste inventore voluptates non, corporis nesciunt
-                  quisquam optio assumenda voluptate, dignissimos soluta debitis
-                  natus quae possimus veniam velit, fugit nihil quibusdam sint
-                  in officia beatae consequuntur. Voluptate nesciunt nam quam
-                  eum tempora similique doloribus ut, consectetur, tenetur,
-                  deleniti perferendis dolores cumque.
+                <p className='text-[#00000099] leading-6 text-sm'>
+                  Digit Will offers a user-friendly and secure platform for
+                  simplified estate planning. With advanced encryption and
+                  strict access controls, your digital will remains confidential
+                  and protected. You can conveniently manage and update your
+                  will from anywhere, ensuring your wishes and digital assets
+                  are accounted for. Collaborate with trusted individuals,
+                  receive reliable customer support, and gain peace of mind
+                  knowing that your loved ones will be taken care of according
+                  to your instructions. Choose Digit Will for a seamless and
+                  secure digital will experience.
                 </p>
               </div>
             </div>
@@ -184,18 +210,17 @@ function crm() {
                 <img src='https://img.freepik.com/free-vector/online-certification-illustration_23-2148568875.jpg?w=996&t=st=1684819553~exp=1684820153~hmac=c1eaeca2495958c7cb4f61575698bf93b543e5293d03edd24b99da1514e7ffe9' />
               </div>
               <h3 className='experience-designation m0 m-blue text-red-600  font-Poppins'>
-                Designation
+                Peace of Mind
               </h3>
-              <h4 className='experience-company-name'>Company Name</h4>
-              <h5 className='experience-duration m0'>
-                Month YYYY - Month YYYY
-              </h5>
+              <h4 className='experience-company-name'>Secure and Efficient</h4>
+              <br />
 
-              <p className='experience-description text-align-justify'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+              <p className='experience-description text-align-justify text-[#00000099] leading-6 text-sm'>
+                With our state-of-the-art digital will solution, you can have
+                peace of mind knowing that your final wishes will be honored and
+                your loved ones will be taken care of. Our platform ensures the
+                security and efficiency of your digital will, making the estate
+                planning process seamless and hassle-free.
               </p>
             </div>
           </div>
@@ -205,16 +230,17 @@ function crm() {
               <div className='timeline-logo'>
                 <img src='https://img.freepik.com/free-vector/accept-terms-concept-illustration_114360-1027.jpg?w=740&t=st=1684819781~exp=1684820381~hmac=bcc3deea5c7948b6a2678708d67c93261d8803f370b78760208c3755afdc74ab' />
               </div>
-              <h3 className='experience-designation m0 m-blue'>Designation</h3>
-              <h4 className='experience-company-name'>Company Name</h4>
-              <h5 className='experience-duration m0'>
-                Month YYYY - Month YYYY
-              </h5>
-              <p className='experience-description text-align-justify'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+              <h3 className='experience-designation m0 m-blue text-red-600  font-Poppins'>
+                Convenient Estate Planning
+              </h3>
+              <h4 className='experience-company-name'>Streamlined Process</h4>
+              <br />
+
+              <p className='experience-description text-align-justify text-[#00000099] leading-6 text-sm'>
+                Our digital will solution offers convenient estate planning,
+                allowing you to create and manage your will with ease. With a
+                streamlined process, you can efficiently document your wishes
+                and ensure a smooth transfer of assets to your loved ones.
               </p>
             </div>
           </div>
@@ -224,17 +250,22 @@ function crm() {
               <div className='timeline-logo'>
                 <img src='https://img.freepik.com/premium-vector/flat-3d-isometric-nda-document-with-shield-lock-digital-tablet-non-disclosure-agreement-contract-concept_47328-1832.jpg?w=740' />
               </div>
-              <h3 className='experience-designation m0 m-blue'>Designation</h3>
-              <h4 className='experience-company-name'>Company Name</h4>
-              <h5 className='experience-duration m0'>
-                Month YYYY - Month YYYY
-              </h5>
+              <h3 className='experience-designation m0 m-blue text-red-600  font-Poppins'>
+                Secure Data Protection
+              </h3>
+              <h4 className='experience-company-name'>Advanced Encryptiont</h4>
+              <br />
 
-              <p className='experience-description text-align-justify'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+              <p className='experience-description text-align-justify text-[#00000099] leading-6 text-sm'>
+                At Digital Will Solutions, we prioritize the security of your
+                sensitive information. Our platform employs advanced encryption
+                techniques to ensure that your data is protected at all times.
+                With our secure data protection measures, you can have peace of
+                mind knowing that your digital will is safeguarded from
+                unauthorized access and breaches. We understand the importance
+                of privacy and confidentiality when it comes to estate planning,
+                and we are committed to maintaining the highest standards of
+                data security.
               </p>
             </div>
           </div>
@@ -251,8 +282,8 @@ function crm() {
 
       <section className='crma md:h-[850px] md:p-10 h-[1150px]  bg-black p5'>
         <h2 className='text-center  text-white text-2xl leading-10 z-10 relative'>
-          CRM help you create and automate a <br />
-          <span className='font-bold '>better customer journey</span>
+          Simplify Estate Planning with our
+          <span className='font-bold '> Digital Will Solution</span>
         </h2>
         <div
           className='left flex  justify-center items-center md:mx-auto -mt-12'
@@ -266,13 +297,15 @@ function crm() {
         </div>
         <div className='inner md:flex items-center gap-10 max-w-6xl mx-auto mb-5 md:mb-0'>
           <div className='articleRight md:w-1/2 text-white leading-8 md:mt-10'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-            culpa, minus quasi ea similique ipsa illo alias obcaecati, fugiat
-            optio sed! Quos ex inventore nulla voluptatum dolorum, deleniti
-            tempora similique cum autem ducimus assumenda natus sunt facilis
-            voluptatibus atque temporibus eos fugiat aperiam corporis ipsa.
-            Excepturi incidunt magnam sit sunt tempora autem aut, laboriosam vel
-            error iste esse ipsa omnis quo! Eius corporis ex error aliquid
+            Our digital will solution simplifies the process of estate planning,
+            empowering you to protect your legacy and ensure your final wishes
+            are honored. With our user-friendly platform, you can conveniently
+            create, update, and manage your digital will with ease. From
+            designating beneficiaries to outlining asset distribution, our
+            solution provides a comprehensive framework to handle all aspects of
+            your estate plan. By leveraging technology, we offer a secure and
+            efficient way to organize your important documents and ensure their
+            accessibility when needed.
           </div>
           <div className='image relative md:w-1/2'>
             <img src='images/crm.jpg' alt='' />
@@ -286,7 +319,7 @@ function crm() {
       </section>
 
       {/**customer says section */}
-      <section className='bg-gray-100 min-h-[600px] relative'>
+      <section className=' min-h-[600px] relative'>
         <div className=' mx-auto container max-w-6xl pt-24'>
           <div className='customerbox md:flex'>
             <div className='max-w-6xl mx-auto '>
@@ -297,48 +330,71 @@ function crm() {
                 </span>
               </h2>
 
-              <div className='main grid md:grid-cols-2 m-10 gap-20 grid-cols-1'>
+              <div className='main grid md:grid-cols-2 m-10 gap-10 grid-cols-1'>
                 <div className='div1 flex flex-col items-center gap-2'>
-                  <BsBuildingGear className='text-red-600' size={80} />
-                  <h3 className='text-red-600 font-bold'>
-                    Upgrade Your Decision Making
-                  </h3>
-                  <p>
-                    Centralize your data for a single source of reporting
-                    insights
-                  </p>
-                </div>
-                <div className='div1 flex flex-col items-center gap-2'>
-                  <BsBoxes size={80} className='text-red-600' />
-                  <h3 className='text-red-600 font-bold'>
-                    Upgrade Your Decision Making
-                  </h3>
-                  <p>
-                    Centralize your data for a single source of reporting
-                    insights
-                  </p>
-                </div>
-                <div className='div1 flex flex-col items-center gap-2'>
-                  <BsCardChecklist className='text-red-600' size={80} />
-                  <h3 className='text-red-600 font-bold'>
-                    Upgrade Your Decision Making
-                  </h3>
-                  <p>
-                    Centralize your data for a single source of reporting
-                    insights
-                  </p>
-                </div>
-                <div className='div1 flex flex-col items-center gap-2'>
-                  <BsLayoutTextSidebarReverse
-                    className='text-red-600'
-                    size={80}
+                  <img
+                    src='gif/wired-flat-21-avatar.gif'
+                    alt=''
+                    className='h-28 w-28'
                   />
-                  <h3 className='text-red-600 font-bold'>
-                    Upgrade Your Decision Making
+                  <h3 className='text-red-600 font-bold  text-[#00000099] leading-6 '>
+                    Easy and Intuitive
                   </h3>
-                  <p>
-                    Centralize your data for a single source of reporting
-                    insights
+                  <p className='text-sm text-[#00000099]'>
+                    Our digital will platform simplifies the process of creating
+                    and managing your will. With user-friendly interfaces and
+                    step-by-step guidance, you can easily draft, update, and
+                    organize your will without the need for legal expertise.
+                  </p>
+                </div>
+                <div className='div1 flex flex-col items-center gap-2'>
+                  <img
+                    src='gif/wired-flat-500-fingerprint-security.gif'
+                    alt=''
+                    className='h-28 w-28'
+                  />
+                  <h3 className='text-red-600 font-bold   leading-6 '>
+                    Secure and Encrypted:
+                  </h3>
+                  <p className='text-sm text-[#00000099]'>
+                    We understand the importance of privacy and security when it
+                    comes to your personal and sensitive information. Our
+                    digital will solution utilizes advanced encryption
+                    techniques to protect your data.
+                  </p>
+                </div>
+                <div className='div1 flex flex-col items-center gap-2 '>
+                  <img
+                    src='gif/wired-flat-177-envelope-mail-send.gif'
+                    alt=''
+                    className='h-28 w-28'
+                  />
+                  <h3 className='text-red-600 font-bold  text-[#00000099] leading-6 '>
+                    Accessibility and Convenience
+                  </h3>
+                  <p className='text-sm text-[#00000099]'>
+                    Access your digital will anytime, anywhere. Our cloud-based
+                    platform allows you to securely store and access your will
+                    from any device with an internet connection. No more
+                    worrying about physical copies or the risk of misplacing
+                    important documents.
+                  </p>
+                </div>
+                <div className='div1 flex flex-col items-center gap-2'>
+                  <img
+                    src='gif/wired-flat-1736-smart-tv-layout-interface.gif'
+                    alt=''
+                    className='h-28 w-28'
+                  />
+                  <h3 className='text-red-600 font-bold   leading-6 '>
+                    Digital Asset Management
+                  </h3>
+                  <p className='text-sm text-[#00000099]'>
+                    In the digital age, it's crucial to consider your digital
+                    assets alongside physical ones. Our platform allows you to
+                    include instructions and details about your digital assets,
+                    ensuring they are accounted for and properly managed after
+                    your passing.
                   </p>
                 </div>
               </div>
