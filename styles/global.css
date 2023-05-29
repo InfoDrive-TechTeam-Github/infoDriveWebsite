@@ -2300,7 +2300,8 @@ img.btnLdr {
     left: 5%;
   }
   .timeline-logo {
-    height: 4rem !important;
-    width: 4rem !important;
+    height: 3rem !important;
+    width: 3rem !important;
+    @apply mt-7 pr-1;
   }
 }

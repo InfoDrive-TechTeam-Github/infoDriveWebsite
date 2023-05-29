@@ -97,56 +97,58 @@ function crm() {
           </Grid>
         </Box>
       </div>
-      <section className={`sectionBox applicationDevelopmentBox bg-gray-100`}>
+      <section
+        className={`sectionBox applicationDevelopmentBox bg-gray-100 p5`}
+      >
         <Typography
           className='w100 red'
           gutterBottom
           variant='h1'
           component='h1'
         >
-          Welcome to driven.io CRM and ATS
+          Welcome to Dryvn.io CRM and ATS
         </Typography>
         <Typography className='w100' gutterBottom variant='h2' component='div'>
           Revolutionize Your Business with Seamless CRM and ATS
         </Typography>
         <Typography className='w100' gutterBottom variant='h5' component='div'>
-          InfoDrive Solutions proudly presents Driven.io, our flagship product
+          InfoDrive Solutions proudly presents Dryvn.io, our flagship product
           that combines the power of Customer Relationship Management (CRM) and
           Applicant Tracking System (ATS). Designed to cater to businesses of
-          all sizes, Driven.io CRM and ATS empower you to streamline your sales
+          all sizes, Dryvn.io CRM and ATS empower you to streamline your sales
           processes, enhance customer interactions, and revolutionize your
           recruitment procedures.
           <br />
           <br />
-          With Driven.io, you'll experience a seamless and user-friendly
+          With Dryvn.io, you'll experience a seamless and user-friendly
           interface that simplifies your CRM and ATS experience. Our intuitive
           dashboard allows you to effortlessly navigate through modules, access
           crucial information, and efficiently manage both customer
           relationships and applicant data. Stay organized and never miss out on
-          any opportunity as Driven.io CRM and ATS enable you to assign tasks,
+          any opportunity as Dryvn.io CRM and ATS enable you to assign tasks,
           schedule activities, and set reminders, ensuring that you and your
           team stay on top of important deadlines, follow-ups, and candidate
           engagements.
           <br />
           <br />
           We understand that every business is unique, and customization is key.
-          With Driven.io CRM and ATS, you have the flexibility to tailor the
+          With Dryvn.io CRM and ATS, you have the flexibility to tailor the
           system to match your specific requirements. Customize fields,
           workflows, and modules to align with your business processes and adapt
-          as your organization evolves. Driven.io CRM and ATS scale effortlessly
+          as your organization evolves. Dryvn.io CRM and ATS scale effortlessly
           to accommodate your expanding needs, ensuring seamless integration and
           efficient management of both customer relationships and applicant
           data.
         </Typography>
       </section>
 
-      <section className='wave  md:h-[670px] md:flex justify-center items-center'>
+      <section className='wave  md:h-[670px] md:flex justify-center items-center '>
         <div className='container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 gap-5'>
           <div className='left md:w-1/3 flex flex-col gap-5 '>
             <h2 className='text-red-600 md:text-xl font-bold text-lg'>
               Streamline Your CRM and ATS
               <br />
-              <span className='text-black'>Journey with Driven.io</span>
+              <span className='text-black'>Journey with Dryvn.io</span>
             </h2>
             <p>Effectively manage and nurture customer relationships</p>
             <button
@@ -163,7 +165,7 @@ function crm() {
                 style={{ textDecoration: 'none', color: 'white' }}
                 // href='http://dev-ats.web3dapps.world/dashboard'
               >
-                Click to Open Driven.io
+                Click to Open Dryvn.io
               </Link>
             </button>
 
@@ -186,11 +188,11 @@ function crm() {
           <img
             src='https://img.freepik.com/free-vector/scrum-method-concept-illustration_114360-13019.jpg?w=900&t=st=1684734045~exp=1684734645~hmac=5941895e9f50258e40c86a350693eaf03bf27827042663ad42157722d712aa6c'
             alt=''
-            className='object-cover  h-[300px]   w-1/2 '
+            className='md:object-cover  h-[300px]   md:w-1/2 object-contain '
           />
         </div>
       </section>
-      <div className='bg-gray-100 h-auto polygon text-white'>
+      <div className='bg-gray-100 h-auto polygon text-white '>
         <section className='hero  text-black  max-w-6xl mx-auto'>
           <div
             className='md:flex justify-between items-center'
@@ -277,7 +279,7 @@ function crm() {
                         details and communication history to application status
                         and performance metrics, our system provides a
                         comprehensive view of your business, enabling you to
-                        make data-driven decisions and stay organized.
+                        make data-Dryvn decisions and stay organized.
                       </p>
                     </div>
                   </div>
@@ -288,9 +290,9 @@ function crm() {
         </section>
       </div>
 
-      <section className='crma md:h-[800px] md:p-10 h-[1150px] p-3'>
+      <section className='crma md:h-[800px] md:p-10 h-[1150px] p-3 p5'>
         <h2 className='text-center mb-10 text-red-600 text-2xl leading-10 font-semibold'>
-          Driven.io ATS and CRM help you create and automate a <br />
+          Dryvn.io ATS and CRM help you create and automate a <br />
           <span className='font-bold text-[#0b2653]'>
             better customer journey
           </span>
@@ -306,7 +308,7 @@ function crm() {
           />
         </div>
         <div className='inner md:flex items-center gap-10 max-w-6xl mx-auto mb-5 md:mb-0'>
-          <div className='articleRight md:w-1/2 leading-8 md:mt-10  '>
+          <div className='articleRight md:w-1/2 leading-8 md:mt-10  text-sm '>
             Combination of a CRM and an ATS empowers you to create and automate
             a better customer journey. By harnessing the capabilities of these
             systems, you can effectively manage customer interactions,
@@ -328,7 +330,7 @@ function crm() {
       </section>
 
       {/**customer says section */}
-      <section className='bg-gray-100 min-h-[600px] relative'>
+      <section className='bg-gray-100 min-h-[600px] relative p5'>
         <div className=' mx-auto container max-w-6xl pt-24'>
           <div className='customerbox md:flex'>
             <div className='max-w-6xl mx-auto '>
@@ -357,7 +359,7 @@ function crm() {
                     Scalable and customizable
                   </h3>
                   <p className='text-[#00000099] text-sm'>
-                    driven.io CRM and ATS can be tailored to meet the unique
+                    Dryvn.io CRM and ATS can be tailored to meet the unique
                     needs of your business, adapting as your organization grows
                     and evolves
                   </p>
@@ -380,9 +382,9 @@ function crm() {
                     Integration capabilities
                   </h3>
                   <p className='text-[#00000099] text-sm'>
-                    Seamlessly integrate driven.io CRM and ATS with your
-                    existing systems and tools, maximizing productivity and
-                    efficiency across your organization.
+                    Seamlessly integrate Dryvn.io CRM and ATS with your existing
+                    systems and tools, maximizing productivity and efficiency
+                    across your organization.
                   </p>
                 </div>
               </div>

@@ -427,6 +427,11 @@ function DrawerAppBar(props) {
             </List>
           </Menu>
         </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton onClick={recordButtonPositionOP} disableElevation>
+            Our Products <KeyboardArrowDownIcon />
+          </ListItemButton>
+        </ListItem>
 
         <ListItem disablePadding>
           <ListItemButton component='a' to='/blog.html'>

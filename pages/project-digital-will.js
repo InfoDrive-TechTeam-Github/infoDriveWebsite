@@ -107,8 +107,7 @@ function crm() {
           variant='h1'
           component='h1'
         >
-          Streamline Your Billing Process with Our Cutting-Edge Digital Bill
-          Solution
+          Our Cutting-Edge Digital Will Solution
         </Typography>
         <Typography className='w100' gutterBottom variant='h2' component='div'>
           Welcome to the future of estate planning
@@ -156,14 +155,14 @@ function crm() {
       <section className='blob  md:h-[670px] md:flex justify-center items-center'>
         <div className='container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 gap-5'>
           <div className='left  flex flex-col gap-5 mt-20 '>
-            <h2 className='text-red-600 md:text-3xl font-bold text-xl'>
+            <h2 className='text-red-600 md:text-2xl font-bold text-xl'>
               Empower Your Estate Planning with
-              <br />
-              <span className='text-black mt-5'>
+              <br className='md:block hidden' />
+              <span className='text-black mt-5 md:ml-0 ml-1'>
                 the Unified Stack for Digital Wills
               </span>
             </h2>
-            <p>
+            <p className='text-sm text-[#00000099]'>
               Simplify Your Estate Planning Journey with the No-Code Digital
               Will Platform for All Your Needs
             </p>
@@ -175,6 +174,7 @@ function crm() {
                 <Link
                   className=' text-white font-semibold text-sm md:text-base'
                   style={{ textDecoration: 'none', color: 'white' }}
+                  href='http://digital-will.web3dapps.world/dashboard'
                 >
                   Open Digital Bill
                 </Link>
@@ -280,7 +280,7 @@ function crm() {
         </div>
       </section>
 
-      <section className='crma md:h-[850px] md:p-10 h-[1150px]  bg-black p5'>
+      <section className='crma md:h-[850px] md:p-10 h-[1250px]  bg-black p5'>
         <h2 className='text-center  text-white text-2xl leading-10 z-10 relative'>
           Simplify Estate Planning with our
           <span className='font-bold '> Digital Will Solution</span>
@@ -308,11 +308,11 @@ function crm() {
             accessibility when needed.
           </div>
           <div className='image relative md:w-1/2'>
-            <img src='images/crm.jpg' alt='' />
+            <img src='images/digitalWill.png' alt='' />
             <img
-              src='images/crmtable.jpg'
+              src='images/will.png'
               alt=''
-              className='absolute md:top-32 md:left-16 top-20 left:10'
+              className='absolute md:top-32 md:left-16 top-10 left:10'
             />
           </div>
         </div>
