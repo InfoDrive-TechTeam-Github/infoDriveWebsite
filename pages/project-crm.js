@@ -29,6 +29,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import Head from 'next/head';
 import LeadForm from 'components/leadForm';
 import { FcApproval } from 'react-icons/fc';
+import { motion, useInView } from 'framer-motion';
 import {
   BsBoxes,
   BsBuildingGear,
@@ -37,10 +38,23 @@ import {
 } from 'react-icons/bs';
 
 function crm() {
+  // const [inView, setInView] = React.useState(false);
+  // const ref = React.useRef(null);
+
+  // useInView(ref, () => setInView(true));
   return (
     <>
+      <Head>
+        <link rel='icon' href='/favicon.png' />
+      </Head>
       <Header />
-      <div className='sliderBox'>
+      <motion.div
+        className='sliderBox'
+        variants={heroVarient}
+        initial='hidden'
+        animate='visible'
+        transition={{ delay: 0.5, duration: 3 }}
+      >
         <img
           style={{ width: '100%' }}
           src='https://img.freepik.com/free-photo/smiling-asian-businesswoman-showing-tablet-her-manager-during-meeting-office_74952-2849.jpg?w=1060&t=st=1684605611~exp=1684606211~hmac=4cdbebfbc636394831102118202403204b33268d25215f17033058b12d0e2a0b'
@@ -96,9 +110,14 @@ function crm() {
             </nav>
           </Grid>
         </Box>
-      </div>
-      <section
+      </motion.div>
+      <motion.section
         className={`sectionBox applicationDevelopmentBox bg-gray-100 p5`}
+        initial={{ scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+        // ref={ref}
       >
         <Typography
           className='w100 red'
@@ -140,7 +159,7 @@ function crm() {
           efficient management of both customer relationships and applicant
           data.
         </Typography>
-      </section>
+      </motion.section>
 
       <section className='wave  md:h-[670px] md:flex justify-center items-center '>
         <div className='container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 gap-5'>
@@ -150,8 +169,10 @@ function crm() {
               <br />
               <span className='text-black'>Journey with Dryvn.io</span>
             </h2>
-            <p>Effectively manage and nurture customer relationships</p>
-            <button
+            <p className='text-sm md:whitespace-nowrap'>
+              Effectively manage and nurture customer relationships
+            </p>
+            <motion.button
               className='bg-red-600 rounded-md p-5 shadow-md'
               onClick={() =>
                 window.open(
@@ -159,6 +180,15 @@ function crm() {
                   '_blank'
                 )
               }
+              whileHover={{
+                scale: 1.1,
+                textShadow: '0px 0px 8px rgb(255,255,255)',
+                boxShadow: '0px 0px 8px rgb(255,255,255)',
+
+                transition: {
+                  duration: 0.5,
+                },
+              }}
             >
               <Link
                 className=' text-white font-semibold'
@@ -167,7 +197,7 @@ function crm() {
               >
                 Click to Open Dryvn.io
               </Link>
-            </button>
+            </motion.button>
 
             <div className='trueDiv mt-10 flex flex-col gap-5'>
               <div className='flex gap-2 items-center'>
@@ -184,12 +214,26 @@ function crm() {
               </div>
             </div>
           </div>
+          <motion.div
+            initial={{ rotate: 0 }}
+            animate={{
+              x: [0, 50, 0], // Animation values for the x-axis
 
-          <img
-            src='https://img.freepik.com/free-vector/scrum-method-concept-illustration_114360-13019.jpg?w=900&t=st=1684734045~exp=1684734645~hmac=5941895e9f50258e40c86a350693eaf03bf27827042663ad42157722d712aa6c'
-            alt=''
-            className='md:object-cover  h-[300px]   md:w-1/2 object-contain '
-          />
+              transition: {
+                delay: 1,
+                repeat: Infinity, // Repeat the animation indefinitely
+                repeatType: 'reverse', // Reverse the animation on each repeat
+                duration: 5, // Duration of each animation cycle
+              },
+            }}
+            className='h-[300px]   md:w-1/2 '
+          >
+            <img
+              src='https://img.freepik.com/free-vector/scrum-method-concept-illustration_114360-13019.jpg?w=900&t=st=1684734045~exp=1684734645~hmac=5941895e9f50258e40c86a350693eaf03bf27827042663ad42157722d712aa6c'
+              alt=''
+              className='md:object-cover  h-[300px]   md:w-full object-contain rounded-full'
+            />
+          </motion.div>
         </div>
       </section>
       <div className='bg-gray-100 h-auto polygon text-white '>
@@ -202,10 +246,20 @@ function crm() {
               <div className='relative container mx-auto px-6 flex flex-col space-y-8 '>
                 <div className='absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-17 md:mx-auto md:right-0 md:left-0'></div>
                 <div className='relative z-10'>
-                  <img
+                  <motion.img
                     src='https://img.freepik.com/free-vector/gradient-crm-illustration_23-2149379177.jpg?w=740&t=st=1684603989~exp=1684604589~hmac=fe21bbcfd8ab34859ee3c8db1ce74d5f56954b6ce0155e80ccfa729f47e57f82'
                     alt=''
                     className='timeline-img1'
+                    animate={{
+                      // x: [0, 10, 0], // Animation values for the x-axis
+                      rotate: -360,
+                      transition: {
+                        delay: 1,
+                        repeat: Infinity, // Repeat the animation indefinitely
+                        repeatType: 'loop', // Reverse the animation on each repeat
+                        duration: 5, // Duration of each animation cycle
+                      },
+                    }}
                   />
                   <div className='timeline-container1'>
                     <div className='timeline-pointer' aria-hidden='true'></div>
@@ -228,10 +282,20 @@ function crm() {
                   </div>
                 </div>
                 <div className='relative z-10'>
-                  <img
+                  <motion.img
                     src='https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041849.jpg?w=996&t=st=1684604186~exp=1684604786~hmac=69b4babd71ec1f29b482eb47ca5ff214259191dea09330dfe60b525f79366243'
                     alt=''
                     className='timeline-img1'
+                    animate={{
+                      // x: [0, 10, 0], // Animation values for the x-axis
+                      rotate: 360,
+                      transition: {
+                        delay: 1,
+                        repeat: Infinity, // Repeat the animation indefinitely
+                        repeatType: 'loop', // Reverse the animation on each repeat
+                        duration: 5, // Duration of each animation cycle
+                      },
+                    }}
                   />
                   <div className='timeline-container1 timeline-container-left1'>
                     <div
@@ -259,10 +323,20 @@ function crm() {
                   {/**chatbot end*/}
                 </div>
                 <div className='relative z-10 '>
-                  <img
+                  <motion.img
                     src='https://img.freepik.com/free-photo/customer-relationship-management-concept_23-2150038409.jpg?w=996&t=st=1684755663~exp=1684756263~hmac=d0994d271fdf751c1a3d997a803546afc0706a9cf2a150463698880843ae21b0'
                     alt=''
                     className='timeline-img1'
+                    animate={{
+                      // x: [0, 10, 0], // Animation values for the x-axis
+                      rotate: -360,
+                      transition: {
+                        delay: 1,
+                        repeat: Infinity, // Repeat the animation indefinitely
+                        repeatType: 'loop', // Reverse the animation on each repeat
+                        duration: 5, // Duration of each animation cycle
+                      },
+                    }}
                   />
                   <div className='timeline-container1'>
                     <div className='timeline-pointer' aria-hidden='true'></div>
@@ -291,12 +365,23 @@ function crm() {
       </div>
 
       <section className='crma md:h-[800px] md:p-10 h-[1150px] p-3 p5'>
-        <h2 className='text-center mb-10 text-red-600 text-2xl leading-10 font-semibold'>
+        <motion.h2
+          animate={{
+            x: [0, 20, 0],
+            transition: {
+              delay: 1,
+              repeat: Infinity, // Repeat the animation indefinitely
+              repeatType: 'loop', // Reverse the animation on each repeat
+              duration: 5, // Duration of each animation cycle
+            },
+          }}
+          className='text-center mb-10 text-red-600 text-2xl leading-10 font-semibold'
+        >
           Dryvn.io ATS and CRM help you create and automate a <br />
           <span className='font-bold text-[#0b2653]'>
             better customer journey
           </span>
-        </h2>
+        </motion.h2>
         <div
           className='left flex  justify-center items-center mx-auto'
           style={{ flex: 1 }}
@@ -411,5 +496,11 @@ function crm() {
     </>
   );
 }
+
+// framer motion properties
+const heroVarient = {
+  hidden: { opacity: 0, x: '-100vw' },
+  visible: { opacity: 1, x: 0, rotate: 360 },
+};
 
 export default crm;

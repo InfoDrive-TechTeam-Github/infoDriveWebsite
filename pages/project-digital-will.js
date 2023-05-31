@@ -36,12 +36,22 @@ import {
   BsLayoutTextSidebarReverse,
 } from 'react-icons/bs';
 import { FaPlane } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 function crm() {
   return (
     <>
+      <Head>
+        <link rel='icon' href='/favicon.png' />
+      </Head>
       <Header />
-      <div className='sliderBox'>
+      <motion.div
+        className='sliderBox'
+        variants={heroVarient}
+        initial='hidden'
+        animate='visible'
+        transition={{ delay: 0.5, duration: 3 }}
+      >
         <img
           style={{ width: '100%' }}
           src='https://img.freepik.com/free-photo/old-man-using-laptop_53876-96887.jpg?w=1060&t=st=1684819390~exp=1684819990~hmac=73f5baf4325d441d45d4f8af7b9d9b62117832d2212fec9ea8a23619473e9586'
@@ -97,7 +107,7 @@ function crm() {
             </nav>
           </Grid>
         </Box>
-      </div>
+      </motion.div>
       <section
         className={`sectionBox applicationDevelopmentBox bg-gray-100 p5`}
       >
@@ -155,21 +165,47 @@ function crm() {
       <section className='blob  md:h-[670px] md:flex justify-center items-center'>
         <div className='container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 gap-5'>
           <div className='left  flex flex-col gap-5 mt-20 '>
-            <h2 className='text-red-600 md:text-2xl font-bold text-xl'>
+            <motion.h2
+              className='text-red-600 md:text-2xl font-bold text-xl'
+              animate={{
+                x: [0, -20, 0], // Animation values for the x-axis
+
+                transition: {
+                  delay: 1,
+                  repeat: Infinity, // Repeat the animation indefinitely
+                  repeatType: 'reverse', // Reverse the animation on each repeat
+                  duration: 5, // Duration of each animation cycle
+                },
+              }}
+            >
               Empower Your Estate Planning with
               <br className='md:block hidden' />
               <span className='text-black mt-5 md:ml-0 ml-1'>
                 the Unified Stack for Digital Wills
               </span>
-            </h2>
+            </motion.h2>
             <p className='text-sm text-[#00000099]'>
               Simplify Your Estate Planning Journey with the No-Code Digital
               Will Platform for All Your Needs
             </p>
             <div className='md:flex gap-5 h-full md:mt-24 '>
-              <button
-                className='bg-red-600 rounded-md p-5 shadow-md w-1/2 h-16 ml-16 md:ml-0'
+              <motion.button
+                className='bg-red-600 rounded-md p-5 shadow-md w-full md:w-1/2 h-16 md:ml-0 mb-10'
                 style={{ flex: 2 }}
+                animate={{
+                  y: [0, 20, 0], // Animation values for the x-axis
+
+                  transition: {
+                    delay: 1,
+                    repeat: Infinity, // Repeat the animation indefinitely
+                    repeatType: 'reverse', // Reverse the animation on each repeat
+                    duration: 5, // Duration of each animation cycle
+                  },
+                }}
+                whileHover={{
+                  scale: 1,
+                  textShadow: '0 0 5px white',
+                }}
               >
                 <Link
                   className=' text-white font-semibold text-sm md:text-base'
@@ -178,13 +214,25 @@ function crm() {
                 >
                   Open Digital Bill
                 </Link>
-              </button>
+              </motion.button>
               <hr className='md:h-80 h-0 md:w-0 w-20 border-2 border-red-600 hidden md:block' />
               <div className='md:mt-16' style={{ flex: 3 }}>
                 <h2 className='text-red-600 font-bold text-xl mb-5 ml-16 md:ml-0'>
                   Digit Will offers you
                 </h2>
-                <p className='text-[#00000099] leading-6 text-sm'>
+                <motion.p
+                  animate={{
+                    x: [0, 20, 0], // Animation values for the x-axis
+
+                    transition: {
+                      delay: 1,
+                      repeat: Infinity, // Repeat the animation indefinitely
+                      repeatType: 'reverse', // Reverse the animation on each repeat
+                      duration: 5, // Duration of each animation cycle
+                    },
+                  }}
+                  className='text-[#00000099] leading-6 text-sm'
+                >
                   Digit Will offers a user-friendly and secure platform for
                   simplified estate planning. With advanced encryption and
                   strict access controls, your digital will remains confidential
@@ -195,7 +243,7 @@ function crm() {
                   knowing that your loved ones will be taken care of according
                   to your instructions. Choose Digit Will for a seamless and
                   secure digital will experience.
-                </p>
+                </motion.p>
               </div>
             </div>
           </div>
@@ -408,5 +456,11 @@ function crm() {
     </>
   );
 }
+
+// framer motion properties
+const heroVarient = {
+  hidden: { opacity: 0, x: '-100vw' },
+  visible: { opacity: 1, x: 0, rotate: 360 },
+};
 
 export default crm;

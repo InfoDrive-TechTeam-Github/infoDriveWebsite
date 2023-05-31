@@ -36,7 +36,9 @@
   --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
   --PhoneInputCountryFlag-backgroundColor--loading: rgba(0, 0, 0, 0.1);
 }
-
+body {
+  overflow-x: hidden;
+}
 .PhoneInput {
   /* This is done to stretch the contents of this component. */
   display: flex;
