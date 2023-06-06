@@ -1286,8 +1286,21 @@ img {
 .logoMobile {
   display: none !important;
 }
-.whyDigital:nth-child(even) {
-  @apply bg-red-600 text-white;
+.message {
+  clip-path: polygon(
+    5% 0%,
+    95% 0%,
+    100% 5%,
+    100% 80%,
+    95% 85%,
+    85% 85%,
+    85% 100%,
+    70% 85%,
+    5% 85%,
+    0% 80%,
+    0% 5%
+  );
+  @apply px-5 py-3;
 }
 .connectUs {
   text-align: center;

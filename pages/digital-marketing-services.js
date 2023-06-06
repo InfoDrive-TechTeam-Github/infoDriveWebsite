@@ -36,6 +36,10 @@ import Stack from '@mui/material/Stack';
 import Head from 'next/head';
 
 import LeadForm from '../components/leadForm';
+import { AiOutlineFileSearch } from 'react-icons/ai';
+import { FaCcAmazonPay } from 'react-icons/fa';
+import { SlSocialInstagram } from 'react-icons/sl';
+import { MdWeb } from 'react-icons/md';
 export default function SalesForceDevelopment() {
   return (
     <div>
@@ -200,7 +204,7 @@ export default function SalesForceDevelopment() {
           measurable results. With our expertise and innovative approach, we
           help you stay ahead of the competition in the dynamic digital landscap
         </p>
-        <div className='content grid md:grid-cols-2 grid-cols-1 gap-10 mt-10  '>
+        <div className='content grid md:grid-cols-2 grid-cols-1 gap-10 mt-10   '>
           <article className='flex flex-col gap-5 shadow-lg rounded-md p-10 bg-red-600'>
             <div className='icon'></div>
             <h3 className=' text-white font-bold text-xl'>
@@ -263,6 +267,75 @@ export default function SalesForceDevelopment() {
           </article>{' '}
         </div>
       </section>
+
+      <section className='sectionBox p5 md:-mt-20 mt-10'>
+        <h3 className='font-bold text-xl text-[#0b2653]'>
+          Customized Strategies for Optimal Results
+        </h3>
+        <div className='container grid md:grid-cols-2 grid-cols-1 gap-10 mt-40 gap-y-40'>
+          <div className=' relative '>
+            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
+              <AiOutlineFileSearch size={78} />
+            </div>
+            <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6'>
+              <h2 className='text-[#0b2653] font-bold mb-5'>
+                Search Engine Optimization
+              </h2>
+              Our SEO experts optimize your website to improve its visibility on
+              search engines, helping you rank higher in search results and
+              drive organic traffic to your website. We focus on both on-page
+              and off-page optimization techniques, keyword research, content
+              optimization, and technical SEO to enhance your online presence.
+            </article>
+          </div>
+          <div className=' relative '>
+            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
+              <FaCcAmazonPay size={78} />
+            </div>
+            <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6'>
+              <h2 className='text-[#0b2653] font-bold mb-5'>
+                Pay-Per-Click (PPC) Advertising
+              </h2>
+              Through targeted PPC campaigns, we place your ads in front of your
+              potential customers at the right time and on the right platforms.
+              Our PPC specialists create compelling ad copies, conduct keyword
+              research, optimize landing pages, and continuously monitor and
+              refine your campaigns to maximize conversions while minimizing
+              costs.
+            </article>
+          </div>
+          <div className=' relative '>
+            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
+              <SlSocialInstagram size={72} />
+            </div>
+            <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6'>
+              <h2 className='text-[#0b2653] font-bold mb-5'>
+                Social Media Marketing
+              </h2>
+              We harness the power of social media platforms to connect you with
+              your target audience, build brand awareness, and foster customer
+              engagement. Our social media strategists develop data-driven
+              campaigns across platforms such as Facebook, Instagram, Twitter,
+              LinkedIn, and YouTube to enhance your brand's online presence.
+            </article>
+          </div>
+          <div className=' relative '>
+            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
+              <MdWeb size={82} />
+            </div>
+            <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6 h-full'>
+              <h2 className='text-[#0b2653] font-bold mb-5'>
+                Web Design and Development
+              </h2>
+              We understand that a well-designed and user-friendly website is
+              crucial for online success. Our web development team crafts
+              visually appealing, responsive, and SEO-friendly websites that
+              provide seamless user experiences across desktop and mobile
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section
         className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p10`}
       >
