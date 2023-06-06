@@ -36,7 +36,8 @@ import {
   BsCardChecklist,
   BsLayoutTextSidebarReverse,
 } from 'react-icons/bs';
-
+import Lottie from 'lottie-react';
+import crmanimation from '../components/crm.json';
 function crm() {
   // const [inView, setInView] = React.useState(false);
   // const ref = React.useRef(null);
@@ -161,8 +162,8 @@ function crm() {
         </Typography>
       </motion.section>
 
-      <section className='wave  md:h-[670px] md:flex justify-center items-center '>
-        <div className='container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 gap-5'>
+      <section className='wave  md:h-screen md:flex justify-center items-center '>
+        <div className='container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 justify-between '>
           <div className='left md:w-1/3 flex flex-col gap-5 '>
             <h2 className='text-red-600 md:text-xl font-bold text-lg'>
               Streamline Your CRM and ATS
@@ -180,13 +181,15 @@ function crm() {
                   '_blank'
                 )
               }
-              whileHover={{
+              animate={{
                 scale: 1.1,
                 textShadow: '0px 0px 8px rgb(255,255,255)',
                 boxShadow: '0px 0px 8px rgb(255,255,255)',
 
                 transition: {
-                  duration: 0.5,
+                  duration: 0.8,
+                  repeat: Infinity,
+                  repeatType: 'reverse',
                 },
               }}
             >
@@ -215,24 +218,18 @@ function crm() {
             </div>
           </div>
           <motion.div
-            initial={{ rotate: 0 }}
+            className='h-[400px]  mr-36 w-full '
             animate={{
-              x: [0, 50, 0], // Animation values for the x-axis
+              y: 20,
 
               transition: {
-                delay: 1,
-                repeat: Infinity, // Repeat the animation indefinitely
-                repeatType: 'reverse', // Reverse the animation on each repeat
-                duration: 5, // Duration of each animation cycle
+                duration: 2,
+                repeat: Infinity,
+                repeatType: 'reverse',
               },
             }}
-            className='h-[300px]   md:w-1/2 '
           >
-            <img
-              src='https://img.freepik.com/free-vector/scrum-method-concept-illustration_114360-13019.jpg?w=900&t=st=1684734045~exp=1684734645~hmac=5941895e9f50258e40c86a350693eaf03bf27827042663ad42157722d712aa6c'
-              alt=''
-              className='md:object-cover  h-[300px]   md:w-full object-contain rounded-full'
-            />
+            <Lottie animationData={crmanimation} className='h-full w-full' />
           </motion.div>
         </div>
       </section>

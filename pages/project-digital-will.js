@@ -190,21 +190,18 @@ function crm() {
             </p>
             <div className='md:flex gap-5 h-full md:mt-24 '>
               <motion.button
-                className='bg-red-600 rounded-md p-5 shadow-md w-full md:w-1/2 h-16 md:ml-0 mb-10'
+                className='bg-red-600 rounded-md p-5 shadow-md w-full md:w-1/3 h-16 md:ml-0 mb-10 md:mr-5'
                 style={{ flex: 2 }}
                 animate={{
-                  y: [0, 20, 0], // Animation values for the x-axis
+                  scale: 1.1,
+                  textShadow: '0px 0px 8px rgb(255,255,255)',
+                  boxShadow: '0px 0px 8px rgb(255,255,255)',
 
                   transition: {
-                    delay: 1,
-                    repeat: Infinity, // Repeat the animation indefinitely
-                    repeatType: 'reverse', // Reverse the animation on each repeat
-                    duration: 5, // Duration of each animation cycle
+                    duration: 0.8,
+                    repeat: Infinity,
+                    repeatType: 'reverse',
                   },
-                }}
-                whileHover={{
-                  scale: 1,
-                  textShadow: '0 0 5px white',
                 }}
               >
                 <Link

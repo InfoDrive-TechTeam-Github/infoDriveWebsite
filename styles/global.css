@@ -1279,9 +1279,15 @@ img {
   font-weight: 400;
   font-family: Poppins;
 }
+.Poppins {
+  font-family: Poppins;
+}
 
 .logoMobile {
   display: none !important;
+}
+.whyDigital:nth-child(even) {
+  @apply bg-red-600 text-white;
 }
 .connectUs {
   text-align: center;

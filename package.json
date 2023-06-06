@@ -28,6 +28,7 @@
     "framer-motion": "^10.12.8",
     "gray-matter": "^4.0.3",
     "html-react-parser": "^3.0.9",
+    "lottie-react": "^2.4.0",
     "net": "^1.0.2",
     "next": "latest",
     "nodemailer": "^6.9.1",
