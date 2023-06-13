@@ -145,7 +145,7 @@ function Development() {
           </Grid>
         </Box>
       </div>
-      <section className='sectionBox'>
+      <section className='sectionBox p5'>
         <Typography
           className='w100 red'
           gutterBottom
@@ -186,7 +186,7 @@ function Development() {
         </Typography>
       </section>
 
-      <section className={`sectionBox androidDevelopmentBox`}>
+      <section className={`sectionBox androidDevelopmentBox p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='androidDevelopment'>
             <Grid item xs={10} className='androidDevelopmentLeft'>
@@ -254,7 +254,7 @@ function Development() {
           </Grid>
         </Box>
       </section>
-      <section className={`sectionBox whyUsBox pt0 pb0`}>
+      <section className={`sectionBox whyUsBox pt0 pb0 p5`}>
         <Typography gutterBottom variant='h2' className='mb0' component='div'>
           Key benefits of Custom software development services:
         </Typography>
@@ -326,7 +326,7 @@ function Development() {
           </Grid>
         </Box>
       </section>
-      <section className={`sectionBox whyUsBox serviceOffer pb0`}>
+      <section className={`sectionBox whyUsBox serviceOffer pb0 p5`}>
         <Typography gutterBottom variant='h2' component='div'>
           Custom Software Development Services We Offer:
         </Typography>
@@ -424,7 +424,7 @@ function Development() {
           </Grid>
         </Box>
       </section>
-      <section className={`sectionBox connectUs backDrop mb0`}>
+      <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
           variant='h3'

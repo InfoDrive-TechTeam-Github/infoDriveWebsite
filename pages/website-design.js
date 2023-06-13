@@ -116,7 +116,7 @@ export default function WebMobileApp() {
           </Grid>
         </Box>
       </div>
-      <section className={`sectionBox introSectionBox`}>
+      <section className={`sectionBox introSectionBox p5`}>
         <Typography
           className='w100 red'
           gutterBottom
@@ -156,11 +156,11 @@ export default function WebMobileApp() {
         </Typography>
       </section>
       {/**main body start from here grid */}
-      <h2 className='Poppins container mx-auto font-bold text-xl text-blue-950 mb-12 text-center'>
+      <h2 className='Poppins container mx-auto font-bold text-xl text-blue-950 mb-12 text-center p5'>
         In addition to website development, we also offer a range of related
         services, including:
       </h2>
-      <main className='grid max-w-6xl md:mx-auto md:grid-cols-3 content-start items-center md:gap-x-5 md:gap-y-0 gap-y-5 grid-cols-1'>
+      <main className='grid max-w-6xl md:mx-auto md:grid-cols-3 content-start items-center md:gap-x-5 md:gap-y-0 gap-y-5 grid-cols-1 p5'>
         <div className='cart'>
           <h2 className='text-pink-700 font-semibold'>Website design</h2>
           <p className='text-gray-500 Poppins text-sm'>
@@ -228,7 +228,7 @@ export default function WebMobileApp() {
           <h2 className='text-pink-700 font-semibold'>
             Maintenance and support
           </h2>
-          <p className='text-gray-500 Poppins text-sm'>
+          <p className='text-gray-500 Poppins text-sm '>
             After your website is launched, we can provide ongoing maintenance
             and support to ensure that it stays up-to-date and functioning
             smoothly. This can include updates to content, design, and
@@ -237,7 +237,7 @@ export default function WebMobileApp() {
         </div>
       </main>
 
-      <section className='boxshadowInset   mx-auto max-w-6xl  mt-10 p-3 rounded-xl text-gray-500 mb-10'>
+      <section className='boxshadowInset   mx-auto max-w-6xl  mt-10 p-3 rounded-xl text-gray-500 mb-10 mx-5'>
         <p className=''>
           We pride ourselves on delivering high-quality websites that exceed our
           clients' expectations. Our team is committed to delivering top-notch
@@ -250,7 +250,7 @@ export default function WebMobileApp() {
         </p>
       </section>
 
-      <section className={`sectionBox  pb0 mt-0 mb-10`}>
+      <section className={`sectionBox  pb0 mt-0 mb-10 p5`}>
         <Typography gutterBottom variant='h2' className='' component='h2'>
           Why Choose InfoDrive Solutions for Website Development?
         </Typography>
@@ -299,7 +299,7 @@ export default function WebMobileApp() {
           </article>
         </div>
       </section>
-      <section className={`sectionBox connectUs backDrop `}>
+      <section className={`sectionBox connectUs backDrop p5`}>
         <Typography
           gutterBottom
           variant='h3'

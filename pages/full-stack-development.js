@@ -142,7 +142,7 @@ export default function FullstackDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox applicationDevelopmentBox`}>
+      <section className={`sectionBox applicationDevelopmentBox p5`}>
         <Typography
           className='w100 red'
           gutterBottom
@@ -201,7 +201,7 @@ export default function FullstackDevelopment() {
         <hr className='w100' style={{ marginLeft: 0 }} />
       </section>
 
-      <section className={`sectionBox whyUsBox pb0 fullstackGame w100 ml0`}>
+      <section className={`sectionBox whyUsBox pb0 fullstackGame w100 ml0 p5`}>
         <Typography gutterBottom variant='h2' component='div' className='w100'>
           Stay ahead in the game with our full stack
         </Typography>
@@ -334,7 +334,7 @@ export default function FullstackDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox pb0`}>
+      <section className={`sectionBox whyUsBox pb0 p5`}>
         <Typography gutterBottom variant='h2' className='mb0' component='h1'>
           We Are Specialized in
         </Typography>
@@ -392,7 +392,7 @@ export default function FullstackDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox ourValueBox ourBeliefBox`}>
+      <section className={`sectionBox ourValueBox ourBeliefBox p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid

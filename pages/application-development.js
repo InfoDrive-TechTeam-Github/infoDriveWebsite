@@ -142,7 +142,7 @@ function applicationDevelopment() {
       </motion.div>
 
       <motion.section
-        className='sectionBox'
+        className='sectionBox p5'
         initial={{ opacity: 0, scale: 0.5, left: '-100%' }}
         whileInView={{ opacity: 1, scale: 1, left: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -190,7 +190,7 @@ function applicationDevelopment() {
           component='div'
         ></Typography>
       </motion.section>
-      <section className='h-fit Poppins py-10'>
+      <section className='h-fit Poppins py-10 p5'>
         <div className='aboutus mx-auto max-w-6xl flex flex-col gap-10  md:overflow-hidden'>
           <div className='h1 flex flex-col justify-center items-center text-[#0b2653] font-bold text-lg'>
             <div className='top flex gap-1 text-pink-600  items-center  '>
@@ -247,7 +247,7 @@ function applicationDevelopment() {
         </div>
       </section>
 
-      <div className='service mt-20'>
+      <div className='service mt-20 p5'>
         <div className='mx-auto max-w-6xl'>
           <div className='h1 flex flex-col justify-center items-center text-[#0b2653] font-bold text-lg'>
             <div className='top flex gap-1 text-pink-600  items-center mb-2 '>
@@ -268,7 +268,7 @@ function applicationDevelopment() {
           </div>
         </div>
       </div>
-      <section className='mobile mt-2'>
+      <section className='mobile mt-2 p5'>
         <div className='mx-auto max-w-6xl'>
           <div className='md:flex justify-between items-center'>
             <motion.div
@@ -315,7 +315,7 @@ function applicationDevelopment() {
         </div>
       </section>
       <motion.section
-        className='flexbox md:flex justify-between mx-auto max-w-6xl gap-10 mb-20 items-baseline '
+        className='flexbox md:flex justify-between mx-auto max-w-6xl gap-10 mb-20 items-baseline p5'
         initial={{ opacity: 0, scale: 0.5, right: '-100%' }}
         whileInView={{ opacity: 1, scale: 1, right: 0 }}
         transition={{ duration: 1, delay: 0.5 }}
@@ -378,7 +378,7 @@ function applicationDevelopment() {
         </div>
       </motion.section>
 
-      <div className='benifit bg-blue-950 text-white Poppins  relative'>
+      <div className='benifit bg-blue-950 text-white Poppins  relative '>
         <div class='custom-shape-divider-top-1682658498'>
           <svg
             data-name='Layer 1'
@@ -450,7 +450,7 @@ function applicationDevelopment() {
         </motion.div>
       </div>
 
-      <section className={`sectionBox connectUs backDrop mb0`}>
+      <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
           variant='h3'

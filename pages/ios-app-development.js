@@ -134,7 +134,7 @@ export default function IosAppDevelopment() {
           </Grid>
         </Box>
       </div>
-      <section className={`sectionBox`}>
+      <section className={`sectionBox p5`}>
         <Typography
           className='w100 red'
           gutterBottom
@@ -163,7 +163,7 @@ export default function IosAppDevelopment() {
           of loyal Apple users.
         </Typography>
       </section>
-      <section className={`sectionBox IosAppBox`}>
+      <section className={`sectionBox IosAppBox p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='fd1'>
             <Grid item xs={8}>
@@ -222,7 +222,7 @@ export default function IosAppDevelopment() {
           </Grid>
         </Box>
       </section>
-      <section className={`sectionBox IosAppBox2`}>
+      <section className={`sectionBox IosAppBox2 p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='fd1'>
             <Grid item xs={12}>
@@ -244,7 +244,7 @@ export default function IosAppDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox IosAppBox3`}>
+      <section className={`sectionBox whyUsBox IosAppBox3 p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={4}>
@@ -400,7 +400,7 @@ export default function IosAppDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox IosOurBox`}>
+      <section className={`sectionBox IosOurBox p5`}>
         <div className='IosOurBoxPd'>
           <Typography
             gutterBottom
@@ -592,7 +592,7 @@ export default function IosAppDevelopment() {
         </div>
       </section>
 
-      <section className={`sectionBox ourValueBox ourBeliefBox`}>
+      <section className={`sectionBox ourValueBox ourBeliefBox p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid

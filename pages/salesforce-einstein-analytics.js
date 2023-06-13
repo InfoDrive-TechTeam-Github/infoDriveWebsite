@@ -152,7 +152,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox ,negativemargin`}>
+      <section className={`sectionBox ,negativemargin p5`}>
         <Typography gutterBottom variant='h1' component='h1'>
           Transform Your Business Insights with Salesforce Einstein Analytics
         </Typography>
@@ -175,7 +175,7 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
           In addition to its AI capabilities, Einstein Analytics also offers a
@@ -238,7 +238,7 @@ export default function SalesForceDevelopment() {
       <br />
 
       <section
-        className={`sectionBox solutionBox marketSolutionBox analyticsBox mb30`}
+        className={`sectionBox solutionBox marketSolutionBox analyticsBox mb30 p5`}
       >
         <p>
           Overall, Einstein Analytics is a powerful and comprehensive business
@@ -252,7 +252,7 @@ export default function SalesForceDevelopment() {
       </section>
       <br />
 
-      <section className={`sectionBox connectUs backDrop mb0`}>
+      <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
           variant='h3'

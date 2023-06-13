@@ -140,7 +140,7 @@ export default function AndroidAppDevelopment() {
           </Grid>
         </Box>
       </div>
-      <section className='sectionBox'>
+      <section className='sectionBox p5'>
         <Typography
           className='w100 red'
           gutterBottom
@@ -224,10 +224,10 @@ export default function AndroidAppDevelopment() {
         </ul>
       </section>
 
-      <section className={`sectionBox androidDevelopmentBox`}>
+      <section className={`sectionBox androidDevelopmentBox `}>
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0} className='androidDevelopment'>
-            <Grid item xs={10} className='androidDevelopmentLeft'>
+          <Grid container spacing={0} className='androidDevelopment '>
+            <Grid item xs={10} className='androidDevelopmentLeft p5'>
               <Typography gutterBottom variant='h2' component='div'>
                 Our Approach to Android App Development
               </Typography>
@@ -267,7 +267,7 @@ export default function AndroidAppDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox pt0 pb0`}>
+      <section className={`sectionBox whyUsBox pt0 pb0 p5`}>
         <Typography gutterBottom variant='h2' className='mb0' component='div'>
           Key benefits of our Android app development services:
         </Typography>
@@ -375,7 +375,7 @@ export default function AndroidAppDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox serviceOffer pb0`}>
+      <section className={`sectionBox whyUsBox serviceOffer pb0 p5`}>
         <Typography gutterBottom variant='h2' component='div'>
           Services we offer in Android app development:
         </Typography>

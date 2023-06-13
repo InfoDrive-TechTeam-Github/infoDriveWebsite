@@ -45,13 +45,7 @@ function crm() {
         <link rel='icon' href='/favicon.png' />
       </Head>
       <Header />
-      <motion.div
-        className='sliderBox'
-        variants={heroVarient}
-        initial='hidden'
-        animate='visible'
-        transition={{ delay: 0.5, duration: 3 }}
-      >
+      <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
           src='https://img.freepik.com/free-photo/old-man-using-laptop_53876-96887.jpg?w=1060&t=st=1684819390~exp=1684819990~hmac=73f5baf4325d441d45d4f8af7b9d9b62117832d2212fec9ea8a23619473e9586'
@@ -107,7 +101,7 @@ function crm() {
             </nav>
           </Grid>
         </Box>
-      </motion.div>
+      </div>
       <section
         className={`sectionBox applicationDevelopmentBox bg-gray-100 p5`}
       >
