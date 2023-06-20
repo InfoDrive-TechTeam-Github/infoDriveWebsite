@@ -257,7 +257,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
 
 export async function getStaticPaths() {
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&per_page=100`,
+    `https://mydryve.co/InfoDriveblog_Setup/wp-json/wp/v2/posts?_embed&per_page=100`,
     {
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate',
@@ -279,10 +279,10 @@ export async function getStaticProps({ params }) {
   // console.log('here',context.params);
   // Fetch data from external API
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&slug=${params.slug}`
+    `https://mydryve.co/InfoDriveblog_Setup/wp-json/wp/v2/posts?_embed&slug=${params.slug}`
   );
   const res1 = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
+    `https://mydryve.co/InfoDriveblog_Setup/wp-json/wp/v2/posts?_embed`
   );
   const data = await res.json();
   const datafull = await res1.json();

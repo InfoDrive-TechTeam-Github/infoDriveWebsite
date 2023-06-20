@@ -141,8 +141,11 @@ export default function SalesForceDevelopment({ data }) {
                   <Grid item xs={6} className='mb1'>
                     <Card>
                       <CardContent>
-                        <div className='flex items-center object-cover'>
-                          <a href={`/blog/${post['slug']}.html`}>
+                        <div className='flex items-center object-cover h-full'>
+                          <a
+                            href={`/blog/${post['slug']}.html`}
+                            className='h-full'
+                          >
                             <img
                               className='h-full rounded-xl'
                               style={{ width: '100%' }}
@@ -295,7 +298,7 @@ export default function SalesForceDevelopment({ data }) {
 
 export async function getStaticProps() {
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&per_page=100`
+    `https://mydryve.co/InfoDriveblog_Setup/wp-json/wp/v2/posts?_embed&per_page=100`
   );
   const data = await res.json();
   console.log('API blog', data);
