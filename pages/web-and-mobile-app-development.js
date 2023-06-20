@@ -144,7 +144,7 @@ export default function WebMobileApp() {
         </Box>
       </div>
 
-      <section className={`sectionBox introSectionBox`}>
+      <section className={`sectionBox introSectionBox p5`}>
         <Typography
           className='w100 red'
           gutterBottom
@@ -194,7 +194,7 @@ export default function WebMobileApp() {
         </Typography>
       </section>
 
-      <section className={`sectionBox connectUs backDrop`}>
+      <section className={`sectionBox connectUs backDrop p5`}>
         <Typography
           gutterBottom
           variant='h3'
@@ -212,7 +212,7 @@ export default function WebMobileApp() {
         </Button>
       </section>
 
-      <section className={`sectionBox ourValueBox webmobileappBox`}>
+      <section className={`sectionBox ourValueBox webmobileappBox p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={6} className='pb30'>
@@ -299,7 +299,7 @@ export default function WebMobileApp() {
         </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox pb0`}>
+      <section className={`sectionBox whyUsBox pb0 p5`}>
         <Typography gutterBottom variant='h2' className='' component='h2'>
           Our expertise lies in various technologies
         </Typography>

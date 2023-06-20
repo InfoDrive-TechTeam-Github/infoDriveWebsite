@@ -143,7 +143,7 @@ export default function ServicesForStartUps() {
           </Box>
         </div>
 
-        <section className={`sectionBox aboutUsBox3 servicesForStartUp`}>
+        <section className={`sectionBox aboutUsBox3 servicesForStartUp p5`}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={12} className='pr30'>
@@ -249,7 +249,7 @@ export default function ServicesForStartUps() {
             </Grid>
           </Box>
         </section>
-        <section className={`sectionBox ourValueBox`}>
+        <section className={`sectionBox ourValueBox p5`}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={6}>
@@ -311,7 +311,7 @@ export default function ServicesForStartUps() {
             </Grid>
           </Box>
         </section>
-        <section className={`sectionBox connectUs backDrop`}>
+        <section className={`sectionBox connectUs backDrop p5`}>
           <Typography
             gutterBottom
             variant='h3'
@@ -328,7 +328,7 @@ export default function ServicesForStartUps() {
             Connect with Our Expert
           </Button>
         </section>
-        <section className={`sectionBox whyUsBox`}>
+        <section className={`sectionBox whyUsBox p5`}>
           <Typography
             gutterBottom
             variant='h2'

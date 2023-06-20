@@ -153,7 +153,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox p5`}>
         <Typography
           gutterBottom
           variant='h1'
@@ -185,7 +185,7 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
           Another advantage of Lightning is its integration capabilities. With
@@ -308,7 +308,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox whyUsBox  pb0 `}>
+      <section className={`sectionBox whyUsBox  pb0 p5`}>
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
           Our Lightning services includes:
         </Typography>

@@ -140,7 +140,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
         </Box>
       </div>
 
-      <section className={`sectionBox whyUsBox  pb0 `}>
+      <section className={`sectionBox whyUsBox  pb0 p5`}>
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
           Our team of experienced professionals has a deep understanding of the
           unique needs of businesses in Singapore, Malaysia, and India, and we
@@ -229,7 +229,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
 
       <br />
       <section
-        className={`sectionBox saleForcesDevelopmentBox marketCloudBox sapEmarsysServices customerRelatinshipService`}
+        className={`sectionBox saleForcesDevelopmentBox marketCloudBox sapEmarsysServices customerRelatinshipService p5`}
       >
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='androidDevelopment'>
@@ -259,7 +259,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
         </Box>
       </section>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox p5`}>
         <Typography gutterBottom variant='h1' component='h1'>
           At InfoDrive, we are committed to helping our clients succeed by
           providing them with the best CRM software and services available. If
@@ -275,7 +275,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
         </Typography>
       </section>
 
-      <section className={`sectionBox whyUsBox  pb0 pt0 `}>
+      <section className={`sectionBox whyUsBox  pb0 pt0 p5`}>
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
           Our CRM software solutions include a range of features and tools to
           help businesses manage and optimize their customer interactions and
@@ -401,7 +401,7 @@ CRM implementation services in Singapore, CRM Implementation Services Malaysia, 
         </Box>
       </section>
 
-      <section className={`sectionBox ourValueBox ourBeliefBox pt0 pb0`}>
+      <section className={`sectionBox ourValueBox ourBeliefBox pt0 pb0 p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={5} style={{ padding: '30px' }}>

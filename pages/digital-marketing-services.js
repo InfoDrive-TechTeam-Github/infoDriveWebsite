@@ -36,6 +36,10 @@ import Stack from '@mui/material/Stack';
 import Head from 'next/head';
 
 import LeadForm from '../components/leadForm';
+import { AiOutlineFileSearch } from 'react-icons/ai';
+import { FaCcAmazonPay } from 'react-icons/fa';
+import { SlSocialInstagram } from 'react-icons/sl';
+import { MdWeb } from 'react-icons/md';
 export default function SalesForceDevelopment() {
   return (
     <div>
@@ -158,7 +162,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox p5`}>
         <Typography gutterBottom variant='h1' component='h1' className='w100'>
           Driving traffic and Generating Lads with Our Digital Marketing
           Services
@@ -186,11 +190,154 @@ export default function SalesForceDevelopment() {
           the right keywords to target, optimize your website's structure and
           content, and build high-quality backlinks to improve your search
           rankings.
+          <br />
         </Typography>
+      </section>
+      <section className='sectionBox p5 whyDigital -mt-10'>
+        <h3 className='text-[#0b2653] text-2xl font-bold text-center'>
+          Why Choose <span className='text-red-600'>InfoDrive Solutions?</span>
+        </h3>
+        <p className='text-center mt-3 text-[#4e4e50] text-base'>
+          As a leading provider of digital marketing services in Singapore and
+          Malaysia, we specialize in delivering tailored solutions that maximize
+          your online presence, enhance brand visibility, and generate
+          measurable results. With our expertise and innovative approach, we
+          help you stay ahead of the competition in the dynamic digital landscap
+        </p>
+        <div className='content grid md:grid-cols-2 grid-cols-1 gap-10 mt-10   '>
+          <article className='flex flex-col gap-5 shadow-lg rounded-md p-10 bg-red-600'>
+            <div className='icon'></div>
+            <h3 className=' text-white font-bold text-xl'>
+              Customized Strategies for Optimal Results
+            </h3>
+            <p className='content text-white leading-6'>
+              We understand that every business is unique. That's why our team
+              of digital marketing experts takes the time to analyze your
+              specific goals, target audience, and industry landscape to develop
+              customized strategies that align with your business objectives.
+              From search engine optimization (SEO) to pay-per-click (PPC)
+              advertising, social media marketing, and content creation, we
+              employ a holistic approach to ensure your digital marketing
+              efforts yield the best possible results.
+            </p>
+          </article>
+          <article className='flex flex-col gap-5 shadow-lg rounded-md p-10'>
+            <div className='icon'></div>
+            <p className='heading '>Experienced Professionals</p>
+            <p className='content text-[#4e4e50] leading-6'>
+              With years of experience in the industry, our digital marketing
+              professionals have a deep understanding of the latest trends,
+              tools, and techniques. They stay updated with the ever-evolving
+              digital landscape to provide you with the most effective
+              strategies. Our team's expertise spans across various disciplines,
+              including SEO specialists, PPC analysts, social media strategists,
+              content writers, and web developers. Together, we work towards one
+              goal: to drive your business forward.
+            </p>
+          </article>{' '}
+          <article className='flex flex-col gap-5 shadow-lg rounded-md p-10'>
+            <div className='icon'></div>
+            <p className='heading '>Data-Driven Approach</p>
+            <p className='content text-[#4e4e50] leading-6'>
+              At InfoDrive Solutions, we believe in the power of data. Our
+              strategies are backed by thorough research, market analysis, and
+              data-driven insights. By leveraging the latest analytics tools, we
+              track and measure the performance of your digital marketing
+              campaigns, allowing us to make data-backed decisions and optimize
+              your online presence for maximum impact. With us, you can expect
+              transparency, accountability, and a focus on delivering measurable
+              results.
+            </p>
+          </article>{' '}
+          <article className='flex flex-col gap-5 shadow-lg rounded-md p-10 bg-red-600'>
+            <div className='icon'></div>
+            <h3 className='text-white font-bold text-xl'>
+              Client-Centric Focus
+            </h3>
+            <p className='content text-white leading-6'>
+              We prioritize our clients and their success. We view our
+              relationship with you as a partnership, and your satisfaction is
+              our top priority. Our team takes the time to understand your
+              business goals, challenges, and aspirations, ensuring that our
+              strategies align with your vision. We maintain open lines of
+              communication, providing regular updates, reports, and analysis to
+              keep you informed about the progress of your digital marketing
+              campaigns.
+            </p>
+          </article>{' '}
+        </div>
+      </section>
+
+      <section className='sectionBox p5 md:-mt-20 mt-10'>
+        <h3 className='font-bold text-xl text-[#0b2653]'>
+          Customized Strategies for Optimal Results
+        </h3>
+        <div className='container grid md:grid-cols-2 grid-cols-1 gap-10 mt-40 gap-y-40'>
+          <div className=' relative '>
+            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
+              <AiOutlineFileSearch size={78} />
+            </div>
+            <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6'>
+              <h2 className='text-[#0b2653] font-bold mb-5'>
+                Search Engine Optimization
+              </h2>
+              Our SEO experts optimize your website to improve its visibility on
+              search engines, helping you rank higher in search results and
+              drive organic traffic to your website. We focus on both on-page
+              and off-page optimization techniques, keyword research, content
+              optimization, and technical SEO to enhance your online presence.
+            </article>
+          </div>
+          <div className=' relative '>
+            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
+              <FaCcAmazonPay size={78} />
+            </div>
+            <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6'>
+              <h2 className='text-[#0b2653] font-bold mb-5'>
+                Pay-Per-Click (PPC) Advertising
+              </h2>
+              Through targeted PPC campaigns, we place your ads in front of your
+              potential customers at the right time and on the right platforms.
+              Our PPC specialists create compelling ad copies, conduct keyword
+              research, optimize landing pages, and continuously monitor and
+              refine your campaigns to maximize conversions while minimizing
+              costs.
+            </article>
+          </div>
+          <div className=' relative '>
+            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
+              <SlSocialInstagram size={72} />
+            </div>
+            <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6'>
+              <h2 className='text-[#0b2653] font-bold mb-5'>
+                Social Media Marketing
+              </h2>
+              We harness the power of social media platforms to connect you with
+              your target audience, build brand awareness, and foster customer
+              engagement. Our social media strategists develop data-driven
+              campaigns across platforms such as Facebook, Instagram, Twitter,
+              LinkedIn, and YouTube to enhance your brand's online presence.
+            </article>
+          </div>
+          <div className=' relative '>
+            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
+              <MdWeb size={82} />
+            </div>
+            <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6 h-full'>
+              <h2 className='text-[#0b2653] font-bold mb-5'>
+                Web Design and Development
+              </h2>
+              We understand that a well-designed and user-friendly website is
+              crucial for online success. Our web development team crafts
+              visually appealing, responsive, and SEO-friendly websites that
+              provide seamless user experiences across desktop and mobile
+            </article>
+          </div>
+        </div>
       </section>
 
       <section
-        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p10`}
       >
         <Typography
           className='w100 mb0 pb10'
@@ -318,7 +465,7 @@ export default function SalesForceDevelopment() {
           </Grid>
         </Box>
       </section>
-      <section className={`sectionBox connectUs backDrop mb0`}>
+      <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
           variant='h3'

@@ -91,7 +91,7 @@ export default function SalesForceDevelopment() {
           src='images/cc13ff8a13c84325124d7b7989be19e8.jpeg'
           alt='Salesforce Consulting Service'
         />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
+        <Box sx={{ flexGrow: 1 }} className='sliderContent salePart '>
           <Grid container spacing={0}>
             <Typography gutterBottom variant='h3' component='h1'>
               Empower Your Business with Salesforce Professional Services
@@ -149,7 +149,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox p5`}>
         <Typography className='w100' gutterBottom variant='h1' component='h1'>
           Accelerate Business Transformation with Our Salesforce Development
           Partnership
@@ -203,7 +203,7 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
           We have a proven track record of <br />
@@ -383,7 +383,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </section>
       <br />
-      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2`}>
+      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 p5`}>
         <Typography gutterBottom variant='h2' className='mb0' component='div'>
           We specialize in a wide range of Salesforce products, including:
         </Typography>

@@ -149,7 +149,7 @@ function SalesforceAppExchange() {
         </Box>
       </motion.div>
       <section className='  '>
-        <div className=' w-screen h-full   text-gray-700 mx-auto p-10 text-sm font-medium leading-7 max-w-6xl'>
+        <div className=' w-screen h-full   text-gray-700 mx-auto md:p-10 text-sm font-medium leading-7 max-w-6xl p5'>
           <p>
             As a leading{' '}
             <strong>Salesforce AppExchange App Development Company,</strong>{' '}
@@ -189,7 +189,7 @@ function SalesforceAppExchange() {
           </p>
         </div>
       </section>
-      <div className='relative'>
+      <div className='relative '>
         {' '}
         <div class='custom-shape-divider-top-1682658498'>
           <svg
@@ -205,12 +205,12 @@ function SalesforceAppExchange() {
           </svg>
         </div>
         <section
-          className=' h-[1300px] md:h-auto   bg-white pt-10'
+          className=' h-[1300px] md:h-auto   bg-white pt-10 '
           style={{
             background: 'linear-gradient(to right, #f7797d, #FBD786, #C6FFDD)',
           }}
         >
-          <div className=' w-screen h-full md:p-10  text-gray-700 mx-auto max-w-6xl '>
+          <div className=' w-screen h-full md:p-10  text-gray-700 mx-auto max-w-6xl p5'>
             <h3 className='font-bold text-pink-600 text-lg '>
               Why Choose infoDrive Solutions for Salesforce AppExchange
               Development Services?
@@ -247,9 +247,9 @@ function SalesforceAppExchange() {
           </div>
         </section>
       </div>
-      <section className='heroParagraph  h-max '>
+      <section className='heroParagraph  h-max'>
         <div
-          className='outerdrid grid grid-cols-1 gap-16 md:p-10 text-white'
+          className='outerdrid grid grid-cols-1 gap-16 md:p-10 text-white p5'
           style={{ background: 'rgb(42, 40, 42)' }}
         >
           <div className=' w-screen h-full md:p-10 p-5  text-yellow-100 mx-auto max-w-6xl '>
@@ -335,7 +335,7 @@ function SalesforceAppExchange() {
           </div>
         </div>
       </section>
-      <section className='feature'>
+      <section className='feature p5'>
         <h2 className='text-center font-bold text-blue-950 text-2xl mt-20 max-w-5xl mx-auto'>
           Why Choose infoDrive Solutions for Salesforce AppExchange Development
           ?

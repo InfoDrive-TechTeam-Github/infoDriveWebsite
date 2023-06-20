@@ -156,7 +156,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox p5`}>
         <Typography className='w100' gutterBottom variant='h1' component='h1'>
           Power Your Marketing Efforts with Salesforce Marketing Cloud Solutions
         </Typography>
@@ -175,7 +175,9 @@ export default function SalesForceDevelopment() {
         </Typography>
       </section>
 
-      <section className={`sectionBox saleForcesDevelopmentBox marketCloudBox`}>
+      <section
+        className={`sectionBox saleForcesDevelopmentBox marketCloudBox p5`}
+      >
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='androidDevelopment'>
             <Grid item xs={6} className='saleForcesDevelopment'>
@@ -210,7 +212,7 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
           In addition to our implementation services, we also offer ongoing
@@ -353,7 +355,7 @@ export default function SalesForceDevelopment() {
       <br />
       <br />
 
-      <section className={`sectionBox solutionBox marketSolutionBox mb30`}>
+      <section className={`sectionBox solutionBox marketSolutionBox mb30 p5`}>
         <p>
           At InfoDrive Solutions, we pride ourselves on delivering top-quality
           Salesforce Marketing Cloud implementation and consulting services to
@@ -364,7 +366,7 @@ export default function SalesForceDevelopment() {
       </section>
       <br />
 
-      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2`}>
+      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 p5`}>
         <Typography gutterBottom variant='h2' className='mb0' component='div'>
           Key benefits of Salesforce Marketing
         </Typography>
@@ -454,7 +456,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox connectUs backDrop mb0`}>
+      <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
           variant='h3'

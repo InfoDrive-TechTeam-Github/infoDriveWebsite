@@ -41,7 +41,8 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-        Business Process Management & Improvement (BPM&I) | Services, Solutions, and Improvement Consulting
+          Business Process Management & Improvement (BPM&I) | Services,
+          Solutions, and Improvement Consulting
         </title>
 
         <meta
@@ -162,7 +163,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox businessProcessManagementBox`}>
+      <section className={`sectionBox businessProcessManagementBox p5`}>
         <Typography gutterBottom variant='h1' component='h1'>
           Business Process Management & Improvement (BPM&I) is vital. Business
           Process Management (BPM) is a disciplined management approach and
@@ -183,7 +184,7 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox saleForcesDevelopmentBox serviceCloudBox businessProcessManagement`}
+        className={`sectionBox saleForcesDevelopmentBox serviceCloudBox businessProcessManagement p5`}
       >
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className='androidDevelopment '>
@@ -202,7 +203,7 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
@@ -239,7 +240,7 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox aboutUsBox3 salesCloudService serviceCloud businessProcessManagementService`}
+        className={`sectionBox aboutUsBox3 salesCloudService serviceCloud businessProcessManagementService p5`}
       >
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
@@ -283,7 +284,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox connectUs backDrop mb0`}>
+      <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
           variant='h3'

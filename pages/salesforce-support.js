@@ -151,7 +151,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox p5`}>
         <Typography gutterBottom variant='h1' component='h1'>
           Empower Your Team with Robust Salesforce Support Solutions
         </Typography>
@@ -170,7 +170,7 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices`}
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
           Our Salesforce support services include:
@@ -301,7 +301,7 @@ export default function SalesForceDevelopment() {
       <br />
       <br />
 
-      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2`}>
+      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={6}>
@@ -350,7 +350,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </section>
 
-      <section className={`sectionBox connectUs backDrop mb0`}>
+      <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
           variant='h3'

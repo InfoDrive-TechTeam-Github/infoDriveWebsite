@@ -146,10 +146,10 @@ export default function SalesForceDevelopment({ data, datafull }) {
           })}
         </Box>
         <section className='releatedPost mx-auto bg-white  text-black p-3'>
-          <h3 className='text-center font-extrabold text-4xl text-red-600'>
+          <h3 className='text-center font-extrabold md:text-4xl text-lg text-red-600'>
             Read Related Articles
           </h3>
-          <hr className='border-2 w-80 mx-auto mt-3 border-blue-900 rounded-md shadow-md' />
+          <hr className='border-2 md:w-80 mx-auto mt-3 border-blue-900 rounded-md shadow-md w-1/2' />
 
           <div className='mt-20'>
             <Crousel>
@@ -257,7 +257,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
 
 export async function getStaticPaths() {
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&per_page=100`,
+    `https://mydryve.co/InfoDriveblog_Setup/wp-json/wp/v2/posts?_embed&per_page=100`,
     {
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate',
@@ -279,10 +279,10 @@ export async function getStaticProps({ params }) {
   // console.log('here',context.params);
   // Fetch data from external API
   const res = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed&slug=${params.slug}`
+    `https://mydryve.co/InfoDriveblog_Setup/wp-json/wp/v2/posts?_embed&slug=${params.slug}`
   );
   const res1 = await fetch(
-    `https://mydryve.co/InfoDriveBlog/wp-json/wp/v2/posts?_embed`
+    `https://mydryve.co/InfoDriveblog_Setup/wp-json/wp/v2/posts?_embed`
   );
   const data = await res.json();
   const datafull = await res1.json();
