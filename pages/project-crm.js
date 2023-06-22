@@ -156,7 +156,7 @@ function crm() {
         </Typography>
       </motion.section>
 
-      <section className='wave  md:h-screen md:flex justify-center items-center '>
+      <section className='wave md:h-screen md:flex justify-center items-center '>
         <div className='container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 justify-between '>
           <div className='left md:w-1/3 flex flex-col gap-5 '>
             <h2 className='text-red-600 md:text-xl font-bold text-lg'>
@@ -167,6 +167,7 @@ function crm() {
             <p className='text-sm md:whitespace-nowrap'>
               Effectively manage and nurture customer relationships
             </p>
+
             <motion.button
               className='bg-red-600 rounded-md p-5 shadow-md'
               onClick={() =>
@@ -211,20 +212,9 @@ function crm() {
               </div>
             </div>
           </div>
-          <motion.div
-            className='h-[400px]  mr-36 w-full '
-            animate={{
-              y: 20,
-
-              transition: {
-                duration: 2,
-                repeat: Infinity,
-                repeatType: 'reverse',
-              },
-            }}
-          >
+          <div className='h-[400px]  mr-36 w-full '>
             <Lottie animationData={crmanimation} className='h-full w-full' />
-          </motion.div>
+          </div>
         </div>
       </section>
       <div className='bg-gray-100 h-auto polygon text-white '>
@@ -487,11 +477,5 @@ function crm() {
     </>
   );
 }
-
-// framer motion properties
-const heroVarient = {
-  hidden: { opacity: 0, x: '-100vw' },
-  visible: { opacity: 1, x: 0, rotate: 360 },
-};
 
 export default crm;

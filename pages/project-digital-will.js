@@ -186,6 +186,12 @@ function crm() {
               <motion.button
                 className='bg-red-600 rounded-md p-5 shadow-md w-full md:w-1/3 h-16 md:ml-0 mb-10 md:mr-5'
                 style={{ flex: 2 }}
+                onClick={() =>
+                  window.open(
+                    'http://digital-will.web3dapps.world/dashboard',
+                    '_blank'
+                  )
+                }
                 animate={{
                   scale: 1.1,
                   textShadow: '0px 0px 8px rgb(255,255,255)',
@@ -201,7 +207,6 @@ function crm() {
                 <Link
                   className=' text-white font-semibold text-sm md:text-base'
                   style={{ textDecoration: 'none', color: 'white' }}
-                  href='http://digital-will.web3dapps.world/dashboard'
                 >
                   Open Digital Bill
                 </Link>
