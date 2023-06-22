@@ -194,7 +194,10 @@ export default function SalesForceDevelopment() {
           <article className='flex flex-col gap-5 shadow-lg rounded-md p-10'>
             <div className='icon'></div>
             <p className='heading '>Customized Strategies for Your Business</p>
-            <p className='content text-[#4e4e50] leading-6'>
+            <p
+              className='content text-[#4e4e50] leading-6'
+              style={{ fontSize: '16px' }}
+            >
               We understand that each business has unique goals and challenges.
               Our team of experienced SEO professionals takes the time to
               understand your specific requirements and tailor our strategies
@@ -206,54 +209,72 @@ export default function SalesForceDevelopment() {
           <article className='flex flex-col gap-5 shadow-lg rounded-md p-10'>
             <div className='icon'></div>
             <p className='heading '>Comprehensive SEO Services</p>
-            <p className='content text-[#4e4e50] leading-6'>
+            <p
+              className='content text-[#4e4e50] leading-6'
+              style={{ fontSize: '16px' }}
+            >
               At InfoDrive Solutions, we offer a comprehensive range of SEO
               services to address all aspects of your website's optimization.
               Our services include:
-              <ul className='list-disc px-3 py-2'>
-                <li>
-                  Keyword Research: We conduct in-depth keyword research to
-                  identify the most relevant and high-converting keywords for
-                  your business. This helps us optimize your website's content
-                  and meta tags to improve visibility in search engine results
-                  pages (SERPs).
-                </li>
+              <div className='grid md:grid-cols-2 gap-10 mt-5'>
+                <p style={{ fontSize: '16px' }}>
+                  <span className='text-red-600 font-bold'>
+                    Keyword Research:
+                  </span>{' '}
+                  We conduct in-depth keyword research to identify the most
+                  relevant and high-converting keywords for your business. This
+                  helps us optimize your website's content and meta tags to
+                  improve visibility in search engine results pages (SERPs).
+                </p>
 
-                <li>
-                  On-Page Optimization: Our SEO experts optimize your website's
-                  structure, meta tags, headings, and content to make it more
-                  search engine friendly. We focus on improving website speed,
-                  mobile responsiveness, and user experience to enhance overall
-                  search performance.
-                </li>
-                <li>
-                  Off-Page Optimization: We implement proven off-page SEO
-                  techniques such as link building, social bookmarking, and
-                  influencer outreach to increase your website's authority and
-                  credibility. This helps improve your search engine rankings
-                  and drives targeted traffic to your site.
-                </li>
-                <li>
-                  Off-Page Optimization: For businesses targeting specific
-                  geographical areas, we optimize your website for local search.
-                  This includes optimizing your Google My Business profile,
-                  creating location-specific content, and building local
-                  citations to enhance your visibility in local search results.
-                </li>
-                <li>
-                  Technical SEO: Our team conducts a thorough audit of your
-                  website's technical aspects, identifying and fixing any issues
-                  that may impact its search engine performance. We optimize
-                  website speed, URL structure, sitemaps, and schema markup to
-                  ensure optimal crawling and indexing by search engines.
-                </li>
-              </ul>
+                <p style={{ fontSize: '16px' }}>
+                  <span className='text-red-600 font-bold'>
+                    {' '}
+                    On-Page Optimization:
+                  </span>{' '}
+                  Our SEO experts optimize your website's structure, meta tags,
+                  headings, and content to make it more search engine friendly.
+                  We focus on improving website speed, mobile responsiveness,
+                  and user experience to enhance overall search performance.
+                </p>
+                <p style={{ fontSize: '16px' }}>
+                  <span className='text-red-600 font-bold'>
+                    Off-Page Optimization:
+                  </span>{' '}
+                  We implement proven off-page SEO techniques such as link
+                  building, social bookmarking, and influencer outreach to
+                  increase your website's authority and credibility. This helps
+                  improve your search engine rankings and drives targeted
+                  traffic to your site.
+                </p>
+                <p style={{ fontSize: '16px' }}>
+                  <span className='text-red-600 font-bold'>
+                    Off Off-Page Optimization:
+                  </span>
+                  For businesses targeting specific geographical areas, we
+                  optimize your website for local search. This includes
+                  optimizing your Google My Business profile, creating
+                  location-specific content, and building local citations to
+                  enhance your visibility in local search results.
+                </p>
+                <p style={{ fontSize: '16px' }}>
+                  <span className='text-red-600 font-bold'>Technical SEO:</span>{' '}
+                  Our team conducts a thorough audit of your website's technical
+                  aspects, identifying and fixing any issues that may impact its
+                  search engine performance. We optimize website speed, URL
+                  structure, sitemaps, and schema markup to ensure optimal
+                  crawling and indexing by search engines.
+                </p>
+              </div>
             </p>
           </article>{' '}
           <article className='flex flex-col gap-5 shadow-lg rounded-md p-10'>
             <div className='icon'></div>
             <p className='heading '>Data-Driven Approach</p>
-            <p className='content text-[#4e4e50] leading-6'>
+            <p
+              className='content text-[#4e4e50] leading-6'
+              style={{ fontSize: '16px' }}
+            >
               At InfoDrive Solutions, we believe in the power of data to drive
               successful SEO campaigns. We utilize advanced analytics tools and
               industry-leading SEO software to gather valuable insights about
@@ -265,7 +286,10 @@ export default function SalesForceDevelopment() {
           <article className='flex flex-col gap-5 shadow-lg rounded-md p-10'>
             <div className='icon'></div>
             <p className='heading '>Ethical and White-Hat Practices</p>
-            <p className='content text-[#4e4e50] leading-6'>
+            <p
+              className='content text-[#4e4e50] leading-6'
+              style={{ fontSize: '16px' }}
+            >
               We strictly adhere to ethical SEO practices recommended by search
               engines like Google. Our team stays updated with the latest
               algorithm changes and industry best practices to ensure that your
@@ -277,7 +301,10 @@ export default function SalesForceDevelopment() {
           <article className='flex flex-col gap-5 shadow-lg rounded-md p-10'>
             <div className='icon'></div>
             <p className='heading '>Transparent Reporting and Communication</p>
-            <p className='content text-[#4e4e50] leading-6'>
+            <p
+              className='content text-[#4e4e50] leading-6'
+              style={{ fontSize: '16px' }}
+            >
               At InfoDrive Solutions, we believe in transparency and effective
               communication with our clients. We provide detailed reports on a
               regular basis, keeping you informed about the progress of your SEO

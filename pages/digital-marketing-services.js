@@ -197,7 +197,7 @@ export default function SalesForceDevelopment() {
         <h3 className='text-[#0b2653] text-2xl font-bold text-center'>
           Why Choose <span className='text-red-600'>InfoDrive Solutions?</span>
         </h3>
-        <p className='text-center mt-3 text-[#4e4e50] text-base'>
+        <p className='text-center mt-3 text-[#4e4e50] text-lg'>
           As a leading provider of digital marketing services in Singapore and
           Malaysia, we specialize in delivering tailored solutions that maximize
           your online presence, enhance brand visibility, and generate
@@ -210,7 +210,10 @@ export default function SalesForceDevelopment() {
             <h3 className=' text-white font-bold text-xl'>
               Customized Strategies for Optimal Results
             </h3>
-            <p className='content text-white leading-6'>
+            <p
+              className='content text-white leading-6'
+              style={{ fontSize: '16px' }}
+            >
               We understand that every business is unique. That's why our team
               of digital marketing experts takes the time to analyze your
               specific goals, target audience, and industry landscape to develop
@@ -224,7 +227,10 @@ export default function SalesForceDevelopment() {
           <article className='flex flex-col gap-5 shadow-lg rounded-md p-10'>
             <div className='icon'></div>
             <p className='heading '>Experienced Professionals</p>
-            <p className='content text-[#4e4e50] leading-6'>
+            <p
+              className='content text-[#4e4e50] leading-6'
+              style={{ fontSize: '16px' }}
+            >
               With years of experience in the industry, our digital marketing
               professionals have a deep understanding of the latest trends,
               tools, and techniques. They stay updated with the ever-evolving
@@ -238,7 +244,10 @@ export default function SalesForceDevelopment() {
           <article className='flex flex-col gap-5 shadow-lg rounded-md p-10'>
             <div className='icon'></div>
             <p className='heading '>Data-Driven Approach</p>
-            <p className='content text-[#4e4e50] leading-6'>
+            <p
+              className='content text-[#4e4e50] leading-6'
+              style={{ fontSize: '16px' }}
+            >
               At InfoDrive Solutions, we believe in the power of data. Our
               strategies are backed by thorough research, market analysis, and
               data-driven insights. By leveraging the latest analytics tools, we
@@ -254,7 +263,10 @@ export default function SalesForceDevelopment() {
             <h3 className='text-white font-bold text-xl'>
               Client-Centric Focus
             </h3>
-            <p className='content text-white leading-6'>
+            <p
+              className='content text-white leading-6'
+              style={{ fontSize: '16px' }}
+            >
               We prioritize our clients and their success. We view our
               relationship with you as a partnership, and your satisfaction is
               our top priority. Our team takes the time to understand your
@@ -272,12 +284,10 @@ export default function SalesForceDevelopment() {
         <h3 className='font-bold text-xl text-[#0b2653]'>
           Customized Strategies for Optimal Results
         </h3>
-        <div className='container grid md:grid-cols-2 grid-cols-1 gap-10 mt-40 gap-y-40'>
+        <div className='container grid md:grid-cols-2 grid-cols-1 gap-10 mt-40 gap-y-20'>
           <div className=' relative '>
-            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
-              <AiOutlineFileSearch size={78} />
-            </div>
             <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6'>
+              <AiOutlineFileSearch size={78} />
               <h2 className='text-[#0b2653] font-bold mb-5'>
                 Search Engine Optimization
               </h2>
@@ -289,10 +299,8 @@ export default function SalesForceDevelopment() {
             </article>
           </div>
           <div className=' relative '>
-            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
-              <FaCcAmazonPay size={78} />
-            </div>
             <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6'>
+              <FaCcAmazonPay size={78} />
               <h2 className='text-[#0b2653] font-bold mb-5'>
                 Pay-Per-Click (PPC) Advertising
               </h2>
@@ -305,10 +313,8 @@ export default function SalesForceDevelopment() {
             </article>
           </div>
           <div className=' relative '>
-            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
-              <SlSocialInstagram size={72} />
-            </div>
             <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6'>
+              <SlSocialInstagram size={72} />
               <h2 className='text-[#0b2653] font-bold mb-5'>
                 Social Media Marketing
               </h2>
@@ -319,11 +325,9 @@ export default function SalesForceDevelopment() {
               LinkedIn, and YouTube to enhance your brand's online presence.
             </article>
           </div>
-          <div className=' relative '>
-            <div className='message   text-white absolute bg-red-600 -top-28 w-28 h-28 '>
-              <MdWeb size={82} />
-            </div>
+          <div>
             <article className=' border-2 p-5 border-dashed shadow-md text-[#4e4e50] leading-6 h-full'>
+              <MdWeb size={82} />
               <h2 className='text-[#0b2653] font-bold mb-5'>
                 Web Design and Development
               </h2>
