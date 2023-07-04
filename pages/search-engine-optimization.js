@@ -247,16 +247,7 @@ export default function SalesForceDevelopment() {
                   improve your search engine rankings and drives targeted
                   traffic to your site.
                 </p>
-                <p style={{ fontSize: '16px' }}>
-                  <span className='text-red-600 font-bold'>
-                    Off Off-Page Optimization:
-                  </span>
-                  For businesses targeting specific geographical areas, we
-                  optimize your website for local search. This includes
-                  optimizing your Google My Business profile, creating
-                  location-specific content, and building local citations to
-                  enhance your visibility in local search results.
-                </p>
+
                 <p style={{ fontSize: '16px' }}>
                   <span className='text-red-600 font-bold'>Technical SEO:</span>{' '}
                   Our team conducts a thorough audit of your website's technical
