@@ -88,7 +88,7 @@ export default function SalesForceDevelopment() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/cc13ff8a13c84325124d7b7989be19e8.jpeg'
+          src='images/cc13ff8a13c84325124d7b7989be19e8-min.jpeg'
           alt='Salesforce Consulting Service'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart '>

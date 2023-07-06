@@ -88,7 +88,7 @@ export default function SalesLightningUSA() {
       <div className='sliderBox lightlingSlider'>
         <img
           style={{ width: '100%' }}
-          src='images/0959e7bad48d4a91f7e112136efad00a.jpeg'
+          src='images/0959e7bad48d4a91f7e112136efad00a-min.jpeg'
           alt='Salesforce Lightning App Development Services'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>

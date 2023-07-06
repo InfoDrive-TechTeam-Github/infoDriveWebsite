@@ -95,7 +95,7 @@ function SalesforceAppExchange() {
       >
         <img
           style={{ width: '100%' }}
-          src='images/saas-concept-collage.jpg'
+          src='images/saas-concept-collage-min.jpg'
           alt='Android App Development Company'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
@@ -284,7 +284,7 @@ function SalesforceAppExchange() {
             <div className='grid grid-cols-8 grid-rows-8 row gap-0 mb-10 mt-5 md:mt-0'>
               <img
                 className='img4 h-full w-full rounded-md shadow-md object-cover'
-                src='https://img.freepik.com/free-vector/cloud-computing-concept_24908-55295.jpg?w=740&t=st=1683282269~exp=1683282869~hmac=58d21ac3c65ec345a18f96023d0609ea73e2770b4304a48ff7434d5992ce9363'
+                src='/images/cloud-computing-concept_24908-55295.jpeg'
               />
               <img
                 className='img h-full w-full rounded-md shadow-md object-cover'

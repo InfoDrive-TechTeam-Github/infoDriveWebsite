@@ -83,7 +83,7 @@ export default function SalesSupportUSA() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/6ab9e62b9940c4bae59de46b69e54ecb.jpeg'
+          src='images/6ab9e62b9940c4bae59de46b69e54ecb-min.jpeg'
           alt='Salesforce Support'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
@@ -306,7 +306,7 @@ export default function SalesSupportUSA() {
                 <CardContent>
                   <img
                     style={{ width: '100%' }}
-                    src='images/d5843b19f3fd15ca5e0d2c4532996b0b.jpeg'
+                    src='images/d5843b19f3fd15ca5e0d2c4532996b0b-min.jpeg'
                   />
                 </CardContent>
               </Card>
