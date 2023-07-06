@@ -88,7 +88,7 @@ export default function SalesForceDevelopment() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/91347bcb5003e5f7f144c8d10079ab1e.jpeg'
+          src='images/91347bcb5003e5f7f144c8d10079ab1e-min.jpeg'
           alt=' Salesforce Sales Cloud Implementatio'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
@@ -323,7 +323,7 @@ export default function SalesForceDevelopment() {
               <Card>
                 <img
                   alt='Salesforce Sales Cloud automation'
-                  src='images/491c67e4b1055317d0f23ddd3ee7af54.jpeg'
+                  src='images/491c67e4b1055317d0f23ddd3ee7af54-min.jpeg'
                 />
               </Card>
             </Grid>

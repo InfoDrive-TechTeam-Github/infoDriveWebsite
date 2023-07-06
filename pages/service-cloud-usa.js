@@ -89,8 +89,8 @@ export default function ServiceCLoudUSA() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/fbebc0b97f1366ba8a6298694de802ec.jpeg'
-          alt='Salesforce Service Cloud Implementation'
+          src='images/fbebc0b97f1366ba8a6298694de802ec-min.jpeg'
+          alt='Salesforce Service Cloud Implementation USA'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
@@ -389,8 +389,8 @@ export default function ServiceCLoudUSA() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='Salesforce Service Cloud Consulting Services'
-                  src='images/8985be05557b74f0f6f08fbba7b8c805.jpeg'
+                  alt='Salesforce Service Cloud Consulting Services USA'
+                  src='images/8985be05557b74f0f6f08fbba7b8c805-min.jpeg'
                 />
               </Card>
             </Grid>

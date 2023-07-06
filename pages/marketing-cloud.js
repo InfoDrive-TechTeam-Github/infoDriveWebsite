@@ -89,7 +89,7 @@ export default function SalesForceDevelopment() {
       <div className='sliderBox marketingSlider'>
         <img
           style={{ width: '100%' }}
-          src='images/72250f50098664f9273c6d07e59ccdcd.jpeg'
+          src='images/72250f50098664f9273c6d07e59ccdcd-min.jpeg'
           alt='Salesforce Marketing Cloud Implementation'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>

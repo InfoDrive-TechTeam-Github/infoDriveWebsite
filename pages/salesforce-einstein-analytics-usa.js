@@ -89,7 +89,7 @@ export default function SalesForceEinstein() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/7e086652d7d493b8a2f038e2f67d3984.jpeg'
+          src='images/7e086652d7d493b8a2f038e2f67d3984-min.jpeg'
           alt=' Salesforce Einstein Analytics'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
@@ -226,7 +226,7 @@ export default function SalesForceEinstein() {
               <Card>
                 <img
                   alt='Salesforce Einstein Analytics integrations'
-                  src='images/4fb9fbf86887668153dd106a0fff11c5.jpeg'
+                  src='images/4fb9fbf86887668153dd106a0fff11c5-min.jpeg'
                 />
               </Card>
             </Grid>
