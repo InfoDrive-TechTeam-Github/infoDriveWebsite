@@ -89,7 +89,7 @@ function Development() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='https://img.freepik.com/free-photo/young-game-developer-using-modern-software-design-interface_482257-23400.jpg?w=1060&t=st=1681384564~exp=1681385164~hmac=cc4b14b99a6e6a528b482f34b3326127d47ec66098efd8284cef05287c568587'
+          src='images/young-game-developer-using-modern-software-design-interface_482257-23400.jpeg'
           alt='Android App Development Company'
           className='object-cover'
         />
@@ -246,7 +246,7 @@ function Development() {
               <Card>
                 <img
                   alt='Android App Development Company in Singapore'
-                  src='https://img.freepik.com/free-photo/architect-using-vr-glasses-building-model-design_482257-17670.jpg?w=1060&t=st=1681384624~exp=1681385224~hmac=53a6b564de60a9e7865782dd280ca86bbf0e89c047178b4b25333d9004d142dd'
+                  src='images/architect-using-vr-glasses-building-model-design_482257-17670.jpeg'
                   className='object-cover'
                 />
               </Card>
