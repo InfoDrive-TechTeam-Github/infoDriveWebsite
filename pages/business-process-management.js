@@ -100,7 +100,7 @@ export default function SalesForceDevelopment() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/617cf828ea2bd6894050ecc1fbcd3912.jpeg'
+          src='images/617cf828ea2bd6894050ecc1fbcd3912-min.jpeg'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>

@@ -87,7 +87,7 @@ export default function WebMobileApp() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='images/pexels-djordje-petrovic-2102416.jpeg'
+          src='images/pexels-djordje-petrovic-2102416-min.jpeg'
           alt='Web and Mobile App Development Services & Company in Singapore,
           Malaysia, and India'
         />

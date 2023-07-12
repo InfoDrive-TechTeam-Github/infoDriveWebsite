@@ -285,14 +285,17 @@ function SalesforceAppExchange() {
               <img
                 className='img4 h-full w-full rounded-md shadow-md object-cover'
                 src='/images/cloud-computing-concept_24908-55295.jpeg'
+                alt='saleforce'
               />
               <img
                 className='img h-full w-full rounded-md shadow-md object-cover'
-                src='https://img.freepik.com/free-vector/flat-design-crm-illustration_23-2149363698.jpg?w=740&t=st=1683280782~exp=1683281382~hmac=ee31d23c12d1ce7229ffb9c9f8179f9492d095a1bf8d80818698d3a76c5dd33a'
+                src='/images/hand-drawn-flat-design-crm-illustration_23-2149379498.jpeg'
+                alt='Saleforce'
               />
               <img
                 className='img5 h-full w-full z-10 rounded-md shadow-md object-cover'
                 src='images/img3.png'
+                alt='saleforce'
               />
             </div>
           </div>
@@ -321,15 +324,18 @@ function SalesforceAppExchange() {
             <div className='grid grid-cols-8 grid-rows-8 row gap-0 md:-mt-36 mt-5'>
               <img
                 className='img4 h-full w-full rounded-md shadow-md object-cover'
-                src='https://img.freepik.com/free-photo/motherboard-closeup-technology-integrated-microchip-circuit-board-computer-processor-with-neon-light_90220-1203.jpg?w=900&t=st=1683282579~exp=1683283179~hmac=c6cb368055d0fbb07f6ed3d0bc918504be107e01d4a4abd8365e42b13c52e0c4'
+                src='images/motherboard-closeup-technology-integrated-microchip-circuit-board-computer-processor-with-neon-light_90220-1203.jpeg'
+                alt='customer releationship management'
               />
               <img
                 className='img h-full w-full rounded-md shadow-md object-cover'
-                src='https://img.freepik.com/free-photo/digital-cloud-data-storage-digital-concept-cloudscape-digital-online-service-global-network-database-backup-computer-infrastructure-technology-solution_90220-1046.jpg?w=900&t=st=1683282442~exp=1683283042~hmac=f4696d1f9da4bae92405dc28883495e67f9b49527997c72cdbc82c526b611cb3'
+                src='images/customer-relationship-management-concept_23-2150038418.jpeg'
+                alt='CRM'
               />
               <img
                 className='img5 h-full w-full rounded-md shadow-md object-cover'
-                src='https://img.freepik.com/free-vector/cloud-storage-realistic-composition-with-digital-elements-bright-lights-city_1284-26975.jpg?w=740&t=st=1683282526~exp=1683283126~hmac=08d69e5347d505ddacd6484a4fb11b207b67a16d87db66f6b9ff21390cbca3e3'
+                src='images/html-css-collage-concept-with-person_23-2150061967.jpeg'
+                alt='saleforce'
               />
             </div>
           </div>
