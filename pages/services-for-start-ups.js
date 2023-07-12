@@ -87,7 +87,7 @@ export default function ServicesForStartUps() {
         <div className='sliderBox'>
           <img
             style={{ width: '100%' }}
-            src='images/pexels-helena-lopes-933964.jpg'
+            src='images/pexels-helena-lopes-933964-min.jpg'
             alt='IT Solutions for Start-up Business'
           />
           <Box sx={{ flexGrow: 1 }} className='sliderContent'>
