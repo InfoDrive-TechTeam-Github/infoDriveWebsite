@@ -426,7 +426,7 @@ export default function IosAppDevelopment() {
                       className='pt15 pb15 hdnclr'
                       component='div'
                     >
-                      iOS app Customization &<br /> development
+                      iOS app Customization & development
                     </Typography>
                     <Typography
                       variant='body2'
@@ -459,8 +459,7 @@ export default function IosAppDevelopment() {
                       className='pt15 pb15 hdnclr'
                       component='div'
                     >
-                      Cross-platform <br />
-                      development
+                      Cross-platform development
                     </Typography>
                     <Typography
                       variant='body2'
@@ -495,9 +494,7 @@ export default function IosAppDevelopment() {
                       className='pt15 pb15 hdnclr'
                       component='div'
                     >
-                      Mobile app
-                      <br />
-                      integration
+                      Mobile app integration
                     </Typography>
                     <Typography
                       variant='body2'
@@ -532,9 +529,7 @@ export default function IosAppDevelopment() {
                       className='pt15 pb15 hdnclr'
                       component='div'
                     >
-                      Maintenance and
-                      <br />
-                      optimisation
+                      Maintenance and optimisation
                     </Typography>
                     <Typography
                       variant='body2'
@@ -569,8 +564,7 @@ export default function IosAppDevelopment() {
                       className='pt15 pb15 hdnclr'
                       component='div'
                     >
-                      Testing and QA <br />
-                      services
+                      Testing and QA services
                     </Typography>
                     <Typography
                       variant='body2'

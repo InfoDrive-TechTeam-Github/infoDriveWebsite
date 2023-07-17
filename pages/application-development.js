@@ -141,13 +141,7 @@ function applicationDevelopment() {
         </Box>
       </motion.div>
 
-      <motion.section
-        className='sectionBox p5'
-        initial={{ opacity: 0, scale: 0.5, left: '-100%' }}
-        whileInView={{ opacity: 1, scale: 1, left: 0 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        viewport={{ once: true }}
-      >
+      <section className='sectionBox p5' viewport={{ once: true }}>
         <Typography
           className='w100 red'
           gutterBottom
@@ -189,7 +183,7 @@ function applicationDevelopment() {
           variant='h5'
           component='div'
         ></Typography>
-      </motion.section>
+      </section>
       <section className='h-fit Poppins py-10 px-5'>
         <div className='aboutus mx-auto max-w-6xl flex flex-col gap-10  md:overflow-hidden'>
           <div className='h1 flex flex-col justify-center items-center text-[#0b2653] font-bold text-lg'>
