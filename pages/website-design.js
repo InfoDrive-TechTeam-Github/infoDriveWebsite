@@ -58,8 +58,7 @@ export default function WebMobileApp() {
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
-          src='https://img.freepik.com/free-photo/woman-using-computer_53876-47103.jpg?w=996&t=st=1682059962~exp=1682060562~hmac=3c195db29bb660b5f0a464a47f8cb6bfcb0b19c8b086060daecb587da242d746,
-          Malaysia, and India'
+          src='images/woman-using-computer_53876-47103.jpeg'
           alt='Professional Website Development'
         />
         <Box sx={{ flexGrow: 1 }} className='sliderContent'>
@@ -123,7 +122,7 @@ export default function WebMobileApp() {
           variant='h1'
           component='h1'
         >
-          Best Web Development Service
+          Best Web Development Services
         </Typography>
         <Typography gutterBottom variant='h5' component='div' className=''>
           InfoDrive Solutions is a premier website development company based in

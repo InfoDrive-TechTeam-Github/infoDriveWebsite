@@ -87,7 +87,7 @@ export default function SalesForceDevelopment() {
       <Header />
       <div className='sliderBox lightlingSlider'>
         <img
-          style={{ width: '100%' }}
+          style={{ width: '100%', height: '100%' }}
           src='images/0959e7bad48d4a91f7e112136efad00a-min.jpeg'
           alt='Salesforce Lightning App Development Services'
         />

@@ -152,7 +152,7 @@ export default function SalesCloudUSA() {
 
       <section className={`sectionBox p5`}>
         <Typography gutterBottom variant='h1' component='h1'>
-          Salesforce Sales Cloud Services
+          Your Trusted Salesforce Sales Cloud Services Provider in the USA
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='div'>
@@ -414,7 +414,7 @@ export default function SalesCloudUSA() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Empower Your Sales Team with Advanced Sales Cloud Solutions
+          Ready to Optimize Your Sales with Salesforce Sales Cloud?
         </Typography>
         <Button
           href='/contact-us.html'

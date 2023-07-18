@@ -277,7 +277,12 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
                     Easy customization
                   </Typography>
                   <br />
@@ -296,7 +301,12 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
                     Enhanced Security and Easy Marketing
                   </Typography>
                   <br />
@@ -316,7 +326,12 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
                     Scope for innovation
                   </Typography>
                   <br />
@@ -336,7 +351,12 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
                     Low investment and high ROI
                   </Typography>
                   <br />
@@ -356,7 +376,12 @@ export default function AndroidAppDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
                     Integration with social media
                   </Typography>
                   <br />
@@ -389,8 +414,13 @@ export default function AndroidAppDevelopment() {
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    Android app <br /> development consultation
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
+                    Android app development consultation
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
@@ -414,9 +444,13 @@ export default function AndroidAppDevelopment() {
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    Android UI/UX <br />
-                    design
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
+                    Android UI/UX design
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
@@ -439,8 +473,13 @@ export default function AndroidAppDevelopment() {
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    Custom Android <br /> app development
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
+                    Custom Android app development
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
@@ -463,8 +502,13 @@ export default function AndroidAppDevelopment() {
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    Multi-platform <br /> deployment
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
+                    Multi-platform deployment
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
@@ -487,8 +531,13 @@ export default function AndroidAppDevelopment() {
                   sx={{ width: 65, height: 65, marginLeft: 2, marginBottom: 3 }}
                 />
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
-                    Android <br /> software testing
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    component='div'
+                    className='whitespace-nowrap'
+                  >
+                    Android software testing
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>

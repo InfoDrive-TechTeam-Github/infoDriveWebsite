@@ -146,7 +146,16 @@ function SalesforceAppExchangeUSA() {
         </Box>
       </motion.div>
       <section className='  '>
-        <div className=' w-screen h-full   text-gray-700 mx-auto md:p-10 text-sm font-medium leading-7 max-w-6xl p5'>
+        <div className='sectionBox w-screen h-full   text-gray-700 mx-auto md:p-10 text-sm font-medium leading-7 max-w-6xl p5'>
+          <Typography
+            gutterBottom
+            variant='h1'
+            component='h1'
+            className='whitespace-nowrap'
+          >
+            Your Trusted Salesforce AppExchange Development Company in the
+            United States
+          </Typography>
           <p>
             As a leading{' '}
             <strong>Salesforce AppExchange App Development Company,</strong>{' '}
@@ -209,8 +218,7 @@ function SalesforceAppExchangeUSA() {
         >
           <div className=' w-screen h-full md:p-10  text-gray-700 mx-auto max-w-6xl p5'>
             <h3 className='font-bold text-pink-600 text-lg '>
-              Why Choose infoDrive Solutions for Salesforce AppExchange
-              Development Services?
+              Why Choose infoDrive Solutions?
             </h3>
             <p className=' text-gray-700 mt-1 p-2 text-sm leading-7 font-medium'>
               When it comes to Salesforce AppExchange Development, businesses
@@ -220,25 +228,37 @@ function SalesforceAppExchangeUSA() {
             </p>
             <div className='card flex md:flex-row flex-col md:gap-10 gap-5 mt-10 md:w-[100%]  text-base '>
               <div className='cardSale p-7 md:leading-7 text-sm'>
-                Experienced Salesforce Developers: Our team of Salesforce
-                developers has a wealth of experience in developing custom
-                applications on the Salesforce platform. We have worked on
-                projects of all sizes and complexities, and are equipped to
-                handle any project, big or small.
+                <h3 className='font-bold'>
+                  Expertise in Salesforce AppExchange
+                </h3>
+                At InfoDrive Solutions, we have a team of highly skilled
+                Salesforce AppExchange developers in the USA. We are well-versed
+                in the Salesforce platform, its technologies, and the
+                AppExchange ecosystem. Our developers stay up to date with the
+                latest industry trends, ensuring that we deliver cutting-edge
+                and high-quality applications that integrate seamlessly with
+                Salesforce.
               </div>
               <div className='cardSale p-7 md:leading-7 text-sm'>
-                Customized Solutions: We believe that every business is unique,
-                which is why we take a customized approach to Salesforce
-                AppExchange development. We work closely with clients to
-                understand their specific business needs and create tailored
-                solutions that meet their exact requirements.
+                <h3 className='font-bold'>
+                  Comprehensive Development Services
+                </h3>
+                As a trusted Salesforce AppExchange development company in the
+                USA, we offer a wide range of services to bring your app ideas
+                to life. From concept and design to development, testing, and
+                deployment, we cover every aspect of the app development
+                lifecycle. We work closely with you to understand your
+                requirements and develop a customized solution that exceeds your
+                expectations.
               </div>
               <div className='cardSale p-7 md:leading-7 text-sm'>
-                Proven Track Record: Our team has a proven track record of
-                delivering high-quality Salesforce AppExchange solutions that
-                drive business growth. We have worked with businesses of all
-                sizes, from small startups to large enterprises, and have helped
-                them to achieve their business goals
+                <h3 className='font-bold'>Innovative AppExchange Solutions</h3>
+                We believe in delivering innovative and user-friendly
+                applications. Our team leverages their expertise to create
+                powerful, scalable, and intuitive apps that enhance your
+                Salesforce experience. Whether you need a customer portal, a
+                sales forecasting tool, or a data analytics solution, we have
+                the skills and knowledge to turn your vision into a reality.
               </div>
             </div>
           </div>
@@ -334,15 +354,14 @@ function SalesforceAppExchangeUSA() {
       </section>
       <section className='feature p5'>
         <h2 className='text-center font-bold text-blue-950 text-2xl mt-20 max-w-5xl mx-auto'>
-          Why Choose infoDrive Solutions for Salesforce AppExchange Development
-          ?
+          Why Invest in Salesforce AppExchange?
         </h2>
 
         <p className='mt-5 text-gray-400 text-center mx-auto max-w-6xl'>
-          At infoDrive Solutions, we are committed to providing high-quality
-          Salesforce AppExchange app development services to businesses in USA.
-          Here are just a few reasons why you should choose us as your
-          Salesforce AppExchange development partner:
+          Salesforce AppExchange is the world's leading marketplace for business
+          applications, offering a wide range of pre-built solutions that extend
+          the functionality of the Salesforce platform. Here are some key
+          benefits of investing in Salesforce AppExchange
         </p>
         <hr className='hover:max-w-3xl border mx-auto mt-3 border-blue-700 rounded-md shadow-sm max-w-lg transition-all ease-linear ' />
         <div className='max-w-6xl mx-auto mt-10 mb-5'>
@@ -351,15 +370,18 @@ function SalesforceAppExchangeUSA() {
               <div className='item1 flex flex-col gap-5 text-gray-800 '>
                 <div className='flex gap-2 items-center'>
                   <FcOvertime size={32} />
-                  <h3 className='text-pink-600 font-bold'>Experienced Team:</h3>
+                  <h3 className='text-pink-600 font-bold'>
+                    Enhanced Salesforce Functionality:
+                  </h3>
                 </div>
 
                 <p className='content'>
-                  Our team of Salesforce developers has a wealth of experience
-                  in developing custom applications on the Salesforce platform.
-                  We have worked with businesses across a wide range of
-                  industries, and have the expertise to deliver solutions that
-                  meet your specific requirements.
+                  AppExchange offers a vast selection of applications that
+                  integrate seamlessly with Salesforce, expanding its
+                  capabilities and addressing specific business needs. From
+                  marketing automation and sales forecasting to customer service
+                  and data analytics, you can find apps that enhance almost
+                  every aspect of your business operations.
                 </p>
               </div>
             </article>
@@ -373,10 +395,12 @@ function SalesforceAppExchangeUSA() {
                 </div>
 
                 <p className='content'>
-                  We take a customized approach to Salesforce AppExchange
-                  development, working closely with clients to understand their
-                  unique business needs and create tailored solutions that meet
-                  their exact requirements.
+                  Salesforce AppExchange provides the flexibility to customize
+                  your Salesforce instance with tailored applications. Whether
+                  you need to automate processes, streamline workflows, or gain
+                  deeper insights, you can find or build apps that meet your
+                  specific requirements. Customized solutions enable you to
+                  maximize the value of your Salesforce investment.
                 </p>
               </div>
             </article>
@@ -385,15 +409,17 @@ function SalesforceAppExchangeUSA() {
                 <div className='flex gap-2 items-center'>
                   <FcWebcam size={32} />
                   <h3 className='text-pink-600 font-bold'>
-                    Proven Track Record:
+                    Trusted and Secure Applications:
                   </h3>
                 </div>
 
                 <p className='content '>
-                  Our team has a proven track record of delivering high-quality
-                  Salesforce AppExchange solutions that drive business growth.
-                  We have helped businesses of all sizes to achieve their
-                  business goals, and we can do the same for you.
+                  All apps available on Salesforce AppExchange undergo a
+                  rigorous review process to ensure quality, security, and
+                  compliance. You can trust that the applications you install
+                  from AppExchange are reliable, well-maintained, and adhere to
+                  industry best practices. This provides peace of mind and
+                  reduces the risk associated with third-party integrations.
                 </p>
               </div>
             </article>
@@ -402,16 +428,16 @@ function SalesforceAppExchangeUSA() {
                 <div className='flex gap-2 items-center'>
                   <FcStatistics size={32} />
                   <h3 className='text-pink-600 font-bold'>
-                    Competitive Pricing:
+                    Scalability and Future-Proofing:
                   </h3>
                 </div>
 
                 <p className='content'>
-                  Ready to get started on your Salesforce AppExchange
-                  development project? Contact us today to learn more about our
-                  services and how we can help your business grow. Our team is
-                  here to answer any questions you may have and provide you with
-                  a customized solution that meets your specific needs.
+                  As your business evolves, Salesforce AppExchange allows you to
+                  add or switch applications seamlessly, ensuring scalability
+                  and adaptability. You can easily find new apps or upgrade
+                  existing ones to meet changing business requirements,
+                  empowering your organization to stay ahead of the competition.
                 </p>
               </div>
             </article>
