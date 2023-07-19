@@ -157,18 +157,21 @@ export default function SalesLightningUSA() {
         <Typography
           gutterBottom
           variant='h1'
-          className='upperCase'
+          className='upperCase whitespace-nowrap'
           component='h1'
         >
-          Why Salesforce Lightning Development ?
+          Your Trusted Salesforce Lightning App Development Services Provider in
+          the USA
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='h3'>
-          Salesforce Lightning is a powerful, user-friendly platform that allows
-          businesses to streamline their operations, improve customer
-          experiences, and boost their productivity. With Lightning, you can
-          access all of your Salesforce data and tools from a single, intuitive
-          interface, making it easier to manage your business and drive growth.
+          Are you looking to enhance your Salesforce experience with custom
+          Lightning applications? Look no further! InfoDrive Solutions is your
+          trusted partner for Salesforce Lightning app development services in
+          the USA. With our expertise in Salesforce Lightning and a track record
+          of successful app development projects, we specialize in creating
+          innovative and customized solutions that maximize your Salesforce
+          investment.
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='div'>
@@ -310,7 +313,7 @@ export default function SalesLightningUSA() {
 
       <section className={`sectionBox whyUsBox  pb0 p5`}>
         <Typography className='mb0' gutterBottom variant='h2' component='div'>
-          Our Lightning services includes:
+          Our Salesforce Lightning App Development Services:
         </Typography>
         <br />
 
@@ -336,7 +339,7 @@ export default function SalesLightningUSA() {
                     className='mb0'
                     component='div'
                   >
-                    Lightning implementation
+                    App Ideation and Design
                   </Typography>
                   <br />
                   <Typography
@@ -344,9 +347,12 @@ export default function SalesLightningUSA() {
                     variant='body2'
                     color='text.secondary'
                   >
-                    We can help you set up and customize your Lightning
-                    platform, ensuring that it meets the specific needs of your
-                    business.
+                    Our expert developers work closely with you to understand
+                    your business goals and challenges. We help you
+                    conceptualize and refine your app ideas, ensuring that they
+                    align with your objectives. Our design experts create
+                    intuitive and visually appealing user interfaces that
+                    provide an exceptional user experience.
                   </Typography>
                 </CardContent>
               </Card>
@@ -361,13 +367,17 @@ export default function SalesLightningUSA() {
                     className='mb0'
                     component='div'
                   >
-                    Lightning training
+                    Custom App Development
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                    Our team can provide training and support to help you and
-                    your team get up to speed on the Lightning platform, so you
-                    can take full advantage of its features and capabilities.
+                    We specialize in custom Salesforce Lightning app
+                    development. Our developers have expertise in building
+                    applications that leverage the power of Lightning to
+                    streamline your business processes and enhance productivity.
+                    We follow industry best practices and adhere to Salesforce
+                    guidelines to deliver secure, scalable, and high-performing
+                    applications.
                   </Typography>
                 </CardContent>
               </Card>
@@ -382,7 +392,7 @@ export default function SalesLightningUSA() {
                     className='mb0'
                     component='div'
                   >
-                    Lightning consulting
+                    Lightning Component Development
                   </Typography>
                   <br />
                   <Typography
@@ -390,9 +400,13 @@ export default function SalesLightningUSA() {
                     variant='body2'
                     color='text.secondary'
                   >
-                    Our consultants can provide guidance and advice on how to
-                    use Lightning to drive business growth and improve your
-                    operations.
+                    Salesforce Lightning offers a wide range of reusable
+                    components that can be customized and extended to suit your
+                    specific business needs. Our developers have deep knowledge
+                    and experience in Lightning component development. We can
+                    create custom Lightning components that enhance your
+                    Salesforce organization and provide a seamless user
+                    experience.
                   </Typography>
                 </CardContent>
               </Card>
@@ -407,13 +421,16 @@ export default function SalesLightningUSA() {
                     className='mb0'
                     component='div'
                   >
-                    Lightning support
+                    App Testing and Quality Assurance
                   </Typography>
                   <br />
                   <Typography variant='body2' color='text.secondary'>
-                    We offer ongoing support and maintenance to ensure that your
-                    Lightning platform is always running smoothly and
-                    efficiently.
+                    We understand the importance of delivering bug-free and
+                    reliable applications. Our rigorous testing and quality
+                    assurance processes ensure that your app functions
+                    flawlessly across different devices, browsers, and operating
+                    systems. We conduct comprehensive testing to identify and
+                    address any issues, guaranteeing a seamless user experience.
                   </Typography>
                 </CardContent>
               </Card>
@@ -431,8 +448,8 @@ export default function SalesLightningUSA() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Empower Your Business with the Cutting-Edge Capabilities of Salesforce
-          Lightning
+          Ready to Supercharge Your Salesforce Experience with Custom Lightning
+          Apps?
         </Typography>
         <Button
           href='/contact-us.html'

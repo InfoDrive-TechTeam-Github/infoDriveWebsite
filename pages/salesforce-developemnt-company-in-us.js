@@ -165,8 +165,6 @@ export default function SalesForceDevelopmentUSA() {
           met the strict standards set by Salesforce. Our team of experienced
           Salesforce developers is well-versed in these products and can help
           you implement and customize them to meet your specific business needs.
-          Contact us to learn more about how we can help you get the most out of
-          Salesforce.
         </Typography>
       </section>
 
