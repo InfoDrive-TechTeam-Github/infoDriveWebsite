@@ -154,23 +154,16 @@ export default function SalesForceEinstein() {
 
       <section className={`sectionBox ,negativemargin p5`}>
         <Typography gutterBottom variant='h1' component='h1'>
-          Transform Your Business Insights with Salesforce Einstein Analytics
+          Unlock the Power of Data with Salesforce Einstein Analytics
         </Typography>
 
         <Typography className='w100' gutterBottom variant='h5' component='div'>
-          Salesforce Einstein Analytics is a powerful and comprehensive business
-          intelligence platform that combines advanced analytics with the
-          functionality of the Salesforce CRM. With Einstein Analytics, you can
-          easily access and analyze your data, create custom dashboards, and
-          gain insights that can help you make informed business decisions. One
-          of the key features of Einstein Analytics is its ability to use
-          artificial intelligence (AI) and machine learning to analyze and
-          understand your data. This means that Einstein Analytics can
-          automatically detect patterns, trends, and relationships in your data,
-          and provide insights and recommendations based on this analysis. For
-          example, Einstein Analytics can help you identify sales trends,
-          customer behavior patterns, and other important insights that can help
-          you optimize your business processes and drive better results.
+          Are you looking to gain deeper insights into your business data and
+          make data-driven decisions? Look no further! InfoDrive Solutions is
+          your trusted partner for Salesforce Einstein Analytics services. With
+          our expertise in Salesforce and advanced analytics, we help businesses
+          harness the power of data to drive growth, increase efficiency, and
+          make informed decisions.
         </Typography>
       </section>
 
@@ -259,7 +252,7 @@ export default function SalesForceEinstein() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Unleash the Power of Data-Driven Insights
+          Ready to Unleash the Power of Data with Salesforce Einstein Analytics?
         </Typography>
         <Button
           href='/contact-us.html'

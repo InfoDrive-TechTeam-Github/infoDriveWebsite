@@ -95,7 +95,7 @@ export default function SalesForceDevelopment() {
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
             <Typography gutterBottom variant='h3' component='div'>
-              automation capabilities of SAP Emarsys.
+              Automation Capabilities of SAP Emarsys.
             </Typography>
             <Typography gutterBottom variant='h1' component='div'>
               Unlock the full potential of your marketing
@@ -151,9 +151,8 @@ export default function SalesForceDevelopment() {
         className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 pb30 p5`}
       >
         <Typography variant='h1' className='mb0' component='h1'>
-          SAP Emarsys Customer Engagement
+          Your Trusted SAP Emarsys Services Partner in the USA
         </Typography>
-
         <Typography
           gutterBottom
           variant='h5'
@@ -200,6 +199,20 @@ export default function SalesForceDevelopment() {
           understand their customers' needs, preferences, and behaviors, and use
           this information to create targeted and personalized communications
           that drive engagement and loyalty.
+        </Typography>
+        <Typography
+          gutterBottom
+          variant='h5'
+          className='w100 mb15'
+          component='div'
+        >
+          {' '}
+          Are you looking to transform your marketing and customer engagement
+          strategies? Look no further! InfoDrive Solutions is your trusted
+          partner for SAP Emarsys services in the USA. With our expertise in SAP
+          Emarsys and a deep understanding of marketing and customer engagement,
+          we help businesses leverage the power of this innovative platform to
+          drive growth, increase customer satisfaction, and boost revenue.{' '}
         </Typography>
       </section>
       <br />
@@ -256,6 +269,172 @@ export default function SalesForceDevelopment() {
           sizes and industries.
         </Typography>
       </section>
+      <section
+        className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
+      >
+        <Typography className='mb0' gutterBottom variant='h2' component='div'>
+          Why Choose Us for SAP Emarsys Services?
+        </Typography>
+
+        <br />
+        <br />
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <Grid item xs={6} className>
+              <Card>
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='mb0'
+                    component='div'
+                  >
+                    Expertise in SAP Emarsys
+                  </Typography>
+                  <br />
+                  <Typography
+                    className='pr30'
+                    variant='body2'
+                    color='text.secondary'
+                  >
+                    At InfoDrive Solutions, we have a team of experienced
+                    professionals who specialize in SAP Emarsys. We are
+                    well-versed in the platform's solutions, capabilities, and
+                    best practices. Our consultants stay up to date with the
+                    latest advancements in marketing automation and customer
+                    engagement, ensuring that we deliver cutting-edge solutions
+                    that transform your marketing efforts.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item xs={6}>
+              <Card>
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='mb0'
+                    component='div'
+                  >
+                    Comprehensive Services
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    As a trusted SAP Emarsys services provider in the USA, we
+                    offer a wide range of services to help businesses harness
+                    the full potential of this powerful platform. From initial
+                    consultation and implementation to integration,
+                    customization, and ongoing support, we cover every aspect of
+                    SAP Emarsys to ensure a seamless and successful deployment.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item xs={6}>
+              <Card>
+                <CardContent>
+                  <Typography
+                    gutterBottom
+                    variant='h3'
+                    className='mb0'
+                    component='div'
+                  >
+                    Tailored Solutions for Your Business
+                  </Typography>
+                  <br />
+                  <Typography
+                    className='pr30'
+                    variant='body2'
+                    color='text.secondary'
+                  >
+                    We understand that every business is unique, and marketing
+                    requirements vary across industries. Our SAP Emarsys
+                    services are designed to provide tailored solutions that
+                    align with your specific marketing and customer engagement
+                    needs. Whether you're a small business looking to automate
+                    your email marketing or a large enterprise seeking advanced
+                    multichannel marketing capabilities, we have the expertise
+                    to deliver results.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
+      </section>
+      <br />
+      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 p5`}>
+        <Typography gutterBottom variant='h2' className='mb0' component='div'>
+          Our SAP Emarsys Services
+        </Typography>
+        <br />
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={0}>
+            <Grid item xs={4}>
+              <Card>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Implementation and Configuration
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    Our expert consultants will guide you through the SAP
+                    Emarsys implementation process, ensuring a smooth transition
+                    to the platform. We work closely with you to understand your
+                    marketing goals and requirements, configuring SAP Emarsys to
+                    meet your specific needs. Our consultants ensure that the
+                    platform is set up correctly, data is integrated, and key
+                    features are configured for optimal performance.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item xs={4}>
+              <Card>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Integration with Other Systems
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    SAP Emarsys can integrate seamlessly with other systems and
+                    data sources within your organization. We help you connect
+                    your customer data, e-commerce platforms, CRM systems, and
+                    more to SAP Emarsys, providing a unified view of your
+                    customer journey. This integration enables you to deliver
+                    personalized and targeted marketing campaigns across
+                    multiple channels.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+
+            <Grid item xs={4}>
+              <Card>
+                <CardContent>
+                  <Typography gutterBottom variant='h3' component='div'>
+                    Customization and Automation
+                  </Typography>
+                  <br />
+                  <Typography variant='body2' color='text.secondary'>
+                    We specialize in customizing SAP Emarsys to match your
+                    unique marketing and customer engagement requirements. Our
+                    consultants work closely with you to understand your
+                    customer segments, messaging preferences, and campaign
+                    objectives. We help you automate your marketing processes,
+                    create personalized experiences, and engage customers at
+                    every stage of their journey.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+        </Box>
+      </section>
 
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
@@ -264,7 +443,8 @@ export default function SalesForceDevelopment() {
           className='white pb15 pt15 poppin'
           component='div'
         >
-          Boost Your Customer Engagement with SAP Emarsys
+          Ready to Transform Your Marketing and Customer Engagement with SAP
+          Emarsys?
         </Typography>
         <Button
           href='/contact-us.html'
