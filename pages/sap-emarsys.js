@@ -95,13 +95,13 @@ export default function SalesForceDevelopment() {
         <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
           <Grid container spacing={0}>
             <Typography gutterBottom variant='h3' component='div'>
-              automation capabilities of SAP Emarsys.
+              Automation Capabilities of SAP Emarsys.
             </Typography>
             <Typography gutterBottom variant='h1' component='div'>
-              Unlock the full potential of your marketing
+              Unlock the Full Potential of your Marketing
               <br />
-              strategy with the advanced <br />
-              automation capabilities of SAP Emarsys <br />
+              Strategy with the Advanced <br />
+              Automation Capabilities of SAP Emarsys <br />
             </Typography>
             <Button
               href='/contact-us.html'
