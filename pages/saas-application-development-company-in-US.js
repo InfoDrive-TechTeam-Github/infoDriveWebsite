@@ -46,11 +46,11 @@ export default function SaasUsa() {
         </title>
         <meta
           name='description'
-          content='InfoDrive Solutions is a leading SaaS application development company offering comprehensive services in Singapore, Malaysia, and US. Our expertise in SaaS model software development and platform building helps clients build custom SaaS apps from scratch.'
+          content='InfoDrive Solutions is a leading SaaS application development company offering comprehensive services US. Our expertise in SaaS model software development and platform building helps clients build custom SaaS apps from scratch.'
         />
         <meta
           name='keywords'
-          content='SaaS application development, SaaS development company, SaaS application development services, SaaS application development company, SaaS software development company, SaaS application development platform, build a SaaS app from scratch, SaaS model software development, SaaS software development services, SaaS application development company in Singapore, SaaS application development company in Malaysia, SaaS application development company in Singapore'
+          content='SaaS application development, SaaS development company, SaaS application development services, SaaS application development company, SaaS software development company, SaaS application development platform, build a SaaS app from scratch, SaaS model software development, SaaS software development services, SaaS application development company in Singapore, SaaS application development company in Malaysia, SaaS application development company in USA'
         />
         <link
           rel='canonical'

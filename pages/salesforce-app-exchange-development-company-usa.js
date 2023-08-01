@@ -61,11 +61,11 @@ function SalesforceAppExchangeUSA() {
         <title>Trusted Salesforce AppExchange Development Company in USA</title>
         <meta
           name='description'
-          content='Looking for a reliable Salesforce AppExchange development company? We offer expert Salesforce AppExchange app development services in United State, Malaysia & USA. Our certified developers can help you build custom solutions and integrations to meet your business needs.'
+          content='Looking for a reliable Salesforce AppExchange development company? We offer expert Salesforce AppExchange app development services in USA. Our certified developers can help you build custom solutions and integrations to meet your business needs.'
         />
         <meta
           name='keywords'
-          content='Salesforce AppExchange Development Company, Salesforce AppExchange Development Company in United State, Salesforce AppExchange Development Company inUnited State Salesforce AppExchange Development Company in USA, Salesforce Appexchange App Development Services in United State, Salesforce Appexchange App Development Services in United State salesforce appexchange partners, Salesforce AppExchange Developers, Salesforce AppExchange Developers in United State, Salesforce AppExchange Developers in Malaysia'
+          content='Salesforce AppExchange Development Company, Salesforce AppExchange Development Company in United State, Salesforce AppExchange Development Company inUnited State Salesforce AppExchange Development Company in USA, Salesforce Appexchange App Development Services in United State, Salesforce Appexchange App Development Services in United State salesforce appexchange partners, Salesforce AppExchange Developers, Salesforce AppExchange Developers in United State, Salesforce AppExchange Developers in US'
         />
         <link
           rel='canonical'

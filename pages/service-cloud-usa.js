@@ -50,7 +50,7 @@ export default function ServiceCLoudUSA() {
         />
         <meta
           name='keywords'
-          content='Salesforce Service Cloud Implementation, Salesforce Service Cloud Consulting Services, Salesforce Service Cloud Integrations, Salesforce Service Cloud customization, Salesforce Service Cloud for small business, Salesforce Service Cloud Consulting Services in United State, Salesforce Service Cloud Consulting Services in USA, Salesforce Service Cloud Consulting Services in United State, Salesforce Service Cloud automation, Salesforce Service Cloud implementation services in United State, Salesforce Service Cloud for Southeast Asian businesses'
+          content='Salesforce Service Cloud Implementation, Salesforce Service Cloud Consulting Services, Salesforce Service Cloud Integrations, Salesforce Service Cloud customization, Salesforce Service Cloud for small business, Salesforce Service Cloud Consulting Services in United State, Salesforce Service Cloud Consulting Services in USA, Salesforce Service Cloud Consulting Services in US, Salesforce Service Cloud automation, Salesforce Service Cloud implementation services in United State, Salesforce Service Cloud for Southeast Asian businesses'
         />
         <link
           rel='canonical'

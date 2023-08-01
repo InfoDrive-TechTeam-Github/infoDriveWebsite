@@ -50,7 +50,7 @@ export default function SalesCloudUSA() {
         />
         <meta
           name='keywords'
-          content='Salesforce Sales Cloud Implementation, Salesforce Sales Cloud automation, Salesforce Sales Cloud customization, Salesforce Sales Cloud Consulting Services, Salesforce Sales Cloud Consulting Services in United State, Salesforce Sales Cloud for small business, Salesforce Sales Cloud Consulting Services in USA, Salesforce Sales Cloud Consulting Services in US, Salesforce Sales Cloud implementation services in United State, Salesforce Sales Cloud for USAn businesses, Salesforce Sales Cloud implementation services in US'
+          content='Salesforce Sales Cloud Implementation, Salesforce Sales Cloud automation, Salesforce Sales Cloud customization, Salesforce Sales Cloud Consulting Services, Salesforce Sales Cloud Consulting Services in United State, Salesforce Sales Cloud for small business, Salesforce Sales Cloud Consulting Services in USA, Salesforce Sales Cloud Consulting Services in US, Salesforce Sales Cloud implementation services in United State, Salesforce Sales Cloud for USA businesses, Salesforce Sales Cloud implementation services in US'
         />
         <link
           rel='canonical'

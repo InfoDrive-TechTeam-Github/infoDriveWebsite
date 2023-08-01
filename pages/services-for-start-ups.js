@@ -50,7 +50,7 @@ export default function ServicesForStartUps() {
           />
           <meta
             name='keywords'
-            content='IT Solutions for Start-up Business in Singapore, IT Consulting Solutions, IT Consulting Solutions for Start-up Company, IT Solutions for Start-up Business in Malaysia, Digital Solutions for Start-ups, IT Consulting Solutions in Singapore, IT Solutions for Start-up Business in India, IT Solutions for Start-up Business in Kuala Lumpur, startup support services'
+            content='IT Solutions for Start-up Business in Singapore, IT Consulting Solutions, IT Consulting Solutions for Start-up Company, IT Solutions for Start-up Business in US, Digital Solutions for Start-ups, IT Consulting Solutions in Singapore, IT Solutions for Start-up Business in USA, IT Solutions for Start-up Business in United State, startup support services'
           />
           <link
             rel='canonical'
