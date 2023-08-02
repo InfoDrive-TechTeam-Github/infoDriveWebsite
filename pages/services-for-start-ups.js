@@ -1,40 +1,40 @@
-import * as React from 'react';
-import Head from 'next/head';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import utilStyles from '../styles/utils.module.css';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import * as React from "react";
+import Head from "next/head";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import utilStyles from "../styles/utils.module.css";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
 //import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import Avatar from '@mui/material/Avatar';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import Link from '@mui/material/Link';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormControl from '@mui/material/FormControl';
-import TextField from '@mui/material/TextField';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Stack from '@mui/material/Stack';
-import LeadForm from '../components/leadForm';
+import Grid from "@mui/material/Grid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
+import Avatar from "@mui/material/Avatar";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import Link from "@mui/material/Link";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import Stack from "@mui/material/Stack";
+import LeadForm from "../components/leadForm";
 export default function ServicesForStartUps() {
   return (
     <>
@@ -45,26 +45,26 @@ export default function ServicesForStartUps() {
             Ideation & Development Services – InfoDrive Solutions
           </title>
           <meta
-            name='description'
-            content='We are a leading provider of digital solutions for start-ups, helping them to get their business off the ground and achieve success in the highly competitive world of entrepreneurship. With our comprehensive range of IT Services.'
+            name="description"
+            content="We are a leading provider of digital solutions for start-ups, helping them to get their business off the ground and achieve success in the highly competitive world of entrepreneurship. With our comprehensive range of IT Services."
           />
           <meta
-            name='keywords'
-            content='IT Solutions for Start-up Business in Singapore, IT Consulting Solutions, IT Consulting Solutions for Start-up Company, IT Solutions for Start-up Business in Malaysia, Digital Solutions for Start-ups, IT Consulting Solutions in Singapore, IT Solutions for Start-up Business in India, IT Solutions for Start-up Business in Kuala Lumpur, startup support services'
+            name="keywords"
+            content="IT Solutions for Start-up Business in Singapore, IT Consulting Solutions, IT Consulting Solutions for Start-up Company, IT Solutions for Start-up Business in US, Digital Solutions for Start-ups, IT Consulting Solutions in Singapore, IT Solutions for Start-up Business in USA, IT Solutions for Start-up Business in United State, startup support services"
           />
           <link
-            rel='canonical'
-            href='https://infodrive-solutions.com/services-for-start-ups.html'
+            rel="canonical"
+            href="https://infodrive-solutions.com/services-for-start-ups.html"
           />
           <meta
-            property='og:title'
-            content=' IT Solutions for Start-up Business | Consulting Solutions, and Ideation & Development Services – InfoDrive Solutions'
+            property="og:title"
+            content=" IT Solutions for Start-up Business | Consulting Solutions, and Ideation & Development Services – InfoDrive Solutions"
           />
           <meta
-            property='og:image'
-            content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+            property="og:image"
+            content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
           />
-          <link rel='icon' href='/favicon.png' />
+          <link rel="icon" href="/favicon.png" />
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -77,40 +77,40 @@ export default function ServicesForStartUps() {
         </Head>
         <noscript>
           <iframe
-            src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
-            height='0'
-            width='0'
-            style={{ display: 'none', visibility: 'hidden' }}
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
         <Header />
-        <div className='sliderBox'>
+        <div className="sliderBox">
           <img
-            style={{ width: '100%' }}
-            src='images/pexels-helena-lopes-933964-min.jpg'
-            alt='IT Solutions for Start-up Business'
+            style={{ width: "100%" }}
+            src="images/pexels-helena-lopes-933964-min.jpg"
+            alt="IT Solutions for Start-up Business"
           />
-          <Box sx={{ flexGrow: 1 }} className='sliderContent'>
+          <Box sx={{ flexGrow: 1 }} className="sliderContent">
             <Grid container spacing={0}>
-              <Typography gutterBottom variant='h1' component='div'>
+              <Typography gutterBottom variant="h1" component="div">
                 InfoDrive Solutions is a leading <br />
                 Technology solution provider and <br />
                 we are helping many start-ups <br /> and small-medium businesses
                 to <br /> build products from scratch
               </Typography>
               <Button
-                href='/contact-us.html'
-                className='readmore white normalCase'
-                variant='text'
+                href="/contact-us.html"
+                className="readmore white normalCase"
+                variant="text"
               >
                 Let's Talk <ArrowRightAltIcon />
               </Button>
-              <nav className='socical-network'>
+              <nav className="socical-network">
                 <List>
                   <ListItem>
                     <ListItemButton
-                      component='a'
-                      href='https://www.facebook.com/InfoDrivesolutions/'
+                      component="a"
+                      href="https://www.facebook.com/InfoDrivesolutions/"
                     >
                       <ListItemIcon>
                         <FacebookIcon />
@@ -119,8 +119,8 @@ export default function ServicesForStartUps() {
                   </ListItem>
                   <ListItem>
                     <ListItemButton
-                      component='a'
-                      href='https://in.linkedin.com/company/infodrive-solutions/'
+                      component="a"
+                      href="https://in.linkedin.com/company/infodrive-solutions/"
                     >
                       <ListItemIcon>
                         <LinkedInIcon />
@@ -129,8 +129,8 @@ export default function ServicesForStartUps() {
                   </ListItem>
                   <ListItem>
                     <ListItemButton
-                      component='a'
-                      href='https://www.instagram.com/infodrivesolutions/'
+                      component="a"
+                      href="https://www.instagram.com/infodrivesolutions/"
                     >
                       <ListItemIcon>
                         <InstagramIcon />
@@ -146,23 +146,23 @@ export default function ServicesForStartUps() {
         <section className={`sectionBox aboutUsBox3 servicesForStartUp p5`}>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
-              <Grid item xs={12} className='pr30'>
+              <Grid item xs={12} className="pr30">
                 <Card>
                   <CardContent>
                     <Typography
-                      className='w100 red'
+                      className="w100 red"
                       gutterBottom
-                      variant='h1'
-                      component='h1'
+                      variant="h1"
+                      component="h1"
                     >
                       IT Solutions for Start-up Business
                     </Typography>
 
                     <Typography
                       gutterBottom
-                      variant='h3'
-                      component='div'
-                      textAlign={'justify'}
+                      variant="h3"
+                      component="div"
+                      textAlign={"justify"}
                     >
                       We analyse your start-up model in entirely, consult and
                       offer the right technology & Business solutions after we
@@ -189,9 +189,9 @@ export default function ServicesForStartUps() {
                     <hr />
                     <Typography
                       gutterBottom
-                      variant='h3'
-                      component='div'
-                      textAlign={'justify'}
+                      variant="h3"
+                      component="div"
+                      textAlign={"justify"}
                     >
                       Your website is often the first point of contact with
                       potential customers, and it's crucial that it reflects
@@ -204,9 +204,9 @@ export default function ServicesForStartUps() {
                     <hr />
                     <Typography
                       gutterBottom
-                      variant='h3'
-                      component='div'
-                      textAlign={'justify'}
+                      variant="h3"
+                      component="div"
+                      textAlign={"justify"}
                     >
                       We also offer a range of other solutions designed
                       specifically for start-ups. These include business
@@ -218,7 +218,7 @@ export default function ServicesForStartUps() {
                       and are here to provide the support and guidance you need
                       to take your business to the next level.
                     </Typography>
-                    <Typography gutterBottom variant='h3' component='div'>
+                    <Typography gutterBottom variant="h3" component="div">
                       We build custom applications for product-market fit:
                     </Typography>
                     <ul>
@@ -228,11 +228,11 @@ export default function ServicesForStartUps() {
                       <li>Digital Marketing & Research</li>
                     </ul>
 
-                    <Typography gutterBottom variant='h3' component='div'>
+                    <Typography gutterBottom variant="h3" component="div">
                       {/* We also offer a range of other solutions designed specifically for start-ups. These include business planning and strategy development, market research, and business process automation. Whatever your needs, we have the expertise and experience to help you succeed. At InfoDrive Solutions, we are committed to helping start-ups grow and succeed. We understand the challenges you face and are here to provide the support and guidance you need to take your business to the next level.  */}
                     </Typography>
                     <br />
-                    <Button className='readmore' variant='text'>
+                    <Button className="readmore" variant="text">
                       LEARN MORE ABOUT US <ArrowRightAltIcon />
                     </Button>
                   </CardContent>
@@ -255,29 +255,29 @@ export default function ServicesForStartUps() {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  variant='h1'
-                  className='red'
-                  component='h2'
+                  variant="h1"
+                  className="red"
+                  component="h2"
                   style={{
-                    fontSize: '25px',
-                    color: '#dd3952',
+                    fontSize: "25px",
+                    color: "#dd3952",
                     fontWeight: 600,
-                    fontFamily: 'Poppins',
+                    fontFamily: "Poppins",
                   }}
                 >
                   TECHNOLOGY SOLUTIONS FOR START UPS
                 </Typography>
-                <Typography gutterBottom variant='h2' component='div'>
+                <Typography gutterBottom variant="h2" component="div">
                   Finding and running a start-up could be an extremely exciting
                   yet highly challenging endeavour.
                 </Typography>
               </Grid>
             </Grid>
           </Box>
-          <Box sx={{ flexGrow: 1 }} className='pb30'>
+          <Box sx={{ flexGrow: 1 }} className="pb30">
             <Grid container spacing={0}>
               <Grid item xs={6}>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   Today, close to 90% of start-ups face failure due to the
                   challenges faced with the fast pace of technology development
                   as well as the growth of well-known companies in the market.
@@ -286,9 +286,9 @@ export default function ServicesForStartUps() {
               <Grid item xs={6}>
                 <Typography
                   gutterBottom
-                  variant='h5'
-                  component='div'
-                  className='pl5'
+                  variant="h5"
+                  component="div"
+                  className="pl5"
                 >
                   Employing the services provided by software development
                   outsourcing vendors like us will allow start-ups to have
@@ -298,13 +298,13 @@ export default function ServicesForStartUps() {
               </Grid>
             </Grid>
           </Box>
-          <Box className='pt30' sx={{ flexGrow: 1 }}>
+          <Box className="pt30" sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={12}>
                 <Card>
                   <img
-                    alt='IT Consulting Solutions'
-                    src='images/pexels-cottonbro-studio-5473298.jpeg'
+                    alt="IT Consulting Solutions"
+                    src="images/pexels-cottonbro-studio-5473298.jpeg"
                   />
                 </Card>
               </Grid>
@@ -314,16 +314,16 @@ export default function ServicesForStartUps() {
         <section className={`sectionBox connectUs backDrop p5`}>
           <Typography
             gutterBottom
-            variant='h3'
-            className='white pb15 pt15 poppin'
-            component='div'
+            variant="h3"
+            className="white pb15 pt15 poppin"
+            component="div"
           >
             Get in Touch with Our Team and Learn How We can Help Your Startup
             succeed
           </Typography>
           <Button
-            href='/contact-us.html'
-            className='bgRed white pl15 pr15 poppin upperCase'
+            href="/contact-us.html"
+            className="bgRed white pl15 pr15 poppin upperCase"
           >
             Connect with Our Expert
           </Button>
@@ -331,14 +331,14 @@ export default function ServicesForStartUps() {
         <section className={`sectionBox whyUsBox p5`}>
           <Typography
             gutterBottom
-            variant='h2'
-            className=''
-            component='h2'
-            style={{ marginBottom: '-2px' }}
+            variant="h2"
+            className=""
+            component="h2"
+            style={{ marginBottom: "-2px" }}
           >
             Why Your Start-Up Should Work With Us?
           </Typography>
-          <Typography gutterBottom variant='h5' component='div'>
+          <Typography gutterBottom variant="h5" component="div">
             InfoDrive Solutions is devoted to assisting new businesses to get
             off the ground and become successful. Our team of specialists has a
             vast knowledge of delivering specialist services that address the
@@ -356,11 +356,11 @@ export default function ServicesForStartUps() {
               <Grid item xs={3}>
                 <Card sx={{ maxWidth: 345 }}>
                   <CardContent>
-                    <Typography gutterBottom variant='h3' component='div'>
+                    <Typography gutterBottom variant="h3" component="div">
                       Faster product launch
                     </Typography>
                     <br />
-                    <Typography variant='body2' color='text.secondary'>
+                    <Typography variant="body2" color="text.secondary">
                       Launch product in shortest time possible using technology
                       solutions.
                     </Typography>
@@ -371,11 +371,11 @@ export default function ServicesForStartUps() {
               <Grid item xs={3}>
                 <Card sx={{ maxWidth: 345 }}>
                   <CardContent>
-                    <Typography gutterBottom variant='h3' component='div'>
+                    <Typography gutterBottom variant="h3" component="div">
                       Lower cost
                     </Typography>
                     <br />
-                    <Typography variant='body2' color='text.secondary'>
+                    <Typography variant="body2" color="text.secondary">
                       Easily break down business expenses accordingly, reduce
                       funding pressure.
                     </Typography>
@@ -386,11 +386,11 @@ export default function ServicesForStartUps() {
               <Grid item xs={3}>
                 <Card sx={{ maxWidth: 345 }}>
                   <CardContent>
-                    <Typography gutterBottom variant='h3' component='div'>
+                    <Typography gutterBottom variant="h3" component="div">
                       Mitigate risk
                     </Typography>
                     <br />
-                    <Typography variant='body2' color='text.secondary'>
+                    <Typography variant="body2" color="text.secondary">
                       Mitigate challenges on an end-to-end journey with us to a
                       completed product.
                     </Typography>
@@ -401,11 +401,11 @@ export default function ServicesForStartUps() {
               <Grid item xs={3}>
                 <Card sx={{ maxWidth: 345 }}>
                   <CardContent>
-                    <Typography gutterBottom variant='h3' component='div'>
+                    <Typography gutterBottom variant="h3" component="div">
                       Expert advisors
                     </Typography>
                     <br />
-                    <Typography variant='body2' color='text.secondary'>
+                    <Typography variant="body2" color="text.secondary">
                       CTO and Founders with multiple exits providing start-up
                       entrepreneurs with advices.
                     </Typography>

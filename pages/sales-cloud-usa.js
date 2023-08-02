@@ -1,41 +1,41 @@
-import * as React from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import utilStyles from '../styles/utils.module.css';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import * as React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import utilStyles from "../styles/utils.module.css";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
 //import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import Avatar from '@mui/material/Avatar';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import Link from '@mui/material/Link';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormControl from '@mui/material/FormControl';
-import TextField from '@mui/material/TextField';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Stack from '@mui/material/Stack';
-import Head from 'next/head';
+import Grid from "@mui/material/Grid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
+import Avatar from "@mui/material/Avatar";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import Link from "@mui/material/Link";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import Stack from "@mui/material/Stack";
+import Head from "next/head";
 
-import LeadForm from '../components/leadForm';
+import LeadForm from "../components/leadForm";
 export default function SalesCloudUSA() {
   return (
     <div>
@@ -45,27 +45,27 @@ export default function SalesCloudUSA() {
           Services in USA - InfoDrive Solutions
         </title>
         <meta
-          name='description'
+          name="description"
           content="Transform your sales process with InfoDrive Solutions' Salesforce Sales Cloud services. Our experts provide implementation, automation, customization, and consulting services globally."
         />
         <meta
-          name='keywords'
-          content='Salesforce Sales Cloud Implementation, Salesforce Sales Cloud automation, Salesforce Sales Cloud customization, Salesforce Sales Cloud Consulting Services, Salesforce Sales Cloud Consulting Services in United State, Salesforce Sales Cloud for small business, Salesforce Sales Cloud Consulting Services in USA, Salesforce Sales Cloud Consulting Services in US, Salesforce Sales Cloud implementation services in United State, Salesforce Sales Cloud for USAn businesses, Salesforce Sales Cloud implementation services in US'
+          name="keywords"
+          content="Salesforce Sales Cloud Implementation, Salesforce Sales Cloud automation, Salesforce Sales Cloud customization, Salesforce Sales Cloud Consulting Services, Salesforce Sales Cloud Consulting Services in United State, Salesforce Sales Cloud for small business, Salesforce Sales Cloud Consulting Services in USA, Salesforce Sales Cloud Consulting Services in US, Salesforce Sales Cloud implementation services in United State, Salesforce Sales Cloud for USA businesses, Salesforce Sales Cloud implementation services in US"
         />
         <link
-          rel='canonical'
-          href='https://infodrive-solutions.com/sales-cloud.html'
+          rel="canonical"
+          href="https://infodrive-solutions.com/sales-cloud-usa.html"
         />
         <meta
-          property='og:title'
-          content=' Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in USA - InfoDrive Solutions'
+          property="og:title"
+          content=" Salesforce Sales Cloud Implementation, Customization, and Consulting
+          Services in USA - InfoDrive Solutions"
         />
         <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+          property="og:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
-        <link rel='icon' href='/favicon.png' />
+        <link rel="icon" href="/favicon.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -78,26 +78,26 @@ export default function SalesCloudUSA() {
       </Head>
       <noscript>
         <iframe
-          src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
-          height='0'
-          width='0'
-          style={{ display: 'none', visibility: 'hidden' }}
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox'>
+      <div className="sliderBox">
         <img
-          style={{ width: '100%' }}
-          src='images/91347bcb5003e5f7f144c8d10079ab1e-min.jpeg'
-          alt=' Salesforce Sales Cloud Implementatio'
+          style={{ width: "100%" }}
+          src="images/91347bcb5003e5f7f144c8d10079ab1e-min.jpeg"
+          alt=" Salesforce Sales Cloud Implementatio"
         />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent'>
+        <Box sx={{ flexGrow: 1 }} className="sliderContent">
           <Grid container spacing={0}>
             <Typography
-              className='p15'
+              className="p15"
               gutterBottom
-              variant='h1'
-              component='div'
+              variant="h1"
+              component="div"
             >
               Revolutionize Your Sales Process <br />
               with the Power of Sales Cloud -<br />
@@ -106,18 +106,18 @@ export default function SalesCloudUSA() {
               for managing their sales activities.
             </Typography>
             <Button
-              href='/contact-us.html'
-              className='readmore white normalCase'
-              variant='text'
+              href="/contact-us.html"
+              className="readmore white normalCase"
+              variant="text"
             >
               Let's Talk <ArrowRightAltIcon />
             </Button>
-            <nav className='socical-network'>
+            <nav className="socical-network">
               <List>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.facebook.com/InfoDrivesolutions/'
+                    component="a"
+                    href="https://www.facebook.com/InfoDrivesolutions/"
                   >
                     <ListItemIcon>
                       <FacebookIcon />
@@ -126,8 +126,8 @@ export default function SalesCloudUSA() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                    component="a"
+                    href="https://in.linkedin.com/company/infodrive-solutions/"
                   >
                     <ListItemIcon>
                       <LinkedInIcon />
@@ -136,8 +136,8 @@ export default function SalesCloudUSA() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.instagram.com/infodrivesolutions/'
+                    component="a"
+                    href="https://www.instagram.com/infodrivesolutions/"
                   >
                     <ListItemIcon>
                       <InstagramIcon />
@@ -151,11 +151,11 @@ export default function SalesCloudUSA() {
       </div>
 
       <section className={`sectionBox p5`}>
-        <Typography gutterBottom variant='h1' component='h1'>
+        <Typography gutterBottom variant="h1" component="h1">
           Your Trusted Salesforce Sales Cloud Services Provider in the USA
         </Typography>
 
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
+        <Typography className="w100" gutterBottom variant="h5" component="div">
           Salesforce Sales Cloud is a powerful tool that can help your business
           manage customer interactions and data throughout the customer
           lifecycle, from lead generation to conversion and retention. With its
@@ -177,7 +177,7 @@ export default function SalesCloudUSA() {
       <section
         className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
-        <Typography className='mb0' gutterBottom variant='h2' component='div'>
+        <Typography className="mb0" gutterBottom variant="h2" component="div">
           Our team of consultants can help you <br />
           with every step of the Salesforce Sales <br />
           Cloud implementation process, including:
@@ -191,23 +191,23 @@ export default function SalesCloudUSA() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Assessing your business needs and goals
                   </Typography>
                   <br />
                   <Typography
-                    className='pr30'
-                    variant='body2'
-                    color='text.secondary'
+                    className="pr30"
+                    variant="body2"
+                    color="text.secondary"
                   >
                     Before we begin the implementation process, we'll work with
                     you to understand your business needs and goals. This will
                     help us tailor the solution to meet your specific
                     requirements and ensure that it aligns with your overall
-                    business strategy.{' '}
+                    business strategy.{" "}
                   </Typography>
                 </CardContent>
               </Card>
@@ -218,18 +218,18 @@ export default function SalesCloudUSA() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Setting up your Salesforce account
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Our team will help you set up your Salesforce account and
                     configure it to your specific needs. This includes
                     customizing fields, workflows, and other settings to ensure
-                    that the platform is optimized for your business.{' '}
+                    that the platform is optimized for your business.{" "}
                   </Typography>
                 </CardContent>
               </Card>
@@ -240,24 +240,24 @@ export default function SalesCloudUSA() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Data migration and integration
                   </Typography>
                   <br />
                   <Typography
-                    className='pr30'
-                    variant='body2'
-                    color='text.secondary'
+                    className="pr30"
+                    variant="body2"
+                    color="text.secondary"
                   >
                     If you're moving from a different CRM platform or have data
                     stored in other systems, we can help you migrate and
                     integrate that data into Salesforce Sales Cloud. This will
                     help ensure that you have a comprehensive view of your
                     customer data and can take full advantage of the platform's
-                    features.{' '}
+                    features.{" "}
                   </Typography>
                 </CardContent>
               </Card>
@@ -268,18 +268,18 @@ export default function SalesCloudUSA() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Training and support
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Our team will provide training and support to help you and
                     your team get up to speed with Salesforce Sales Cloud. We'll
                     also be available to answer any questions and provide
-                    ongoing support as you continue to use the platform.{' '}
+                    ongoing support as you continue to use the platform.{" "}
                   </Typography>
                 </CardContent>
               </Card>
@@ -291,21 +291,21 @@ export default function SalesCloudUSA() {
       <section className={`sectionBox aboutUsBox3 salesCloudService p5`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-            <Grid item xs={6} className='pr30'>
+            <Grid item xs={6} className="pr30">
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h2' component='h2'>
+                  <Typography gutterBottom variant="h2" component="h2">
                     Maximize Your Potential with Salesforce Sales Cloud
                     Consulting Services
                   </Typography>
                   <br />
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Our consulting services are designed to help you fully
                     leverage the capabilities of Salesforce Sales Cloud and
                     achieve your business goals.
                   </Typography>
 
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Our team of experienced consultants can provide a range of
                     services, including strategy and planning to help you
                     develop a roadmap for using Salesforce Sales Cloud to drive
@@ -322,8 +322,8 @@ export default function SalesCloudUSA() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='Salesforce Sales Cloud automation'
-                  src='images/491c67e4b1055317d0f23ddd3ee7af54-min.jpeg'
+                  alt="Salesforce Sales Cloud automation"
+                  src="images/491c67e4b1055317d0f23ddd3ee7af54-min.jpeg"
                 />
               </Card>
             </Grid>
@@ -337,15 +337,15 @@ export default function SalesCloudUSA() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Strategy and planning
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Our consultants can help you develop a strategy for using
                     Salesforce Sales Cloud to drive business growth and
                     efficiency. We'll work with you to identify key areas for
-                    improvement and develop a plan to achieve your goals.{' '}
+                    improvement and develop a plan to achieve your goals.{" "}
                   </Typography>
                 </CardContent>
               </Card>
@@ -354,16 +354,16 @@ export default function SalesCloudUSA() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Customization and optimization
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Salesforce Sales Cloud is highly customizable, and our team
                     can help you optimize the platform to meet your specific
                     needs. This includes customizing fields, workflows, and
                     other settings to ensure that the platform is optimized for
-                    your business.{' '}
+                    your business.{" "}
                   </Typography>
                 </CardContent>
               </Card>
@@ -372,11 +372,11 @@ export default function SalesCloudUSA() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Reporting and analytics
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Salesforce Sales Cloud provides a range of reporting and
                     analytics tools that can help you better understand your
                     customers and sales processes. Our team can help you set up
@@ -390,15 +390,15 @@ export default function SalesCloudUSA() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Ongoing support and maintenance
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     We offer ongoing support and maintenance to help you get the
                     most out of Salesforce Sales Cloud. This includes answering
                     questions, providing guidance on best practices, and helping
-                    you troubleshoot any issues that may arise.{' '}
+                    you troubleshoot any issues that may arise.{" "}
                   </Typography>
                 </CardContent>
               </Card>
@@ -410,15 +410,15 @@ export default function SalesCloudUSA() {
       <section className={`sectionBox connectUs backDrop mb0`}>
         <Typography
           gutterBottom
-          variant='h3'
-          className='white pb15 pt15 poppin'
-          component='div'
+          variant="h3"
+          className="white pb15 pt15 poppin"
+          component="div"
         >
           Ready to Optimize Your Sales with Salesforce Sales Cloud?
         </Typography>
         <Button
-          href='/contact-us.html'
-          className='bgRed white pl15 pr15 poppin upperCase'
+          href="/contact-us.html"
+          className="bgRed white pl15 pr15 poppin upperCase"
         >
           Connect with Our Expert
         </Button>

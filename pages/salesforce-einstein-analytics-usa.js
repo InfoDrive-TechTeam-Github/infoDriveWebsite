@@ -1,41 +1,41 @@
-import * as React from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import utilStyles from '../styles/utils.module.css';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import * as React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import utilStyles from "../styles/utils.module.css";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
 //import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import Avatar from '@mui/material/Avatar';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import Link from '@mui/material/Link';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormControl from '@mui/material/FormControl';
-import TextField from '@mui/material/TextField';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Stack from '@mui/material/Stack';
-import Head from 'next/head';
+import Grid from "@mui/material/Grid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
+import Avatar from "@mui/material/Avatar";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import Link from "@mui/material/Link";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import Stack from "@mui/material/Stack";
+import Head from "next/head";
 
-import LeadForm from '../components/leadForm';
+import LeadForm from "../components/leadForm";
 export default function SalesForceEinstein() {
   return (
     <div>
@@ -45,28 +45,28 @@ export default function SalesForceEinstein() {
           Customization
         </title>
         <meta
-          name='description'
+          name="description"
           content="Discover actionable insights with InfoDrive Solutions' Salesforce Einstein Analytics services. Our experts offer customization, integration, and pricing solutions to help small businesses take advantage of the full features of Salesforce Einstein Analytics."
         />
         <meta
-          name='keywords'
-          content='Salesforce Einstein Analytics features, Salesforce Einstein Analytics pricing, Salesforce Einstein Analytics integrations, Salesforce Einstein Analytics customization, Salesforce Einstein Analytics for small business, Salesforce Einstein Analytics'
+          name="keywords"
+          content="Salesforce Einstein Analytics features, Salesforce Einstein Analytics pricing, Salesforce Einstein Analytics integrations, Salesforce Einstein Analytics customization, Salesforce Einstein Analytics for small business, Salesforce Einstein Analytics"
         />
         <link
-          rel='canonical'
-          href='https://infodrive-solutions.com/salesforce-einstein-analytics.html'
+          rel="canonical"
+          href="https://infodrive-solutions.com/salesforce-einstein-analytics-usa.html"
         />
 
         <meta
-          property='og:title'
-          content='Salesforce Einstein Analytics, Features, Integrations, and
-          Customization'
+          property="og:title"
+          content="Salesforce Einstein Analytics, Features, Integrations, and
+          Customization"
         />
         <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+          property="og:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
-        <link rel='icon' href='/favicon.png' />
+        <link rel="icon" href="/favicon.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -79,26 +79,26 @@ export default function SalesForceEinstein() {
       </Head>
       <noscript>
         <iframe
-          src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
-          height='0'
-          width='0'
-          style={{ display: 'none', visibility: 'hidden' }}
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox'>
+      <div className="sliderBox">
         <img
-          style={{ width: '100%' }}
-          src='images/7e086652d7d493b8a2f038e2f67d3984-min.jpeg'
-          alt=' Salesforce Einstein Analytics'
+          style={{ width: "100%" }}
+          src="images/7e086652d7d493b8a2f038e2f67d3984-min.jpeg"
+          alt=" Salesforce Einstein Analytics"
         />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
+        <Box sx={{ flexGrow: 1 }} className="sliderContent salePart">
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'>
+            <Typography gutterBottom variant="h3" component="div">
               Salesforce-Einstein-Analytics
             </Typography>
 
-            <Typography gutterBottom variant='h1' component='div'>
+            <Typography gutterBottom variant="h1" component="div">
               Maximize Your Data Potential:
               <br />
               Get Accurate & Actionable Insights with <br />
@@ -108,18 +108,18 @@ export default function SalesForceEinstein() {
               Decisions with Confidence.
             </Typography>
             <Button
-              href='/contact-us.html'
-              className='readmore white normalCase'
-              variant='text'
+              href="/contact-us.html"
+              className="readmore white normalCase"
+              variant="text"
             >
               Let's Talk <ArrowRightAltIcon />
             </Button>
-            <nav className='socical-network'>
+            <nav className="socical-network">
               <List>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.facebook.com/InfoDrivesolutions/'
+                    component="a"
+                    href="https://www.facebook.com/InfoDrivesolutions/"
                   >
                     <ListItemIcon>
                       <FacebookIcon />
@@ -128,8 +128,8 @@ export default function SalesForceEinstein() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                    component="a"
+                    href="https://in.linkedin.com/company/infodrive-solutions/"
                   >
                     <ListItemIcon>
                       <LinkedInIcon />
@@ -138,8 +138,8 @@ export default function SalesForceEinstein() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.instagram.com/infodrivesolutions/'
+                    component="a"
+                    href="https://www.instagram.com/infodrivesolutions/"
                   >
                     <ListItemIcon>
                       <InstagramIcon />
@@ -153,11 +153,11 @@ export default function SalesForceEinstein() {
       </div>
 
       <section className={`sectionBox ,negativemargin p5`}>
-        <Typography gutterBottom variant='h1' component='h1'>
+        <Typography gutterBottom variant="h1" component="h1">
           Unlock the Power of Data with Salesforce Einstein Analytics
         </Typography>
 
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
+        <Typography className="w100" gutterBottom variant="h5" component="div">
           Are you looking to gain deeper insights into your business data and
           make data-driven decisions? Look no further! InfoDrive Solutions is
           your trusted partner for Salesforce Einstein Analytics services. With
@@ -170,20 +170,20 @@ export default function SalesForceEinstein() {
       <section
         className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
-        <Typography className='mb0' gutterBottom variant='h2' component='div'>
+        <Typography className="mb0" gutterBottom variant="h2" component="div">
           In addition to its AI capabilities, Einstein Analytics also offers a
           range of features and tools that make it easy for users to access and
           analyze their data. These include customizable dashboards, advanced
           reporting and visualization tools, and the ability to integrate with
-          other Salesforce products and third-party applications.{' '}
+          other Salesforce products and third-party applications.{" "}
         </Typography>
         <br />
 
         <Typography
-          className='mb0'
+          className="mb0"
           gutterBottom
-          variant='body2'
-          color='text.secondary'
+          variant="body2"
+          color="text.secondary"
         >
           One of the major benefits of Einstein Analytics is its ability to
           integrate with the rest of the Salesforce platform. This means that
@@ -201,9 +201,9 @@ export default function SalesForceEinstein() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Einstein Analytics also provides a range of security and
                     compliance features to ensure that your data is protected
@@ -218,8 +218,8 @@ export default function SalesForceEinstein() {
             <Grid item xs={6}>
               <Card>
                 <img
-                  alt='Salesforce Einstein Analytics integrations'
-                  src='images/4fb9fbf86887668153dd106a0fff11c5-min.jpeg'
+                  alt="Salesforce Einstein Analytics integrations"
+                  src="images/4fb9fbf86887668153dd106a0fff11c5-min.jpeg"
                 />
               </Card>
             </Grid>
@@ -248,15 +248,15 @@ export default function SalesForceEinstein() {
       <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
-          variant='h3'
-          className='white pb15 pt15 poppin'
-          component='div'
+          variant="h3"
+          className="white pb15 pt15 poppin"
+          component="div"
         >
           Ready to Unleash the Power of Data with Salesforce Einstein Analytics?
         </Typography>
         <Button
-          href='/contact-us.html'
-          className='bgRed white pl15 pr15 poppin upperCase'
+          href="/contact-us.html"
+          className="bgRed white pl15 pr15 poppin upperCase"
         >
           Connect with Our Expert
         </Button>
