@@ -36,8 +36,7 @@ import Stack from "@mui/material/Stack";
 import Head from "next/head";
 
 import LeadForm from "../components/leadForm";
-import Image from "next/image";
-import odoo1 from "../public/images/odoo1.jpg";
+
 import { FaBuffer } from "react-icons/fa";
 export default function SalesForceDevelopment() {
   return (
@@ -188,13 +187,7 @@ export default function SalesForceDevelopment() {
       <section className={`p5 `}>
         <div className="max-w-5xl container mx-auto border-red-600 md:flex items-center  justify-between">
           <div className="left basis-1/2 ">
-            <Image
-              src={odoo1}
-              alt="Picture of the author"
-              width={500}
-              height={500}
-              placeholder="blur"
-            />
+            <img src="images/odoo1.jpg" alt="Picture of the author" />
           </div>
           <div className="right flex flex-col gap-5 basis-1/2">
             <h2 className="font-extrabold text-3xl">

@@ -1,41 +1,41 @@
-import * as React from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import utilStyles from '../styles/utils.module.css';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import * as React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import utilStyles from "../styles/utils.module.css";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
 //import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import Avatar from '@mui/material/Avatar';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import Link from '@mui/material/Link';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormControl from '@mui/material/FormControl';
-import TextField from '@mui/material/TextField';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Stack from '@mui/material/Stack';
-import Head from 'next/head';
+import Grid from "@mui/material/Grid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
+import Avatar from "@mui/material/Avatar";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import Link from "@mui/material/Link";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import Stack from "@mui/material/Stack";
+import Head from "next/head";
 
-import LeadForm from '../components/leadForm';
+import LeadForm from "../components/leadForm";
 export default function MarketingCloudUSA() {
   return (
     <div>
@@ -45,28 +45,28 @@ export default function MarketingCloudUSA() {
           US
         </title>
         <meta
-          name='description'
+          name="description"
           content="Transform your marketing strategy with InfoDrive Solutions' Salesforce Marketing Cloud services. Our experts offer consultation, implementation, and customization solutions for businesses in US, United State, and ASEAN."
         />
         <meta
-          name='keywords'
-          content='Salesforce Marketing Cloud Implementation, Salesforce Marketing Cloud Consulting Services, Salesforce Marketing Cloud Consulting Services in USA, Salesforce Marketing Cloud Consulting Services in United State, Salesforce Marketing Cloud benefits, Salesforce Marketing Cloud Automation, Salesforce Marketing Cloud integrations, Salesforce Marketing Cloud Customization, Salesforce Marketing Cloud for Small business, Salesforce Marketing Cloud Consulting Services in United State, Salesforce Marketing Cloud for ASEAN businesses, Salesforce Marketing Cloud customization in United State'
+          name="keywords"
+          content="Salesforce Marketing Cloud Implementation, Salesforce Marketing Cloud Consulting Services, Salesforce Marketing Cloud Consulting Services in USA, Salesforce Marketing Cloud Consulting Services in United State, Salesforce Marketing Cloud benefits, Salesforce Marketing Cloud Automation, Salesforce Marketing Cloud integrations, Salesforce Marketing Cloud Customization, Salesforce Marketing Cloud for Small business, Salesforce Marketing Cloud Consulting Services in United State, Salesforce Marketing Cloud for ASEAN businesses, Salesforce Marketing Cloud customization in United State"
         />
         <link
-          rel='canonical'
-          href=' https://infodrive-solutions.com/marketing-cloud.html'
+          rel="canonical"
+          href=" https://infodrive-solutions.com/marketing-cloud-usa.html"
         />
 
         <meta
-          property='og:title'
-          content=' Salesforce Marketing Cloud Implementation and Consulting Services in
-          US'
+          property="og:title"
+          content=" Salesforce Marketing Cloud Implementation and Consulting Services in
+          US"
         />
         <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+          property="og:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
-        <link rel='icon' href='/favicon.png' />
+        <link rel="icon" href="/favicon.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -79,31 +79,31 @@ export default function MarketingCloudUSA() {
       </Head>
       <noscript>
         <iframe
-          src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
-          height='0'
-          width='0'
-          style={{ display: 'none', visibility: 'hidden' }}
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox marketingSlider'>
+      <div className="sliderBox marketingSlider">
         <img
-          style={{ width: '100%' }}
-          src='images/72250f50098664f9273c6d07e59ccdcd-min.jpeg'
-          alt='Salesforce Marketing Cloud Implementation'
+          style={{ width: "100%" }}
+          src="images/72250f50098664f9273c6d07e59ccdcd-min.jpeg"
+          alt="Salesforce Marketing Cloud Implementation"
         />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent salePart'>
+        <Box sx={{ flexGrow: 1 }} className="sliderContent salePart">
           <Grid container spacing={0}>
             <Typography
-              className='hiddenElement '
+              className="hiddenElement "
               gutterBottom
-              variant='h3'
-              component='div'
+              variant="h3"
+              component="div"
             >
               test
             </Typography>
 
-            <Typography gutterBottom variant='h1' component='div'>
+            <Typography gutterBottom variant="h1" component="div">
               Boost Your Marketing Success with
               <br />
               Salesforce Marketing Cloud. <br />
@@ -112,18 +112,18 @@ export default function MarketingCloudUSA() {
               <br /> omnichannel campaigns and increased conversions
             </Typography>
             <Button
-              href='/contact-us.html'
-              className='readmore white normalCase'
-              variant='text'
+              href="/contact-us.html"
+              className="readmore white normalCase"
+              variant="text"
             >
               Let's Talk <ArrowRightAltIcon />
             </Button>
-            <nav className='socical-network'>
+            <nav className="socical-network">
               <List>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.facebook.com/InfoDrivesolutions/'
+                    component="a"
+                    href="https://www.facebook.com/InfoDrivesolutions/"
                   >
                     <ListItemIcon>
                       <FacebookIcon />
@@ -132,8 +132,8 @@ export default function MarketingCloudUSA() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                    component="a"
+                    href="https://in.linkedin.com/company/infodrive-solutions/"
                   >
                     <ListItemIcon>
                       <LinkedInIcon />
@@ -142,8 +142,8 @@ export default function MarketingCloudUSA() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.instagram.com/infodrivesolutions/'
+                    component="a"
+                    href="https://www.instagram.com/infodrivesolutions/"
                   >
                     <ListItemIcon>
                       <InstagramIcon />
@@ -157,11 +157,11 @@ export default function MarketingCloudUSA() {
       </div>
 
       <section className={`sectionBox p5`}>
-        <Typography className='w100' gutterBottom variant='h1' component='h1'>
+        <Typography className="w100" gutterBottom variant="h1" component="h1">
           Power Your Marketing Efforts with Salesforce Marketing Cloud Solutions
         </Typography>
 
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
+        <Typography className="w100" gutterBottom variant="h5" component="div">
           Our company is a leading provider of Salesforce Marketing Cloud
           implementation and consulting services in US, and United State. Our
           team of certified experts has years of experience helping businesses
@@ -179,25 +179,25 @@ export default function MarketingCloudUSA() {
         className={`sectionBox saleForcesDevelopmentBox marketCloudBox p5`}
       >
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0} className='androidDevelopment'>
-            <Grid item xs={6} className='saleForcesDevelopment'>
-              <Typography gutterBottom variant='h3' component='div'>
+          <Grid container spacing={0} className="androidDevelopment">
+            <Grid item xs={6} className="saleForcesDevelopment">
+              <Typography gutterBottom variant="h3" component="div">
                 Salesforce Marketing Cloud Implementation
               </Typography>
-              <Typography gutterBottom variant='h5' component='div'>
+              <Typography gutterBottom variant="h5" component="div">
                 At InfoDrive Solutions, we understand that implementing a new
                 marketing platform can be a complex and time-consuming process.
                 That's why we offer a range of services to help make the
                 transition as smooth and seamless as possible.
               </Typography>
-              <Typography gutterBottom variant='h5' component='div'>
+              <Typography gutterBottom variant="h5" component="div">
                 Our team can help you with everything from planning and strategy
                 to execution and optimization. We'll work with you to understand
                 your business goals and objectives, and then help you design and
                 implement a customized Marketing Cloud solution that meets your
                 specific needs.
               </Typography>
-              <Typography gutterBottom variant='h5' component='div'>
+              <Typography gutterBottom variant="h5" component="div">
                 One of the key benefits of working with InfoDrive Solutions is
                 our team's deep expertise in Salesforce Marketing Cloud. Our
                 certified consultants have years of experience working with the
@@ -214,7 +214,7 @@ export default function MarketingCloudUSA() {
       <section
         className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
-        <Typography className='mb0' gutterBottom variant='h2' component='div'>
+        <Typography className="mb0" gutterBottom variant="h2" component="div">
           In addition to our implementation services, we also offer ongoing
           support and consulting to help you get the most out of your Marketing
           Cloud investment.
@@ -222,10 +222,10 @@ export default function MarketingCloudUSA() {
         <br />
 
         <Typography
-          className='mb0'
+          className="mb0"
           gutterBottom
-          variant='body2'
-          color='text.secondary'
+          variant="body2"
+          color="text.secondary"
         >
           This includes training and support for your team, as well as ongoing
           optimization and performance monitoring to ensure that your campaigns
@@ -242,17 +242,17 @@ export default function MarketingCloudUSA() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Strategy and planning
                   </Typography>
                   <br />
                   <Typography
-                    className='pr30'
-                    variant='body2'
-                    color='text.secondary'
+                    className="pr30"
+                    variant="body2"
+                    color="text.secondary"
                   >
                     With Service Cloud, you can provide faster, more accurate,
                     and more personalized support to your customers, leading to
@@ -267,14 +267,14 @@ export default function MarketingCloudUSA() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Implementation
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Our team will handle the technical aspects of setting up
                     your Marketing Cloud account, including data integration,
                     email template design, and automation setup.
@@ -288,17 +288,17 @@ export default function MarketingCloudUSA() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Training and support
                   </Typography>
                   <br />
                   <Typography
-                    className='pr30'
-                    variant='body2'
-                    color='text.secondary'
+                    className="pr30"
+                    variant="body2"
+                    color="text.secondary"
                   >
                     We'll provide training and support to ensure that your team
                     is fully proficient in using the platform and able to get
@@ -313,14 +313,14 @@ export default function MarketingCloudUSA() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Ongoing optimization
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     We'll work with you to continuously improve and optimize
                     your Marketing Cloud campaigns, ensuring that you're getting
                     the best possible results.
@@ -334,14 +334,14 @@ export default function MarketingCloudUSA() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='mb0'
-                    component='div'
+                    variant="h3"
+                    className="mb0"
+                    component="div"
                   >
                     Performance monitoring
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     We'll monitor the performance of your campaigns and provide
                     regular reports and recommendations for improvement.
                   </Typography>
@@ -368,11 +368,11 @@ export default function MarketingCloudUSA() {
       <br />
 
       <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 p5`}>
-        <Typography gutterBottom variant='h2' className='mb0' component='div'>
+        <Typography gutterBottom variant="h2" className="mb0" component="div">
           Why Invest in Salesforce Marketing Cloud?
         </Typography>
         <br />
-        <Typography gutterBottom variant='h5' className='mb0' component='div'>
+        <Typography gutterBottom variant="h5" className="mb0" component="div">
           Salesforce Marketing Cloud is a leading marketing automation platform
           trusted by businesses worldwide. Here are some key benefits of
           implementing Salesforce Marketing Cloud for your business:
@@ -384,14 +384,14 @@ export default function MarketingCloudUSA() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Personalized Customer Journeys
                   </Typography>
                   <br />
                   <Typography
-                    variant='body2'
-                    className='pr10'
-                    color='text.secondary'
+                    variant="body2"
+                    className="pr10"
+                    color="text.secondary"
                   >
                     With Salesforce Marketing Cloud, you can deliver
                     personalized and relevant messages to your customers at
@@ -406,11 +406,11 @@ export default function MarketingCloudUSA() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Marketing Automation
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Streamline and automate your marketing processes with
                     Salesforce Marketing Cloud's robust automation capabilities.
                     Save time and resources by automating repetitive tasks, such
@@ -425,11 +425,11 @@ export default function MarketingCloudUSA() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Multichannel Engagement
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Salesforce Marketing Cloud enables you to engage with your
                     customers across multiple channels, including email, mobile,
                     social media, and advertising. Reach your customers wherever
@@ -443,11 +443,11 @@ export default function MarketingCloudUSA() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     Advanced Segmentation and Personalization
                   </Typography>
                   <br />
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Leverage Salesforce Marketing Cloud's powerful segmentation
                     and personalization features to create targeted campaigns.
                     Segment your audience based on various criteria and deliver
@@ -464,15 +464,15 @@ export default function MarketingCloudUSA() {
       <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
-          variant='h3'
-          className='white pb15 pt15 poppin'
-          component='div'
+          variant="h3"
+          className="white pb15 pt15 poppin"
+          component="div"
         >
           Ready to Transform Your Marketing with Salesforce Marketing Cloud?
         </Typography>
         <Button
-          href='/contact-us.html'
-          className='bgRed white pl15 pr15 poppin upperCase'
+          href="/contact-us.html"
+          className="bgRed white pl15 pr15 poppin upperCase"
         >
           Connect with Our Expert
         </Button>
