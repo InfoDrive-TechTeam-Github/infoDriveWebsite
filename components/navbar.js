@@ -219,11 +219,11 @@ function DrawerAppBar(props) {
                   className="customIcon"
                 />
               </ListItem>
-              <ListItem disablePadding>
+              {/* <ListItem disablePadding>
                 <ListItemButton component="a" to="/blockchain-nft.html">
                   <ListItemText primary={"Blockchain and NFT"} />
                 </ListItemButton>
-              </ListItem>
+              </ListItem> */}
 
               <ListItem disablePadding>
                 <ListItemButton
@@ -275,7 +275,7 @@ function DrawerAppBar(props) {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton component="a" to="/odoo.html">
-                  <ListItemText primary={"Odoo"} />
+                  <ListItemText primary={"Odoo ERP Development"} />
                 </ListItemButton>
               </ListItem>
             </List>
@@ -582,11 +582,11 @@ function DrawerAppBar(props) {
                       />
                     </ListItem>
 
-                    <ListItem disablePadding>
+                    {/* <ListItem disablePadding>
                       <ListItemButton component="a" to="/blockchain-nft.html">
                         <ListItemText primary={"Blockchain and NFT"} />
                       </ListItemButton>
-                    </ListItem>
+                    </ListItem> */}
 
                     <ListItem disablePadding>
                       <ListItemButton
@@ -651,7 +651,7 @@ function DrawerAppBar(props) {
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton component="a" to="/odoo.html">
-                        <ListItemText primary={"Odoo"} />
+                        <ListItemText primary={"Odoo ERP Development"} />
                       </ListItemButton>
                     </ListItem>
                   </List>
