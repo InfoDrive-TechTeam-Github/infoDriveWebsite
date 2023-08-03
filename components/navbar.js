@@ -1,37 +1,37 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
-import Drawer from '@mui/material/Drawer';
-import IconButton from '@mui/material/IconButton';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Avatar from '@mui/material/Avatar';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import ArchiveIcon from '@mui/icons-material/Archive';
-import FileCopyIcon from '@mui/icons-material/FileCopy';
-import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+import MenuIcon from "@mui/icons-material/Menu";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import Avatar from "@mui/material/Avatar";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import ArchiveIcon from "@mui/icons-material/Archive";
+import FileCopyIcon from "@mui/icons-material/FileCopy";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const drawerWidth = 240;
 const navItems = [
-  { name: 'Blockchain NFT', slug: 'Blockchain-NFT' },
-  { name: 'Full stack development', slug: 'full-stack-development.html' },
+  { name: "Blockchain NFT", slug: "Blockchain-NFT" },
+  { name: "Full stack development", slug: "full-stack-development.html" },
   // {name: 'Web and mobile app development'},
-  { name: 'Services for start ups', slug: 'services-for-start-ups.html' },
-  { name: 'Android App Development', slug: 'android-app-development.html' },
-  { name: 'Ios App Development', slug: 'ios-app-development.html' },
-  { name: 'About Us', slug: 'about-us.html' },
-  { name: 'Contact Us', slug: 'contact-us.html' },
+  { name: "Services for start ups", slug: "services-for-start-ups.html" },
+  { name: "Android App Development", slug: "android-app-development.html" },
+  { name: "Ios App Development", slug: "ios-app-development.html" },
+  { name: "About Us", slug: "about-us.html" },
+  { name: "Contact Us", slug: "contact-us.html" },
 ];
 
 function DrawerAppBar(props) {
@@ -171,19 +171,19 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box
-      className='mobileMenu'
+      className="mobileMenu"
       onClick={handleDrawerToggle}
-      sx={{ textAlign: 'center' }}
+      sx={{ textAlign: "center" }}
     >
       <List>
         <ListItem disablePadding>
-          <ListItemButton component='a' to='/'>
-            <ListItemText primary={'Home'} />
+          <ListItemButton component="a" to="/">
+            <ListItemText primary={"Home"} />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component='a' to='/about-us.html'>
-            <ListItemText primary={'About us'} />
+          <ListItemButton component="a" to="/about-us.html">
+            <ListItemText primary={"About us"} />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
@@ -192,86 +192,91 @@ function DrawerAppBar(props) {
           </ListItemButton>
           {/* list for mobile menu*/}
           <Menu
-            className='subMobileMenu'
+            className="subMobileMenu"
             anchorEl={mobileAnchorEl}
             open={mobileMenuOpen}
             onClose={closeMobileMenu}
           >
             <List>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/salesforce-development.html'>
-                  <ListItemText primary={'Saleforce Development'} />
+                <ListItemButton component="a" to="/salesforce-development.html">
+                  <ListItemText primary={"Saleforce Development"} />
                 </ListItemButton>
                 <ArrowForwardIosIcon
                   onClick={recordSubMobileButtonPositionSale}
-                  className='customIcon'
+                  className="customIcon"
                 />
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/web-and-mobile-app-development.html'
+                  component="a"
+                  to="/web-and-mobile-app-development.html"
                 >
-                  <ListItemText primary={'Web and app development '} />
+                  <ListItemText primary={"Web and app development "} />
                 </ListItemButton>
                 <ArrowForwardIosIcon
                   onClick={recordSubMobileButtonPosition}
-                  className='customIcon'
+                  className="customIcon"
                 />
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/blockchain-nft.html'>
-                  <ListItemText primary={'Blockchain and NFT'} />
+                <ListItemButton component="a" to="/blockchain-nft.html">
+                  <ListItemText primary={"Blockchain and NFT"} />
                 </ListItemButton>
               </ListItem>
 
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/saas-application-development.html'
+                  component="a"
+                  to="/saas-application-development.html"
                 >
-                  <ListItemText primary={'SAAS Application Development'} />
+                  <ListItemText primary={"SAAS Application Development"} />
                 </ListItemButton>
               </ListItem>
 
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/sap-emarsys.html'>
-                  <ListItemText primary={'SAP Emarsys'} />
+                <ListItemButton component="a" to="/sap-emarsys.html">
+                  <ListItemText primary={"SAP Emarsys"} />
                 </ListItemButton>
               </ListItem>
 
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/services-for-start-ups.html'>
-                  <ListItemText primary={'Services for start ups'} />
+                <ListItemButton component="a" to="/services-for-start-ups.html">
+                  <ListItemText primary={"Services for start ups"} />
                 </ListItemButton>
               </ListItem>
 
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/business-process-management.html'
+                  component="a"
+                  to="/business-process-management.html"
                 >
-                  <ListItemText primary={'Business Process Management'} />
+                  <ListItemText primary={"Business Process Management"} />
                 </ListItemButton>
               </ListItem>
 
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/staff-augmentation.html'>
-                  <ListItemText primary={'Staff Augmentation'} />
+                <ListItemButton component="a" to="/staff-augmentation.html">
+                  <ListItemText primary={"Staff Augmentation"} />
                 </ListItemButton>
               </ListItem>
 
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/digital-marketing-services.html'
+                  component="a"
+                  to="/digital-marketing-services.html"
                 >
-                  <ListItemText primary={'Digital Marketing Services'} />
+                  <ListItemText primary={"Digital Marketing Services"} />
                 </ListItemButton>
                 <ArrowForwardIosIcon
                   onClick={recordSubMobileButtonPositionDigital}
-                  className='customIcon'
+                  className="customIcon"
                 />
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton component="a" to="/odoo.html">
+                  <ListItemText primary={"Odoo"} />
+                </ListItemButton>
               </ListItem>
             </List>
           </Menu>
@@ -279,47 +284,47 @@ function DrawerAppBar(props) {
           <Menu
             anchorEl={subMobileAnchorEl}
             open={subMobileMenuOpen}
-            className='subMobileMenu'
+            className="subMobileMenu"
             onClose={closeSubMobileMenu}
           >
             <List>
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/android-app-development.html'
+                  component="a"
+                  to="/android-app-development.html"
                 >
-                  <ListItemText primary={'Android app development'} />
+                  <ListItemText primary={"Android app development"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/application-development.html'
+                  component="a"
+                  to="/application-development.html"
                 >
-                  <ListItemText primary={'Application Development'} />
+                  <ListItemText primary={"Application Development"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/ios-app-development.html'>
-                  <ListItemText primary={'IOS app development'} />
+                <ListItemButton component="a" to="/ios-app-development.html">
+                  <ListItemText primary={"IOS app development"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/full-stack-development.html'>
-                  <ListItemText primary={'Full stack development'} />
+                <ListItemButton component="a" to="/full-stack-development.html">
+                  <ListItemText primary={"Full stack development"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/website-design.html'>
-                  <ListItemText primary={'Website Development'} />
+                <ListItemButton component="a" to="/website-design.html">
+                  <ListItemText primary={"Website Development"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/custom-software-development.html'
+                  component="a"
+                  to="/custom-software-development.html"
                 >
-                  <ListItemText primary={'Custom Software Development'} />
+                  <ListItemText primary={"Custom Software Development"} />
                 </ListItemButton>
               </ListItem>
             </List>
@@ -328,58 +333,58 @@ function DrawerAppBar(props) {
           <Menu
             anchorEl={subMobileAnchorSaleEl}
             open={subMobileMenuSaleOpen}
-            className='subMobileMenu'
+            className="subMobileMenu"
             onClose={closeSubMobileMenu}
           >
             <List>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/sales-cloud.html'>
-                  <ListItemText primary={'Sales Cloud'} />
+                <ListItemButton component="a" to="/sales-cloud.html">
+                  <ListItemText primary={"Sales Cloud"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/service-cloud.html'>
-                  <ListItemText primary={'Service Cloud'} />
+                <ListItemButton component="a" to="/service-cloud.html">
+                  <ListItemText primary={"Service Cloud"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/marketing-cloud.html'>
-                  <ListItemText primary={'Marketing Cloud'} />
+                <ListItemButton component="a" to="/marketing-cloud.html">
+                  <ListItemText primary={"Marketing Cloud"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/salesforce-support.html'>
-                  <ListItemText primary={'Salesforce Support'} />
+                <ListItemButton component="a" to="/salesforce-support.html">
+                  <ListItemText primary={"Salesforce Support"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/salesforce-lightning.html'>
-                  <ListItemText primary={'Salesforce Lightning'} />
-                </ListItemButton>
-              </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton
-                  component='a'
-                  to='/salesforce-einstein-analytics.html'
-                >
-                  <ListItemText primary={'Salesforce Einstein Analytics'} />
+                <ListItemButton component="a" to="/salesforce-lightning.html">
+                  <ListItemText primary={"Salesforce Lightning"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/salesforce-app-exchange.html'
+                  component="a"
+                  to="/salesforce-einstein-analytics.html"
                 >
-                  <ListItemText primary={'Salesforce App Exchange'} />
+                  <ListItemText primary={"Salesforce Einstein Analytics"} />
+                </ListItemButton>
+              </ListItem>
+              <ListItem disablePadding>
+                <ListItemButton
+                  component="a"
+                  to="/salesforce-app-exchange.html"
+                >
+                  <ListItemText primary={"Salesforce App Exchange"} />
                 </ListItemButton>
               </ListItem>
 
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/customer-relationship-management.html'
+                  component="a"
+                  to="/customer-relationship-management.html"
                 >
-                  <ListItemText primary={'Customer Relationship Management'} />
+                  <ListItemText primary={"Customer Relationship Management"} />
                 </ListItemButton>
               </ListItem>
             </List>
@@ -388,40 +393,40 @@ function DrawerAppBar(props) {
           <Menu
             anchorEl={subMobileAnchorDigitalEl}
             open={subMobileMenuDigitalOpen}
-            className='subMobileMenu'
+            className="subMobileMenu"
             onClose={closeSubMobileMenu}
           >
             <List>
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/search-engine-optimization.html'
+                  component="a"
+                  to="/search-engine-optimization.html"
                 >
-                  <ListItemText primary={'Search Engine Optimization'} />
+                  <ListItemText primary={"Search Engine Optimization"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/social-media-optimization.html'
+                  component="a"
+                  to="/social-media-optimization.html"
                 >
-                  <ListItemText primary={'Social media optimization'} />
+                  <ListItemText primary={"Social media optimization"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/pay-per-click-advertisement.html'
+                  component="a"
+                  to="/pay-per-click-advertisement.html"
                 >
-                  <ListItemText primary={'Pay per click advertisement'} />
+                  <ListItemText primary={"Pay per click advertisement"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
                 <ListItemButton
-                  component='a'
-                  to='/online-reputation-management.html'
+                  component="a"
+                  to="/online-reputation-management.html"
                 >
-                  <ListItemText primary={'Online Reputation Management'} />
+                  <ListItemText primary={"Online Reputation Management"} />
                 </ListItemButton>
               </ListItem>
             </List>
@@ -434,27 +439,27 @@ function DrawerAppBar(props) {
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton component='a' to='/blog.html'>
-            <ListItemText primary={'Blog'} />
+          <ListItemButton component="a" to="/blog.html">
+            <ListItemText primary={"Blog"} />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton component='a' to='/careers.html'>
-            <ListItemText primary={'Careers'} />
+          <ListItemButton component="a" to="/careers.html">
+            <ListItemText primary={"Careers"} />
           </ListItemButton>
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton component='a' to='/contact-us.html'>
-            <ListItemText primary={'Contact us'} />
+          <ListItemButton component="a" to="/contact-us.html">
+            <ListItemText primary={"Contact us"} />
           </ListItemButton>
         </ListItem>
       </List>
 
-      <List className='partnerButtonMobile'>
+      <List className="partnerButtonMobile">
         <ListItem>
-          <ListItemButton component='a' to='/contact-us.html'>
+          <ListItemButton component="a" to="/contact-us.html">
             <ListItemText primary={"Let's partner"} />
           </ListItemButton>
         </ListItem>
@@ -466,57 +471,57 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: 'flex' }} className='navbarMenu'>
-      <AppBar component='nav'>
+    <Box sx={{ display: "flex" }} className="navbarMenu">
+      <AppBar component="nav">
         <Toolbar>
           <IconButton
-            color='inherit'
-            aria-label='open drawer'
-            edge='start'
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
             onClick={handleDrawerMobileToggle}
-            sx={{ mr: 2, display: { sm: 'none' } }}
+            sx={{ mr: 2, display: { sm: "none" } }}
           >
             <MenuIcon />
           </IconButton>
           <Button
-            href='/'
-            variant='text'
-            style={{ float: 'right', position: 'absolute', right: '0px' }}
-            className='logoMobile'
+            href="/"
+            variant="text"
+            style={{ float: "right", position: "absolute", right: "0px" }}
+            className="logoMobile"
           >
             <img
-              alt='Logo'
+              alt="Logo"
               style={{ width: 60, height: 43 }}
-              src='https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png'
+              src="https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png"
             />
           </Button>
 
           <Typography
-            variant='h4'
-            component='div'
+            variant="h4"
+            component="div"
             sx={{
               flexGrow: 1,
-              display: { xs: 'none', sm: 'block' },
+              display: { xs: "none", sm: "block" },
               maxWidth: 445,
             }}
           >
-            <Button href='/' variant='text' className='logoPC'>
+            <Button href="/" variant="text" className="logoPC">
               <img
-                alt='Logo'
+                alt="Logo"
                 style={{ width: 115, height: 77 }}
-                src='https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png'
+                src="https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png"
               />
             </Button>
           </Typography>
 
           {/**main Menu */}
           <Box
-            className='mainMenu'
-            sx={{ display: { xs: 'none', sm: 'block' } }}
+            className="mainMenu"
+            sx={{ display: { xs: "none", sm: "block" } }}
           >
-            <List className='partnerButton '>
+            <List className="partnerButton ">
               <ListItem>
-                <ListItemButton component='a' to='/contact-us.html'>
+                <ListItemButton component="a" to="/contact-us.html">
                   <ListItemText primary={"Let's partner"} />
                 </ListItemButton>
               </ListItem>
@@ -524,11 +529,11 @@ function DrawerAppBar(props) {
 
             <List>
               <ListItem disablePadding>
-                <ListItemButton component='a' to='/'>
-                  <ListItemText primary={'Home'} />
+                <ListItemButton component="a" to="/">
+                  <ListItemText primary={"Home"} />
                 </ListItemButton>
-                <ListItemButton component='a' to='/about-us.html'>
-                  <ListItemText primary={'About us'} />
+                <ListItemButton component="a" to="/about-us.html">
+                  <ListItemText primary={"About us"} />
                 </ListItemButton>
                 <ListItemButton onClick={recordButtonPosition} disableElevation>
                   Our services <KeyboardArrowDownIcon />
@@ -536,154 +541,159 @@ function DrawerAppBar(props) {
                 <Menu
                   anchorEl={anchorEl}
                   open={menuOpen}
-                  className='subMenuOptions'
+                  className="subMenuOptions"
                   onClose={closeMenu}
                 >
                   <List>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/salesforce-development.html'
+                        component="a"
+                        to="/salesforce-development.html"
                       >
-                        <ListItemText primary={'Salesforce Development '} />
+                        <ListItemText primary={"Salesforce Development "} />
                       </ListItemButton>
                       <ArrowForwardIosIcon
                         onClick={recordSubButtonPositionSale}
-                        className='customIcon'
+                        className="customIcon"
                         style={{
-                          width: '43px',
-                          height: '35px',
-                          fontWeight: 'bolder',
-                          marginLeft: '-12px',
+                          width: "43px",
+                          height: "35px",
+                          fontWeight: "bolder",
+                          marginLeft: "-12px",
                         }}
                       />
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/web-and-mobile-app-development.html'
+                        component="a"
+                        to="/web-and-mobile-app-development.html"
                       >
-                        <ListItemText primary={'Web and app development '} />
+                        <ListItemText primary={"Web and app development "} />
                       </ListItemButton>
                       <ArrowForwardIosIcon
                         onClick={recordSubButtonPosition}
-                        className='customIcon'
+                        className="customIcon"
                         style={{
-                          width: '43px',
-                          height: '35px',
-                          fontWeight: 'bolder',
-                          marginLeft: '-12px',
+                          width: "43px",
+                          height: "35px",
+                          fontWeight: "bolder",
+                          marginLeft: "-12px",
                         }}
                       />
                     </ListItem>
 
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to='/blockchain-nft.html'>
-                        <ListItemText primary={'Blockchain and NFT'} />
+                      <ListItemButton component="a" to="/blockchain-nft.html">
+                        <ListItemText primary={"Blockchain and NFT"} />
                       </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/saas-application-development.html'
+                        component="a"
+                        to="/saas-application-development.html"
                       >
                         <ListItemText
-                          primary={'SAAS Application Development'}
+                          primary={"SAAS Application Development"}
                         />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to='/sap-emarsys.html'>
-                        <ListItemText primary={'SAP Emarsys'} />
+                      <ListItemButton component="a" to="/sap-emarsys.html">
+                        <ListItemText primary={"SAP Emarsys"} />
                       </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/services-for-start-ups.html'
+                        component="a"
+                        to="/services-for-start-ups.html"
                       >
                         <ListItemText
-                          primary={'IT Solutions for Start-up Business'}
+                          primary={"IT Solutions for Start-up Business"}
                         />
                       </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/business-process-management.html'
+                        component="a"
+                        to="/business-process-management.html"
                       >
-                        <ListItemText primary={'Business Process Management'} />
+                        <ListItemText primary={"Business Process Management"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/staff-augmentation.html'
+                        component="a"
+                        to="/staff-augmentation.html"
                       >
-                        <ListItemText primary={'Staff Augmentation'} />
+                        <ListItemText primary={"Staff Augmentation"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/digital-marketing-services.html'
+                        component="a"
+                        to="/digital-marketing-services.html"
                       >
-                        <ListItemText primary={'Digital Marketing Services'} />
+                        <ListItemText primary={"Digital Marketing Services"} />
                       </ListItemButton>
                       <ArrowForwardIosIcon
                         onClick={recordSubButtonPositionDigital}
-                        className='customIcon'
+                        className="customIcon"
                         style={{
-                          width: '43px',
-                          height: '35px',
-                          fontWeight: 'bolder',
-                          marginLeft: '-12px',
+                          width: "43px",
+                          height: "35px",
+                          fontWeight: "bolder",
+                          marginLeft: "-12px",
                         }}
                       />
+                    </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton component="a" to="/odoo.html">
+                        <ListItemText primary={"Odoo"} />
+                      </ListItemButton>
                     </ListItem>
                   </List>
                 </Menu>
                 <Menu
                   anchorEl={subAnchorDigitalEl}
                   open={subMenuDigitalOpen}
-                  className='subMenuOptions'
+                  className="subMenuOptions"
                   onClose={closeSubMenu}
                 >
                   <List>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/search-engine-optimization.html'
+                        component="a"
+                        to="/search-engine-optimization.html"
                       >
-                        <ListItemText primary={'Search Engine Optimization'} />
+                        <ListItemText primary={"Search Engine Optimization"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/social-media-optimization.html'
+                        component="a"
+                        to="/social-media-optimization.html"
                       >
-                        <ListItemText primary={'Social media optimization'} />
+                        <ListItemText primary={"Social media optimization"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/pay-per-click-advertisement.html'
+                        component="a"
+                        to="/pay-per-click-advertisement.html"
                       >
-                        <ListItemText primary={'Pay per click advertisement'} />
+                        <ListItemText primary={"Pay per click advertisement"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/online-reputation-management.html'
+                        component="a"
+                        to="/online-reputation-management.html"
                       >
                         <ListItemText
-                          primary={'Online Reputation Management'}
+                          primary={"Online Reputation Management"}
                         />
                       </ListItemButton>
                     </ListItem>
@@ -694,54 +704,54 @@ function DrawerAppBar(props) {
                 <Menu
                   anchorEl={subAnchorEl}
                   open={subMenuOpen}
-                  className='subMenuOptions'
+                  className="subMenuOptions"
                   onClose={closeSubMenu}
                 >
                   <List>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/android-app-development.html'
+                        component="a"
+                        to="/android-app-development.html"
                       >
-                        <ListItemText primary={'Android app development'} />
+                        <ListItemText primary={"Android app development"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/ios-app-development.html'
+                        component="a"
+                        to="/ios-app-development.html"
                       >
-                        <ListItemText primary={'IOS app development'} />
+                        <ListItemText primary={"IOS app development"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/application-development.html'
+                        component="a"
+                        to="/application-development.html"
                       >
-                        <ListItemText primary={'Application Development'} />
+                        <ListItemText primary={"Application Development"} />
                       </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/full-stack-development.html'
+                        component="a"
+                        to="/full-stack-development.html"
                       >
-                        <ListItemText primary={'Full stack development'} />
+                        <ListItemText primary={"Full stack development"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to='/website-design.html'>
-                        <ListItemText primary={'Website Development'} />
+                      <ListItemButton component="a" to="/website-design.html">
+                        <ListItemText primary={"Website Development"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/custom-software-development.html'
+                        component="a"
+                        to="/custom-software-development.html"
                       >
-                        <ListItemText primary={'Custom Software Development'} />
+                        <ListItemText primary={"Custom Software Development"} />
                       </ListItemButton>
                     </ListItem>
                   </List>
@@ -752,67 +762,67 @@ function DrawerAppBar(props) {
                 <Menu
                   anchorEl={subAnchorSaleEl}
                   open={subMenuSaleOpen}
-                  className='subMenuOptions'
+                  className="subMenuOptions"
                   onClose={closeSubMenu}
                 >
                   <List>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to='/sales-cloud.html'>
-                        <ListItemText primary={'Sales Cloud'} />
+                      <ListItemButton component="a" to="/sales-cloud.html">
+                        <ListItemText primary={"Sales Cloud"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to='/service-cloud.html'>
-                        <ListItemText primary={'Service Cloud'} />
+                      <ListItemButton component="a" to="/service-cloud.html">
+                        <ListItemText primary={"Service Cloud"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to='/marketing-cloud.html'>
-                        <ListItemText primary={'Marketing Cloud'} />
+                      <ListItemButton component="a" to="/marketing-cloud.html">
+                        <ListItemText primary={"Marketing Cloud"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/salesforce-support.html'
+                        component="a"
+                        to="/salesforce-support.html"
                       >
-                        <ListItemText primary={'Salesforce Support'} />
+                        <ListItemText primary={"Salesforce Support"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/salesforce-lightning.html'
+                        component="a"
+                        to="/salesforce-lightning.html"
                       >
-                        <ListItemText primary={'Salesforce Lightning'} />
+                        <ListItemText primary={"Salesforce Lightning"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/salesforce-einstein-analytics.html'
+                        component="a"
+                        to="/salesforce-einstein-analytics.html"
                       >
                         <ListItemText
-                          primary={'Salesforce Einstein Analytics'}
+                          primary={"Salesforce Einstein Analytics"}
                         />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/salesforce-app-exchange.html'
+                        component="a"
+                        to="/salesforce-app-exchange.html"
                       >
-                        <ListItemText primary={'Salesforce App Exchange'} />
+                        <ListItemText primary={"Salesforce App Exchange"} />
                       </ListItemButton>
                     </ListItem>
 
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/customer-relationship-management.html'
+                        component="a"
+                        to="/customer-relationship-management.html"
                       >
                         <ListItemText
-                          primary={'Customer Relationship Management'}
+                          primary={"Customer Relationship Management"}
                         />
                       </ListItemButton>
                     </ListItem>
@@ -830,54 +840,54 @@ function DrawerAppBar(props) {
                 <Menu
                   anchorEl={anchorE2}
                   open={opMenu}
-                  className='subMenuOptions'
+                  className="subMenuOptions"
                   onClose={closeMenu}
                 >
                   <List>
                     <ListItem disablePadding>
-                      <ListItemButton component='a' to='/project-crm.html'>
-                        <ListItemText primary={'Dryvn.io CRM'} />
+                      <ListItemButton component="a" to="/project-crm.html">
+                        <ListItemText primary={"Dryvn.io CRM"} />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
-                        component='a'
-                        to='/project-digital-will.html'
+                        component="a"
+                        to="/project-digital-will.html"
                       >
-                        <ListItemText primary={'Digital Will'} />
+                        <ListItemText primary={"Digital Will"} />
                       </ListItemButton>
                     </ListItem>
                   </List>
                 </Menu>
                 {/**our products menu ends */}
 
-                <ListItemButton component='a' to='/blog.html'>
-                  <ListItemText primary={'Blog'} />
+                <ListItemButton component="a" to="/blog.html">
+                  <ListItemText primary={"Blog"} />
                 </ListItemButton>
-                <ListItemButton component='a' to='/careers.html'>
-                  <ListItemText primary={'Careers'} />
+                <ListItemButton component="a" to="/careers.html">
+                  <ListItemText primary={"Careers"} />
                 </ListItemButton>
-                <ListItemButton component='a' to='/contact-us.html'>
-                  <ListItemText primary={'Contact us'} />
+                <ListItemButton component="a" to="/contact-us.html">
+                  <ListItemText primary={"Contact us"} />
                 </ListItemButton>
               </ListItem>
             </List>
           </Box>
         </Toolbar>
       </AppBar>
-      <Box component='nav'>
+      <Box component="nav">
         <Drawer
           container={container}
-          variant='temporary'
+          variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': {
-              boxSizing: 'border-box',
+            display: { xs: "block", sm: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
               width: drawerWidth,
             },
           }}
@@ -885,7 +895,7 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </Box>
-      <Box component='main' sx={{ p: 3 }}>
+      <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
       </Box>
     </Box>

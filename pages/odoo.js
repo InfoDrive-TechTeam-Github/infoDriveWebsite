@@ -37,18 +37,34 @@ import Head from "next/head";
 
 import LeadForm from "../components/leadForm";
 
-import { FaBuffer } from "react-icons/fa";
+import {
+  FaBity,
+  FaBlackTie,
+  FaBuffer,
+  FaBuromobelexperte,
+  FaCloudscale,
+  FaCloudsmith,
+  FaConnectdevelop,
+  FaCreativeCommonsBy,
+  FaHubspot,
+  FaRegMoneyBillAlt,
+  FaRocketchat,
+  FaSearch,
+  FaShareAlt,
+  FaStar,
+  FaStarHalfAlt,
+} from "react-icons/fa";
 export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
         <title>
-          Salesforce Marketing Cloud Implementation and Consulting Services in
-          Singapore, Malaysia
+          Revolutionize Your Business with Odoo: Expert Implementation and
+          Consulting Services in Singapore & Malaysia
         </title>
         <meta
           name="description"
-          content="Transform your marketing strategy with InfoDrive Solutions' Salesforce Marketing Cloud services. Our experts offer consultation, implementation, and customization solutions for businesses in Singapore, Malaysia, India, and ASEAN."
+          content="Transform Your Marketing Strategy: Expert Odoo and Salesforce Marketing Cloud Implementation and Consulting Services in Singapore & Malaysia"
         />
         <meta
           name="keywords"
@@ -56,13 +72,12 @@ export default function SalesForceDevelopment() {
         />
         <link
           rel="canonical"
-          href=" https://infodrive-solutions.com/marketing-cloud.html"
+          href=" https://infodrive-solutions.com/odoo.html"
         />
 
         <meta
           property="og:title"
-          content=" Salesforce Marketing Cloud Implementation and Consulting Services in
-          Singapore, Malaysia"
+          content="Revolutionize Your Business with Odoo: Expert Implementation and Consulting Services in Singapore & Malaysia"
         />
         <meta
           property="og:image"
@@ -106,12 +121,13 @@ export default function SalesForceDevelopment() {
             </Typography>
 
             <Typography gutterBottom variant="h1" component="div">
-              Boost Your Marketing Success with
+              Seamless Integration with Odoo ERP:
               <br />
-              Salesforce Marketing Cloud. <br />
-              InfoDrive Solutions helps you leverage <br />
-              its powerful features for targeted
-              <br /> omnichannel campaigns and increased conversions
+              Odoo Marketing Cloud effortlessly integrates <br />
+              with the Odoo ERP system,
+              <br /> providing a complete view of customers
+              <br />
+              enabling real-time data-driven marketing efforts.
             </Typography>
             <Button
               href="/contact-us.html"
@@ -191,22 +207,18 @@ export default function SalesForceDevelopment() {
           </div>
           <div className="right flex flex-col gap-5 basis-1/2">
             <h2 className="font-extrabold text-3xl">
-              Odoo Development Company
+              Welcome to InfoDrive Solutions
             </h2>
-            <h3 className="font-bold">
-              Your One-Stop Odoo Development Solution!
-            </h3>
+            <h3 className="font-bold">Your Official Odoo Partner!</h3>
             <p>
-              Big ideas require big courage to achieve them. As an Odoo
-              Development Company, Ksolves recognize the need of all the
-              businesses out there. Expand your business with our unparalleled
-              Odoo services. We have a team of highly trained Odoo specialists
-              who help us build, deploy, and design ERP systems that assist our
-              customers.
+              At InfoDrive Solutions, we take pride in being an official Odoo
+              partner, bringing you powerful and comprehensive ERP solutions. As
+              your dedicated Odoo partner, we are committed to providing
+              seamless integration, efficient workflows, and reliable support
+              throughout your Odoo journey. From CRM and sales to inventory
+              management and accounting, our expertise covers every aspect of
+              Odoo's versatile capabilities.
               <br />
-              <br />
-              Achieve your long-term goals with our finest Odoo Development
-              services. Consult us now!
             </p>
           </div>
         </div>
@@ -217,7 +229,7 @@ export default function SalesForceDevelopment() {
 
       <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 p5`}>
         <Typography gutterBottom variant="h2" className="mb0" component="div">
-          Unleash Your Business’s Growth Potential
+          Discover Odoo: Your Complete ERP Solution!
         </Typography>
         <br />
         <br />
@@ -226,71 +238,53 @@ export default function SalesForceDevelopment() {
             {/* icons */}
             <FaBuffer size={100} />
             <div>
-              <h2 className="font-bold">Open-Source</h2>
+              <h2 className="font-bold">All-in-One Efficiency:</h2>
               <p>
-                Odoo is an OpenSource platform as its source code is available
-                to everyone. The Open development process allows a business to
-                evolve and improve continuously.
+                Manage CRM, sales, inventory, accounting, and more seamlessly in
+                one integrated platform.
               </p>
             </div>
           </div>
           <div className="content flex gap-10 border p-5">
             {/* icons */}
-            <FaBuffer size={100} />
+            <FaCloudscale size={100} />
             <div>
-              <h2 className="font-bold">Open-Source</h2>
+              <h2 className="font-bold">Flexibility & Scalability</h2>
               <p>
-                Odoo is an OpenSource platform as its source code is available
-                to everyone. The Open development process allows a business to
-                evolve and improve continuously.
+                Easily customize and scale Odoo to match your business needs and
+                growth.
               </p>
             </div>
           </div>
           <div className="content flex gap-10 border p-5">
             {/* icons */}
-            <FaBuffer size={100} />
+            <FaCreativeCommonsBy size={100} />
             <div>
-              <h2 className="font-bold">Open-Source</h2>
+              <h2 className="font-bold">User-Friendly Interface</h2>
               <p>
-                Odoo is an OpenSource platform as its source code is available
-                to everyone. The Open development process allows a business to
-                evolve and improve continuously.
+                Intuitive design ensures quick adoption and boosts productivity.
               </p>
             </div>
           </div>
           <div className="content flex gap-10 border p-5">
             {/* icons */}
-            <FaBuffer size={100} />
+            <FaRegMoneyBillAlt size={100} />
             <div>
-              <h2 className="font-bold">Open-Source</h2>
+              <h2 className="font-bold">Cost-Effective</h2>
               <p>
-                Odoo is an OpenSource platform as its source code is available
-                to everyone. The Open development process allows a business to
-                evolve and improve continuously.
+                Open-source nature eliminates hefty licensing fees, saving your
+                budget.
               </p>
             </div>
           </div>
-          <div className="content flex gap-10 border p-5">
+          <div className="content flex gap-10 border p-5 ">
             {/* icons */}
-            <FaBuffer size={100} />
+            <FaShareAlt size={100} className="" />
             <div>
-              <h2 className="font-bold">Open-Source</h2>
+              <h2 className="font-bold">Real-Time Insights:</h2>
               <p>
-                Odoo is an OpenSource platform as its source code is available
-                to everyone. The Open development process allows a business to
-                evolve and improve continuously.
-              </p>
-            </div>
-          </div>
-          <div className="content flex gap-10 border p-5">
-            {/* icons */}
-            <FaBuffer size={100} />
-            <div>
-              <h2 className="font-bold">Open-Source</h2>
-              <p>
-                Odoo is an OpenSource platform as its source code is available
-                to everyone. The Open development process allows a business to
-                evolve and improve continuously.
+                Gain valuable business insights instantly with robust reporting
+                and analytics.
               </p>
             </div>
           </div>
@@ -299,6 +293,123 @@ export default function SalesForceDevelopment() {
       <br />
       <br />
 
+      <section className="developmentService bg-slate-800 text-white py-20 p5">
+        <div className="max-w-5xl container mx-auto ">
+          <div className="flex md:flex-row flex-col justify-between gap-24 ">
+            <div className="left self-center">
+              <div className="font-extrabold text-5xl">
+                <p className=""> Our</p>
+
+                <p className="my-3"> Odoo </p>
+                <p> Services</p>
+              </div>
+              <div className=" star shadow-xl mt-10 bg-white/5 rounded-lg p-5">
+                <div className="top flex gap-2 items-center">
+                  <div className="flex items-center text-yellow-600 ">
+                    <FaStar size={32} />
+                    <FaStar size={32} />
+                    <FaStar size={32} />
+                    <FaStar size={32} />
+                    <FaStarHalfAlt size={32} />
+                  </div>
+                  <p className="text-3xl">4.5</p>
+                </div>
+              </div>
+            </div>
+            <div className="right flex flex-col gap-10">
+              <div className="box">
+                <div className="flex items-center gap-2 mb-3">
+                  <FaCloudsmith size={35} />
+                  <h2 className="font-bold">Odoo Implementation:</h2>
+                </div>
+                <p>
+                  We'll help you set up and configure Odoo to match your
+                  business needs, ensuring a seamless transition to this
+                  powerful ERP platform.
+                </p>
+              </div>
+              <div className="box">
+                <div className="flex items-center gap-2 mb-3">
+                  <FaCloudscale size={35} />
+                  <h2 className="font-bold">Odoo Customization:</h2>
+                </div>
+                <p>
+                  Our team can customize Odoo modules and features to cater to
+                  your specific requirements, enhancing your ERP experience.
+                </p>
+              </div>
+              <div className="box">
+                <div className="flex items-center gap-2 mb-3">
+                  <FaConnectdevelop size={35} />
+                  <h2 className="font-bold">Odoo Integration:</h2>
+                </div>
+                <p>
+                  We integrate Odoo with other tools and applications to
+                  streamline your operations and improve overall efficiency.
+                </p>
+              </div>
+              <div className="box">
+                <div className="flex items-center gap-2 mb-3">
+                  <FaHubspot size={35} />
+                  <h2 className="font-bold">Odoo Support and Maintenance:</h2>
+                </div>
+                <p>
+                  Count on us for reliable support and maintenance services to
+                  keep your Odoo system running smoothly at all times.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 p5`}>
+        <div className="container mx-auto max-w-5xl mt-10">
+          <Typography variant="h2" component="div">
+            Benefits of Choosing InfoDrive Solutions
+          </Typography>
+
+          <div className="flex md:flex-row flex-col justify-between gap-2 py-20 -mt-20">
+            <div className="card shadow-xl text-white bg-red-600 p-10 flex flex-col gap-5 items-center">
+              <FaBuromobelexperte size={52} />
+              <h2 className="font-bold text-xl">Certified Odoo Experts</h2>
+              <p>
+                Our team comprises certified Odoo experts who have deep
+                knowledge and experience in implementing and customizing Odoo
+                ERP solutions to suit your unique business requirements.
+              </p>
+            </div>
+            <div className="card shadow-xl text-white bg-red-600 p-10 flex flex-col gap-5 items-center">
+              <FaRocketchat size={52} />
+              <h2 className="font-bold text-xl">Extensive Experience</h2>
+              <p>
+                With numerous successful Odoo projects under our belt, we have
+                honed our skills in delivering top-notch solutions that drive
+                business growth and efficiency.
+              </p>
+            </div>
+            <div className="card shadow-xl text-white bg-red-600 p-10 flex flex-col gap-5 items-center">
+              <FaBlackTie size={52} />
+              <h2 className="font-bold text-xl">Tailored Solutions</h2>
+              <p>
+                We understand that every business is unique, and that's why we
+                offer personalized Odoo solutions that align perfectly with your
+                processes and goals.
+              </p>
+            </div>
+            <div className="card shadow-xl text-white bg-red-600 p-10 flex flex-col gap-5 items-center">
+              <FaBity size={52} />
+              <h2 className="font-bold text-xl">Seamless Integration</h2>
+              <p>
+                Our expertise in integrating Odoo with other systems and
+                applications ensures smooth data flow and improved collaboration
+                across your organization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
@@ -306,7 +417,7 @@ export default function SalesForceDevelopment() {
           className="white pb15 pt15 poppin"
           component="div"
         >
-          Elevate Your Marketing Strategy with Salesforce Marketing Cloud
+          Are you ready to take your business to the next level with Odoo ERP?
         </Typography>
         <Button
           href="/contact-us.html"
