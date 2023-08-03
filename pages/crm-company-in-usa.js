@@ -43,11 +43,11 @@ export default function CRMUSA() {
         <title>Top CRM Software Company in USA - InfoDrive Solutions</title>
         <meta
           name="description"
-          content="Looking for the best CRM software solutions in USA? InfoDrive Solutions provides top-notch CRM software, customization, and implementation services, along with cloud-based solutions, sales automation software, and customer service management solutions."
+          content="Looking for the best CRM software solutions in United States? InfoDrive Solutions provides top-notch CRM software, customization, and implementation services, along with cloud-based solutions, sales automation software, and customer service management solutions."
         />
         <meta
           name="Keywords"
-          content="CRM software solutions US, CRM software solutions in United State, CRM software Solutions United State, Top CRM Software Providers in USA, Best CRM software companies in US, CRM Consulting Services in US, CRM Consulting Services in United State, Cloud-based CRM solutions in United State, Cloud-based CRM solutions USA, CRM software customization services US,
+          content="CRM software solutions US, CRM software solutions in United States, CRM software Solutions United State, Top CRM Software Providers in USA, Best CRM software companies in US, CRM Consulting Services in US, CRM Consulting Services in United State, Cloud-based CRM solutions in United State, Cloud-based CRM solutions USA, CRM software customization services US,
 CRM implementation services in USA, CRM Implementation Services United State, Sales Automation Software USA, Customer Service Management Solutions US, CRM Software Training and Support United State, Customer Service Management Solutions USA, CRM Software Customization Services USA, Salesforce CRM Software Provider in USA, CRM Software Providers in United State
 "
         />
@@ -439,7 +439,7 @@ CRM implementation services in USA, CRM Implementation Services United State, Sa
                     className="mb0 bluecolor"
                     component="div"
                   >
-                    RM Customization and Integration
+                    CRM Customization and Integration
                   </Typography>
                   <br />
                   <Typography
@@ -452,10 +452,7 @@ CRM implementation services in USA, CRM Implementation Services United State, Sa
                     services enable us to tailor the CRM platform to your
                     specific requirements. Whether it's creating custom fields,
                     workflows, or reports, we ensure that your CRM system is
-                    configured to support your business processes. We also
-                    specialize in CRM integration, connecting your CRM software
-                    with other business applications to streamline data flow and
-                    enhance productivity.
+                    configured to support your business processes.
                   </Typography>
                 </CardContent>
               </Card>

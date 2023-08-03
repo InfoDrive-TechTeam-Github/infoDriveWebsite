@@ -50,7 +50,7 @@ export default function SalesLightningUSA() {
         />
         <meta
           name="keywords"
-          content="Salesforce Lightning App Development Services, Salesforce Lightning for small business, Salesforce Lightning Customization, Salesforce Lightning Features, Salesforce Lightning Implementation, Salesforce Lightning App Development Services in Singapore, Salesforce Lightning App Development Services in United State Salesforce Lightning App Development Services in United State"
+          content="Salesforce Lightning App Development Services, Salesforce Lightning for small business, Salesforce Lightning Customization, Salesforce Lightning Features, Salesforce Lightning Implementation, Salesforce Lightning App Development Services in Singapore, Salesforce Lightning App Development Services in United States Salesforce Lightning App Development Services in United States"
         />
         <link
           rel="canonical"

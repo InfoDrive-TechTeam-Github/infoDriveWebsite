@@ -59,20 +59,20 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Revolutionize Your Business with Odoo: Expert Implementation and
-          Consulting Services in Singapore & Malaysia
+          Odoo Development Partner Company: Expert Implementation and Consulting
+          Services in Singapore & Malaysia, and India
         </title>
         <meta
           name="description"
-          content="Transform Your Marketing Strategy: Expert Odoo and Salesforce Marketing Cloud Implementation and Consulting Services in Singapore & Malaysia"
+          content="Looking for a high-end Odoo Development Company  in Singapore & Malaysia, and India? InfoDrive Solutions is a Leading Odoo Gold Partner, providing unmatchable ERP solutions. Contact us today! "
         />
         <meta
           name="keywords"
-          content="Salesforce Marketing Cloud Implementation, Salesforce Marketing Cloud Consulting Services, Salesforce Marketing Cloud Consulting Services in Singapore, Salesforce Marketing Cloud Consulting Services in Malaysia, Salesforce Marketing Cloud benefits, Salesforce Marketing Cloud Automation, Salesforce Marketing Cloud integrations, Salesforce Marketing Cloud Customization, Salesforce Marketing Cloud for Small business, Salesforce Marketing Cloud Consulting Services in India, Salesforce Marketing Cloud for ASEAN businesses, Salesforce Marketing Cloud customization in India"
+          content="Odoo Development Company in Singapore, Odoo Development Company in Malaysia, Odoo Development Partner Company"
         />
         <link
           rel="canonical"
-          href=" https://infodrive-solutions.com/odoo.html"
+          href=" https://infodrive-solutions.com/odoo-development-company.html"
         />
 
         <meta

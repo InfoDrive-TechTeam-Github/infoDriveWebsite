@@ -43,7 +43,7 @@ export default function SalesSupportUSA() {
         <title>Salesforce Support | USA - InfoDrive Solutions</title>
         <meta
           name="description"
-          content="Info Drive Solution team has certified salesforce architects, developers and administrator. We monitor your system 24/7 that helps you predict and prevent issues."
+          content="InfoDrive Solution team has certified salesforce architects, developers and administrator. We monitor your system 24/7 that helps you predict and prevent issues."
         />
         <link
           rel="canonical"

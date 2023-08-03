@@ -2,14 +2,14 @@
   font-family: GeneralSans;
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/GeneralSans-Regular.otf');
+  src: url("fonts/GeneralSans-Regular.otf");
 }
 
 @font-face {
   font-family: Poppins;
   font-style: normal;
   font-weight: 400;
-  src: url('fonts/Poppins/Poppins-Regular.ttf');
+  src: url("fonts/Poppins/Poppins-Regular.ttf");
 }
 @tailwind base;
 @tailwind components;
@@ -148,7 +148,7 @@ body {
 }
 
 .timeline-box::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 15px;
   height: 15px;
@@ -243,7 +243,7 @@ body {
 
 .PhoneInputCountrySelectArrow {
   display: block;
-  content: '';
+  content: "";
   width: var(--PhoneInputCountrySelectArrow-width);
   height: var(--PhoneInputCountrySelectArrow-width);
   margin-left: var(--PhoneInputCountrySelectArrow-marginLeft);
@@ -491,7 +491,7 @@ img {
 }
 .sliderBox::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   right: 0;
   bottom: 0;
@@ -518,7 +518,7 @@ img {
 .sliderContent .MuiTypography-h1 {
   font-family: Poppins;
   color: #fff;
-  font-size: 40px;
+  font-size: 30px;
   width: 100%;
   line-height: 55px;
   height: 310px;
@@ -562,19 +562,19 @@ img {
   font-family: Poppins;
 }
 .saleForcesDevelopmentBox {
-  background: url('images/35fd2c59d4eede2edd0c0031866136f9.jpeg');
+  background: url("images/35fd2c59d4eede2edd0c0031866136f9.jpeg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
 }
 .wave {
-  background: url('images/wave.jpeg');
+  background: url("images/wave.jpeg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
 }
 .blob {
-  background: url('images/blob.jpg');
+  background: url("images/blob.jpg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -588,7 +588,7 @@ img {
   padding: 30px 15px;
 }
 .serviceCloudBox {
-  background: url('images/5ab120900874e8a341580c56b490853e.jpeg');
+  background: url("images/5ab120900874e8a341580c56b490853e.jpeg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -598,32 +598,32 @@ img {
 }
 
 .marketCloudBox {
-  background: url('images/d1173e418c75c06c95f251d58a8b7051.jpeg');
+  background: url("images/d1173e418c75c06c95f251d58a8b7051.jpeg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
 }
 
 .sapEmarsysServices {
-  background: url('images/06a329493177b9463dd2ccc980fee2a5.jpeg');
+  background: url("images/06a329493177b9463dd2ccc980fee2a5.jpeg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
 }
 .customerRelatinshipService {
-  background: url('images/617cf828ea2bd6894050ecc1fbcd3912_1.jpeg');
+  background: url("images/617cf828ea2bd6894050ecc1fbcd3912_1.jpeg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
 }
 .socialMediaService {
-  background: url('images/7722f61d3183870c9b6bea8eb5822e1b.jpeg');
+  background: url("images/7722f61d3183870c9b6bea8eb5822e1b.jpeg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
 }
 .businessProcessManagement {
-  background: url('images/1212e63413b1e90306a62b3c2a241a52.jpeg');
+  background: url("images/1212e63413b1e90306a62b3c2a241a52.jpeg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -670,7 +670,7 @@ img {
   color: #fff;
 }
 .solutionBox {
-  background: url('../public/homegirl1.jpg');
+  background: url("../public/homegirl1.jpg");
   background-size: cover;
   margin-left: 97px;
   margin-right: 97px;
@@ -691,7 +691,7 @@ img {
   font-weight: 500;
 }
 .marketSolutionBox {
-  background: url('images/1fdbb1cca39e2eee60ac689872bfd393.jpeg');
+  background: url("images/1fdbb1cca39e2eee60ac689872bfd393.jpeg");
   background-size: cover;
   margin-left: 97px;
   margin-right: 97px;
@@ -700,7 +700,7 @@ img {
 }
 
 .analyticsBox {
-  background: url('images/27438e2c1b5ef15fae5bea18375900bb.jpeg');
+  background: url("images/27438e2c1b5ef15fae5bea18375900bb.jpeg");
   background-size: cover;
   margin-left: 97px;
   margin-right: 97px;
@@ -807,7 +807,7 @@ img {
   margin-top: 80px;
 }
 .locationContent {
-  background: url('images/pexels-timo-volz-1842332.jpg');
+  background: url("images/pexels-timo-volz-1842332.jpg");
   background-size: cover;
   padding-left: 0;
   padding-right: 0;
@@ -951,7 +951,7 @@ img {
 }
 /* shape divider end */
 .companiesBox {
-  background: url('images/pexels-ivan-samkov-8117421.jpg');
+  background: url("images/pexels-ivan-samkov-8117421.jpg");
   background-size: cover;
   margin-left: 97px;
   margin-right: 97px;
@@ -963,7 +963,7 @@ img {
 }
 .companiesBox::before {
   position: absolute;
-  content: '';
+  content: "";
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
@@ -1023,13 +1023,13 @@ img {
   height: 100%;
 }
 .weDelivery {
-  background: url('images/pexels-andrea-piacquadio-789822.jpg');
+  background: url("images/pexels-andrea-piacquadio-789822.jpg");
   height: 397px;
   background-size: cover;
 }
 .weDelivery::before {
   position: absolute;
-  content: '';
+  content: "";
   background: rgba(222, 56, 84, 0.6);
   width: 100%;
   height: 100%;
@@ -1118,7 +1118,7 @@ img {
 }
 .contactUsArea .contactUsB::after {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   right: 0;
   bottom: 0;
@@ -1126,19 +1126,19 @@ img {
   background: rgba(0, 0, 0, 0.5);
 }
 .contactUsArea .contactUsB1 {
-  background: url('images/pexels-timo-volz-1842332.jpg');
+  background: url("images/pexels-timo-volz-1842332.jpg");
   background-size: cover;
   margin-bottom: 15px;
   position: relative;
 }
 .contactUsArea .contactUsB2 {
-  background: url('images/pexels-thisisengineering-3862132.jpg');
+  background: url("images/pexels-thisisengineering-3862132.jpg");
   background-size: cover;
   margin-bottom: 15px;
   position: relative;
 }
 .contactUsArea .contactUsB3 {
-  background: url('images/pexels-vivek-chugh-739987.jpg');
+  background: url("images/pexels-vivek-chugh-739987.jpg");
   background-size: cover;
   margin-bottom: 15px;
   position: relative;
@@ -1219,7 +1219,7 @@ img {
   font-family: Poppins;
 }
 .fullstackGame {
-  background: url('images/Rectangle2.png');
+  background: url("images/Rectangle2.png");
   background-size: cover;
   margin-left: 97px;
   margin-right: 97px;
@@ -1227,7 +1227,7 @@ img {
 }
 .fullstackGame::before {
   position: absolute;
-  content: '';
+  content: "";
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
@@ -1304,7 +1304,7 @@ img {
 }
 .connectUs {
   text-align: center;
-  background: url('images/pexels-cottonbro-studio-5473298.jpg');
+  background: url("images/pexels-cottonbro-studio-5473298.jpg");
   background-size: cover;
   position: relative;
 }
@@ -1313,7 +1313,7 @@ img {
 }
 .backDrop::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   right: 0;
   bottom: 0;
@@ -1332,7 +1332,7 @@ img {
 }
 .leadForm {
   /* background: #38373b; */
-  background: url('images/pexels-timo-volz-1842332.jpg');
+  background: url("images/pexels-timo-volz-1842332.jpg");
   background-size: cover;
 }
 .leadForm .leadFormBox {
@@ -1514,7 +1514,7 @@ img.btnLdr {
   visibility: hidden;
 }
 .uploadFile::before {
-  content: 'Upload your cv file';
+  content: "Upload your cv file";
   display: inline-block;
   background: linear-gradient(top, #f9f9f9, #e3e3e3);
   border: none;
@@ -1527,7 +1527,7 @@ img.btnLdr {
   font-weight: 500;
   font-size: 0.875rem;
   text-transform: uppercase;
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 .uploadFile:hover::before {
   border-color: black;
@@ -2303,7 +2303,7 @@ img.btnLdr {
     @apply p-5;
   }
   .blob {
-    background-image: url('images/blobmobile.jpg');
+    background-image: url("images/blobmobile.jpg");
     height: 1100px;
   }
 }

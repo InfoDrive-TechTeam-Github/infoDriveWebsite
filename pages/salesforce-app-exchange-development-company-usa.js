@@ -61,11 +61,11 @@ function SalesforceAppExchangeUSA() {
         <title>Trusted Salesforce AppExchange Development Company in USA</title>
         <meta
           name="description"
-          content="Looking for a reliable Salesforce AppExchange development company? We offer expert Salesforce AppExchange app development services in USA. Our certified developers can help you build custom solutions and integrations to meet your business needs."
+          content="Looking for a reliable Salesforce AppExchange development company? We offer expert Salesforce AppExchange app development services in United States. Our certified developers can help you build custom solutions and integrations to meet your business needs."
         />
         <meta
           name="keywords"
-          content="Salesforce AppExchange Development Company, Salesforce AppExchange Development Company in United State, Salesforce AppExchange Development Company inUnited State Salesforce AppExchange Development Company in USA, Salesforce Appexchange App Development Services in United State, Salesforce Appexchange App Development Services in United State salesforce appexchange partners, Salesforce AppExchange Developers, Salesforce AppExchange Developers in United State, Salesforce AppExchange Developers in US"
+          content="Salesforce AppExchange Development Company, Salesforce AppExchange Development Company in United States, Salesforce AppExchange Development Company inUnited State Salesforce AppExchange Development Company in USA, Salesforce Appexchange App Development Services in United State, Salesforce Appexchange App Development Services in United State salesforce appexchange partners, Salesforce AppExchange Developers, Salesforce AppExchange Developers in United State, Salesforce AppExchange Developers in US"
         />
         <link
           rel="canonical"
@@ -156,10 +156,10 @@ function SalesforceAppExchangeUSA() {
             Your Trusted Salesforce AppExchange Development Company in the
             United States
           </Typography>
-          <p>
+          <p className="mt-10">
             As a leading{" "}
             <strong>Salesforce AppExchange App Development Company,</strong>{" "}
-            infoDrive Solutions offers a wide range of services to help
+            InfoDrive Solutions offers a wide range of services to help
             businesses leverage the power of Salesforce and drive business
             growth. Our team of Salesforce developers, designers, and project
             managers have years of experience in developing custom applications
@@ -352,7 +352,7 @@ function SalesforceAppExchangeUSA() {
           </div>
         </div>
       </section>
-      <section className="feature p5">
+      <section className="feature p5 mx-auto container max-w-5xl">
         <h2 className="text-center font-bold text-blue-950 text-2xl mt-20 max-w-5xl mx-auto">
           Why Invest in Salesforce AppExchange?
         </h2>
@@ -375,7 +375,7 @@ function SalesforceAppExchangeUSA() {
                   </h3>
                 </div>
 
-                <p className="content">
+                <p className="content text-sm leading-6">
                   AppExchange offers a vast selection of applications that
                   integrate seamlessly with Salesforce, expanding its
                   capabilities and addressing specific business needs. From
@@ -394,7 +394,7 @@ function SalesforceAppExchangeUSA() {
                   </h3>
                 </div>
 
-                <p className="content">
+                <p className="content text-sm leading-6">
                   Salesforce AppExchange provides the flexibility to customize
                   your Salesforce instance with tailored applications. Whether
                   you need to automate processes, streamline workflows, or gain
@@ -413,7 +413,7 @@ function SalesforceAppExchangeUSA() {
                   </h3>
                 </div>
 
-                <p className="content ">
+                <p className="content text-sm leading-6">
                   All apps available on Salesforce AppExchange undergo a
                   rigorous review process to ensure quality, security, and
                   compliance. You can trust that the applications you install
@@ -432,7 +432,7 @@ function SalesforceAppExchangeUSA() {
                   </h3>
                 </div>
 
-                <p className="content">
+                <p className="content text-sm leading-6">
                   As your business evolves, Salesforce AppExchange allows you to
                   add or switch applications seamlessly, ensuring scalability
                   and adaptability. You can easily find new apps or upgrade
