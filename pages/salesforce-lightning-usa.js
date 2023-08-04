@@ -50,7 +50,7 @@ export default function SalesLightningUSA() {
         />
         <meta
           name="keywords"
-          content="Salesforce Lightning App Development Services, Salesforce Lightning for small business, Salesforce Lightning Customization, Salesforce Lightning Features, Salesforce Lightning Implementation, Salesforce Lightning App Development Services in Singapore, Salesforce Lightning App Development Services in United State Salesforce Lightning App Development Services in United State"
+          content="Salesforce Lightning App Development Services, Salesforce Lightning for small business, Salesforce Lightning Customization, Salesforce Lightning Features, Salesforce Lightning Implementation, Salesforce Lightning App Development Services in Singapore, Salesforce Lightning App Development Services in United States Salesforce Lightning App Development Services in United States"
         />
         <link
           rel="canonical"
@@ -87,7 +87,7 @@ export default function SalesLightningUSA() {
       <Header />
       <div className="sliderBox lightlingSlider">
         <img
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "100%" }}
           src="images/0959e7bad48d4a91f7e112136efad00a-min.jpeg"
           alt="Salesforce Lightning App Development Services"
         />

@@ -46,7 +46,7 @@ export default function MarketingCloudUSA() {
         </title>
         <meta
           name="description"
-          content="Transform your marketing strategy with InfoDrive Solutions' Salesforce Marketing Cloud services. Our experts offer consultation, implementation, and customization solutions for businesses in US, United State, and ASEAN."
+          content="Transform your marketing strategy with InfoDrive Solutions' Salesforce Marketing Cloud services. Our experts offer consultation, implementation, and customization solutions for businesses in USA."
         />
         <meta
           name="keywords"
@@ -163,15 +163,15 @@ export default function MarketingCloudUSA() {
 
         <Typography className="w100" gutterBottom variant="h5" component="div">
           Our company is a leading provider of Salesforce Marketing Cloud
-          implementation and consulting services in US, and United State. Our
-          team of certified experts has years of experience helping businesses
-          of all sizes maximize the full potential of this powerful marketing
-          platform. Salesforce Marketing Cloud is a cloud-based,
-          enterprise-level marketing automation platform that helps businesses
-          reach, engage, and retain their customers through personalized,
-          omnichannel marketing campaigns. It offers a wide range of tools and
-          features for email marketing, social media marketing, mobile
-          marketing, and more, all in one easy-to-use platform.
+          implementation and consulting services in United States. Our team of
+          certified experts has years of experience helping businesses of all
+          sizes maximize the full potential of this powerful marketing platform.
+          Salesforce Marketing Cloud is a cloud-based, enterprise-level
+          marketing automation platform that helps businesses reach, engage, and
+          retain their customers through personalized, omnichannel marketing
+          campaigns. It offers a wide range of tools and features for email
+          marketing, social media marketing, mobile marketing, and more, all in
+          one easy-to-use platform.
         </Typography>
       </section>
 

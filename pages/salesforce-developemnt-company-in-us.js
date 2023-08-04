@@ -46,11 +46,11 @@ export default function SalesForceDevelopmentUSA() {
         </title>
         <meta
           name="description"
-          content="InfoDrive Solutions is a leading Salesforce consulting and development partner company offering expert services in United State. Partner with us for customized Salesforce solutions."
+          content="InfoDrive Solutions is a leading Salesforce consulting and development partner company offering expert services in United States. Partner with us for customized Salesforce solutions."
         />
         <meta
           name="keywords"
-          content="Salesforce Consulting Company, Salesforce Development Partner Company, Salesforce Service Provider in United State Salesforce Consulting Company in United State Salesforce Consulting Company in USA Salesforce Service Provider in USA Salesforce Consulting Partner in United State Salesforce Consulting Partner in USA, Salesforce Partner Company in United State Salesforce Partner Company in USA Salesforce Partner Company in US, Professional Salesforce Development services, Salesforce certified consultant"
+          content="Salesforce Consulting Company, Salesforce Development Partner Company, Salesforce Service Provider in United States Salesforce Consulting Company in United States Salesforce Consulting Company in USA Salesforce Service Provider in USA Salesforce Consulting Partner in United States Salesforce Consulting Partner in USA, Salesforce Partner Company in United States Salesforce Partner Company in USA Salesforce Partner Company in US, Professional Salesforce Development services, Salesforce certified consultant"
         />
         <link
           rel="canonical"
@@ -59,7 +59,7 @@ export default function SalesForceDevelopmentUSA() {
         <meta
           property="og:title"
           content="Salesforce Consulting Service & Development Partner Company in
-          United State - InfoDrive Solutions"
+          United States - InfoDrive Solutions"
         />
         <meta
           property="og:image"
@@ -91,7 +91,7 @@ export default function SalesForceDevelopmentUSA() {
           src="images/cc13ff8a13c84325124d7b7989be19e8.jpeg"
           alt="Salesforce Consulting Service"
         />
-        <Box sx={{ flexGrow: 1 }} className="sliderContent salePart ">
+        <Box sx={{ flexGrow: 1 }} className="sliderContent salePart md:p-0 p-2">
           <Grid container spacing={0}>
             <Typography gutterBottom variant="h3" component="h1">
               Empower Your Business with Salesforce Professional Services
@@ -368,7 +368,7 @@ export default function SalesForceDevelopmentUSA() {
         </Typography>
         <br />
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0}>
+          <Grid container spacing={2}>
             <Grid item xs={4}>
               <Card>
                 <CardContent>

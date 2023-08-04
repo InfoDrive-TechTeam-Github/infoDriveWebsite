@@ -50,7 +50,7 @@ export default function SalesForceDevelopment() {
         />
         <meta
           name="keywords"
-          content="SAP Emarsys Solutions, SAP Emarsys Integration, SAP Emarsys Implementation, SAP Emarsys Services, SAP Emarsys Consulting, SAP Emarsys Partner, SAP Emarsys Support, SAP Emarsys Platform, SAP Emarsys for Marketing, SAP Emarsys for Customer Engagement, SAP Emarsys for E-commerce, SAP Emarsys for B2B Marketing, SAP Emarsys for Data Management, SAP Emarsys for Personalization, SAP Emarsys for Multichannel Marketing, SAP Emarsys Consulting in United State,  SAP Emarsys Services in USA, SAP Emarsys Customer Engagement"
+          content="SAP Emarsys Solutions, SAP Emarsys Integration, SAP Emarsys Implementation, SAP Emarsys Services, SAP Emarsys Consulting, SAP Emarsys Partner, SAP Emarsys Support, SAP Emarsys Platform, SAP Emarsys for Marketing, SAP Emarsys for Customer Engagement, SAP Emarsys for E-commerce, SAP Emarsys for B2B Marketing, SAP Emarsys for Data Management, SAP Emarsys for Personalization, SAP Emarsys for Multichannel Marketing, SAP Emarsys Consulting in United States,  SAP Emarsys Services in USA, SAP Emarsys Customer Engagement"
         />
         <link
           rel="canonical"

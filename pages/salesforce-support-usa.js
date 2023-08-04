@@ -43,7 +43,7 @@ export default function SalesSupportUSA() {
         <title>Salesforce Support | USA - InfoDrive Solutions</title>
         <meta
           name="description"
-          content="Info Drive Solution team has certified salesforce architects, developers and administrator. We monitor your system 24/7 that helps you predict and prevent issues."
+          content="InfoDrive Solution team has certified salesforce architects, developers and administrator. We monitor your system 24/7 that helps you predict and prevent issues."
         />
         <link
           rel="canonical"
@@ -82,7 +82,7 @@ export default function SalesSupportUSA() {
       <Header />
       <div className="sliderBox">
         <img
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "100%" }}
           src="images/6ab9e62b9940c4bae59de46b69e54ecb-min.jpeg"
           alt="Salesforce Support"
         />
