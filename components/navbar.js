@@ -274,7 +274,10 @@ function DrawerAppBar(props) {
                 />
               </ListItem>
               <ListItem disablePadding>
-                <ListItemButton component="a" to="/odoo.html">
+                <ListItemButton
+                  component="a"
+                  to="/odoo-development-company.html"
+                >
                   <ListItemText primary={"Odoo ERP Development"} />
                 </ListItemButton>
               </ListItem>
@@ -650,7 +653,10 @@ function DrawerAppBar(props) {
                       />
                     </ListItem>
                     <ListItem disablePadding>
-                      <ListItemButton component="a" to="/odoo.html">
+                      <ListItemButton
+                        component="a"
+                        to="/odoo-development-company.html"
+                      >
                         <ListItemText primary={"Odoo ERP Development"} />
                       </ListItemButton>
                     </ListItem>
