@@ -91,7 +91,7 @@ export default function SalesForceDevelopmentUSA() {
           src="images/cc13ff8a13c84325124d7b7989be19e8.jpeg"
           alt="Salesforce Consulting Service"
         />
-        <Box sx={{ flexGrow: 1 }} className="sliderContent salePart ">
+        <Box sx={{ flexGrow: 1 }} className="sliderContent salePart md:p-0 p-2">
           <Grid container spacing={0}>
             <Typography gutterBottom variant="h3" component="h1">
               Empower Your Business with Salesforce Professional Services

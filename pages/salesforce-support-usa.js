@@ -82,7 +82,7 @@ export default function SalesSupportUSA() {
       <Header />
       <div className="sliderBox">
         <img
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "100%" }}
           src="images/6ab9e62b9940c4bae59de46b69e54ecb-min.jpeg"
           alt="Salesforce Support"
         />

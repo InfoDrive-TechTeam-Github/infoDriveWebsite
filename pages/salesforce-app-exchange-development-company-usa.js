@@ -91,7 +91,7 @@ function SalesforceAppExchangeUSA() {
         transition={{ duration: 1 }}
       >
         <img
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "100%" }}
           src="images/saas-concept-collage.jpg"
           alt="Android App Development Company"
         />
