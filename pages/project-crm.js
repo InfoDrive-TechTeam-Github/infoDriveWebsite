@@ -1,43 +1,43 @@
-import * as React from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import utilStyles from '../styles/utils.module.css';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import * as React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import utilStyles from "../styles/utils.module.css";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
 //import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import Avatar from '@mui/material/Avatar';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import Link from '@mui/material/Link';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Head from 'next/head';
-import LeadForm from 'components/leadForm';
-import { FcApproval } from 'react-icons/fc';
-import { motion, useInView } from 'framer-motion';
+import Grid from "@mui/material/Grid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
+import Avatar from "@mui/material/Avatar";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import Link from "@mui/material/Link";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Head from "next/head";
+import LeadForm from "components/leadForm";
+import { FcApproval } from "react-icons/fc";
+import { motion, useInView } from "framer-motion";
 import {
   BsBoxes,
   BsBuildingGear,
   BsCardChecklist,
   BsLayoutTextSidebarReverse,
-} from 'react-icons/bs';
-import Lottie from 'lottie-react';
-import crmanimation from '../components/crm.json';
+} from "react-icons/bs";
+import Lottie from "lottie-react";
+import crmanimation from "../components/crm.json";
 function crm() {
   // const [inView, setInView] = React.useState(false);
   // const ref = React.useRef(null);
@@ -46,35 +46,35 @@ function crm() {
   return (
     <>
       <Head>
-        <link rel='icon' href='/favicon.png' />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
-      <div className='sliderBox'>
+      <div className="sliderBox">
         <img
-          style={{ width: '100%' }}
-          src='https://img.freepik.com/free-photo/smiling-asian-businesswoman-showing-tablet-her-manager-during-meeting-office_74952-2849.jpg?w=1060&t=st=1684605611~exp=1684606211~hmac=4cdbebfbc636394831102118202403204b33268d25215f17033058b12d0e2a0b'
-          alt='IT Solutions Company in Kuala Lumpur'
+          style={{ width: "100%" }}
+          src="https://img.freepik.com/free-photo/smiling-asian-businesswoman-showing-tablet-her-manager-during-meeting-office_74952-2849.jpg?w=1060&t=st=1684605611~exp=1684606211~hmac=4cdbebfbc636394831102118202403204b33268d25215f17033058b12d0e2a0b"
+          alt="IT Solutions Company in Kuala Lumpur"
         />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent'>
+        <Box sx={{ flexGrow: 1 }} className="sliderContent">
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h1' component='div'>
+            <Typography gutterBottom variant="h1" component="div">
               Harnessing the Power of <br /> CRM and ATS for a <br /> Connected
               and Enhanced <br />
               Customer Journey
             </Typography>
             <Button
-              href='/contact-us.html'
-              className='readmore white'
-              variant='text'
+              href="/contact-us.html"
+              className="readmore white"
+              variant="text"
             >
               Let's Talk <ArrowRightAltIcon />
             </Button>
-            <nav className='socical-network'>
+            <nav className="socical-network">
               <List>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.facebook.com/InfoDrivesolutions/'
+                    component="a"
+                    href="https://www.facebook.com/InfoDrivesolutions/"
                   >
                     <ListItemIcon>
                       <FacebookIcon />
@@ -83,8 +83,8 @@ function crm() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                    component="a"
+                    href="https://in.linkedin.com/company/infodrive-solutions/"
                   >
                     <ListItemIcon>
                       <LinkedInIcon />
@@ -93,8 +93,8 @@ function crm() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.instagram.com/infodrivesolutions/'
+                    component="a"
+                    href="https://www.instagram.com/infodrivesolutions/"
                   >
                     <ListItemIcon>
                       <InstagramIcon />
@@ -115,17 +115,17 @@ function crm() {
         // ref={ref}
       >
         <Typography
-          className='w100 red'
+          className="w100 red"
           gutterBottom
-          variant='h1'
-          component='h1'
+          variant="h1"
+          component="h1"
         >
           Welcome to Dryvn.io CRM and ATS
         </Typography>
-        <Typography className='w100' gutterBottom variant='h2' component='div'>
+        <Typography className="w100" gutterBottom variant="h2" component="div">
           Revolutionize Your Business with Seamless CRM and ATS
         </Typography>
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
+        <Typography className="w100" gutterBottom variant="h5" component="div">
           InfoDrive Solutions proudly presents Dryvn.io, our flagship product
           that combines the power of Customer Relationship Management (CRM) and
           Applicant Tracking System (ATS). Designed to cater to businesses of
@@ -156,103 +156,103 @@ function crm() {
         </Typography>
       </motion.section>
 
-      <section className='wave md:h-screen md:flex justify-center items-center '>
-        <div className='container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 justify-between '>
-          <div className='left md:w-1/3 flex flex-col gap-5 '>
-            <h2 className='text-red-600 md:text-xl font-bold text-lg'>
+      <section className="wave md:h-screen md:flex justify-center items-center ">
+        <div className="container max-w-5xl mx-auto md:flex  items-center h-full p-5 md:p-0 justify-between ">
+          <div className="left md:w-1/3 flex flex-col gap-5 ">
+            <h2 className="text-red-600 md:text-xl font-bold text-lg">
               Streamline Your CRM and ATS
               <br />
-              <span className='text-black'>Journey with Dryvn.io</span>
+              <span className="text-black">Journey with Dryvn.io</span>
             </h2>
-            <p className='text-sm md:whitespace-nowrap'>
+            <p className="text-sm md:whitespace-nowrap">
               Effectively manage and nurture customer relationships
             </p>
 
             <motion.button
-              className='bg-red-600 rounded-md p-5 shadow-md'
+              className="bg-red-600 rounded-md p-5 shadow-md"
               onClick={() =>
                 window.open(
-                  'http://dev-ats.web3dapps.world/dashboard',
-                  '_blank'
+                  "http://dev-ats.web3dapps.world/dashboard",
+                  "_blank"
                 )
               }
               animate={{
                 scale: 1.1,
-                textShadow: '0px 0px 8px rgb(255,255,255)',
-                boxShadow: '0px 0px 8px rgb(255,255,255)',
+                textShadow: "0px 0px 8px rgb(255,255,255)",
+                boxShadow: "0px 0px 8px rgb(255,255,255)",
 
                 transition: {
                   duration: 0.8,
                   repeat: Infinity,
-                  repeatType: 'reverse',
+                  repeatType: "reverse",
                 },
               }}
             >
               <Link
-                className=' text-white font-semibold'
-                style={{ textDecoration: 'none', color: 'white' }}
+                className=" text-white font-semibold"
+                style={{ textDecoration: "none", color: "white" }}
                 // href='http://dev-ats.web3dapps.world/dashboard'
               >
                 Click to Open Dryvn.io
               </Link>
             </motion.button>
 
-            <div className='trueDiv mt-10 flex flex-col gap-5'>
-              <div className='flex gap-2 items-center'>
+            <div className="trueDiv mt-10 flex flex-col gap-5">
+              <div className="flex gap-2 items-center">
                 <FcApproval size={30} />
                 <h2>Monitor customer interactions.</h2>
               </div>
-              <div className='flex gap-2 items-center'>
+              <div className="flex gap-2 items-center">
                 <FcApproval size={30} />
                 <h2>Easily create and publish job postings.</h2>
               </div>
-              <div className='flex gap-2 items-center'>
+              <div className="flex gap-2 items-center">
                 <FcApproval size={30} />
                 <h2>Centralize all applicant data.</h2>
               </div>
             </div>
           </div>
-          <div className='h-[400px]  mr-36 w-full '>
-            <Lottie animationData={crmanimation} className='h-full w-full' />
+          <div className="h-[400px]  mr-36 w-full ">
+            <Lottie animationData={crmanimation} className="h-full w-full" />
           </div>
         </div>
       </section>
-      <div className='bg-gray-100 h-auto polygon text-white '>
-        <section className='hero  text-black  max-w-6xl mx-auto'>
+      <div className="bg-gray-100 h-auto polygon text-white ">
+        <section className="hero  text-black  max-w-6xl mx-auto">
           <div
-            className='md:flex justify-between items-center'
+            className="md:flex justify-between items-center"
             style={{ flex: 2 }}
           >
-            <div className='right' style={{ flex: 3 }}>
-              <div className='relative container mx-auto px-6 flex flex-col space-y-8 '>
-                <div className='absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-17 md:mx-auto md:right-0 md:left-0'></div>
-                <div className='relative z-10'>
+            <div className="right" style={{ flex: 3 }}>
+              <div className="relative container mx-auto px-6 flex flex-col space-y-8 ">
+                <div className="absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-17 md:mx-auto md:right-0 md:left-0"></div>
+                <div className="relative z-10">
                   <motion.img
-                    src='https://img.freepik.com/free-vector/gradient-crm-illustration_23-2149379177.jpg?w=740&t=st=1684603989~exp=1684604589~hmac=fe21bbcfd8ab34859ee3c8db1ce74d5f56954b6ce0155e80ccfa729f47e57f82'
-                    alt=''
-                    className='timeline-img1'
+                    src="https://img.freepik.com/free-vector/gradient-crm-illustration_23-2149379177.jpg?w=740&t=st=1684603989~exp=1684604589~hmac=fe21bbcfd8ab34859ee3c8db1ce74d5f56954b6ce0155e80ccfa729f47e57f82"
+                    alt=""
+                    className="timeline-img1"
                     animate={{
                       // x: [0, 10, 0], // Animation values for the x-axis
                       rotate: -360,
                       transition: {
                         delay: 1,
                         repeat: Infinity, // Repeat the animation indefinitely
-                        repeatType: 'loop', // Reverse the animation on each repeat
+                        repeatType: "loop", // Reverse the animation on each repeat
                         duration: 5, // Duration of each animation cycle
                       },
                     }}
                   />
-                  <div className='timeline-container1'>
-                    <div className='timeline-pointer' aria-hidden='true'></div>
-                    <div className='bg-white p-6 rounded-md shadow-md'>
-                      <span className='font-bold text-red-600 text-sm tracking-wide'>
+                  <div className="timeline-container1">
+                    <div className="timeline-pointer" aria-hidden="true"></div>
+                    <div className="bg-white p-6 rounded-md shadow-md">
+                      <span className="font-bold text-red-600 text-sm tracking-wide">
                         Streamline your sales processes
                       </span>
-                      <h1 className='text-xl font-bold pt-1 text-[#0b2653]'>
+                      <h1 className="text-xl font-bold pt-1 text-[#0b2653]">
                         CRM and ATS Solution
                       </h1>
 
-                      <p className='pt-1 text-[#00000099] text-sm leading-6'>
+                      <p className="pt-1 text-[#00000099] text-sm leading-6">
                         Our CRM and ATS solution is designed to help you
                         streamline your sales processes. With our powerful
                         features and intuitive interface, you can manage your
@@ -262,35 +262,35 @@ function crm() {
                     </div>
                   </div>
                 </div>
-                <div className='relative z-10'>
+                <div className="relative z-10">
                   <motion.img
-                    src='https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041849.jpg?w=996&t=st=1684604186~exp=1684604786~hmac=69b4babd71ec1f29b482eb47ca5ff214259191dea09330dfe60b525f79366243'
-                    alt=''
-                    className='timeline-img1'
+                    src="https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041849.jpg?w=996&t=st=1684604186~exp=1684604786~hmac=69b4babd71ec1f29b482eb47ca5ff214259191dea09330dfe60b525f79366243"
+                    alt=""
+                    className="timeline-img1"
                     animate={{
                       // x: [0, 10, 0], // Animation values for the x-axis
                       rotate: 360,
                       transition: {
                         delay: 1,
                         repeat: Infinity, // Repeat the animation indefinitely
-                        repeatType: 'loop', // Reverse the animation on each repeat
+                        repeatType: "loop", // Reverse the animation on each repeat
                         duration: 5, // Duration of each animation cycle
                       },
                     }}
                   />
-                  <div className='timeline-container1 timeline-container-left1'>
+                  <div className="timeline-container1 timeline-container-left1">
                     <div
-                      class='timeline-pointer timeline-pointer-left'
-                      aria-hidden='true'
+                      class="timeline-pointer timeline-pointer-left"
+                      aria-hidden="true"
                     ></div>
-                    <div className='bg-white p-6 rounded-md shadow-md'>
-                      <span className='font-bold text-red-600 text-sm tracking-wide'>
+                    <div className="bg-white p-6 rounded-md shadow-md">
+                      <span className="font-bold text-red-600 text-sm tracking-wide">
                         Boost productivity and efficiency
                       </span>
-                      <h1 className='text-xl font-bold pt-1 text-[#0b2653]'>
+                      <h1 className="text-xl font-bold pt-1 text-[#0b2653]">
                         Advanced ATS and CRM Features
                       </h1>
-                      <p className='pt-1 text-[#00000099] text-sm leading-6'>
+                      <p className="pt-1 text-[#00000099] text-sm leading-6">
                         Unlock the full potential of your sales team with our
                         advanced ATS and CRM features. From automated applicant
                         tracking to seamless integration with your existing
@@ -303,32 +303,32 @@ function crm() {
 
                   {/**chatbot end*/}
                 </div>
-                <div className='relative z-10 '>
+                <div className="relative z-10 ">
                   <motion.img
-                    src='https://img.freepik.com/free-photo/customer-relationship-management-concept_23-2150038409.jpg?w=996&t=st=1684755663~exp=1684756263~hmac=d0994d271fdf751c1a3d997a803546afc0706a9cf2a150463698880843ae21b0'
-                    alt=''
-                    className='timeline-img1'
+                    src="https://img.freepik.com/free-photo/customer-relationship-management-concept_23-2150038409.jpg?w=996&t=st=1684755663~exp=1684756263~hmac=d0994d271fdf751c1a3d997a803546afc0706a9cf2a150463698880843ae21b0"
+                    alt=""
+                    className="timeline-img1"
                     animate={{
                       // x: [0, 10, 0], // Animation values for the x-axis
                       rotate: -360,
                       transition: {
                         delay: 1,
                         repeat: Infinity, // Repeat the animation indefinitely
-                        repeatType: 'loop', // Reverse the animation on each repeat
+                        repeatType: "loop", // Reverse the animation on each repeat
                         duration: 5, // Duration of each animation cycle
                       },
                     }}
                   />
-                  <div className='timeline-container1'>
-                    <div className='timeline-pointer' aria-hidden='true'></div>
-                    <div className='bg-white p-6 rounded-md shadow-md mb-5'>
-                      <span className='font-bold text-red-600 text-sm tracking-wide'>
+                  <div className="timeline-container1">
+                    <div className="timeline-pointer" aria-hidden="true"></div>
+                    <div className="bg-white p-6 rounded-md shadow-md mb-5">
+                      <span className="font-bold text-red-600 text-sm tracking-wide">
                         Stay organized and informed
                       </span>
-                      <h1 className='text-xl font-bold pt-1 text-[#0b2653]'>
+                      <h1 className="text-xl font-bold pt-1 text-[#0b2653]">
                         Centralized Data Management
                       </h1>
-                      <p className='pt-1 text-[#00000099] text-sm leading-6'>
+                      <p className="pt-1 text-[#00000099] text-sm leading-6">
                         With our ATS and CRM solution, you can centralize all
                         your sales and applicant data in one place. From contact
                         details and communication history to application status
@@ -345,36 +345,36 @@ function crm() {
         </section>
       </div>
 
-      <section className='crma md:h-[800px] md:p-10 h-[1150px] p-3 p5'>
+      <section className="crma md:h-[800px] md:p-10 h-[1150px] p-3 p5">
         <motion.h2
           animate={{
             x: [0, 20, 0],
             transition: {
               delay: 1,
               repeat: Infinity, // Repeat the animation indefinitely
-              repeatType: 'loop', // Reverse the animation on each repeat
+              repeatType: "loop", // Reverse the animation on each repeat
               duration: 5, // Duration of each animation cycle
             },
           }}
-          className='text-center mb-10 text-red-600 text-2xl leading-10 font-semibold'
+          className="text-center mb-10 text-red-600 text-2xl leading-10 font-semibold"
         >
           Dryvn.io ATS and CRM help you create and automate a <br />
-          <span className='font-bold text-[#0b2653]'>
+          <span className="font-bold text-[#0b2653]">
             better customer journey
           </span>
         </motion.h2>
         <div
-          className='left flex  justify-center items-center mx-auto'
+          className="left flex  justify-center items-center mx-auto"
           style={{ flex: 1 }}
         >
           <img
-            src='images/chatbot-marketing.gif'
-            alt=''
-            className='h-[200px] w-[200px]'
+            src="images/chatbot-marketing.gif"
+            alt=""
+            className="h-[200px] w-[200px]"
           />
         </div>
-        <div className='inner md:flex items-center gap-10 max-w-6xl mx-auto mb-5 md:mb-0'>
-          <div className='articleRight md:w-1/2 leading-8 md:mt-10  text-sm '>
+        <div className="inner md:flex items-center gap-10 max-w-6xl mx-auto mb-5 md:mb-0">
+          <div className="articleRight md:w-1/2 leading-8 md:mt-10  text-sm ">
             Combination of a CRM and an ATS empowers you to create and automate
             a better customer journey. By harnessing the capabilities of these
             systems, you can effectively manage customer interactions,
@@ -384,70 +384,70 @@ function crm() {
             relationships, increase customer satisfaction, and drive business
             growth in today's competitive market.
           </div>
-          <div className='image relative md:w-1/2'>
-            <img src='images/crm.jpg' alt='' />
+          <div className="image relative md:w-1/2">
+            <img src="images/crm.jpg" alt="" />
             <img
-              src='images/crmtable.jpg'
-              alt=''
-              className='absolute md:top-32 md:left-16 top-20 left:10'
+              src="images/crmtable.png"
+              alt=""
+              className="absolute md:top-32 md:left-16 top-20 left:10"
             />
           </div>
         </div>
       </section>
 
       {/**customer says section */}
-      <section className='bg-gray-100 min-h-[600px] relative p5'>
-        <div className=' mx-auto container max-w-6xl pt-24'>
-          <div className='customerbox md:flex'>
-            <div className='max-w-6xl mx-auto '>
-              <h2 className='text-center  font-extrabold text-xl'>
-                One Platform To{' '}
-                <span className='text-red-600 font-semibold'>
+      <section className="bg-gray-100 min-h-[600px] relative p5">
+        <div className=" mx-auto container max-w-6xl pt-24">
+          <div className="customerbox md:flex">
+            <div className="max-w-6xl mx-auto ">
+              <h2 className="text-center  font-extrabold text-xl">
+                One Platform To{" "}
+                <span className="text-red-600 font-semibold">
                   Support Your Entire Journey
                 </span>
               </h2>
 
-              <div className='main grid md:grid-cols-2 m-10 gap-20 grid-cols-1'>
-                <div className='div1 flex flex-col items-center gap-2'>
-                  <BsBuildingGear className='text-red-600' size={80} />
-                  <h3 className='text-red-600 font-bold'>
+              <div className="main grid md:grid-cols-2 m-10 gap-20 grid-cols-1">
+                <div className="div1 flex flex-col items-center gap-2">
+                  <BsBuildingGear className="text-red-600" size={80} />
+                  <h3 className="text-red-600 font-bold">
                     User-friendly interface
                   </h3>
-                  <p className='text-[#00000099] text-sm'>
+                  <p className="text-[#00000099] text-sm">
                     Our intuitive and easy-to-use interface ensures a smooth
                     onboarding experience and minimal training requirements for
                     your teams.
                   </p>
                 </div>
-                <div className='div1 flex flex-col items-center gap-2'>
-                  <BsBoxes size={80} className='text-red-600' />
-                  <h3 className='text-red-600 font-bold'>
+                <div className="div1 flex flex-col items-center gap-2">
+                  <BsBoxes size={80} className="text-red-600" />
+                  <h3 className="text-red-600 font-bold">
                     Scalable and customizable
                   </h3>
-                  <p className='text-[#00000099] text-sm'>
+                  <p className="text-[#00000099] text-sm">
                     Dryvn.io CRM and ATS can be tailored to meet the unique
                     needs of your business, adapting as your organization grows
                     and evolves
                   </p>
                 </div>
-                <div className='div1 flex flex-col items-center gap-2'>
-                  <BsCardChecklist className='text-red-600' size={80} />
-                  <h3 className='text-red-600 font-bold'>Data security</h3>
-                  <p className='text-[#00000099] text-sm'>
+                <div className="div1 flex flex-col items-center gap-2">
+                  <BsCardChecklist className="text-red-600" size={80} />
+                  <h3 className="text-red-600 font-bold">Data security</h3>
+                  <p className="text-[#00000099] text-sm">
                     We prioritize the security of your data, employing robust
                     measures to protect sensitive information from unauthorized
                     access or breaches.
                   </p>
                 </div>
-                <div className='div1 flex flex-col items-center gap-2'>
+                <div className="div1 flex flex-col items-center gap-2">
                   <BsLayoutTextSidebarReverse
-                    className='text-red-600'
+                    className="text-red-600"
                     size={80}
                   />
-                  <h3 className='text-red-600 font-bold'>
+                  <h3 className="text-red-600 font-bold">
                     Integration capabilities
                   </h3>
-                  <p className='text-[#00000099] text-sm'>
+                  <p className="text-[#00000099] text-sm">
                     Seamlessly integrate Dryvn.io CRM and ATS with your existing
                     systems and tools, maximizing productivity and efficiency
                     across your organization.
@@ -457,16 +457,16 @@ function crm() {
             </div>
           </div>
         </div>
-        <div className='custom-shape-divider-top-1684756723'>
+        <div className="custom-shape-divider-top-1684756723">
           <svg
-            data-name='Layer 1'
-            xmlns='http://www.w3.org/2000/svg'
-            viewBox='0 0 1200 120'
-            preserveAspectRatio='none'
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
           >
             <path
-              d='M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z'
-              className='shape-fill'
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              className="shape-fill"
             ></path>
           </svg>
         </div>
