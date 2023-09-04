@@ -58,7 +58,7 @@ Remote Based Staff Augumation Services in USA,"
         />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/staff-augumentation-service-in-USA.html"
+          href="https://infodrive-solutions.com/staff-augumentation-service-in-usa.html"
         />
 
         <link rel="icon" href="/favicon.png" />
