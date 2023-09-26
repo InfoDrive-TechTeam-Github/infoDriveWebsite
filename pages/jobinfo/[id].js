@@ -457,7 +457,7 @@ const JobInfoPage = ({ jobInfo }) => {
                     ? "bg-white text-[#dd3952]"
                     : "bg-[#dd3952] text-white"
                 }`}
-                onClick={() => handleClickApplyOpen(job)}
+                onClick={() => handleClickApplyOpen(jobs[0])}
               >
                 Apply now
               </button>
