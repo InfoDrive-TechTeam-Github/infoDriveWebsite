@@ -169,9 +169,16 @@ export default function SalesForceDevelopment({ data }) {
                   {/** blog right  section */}
                   <Grid item xs={6}>
                     <div className="imgHeader flex  flex-wrap grid-col-1 items-baseline  justify-between md:pl-[30px] py-3 ">
-                      <div className="text-gray-400 flex gap-2">
-                        <Avatar src="/broken-image.jpg" className="h-6 w-6" />
-                        <p>{post["_embedded"]["author"][0]["name"]}</p>
+                      <div className="text-gray-400 flex gap-2 ">
+                        {/* <Avatar src="/broken-image.jpg" className="h-6 w-6" /> */}
+                        {/* <p>{post["_embedded"]["author"][0]["name"]}</p> */}
+                        <div className="rounded-full w-8 h-8 overflow-hidden border">
+                          <img
+                            src="images/team-photos/kapil.png"
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <p>Kapil Gairola</p>
                       </div>
                       <Button
                         href={`/blog/${post["slug"]}.html`}
