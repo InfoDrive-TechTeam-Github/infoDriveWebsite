@@ -1,57 +1,58 @@
-import * as React from 'react';
-import Head from 'next/head';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Slider from '../components/slider';
-import utilStyles from '../styles/utils.module.css';
-import Box from '@mui/material/Box';
+import * as React from "react";
+import Head from "next/head";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Slider from "../components/slider";
+import utilStyles from "../styles/utils.module.css";
+import Box from "@mui/material/Box";
 //import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import Avatar from '@mui/material/Avatar';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import Link from '@mui/material/Link';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import { motion } from 'framer-motion';
+import Grid from "@mui/material/Grid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
+import Avatar from "@mui/material/Avatar";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import Link from "@mui/material/Link";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import { motion } from "framer-motion";
 
-import Carousel from 'react-material-ui-carousel';
+import Carousel from "react-material-ui-carousel";
 
-import StarIcon from '@mui/icons-material/Star';
+import StarIcon from "@mui/icons-material/Star";
 import {
   AiOutlineAndroid,
   AiOutlineApple,
   AiOutlineAppstore,
   AiOutlineCloud,
-} from 'react-icons/ai';
-import { CgWebsite } from 'react-icons/cg';
-import { GiCardExchange } from 'react-icons/gi';
-import { useState } from 'react';
-import { MdConnectedTv } from 'react-icons/md';
-import { FaHandsHelping, FaSalesforce } from 'react-icons/fa';
-import { SiDigitalocean, SiHiveBlockchain, SiSap } from 'react-icons/si';
+} from "react-icons/ai";
+import { CgWebsite } from "react-icons/cg";
+import { GiCardExchange } from "react-icons/gi";
+import { useState } from "react";
+import { MdConnectedTv } from "react-icons/md";
+import { FaHandsHelping, FaSalesforce } from "react-icons/fa";
+import { SiDigitalocean, SiHiveBlockchain, SiSap } from "react-icons/si";
 
-import 'react-toastify/dist/ReactToastify.css';
-import LeadForm from '../components/leadForm';
+import "react-toastify/dist/ReactToastify.css";
+import LeadForm from "../components/leadForm";
+import AutoImageSlider from "components/AutoImageSlider";
 
 export default function Index() {
-  const [value, setValue] = React.useState('1');
-  const [mouse, setMouse] = useState('none');
+  const [value, setValue] = React.useState("1");
+  const [mouse, setMouse] = useState("none");
 
   const [inputData, setInputData] = useState({
-    full_name: '',
-    email_address: '',
-    contact_number: '',
-    industry: '',
-    message: '',
+    full_name: "",
+    email_address: "",
+    contact_number: "",
+    industry: "",
+    message: "",
   });
   const [show, setShow] = useState(true);
   const variants = {
@@ -75,36 +76,36 @@ export default function Index() {
     {
       item0: [
         {
-          name: 'Aidin Mahmoodi',
-          role: 'Product Lead at ServiceRocket',
+          name: "Aidin Mahmoodi",
+          role: "Product Lead at ServiceRocket",
           description: `We reached out to InfoDrive to help us build a few technical POC (Proof of Concept) as our internal development teams were extremely busy with other products/projects. InfoDrive was very particularly quick and responsive, they quickly jumped on a call together requirements from us and provided their estimate and proposal in a short time.\n After a lengthy onboarding process from our side, InfoDrive assigned one of their remarkably capable, knowledgeable Salesforce certified engineers as our main technical person.\n I’d also like to point out that the entire team at Info Drive is resourceful, responsive, and flexible. Our assigned engineer easily adopted our internal agile practices and was able to provide feedback on our sprint review and planning, similar to our internal development teams.`,
         },
         {
-          name: 'Kester Poh',
-          role: 'CEO at AiChat',
+          name: "Kester Poh",
+          role: "CEO at AiChat",
           description:
-            'Infodrive team has provided support in a POC setup and configured a Email-to-Case demo.   The team has also provided professional consultation on the approach for the project.    Thanks Pradeep and team for the support, looking forward to working on the next project together!',
+            "Infodrive team has provided support in a POC setup and configured a Email-to-Case demo.   The team has also provided professional consultation on the approach for the project.    Thanks Pradeep and team for the support, looking forward to working on the next project together!",
         },
       ],
     },
     {
       item0: [
         {
-          name: 'Mark Durante',
-          role: 'Vice President of Product and Engineering at Jabmo',
+          name: "Mark Durante",
+          role: "Vice President of Product and Engineering at Jabmo",
           description:
             "After a rigorous vendor selection process undertaken by my team, we settled on InfoDrive for our SFDC app implementation project. InfoDrive's relevant experience, prompt communication, and positive attitude won us over. And I'm happy to say we made the right decision. Interactions with the team were fluid and pleasant, and they delivered a quality work product on time.  We look forward to future engagements with InfoDrive as our needs require.",
         },
         {
-          name: 'Sivachanthiran Belasamy',
-          role: 'Founder & CEO at Falaina',
+          name: "Sivachanthiran Belasamy",
+          role: "Founder & CEO at Falaina",
           description:
-            'Info Drive Team had provided constant support to our Organisation by helping us in building the Custom tables and related API in Salesforce.   The team has always been reachable on the approach for the project. Further, the team has been more than happy to clarify any doubts that we may have had, and done several knowledge transfers for us to better understand Salesforce and its functionalities.   Thanks, Pradeep and team for the support, looking forward to working on the upcoming projects!',
+            "Info Drive Team had provided constant support to our Organisation by helping us in building the Custom tables and related API in Salesforce.   The team has always been reachable on the approach for the project. Further, the team has been more than happy to clarify any doubts that we may have had, and done several knowledge transfers for us to better understand Salesforce and its functionalities.   Thanks, Pradeep and team for the support, looking forward to working on the upcoming projects!",
         },
       ],
     },
   ];
-  console.log('items', items);
+  console.log("items", items);
   return (
     <>
       <Head>
@@ -113,27 +114,27 @@ export default function Index() {
           Singapore, Malaysia & India - InfoDrive Solutions
         </title>
         <meta
-          name='description'
-          content='InfoDrive Solutions is a Software Development and Digital Transformation Solutions company, we are headquartered in Singapore with regional offices in Malaysia (KL) & India (Bangalore).'
+          name="description"
+          content="InfoDrive Solutions is a Software Development and Digital Transformation Solutions company, we are headquartered in Singapore with regional offices in Malaysia (KL) & India (Bangalore)."
         />
         <meta
-          name='keywords'
-          content='Software Development Company in Singapore, Software Development Company in Malaysia, Software Development Company in India, Digital Transformation Solutions Company in Malaysia, Digital Transformation Solutions Company in Singapore, IT Solutions Company in Singapore, IT Services in Malaysia, Top Software Company in Singapore, Top Software Company in Malaysia, Software Development Agency Singapore, Custom Software Malaysia, Software Development Company in Kuala Lumpur'
+          name="keywords"
+          content="Software Development Company in Singapore, Software Development Company in Malaysia, Software Development Company in India, Digital Transformation Solutions Company in Malaysia, Digital Transformation Solutions Company in Singapore, IT Solutions Company in Singapore, IT Services in Malaysia, Top Software Company in Singapore, Top Software Company in Malaysia, Software Development Agency Singapore, Custom Software Malaysia, Software Development Company in Kuala Lumpur"
         />
         <meta
-          property='og:title'
-          content='Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - InfoDrive Solutions'
+          property="og:title"
+          content="Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - InfoDrive Solutions"
         />
         <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+          property="og:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
 
-        <link rel='icon' href='/favicon.png' />
-        <link rel='canonical' href='https://infodrive-solutions.com/' />
+        <link rel="icon" href="/favicon.png" />
+        <link rel="canonical" href="https://infodrive-solutions.com/" />
         <meta
-          name='google-site-verification'
-          content='JcRwQCIELBAZJX2iIdAkVHip-fPEjV_icDXuaLBIXfE'
+          name="google-site-verification"
+          content="JcRwQCIELBAZJX2iIdAkVHip-fPEjV_icDXuaLBIXfE"
         />
         <script
           dangerouslySetInnerHTML={{
@@ -144,7 +145,7 @@ export default function Index() {
           })(window,document,'script','dataLayer','GTM-MB38MVS');`,
           }}
         />
-        <script type='application/ld+json'>
+        <script type="application/ld+json">
           {`
       {
         "@context": "https://schema.org",
@@ -165,23 +166,25 @@ export default function Index() {
       </Head>
       <noscript>
         <iframe
-          src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
-          height='0'
-          width='0'
-          style={{ display: 'none', visibility: 'hidden' }}
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
       <Header />
       <Slider />
+      {/* <AutoImageSlider /> */}
+
       <section className={` sectionBox p5`}>
-        <Typography gutterBottom variant='h3' component='h3'>
+        <Typography gutterBottom variant="h3" component="h3">
           WHO IS INFODRIVE SOLUTIONS
         </Typography>
-        <Typography className='w100' gutterBottom variant='h1' component='h1'>
+        <Typography className="w100" gutterBottom variant="h1" component="h1">
           Expert Software Consulting and Development Services for Digital
           Transformation
         </Typography>
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
+        <Typography className="w100" gutterBottom variant="h5" component="div">
           InfoDrive Solutions is a Software Development and Digital
           Transformation Solutions company, we are headquartered in Singapore
           with regional offices in Malaysia (KL) & India (Bangalore). We deliver
@@ -191,7 +194,7 @@ export default function Index() {
           Salesforce Consulting Services & Outsourcing Engineering Services.
         </Typography>
 
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
+        <Typography className="w100" gutterBottom variant="h5" component="div">
           We specialize in creating custom software solutions that drive digital
           transformation for businesses of all sizes. Our team of experienced
           developers uses the latest technologies to build and implement
@@ -199,7 +202,7 @@ export default function Index() {
           the user experience.
         </Typography>
 
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
+        <Typography className="w100" gutterBottom variant="h5" component="div">
           Our services include web and mobile application development, cloud
           migration, API development, Digital Marketing, Salesforce Services and
           more. We work closely with our clients to understand their unique
@@ -221,7 +224,7 @@ export default function Index() {
       <section
         className={`sectionBox solutionBox  px-2 backdrop-blur-md md:backdrop-blur-none  p5 m-5 md:m-0`}
       >
-        <p className=' md:w-1/2 '>
+        <p className=" md:w-1/2 ">
           InfoDrive Solutions is a preferred partner in Business process
           improvement for many small & medium size corporations and built with
           the commitment, promise & passion to provide outstanding services in
@@ -231,14 +234,14 @@ export default function Index() {
         </p>
       </section>
 
-      <section className='Offerbox max-w-6xl mx-auto mt-20 flex flex-col gap-10 p5'>
-        <h2 className='text-[#0b2653] font-bold text-xl'>What We Offer</h2>
+      <section className="Offerbox max-w-6xl mx-auto mt-20 flex flex-col gap-10 p5">
+        <h2 className="text-[#0b2653] font-bold text-xl">What We Offer</h2>
 
-        <div className='heading flex  items-center w-full gap-2 '>
-          <div className='conditionbox2 bg-white w-full hover:text-red-600'>
+        <div className="heading flex  items-center w-full gap-2 ">
+          <div className="conditionbox2 bg-white w-full hover:text-red-600">
             <h3
               className={`${
-                !show ? 'text-gray-500' : 'text-red-600'
+                !show ? "text-gray-500" : "text-red-600"
               } text-center mx-auto uppercase tracking-widest md:text-xl text-sm font-normal cursor-pointer mb-2`}
               onClick={() => setShow(true)}
             >
@@ -246,14 +249,14 @@ export default function Index() {
             </h3>
             <hr
               className={`border ${
-                !show ? 'border-gray-500' : 'border-red-600'
+                !show ? "border-gray-500" : "border-red-600"
               } w-full`}
             />
           </div>
-          <div className='conditionbox bg-white w-full text-black '>
+          <div className="conditionbox bg-white w-full text-black ">
             <h3
               className={`${
-                show ? 'text-gray-500' : 'text-red-600'
+                show ? "text-gray-500" : "text-red-600"
               } text-center mx-auto uppercase tracking-widest font-normal md:text-xl text-sm cursor-pointer mb-2`}
               onClick={() => setShow(false)}
             >
@@ -261,38 +264,38 @@ export default function Index() {
             </h3>
             <hr
               className={`border ${
-                show ? 'border-gray-500' : 'border-red-600'
+                show ? "border-gray-500" : "border-red-600"
               } w-full`}
             />
           </div>
         </div>
 
         <motion.article
-          animate={show ? 'open' : 'closed'}
+          animate={show ? "open" : "closed"}
           variants={variants}
           transition={{ duration: 0.5 }}
           className={`${
-            !show ? 'hidden' : 'grid md:grid-cols-3 grid-cols-1 gap-10'
+            !show ? "hidden" : "grid md:grid-cols-3 grid-cols-1 gap-10"
           } transition-all duration-1000 ease-in-out  `}
         >
           <motion.div
-            animate={mouse == 'sf' ? 'open' : 'closed'}
+            animate={mouse == "sf" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
-            className='card   '
-            onMouseOver={() => setMouse('sf')}
-            onMouseLeave={() => setMouse('none')}
+            className="card   "
+            onMouseOver={() => setMouse("sf")}
+            onMouseLeave={() => setMouse("none")}
           >
             <Link
-              href='/salesforce-development.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md   cursor-pointer h-full '
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/salesforce-development.html"
+              className="card p-10 flex flex-col gap-5 shadow-md rounded-md   cursor-pointer h-full "
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <FaSalesforce size={60} />
                 <span>Salesforce</span>
               </div>
-              <p className='leading-6 text-sm text-[#00000099]'>
+              <p className="leading-6 text-sm text-[#00000099]">
                 Our company specializes in providing Salesforce services,
                 helping businesses harness the power of the Salesforce platform
                 to streamline operations, enhance customer engagement, and drive
@@ -301,24 +304,24 @@ export default function Index() {
             </Link>
           </motion.div>
           <motion.div
-            href='/custom-software-development.html'
-            animate={mouse == 'crm' ? 'open' : 'closed'}
+            href="/custom-software-development.html"
+            animate={mouse == "crm" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
-            className='card p-10  shadow-md rounded-md   '
-            onMouseOver={() => setMouse('crm')}
-            onMouseLeave={() => setMouse('none')}
+            className="card p-10  shadow-md rounded-md   "
+            onMouseOver={() => setMouse("crm")}
+            onMouseLeave={() => setMouse("none")}
           >
             <Link
-              href='/custom-software-development.html'
-              className='card  flex flex-col gap-5   text-[#00000099] cursor-pointer h-full no-underline '
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/custom-software-development.html"
+              className="card  flex flex-col gap-5   text-[#00000099] cursor-pointer h-full no-underline "
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <MdConnectedTv size={60} />
                 <span> CRM </span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 Our company understands the importance of customer relationships
                 in driving business success. That's why we offer a range of CRM
                 software solutions to help our clients manage and optimize their
@@ -327,23 +330,23 @@ export default function Index() {
             </Link>
           </motion.div>
           <motion.div
-            animate={mouse == 'sa' ? 'open' : 'closed'}
+            animate={mouse == "sa" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
-            onMouseOver={() => setMouse('sa')}
-            onMouseLeave={() => setMouse('none')}
-            className='h-full card '
+            onMouseOver={() => setMouse("sa")}
+            onMouseLeave={() => setMouse("none")}
+            className="h-full card "
           >
             <Link
-              href='/staff-augmentation.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline'
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/staff-augmentation.html"
+              className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline"
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold '>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold ">
                 <FaHandsHelping size={60} />
                 <span> Staff Augmentation </span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 We carefully match the right professionals to your project or
                 assignment. Our staff augmentation services are flexible and
                 scalable, allowing you to add or remove resources as needed.
@@ -351,22 +354,22 @@ export default function Index() {
             </Link>
           </motion.div>
           <motion.div
-            onMouseOver={() => setMouse('bc')}
-            onMouseLeave={() => setMouse('none')}
-            animate={mouse == 'bc' ? 'open' : 'closed'}
+            onMouseOver={() => setMouse("bc")}
+            onMouseLeave={() => setMouse("none")}
+            animate={mouse == "bc" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
           >
             <Link
-              href='/blockchain-nft.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full'
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/blockchain-nft.html"
+              className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full"
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <SiHiveBlockchain size={60} />
                 <span> Blockcain and NFT </span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 We have a team of highly skilled and experienced blockchain
                 developers and NFT specialists who can help you successfully
                 implement these technologies into your business.
@@ -374,22 +377,22 @@ export default function Index() {
             </Link>
           </motion.div>
           <motion.div
-            animate={mouse == 'se' ? 'open' : 'closed'}
+            animate={mouse == "se" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
-            onMouseOver={() => setMouse('se')}
-            onMouseLeave={() => setMouse('none')}
+            onMouseOver={() => setMouse("se")}
+            onMouseLeave={() => setMouse("none")}
           >
             <Link
-              href='/sap-emarsys.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline '
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/sap-emarsys.html"
+              className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline "
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <SiSap size={60} />
                 <span> SAP Emarsys</span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 SAP Emarsys Customer Engagement is a powerful and comprehensive
                 customer engagement platform that enables businesses to deliver
                 relevant communications to their customers.
@@ -397,22 +400,22 @@ export default function Index() {
             </Link>
           </motion.div>
           <motion.div
-            onMouseOver={() => setMouse('dm')}
-            onMouseLeave={() => setMouse('none')}
-            animate={mouse == 'dm' ? 'open' : 'closed'}
+            onMouseOver={() => setMouse("dm")}
+            onMouseLeave={() => setMouse("none")}
+            animate={mouse == "dm" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
           >
             <Link
-              href='/digital-marketing-services.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline'
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/digital-marketing-services.html"
+              className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline"
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <SiDigitalocean size={60} />
                 <span>Digital Marketing</span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 InfoDrive Solutions is a leading digital marketing company
                 offering marketing services. As a top digital marketing
                 consultant, we provide customized strategies to help businesses
@@ -424,31 +427,31 @@ export default function Index() {
 
         {/**container grid  development*/}
         <motion.article
-          animate={!show ? 'open' : 'closed'}
+          animate={!show ? "open" : "closed"}
           variants={variants}
           transition={{ duration: 0.5 }}
           className={`${
-            show ? 'hidden' : 'grid md:grid-cols-3 grid-cols-1 gap-10'
+            show ? "hidden" : "grid md:grid-cols-3 grid-cols-1 gap-10"
           } transition-all duration-1000 ease-in-out`}
         >
           <motion.div
-            animate={mouse == 'sf' ? 'open' : 'closed'}
+            animate={mouse == "sf" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
-            className='card p-10  shadow-md rounded-md   cursor-pointer  '
-            onMouseOver={() => setMouse('sf')}
-            onMouseLeave={() => setMouse('none')}
+            className="card p-10  shadow-md rounded-md   cursor-pointer  "
+            onMouseOver={() => setMouse("sf")}
+            onMouseLeave={() => setMouse("none")}
           >
             <Link
-              href='/saas-application-development.html'
-              className='no-underline text-[#00000099] flex flex-col gap-5'
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/saas-application-development.html"
+              className="no-underline text-[#00000099] flex flex-col gap-5"
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <AiOutlineCloud size={60} />
                 <span>SaaS Application Development </span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 We have extensive experience in developing SaaS applications for
                 a range of industries. Our team of skilled developers is
                 proficient in a variety of programming languages.
@@ -457,23 +460,23 @@ export default function Index() {
           </motion.div>
 
           <motion.div
-            animate={mouse == 'crm' ? 'open' : 'closed'}
+            animate={mouse == "crm" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
-            className='card p-10  shadow-md rounded-md   '
-            onMouseOver={() => setMouse('crm')}
-            onMouseLeave={() => setMouse('none')}
+            className="card p-10  shadow-md rounded-md   "
+            onMouseOver={() => setMouse("crm")}
+            onMouseLeave={() => setMouse("none")}
           >
             <Link
-              href='/custom-software-development.html'
-              className='text-[#00000099] cursor-pointer no-underline flex flex-col gap-5'
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/custom-software-development.html"
+              className="text-[#00000099] cursor-pointer no-underline flex flex-col gap-5"
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <AiOutlineAppstore size={60} />
                 <span> Custom Software </span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 Our team of experienced software developers is dedicated to
                 delivering high-quality custom solutions that are tailored to
                 your business.
@@ -481,23 +484,23 @@ export default function Index() {
             </Link>
           </motion.div>
           <motion.div
-            animate={mouse == 'sa' ? 'open' : 'closed'}
+            animate={mouse == "sa" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
-            onMouseOver={() => setMouse('sa')}
-            onMouseLeave={() => setMouse('none')}
-            className='h-full card '
+            onMouseOver={() => setMouse("sa")}
+            onMouseLeave={() => setMouse("none")}
+            className="h-full card "
           >
             <Link
-              href='/ios-app-development.html'
-              className='p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline'
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/ios-app-development.html"
+              className="p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline"
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold '>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold ">
                 <AiOutlineApple size={60} />
                 <span>IOS APP Development </span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 We are a full-stack iOS app development company that has
                 released hundreds of native iOS apps with high App Store ratings
                 and success rates.
@@ -505,22 +508,22 @@ export default function Index() {
             </Link>
           </motion.div>
           <motion.div
-            onMouseOver={() => setMouse('bc')}
-            onMouseLeave={() => setMouse('none')}
-            animate={mouse == 'bc' ? 'open' : 'closed'}
+            onMouseOver={() => setMouse("bc")}
+            onMouseLeave={() => setMouse("none")}
+            animate={mouse == "bc" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
           >
             <Link
-              href='/android-app-development.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline '
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/android-app-development.html"
+              className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline "
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <AiOutlineAndroid size={60} />
                 <span> Android app Development </span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 Our developers have extensive experience in android app
                 development and a track record of delivering high-quality apps
                 for a wide range of clients.
@@ -528,22 +531,22 @@ export default function Index() {
             </Link>
           </motion.div>
           <motion.div
-            animate={mouse == 'se' ? 'open' : 'closed'}
+            animate={mouse == "se" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
-            onMouseOver={() => setMouse('se')}
-            onMouseLeave={() => setMouse('none')}
+            onMouseOver={() => setMouse("se")}
+            onMouseLeave={() => setMouse("none")}
           >
             <Link
-              href='/full-stack-development.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full'
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/full-stack-development.html"
+              className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full"
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <CgWebsite size={60} />
                 <span> Full stack Development </span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 Our full stack development process is designed to be efficient,
                 agile, and transparent. We begin by understanding your business
                 requirements and objectives.
@@ -551,22 +554,22 @@ export default function Index() {
             </Link>
           </motion.div>
           <motion.div
-            onMouseOver={() => setMouse('dm')}
-            onMouseLeave={() => setMouse('none')}
-            animate={mouse == 'dm' ? 'open' : 'closed'}
+            onMouseOver={() => setMouse("dm")}
+            onMouseLeave={() => setMouse("none")}
+            animate={mouse == "dm" ? "open" : "closed"}
             variants={variantsDiv}
             transition={{ duration: 0.5 }}
           >
             <Link
-              href='/salesforce-app-exchange.html'
-              className='card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full '
-              style={{ textDecoration: 'none', color: 'gray' }}
+              href="/salesforce-app-exchange.html"
+              className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full "
+              style={{ textDecoration: "none", color: "gray" }}
             >
-              <div className='top flex gap-2 items-center text-red-600 font-semibold'>
+              <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <GiCardExchange size={60} />
                 <span>Salesforce App Exchange</span>
               </div>
-              <p className='leading-6 text-sm'>
+              <p className="leading-6 text-sm">
                 Our team of Salesforce developers, designers, and project
                 managers have years of experience in developing custom
                 applications for businesses across a range of industries.
@@ -579,7 +582,7 @@ export default function Index() {
       </section>
 
       <section className={`sectionBox whyUsBox p5`}>
-        <Typography gutterBottom variant='h2' component='div'>
+        <Typography gutterBottom variant="h2" component="div">
           Why Infodrive solutions?
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
@@ -587,20 +590,20 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Software Development'
-                  src='images/knowledgable-team.png'
+                  alt="Software Development"
+                  src="images/knowledgable-team.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15"
+                    component="div"
                   >
                     Knowledgeable team
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     We have the professional team with hands-on experience in
                     their respective fields, which is the icing on the cake. We
                     have adequate and sources to accomplish and acquire the
@@ -612,20 +615,20 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Digital Transformation Solutions Company'
-                  src='images/love-for-work.png'
+                  alt="Digital Transformation Solutions Company"
+                  src="images/love-for-work.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15"
+                    component="div"
                   >
                     Love for work
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     We have a passionate team striving to make a space where
                     access to knowledge and technology is for everyone equally.
                     To manage the quality level and give the best performance,
@@ -638,21 +641,21 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Software Development Company in
-          Singapore'
-                  src='images/profitable-solutions.png'
+                  alt="Software Development Company in
+          Singapore"
+                  src="images/profitable-solutions.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15"
+                    component="div"
                   >
                     Profitable solutions
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Our dedicated team keeps working to provide a cost-efficient
                     result from scanning to the solution’s execution. We
                     comprehend that approachability is one of the various goals
@@ -665,21 +668,21 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Software Development Company in
- Malaysia'
-                  src='images/clinet-satisfaction.png'
+                  alt="Software Development Company in
+ Malaysia"
+                  src="images/clinet-satisfaction.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15"
+                    component="div"
                   >
                     Assured client satisfaction
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     We consider our clients’ needs and respond to deliver
                     excellent outcomes by becoming flexible according to work.
                     Our clients relish the high-quality work we provide and the
@@ -693,20 +696,20 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='Software Development Solutions Company in India'
-                  src='images/in-house-staff.png'
+                  alt="Software Development Solutions Company in India"
+                  src="images/in-house-staff.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15"
+                    component="div"
                   >
                     In-house staff
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Our team interacts with our clients directly to solve their
                     queries on their projects. We don’t strive for assistance
                     that we cannot meet ourselves. At the end of every week, we
@@ -720,20 +723,20 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt='InfoDrive Solutions'
-                  src='images/ROI.png'
+                  alt="InfoDrive Solutions"
+                  src="images/ROI.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15"
+                    component="div"
                   >
                     Excellent ROI
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     We always think about the growth and profitability of our
                     associates; hence our prices are defined. All our assistance
                     and methods are modernized, focusing on accurate performance
@@ -753,18 +756,18 @@ export default function Index() {
             <Grid item xs={5}>
               <Card>
                 <CardContent>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     ABOUT US
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Delivering our very best in all we do, holding ourselves
                     accountable for results with a commitment to integrity,
                     fairness and responsibility.
                   </Typography>
                   <Button
-                    className='readmore white '
-                    href='/about-us.html'
-                    variant='text'
+                    className="readmore white "
+                    href="/about-us.html"
+                    variant="text"
                   >
                     LEARN MORE ABOUT US <ArrowRightAltIcon />
                   </Button>
@@ -774,9 +777,9 @@ export default function Index() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='Digital Transformation Solutions Company in
-          Singapore'
-                  src='images/pexels-ketut-subiyanto-4350210.jpg'
+                  alt="Digital Transformation Solutions Company in
+          Singapore"
+                  src="images/pexels-ketut-subiyanto-4350210.jpg"
                 />
               </Card>
             </Grid>
@@ -787,16 +790,16 @@ export default function Index() {
       <section className={`sectionBox connectUs backDrop connectUsHome mb30`}>
         <Typography
           gutterBottom
-          variant='h3'
-          className='white pb15 pt15 poppin p5'
-          component='div'
+          variant="h3"
+          className="white pb15 pt15 poppin p5"
+          component="div"
         >
           Transform Your Business with Cutting-Edge Technology - Partner with
           Infodrive Solutions Today!
         </Typography>
         <Button
-          href='/contact-us.html'
-          className='bgRed white pl15 pr15 poppin upperCase'
+          href="/contact-us.html"
+          className="bgRed white pl15 pr15 poppin upperCase"
         >
           Connect with Our Expert
         </Button>
@@ -809,33 +812,33 @@ export default function Index() {
           <Grid container spacing={0}>
             <Grid item xs={5}>
               <Card>
-                <img alt='Remy Sharp' src='images/aboutus2.png' />
+                <img alt="Remy Sharp" src="images/aboutus2.png" />
               </Card>
             </Grid>
             <Grid item xs={7}>
               <Card>
                 <CardContent>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Delivering our very best in all we do, holding ourselves
                     accountable for results with a commitment to integrity,
                     fairness and responsibility.
                   </Typography>
-                  <Typography gutterBottom variant='h2' component='div'>
+                  <Typography gutterBottom variant="h2" component="div">
                     130+
                   </Typography>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     SUCCESSFUL PROJECTS
                   </Typography>
-                  <Typography gutterBottom variant='h2' component='div'>
+                  <Typography gutterBottom variant="h2" component="div">
                     65+
                   </Typography>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     YEARS OF EXPERIENCE
                   </Typography>
-                  <Typography gutterBottom variant='h2' component='div'>
+                  <Typography gutterBottom variant="h2" component="div">
                     110+
                   </Typography>
-                  <Typography gutterBottom variant='h3' component='div'>
+                  <Typography gutterBottom variant="h3" component="div">
                     HAPPY CLIENTS
                   </Typography>
                 </CardContent>
@@ -847,7 +850,7 @@ export default function Index() {
       <br />
       <br />
       <section className={`sectionBox locationBox mt-28 testmonial p5`}>
-        <Typography gutterBottom variant='h2' component='div'>
+        <Typography gutterBottom variant="h2" component="div">
           What do clients say about us?
         </Typography>
         <br />
@@ -857,12 +860,12 @@ export default function Index() {
             // Other logic
 
             return (
-              <div className='navCarouselBox'>
-                <Button onClick={onClick} className={'navCarouselNext '}>
+              <div className="navCarouselBox">
+                <Button onClick={onClick} className={"navCarouselNext "}>
                   {/* {next && <KeyboardArrowRightIcon/>}
                 {prev && <KeyboardArrowLeftIcon/>} */}
-                  {next && 'Next'}
-                  {prev && 'Previous'}
+                  {next && "Next"}
+                  {prev && "Previous"}
                 </Button>
               </div>
             );
@@ -874,12 +877,12 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt='Digital Transformation Solutions Company in
- Malaysia'
-                      src='images/user-icon.jpeg'
+                      alt="Digital Transformation Solutions Company in
+ Malaysia"
+                      src="images/user-icon.jpeg"
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
-                    <div className='testmonialStar'>
+                    <div className="testmonialStar">
                       <StarIcon />
                       <StarIcon />
                       <StarIcon />
@@ -889,21 +892,21 @@ export default function Index() {
                     <CardContent>
                       <Typography
                         gutterBottom
-                        variant='h3'
-                        className='pt15 mb0'
-                        component='div'
+                        variant="h3"
+                        className="pt15 mb0"
+                        component="div"
                       >
                         Mark Durante
                       </Typography>
                       <Typography
-                        className='mt0 pt0 pb15'
+                        className="mt0 pt0 pb15"
                         gutterBottom
-                        variant='h5'
-                        component='div'
+                        variant="h5"
+                        component="div"
                       >
                         Vice President of Product and Engineering at Jabmo
                       </Typography>
-                      <Typography variant='body2' color='text.secondary'>
+                      <Typography variant="body2" color="text.secondary">
                         After a rigorous vendor selection process undertaken by
                         my team, we settled on InfoDrive for our SFDC app
                         implementation project. InfoDrive's relevant experience,
@@ -920,12 +923,12 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt='Digital Transformation Solutions Company in
-          India'
-                      src='images/user-icon.jpeg'
+                      alt="Digital Transformation Solutions Company in
+          India"
+                      src="images/user-icon.jpeg"
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
-                    <div className='testmonialStar'>
+                    <div className="testmonialStar">
                       <StarIcon />
                       <StarIcon />
                       <StarIcon />
@@ -935,21 +938,21 @@ export default function Index() {
                     <CardContent>
                       <Typography
                         gutterBottom
-                        variant='h3'
-                        className='pt15 mb0'
-                        component='div'
+                        variant="h3"
+                        className="pt15 mb0"
+                        component="div"
                       >
                         Sivachanthiran Belasamy
                       </Typography>
                       <Typography
-                        className='mt0 pt0 pb15'
+                        className="mt0 pt0 pb15"
                         gutterBottom
-                        variant='h5'
-                        component='div'
+                        variant="h5"
+                        component="div"
                       >
                         (Founder & CEO at Falaina)
                       </Typography>
-                      <Typography variant='body2' color='text.secondary'>
+                      <Typography variant="body2" color="text.secondary">
                         Info Drive Team had provided constant support to our
                         Organisation by helping us in building the Custom tables
                         and related API in Salesforce. <br />
@@ -973,11 +976,11 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt='We are headquartered in Singapore'
-                      src='images/user-icon.jpeg'
+                      alt="We are headquartered in Singapore"
+                      src="images/user-icon.jpeg"
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
-                    <div className='testmonialStar'>
+                    <div className="testmonialStar">
                       <StarIcon />
                       <StarIcon />
                       <StarIcon />
@@ -987,21 +990,21 @@ export default function Index() {
                     <CardContent>
                       <Typography
                         gutterBottom
-                        variant='h3'
-                        className='pt15 mb0'
-                        component='div'
+                        variant="h3"
+                        className="pt15 mb0"
+                        component="div"
                       >
                         Aidin Mahmoodi
                       </Typography>
                       <Typography
-                        className='mt0 w100 pt0 pb15'
+                        className="mt0 w100 pt0 pb15"
                         gutterBottom
-                        variant='h5'
-                        component='div'
+                        variant="h5"
+                        component="div"
                       >
-                        {'Product Lead at ServiceRocket'}
+                        {"Product Lead at ServiceRocket"}
                       </Typography>
-                      <Typography variant='body2' color='text.secondary'>
+                      <Typography variant="body2" color="text.secondary">
                         We reached out to InfoDrive to help us build a few
                         technical POC (Proof of Concept) as our internal
                         development teams were extremely busy with other
@@ -1026,11 +1029,11 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt='Providing cutting edge IT Development'
-                      src='images/user-icon.jpeg'
+                      alt="Providing cutting edge IT Development"
+                      src="images/user-icon.jpeg"
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
-                    <div className='testmonialStar'>
+                    <div className="testmonialStar">
                       <StarIcon />
                       <StarIcon />
                       <StarIcon />
@@ -1040,21 +1043,21 @@ export default function Index() {
                     <CardContent>
                       <Typography
                         gutterBottom
-                        variant='h3'
-                        className='pt15 mb0'
-                        component='div'
+                        variant="h3"
+                        className="pt15 mb0"
+                        component="div"
                       >
                         Kester Poh
                       </Typography>
                       <Typography
-                        className='mt0 pt0 pb15'
+                        className="mt0 pt0 pb15"
                         gutterBottom
-                        variant='h5'
-                        component='div'
+                        variant="h5"
+                        component="div"
                       >
                         (CEO at AiChat)
                       </Typography>
-                      <Typography variant='body2' color='text.secondary'>
+                      <Typography variant="body2" color="text.secondary">
                         Infodrive team has provided support in a POC setup and
                         configured a Email-to-Case demo. <br />
                         The team has also provided professional consultation on
