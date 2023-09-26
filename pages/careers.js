@@ -669,7 +669,7 @@ export default function SalesForceDevelopment() {
 
               {job.Jobdescription ? (
                 <Link
-                  href={`/jobinfo/${job?.Id}`}
+                  href={`/jobinfo/${job?.Id}.html`}
                   style={{ textDecoration: "none" }}
                   className={`mt15 readMoreLink   rounded-lg p-2  transition-all ease-out shadow-lg 
                    
