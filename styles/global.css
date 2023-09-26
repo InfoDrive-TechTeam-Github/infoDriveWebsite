@@ -306,11 +306,11 @@ img {
   width: 100%;
 }
 .mainMenu ul {
-  float: right;
+  float: left;
   width: initial;
 }
 .partnerButton {
-  margin-left: 140px;
+  /* margin-left: 140px; */
 }
 .partnerButton li {
   height: 29px;
