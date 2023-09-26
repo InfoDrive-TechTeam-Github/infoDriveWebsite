@@ -52,7 +52,8 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useRouter } from "next/router";
 // import { getJobById } from "../../utils/api";
 
-const JobInfoPage = ({}) => {
+const JobInfoPage = ({ jobInfo }) => {
+  console.log("jobInfo", jobInfo);
   const [jobs, setJobInfo] = useState();
   const router = useRouter();
   const [activeButtonColor, setactiveButtonColor] = useState(null);
@@ -654,5 +655,35 @@ const JobInfoPage = ({}) => {
 //     },
 //   };
 // }
+
+export async function getStaticPaths() {
+  // Fetch all available job IDs for dynamic routes
+  const res = await axios.post("https://mydryve.co/Api/getJobsList", {
+    userId: 1,
+  });
+
+  const jobIds = res.data.payload.payload;
+
+  // Generate dynamic routes based on job IDs
+  const paths = jobIds.map((jobId) => ({
+    params: { id: jobId.Id.toString() },
+  }));
+
+  return { paths, fallback: true }; // Use fallback: true for dynamic pages
+}
+export async function getStaticProps({ params }) {
+  // Fetch job information based on the job ID from the dynamic route parameter
+  const { id } = params;
+
+  const response = await axios.post("https://mydryve.co/Api/getJobById", {
+    id,
+  });
+
+  return {
+    props: {
+      jobInfo: response.data.payload.payload,
+    },
+  };
+}
 
 export default JobInfoPage;
