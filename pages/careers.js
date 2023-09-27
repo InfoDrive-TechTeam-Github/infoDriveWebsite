@@ -81,6 +81,7 @@ export default function SalesForceDevelopment() {
   const [Resume, setResume] = useState("");
   const [info, setInfo] = useState("");
   const [JobTitle, setJobTitle] = useState("");
+  console.log(JobTitle, "Jobtitle");
   const [jobId, setJobId] = useState("");
   console.log("info", info);
   const [applyValues, setApplyValues] = useState({
@@ -767,9 +768,7 @@ export default function SalesForceDevelopment() {
                       image="images/25614380e49e0fd7742fc1e2e7973a1e.jpeg"
                       url={`https://infodrive-solutions.com/jobinfo/${job.Id}.html`}
                       className="bg-red-600 h-8 w-8"
-                      onClick={() =>
-                        head.handleHeadStore(job.Jobdescription, job.JobTitle)
-                      }
+                      onClick={() => setJobTitle(job.JobTitle)}
                     >
                       <LinkedInIcon color="primary" className="h-6 w-6" />
                     </LinkedinShareButton>
@@ -778,6 +777,7 @@ export default function SalesForceDevelopment() {
                       quote={`Discover exciting career opportunitie ${job.JobTitle}  at Infodrive Solutions`}
                       url={`https://infodrive-solutions.com/jobinfo/${job.Id}.html`}
                       className="bg-red-600 h-8 w-8"
+                      onClick={() => setJobTitle(job.JobTitle)}
                     >
                       <FacebookIcon color="primary" className="h-6 w-6" />
                     </FacebookShareButton>
@@ -787,6 +787,7 @@ export default function SalesForceDevelopment() {
                       via="Infodrive Solutions"
                       url={`https://infodrive-solutions.com/jobinfo/${job.Id}.html`}
                       className="bg-red-600 h-8 w-8"
+                      onClick={() => setJobTitle(job.JobTitle)}
                     >
                       <TwitterIcon color="primary" className="h-6 w-6" />
                     </TwitterShareButton>

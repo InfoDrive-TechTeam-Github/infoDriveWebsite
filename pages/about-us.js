@@ -78,7 +78,7 @@ export default function About() {
       <div className="sliderBox">
         <img
           style={{ width: "100%" }}
-          src="images/pexels-helena-lopes-933964.jpg"
+          src="images/pexels-helena-lopes-933964-min.jpg"
           alt="IT Solutions Company in Kuala Lumpur"
         />
         <Box sx={{ flexGrow: 1 }} className="sliderContent">
