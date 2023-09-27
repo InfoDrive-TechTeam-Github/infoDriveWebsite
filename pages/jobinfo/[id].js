@@ -320,15 +320,16 @@ const JobInfoPage = ({ jobInfo }) => {
     <div>
       <Head>
         <title>
-          Join our team at Infodrive Solutions -
-          {jobs ? jobs[0].JobTitle : "Jobs at Infodrive"}
+          {jobInfo
+            ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
+            : ""}
         </title>
         <meta
           name="description"
           content={
-            jobs
-              ? ` Discover exciting career opportunitie ${head.title}  at Infodrive Solutions`
-              : "Discover exciting career opportunities at Infodrive Solutions, a leading software development company. Apply now and join our team of talented professionals in delivering innovative solutions to our clients. Explore our current job openings and take the first step towards a rewarding career."
+            jobInfo
+              ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
+              : ""
           }
         />
         <link
@@ -337,31 +338,40 @@ const JobInfoPage = ({ jobInfo }) => {
         />
         <meta
           property="og:title"
-          content={`Join our team at Infodrive Solutions for - ${head.title}`}
+          content={
+            jobInfo
+              ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
+              : ""
+          }
         />
         <link rel="icon" href="/favicon.png" />
-      </Head>
-      <meta
-        property="og:image"
-        content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
-      />
-      <meta
-        property="og:description"
-        content={`Discover exciting career opportunities at Infodrive Solutions - ${head.title} : ""}`}
-      />
-      <link
-        rel="icon"
-        href="https://cdn.discordapp.com/attachments/949683263386054716/1076906969983614986/favicon.png"
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        <meta
+          property="og:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
+        />
+        <meta
+          property="og:description"
+          content={
+            jobInfo
+              ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
+              : ""
+          }
+        />
+        <link
+          rel="icon"
+          href="https://cdn.discordapp.com/attachments/949683263386054716/1076906969983614986/favicon.png"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
           new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
           j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-MB38MVS');`,
-        }}
-      />
+          }}
+        />
+      </Head>
+
       <noscript>
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
