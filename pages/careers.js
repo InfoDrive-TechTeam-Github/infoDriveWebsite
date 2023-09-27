@@ -669,14 +669,14 @@ export default function SalesForceDevelopment() {
 
               {job.Jobdescription ? (
                 <Link
-                  href={`/jobinfo/${job?.Id}.html`}
+                  // href={`/jobinfo/${job?.Id}.html`}
                   style={{ textDecoration: "none" }}
                   className={`mt15 readMoreLink   rounded-lg p-2  transition-all ease-out shadow-lg 
                    
                      hover:bg-[#dd3952] hover:border hover:text-white Poppins text-black
                       
                   `}
-                  // onClick={() => handleClickShowMore(job)}
+                  onClick={() => handleClickShowMore(job)}
                   onMouseEnter={() => setActiveApply(true)}
                   onMouseLeave={() => setActiveApply(false)}
                 >

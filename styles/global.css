@@ -649,10 +649,11 @@ img {
 .sliderBox .readmore {
   font-size: 20px;
   padding-left: 15px;
-  background: #000;
+  background: #dd3952;
 }
 .sliderBox .readmore:hover {
-  background: #dd3952;
+  background: white;
+  color: #000;
 }
 .sliderContent button.readmore {
   font-size: 20px;

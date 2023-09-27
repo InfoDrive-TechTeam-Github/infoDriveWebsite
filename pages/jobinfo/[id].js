@@ -323,9 +323,9 @@ const JobInfoPage = ({ jobInfo }) => {
         </title>
         <meta
           name="description"
-          content={
-            "Discover exciting career opportunities at Infodrive Solutions, a leading software development company. Apply now and join our team of talented professionals in delivering innovative solutions to our clients. Explore our current job openings and take the first step towards a rewarding career."
-          }
+          content={`Discover exciting career opportunitie at Infodrive Solutions,${
+            jobs ? jobs[0].JobTitle : "Jobs at Infodrive"
+          } `}
         />
         <link
           rel="canonical"
@@ -333,8 +333,8 @@ const JobInfoPage = ({ jobInfo }) => {
         />
         <meta
           property="og:title"
-          content=" Join our team at Infodrive Solutions - Exciting Career Opportunities
-          Available"
+          content={`Join our team at Infodrive Solutions - Exciting Career Opportunitie
+          Available-${jobs ? jobs[0].JobTitle : "Jobs at Infodrive"}`}
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
