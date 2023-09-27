@@ -12,9 +12,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 //import Paper from '@mui/material/Paper';
 import Grid from "@mui/material/Grid";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
@@ -60,6 +58,14 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useRouter } from "next/router";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  ShareButton,
+  TwitterShareButton,
+} from "react-share";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import JobDescription from 'components/JobDescription';
 export default function SalesForceDevelopment() {
   const [jobs, setJobs] = useState(null);
@@ -433,7 +439,7 @@ export default function SalesForceDevelopment() {
             </Typography>
             <Button
               href="/contact-us.html"
-              className="readmore white normalCase"
+              className="readmore  normalCase"
               variant="text"
             >
               Let's Talk <ArrowRightAltIcon />
@@ -747,13 +753,37 @@ export default function SalesForceDevelopment() {
                   Apply now
                 </button>
                 <div>
-                  <h2 className="text-sm text-black mb-2 font-bold ml-2 mt-5 md:mt-0">
+                  <h2 className="text-sm text-black font-bold ml-2 mt-5 md:mt-0">
                     Share Job
                   </h2>
-                  <div className="border shadow-md p-4 rounded-xl flex items-center gap-3">
-                    <p className="text-sm font-bold font-Poppins">
-                      {window.location.origin}/jobinfo/{job.Id}.html
-                    </p>
+                  <div className=" p-4 rounded-xl flex items-baseline gap-2 ">
+                    <LinkedinShareButton
+                      // disabled={false}
+                      title={job.JobTitle}
+                      summary="This is a job description"
+                      url={`https://infodrive-solutions.com/jobinfo/${job.Id}.html`}
+                      className="bg-red-600 h-8 w-8"
+                    >
+                      {" "}
+                      <LinkedInIcon color="primary" className="h-6 w-6" />
+                    </LinkedinShareButton>
+                    <FacebookShareButton
+                      // disabled={false}
+                      quote={`Discover exciting career opportunitie ${job.JobTitle}  at Infodrive Solutions`}
+                      url={`https://infodrive-solutions.com/jobinfo/${job.Id}.html`}
+                      className="bg-red-600 h-8 w-8"
+                    >
+                      <FacebookIcon color="primary" className="h-6 w-6" />
+                    </FacebookShareButton>
+                    <TwitterShareButton
+                      // disabled={false}
+                      title={job.JobTitle}
+                      via="Infodrive Solutions"
+                      url={`https://infodrive-solutions.com/jobinfo/${job.Id}.html`}
+                      className="bg-red-600 h-8 w-8"
+                    >
+                      <TwitterIcon color="primary" className="h-6 w-6" />
+                    </TwitterShareButton>
                     <button
                       onClick={() => {
                         navigator.clipboard.writeText(
@@ -764,7 +794,7 @@ export default function SalesForceDevelopment() {
                         setJobId(job.Id);
                       }}
                     >
-                      <ContentCopyIcon />
+                      <ContentCopyIcon className="h-6 w-6" />
                     </button>
                   </div>
                 </div>

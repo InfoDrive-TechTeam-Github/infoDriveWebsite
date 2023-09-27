@@ -650,10 +650,11 @@ img {
   font-size: 20px;
   padding-left: 15px;
   background: #dd3952;
+  color: whitesmoke;
 }
 .sliderBox .readmore:hover {
-  background: white;
-  color: #000;
+  background: black;
+  color: whitesmoke;
 }
 .sliderContent button.readmore {
   font-size: 20px;
@@ -2325,5 +2326,13 @@ img.btnLdr {
     height: 3rem !important;
     width: 3rem !important;
     @apply mt-7 pr-1;
+  }
+}
+@media (max-width: 620px) {
+  .letsTalkmin {
+    @apply h-7  text-sm mt-3;
+  }
+  .smallIcon {
+    @apply text-sm;
   }
 }

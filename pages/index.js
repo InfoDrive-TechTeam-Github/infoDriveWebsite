@@ -234,7 +234,7 @@ export default function Index() {
         </p>
       </section>
 
-      <section className="Offerbox max-w-6xl mx-auto mt-20 flex flex-col gap-10 p5">
+      <section className="container max-w-5xl Offerbox  mx-auto mt-20 flex flex-col gap-10 p5">
         <h2 className="text-[#0b2653] font-bold text-xl">What We Offer</h2>
 
         <div className="heading flex  items-center w-full gap-2 ">
@@ -750,7 +750,7 @@ export default function Index() {
         </Box>
       </section>
 
-      <section className={`sectionBox aboutUsBox aboutUsBoxHome`}>
+      <section className={`aboutUsBox aboutUsBoxHome -mt-5 w-full`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={5}>
@@ -847,9 +847,8 @@ export default function Index() {
           </Grid>
         </Box>
       </section>
-      <br />
-      <br />
-      <section className={`sectionBox locationBox mt-28 testmonial p5`}>
+
+      <section className={`sectionBox locationBox -mt-2  testmonial p5`}>
         <Typography gutterBottom variant="h2" component="div">
           What do clients say about us?
         </Typography>
