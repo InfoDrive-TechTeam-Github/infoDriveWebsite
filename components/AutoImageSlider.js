@@ -36,13 +36,13 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 const imagesData = [
   {
-    url: "/1.jpg",
+    url: "/1.png",
   },
   {
-    url: "/3.jpg",
+    url: "/3.png",
   },
   {
-    url: "/5.jpg",
+    url: "/5.png",
   },
 ];
 
@@ -59,11 +59,11 @@ function AutoImageSlider() {
       >
         {imagesData.map((item) => (
           //   <img src={item.url} />
-          <div className="sliderBox">
+          <div className="sliderBox ">
             <img
               style={{ width: "100%" }}
               src={item.url}
-              className="object-cover"
+              className=" h-[225px] md:h-full"
             />
             <Box sx={{ flexGrow: 1 }} className="sliderContent">
               <Grid container spacing={0}>
@@ -75,7 +75,7 @@ function AutoImageSlider() {
                 ></Typography>
                 <Button
                   href="/contact-us.html"
-                  className="readmore  normalCase "
+                  className="letsTalkmin  normalCase bg-white text-black hover:bg-pink-600 hover:text-white "
                   variant="text"
                 >
                   Let's Talk <ArrowRightAltIcon />
@@ -88,7 +88,10 @@ function AutoImageSlider() {
                         href="https://www.facebook.com/InfoDrivesolutions/"
                       >
                         <ListItemIcon>
-                          <FacebookIcon />
+                          <FacebookIcon
+                            className="smallIcon"
+                            sx={{ fontSize: 35 }}
+                          />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
@@ -98,7 +101,10 @@ function AutoImageSlider() {
                         href="https://in.linkedin.com/company/infodrive-solutions/"
                       >
                         <ListItemIcon>
-                          <LinkedInIcon />
+                          <LinkedInIcon
+                            className="smallIcon"
+                            sx={{ fontSize: 35 }}
+                          />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
@@ -108,7 +114,10 @@ function AutoImageSlider() {
                         href="https://www.instagram.com/infodrivesolutions/"
                       >
                         <ListItemIcon>
-                          <InstagramIcon />
+                          <InstagramIcon
+                            className="smallIcon"
+                            sx={{ fontSize: 35 }}
+                          />
                         </ListItemIcon>
                       </ListItemButton>
                     </ListItem>
