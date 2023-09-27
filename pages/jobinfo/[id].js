@@ -51,9 +51,11 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useRouter } from "next/router";
 // import { getJobById } from "../../utils/api";
+import { useHeadStore } from "externalhooks/Zoostand";
 
 const JobInfoPage = ({ jobInfo }) => {
   console.log("jobInfo", jobInfo);
+  const head = useHeadStore();
   const [jobs, setJobInfo] = useState();
   const router = useRouter();
   const [activeButtonColor, setactiveButtonColor] = useState(null);
@@ -325,7 +327,7 @@ const JobInfoPage = ({ jobInfo }) => {
           name="description"
           content={
             jobs
-              ? ` Discover exciting career opportunitie ${jobs[0].JobTitle}  at Infodrive Solutions`
+              ? ` Discover exciting career opportunitie ${head.title}  at Infodrive Solutions`
               : "Discover exciting career opportunities at Infodrive Solutions, a leading software development company. Apply now and join our team of talented professionals in delivering innovative solutions to our clients. Explore our current job openings and take the first step towards a rewarding career."
           }
         />
@@ -335,15 +337,17 @@ const JobInfoPage = ({ jobInfo }) => {
         />
         <meta
           property="og:title"
-          content={`Join our team at Infodrive Solutions -${
-            jobs ? jobs[0].JobTitle : ""
-          } Available`}
+          content={`Join our team at Infodrive Solutions for - ${head.title}`}
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <meta
         property="og:image"
         content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
+      />
+      <meta
+        property="og:description"
+        content={`Discover exciting career opportunities at Infodrive Solutions - ${head.title} : ""}`}
       />
       <link
         rel="icon"

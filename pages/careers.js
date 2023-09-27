@@ -67,7 +67,10 @@ import {
 } from "react-share";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import JobDescription from 'components/JobDescription';
+import { useHeadStore } from "externalhooks/Zoostand";
 export default function SalesForceDevelopment() {
+  const head = useHeadStore();
+  console.log("head", head);
   const [jobs, setJobs] = useState(null);
   const [activeButtonColor, setactiveButtonColor] = useState(null);
   const [activeApplyButton, setActiveApply] = useState(false);
@@ -760,11 +763,14 @@ export default function SalesForceDevelopment() {
                     <LinkedinShareButton
                       // disabled={false}
                       title={job.JobTitle}
-                      summary="This is a job description"
+                      description="This is a description of the image."
+                      image="images/25614380e49e0fd7742fc1e2e7973a1e.jpeg"
                       url={`https://infodrive-solutions.com/jobinfo/${job.Id}.html`}
                       className="bg-red-600 h-8 w-8"
+                      onClick={() =>
+                        head.handleHeadStore(job.Jobdescription, job.JobTitle)
+                      }
                     >
-                      {" "}
                       <LinkedInIcon color="primary" className="h-6 w-6" />
                     </LinkedinShareButton>
                     <FacebookShareButton
