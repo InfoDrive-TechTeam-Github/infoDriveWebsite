@@ -5,6 +5,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import Header from "components/header";
 import Footer from "components/footer";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
@@ -52,6 +54,11 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useRouter } from "next/router";
 // import { getJobById } from "../../utils/api";
 import { useHeadStore } from "externalhooks/Zoostand";
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+} from "react-share";
 
 const JobInfoPage = ({ jobInfo }) => {
   console.log("jobInfo", jobInfo);
@@ -466,7 +473,8 @@ const JobInfoPage = ({ jobInfo }) => {
                 </Typography>
               </Box>
             </Box>
-            <div className="flex items-center justify-between">
+            <div className="md:flex flex-col md:flex-row  items-center justify-between">
+              {" "}
               <button
                 className={`mt30 Poppins  rounded-md p-2  shadow-md  hover:text-[#dd3952] hover:bg-white transition-all ease-in-out font-semibold uppercase
                 ${
@@ -474,10 +482,59 @@ const JobInfoPage = ({ jobInfo }) => {
                     ? "bg-white text-[#dd3952]"
                     : "bg-[#dd3952] text-white"
                 }`}
-                onClick={() => handleClickApplyOpen(jobs[0])}
+                onClick={() => handleClickApplyOpen(job)}
               >
                 Apply now
               </button>
+              <div>
+                <h2 className="text-sm text-black font-bold ml-2 mt-5 md:mt-0">
+                  Share Job
+                </h2>
+                <div className=" p-4 rounded-xl flex items-baseline gap-2 ">
+                  <LinkedinShareButton
+                    // disabled={false}
+                    title={jobs[0].JobTitle}
+                    description="This is a description of the image."
+                    image="images/25614380e49e0fd7742fc1e2e7973a1e.jpeg"
+                    url={`https://infodrive-solutions.com/jobinfo/${jobs[0].Id}.html`}
+                    className="bg-red-600 h-8 w-8"
+                    // onClick={() => setJobTitle(job.JobTitle)}
+                  >
+                    <LinkedInIcon color="primary" className="h-6 w-6" />
+                  </LinkedinShareButton>
+                  <FacebookShareButton
+                    // disabled={false}
+                    quote={`Discover exciting career opportunitie ${jobs[0].JobTitle}  at Infodrive Solutions`}
+                    url={`https://infodrive-solutions.com/jobinfo/${jobs[0].Id}.html`}
+                    className="bg-red-600 h-8 w-8"
+                    // onClick={() => setJobTitle(job.JobTitle)}
+                  >
+                    <FacebookIcon color="primary" className="h-6 w-6" />
+                  </FacebookShareButton>
+                  <TwitterShareButton
+                    // disabled={false}
+                    title={jobs[0].JobTitle}
+                    via="Infodrive Solutions"
+                    url={`https://infodrive-solutions.com/jobinfo/${jobs[0].Id}.html`}
+                    className="bg-red-600 h-8 w-8"
+                    // onClick={() => setJobTitle(job.JobTitle)}
+                  >
+                    <TwitterIcon color="primary" className="h-6 w-6" />
+                  </TwitterShareButton>
+                  <button
+                    onClick={() => {
+                      navigator.clipboard.writeText(
+                        `${window.location.origin}/jobinfo/${jobs[0].Id}.html`
+                      );
+                      toast.success("Link copied successfully");
+                      // setJobTitle(job.JobTitle);
+                      // setJobId(job.Id);
+                    }}
+                  >
+                    <ContentCopyIcon className="h-6 w-6" />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           {/* End of main div*/}
