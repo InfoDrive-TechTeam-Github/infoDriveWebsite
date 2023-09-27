@@ -71,6 +71,8 @@ export default function SalesForceDevelopment() {
   const [jdHeight, setJdHeifht] = useState(false);
   const [Resume, setResume] = useState("");
   const [info, setInfo] = useState("");
+  const [JobTitle, setJobTitle] = useState("");
+  const [jobId, setJobId] = useState("");
   console.log("info", info);
   const [applyValues, setApplyValues] = useState({
     FirstName: "",
@@ -362,16 +364,27 @@ export default function SalesForceDevelopment() {
         </title>
         <meta
           name="description"
-          content="Discover exciting career opportunities at Infodrive Solutions, a leading software development company. Apply now and join our team of talented professionals in delivering innovative solutions to our clients. Explore our current job openings and take the first step towards a rewarding career."
+          content={
+            JobTitle
+              ? ` Discover exciting career opportunitie ${JobTitle}  at Infodrive Solutions`
+              : "Discover exciting career opportunities at Infodrive Solutions, a leading software development company. Apply now and join our team of talented professionals in delivering innovative solutions to our clients. Explore our current job openings and take the first step towards a rewarding career."
+          }
         />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/careers.html"
+          href={
+            jobId
+              ? `${window.location.origin}/jobinfo/${jobId}.html`
+              : "https://infodrive-solutions.com/careers.html"
+          }
         />
         <meta
           property="og:title"
-          content=" Join our team at Infodrive Solutions - Exciting Career Opportunities
-          Available"
+          content={
+            JobTitle
+              ? `Join our team at Infodrive Solutions - ${JobTitle}`
+              : " Join our team at Infodrive Solutions - Exciting Career Opportunities Available"
+          }
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
@@ -747,6 +760,8 @@ export default function SalesForceDevelopment() {
                           `${window.location.origin}/jobinfo/${job.Id}.html`
                         );
                         toast.success("Link copied successfully");
+                        setJobTitle(job.JobTitle);
+                        setJobId(job.Id);
                       }}
                     >
                       <ContentCopyIcon />
