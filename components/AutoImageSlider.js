@@ -36,16 +36,13 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 const imagesData = [
   {
-    url: "images/1fdbb1cca39e2eee60ac689872bfd393.jpeg",
+    url: "/1.jpg",
   },
   {
-    url: "images/5ab120900874e8a341580c56b490853e.jpeg",
+    url: "/3.jpg",
   },
   {
-    url: "images/617cf828ea2bd6894050ecc1fbcd3912 (1).jpeg",
-  },
-  {
-    url: "images/ezgif.com-gif-maker-4.gif",
+    url: "/5.jpg",
   },
 ];
 
@@ -63,16 +60,22 @@ function AutoImageSlider() {
         {imagesData.map((item) => (
           //   <img src={item.url} />
           <div className="sliderBox">
-            <img style={{ width: "100%" }} src={item.url} />
+            <img
+              style={{ width: "100%" }}
+              src={item.url}
+              className="object-cover"
+            />
             <Box sx={{ flexGrow: 1 }} className="sliderContent">
               <Grid container spacing={0}>
-                <Typography gutterBottom variant="h1" component="div">
-                  Technology service <br /> company helping transform <br />{" "}
-                  business through digital <br /> technology
-                </Typography>
+                <Typography
+                  gutterBottom
+                  variant="h1"
+                  component="div"
+                  className="mb-24 md:mb-0"
+                ></Typography>
                 <Button
                   href="/contact-us.html"
-                  className="readmore white normalCase"
+                  className="readmore  normalCase "
                   variant="text"
                 >
                   Let's Talk <ArrowRightAltIcon />

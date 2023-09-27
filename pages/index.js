@@ -173,8 +173,8 @@ export default function Index() {
         ></iframe>
       </noscript>
       <Header />
-      <Slider />
-      {/* <AutoImageSlider /> */}
+      {/* <Slider /> */}
+      <AutoImageSlider />
 
       <section className={` sectionBox p5`}>
         <Typography gutterBottom variant="h3" component="h3">
