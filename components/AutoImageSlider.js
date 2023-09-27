@@ -63,7 +63,7 @@ function AutoImageSlider() {
             <img
               style={{ width: "100%" }}
               src={item.url}
-              className=" h-[225px] md:h-full"
+              className=" h-[225px] md:h-full md:object-cover pt-3"
             />
             <Box sx={{ flexGrow: 1 }} className="sliderContent">
               <Grid container spacing={0}>
