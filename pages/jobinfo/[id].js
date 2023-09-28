@@ -533,7 +533,7 @@ const JobInfoPage = ({ jobInfo }) => {
                   </FacebookShareButton>
                   <TwitterShareButton
                     // disabled={false}
-                    title={jobs[0].JobTitle}
+                    title={`Discover exciting opportunitie ${jobs[0].JobTitle}  at Infodrive Solutions`}
                     via="Infodrive Solutions"
                     url={`https://infodrive-solutions.com/jobinfo/${jobs[0].Id}.html`}
                     className="bg-red-600 h-8 w-8"
