@@ -326,23 +326,6 @@ const JobInfoPage = ({ jobInfo }) => {
   return (
     <div>
       <Head>
-        <title>
-          {jobInfo
-            ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
-            : ""}
-        </title>
-        <meta
-          name="description"
-          content={
-            jobInfo
-              ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
-              : ""
-          }
-        />
-        <link
-          rel="canonical"
-          href={`https://infodrive-solutions.com/jobinfo/${id}.html`}
-        />
         <meta
           property="og:title"
           content={
@@ -351,10 +334,14 @@ const JobInfoPage = ({ jobInfo }) => {
               : ""
           }
         />
-        <link rel="icon" href="/favicon.png" />
+
         <meta
-          property="og:image"
-          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
+          property="description"
+          content={
+            jobInfo
+              ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
+              : ""
+          }
         />
         <meta
           property="og:description"
@@ -363,6 +350,41 @@ const JobInfoPage = ({ jobInfo }) => {
               ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
               : ""
           }
+        />
+        <meta
+          property="og:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
+        />
+        <link
+          rel="canonical"
+          href={`https://infodrive-solutions.com/jobinfo/${id}.html`}
+        />
+        <link rel="icon" href="/favicon.png" />
+        <meta
+          property="og:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
+        />
+
+        {/* Twitter */}
+        <meta
+          name="twitter:card"
+          content={
+            jobInfo
+              ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
+              : ""
+          }
+        />
+        <meta
+          name="twitter:title"
+          content={jobInfo ? ` ${jobInfo[0].JobTitle}  ` : ""}
+        />
+        <meta
+          name="twitter:description"
+          content="Discover exciting career opportunitie at Infodrive Solutions"
+        />
+        <meta
+          name="twitter:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
         <link
           rel="icon"
