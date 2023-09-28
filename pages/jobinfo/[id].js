@@ -54,11 +54,8 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { useRouter } from "next/router";
 // import { getJobById } from "../../utils/api";
 import { useHeadStore } from "externalhooks/Zoostand";
-import {
-  FacebookShareButton,
-  LinkedinShareButton,
-  TwitterShareButton,
-} from "react-share";
+import { FacebookShareButton, TwitterShareButton } from "react-share";
+import { LinkedinShareButton } from "next-share";
 
 const JobInfoPage = ({ jobInfo }) => {
   console.log("jobInfo", jobInfo);
@@ -327,16 +324,15 @@ const JobInfoPage = ({ jobInfo }) => {
     <div>
       <Head>
         <meta
-          property="og:title"
+          property="description"
           content={
             jobInfo
               ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
               : ""
           }
         />
-
         <meta
-          property="description"
+          property="og:title"
           content={
             jobInfo
               ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
@@ -355,6 +351,7 @@ const JobInfoPage = ({ jobInfo }) => {
           property="og:image"
           content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
+
         <link
           rel="canonical"
           href={`https://infodrive-solutions.com/jobinfo/${id}.html`}
@@ -376,7 +373,11 @@ const JobInfoPage = ({ jobInfo }) => {
         />
         <meta
           name="twitter:title"
-          content={jobInfo ? ` ${jobInfo[0].JobTitle}  ` : ""}
+          content={
+            jobInfo
+              ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
+              : ""
+          }
         />
         <meta
           name="twitter:description"
@@ -514,12 +515,9 @@ const JobInfoPage = ({ jobInfo }) => {
                 </h2>
                 <div className=" p-4 rounded-xl flex items-baseline gap-2 ">
                   <LinkedinShareButton
-                    // disabled={false}
-                    title={jobs[0].JobTitle}
-                    description="This is a description of the image."
-                    image="images/25614380e49e0fd7742fc1e2e7973a1e.jpeg"
                     url={`https://infodrive-solutions.com/jobinfo/${jobs[0].Id}.html`}
                     className="bg-red-600 h-8 w-8"
+                    blankTarget={true}
                     // onClick={() => setJobTitle(job.JobTitle)}
                   >
                     <LinkedInIcon color="primary" className="h-6 w-6" />
