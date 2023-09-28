@@ -367,7 +367,7 @@ const JobInfoPage = ({ jobInfo }) => {
           name="twitter:card"
           content={
             jobInfo
-              ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
+              ? `Discover_exciting_career_opportunities_${jobInfo[0].JobTitle}_at_Infodrive_Solutions`
               : ""
           }
         />
@@ -375,7 +375,7 @@ const JobInfoPage = ({ jobInfo }) => {
           name="twitter:title"
           content={
             jobInfo
-              ? `Discover exciting career opportunitie ${jobInfo[0].JobTitle}  at Infodrive Solutions`
+              ? `Discover_exciting_career_opportunities_${jobInfo[0].JobTitle}_at_Infodrive_Solutions`
               : ""
           }
         />
