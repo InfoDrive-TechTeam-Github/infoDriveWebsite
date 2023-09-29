@@ -523,10 +523,17 @@ function DrawerAppBar(props) {
             className="mainMenu"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
+            <List className="partnerButton flex items-center gap-2 ">
+              <ListItem>
+                <ListItemButton component="a" to="/contact-us.html">
+                  <ListItemText primary={"Let's partner"} />
+                </ListItemButton>
+              </ListItem>
+              {/* animation tag */}
+              {/* <div>hiii</div> */}
+            </List>
             <List className="ml-32">
               <ListItem disablePadding>
-               
-
                 <ListItemButton component="a" to="/">
                   <ListItemText primary={"Home"} />
                 </ListItemButton>
@@ -873,15 +880,6 @@ function DrawerAppBar(props) {
                   <ListItemText primary={"Contact us"} />
                 </ListItemButton>
               </ListItem>
-            </List>
-            <List className="partnerButton flex items-center gap-2 ">
-              <ListItem>
-                <ListItemButton component="a" to="/contact-us.html">
-                  <ListItemText primary={"Let's partner"} />
-                </ListItemButton>
-              </ListItem>
-              {/* animation tag */}
-              {/* <div>hiii</div> */}
             </List>
           </Box>
         </Toolbar>
