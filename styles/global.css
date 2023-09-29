@@ -306,7 +306,7 @@ img {
   width: 100%;
 }
 .mainMenu ul {
-  float: left;
+  float: right;
   width: initial;
 }
 .partnerButton {
