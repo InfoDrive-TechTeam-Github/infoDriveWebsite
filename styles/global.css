@@ -858,7 +858,7 @@ img {
   color: #000;
 }
 .aboutUsBox3 .MuiTypography-h3 {
-  color: #000;
+  color: #4e4e50;
   padding-top: 0;
   font-weight: 300;
   line-height: 32px;
@@ -1461,7 +1461,9 @@ img {
   color: #fff;
 }
 .servicesForStartUp li {
+  color: #4e4e50;
   font-size: 16px;
+  margin-top: 10px;
 }
 .servicesForStartUp .MuiTypography-h3 {
   font-size: 16px;
@@ -2307,6 +2309,12 @@ img.btnLdr {
   .blob {
     background-image: url("images/blobmobile.jpg");
     height: 1100px;
+  }
+  .servicesForStartUp li {
+    font-size: 14px;
+  }
+  .servicesForStartUp .MuiTypography-h3 {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 572px) {
