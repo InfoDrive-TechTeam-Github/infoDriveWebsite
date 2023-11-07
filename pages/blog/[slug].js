@@ -39,6 +39,7 @@ export default function SalesForceDevelopment({ data, datafull }) {
     console.log("dataIndex", index);
     setDataIndex(index);
   }, []);
+  console.log("blog", data);
 
   return (
     <div>
