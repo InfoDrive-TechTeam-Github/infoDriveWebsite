@@ -184,7 +184,7 @@ function DrawerAppBar(props) {
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton component="a" to="/about-us.html">
-            <ListItemText primary={"About us"} />
+            <ListItemText primary={"About Us"} />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
@@ -414,7 +414,7 @@ function DrawerAppBar(props) {
                   component="a"
                   to="/social-media-optimization.html"
                 >
-                  <ListItemText primary={"Social media optimization"} />
+                  <ListItemText primary={"Social Media Optimization"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
@@ -456,7 +456,7 @@ function DrawerAppBar(props) {
 
         <ListItem disablePadding>
           <ListItemButton component="a" to="/contact-us.html">
-            <ListItemText primary={"Contact us"} />
+            <ListItemText primary={"Contact Us"} />
           </ListItemButton>
         </ListItem>
       </List>
@@ -464,7 +464,7 @@ function DrawerAppBar(props) {
       <List className="partnerButtonMobile">
         <ListItem>
           <ListItemButton component="a" to="/contact-us.html">
-            <ListItemText primary={"Let's partner"} />
+            <ListItemText primary={"Let's Partner"} />
           </ListItemButton>
         </ListItem>
       </List>
@@ -526,7 +526,7 @@ function DrawerAppBar(props) {
             <List className="partnerButton flex items-center gap-2 ">
               <ListItem>
                 <ListItemButton component="a" to="/contact-us.html">
-                  <ListItemText primary={"Let's partner"} />
+                  <ListItemText primary={"Let's Partner"} />
                 </ListItemButton>
               </ListItem>
               {/* animation tag */}
@@ -538,7 +538,7 @@ function DrawerAppBar(props) {
                   <ListItemText primary={"Home"} />
                 </ListItemButton>
                 <ListItemButton component="a" to="/about-us.html">
-                  <ListItemText primary={"About us"} />
+                  <ListItemText primary={"About Us"} />
                 </ListItemButton>
 
                 <ListItemButton onClick={recordButtonPosition} disableElevation>
@@ -876,8 +876,8 @@ function DrawerAppBar(props) {
                 <ListItemButton component="a" to="/careers.html">
                   <ListItemText primary={"Careers"} />
                 </ListItemButton>
-                <ListItemButton component="a" to="/contact-us.html">
-                  <ListItemText primary={"Contact us"} />
+                <ListItemButton component="a" to="/contact-Us.html">
+                  <ListItemText primary={"Contact Us"} />
                 </ListItemButton>
               </ListItem>
             </List>
