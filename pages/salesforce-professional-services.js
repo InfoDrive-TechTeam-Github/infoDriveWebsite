@@ -41,6 +41,12 @@ import LeadForm from "../components/leadForm";
 import { FcCollaboration } from "react-icons/fc";
 import { FcInspection } from "react-icons/fc";
 import { FcOvertime } from "react-icons/fc";
+import { FcAssistant } from "react-icons/fc";
+import { FcDebt } from "react-icons/fc";
+import { FcDataRecovery } from "react-icons/fc";
+import { FcFlowChart } from "react-icons/fc";
+import { FcCurrencyExchange } from "react-icons/fc";
+
 export default function SalesForceDevelopment() {
   return (
     <div>
@@ -169,7 +175,7 @@ export default function SalesForceDevelopment() {
         <div className="container  mx-auto py-20 h-full font-Poppins text-sm text-gray-700 space-y-10 md:flex items-stretch justify-between gap-20">
           <div className="left space-y-7">
             <span className="">
-              Vigorous Salesforce Professional Services with
+              Dynamic Salesforce Professional Services with
             </span>
             <h2 className="font-semibold text-4xl leading-10">
               Salesforce Consulting Partner
@@ -225,7 +231,7 @@ export default function SalesForceDevelopment() {
           <img
             src="./Salesforce-Service-Cloud.png"
             alt="saleforce"
-            className=" object-cover md:h-[400px] md:w-[400px]"
+            className=" object-cover md:h-[500px] md:w-[500px]"
           />
         </div>
 
@@ -242,25 +248,36 @@ export default function SalesForceDevelopment() {
         </svg>
       </section>
       <section className={`sectionBox p5`}>
-        <Typography className="w100" gutterBottom variant="h1" component="h1">
-          Accelerate Business Transformation with Our Salesforce Development
-          Partnership
-        </Typography>
+        <div className="container flex items-center justify-between gap-10">
+          <img src="./empower.jpg" alt="empowe" className="w-1/2" />
+          <div>
+            <Typography
+              className="w100"
+              gutterBottom
+              variant="h1"
+              component="h1"
+            >
+              Empower Your Business Evolution through Our Salesforce Development
+              Collaboration
+            </Typography>
 
-        <Typography gutterBottom variant="h5" component="div" className="w100">
-          Salesforce is a leading customer relationship management (CRM)
-          platform that helps businesses of all sizes streamline and optimize
-          their sales, customer service, and marketing efforts. With Salesforce,
-          you can manage all of your customer data in one place, automating and
-          simplifying processes and communication. At InfoDrive Solutions, we
-          are proud to be a <b>Salesforce Development Services partner</b>. This
-          means that we have demonstrated expertise in delivering high-quality
-          Salesforce services to our clients and have met the strict standards
-          set by Salesforce. Our team of experienced Salesforce developers is
-          well-versed in these products and can help you implement and customize
-          them to meet your specific business needs. Contact us to learn more
-          about how we can help you get the most out of Salesforce.
-        </Typography>
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="div"
+              className="w100"
+            >
+              Salesforce stands as a pinnacle in customer relationship
+              management (CRM), offering a robust platform that empowers
+              businesses to refine and enhance their sales, customer service,
+              and marketing endeavors. It centralizes customer data, enabling
+              streamlined processes and communication automation. As a
+              Salesforce Development Services partner at InfoDrive Solutions, we
+              take pride in our proven proficiency in delivering Salesforce
+              Development Services partner
+            </Typography>
+          </div>
+        </div>
       </section>
 
       <section className="saleforcPatner min-h-screen w-full p5">
@@ -268,65 +285,77 @@ export default function SalesForceDevelopment() {
           <p className="text-center text-sm text-[#E13D4B] font-semibold">
             InfoDrive Solutions is home to 100+ Salesforce Certified Experts!
           </p>
-          <h2 className="text-center md:text-5xl   font-semibold text-xl text-[#565758] leading-10 ">
+          <h2 className="text-center md:text-3xl   font-semibold text-xl text-[#565758] pb-10 ">
             Benefits Of Hiring A Salesforce Consulting Partner
           </h2>
 
-          <div className="md:flex items-center justify-between md:px-32 p5">
+          <div className="md:flex items-center justify-between md:px-32 p5 gap-10">
             <img
               src="./saforcePatner.png"
               alt="saleforce patner"
-              className=""
+              className="w-1/3"
             />
             <div className="grid md:grid-cols-2 grid-cols-1 gap-10 mt-10 md:mt-0">
               <div className="flex gap-3 items-center">
                 <FcComboChart size={42} />
                 <p className="text-[#565758] font-normal">
-                  Insightful Assessment
+                  Accelerated Implementation
                 </p>
               </div>
               <div className="flex gap-3 items-center">
                 <FcSettings size={42} />
-                <p className="text-[#565758] font-normal">
-                  Fluent Customization
-                </p>
+                <p className="text-[#565758] font-normal">Custom Solutions</p>
               </div>
               <div className="flex gap-3 items-center">
-                <FcSettings size={42} />
-                <p className="text-[#565758] font-normal">
-                  Fluent Customization
-                </p>
+                <FcAssistant size={42} />
+                <p className="text-[#565758] font-normal">Ongoing Support</p>
               </div>
               <div className="flex gap-3 items-center">
                 <FcCollaboration size={42} />
-                <p className="text-[#565758] font-normal">
-                  Enduring Partnership
-                </p>
+                <p className="text-[#565758] font-normal">Strategic Guidance</p>
               </div>
               <div className="flex gap-3 items-center">
                 <FcInspection size={42} />
                 <p className="text-[#565758] font-normal">
-                  Certified Onboarding
+                  Data Migration Expertise
                 </p>
               </div>
               <div className="flex gap-3 items-center">
                 <FcOvertime size={42} />
                 <p className="text-[#565758] font-normal">
-                  Time & Cost Efficiency
+                  Seamless Integration
                 </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <FcDebt size={42} />
+                <p className="text-[#565758] font-normal">User Training</p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <FcDataRecovery size={42} />
+                <p className="text-[#565758] font-normal">Scalability</p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <FcFlowChart size={42} />
+                <p className="text-[#565758] font-normal">
+                  Troubleshooting and Optimization
+                </p>
+              </div>
+              <div className="flex gap-3 items-center">
+                <FcCurrencyExchange size={42} />
+                <p className="text-[#565758] font-normal">Cost-Efficiency</p>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section className="certificate min-h-screen p5">
-        <div className="container mx-auto md:flex items-center justify-between md:py-20  gap-32">
+        <div className="container mx-auto md:flex items-center justify-between md:py-20  gap-20">
           <div className="left">
-            <img src="./salesforce-certifications.png" alt="saleforce" />
+            <img src="./salesforce-certifications.jpg" alt="saleforce" />
           </div>
           <div className="right space-y-7 mt-10 md:mt-0">
             <div>
-              <p className="text-[#0694CB] text-4xl font-semibold">200+</p>
+              <p className="text-[#0694CB] text-4xl font-semibold">100+</p>
               <p className="text-[#565758]">Certifications</p>
             </div>
             <div>
@@ -344,30 +373,57 @@ export default function SalesForceDevelopment() {
       <section className={`sectionBox saleForcesDevelopmentBox`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className="androidDevelopment">
-            <Grid item xs={6} className="saleForcesDevelopment">
-              <Typography gutterBottom variant="h5" component="div">
-                As a Salesforce Development Services partner, we have access to
-                a wide range of resources and support from Salesforce, including
-                training, marketing, and technical support. This allows us to
-                stay up-to-date on the latest Salesforce products and
-                technologies and provide our clients with the best possible
-                solutions. In addition to our partnership with Salesforce, we
-                also have strong relationships with other leading technology
-                companies. These partnerships allow us to offer our clients a
-                wide range of solutions and integrations, ensuring that they
-                have everything they need to succeed.
-              </Typography>
-              <Typography gutterBottom variant="h5" component="div">
-                Our company provides Salesforce development services in
-                Singapore, Malaysia, and India. We have a team of experienced
-                and certified Salesforce developers who have a deep
-                understanding of the Salesforce platform and can deliver custom
-                solutions that meet the unique needs of our clients. Our
-                services include the development of custom Salesforce
-                applications, integration with third-party systems, and the
-                implementation of Salesforce CRM for businesses of all sizes.{" "}
-              </Typography>
-            </Grid>
+            <div className="flex flex-col items-end justify-between flex- px-10 gap-10 ">
+              <Grid
+                item
+                xs={6}
+                className="saleForcesDevelopment shadow-md rounded-lg bg-pink-100 "
+              >
+                <h2>Salesforce Development Partnership Advantages</h2>
+                <Typography gutterBottom variant="h5" component="div">
+                  Comprehensive Support - Access a diverse array of resources
+                  and support from Salesforce, encompassing training, marketing,
+                  and technical assistance. Cutting-Edge Expertise - Stay
+                  abreast of the latest Salesforce products and technologies,
+                  ensuring our clients benefit from the most advanced solutions.
+                  Client-Centric Solutions - Leverage our partnership to deliver
+                  optimal solutions tailored to meet the specific needs of our
+                  clients.
+                </Typography>
+              </Grid>
+
+              <Grid
+                item
+                xs={6}
+                className="saleForcesDevelopment shadow-md rounded-lg w-full mr-auto"
+              >
+                <h2>Cutting-Edge Expertise</h2>
+                <Typography gutterBottom variant="h5" component="div">
+                  Strategic Alliances - Cultivate robust relationships with
+                  other leading technology companies, broadening our spectrum of
+                  solutions and integrations. Holistic Support - Ensure our
+                  clients have access to a comprehensive suite of tools and
+                  technologies, fostering their success.
+                </Typography>
+              </Grid>
+              <Grid
+                item
+                xs={6}
+                className="saleForcesDevelopment shadow-md rounded-lg bg-pink-100"
+              >
+                <h2>Client-Centric Solutions </h2>
+                <Typography gutterBottom variant="h5" component="div">
+                  Global Presence - Extend our Salesforce development services
+                  across Singapore, Malaysia, and India. Certified Developers -
+                  Boast a team of experienced and certified Salesforce
+                  developers with an in-depth understanding of the platform.
+                  Tailored Solutions: Deliver customized Salesforce
+                  applications, integrate seamlessly with third-party systems,
+                  and implement Salesforce CRM solutions for businesses of all
+                  sizes.
+                </Typography>
+              </Grid>
+            </div>
           </Grid>
         </Box>
       </section>
