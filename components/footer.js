@@ -2,16 +2,10 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 //import Paper from '@mui/material/Paper';
 import Grid from "@mui/material/Grid";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
+
 import Typography from "@mui/material/Typography";
-import Tab from "@mui/material/Tab";
-import TabContext from "@mui/lab/TabContext";
-import TabList from "@mui/lab/TabList";
-import TabPanel from "@mui/lab/TabPanel";
-import Avatar from "@mui/material/Avatar";
 
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -37,16 +31,22 @@ export default function Footer() {
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={0}>
           <Grid item xs={4} className="logoFooter">
-            <img src="https://cdn.discordapp.com/attachments/949683263386054716/1076906970218508399/logoFooter.png" />
-            <Typography variant="h3" sx={{ my: 2 }}>
-              Driven by technology
-            </Typography>
-            <Typography variant="h5" sx={{ my: 2 }} className="pr30">
-              InfoDrive Solutions is a premier software development company that
-              specializes in providing innovative solutions using the latest
-              technologies. Our team of highly skilled developers and architects
-              are dedicated to delivering exceptional results to our clients
-              globally.
+            <div className="flex flex-col items-center mx-auto gap-0 mr-5">
+              <img src="https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png" />
+              <Typography variant="h3" sx={{ my: 1 }}>
+                Driven by technology
+              </Typography>
+            </div>
+            <Typography
+              variant="h5"
+              className="pr30 text-justify -my-2"
+              style={{ color: "black" }}
+            >
+              At InfoDrive Solutions, we stand out as a top-notch software
+              development company, known for crafting innovative solutions with
+              the latest technologies. Our squad of talented developers and
+              architects is committed to bringing outstanding results to clients
+              worldwide.
             </Typography>
           </Grid>
           <Grid item xs={8} className="infoFooter">
@@ -179,7 +179,7 @@ export default function Footer() {
                         component="a"
                         href="tel:+6592384299"
                         style={{
-                          color: "#fff",
+                          color: "black",
                           display: "inline-block",
                           flexGrow: 0,
                           paddingRight: 0,
@@ -251,7 +251,7 @@ export default function Footer() {
                         target="_blank"
                         component="a"
                         style={{
-                          color: "#fff",
+                          color: "#000",
                           display: "inline-block",
                           flexGrow: 0,
                         }}
@@ -263,7 +263,7 @@ export default function Footer() {
                         target="_blank"
                         component="a"
                         style={{
-                          color: "#fff",
+                          color: "#000",
                           display: "inline-block",
                           flexGrow: 0,
                         }}
@@ -275,7 +275,7 @@ export default function Footer() {
                         target="_blank"
                         component="a"
                         style={{
-                          color: "#fff",
+                          color: "#000",
                           display: "inline-block",
                           flexGrow: 0,
                         }}
@@ -287,7 +287,7 @@ export default function Footer() {
                         target="_blank"
                         component="a"
                         style={{
-                          color: "#fff",
+                          color: "#000",
                           display: "inline-block",
                           flexGrow: 0,
                         }}
@@ -299,7 +299,7 @@ export default function Footer() {
                         target="_blank"
                         component="a"
                         style={{
-                          color: "#fff",
+                          color: "#000",
                           display: "inline-block",
                           flexGrow: 0,
                         }}
@@ -319,7 +319,7 @@ export default function Footer() {
       <p
         style={{
           textAlign: "center",
-          color: "#fff",
+          color: "black",
           fontSize: "14px",
           margin: "0px",
           paddingBottom: "15px",
