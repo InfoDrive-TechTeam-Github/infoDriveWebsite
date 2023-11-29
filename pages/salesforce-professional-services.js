@@ -368,7 +368,7 @@ export default function SalesForceDevelopment() {
             alt="saleforce"
             className=" object-cover md:h-[450px] md:w-[500px]"
             initial={{ opacity: 0 }}
-            whileInView={{
+            animate={{
               opacity: 1,
               rotate: -360,
               transition: {
