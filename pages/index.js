@@ -787,7 +787,7 @@ export default function Index() {
         </Box>
       </section>
 
-      <section className={`sectionBox connectUs backDrop connectUsHome mb30`}>
+      {/* <section className={`sectionBox connectUs backDrop connectUsHome mb30`}>
         <Typography
           gutterBottom
           variant="h3"
@@ -803,7 +803,7 @@ export default function Index() {
         >
           Connect with Our Expert
         </Button>
-      </section>
+      </section> */}
 
       <br />
 
@@ -848,7 +848,7 @@ export default function Index() {
         </Box>
       </section>
 
-      <section className={`sectionBox locationBox -mt-2  testmonial p5`}>
+      <section className={`sectionBox locationBox   testmonial p5`}>
         <Typography gutterBottom variant="h2" component="div">
           What do clients say about us?
         </Typography>
