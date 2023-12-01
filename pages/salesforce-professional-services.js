@@ -293,7 +293,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div> */}
 
-      <section className="headSaleforce  md:h-screen text-black relative md:p-5 md:min-h-screen p5">
+      <section className="headSaleforce container max-w-7xl md:h-screen text-black relative md:p-5 md:min-h-screen p5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -307,7 +307,7 @@ export default function SalesForceDevelopment() {
         </svg>
         <div className="container  mx-auto py-20 h-full font-Poppins text-sm text-gray-700 md:space-y-10 space-y-5 md:flex items-stretch justify-between gap-20">
           <div className="left md:space-y-7 space-y-3">
-            <span className="whitespace-nowrap text-xs md:text-base">
+            <span className="whitespace-nowrap text-xs md:text-base text-center md:text-justify">
               Dynamic Salesforce Professional Services with
             </span>
             <h2 className="font-semibold md:text-4xl text:2xl md:leading-10 text-center md:text-justify">
@@ -520,7 +520,7 @@ export default function SalesForceDevelopment() {
           ></path>
         </svg>
       </section>
-      <section className="certificate   p5">
+      <section className="certificate container max-w-7xl  p5">
         <div className="container mx-auto md:flex items-center justify-between  p5 gap-20 h-full py-14">
           <motion.div
             className="left"
