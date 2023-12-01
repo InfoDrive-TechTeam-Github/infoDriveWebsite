@@ -458,8 +458,8 @@ export default function SalesForceDevelopment() {
             />
             <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-10 md:mt-0 ">
               <div className="flex gap-3 items-center">
-                <FcComboChart size={42} />
-                <p className="text-[#565758] font-normal whitespace-nowrap">
+                <FcComboChart size={52} />
+                <p className="text-[#565758] font-normal md:whitespace-nowrap">
                   Accelerated Implementation
                 </p>
               </div>
