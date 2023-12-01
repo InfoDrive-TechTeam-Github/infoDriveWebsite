@@ -49,7 +49,7 @@ export default function Footer() {
               worldwide.
             </Typography>
           </Grid>
-          <Grid item xs={8} className="infoFooter">
+          <Grid item xs={8} className="infoFooter mt-5 md:mt-0">
             <Grid container spacing={0}>
               <Grid item xs={3}>
                 <Typography gutterBottom variant="h3" component="div">

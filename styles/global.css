@@ -2343,7 +2343,7 @@ img.btnLdr {
 
 @media (max-width: 600px) {
   .p5 {
-    @apply p-5;
+    @apply px-8;
   }
   .blob {
     background-image: url("images/blobmobile.jpg");
