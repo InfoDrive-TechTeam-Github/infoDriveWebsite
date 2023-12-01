@@ -34,7 +34,7 @@ import TextField from "@mui/material/TextField";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Stack from "@mui/material/Stack";
 import Head from "next/head";
-import { FcComboChart } from "react-icons/fc";
+import { FcComboChart, FcEnteringHeavenAlive } from "react-icons/fc";
 import { FcSettings } from "react-icons/fc";
 import { FcSynchronize } from "react-icons/fc";
 import LeadForm from "../components/leadForm";
@@ -146,7 +146,6 @@ export default function SalesForceDevelopment() {
     },
   };
   const logos = [
-    "1.jpg",
     "2.png",
     "3.png",
     "4.png",
@@ -158,9 +157,8 @@ export default function SalesForceDevelopment() {
     "10.png",
     "11.jpg",
     "12.png",
-    "13.png",
     "14.png",
-    "15.jpg",
+
     "16.png",
     "17.png",
     "18.png",
@@ -295,7 +293,7 @@ export default function SalesForceDevelopment() {
         </Box>
       </div> */}
 
-      <section className="headSaleforce  md:h-screen text-black relative p-5 min-h-screen">
+      <section className="headSaleforce  md:h-screen text-black relative md:p-5 md:min-h-screen p5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -307,48 +305,61 @@ export default function SalesForceDevelopment() {
             d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
           ></path>
         </svg>
-        <div className="container  mx-auto py-20 h-full font-Poppins text-sm text-gray-700 space-y-10 md:flex items-stretch justify-between gap-20">
-          <div className="left space-y-7">
-            <span className="">
+        <div className="container  mx-auto py-20 h-full font-Poppins text-sm text-gray-700 md:space-y-10 space-y-5 md:flex items-stretch justify-between gap-20">
+          <div className="left md:space-y-7 space-y-3">
+            <span className="whitespace-nowrap text-xs md:text-base">
               Dynamic Salesforce Professional Services with
             </span>
-            <h2 className="font-semibold text-4xl leading-10">
+            <h2 className="font-semibold md:text-4xl text:2xl md:leading-10 text-center md:text-justify">
               Salesforce Consulting Partner
             </h2>
             <div className="grid grid-cols-3 gap-5 ">
               <div>
-                <p className="text-[#E13D4B] text-4xl">8+ </p>
-                <p className="text-[#565758] text-lg">
+                <p className="text-[#E13D4B] md:text-4xl text:2xl text-center md:text-left  font-bold">
+                  8+{" "}
+                </p>
+                <p className="text-[#565758] md:text-lg text-xs text-center md:text-left">
                   Salesforce Certified Architect
                 </p>
               </div>
+
               <div>
-                <p className="text-[#E13D4B] text-4xl">{count30}+ </p>
-                <p className="text-[#565758] text-lg">
-                  Salesforce Certified Developers
+                <p className="text-[#E13D4B] md:text-4xl text:2xl text-center md:text-left  font-bold">
+                  15+
                 </p>
-              </div>
-              <div>
-                <p className="text-[#E13D4B] text-4xl">15+</p>
-                <p className="text-[#565758] text-lg">
+                <p className="text-[#565758] md:text-lg text-center text-xs md:text-left">
                   Salesforce Administrators
                 </p>
               </div>
               <div>
-                <p className="text-[#E13D4B] text-4xl">{count}+ </p>
-                <p className="text-[#565758] text-lg">
+                <p className="text-[#E13D4B] md:text-4xl text:2xl text-center md:text-left  font-bold">
+                  {count30}+{" "}
+                </p>
+                <p className="text-[#565758] md:text-lg text-center text-xs md:text-left">
+                  Salesforce Certified Developers
+                </p>
+              </div>
+              <div>
+                <p className="text-[#E13D4B] md:text-4xl text:2xl text-center md:text-left  font-bold">
+                  {count}+{" "}
+                </p>
+                <p className="text-[#565758] md:text-lg text-center text-xs md:text-left">
                   Salesforce Commerce Cloud Developers
                 </p>
               </div>
               <div>
-                <p className="text-[#E13D4B] text-4xl">10+</p>
-                <p className="text-[#565758] text-lg">
+                <p className="text-[#E13D4B] md:text-4xl text:2xl text-center md:text-left  font-bold">
+                  10+
+                </p>
+                <p className="text-[#565758] md:text-lg text-xs text-center md:text-left">
                   Salesforce Marketing Cloud & Pardot Developers
                 </p>
               </div>
               <div>
-                <p className="text-[#E13D4B] text-4xl">7+</p>
-                <p className="text-[#565758] text-lg">
+                <p className="text-[#E13D4B] md:text-4xl text:2xl text-center md:text-left  font-bold">
+                  7+
+                </p>
+                <p className="text-[#565758] md:text-lg text-center md:text-left text-xs">
                   Salesforce CPQ Developers
                 </p>
               </div>
@@ -366,15 +377,13 @@ export default function SalesForceDevelopment() {
           <motion.img
             src="./Salesforce-Service-Cloud.png"
             alt="saleforce"
-            className=" object-cover md:h-[450px] md:w-[500px]"
+            className=" object-cover md:h-[450px] md:w-[500px] "
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
               rotate: -360,
               transition: {
-                // Repeat the animation indefinitely
-                // Reverse the animation on each repeat
-                duration: 1, // Duration of each animation cycle
+                duration: 1,
               },
             }}
           />
@@ -392,8 +401,8 @@ export default function SalesForceDevelopment() {
           ></path>
         </svg>
       </section>
-      <section className={`sectionBox p5 py-14 space-y-5 pb-0`}>
-        <h2 className="text-[#0b2653] font-bold text-[22px] leading-8 text-center mb-20 md:mb-1">
+      <section className={`sectionBox p5 py-14 space-y-5 pb-0 `}>
+        <h2 className="text-[#0b2653]  font-bold md:text-[22px] text-center md:text-justify text-xs md:leading-8  mb-20 md:mb-1 ">
           Empower Your Business Evolution through Our Salesforce Development
           Collaboration
         </h2>
@@ -432,22 +441,22 @@ export default function SalesForceDevelopment() {
             d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
           ></path>
         </svg>
-        <div className="container mx-auto py-16 space-y-7">
-          <p className="text-center text-sm text-[#E13D4B] font-semibold">
+        <div className="container mx-auto md:py-16 py-20 md:space-y-7 space-y-4">
+          <p className="text-center text-sm text-[#E13D4B] font-semibold text[18px]">
             InfoDrive Solutions is home to 100+ Salesforce Certified Experts!
           </p>
-          <h2 className="text-center md:text-3xl   font-semibold text-xl text-[#565758] pb-10 ">
+          <h2 className="text-center md:text-3xl   font-semibold text-[16px] text-[#565758] md:pb-10 ">
             Benefits Of Hiring A Salesforce Consulting Partner
           </h2>
 
-          <div className="md:flex items-center justify-between md:px-32 p5 gap-10">
+          <div className="md:flex items-center justify-between md:px-32 p5 gap-10 ">
             <img
               src="./saforcePatner.png"
               alt="saleforce patner"
-              className="md:w-1/3"
+              className="md:w-1/3  mx-auto md:mx-0"
               style={{ zIndex: 100 }}
             />
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-10 md:mt-0">
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-10 md:mt-0 ">
               <div className="flex gap-3 items-center">
                 <FcComboChart size={42} />
                 <p className="text-[#565758] font-normal whitespace-nowrap">
@@ -486,9 +495,9 @@ export default function SalesForceDevelopment() {
                 <FcDataRecovery size={42} />
                 <p className="text-[#565758] font-normal">Scalability</p>
               </div>
-              <div className="flex gap-3 items-center">
-                <FcFlowChart size={42} />
-                <p className="text-[#565758] font-normal whitespace-nowrap">
+              <div className="flex gap-1 items-center">
+                <FcEnteringHeavenAlive size={62} />
+                <p className="text-[#565758] font-normal md:whitespace-nowrap">
                   Troubleshoot and Optimization
                 </p>
               </div>
@@ -512,7 +521,7 @@ export default function SalesForceDevelopment() {
         </svg>
       </section>
       <section className="certificate   p5">
-        <div className="container mx-auto md:flex items-center justify-between   gap-20 h-full py-14">
+        <div className="container mx-auto md:flex items-center justify-between  p5 gap-20 h-full py-14">
           <motion.div
             className="left"
             animate={{
@@ -529,21 +538,23 @@ export default function SalesForceDevelopment() {
           >
             <img src="./salesforce-certifications.jpg" alt="saleforce" />
           </motion.div>
-          <div className="right space-y-7 mt-10 md:mt-0">
-            <div>
+          <div className="right md:space-y-7 space-y-4 mt-10 md:mt-0">
+            <div className="">
               <p
-                className="text-[#0694CB] text-4xl font-semibold"
+                className="text-[#0694CB] md:text-4xl text-xl font-semibold text-center md:text-justify"
                 ref={numberRef}
               >
                 {count100}+
               </p>
-              <p className="text-[#565758]">Certifications</p>
+              <p className="text-[#565758] text-center md:text-justify">
+                Certifications
+              </p>
             </div>
             <div>
-              <p className="text-[#0694CB] text-4xl font-semibold">
+              <p className="text-[#0694CB] md:text-4xl text-xl font-semibold text-center md:text-justify">
                 4.7/5 Rating
               </p>
-              <p className="text-[#565758]">
+              <p className="text-[#565758] text-center md:text-justify">
                 On All Salesforce Development Services
               </p>
             </div>
@@ -573,7 +584,9 @@ export default function SalesForceDevelopment() {
               transition={{ duration: 1 }}
               className=" shadow-md rounded-lg   md:mt-32 md:max-w-max p-5 md:-ml-52"
             >
-              <h2>Salesforce Development Partnership Advantages</h2>
+              <h2 className="text-center md:text-justify">
+                Salesforce Development Partnership Advantages
+              </h2>
               <Typography
                 gutterBottom
                 variant="h5"
@@ -617,12 +630,14 @@ export default function SalesForceDevelopment() {
               transition={{ duration: 1 }}
               className=" shadow-md rounded-lg  md:mr-auto  md:max-w-max p-5 "
             >
-              <h2>Cutting-Edge Expertise</h2>
+              <h2 className="text-center md:text-justify">
+                Cutting-Edge Expertise
+              </h2>
               <Typography
                 gutterBottom
                 variant="h5"
                 component="div"
-                className="px-3"
+                className="px-3 text-center mx-auto"
               >
                 <ul style={{ listStyleType: "circle" }}>
                   <li className="text-justify">
@@ -653,15 +668,17 @@ export default function SalesForceDevelopment() {
             <img
               src="./s3.jpg"
               alt="sale1"
-              className="  w-[80%] md:w-1/3  md:ml-0"
+              className="  w-[80%] md:w-1/3 mx-auto md:mx-0  md:ml-0 "
             />
             <motion.div
               initial={{ opacity: 0, y: "100%" }}
               whileInView={{ opacity: 1, y: 0, visibility: "visible" }}
               transition={{ duration: 1 }}
-              className=" shadow-md rounded-lg md:max-w-max md:ml-auto p-5 "
+              className=" shadow-md rounded-lg md:max-w-max  md:ml-auto p-5  "
             >
-              <h2>Client-Centric Solutions </h2>
+              <h2 className="text-center md:text-justify">
+                Client-Centric Solutions{" "}
+              </h2>
               <Typography
                 gutterBottom
                 variant="h5"
@@ -723,10 +740,11 @@ export default function SalesForceDevelopment() {
           Project Delivery and Support
         </Typography>
         <Typography
-          className="  text-gray-600 text-center w-full  mx-auto "
+          className=" text-center w-full  mx-auto "
           gutterBottom
           variant="h5"
           component="div"
+          style={{ color: "#4e4e50" }}
           // style={{ width: "auto" }}
         >
           Our seasoned team of Salesforce developers is committed to maximizing
@@ -747,8 +765,9 @@ export default function SalesForceDevelopment() {
                 </Typography>
 
                 <Typography
-                  className=" text-gray-600 text-justify tracking-tighter"
+                  className=" text-justify tracking-tighter "
                   variant="body2"
+                  style={{ color: "#4e4e50" }}
                 >
                   It's the art of fine-tuning the deployment, customization, and
                   everyday use of Salesforce, a powerful CRM platform. Our
@@ -774,7 +793,8 @@ export default function SalesForceDevelopment() {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  className="text-gray-600 text-justify tracking-tighter"
+                  className="text-justify tracking-tighter"
+                  style={{ color: "#4e4e50" }}
                 >
                   Setting up and customizing Salesforce for your organization is
                   what we call Salesforce implementation. It involves installing
@@ -798,8 +818,9 @@ export default function SalesForceDevelopment() {
                 </Typography>
 
                 <Typography
-                  className="pr30 text-gray-600 text-justify tracking-tighter"
+                  className="  text-justify tracking-tighter mx-auto"
                   variant="body2"
+                  style={{ color: "#4e4e50" }}
                 >
                   Tailoring Salesforce to your unique needs is what we do best.
                   Salesforce customization is about making the platform work
@@ -832,7 +853,8 @@ export default function SalesForceDevelopment() {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  className="text-gray-600 text-justify tracking-tighter"
+                  className=" text-justify tracking-tighter"
+                  style={{ color: "#4e4e50" }}
                 >
                   Boosting your Salesforce experience is what Optimization is
                   all about. We strategically fine-tune and enhance your
@@ -858,8 +880,9 @@ export default function SalesForceDevelopment() {
                 </Typography>
 
                 <Typography
-                  className="pr30 text-gray-600 text-justify tracking-tighter"
+                  className="mx-auto text-justify tracking-tighter"
                   variant="body2"
+                  style={{ color: "#4e4e50" }}
                 >
                   Creating apps for Salesforce AppExchange is about crafting
                   solutions that meet unique business needs. These apps,
@@ -883,8 +906,9 @@ export default function SalesForceDevelopment() {
                 </Typography>
 
                 <Typography
-                  className="pr30 text-gray-600 text-justify tracking-tighter"
+                  className="  text-justify tracking-tighter"
                   variant="body2"
+                  style={{ color: "#4e4e50" }}
                 >
                   It's all about ensuring everything runs smoothly and adapts to
                   your changing business needs. From solving issues to regular
@@ -911,7 +935,7 @@ export default function SalesForceDevelopment() {
           We specialize in a wide range of Salesforce products, including
         </Typography>
 
-        <Box sx={{ flexGrow: 1 }} className="-mt-10">
+        <Box sx={{ flexGrow: 1 }} className="md:-mt-10 -mt-7">
           <Grid container spacing={2} className="space-y-1">
             <Grid item xs={4} className="">
               <Card>
@@ -931,7 +955,8 @@ export default function SalesForceDevelopment() {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    className="text-justify"
+                    className="text-justify  mx-auto"
+                    style={{ color: "#4e4e50" }}
                   >
                     Comprehensive CRM solution tailored for sales teams. It
                     encompasses tools for effective lead and opportunity
@@ -958,6 +983,7 @@ export default function SalesForceDevelopment() {
                     variant="body2"
                     color="text.secondary"
                     className="text-justify"
+                    style={{ color: "#4e4e50" }}
                   >
                     CRM Solution designed for customer service teams, featuring
                     tools for case management, knowledge management, and live
@@ -983,6 +1009,7 @@ export default function SalesForceDevelopment() {
                     variant="body2"
                     color="text.secondary"
                     className="text-justify"
+                    style={{ color: "#4e4e50" }}
                   >
                     Versatile Marketing Automation Platform with tools for email
                     marketing, social media marketing, and marketing analytics.
@@ -1008,6 +1035,7 @@ export default function SalesForceDevelopment() {
                     variant="body2"
                     color="text.secondary"
                     className="text-justify"
+                    style={{ color: "#4e4e50" }}
                   >
                     Powerful cloud-based e-commerce platform that empowers
                     businesses to efficiently build and manage online stores.
@@ -1034,6 +1062,7 @@ export default function SalesForceDevelopment() {
                     variant="body2"
                     color="text.secondary"
                     className="text-justify"
+                    style={{ color: "#4e4e50" }}
                   >
                     Brings people together by creating digital spaces for
                     organizations to connect with customers, partners, and
@@ -1061,6 +1090,7 @@ export default function SalesForceDevelopment() {
                     variant="body2"
                     color="text.secondary"
                     className="text-justify"
+                    style={{ color: "#4e4e50" }}
                   >
                     It's a go-to spot for businesses looking to spruce up their
                     Salesforce experience with specialized tools. Offering a
@@ -1109,10 +1139,7 @@ export default function SalesForceDevelopment() {
           ))}
         </Carousel>
       </section>
-      <section className="testimonial pb-20 space-y-10">
-        {/* <h2 className="text-[22px] font-Poppins font-bold mx-auto text-center text-[#0b2653]">
-          What Our Customer Says
-        </h2> */}
+      <section className="testimonial md:pb-20 space-y-10">
         <motion.img
           src="./customersays.png"
           alt="customer says"
@@ -1150,13 +1177,15 @@ export default function SalesForceDevelopment() {
           {/* ml-56  */}
 
           {Testimonial.map((item) => (
-            <div className="h-full  p5 md:w-[45vw] shadow-md shadow-gray-600 md:p-12 rounded-md  space-x-0 md:mx-auto">
+            <div className="h-full   p5 md:w-[45vw] w-[90vw] shadow-md shadow-gray-600 md:p-12 rounded-md  space-x-0  mx-auto">
               <div className="flex flex-col gap-5 ">
                 <img
                   src={`./logos/${item.image}`}
                   className="object-contain w-48 mx-auto"
                 />
-                <p className="text-justify">{item.text}</p>
+                <p className="text-justify" style={{ color: "#4e4e50" }}>
+                  {item.text}
+                </p>
               </div>
             </div>
           ))}
