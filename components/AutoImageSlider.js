@@ -39,7 +39,7 @@ const imagesData = [
     url: "/1.png",
   },
   {
-    url: "/3.png",
+    url: "./images/odoop.jpg",
   },
   {
     url: "/5.png",
