@@ -237,7 +237,8 @@ export default function leadForm() {
               className="leftLeadFormBox "
               style={{ background: "black", opacity: "0.9" }}
             >
-              <Grid item xs={12} className="contactUsB contactUsB1">
+              {/* remove contactUsB1 from here */}
+              <Grid item xs={12} className="contactUsB ">
                 <Card>
                   <CardContent>
                     <Typography gutterBottom variant="h7" component="div">
