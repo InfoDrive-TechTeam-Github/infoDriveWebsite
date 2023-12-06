@@ -412,7 +412,7 @@ export default function SalesForceDevelopment() {
               gutterBottom
               variant="h5"
               component="div"
-              className="w100 text-justify"
+              className="w100 md:text-justify"
               sx={{ mt: -10 }}
             >
               Salesforce stands as a pinnacle in customer relationship
@@ -594,27 +594,27 @@ export default function SalesForceDevelopment() {
                 className="px-3"
               >
                 <ul style={{ listStyleType: "circle" }}>
-                  <li className="text-justify">
+                  <li className="md:text-justify mx-3">
                     <span className="font-bold">Comprehensive Support</span> -
-                    <span className="text-justify">
+                    <span className="">
                       Access a diverse array of resources and support from
                       Salesforce, encompassing training, marketing, and
                       technical assistance.
                     </span>
                   </li>
 
-                  <li className="text-justify">
+                  <li className="md:text-justify mx-3">
                     <span className="font-bold">Cutting-Edge Expertise</span> -
-                    <span className="text-justify">
+                    <span className="">
                       Stay abreast of the latest Salesforce products and
                       technologies, ensuring our clients benefit from the most
                       advanced solutions.
                     </span>
                   </li>
 
-                  <li className="text-justify">
+                  <li className="md:text-justify mx-3">
                     <span className="font-bold">Client-Centric Solutions</span>{" "}
-                    <span className="text-justify">
+                    <span className="">
                       - Leverage our partnership to deliver optimal solutions
                       tailored to meet the specific needs of our clients.
                     </span>
@@ -640,17 +640,17 @@ export default function SalesForceDevelopment() {
                 className="px-3 text-center mx-auto"
               >
                 <ul style={{ listStyleType: "circle" }}>
-                  <li className="text-justify">
+                  <li className="md:text-justify text-left mx-3">
                     <span className="font-bold"> Strategic Alliances</span>{" "}
-                    <span className="text-justify">
+                    <span>
                       - Cultivate robust relationships with other leading
                       technology companies, broadening our spectrum of solutions
                       and integrations.
                     </span>
                   </li>
-                  <li className="text-justify">
+                  <li className="md:text-justify text-left mx-3">
                     <span className="font-bold"> Holistic Support </span>
-                    <span className="text-justify">
+                    <span>
                       - Ensure our clients have access to a comprehensive suite
                       of tools and technologies, fostering their success.
                     </span>
@@ -686,17 +686,17 @@ export default function SalesForceDevelopment() {
                 className="px-2"
               >
                 <ul style={{ listStyleType: "circle" }}>
-                  <li className="text-justify">
+                  <li className="md:text-justify mx-3">
                     <span className="font-bold"> Global Presence</span> - Extend
                     our Salesforce development services across Singapore,
                     Malaysia, and India.
                   </li>
-                  <li className="text-justify">
+                  <li className="md:text-justify mx-3">
                     <span className="font-bold">Certified Developers </span>-
                     Boast a team of experienced and certified Salesforce
                     developers with an in-depth understanding of the platform.
                   </li>
-                  <li className="text-justify">
+                  <li className="md:text-justify mx-3">
                     <span className="font-bold">Tailored Solutions</span>:
                     Deliver customized Salesforce applications, integrate
                     seamlessly with third-party systems, and implement
@@ -729,23 +729,22 @@ export default function SalesForceDevelopment() {
         }
       >
         <Typography
-          className="mb0 text-center   mx-auto"
+          className="mb0  text-center  mx-auto md:mx-0 w-full"
           gutterBottom
           variant="h2"
           component="div"
-          // style={{ width: "auto" }}
+          style={{ width: "auto" }}
         >
           Optimizing Success through InfoDrive Solutions Salesforce Managed
           Services: Demonstrating a Proven Record of Excellence in Salesforce
           Project Delivery and Support
         </Typography>
         <Typography
-          className=" text-center w-full  mx-auto "
+          className=" text-center w-full md:whitespace-nowrap mx-auto md:mx-0   "
           gutterBottom
           variant="h5"
           component="div"
           style={{ color: "#4e4e50" }}
-          // style={{ width: "auto" }}
         >
           Our seasoned team of Salesforce developers is committed to maximizing
           your platform benefits. Our array of Salesforce services encompasses:
@@ -758,14 +757,14 @@ export default function SalesForceDevelopment() {
               <CardContent>
                 <Typography
                   variant="h3"
-                  className="mb-2 text-center"
+                  className="mb-2 md:text-center"
                   component="div"
                 >
                   Salesforce Consulting
                 </Typography>
 
                 <Typography
-                  className=" text-justify tracking-tighter "
+                  className=" md:text-justify  tracking-tighter "
                   variant="body2"
                   style={{ color: "#4e4e50" }}
                 >
@@ -784,7 +783,7 @@ export default function SalesForceDevelopment() {
               <CardContent>
                 <Typography
                   variant="h3"
-                  className="bg-transparent text-center mb-2"
+                  className="bg-transparent md:text-center mb-2"
                   component="div"
                 >
                   Salesforce Implementation
@@ -793,7 +792,7 @@ export default function SalesForceDevelopment() {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  className="text-justify tracking-tighter"
+                  className="md:text-justify tracking-tighter"
                   style={{ color: "#4e4e50" }}
                 >
                   Setting up and customizing Salesforce for your organization is
@@ -811,14 +810,14 @@ export default function SalesForceDevelopment() {
               <CardContent>
                 <Typography
                   variant="h3"
-                  className="mb-2 text-center"
+                  className="mb-2 md:text-center"
                   component="div"
                 >
                   Salesforce Customization
                 </Typography>
 
                 <Typography
-                  className="  text-justify tracking-tighter mx-auto"
+                  className="  md:text-justify tracking-tighter mx-auto"
                   variant="body2"
                   style={{ color: "#4e4e50" }}
                 >
@@ -844,7 +843,7 @@ export default function SalesForceDevelopment() {
               <CardContent>
                 <Typography
                   variant="h3"
-                  className="bg-transparent text-center mb-2"
+                  className="bg-transparent md:text-center mb-2"
                   component="div"
                 >
                   Salesforce Optimization
@@ -853,7 +852,7 @@ export default function SalesForceDevelopment() {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  className=" text-justify tracking-tighter"
+                  className=" md:text-justify tracking-tighter"
                   style={{ color: "#4e4e50" }}
                 >
                   Boosting your Salesforce experience is what Optimization is
@@ -873,14 +872,14 @@ export default function SalesForceDevelopment() {
               <CardContent>
                 <Typography
                   variant="h3"
-                  className="mb-2 text-center"
+                  className="mb-2 md:text-center"
                   component="div"
                 >
                   Salesforce AppExchange
                 </Typography>
 
                 <Typography
-                  className="mx-auto text-justify tracking-tighter"
+                  className="mx-auto md:text-justify tracking-tighter"
                   variant="body2"
                   style={{ color: "#4e4e50" }}
                 >
@@ -899,14 +898,14 @@ export default function SalesForceDevelopment() {
               <CardContent>
                 <Typography
                   variant="h3"
-                  className="mb-2 text-center"
+                  className="mb-2 md:text-center"
                   component="div"
                 >
                   Support and Maintenance
                 </Typography>
 
                 <Typography
-                  className="  text-justify tracking-tighter"
+                  className="  md:text-justify tracking-tighter"
                   variant="body2"
                   style={{ color: "#4e4e50" }}
                 >
@@ -929,7 +928,7 @@ export default function SalesForceDevelopment() {
         <Typography
           gutterBottom
           variant="h2"
-          className="mb-1 text-center mx-auto"
+          className="mb-1 md:text-center mx-auto"
           component="div"
         >
           We specialize in a wide range of Salesforce products, including
@@ -940,7 +939,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={4} className="">
               <Card>
                 <CardContent>
-                  <div className="flex items-center gap-2 justify-center">
+                  <div className="flex items-center gap-2 md:justify-center">
                     <FcSalesPerformance size={52} />
                     <Typography
                       gutterBottom
@@ -955,7 +954,7 @@ export default function SalesForceDevelopment() {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    className="text-justify  mx-auto"
+                    className="md:text-justify  mx-auto"
                     style={{ color: "#4e4e50" }}
                   >
                     Comprehensive CRM solution tailored for sales teams. It
@@ -972,7 +971,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={4}>
               <Card>
                 <CardContent>
-                  <div className="flex items-center justify-center gap-2">
+                  <div className="flex items-center md:justify-center gap-2">
                     <FcServices size={52} />
                     <Typography gutterBottom variant="h3" component="div">
                       Service Cloud
@@ -982,7 +981,7 @@ export default function SalesForceDevelopment() {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    className="text-justify"
+                    className="md:text-justify"
                     style={{ color: "#4e4e50" }}
                   >
                     CRM Solution designed for customer service teams, featuring
@@ -998,7 +997,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={4}>
               <Card>
                 <CardContent>
-                  <div className="flex items-center justify-center gap-2">
+                  <div className="flex items-center md:justify-center gap-2">
                     <FcBullish size={52} />
                     <Typography gutterBottom variant="h3" component="div">
                       Marketing Cloud
@@ -1008,7 +1007,7 @@ export default function SalesForceDevelopment() {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    className="text-justify"
+                    className="md:text-justify"
                     style={{ color: "#4e4e50" }}
                   >
                     Versatile Marketing Automation Platform with tools for email
@@ -1024,7 +1023,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={4}>
               <Card>
                 <CardContent>
-                  <div className="flex items-center justify-center gap-2">
+                  <div className="flex items-center md:justify-center gap-2">
                     <FcInTransit size={52} />
                     <Typography gutterBottom variant="h3" component="div">
                       Commerce Cloud
@@ -1034,7 +1033,7 @@ export default function SalesForceDevelopment() {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    className="text-justify"
+                    className="md:text-justify"
                     style={{ color: "#4e4e50" }}
                   >
                     Powerful cloud-based e-commerce platform that empowers
@@ -1051,7 +1050,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={4}>
               <Card>
                 <CardContent>
-                  <div className="flex items-center justify-center gap-2">
+                  <div className="flex items-center md:justify-center gap-2">
                     <FcConferenceCall size={52} />
                     <Typography gutterBottom variant="h3" component="div">
                       Community Cloud
@@ -1061,7 +1060,7 @@ export default function SalesForceDevelopment() {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    className="text-justify"
+                    className="md:text-justify"
                     style={{ color: "#4e4e50" }}
                   >
                     Brings people together by creating digital spaces for
@@ -1079,7 +1078,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={4}>
               <Card>
                 <CardContent>
-                  <div className="flex items-center justify-center gap-2">
+                  <div className="flex items-center md:justify-center gap-2">
                     <FcRefresh size={52} />
                     <Typography gutterBottom variant="h3" component="div">
                       AppExchange
@@ -1089,7 +1088,7 @@ export default function SalesForceDevelopment() {
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    className="text-justify"
+                    className="md:text-justify"
                     style={{ color: "#4e4e50" }}
                   >
                     It's a go-to spot for businesses looking to spruce up their
@@ -1183,7 +1182,10 @@ export default function SalesForceDevelopment() {
                   src={`./logos/${item.image}`}
                   className="object-contain w-48 mx-auto"
                 />
-                <p className="text-justify" style={{ color: "#4e4e50" }}>
+                <p
+                  className="text-justify text-[16px]"
+                  style={{ color: "#4e4e50" }}
+                >
                   {item.text}
                 </p>
               </div>
