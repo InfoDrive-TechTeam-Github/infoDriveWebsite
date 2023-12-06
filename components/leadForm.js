@@ -116,7 +116,7 @@ export default function leadForm() {
   return (
     <>
       <section
-        className={`sectionBox locationBox contactUsArea leadForm md:-mt-20 py-7 p5`}
+        className={`sectionBox locationBox contactUsArea leadForm md:mt-5 py-7 p5`}
       >
         <Box sx={{ flexGrow: 1 }} className="locationContent">
           <Grid container spacing={0}>
