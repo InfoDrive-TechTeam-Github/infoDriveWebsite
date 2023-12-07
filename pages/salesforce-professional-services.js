@@ -521,11 +521,11 @@ export default function SalesForceDevelopment() {
         </svg>
       </section>
       <section className="certificate container max-w-7xl  p5">
-        <div className="container mx-auto md:flex items-center justify-between  p5 gap-20 h-full py-14">
+        <div className="container mx-auto md:flex items-center justify-between  p5 gap-20 h-full py-14 md:pl-20">
           <motion.div
             className="left"
             animate={{
-              scale: 1.1,
+              scale: 1,
               textShadow: "0px 0px 8px rgb(255,255,255)",
               boxShadow: "0px 0px 8px rgb(255,255,255)",
 
@@ -577,12 +577,12 @@ export default function SalesForceDevelopment() {
 
         <div className="flex flex-col gap-2 container  mx-auto ">
           <div className="md:flex items-center justify-between h-full md:-mt-10">
-            <img src="./s1.jpg" alt="sale1" className="w-[550px] mt-32" />
+            <img src="./s1.jpg" alt="sale1" className="w-[550px] mt-32 mr-20" />
             <motion.div
               initial={{ opacity: 0, y: "-100%" }}
               whileInView={{ opacity: 1, y: 0, visibility: "visible" }}
               transition={{ duration: 1 }}
-              className=" shadow-md rounded-lg   md:mt-32 md:max-w-max p-5 md:-ml-52"
+              className=" shadow-md rounded-lg   md:mt-32 md:max-w-max p-5 md:-ml-48"
             >
               <h2 className="text-center md:text-justify">
                 Salesforce Development Partnership Advantages
