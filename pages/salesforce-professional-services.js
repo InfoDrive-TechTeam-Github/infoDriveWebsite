@@ -185,16 +185,15 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Salesforce Consulting Service & Development Partner Company in
-          Singapore, Malaysia, and India - InfoDrive Solutions
+          Salesforce Consulting, Implementation, and Managed Services
         </title>
         <meta
           name="description"
-          content="InfoDrive Solutions is a leading Salesforce consulting and development partner company offering expert services in Singapore, Malaysia, and India. Partner with us for customized Salesforce solutions."
+          content="Elevate your business with expert Salesforce Consulting, Professional Services, and Customization. InfoDrive Solutions offers tailored Salesforce Implementation and Managed Services to optimize your CRM strategy."
         />
         <meta
           name="keywords"
-          content="Salesforce Consulting Company, Salesforce Development Partner Company, Salesforce Service Provider in Singapore, Salesforce Consulting Company in Singapore, Salesforce Consulting Company in Malaysia, Salesforce Service Provider in Malaysia, Salesforce Consulting Partner in Singapore, Salesforce Consulting Partner in Malaysia, Salesforce Partner Company in Singapore, Salesforce Partner Company in Malaysia, Salesforce Partner Company in India, Professional Salesforce Development services, Salesforce certified consultant"
+          content="Salesforce Partner Company, Salesforce Consulting Services, Salesforce Professional Services, Salesforce Implementation Services, Salesforce Managed Services, Salesforce Customization Services"
         />
         <link
           rel="canonical"

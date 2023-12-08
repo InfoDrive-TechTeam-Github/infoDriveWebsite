@@ -15,6 +15,7 @@
 @tailwind components;
 @tailwind utilities;
 /* CSS variables. */
+
 :root {
   --PhoneInput-color--focus: #03b2cb;
   --PhoneInputInternationalIconPhone-opacity: 0.8;
@@ -36,9 +37,11 @@
   --PhoneInputCountryFlag-borderColor--focus: var(--PhoneInput-color--focus);
   --PhoneInputCountryFlag-backgroundColor--loading: rgba(0, 0, 0, 0.1);
 }
+
 body {
   overflow-x: hidden;
 }
+
 .PhoneInput {
   /* This is done to stretch the contents of this component. */
   display: flex;
@@ -2307,6 +2310,57 @@ img.btnLdr {
 .custom-shape-divider-top-1682658498 .shape-fill {
   fill: #ffffff;
 }
+/* new css */
+.newsectionbox {
+  padding: 80px 0;
+  /* margin: 80px 0; */
+}
+.newsectionbox h1 {
+  font-size: 23px;
+  font-family: Poppins;
+
+  font-weight: 700;
+
+  line-height: 33px;
+  color: #0b2653;
+}
+.newsectionbox h2 {
+  font-size: 22px;
+  font-family: Poppins;
+  width: 760px;
+  font-weight: 700;
+  /* padding-top: 30px; */
+  line-height: 33px;
+  color: #0b2653;
+}
+.newsectionbox h3 {
+  font-size: 16px;
+  color: #e13d4b;
+  font-family: Poppins;
+  font-weight: 700;
+}
+.newsectionbox h5 {
+  /* width: 668px; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #4e4e50;
+  padding-top: 10px;
+  font-family: Poppins;
+}
+.newsectionbox p {
+  width: 668px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #4e4e50;
+  padding-top: 10px;
+  font-family: Poppins;
+}
 
 @media (min-width: 376px) and (max-width: 619px) {
   .ourCoreTeam .MuiCardContent-root {
@@ -2381,5 +2435,14 @@ img.btnLdr {
   }
   .smallIcon {
     @apply text-sm;
+  }
+  .newsectionbox h1 {
+    font-size: 14px;
+    font-family: Poppins;
+    width: 60%;
+    font-weight: 700;
+    margin-right: 50px;
+    line-height: 33px;
+    color: #0b2653;
   }
 }
