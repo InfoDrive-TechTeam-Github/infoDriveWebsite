@@ -2351,7 +2351,7 @@ img.btnLdr {
   font-family: Poppins;
 }
 .newsectionbox p {
-  width: 668px;
+  /* width: 668px; */
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

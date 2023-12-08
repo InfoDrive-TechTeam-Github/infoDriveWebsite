@@ -87,7 +87,74 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
+      <section className={`newsectionbox p5 mt-10 h-full`}>
+        <div className="container max-w-5xl mx-auto    h-full w-full ">
+          <div className="flex md:flex-row flex-col gap-10 items-start justify-between md:gap-20 w-full h-full">
+            <div>
+              <h1 className="text-justify ">
+                Elevate Your Sales Process Unleash the Power of Sales Cloud &
+                Service Cloud - A Cutting-Edge Business Solution offering a
+                unified platform to simplify and manage your sales activities.
+              </h1>
 
+              {/* <img src="./sales12.png" alt="sale and service" className="" /> */}
+              <div className="right shadow-md shadow-slate-500 rounded-md p-5  mt-10 ">
+                <img
+                  className="h-64 w-[80%] border mx-auto -mt-14 shadow-lg rounded-md"
+                  src="./service.jpg"
+                />
+                <div>
+                  <Typography
+                    gutterBottom
+                    variant="h1"
+                    component="h1"
+                    className="text-center mx-auto mt-5"
+                  >
+                    Salesforce Service Cloud Services
+                  </Typography>
+                  <h5>
+                    Salesforce Service Cloud, a robust customer service
+                    platform, empowers businesses to efficiently manage customer
+                    interactions and support inquiries across diverse channels
+                    such as phone, email, chat, and social media. Its rich set
+                    of tools and features, including case management, knowledge
+                    management, and community engagement, equips businesses to
+                    deliver personalized, efficient, and consistently
+                    exceptional support to their customers.
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div className="left shadow-md shadow-slate-500 rounded-md p-5  h-full ">
+              <img
+                className="h-64 w-[80%] border mx-auto -mt-14 shadow-lg rounded-md"
+                src="./businessman-with-cloud-icons.jpg"
+              />
+              <div>
+                <Typography
+                  gutterBottom
+                  variant="h1"
+                  component="h1"
+                  className="text-center mx-auto mt-5"
+                >
+                  Salesforce Sales Cloud Services
+                </Typography>
+                <h5>
+                  Salesforce Sales Cloud stands as a potent tool for effectively
+                  managing customer interactions and data across the entire
+                  customer lifecycle – from lead inception through conversion to
+                  retention. Boasting a customizable interface and a robust
+                  feature set, Salesforce Sales Cloud can be finely tuned to
+                  align with the specific needs of your business. Our service
+                  offerings extend to Salesforce Sales Cloud implementation and
+                  consulting in Singapore, Malaysia, and India.
+                </h5>
+              </div>
+            </div>
+            {/* right */}
+          </div>
+        </div>
+      </section>
       <section className="newsectionbox text-white relative  ocean pb-0 -mt-10 ">
         <div className="container max-w-5xl mx-auto    h-full w-full ">
           <div className=" flex md:flex-row flex-col items-center justify-between">
@@ -96,9 +163,6 @@ export default function SalesForceDevelopment() {
               Service Cloud - A Cutting-Edge Business Solution offering a
               unified platform to simplify and manage your sales activities.
             </h1>
-            <div className="hero md:w-1/2">
-              <img src="./sales12.png" alt="sale and service" className="" />
-            </div>
           </div>
           <Button
             href="/contact-us.html"
@@ -204,135 +268,105 @@ export default function SalesForceDevelopment() {
         </div>
       </section>
       {/* advantage */}
-      {/* <section className={`newsectionbox p5  h-full -mt-10 space-y-5`}>
+      <section className={`newsectionbox p5  h-full -mt-10 space-y-5`}>
         <div className="container max-w-5xl mx-auto    h-full w-full  ">
           <h2>Features of Sales Cloud</h2>
-        </div>
-        <div className="flex justify-center w-full ">
-          <img
-            alt="advantage sale and service "
-            src="./sales 1 3.png"
-            className="w-1/2 "
-          />
-        </div>
-      </section> */}
-      <section className="hero  text-black  max-w-6xl mx-auto">
-        <div
-          className="md:flex justify-between items-center"
-          style={{ flex: 2 }}
-        >
-          <div className="right" style={{ flex: 3 }}>
-            <div className="relative container mx-auto px-6 flex flex-col space-y-8 ">
-              <div className="absolute z-0 w-2 h-full bg-white shadow-md inset-0 left-17 md:mx-auto md:right-0 md:left-0"></div>
-              <div className="relative z-10">
-                {/* <motion.img
-                  src="https://img.freepik.com/free-vector/gradient-crm-illustration_23-2149379177.jpg?w=740&t=st=1684603989~exp=1684604589~hmac=fe21bbcfd8ab34859ee3c8db1ce74d5f56954b6ce0155e80ccfa729f47e57f82"
-                  alt=""
-                  className="timeline-img1"
-                  animate={{
-                    // x: [0, 10, 0], // Animation values for the x-axis
-                    rotate: -360,
-                    transition: {
-                      delay: 1,
-                      repeat: Infinity, // Repeat the animation indefinitely
-                      repeatType: "loop", // Reverse the animation on each repeat
-                      duration: 5, // Duration of each animation cycle
-                    },
-                  }}
-                /> */}
-                <div className="timeline-container1">
-                  <div className="timeline-pointer" aria-hidden="true"></div>
-                  <div className="bg-white p-6 rounded-md shadow-md">
-                    <span className="font-bold text-red-600 text-sm tracking-wide">
-                      Get to Know Your Customers:
-                    </span>
-                    <p className="pt-1 text-[#00000099] text-sm leading-6">
-                      Salesforce Sales Cloud consolidates customer information,
-                      interactions, and transactions, offering your sales team a
-                      comprehensive view. This insight helps tailor approaches
-                      to better meet customer needs.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="relative z-10">
-                {/* <motion.img
-                  src="https://img.freepik.com/free-photo/standard-quality-control-concept-m_23-2150041849.jpg?w=996&t=st=1684604186~exp=1684604786~hmac=69b4babd71ec1f29b482eb47ca5ff214259191dea09330dfe60b525f79366243"
-                  alt=""
-                  className="timeline-img1"
-                  animate={{
-                    // x: [0, 10, 0], // Animation values for the x-axis
-                    rotate: 360,
-                    transition: {
-                      delay: 1,
-                      repeat: Infinity, // Repeat the animation indefinitely
-                      repeatType: "loop", // Reverse the animation on each repeat
-                      duration: 5, // Duration of each animation cycle
-                    },
-                  }}
-                /> */}
-                <div className="timeline-container1 timeline-container-left1">
-                  <div
-                    class="timeline-pointer timeline-pointer-left"
-                    aria-hidden="true"
-                  ></div>
-                  <div className="bg-white p-6 rounded-md shadow-md">
-                    <span className="font-bold text-red-600 text-sm tracking-wide">
-                      Boost productivity and efficiency
-                    </span>
-                    <h1 className="text-xl font-bold pt-1 text-[#0b2653]">
-                      Advanced ATS and CRM Features
-                    </h1>
-                    <p className="pt-1 text-[#00000099] text-sm leading-6">
-                      Unlock the full potential of your sales team with our
-                      advanced ATS and CRM features. From automated applicant
-                      tracking to seamless integration with your existing
-                      systems, our solution empowers your team to work smarter
-                      and achieve better results.
-                    </p>
-                  </div>
-                </div>
-                {/**chatbot */}
 
-                {/**chatbot end*/}
-              </div>
-              <div className="relative z-10 ">
-                {/* <motion.img
-                  src="https://img.freepik.com/free-photo/customer-relationship-management-concept_23-2150038409.jpg?w=996&t=st=1684755663~exp=1684756263~hmac=d0994d271fdf751c1a3d997a803546afc0706a9cf2a150463698880843ae21b0"
-                  alt=""
-                  className="timeline-img1"
-                  animate={{
-                    // x: [0, 10, 0], // Animation values for the x-axis
-                    rotate: -360,
-                    transition: {
-                      delay: 1,
-                      repeat: Infinity, // Repeat the animation indefinitely
-                      repeatType: "loop", // Reverse the animation on each repeat
-                      duration: 5, // Duration of each animation cycle
-                    },
-                  }}
-                /> */}
-                {/* timeline */}
-                <div className="timeline-container1">
-                  <div className="timeline-pointer" aria-hidden="true"></div>
-                  <div className="bg-white p-6 rounded-md shadow-md mb-5">
-                    <span className="font-bold text-red-600 text-sm tracking-wide">
-                      Stay organized and informed
-                    </span>
-                    <h1 className="text-xl font-bold pt-1 text-[#0b2653]">
-                      Centralized Data Management
-                    </h1>
-                    <p className="pt-1 text-[#00000099] text-sm leading-6">
-                      With our ATS and CRM solution, you can centralize all your
-                      sales and applicant data in one place. From contact
-                      details and communication history to application status
-                      and performance metrics, our system provides a
-                      comprehensive view of your business, enabling you to make
-                      data-Dryvn decisions and stay organized.
-                    </p>
-                  </div>
-                </div>
-              </div>
+          <div className="flex justify-center w-full ">
+            <img
+              alt="advantage sale and service "
+              src="./sales 1 3.png"
+              className="w-1/2 "
+            />
+          </div>
+          <div className="grid grid-cols-2 gap-10 mt-5">
+            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+              <span className="font-bold text-red-600 text-sm tracking-wide">
+                Get to Know Your Customers:
+              </span>
+
+              <p className="pt-1 text-[#00000099] text-sm leading-6 ">
+                Salesforce Sales Cloud consolidates customer information,
+                interactions, and transactions, offering your sales team a
+                comprehensive view. This insight helps tailor approaches to
+                better meet customer needs.
+              </p>
+            </div>
+            {/* second */}
+            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+              <span className="font-bold text-red-600 text-sm tracking-wide">
+                Effortless Lead Management
+              </span>
+
+              <p className="pt-1 text-[#00000099] text-sm leading-6 ">
+                Excelling in lead management, the platform aids in tracking and
+                prioritizing leads. With features like lead scoring and
+                automated workflows, your team can focus on promising
+                opportunities, boosting conversion rates.
+              </p>
+            </div>
+            {/* third */}
+            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+              <span className="font-bold text-red-600 text-sm tracking-wide">
+                Tailored to Your Needs
+              </span>
+
+              <p className="pt-1 text-[#00000099] text-sm leading-6 ">
+                The highly customizable interface of Salesforce Sales Cloud
+                allows businesses to adapt the platform to specific
+                requirements. This flexibility ensures seamless alignment with
+                unique sales processes.
+              </p>
+            </div>
+            {/* 4 */}
+            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+              <span className="font-bold text-red-600 text-sm tracking-wide">
+                Time-Saving Workflow Automation:
+              </span>
+
+              <p className="pt-1 text-[#00000099] text-sm leading-6 ">
+                Standout features include automating repetitive tasks, saving
+                time, and reducing errors. This empowers your sales team to
+                concentrate on high-value activities.
+              </p>
+            </div>
+            {/* 5 */}
+            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+              <span className="font-bold text-red-600 text-sm tracking-wide">
+                Stay Agile with Mobile Accessibility:
+              </span>
+
+              <p className="pt-1 text-[#00000099] text-sm leading-6 ">
+                Robust mobile capabilities enable your sales team to access
+                crucial information on the go, fostering agility and
+                responsiveness in todays fast-paced business environment.
+              </p>
+            </div>
+            {/* 6 */}
+            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+              <span className="font-bold text-red-600 text-sm tracking-wide">
+                Real-time Insights with Analytics
+              </span>
+
+              <p className="pt-1 text-[#00000099] text-sm leading-6 ">
+                Salesforce Sales Cloud provides powerful analytics and reporting
+                tools, offering real- time insights into sales performance. This
+                data-driven approach facilitates informed decision-making and
+                strategy refinement.
+              </p>
+            </div>
+            {/* 7 */}
+            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+              <span className="font-bold text-red-600 text-sm tracking-wide">
+                Seamless Integration for Efficiency:
+              </span>
+
+              <p className="pt-1 text-[#00000099] text-sm leading-6 ">
+                The platform seamlessly integrates with third-party
+                applications, ensuring a unified ecosystem that connects sales
+                with other business functions, enhancing collaboration and
+                efficiency.
+              </p>
             </div>
           </div>
         </div>
