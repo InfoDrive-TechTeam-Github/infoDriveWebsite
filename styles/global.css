@@ -2327,7 +2327,7 @@ img.btnLdr {
 .newsectionbox h2 {
   font-size: 22px;
   font-family: Poppins;
-  width: 760px;
+  /* width: 760px; */
   font-weight: 700;
   /* padding-top: 30px; */
   line-height: 33px;
@@ -2360,6 +2360,10 @@ img.btnLdr {
   color: #4e4e50;
   padding-top: 10px;
   font-family: Poppins;
+}
+.sales-service {
+  background: url("images/SandS.jpg");
+  height: 600px;
 }
 
 @media (min-width: 376px) and (max-width: 619px) {
