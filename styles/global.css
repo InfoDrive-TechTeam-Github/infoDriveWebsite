@@ -2361,6 +2361,7 @@ img.btnLdr {
   padding-top: 10px;
   font-family: Poppins;
 }
+
 .sales-service {
   background: url("images/SandS.jpg");
   height: 600px;
@@ -2441,12 +2442,24 @@ img.btnLdr {
     @apply text-sm;
   }
   .newsectionbox h1 {
-    font-size: 14px;
-    font-family: Poppins;
-    width: 60%;
-    font-weight: 700;
-    margin-right: 50px;
-    line-height: 33px;
-    color: #0b2653;
+    font-size: 10px;
+    line-height: 20px;
+    padding-top: 15px;
+    width: 50%;
   }
+  .newsectionbox .readmore {
+    width: max-content;
+    margin-top: 10px;
+  }
+}
+.buttOnread {
+  font-size: 16px;
+  color: #0b2653;
+  font-family: Poppins;
+  background: white;
+  padding-left: 10px !important;
+}
+.buttOnread:hover {
+  color: "white";
+  background-color: #dd3952;
 }

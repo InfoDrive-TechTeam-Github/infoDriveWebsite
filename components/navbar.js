@@ -345,15 +345,18 @@ function DrawerAppBar(props) {
           >
             <List>
               <ListItem disablePadding>
-                <ListItemButton component="a" to="/sales-cloud.html">
-                  <ListItemText primary={"Sales Cloud"} />
+                <ListItemButton
+                  component="a"
+                  to="/sales-cloud-and-service-cloud.html"
+                >
+                  <ListItemText primary={"Sales Cloud & Service Cloud"} />
                 </ListItemButton>
               </ListItem>
-              <ListItem disablePadding>
+              {/* <ListItem disablePadding>
                 <ListItemButton component="a" to="/service-cloud.html">
                   <ListItemText primary={"Service Cloud"} />
                 </ListItemButton>
-              </ListItem>
+              </ListItem> */}
               <ListItem disablePadding>
                 <ListItemButton component="a" to="/marketing-cloud.html">
                   <ListItemText primary={"Marketing Cloud"} />
@@ -779,15 +782,18 @@ function DrawerAppBar(props) {
                 >
                   <List>
                     <ListItem disablePadding>
-                      <ListItemButton component="a" to="/sales-cloud.html">
-                        <ListItemText primary={"Sales Cloud"} />
+                      <ListItemButton
+                        component="a"
+                        to="/sales-cloud-and-service-cloud.html"
+                      >
+                        <ListItemText primary={"Sales Cloud & Service Cloud"} />
                       </ListItemButton>
                     </ListItem>
-                    <ListItem disablePadding>
+                    {/* <ListItem disablePadding>
                       <ListItemButton component="a" to="/service-cloud.html">
                         <ListItemText primary={"Service Cloud"} />
                       </ListItemButton>
-                    </ListItem>
+                    </ListItem> */}
                     <ListItem disablePadding>
                       <ListItemButton component="a" to="/marketing-cloud.html">
                         <ListItemText primary={"Marketing Cloud"} />

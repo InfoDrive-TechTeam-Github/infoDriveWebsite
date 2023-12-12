@@ -43,33 +43,79 @@ import Lottie from "lottie-react";
 import cloufLottie from "../public/new.json";
 import Sale2 from "../public/Sale2.json";
 export default function SalesForceDevelopment() {
+  const [width, setWidth] = React.useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  };
+  React.useEffect(() => {
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const mobileBreakpoint = 768;
   const items = [
     {
-      title: "IN-DEPTH KNOWLEDGE",
-      cardTitle: "IN-DEPTH KNOWLEDGE",
+      title: width <= mobileBreakpoint ? "" : "IN-DEPTH KNOWLEDGE",
+      card: "IN-DEPTH KNOWLEDGE",
+
       cardDetailedText:
         "From planning to security review assistance, and to final deployment, we are well-versed in all.",
     },
     {
-      title: "INDUSTRY EXPERIENCE",
-      cardTitle: "INDUSTRY EXPERIENCE",
+      title: width <= mobileBreakpoint ? "" : "INDUSTRY EXPERIENCE",
+      card: "INDUSTRY EXPERIENCE",
       cardDetailedText:
         "InfoDrive have a team of highly experienced Salesforce professionals with 13+ years of industry experience in the Salesforce domain",
     },
     {
-      title: "SCALABLE SOLUTIONS",
-      cardTitle: "SCALABLE SOLUTIONS",
+      title: width <= mobileBreakpoint ? "" : "SCALABLE SOLUTIONS",
+      card: "SCALABLE SOLUTIONS",
+
       cardDetailedText:
         "InfoDrive profoundly delivers scalable Sales/Service cloud development services that augments the business growth.",
     },
     {
-      title: "FASTER TURNAROUND TIME",
-      cardTitle: "FASTER TURNAROUND TIME",
+      title: width <= mobileBreakpoint ? "" : "FASTER TURNAROUND TIME",
+      card: "FASTER TURNAROUND TIME",
+
       cardDetailedText:
         "Our Sales/Service cloud implementation services are rapid, and help you keep your business run faster and smoother",
     },
   ];
+  // const items = [
+  //   {
+  //     title: "IN-DEPTH KNOWLEDGE",
+  //     card: "IN-DEPTH KNOWLEDGE",
 
+  //     cardDetailedText:
+  //       "From planning to security review assistance, and to final deployment, we are well-versed in all.",
+  //   },
+  //   {
+  //     title: "INDUSTRY EXPERIENCE",
+  //     card: "INDUSTRY EXPERIENCE",
+  //     cardDetailedText:
+  //       "InfoDrive have a team of highly experienced Salesforce professionals with 13+ years of industry experience in the Salesforce domain",
+  //   },
+  //   {
+  //     title: "SCALABLE SOLUTIONS",
+  //     card: "SCALABLE SOLUTIONS",
+
+  //     cardDetailedText:
+  //       "InfoDrive profoundly delivers scalable Sales/Service cloud development services that augments the business growth.",
+  //   },
+  //   {
+  //     title: "FASTER TURNAROUND TIME",
+  //     card: "FASTER TURNAROUND TIME",
+
+  //     cardDetailedText:
+  //       "Our Sales/Service cloud implementation services are rapid, and help you keep your business run faster and smoother",
+  //   },
+  // ];
   return (
     <div>
       <Head>
@@ -120,17 +166,20 @@ export default function SalesForceDevelopment() {
       <Header />
 
       <section className="newsectionbox  text-white relative  ocean pb-0  ">
-        <img src="./SandS.jpg" className="w-full object-cover" />
+        <img
+          src="./SandS.jpg"
+          className="w-full h-[225px] md:h-full object-fit"
+        />
 
         {/* <Lottie
           animationData={cloufLottie}
           loop={true}
           className="absolute bottom-0 mt-40"
         /> */}
-        <div className="container max-w-5xl mx-auto    h-full w-full absolute top-80 px-10">
-          <div className=" flex md:flex-row flex-col items-center justify-between gap-10 ">
+        <div className="container max-w-5xl mx-auto    h-full w-full  p5 absolute top-20 md:top-64 md:left-10">
+          <div className=" flex md:flex-row flex-col md:items-center md:justify-between gap-10 ">
             <h1
-              className="text-justify md:w-1/2 "
+              className="text-justify w-1/2 "
               style={{ zIndex: 5, color: "white" }}
             >
               Elevate Your Sales Process Unleash the Power of Sales Cloud &
@@ -144,7 +193,7 @@ export default function SalesForceDevelopment() {
 
           <Button
             href="/contact-us.html"
-            className="readmore white normalCase mt-5"
+            className="buttOnread   normalCase mt-5"
             variant="text"
             style={{ zIndex: 5 }}
           >
@@ -162,25 +211,25 @@ export default function SalesForceDevelopment() {
           <h2 className="mb-20 text-center">
             Salesforce Sales Cloud Services and Service Cloud Services
           </h2>
-          <div className="flex md:flex-row flex-col gap-10 items-start justify-between md:gap-20 w-full h-full">
+          <div className="flex md:flex-row flex-col gap-14 items-start justify-between md:gap-10 w-full h-full">
             <div
               className="left shadow-md shadow-slate-500 rounded-md p-5 md:w-1/2 h-full "
               style={{ zIndex: 10 }}
             >
               <img
-                className="h-64 w-[80%] border mx-auto -mt-14 shadow-lg rounded-md"
+                className="md:h-64 h-[156px] w-[80%] border mx-auto -mt-14 shadow-lg rounded-md"
                 src="./businessman-with-cloud-icons.jpg"
               />
               <Typography
                 gutterBottom
-                variant="h1"
-                component="h1"
+                variant="h2"
+                component="h2"
                 className="text-center mx-auto mt-5"
               >
                 Salesforce Sales Cloud Services
               </Typography>
               <div>
-                <h5 className="md:text-justify">
+                <h5 className="text-justify">
                   Salesforce Sales Cloud stands as a potent tool for effectively
                   managing customer interactions and data across the entire
                   customer lifecycle – from lead inception through conversion to
@@ -198,19 +247,19 @@ export default function SalesForceDevelopment() {
               style={{ zIndex: 10 }}
             >
               <img
-                className="h-64 w-[80%] border mx-auto -mt-14 shadow-lg rounded-md"
+                className="md:h-64 w-[80%]  border mx-auto -mt-14 shadow-lg rounded-md object-contain"
                 src="./service.jpg"
               />
               <div>
                 <Typography
                   gutterBottom
-                  variant="h1"
-                  component="h1"
+                  variant="h2"
+                  component="h2"
                   className="text-center mx-auto mt-5"
                 >
                   Salesforce Service Cloud Services
                 </Typography>
-                <h5 className="md:text-justify">
+                <h5 className="text-justify">
                   Salesforce Service Cloud, a robust customer service platform,
                   empowers businesses to efficiently manage customer
                   interactions and support inquiries across diverse channels
@@ -237,13 +286,13 @@ export default function SalesForceDevelopment() {
               className="w-[70%]"
             />
           </div>
-          <div className="grid md:grid-cols-2 grid-col-1 gap-5 mt-5">
+          <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5">
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Get to Know Your Customers:
-              </span>
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center ">
+                Get to Know Your Customers
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify ">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify ">
                 Salesforce Sales Cloud consolidates customer information,
                 interactions, and transactions, offering your sales team a
                 comprehensive view. This insight helps tailor approaches to
@@ -252,11 +301,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* second */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Effortless Lead Management
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify ">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify ">
                 Excelling in lead management, the platform aids in tracking and
                 prioritizing leads. With features like lead scoring and
                 automated workflows, your team can focus on promising
@@ -265,11 +314,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* third */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Tailored to Your Needs
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 The highly customizable interface of Salesforce Sales Cloud
                 allows businesses to adapt the platform to specific
                 requirements. This flexibility ensures seamless alignment with
@@ -278,11 +327,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 4 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Time-Saving Workflow Automation:
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Standout features include automating repetitive tasks, saving
                 time, and reducing errors. This empowers your sales team to
                 concentrate on high-value activities.
@@ -290,11 +339,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 5 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Stay Agile with Mobile Accessibility:
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Robust mobile capabilities enable your sales team to access
                 crucial information on the go, fostering agility and
                 responsiveness in todays fast-paced business environment.
@@ -302,11 +351,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 6 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Real-time Insights with Analytics
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Salesforce Sales Cloud provides powerful analytics and reporting
                 tools, offering real- time insights into sales performance. This
                 data-driven approach facilitates informed decision-making and
@@ -315,11 +364,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 7 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Seamless Integration for Efficiency:
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 The platform seamlessly integrates with third-party
                 applications, ensuring a unified ecosystem that connects sales
                 with other business functions, enhancing collaboration and
@@ -328,11 +377,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 8 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Versatile Communication Channels:
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Supporting communication across various channels, including
                 email, chat, and social media, the platform allows your sales
                 team to engage with leads and clients in preferred channels,
@@ -341,11 +390,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 9*/}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Grow at Your Pace with Scalability:
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Whether your business is small or enterprise-level, Salesforce
                 Sales Cloud scales to accommodate growth, adapting to evolving
                 business needs and expanding sales operations.
@@ -353,11 +402,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 10*/}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Stay Current with Updates:
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 As a leading CRM platform, Salesforce regularly introduces
                 updates and innovations, staying ahead of industry trends. This
                 ensures your business benefits from the latest technologies and
@@ -381,13 +430,13 @@ export default function SalesForceDevelopment() {
               className=" "
             />
           </div>
-          <div className="grid md:grid-cols-2 grid-col-1 gap-5 mt-5">
+          <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5">
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Comprehensive Customer Insights
-              </span>
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Service Cloud offers a unified platform to consolidate customer
                 information, interactions, and service history. This 360-degree
                 view empowers your support team to provide personalized and
@@ -396,11 +445,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* second */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Streamlined Case Resolution:
-              </span>
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
+                Streamlined Case Resolution
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Excel in case management with automated workflows and ticketing
                 systems. Service Cloud enables your team to seamlessly track and
                 resolve customer issues, enhancing the resolution process.
@@ -408,11 +457,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* third */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Efficient Knowledge Sharing:
-              </span>
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
+                Efficient Knowledge Sharing
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Equip your support agents with robust knowledge management
                 tools. Service Cloud facilitates easy access and sharing of
                 information, ensuring consistent and accurate responses to
@@ -421,11 +470,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 4 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Versatile Multi-Channel Support:
-              </span>
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
+                Versatile Multi-Channel Support
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Communicate across phone, email, chat, and social media. Service
                 Cloud enables your team to offer assistance where customers feel
                 most comfortable.
@@ -433,11 +482,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 5 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Empower Customers with Self-Service:
-              </span>
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
+                Empower Customers with Self-Service
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Service Cloud provides self-service options like knowledge bases
                 and online portals. Empower customers to find answers
                 independently, reducing the workload on your support team.
@@ -445,23 +494,23 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 6 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Responsive Mobile Support:
-              </span>
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
+                Responsive Mobile Support
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
-                Address customer issues on-the-go with Service Cloud&#39;s
-                robust mobile capabilities. Enhance responsiveness and ensure
-                timely resolution of service requests.
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
+                Address customer issues on-the-go with Service Cloud robust
+                mobile capabilities. Enhance responsiveness and ensure timely
+                resolution of service requests.
               </p>
             </div>
             {/* 7 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Automation for Streamlined Processes:
-              </span>
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
+                Automation for Streamlined Processes
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Service Clouds automation tools handle repetitive tasks
                 efficiently. This frees up time for support agents to focus on
                 resolving complex issues.
@@ -469,23 +518,23 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 8 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Insights through Analytics:
-              </span>
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
+                Insights through Analytics
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Gain powerful insights into support performance with Service
                 Cloud analytics and reporting tools. This data-driven approach
                 facilitates continuous improvement in service delivery.
               </p>
             </div>
             {/* 9 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Unified Ecosystem through Integration:
-              </span>
+            <div className="bg-white p-6 rounded-md shadow-md mb-5 ">
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
+                Unified Ecosystem through Integration
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Seamlessly integrate with other Salesforce Clouds and
                 third-party applications. Service Cloud ensures a cohesive
                 ecosystem, enhancing collaboration across departments and
@@ -494,11 +543,11 @@ export default function SalesForceDevelopment() {
             </div>
             {/* 10 */}
             <div className="bg-white p-6 rounded-md shadow-md mb-5">
-              <span className="font-bold text-red-600 text-sm tracking-wide">
-                Scalable Support Operations:
-              </span>
+              <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
+                Scalable Support Operations
+              </h3>
 
-              <p className="pt-1 text-[#00000099] text-sm leading-6 md:text-justify">
+              <p className="pt-1 text-[#00000099] text-sm leading-6 text-justify">
                 Whether small or enterprise-level, Service Cloud scales to
                 accommodate growing customer support operations. It adapts to
                 evolving business needs and increasing service demands.
@@ -515,8 +564,9 @@ export default function SalesForceDevelopment() {
       >
         <div className="newsectionbox self-start ml-10 md:w-1/2 ">
           <h2>
-            Why Choose InfoDrive’s Salesforce Sales Service Cloud Implementation
-            Services?
+            <span className="text-red-600 text-3xl font-black">Why</span> Choose
+            <span className="text-red-600  font-black"> InfoDrive’s</span>{" "}
+            Salesforce Sales and Service Cloud Implementation Services?
           </h2>
           <Lottie animationData={Sale2} loop={true} className="mt-20" />
         </div>
@@ -533,7 +583,14 @@ export default function SalesForceDevelopment() {
             cardTitleColor: "#0b2653",
           }}
           allowDynamicUpdate="true"
-        />
+        >
+          {items.map((obj) => (
+            <div className="newsectionbox" style={{ padding: "10px 5px" }}>
+              <h2 className="text-center">{obj.card}</h2>
+              <p className="text-justify">{obj.cardDetailedText}</p>
+            </div>
+          ))}
+        </Chrono>
       </div>
 
       <section
@@ -549,7 +606,7 @@ export default function SalesForceDevelopment() {
           Excellence
         </Typography>
 
-        <h3 className="text-[#dd3952] text-sm font-bold text-center">
+        <h3 className="text-[#dd3952]  font-bold text-center">
           InfoDrive Solutions, Your Trusted Partner for Salesforce Sales Cloud &
           Service Cloud Implementation and Consulting
         </h3>
@@ -567,29 +624,81 @@ export default function SalesForceDevelopment() {
                     gutterBottom
                     variant="h3"
                     component="div"
-                    className="md:text-justify"
+                    className="text-justify"
                   >
-                    InfoDrive team of certified Salesforce consultants brings
-                    substantial experience to the table, aiding businesses in
-                    these regions to streamline their sales processes and foster
-                    growth through the utilization of Salesforce Sales Cloud
-                    Salesforce Service Cloud.
+                    <span className="font-bold text-black">InfoDrive</span> team
+                    of{" "}
+                    <span className="font-bold text-black">
+                      certified Salesforce consultants
+                    </span>{" "}
+                    brings substantial experience to the table, aiding
+                    businesses in these regions to streamline their sales
+                    processes and foster growth through the utilization of
+                    Salesforce Sales Cloud Salesforce Service Cloud.
                   </Typography>
 
                   <Typography
                     gutterBottom
                     variant="h3"
                     component="div"
-                    className="md:text-justify"
+                    className="text-justify"
                   >
-                    At InfoDrive Solutions, our core focus revolves around the
-                    implementation and consulting of Salesforce Sales Cloud
-                    Service Cloud, recognized globally as the premier customer
-                    relationship management (CRM) platform. Trust our certified
-                    Salesforce consultants to guide your business in optimizing
-                    sales processes and unlocking growth potential through
-                    Salesforce Sales Cloud.
+                    <span className="font-bold text-black">
+                      At InfoDrive Solutions,
+                    </span>{" "}
+                    our core focus revolves around the implementation and
+                    consulting of{" "}
+                    <span className="font-bold text-black mr-1">
+                      Salesforce Sales Cloud & Service Cloud,
+                    </span>
+                    recognized globally as the premier customer relationship
+                    management (CRM) platform. Trust our{" "}
+                    <span className="font-bold text-black">
+                      certified Salesforce
+                    </span>
+                    consultants to guide your business in optimizing sales
+                    processes and unlocking growth potential through Salesforce
+                    Sales Cloud.
                   </Typography>
+                  <div className="flex items-center justify-between gap-2 mt-5">
+                    <div className="w-20 mt-5">
+                      <img
+                        src="./Administrator-1.webp"
+                        alt="sale certificate5"
+                        className="h-full w-full"
+                      />
+                    </div>
+                    <div className="w-20 mt-5">
+                      <img
+                        src="./Associate.webp"
+                        alt="sale certificate1"
+                        className="h-full w-full"
+                      />
+                    </div>
+                    <div className="w-20 mt-5">
+                      {" "}
+                      <img
+                        src="./Sales-Cloud-Consultant.webp"
+                        alt="sale certificate2"
+                        className="h-full w-full"
+                      />
+                    </div>
+
+                    <div className="w-20 mt-5">
+                      <img
+                        src="./servicecloudCons.webp"
+                        alt="sale certificate3"
+                        className="h-full w-full"
+                      />
+                    </div>
+                    <div className="w-20 mt-5">
+                      <img
+                        src="./Advanced-Administrator-1.webp"
+                        alt="sale certificate4"
+                        className="h-full w-full"
+                      />
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             </Grid>
@@ -600,8 +709,19 @@ export default function SalesForceDevelopment() {
             </Grid>
           </Grid>
         </Box>
+
+        <div className="flex justify-center">
+          {" "}
+          <Button
+            href="/contact-us.html"
+            className="bgRed white  poppin upperCase"
+          >
+            Connect with Our Expert
+          </Button>
+        </div>
       </section>
-      <div className="-mt-20">
+
+      <div className="md:-mt-20 -mt-10">
         <LeadForm />
       </div>
 
