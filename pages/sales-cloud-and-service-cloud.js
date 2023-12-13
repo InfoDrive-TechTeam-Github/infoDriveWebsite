@@ -283,7 +283,7 @@ export default function SalesForceDevelopment() {
             <img
               alt="advantage sale and service "
               src="./sales13.png"
-              className="w-[70%]"
+              className="w-[70%] md:ml-10"
             />
           </div>
           <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5">
@@ -663,6 +663,13 @@ export default function SalesForceDevelopment() {
                   <div className="flex items-center justify-between gap-2 mt-5">
                     <div className="w-20 mt-5">
                       <img
+                        src="./Associate.webp"
+                        alt="sale certificate1"
+                        className="h-full w-full"
+                      />
+                    </div>
+                    <div className="w-20 mt-5">
+                      <img
                         src="./Administrator-1.webp"
                         alt="sale certificate5"
                         className="h-full w-full"
@@ -670,11 +677,12 @@ export default function SalesForceDevelopment() {
                     </div>
                     <div className="w-20 mt-5">
                       <img
-                        src="./Associate.webp"
-                        alt="sale certificate1"
+                        src="./Advanced-Administrator-1.webp"
+                        alt="sale certificate4"
                         className="h-full w-full"
                       />
                     </div>
+
                     <div className="w-20 mt-5">
                       {" "}
                       <img
@@ -688,13 +696,6 @@ export default function SalesForceDevelopment() {
                       <img
                         src="./servicecloudCons.webp"
                         alt="sale certificate3"
-                        className="h-full w-full"
-                      />
-                    </div>
-                    <div className="w-20 mt-5">
-                      <img
-                        src="./Advanced-Administrator-1.webp"
-                        alt="sale certificate4"
                         className="h-full w-full"
                       />
                     </div>
