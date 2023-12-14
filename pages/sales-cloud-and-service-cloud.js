@@ -42,6 +42,7 @@ import LeadForm from "../components/leadForm";
 import Lottie from "lottie-react";
 import cloufLottie from "../public/new.json";
 import Sale2 from "../public/Sale2.json";
+import Cloud from "../public/cloud.json";
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -277,9 +278,26 @@ export default function SalesForceDevelopment() {
       {/* advantage */}
       <section className={`newsectionbox p5  h-full -mt-10 space-y-5`}>
         <div className="container max-w-5xl mx-auto    h-full w-full  ">
-          <h2 className="text-center">Features of Sales Cloud</h2>
+          <motion.h2
+            style={{ zIndex: 5 }}
+            className="text-center "
+            animate={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
 
-          <div className="flex justify-center w-full ">
+              transition: {
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            }}
+          >
+            Features of Sales Cloud
+          </motion.h2>
+          {/* <Lottie animationData={Cloud} loop={true} className="w-[420px]" /> */}
+
+          <div className="flex justify-center w-full " style={{ zIndex: 10 }}>
             <img
               alt="advantage sale and service "
               src="./sales13.png"
@@ -421,7 +439,22 @@ export default function SalesForceDevelopment() {
       {/* advantage */}
       <section className={`newsectionbox p5  h-full -mt-10 space-y-5`}>
         <div className="container max-w-5xl mx-auto    h-full w-full  ">
-          <h2 className="text-center">Features of Service Cloud</h2>
+          <motion.h2
+            className="text-center"
+            animate={{
+              scale: 1.1,
+              textShadow: "0px 0px 8px rgb(255,255,255)",
+              boxShadow: "0px 0px 8px rgb(255,255,255)",
+
+              transition: {
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            }}
+          >
+            Features of Service Cloud
+          </motion.h2>
 
           <div className="flex justify-center w-full ">
             <img
