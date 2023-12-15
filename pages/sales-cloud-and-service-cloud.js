@@ -35,6 +35,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import Stack from "@mui/material/Stack";
 import Head from "next/head";
 import { motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
 import { Chrono } from "react-chrono";
 import Sale from "../public/saleandservice.json";
 
@@ -58,6 +59,7 @@ export default function SalesForceDevelopment() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   const mobileBreakpoint = 768;
   const items = [
     {
@@ -191,15 +193,19 @@ export default function SalesForceDevelopment() {
               <img src="./saleforcess-removebg-preview.png" />
             </div> */}
           </div>
-
-          <Button
-            href="/contact-us.html"
-            className="buttOnread   normalCase mt-5"
-            variant="text"
-            style={{ zIndex: 5 }}
+          <motion.div
+            whileHover={{ scale: 1.1, originX: 0 }}
+            className=" w-max "
           >
-            Let's Talk <ArrowRightAltIcon />
-          </Button>
+            <Button
+              href="/contact-us.html"
+              className="buttOnread   normalCase mt-5"
+              variant="text"
+              style={{ zIndex: 5 }}
+            >
+              Let's Talk <ArrowRightAltIcon />
+            </Button>
+          </motion.div>
         </div>
 
         {/* <div className="md:top-0 bottom-0 absolute md:-mt-72">
@@ -305,7 +311,12 @@ export default function SalesForceDevelopment() {
             />
           </div>
           <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5">
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center ">
                 Get to Know Your Customers
               </h3>
@@ -316,9 +327,14 @@ export default function SalesForceDevelopment() {
                 comprehensive view. This insight helps tailor approaches to
                 better meet customer needs.
               </p>
-            </div>
+            </motion.div>
             {/* second */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Effortless Lead Management
               </h3>
@@ -329,9 +345,14 @@ export default function SalesForceDevelopment() {
                 automated workflows, your team can focus on promising
                 opportunities, boosting conversion rates.
               </p>
-            </div>
+            </motion.div>
             {/* third */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Tailored to Your Needs
               </h3>
@@ -342,9 +363,14 @@ export default function SalesForceDevelopment() {
                 requirements. This flexibility ensures seamless alignment with
                 unique sales processes.
               </p>
-            </div>
+            </motion.div>
             {/* 4 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Time-Saving Workflow Automation:
               </h3>
@@ -354,9 +380,14 @@ export default function SalesForceDevelopment() {
                 time, and reducing errors. This empowers your sales team to
                 concentrate on high-value activities.
               </p>
-            </div>
+            </motion.div>
             {/* 5 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Stay Agile with Mobile Accessibility:
               </h3>
@@ -366,9 +397,14 @@ export default function SalesForceDevelopment() {
                 crucial information on the go, fostering agility and
                 responsiveness in todays fast-paced business environment.
               </p>
-            </div>
+            </motion.div>
             {/* 6 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Real-time Insights with Analytics
               </h3>
@@ -379,9 +415,14 @@ export default function SalesForceDevelopment() {
                 data-driven approach facilitates informed decision-making and
                 strategy refinement.
               </p>
-            </div>
+            </motion.div>
             {/* 7 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Seamless Integration for Efficiency:
               </h3>
@@ -392,9 +433,14 @@ export default function SalesForceDevelopment() {
                 with other business functions, enhancing collaboration and
                 efficiency.
               </p>
-            </div>
+            </motion.div>
             {/* 8 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Versatile Communication Channels:
               </h3>
@@ -405,9 +451,14 @@ export default function SalesForceDevelopment() {
                 team to engage with leads and clients in preferred channels,
                 building stronger relationships.
               </p>
-            </div>
+            </motion.div>
             {/* 9*/}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Grow at Your Pace with Scalability:
               </h3>
@@ -417,9 +468,14 @@ export default function SalesForceDevelopment() {
                 Sales Cloud scales to accommodate growth, adapting to evolving
                 business needs and expanding sales operations.
               </p>
-            </div>
+            </motion.div>
             {/* 10*/}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Stay Current with Updates:
               </h3>
@@ -430,7 +486,7 @@ export default function SalesForceDevelopment() {
                 ensures your business benefits from the latest technologies and
                 features.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -464,7 +520,12 @@ export default function SalesForceDevelopment() {
             />
           </div>
           <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5">
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Comprehensive Customer Insights
               </h3>
@@ -475,9 +536,14 @@ export default function SalesForceDevelopment() {
                 view empowers your support team to provide personalized and
                 efficient assistance.
               </p>
-            </div>
+            </motion.div>
             {/* second */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Streamlined Case Resolution
               </h3>
@@ -487,9 +553,14 @@ export default function SalesForceDevelopment() {
                 systems. Service Cloud enables your team to seamlessly track and
                 resolve customer issues, enhancing the resolution process.
               </p>
-            </div>
+            </motion.div>
             {/* third */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Efficient Knowledge Sharing
               </h3>
@@ -500,9 +571,14 @@ export default function SalesForceDevelopment() {
                 information, ensuring consistent and accurate responses to
                 customer inquiries.
               </p>
-            </div>
+            </motion.div>
             {/* 4 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Versatile Multi-Channel Support
               </h3>
@@ -512,9 +588,14 @@ export default function SalesForceDevelopment() {
                 Cloud enables your team to offer assistance where customers feel
                 most comfortable.
               </p>
-            </div>
+            </motion.div>
             {/* 5 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Empower Customers with Self-Service
               </h3>
@@ -524,9 +605,14 @@ export default function SalesForceDevelopment() {
                 and online portals. Empower customers to find answers
                 independently, reducing the workload on your support team.
               </p>
-            </div>
+            </motion.div>
             {/* 6 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Responsive Mobile Support
               </h3>
@@ -536,9 +622,14 @@ export default function SalesForceDevelopment() {
                 mobile capabilities. Enhance responsiveness and ensure timely
                 resolution of service requests.
               </p>
-            </div>
+            </motion.div>
             {/* 7 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Automation for Streamlined Processes
               </h3>
@@ -548,9 +639,14 @@ export default function SalesForceDevelopment() {
                 efficiently. This frees up time for support agents to focus on
                 resolving complex issues.
               </p>
-            </div>
+            </motion.div>
             {/* 8 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Insights through Analytics
               </h3>
@@ -560,9 +656,14 @@ export default function SalesForceDevelopment() {
                 Cloud analytics and reporting tools. This data-driven approach
                 facilitates continuous improvement in service delivery.
               </p>
-            </div>
+            </motion.div>
             {/* 9 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5 ">
+            <motion.div
+              initial={{ opacity: 0, x: -40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5 "
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Unified Ecosystem through Integration
               </h3>
@@ -573,9 +674,14 @@ export default function SalesForceDevelopment() {
                 ecosystem, enhancing collaboration across departments and
                 providing a holistic view of customer interactions.
               </p>
-            </div>
+            </motion.div>
             {/* 10 */}
-            <div className="bg-white p-6 rounded-md shadow-md mb-5">
+            <motion.div
+              initial={{ opacity: 0, x: 40 }}
+              whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+              transition={{ duration: 1.5 }}
+              className="bg-white p-6 rounded-md shadow-md mb-5"
+            >
               <h3 className="font-bold text-red-600 text-sm tracking-wide text-center">
                 Scalable Support Operations
               </h3>
@@ -585,7 +691,7 @@ export default function SalesForceDevelopment() {
                 accommodate growing customer support operations. It adapts to
                 evolving business needs and increasing service demands.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -694,13 +800,13 @@ export default function SalesForceDevelopment() {
                     Sales Cloud.
                   </Typography>
                   <div className="flex items-center justify-between gap-2 mt-5">
-                    <div className="w-20 mt-5">
-                      <img
+                    <motion.div className="w-20 mt-5">
+                      <motion.img
                         src="./Associate.webp"
                         alt="sale certificate1"
                         className="h-full w-full"
                       />
-                    </div>
+                    </motion.div>
                     <div className="w-20 mt-5">
                       <img
                         src="./Administrator-1.webp"
@@ -744,15 +850,20 @@ export default function SalesForceDevelopment() {
           </Grid>
         </Box>
 
-        <div className="flex justify-center">
-          {" "}
-          <Button
-            href="/contact-us.html"
-            className="bgRed white  poppin upperCase"
+        <motion.div className="flex justify-center ">
+          <motion.div
+            whileHover={{ scale: 1.2, originX: 0, originY: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="w-max"
           >
-            Connect with Our Expert
-          </Button>
-        </div>
+            <Button
+              href="/contact-us.html"
+              className="bgRed white  poppin upperCase"
+            >
+              Connect with Our Expert
+            </Button>
+          </motion.div>
+        </motion.div>
       </section>
 
       <div className="md:-mt-20 -mt-10">

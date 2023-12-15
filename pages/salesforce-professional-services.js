@@ -228,69 +228,6 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-      {/* <div className="sliderBox">
-        <img
-          style={{ width: "100%" }}
-          src="images/cc13ff8a13c84325124d7b7989be19e8-min.jpeg"
-          alt="Salesforce Consulting Service"
-        />
-        <Box sx={{ flexGrow: 1 }} className="sliderContent salePart md:p-0 p-2">
-          <Grid container spacing={0}>
-            <Typography gutterBottom variant="h3" component="h1">
-              Empower Your Business with Salesforce Professional Services
-            </Typography>
-
-            <Typography gutterBottom variant="h1" component="div">
-              Our team of certified Salesforce experts has
-              <br />
-              extensive experience in implementing and
-              <br /> customizing Salesforce to meet the specific <br />
-              needs of each business.
-            </Typography>
-            <Button
-              href="/contact-us.html"
-              className="readmore white normalCase"
-              variant="text"
-            >
-              Let's Talk <ArrowRightAltIcon />
-            </Button>
-            <nav className="socical-network">
-              <List>
-                <ListItem>
-                  <ListItemButton
-                    component="a"
-                    href="https://www.facebook.com/InfoDrivesolutions/"
-                  >
-                    <ListItemIcon>
-                      <FacebookIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton
-                    component="a"
-                    href="https://in.linkedin.com/company/infodrive-solutions/"
-                  >
-                    <ListItemIcon>
-                      <LinkedInIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-                <ListItem>
-                  <ListItemButton
-                    component="a"
-                    href="https://www.instagram.com/infodrivesolutions/"
-                  >
-                    <ListItemIcon>
-                      <InstagramIcon />
-                    </ListItemIcon>
-                  </ListItemButton>
-                </ListItem>
-              </List>
-            </nav>
-          </Grid>
-        </Box>
-      </div> */}
 
       <section className="headSaleforce container max-w-7xl md:h-screen text-black relative md:p-5 md:min-h-screen p5">
         <svg
