@@ -136,7 +136,7 @@ export default function SalesForceDevelopment() {
         />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/sales-cloud.html"
+          href="https://infodrive-solutions.com/sales-cloud-and-service-cloud.html"
         />
         <meta
           property="og:title"
@@ -216,7 +216,7 @@ export default function SalesForceDevelopment() {
       <section className={`newsectionbox p5  h-full salesandservice `}>
         <div className="container max-w-5xl mx-auto    h-full w-full ">
           <h2 className="mb-20 text-center">
-            Salesforce Sales Cloud Services and Service Cloud Services
+            Salesforce Sales Cloud and Service Cloud Services
           </h2>
           <div className="flex md:flex-row flex-col gap-14 items-start justify-between md:gap-10 w-full h-full">
             <div
