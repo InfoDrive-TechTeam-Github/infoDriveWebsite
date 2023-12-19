@@ -90,35 +90,7 @@ export default function SalesForceDevelopment() {
         "Our Sales/Service cloud implementation services are rapid, and help you keep your business run faster and smoother",
     },
   ];
-  // const items = [
-  //   {
-  //     title: "IN-DEPTH KNOWLEDGE",
-  //     card: "IN-DEPTH KNOWLEDGE",
 
-  //     cardDetailedText:
-  //       "From planning to security review assistance, and to final deployment, we are well-versed in all.",
-  //   },
-  //   {
-  //     title: "INDUSTRY EXPERIENCE",
-  //     card: "INDUSTRY EXPERIENCE",
-  //     cardDetailedText:
-  //       "InfoDrive have a team of highly experienced Salesforce professionals with 13+ years of industry experience in the Salesforce domain",
-  //   },
-  //   {
-  //     title: "SCALABLE SOLUTIONS",
-  //     card: "SCALABLE SOLUTIONS",
-
-  //     cardDetailedText:
-  //       "InfoDrive profoundly delivers scalable Sales/Service cloud development services that augments the business growth.",
-  //   },
-  //   {
-  //     title: "FASTER TURNAROUND TIME",
-  //     card: "FASTER TURNAROUND TIME",
-
-  //     cardDetailedText:
-  //       "Our Sales/Service cloud implementation services are rapid, and help you keep your business run faster and smoother",
-  //   },
-  // ];
   return (
     <div>
       <Head>
