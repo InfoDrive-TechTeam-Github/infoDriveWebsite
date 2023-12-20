@@ -226,17 +226,26 @@ export default function AndroidAppDevelopment() {
               <Typography gutterBottom variant="h3" component="div">
                 Our Expertise in Android App Development
               </Typography>
-              <Typography gutterBottom variant="h3" component="div">
+              <p
+                className="text-white font-medium   leading-6"
+                style={{ fontSize: "16px" }}
+              >
                 Our team of experienced android app developers has the knowledge
                 and expertise to create a wide range of applications, including:
-                <ul style={{ listStyleType: "circle" }}>
-                  <li>E-commerce apps</li>
-                  <li>Social media apps</li>
-                  <li>Gaming apps</li>
-                  <li>Business apps</li>
-                  <li>Educational apps</li>
-                </ul>
-              </Typography>
+              </p>
+              <ul
+                style={{
+                  listStyleType: "circle",
+                  color: "white",
+                  marginTop: 5,
+                }}
+              >
+                <li>E-commerce apps</li>
+                <li>Social media apps</li>
+                <li>Gaming apps</li>
+                <li>Business apps</li>
+                <li>Educational apps</li>
+              </ul>
             </Grid>
 
             <Grid item xs={7} className="androidDevelopmentRight">

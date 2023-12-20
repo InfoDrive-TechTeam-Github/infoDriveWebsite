@@ -45,6 +45,7 @@ import cloufLottie from "../public/wave.json";
 import Sale2 from "../public/Sale2.json";
 import Cloud from "../public/cloud.json";
 import SaleforceCient from "components/SaleforceCient";
+import CustomTimeline from "components/verticleTimeline/CustomTimeline";
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -64,67 +65,68 @@ export default function SalesForceDevelopment() {
   const mobileBreakpoint = 768;
   const items = [
     {
-      title: width <= mobileBreakpoint ? "" : "Expert Team",
-      card: "Expert Team",
+      left: {
+        card: "Expert Team",
 
-      cardDetailedText:
-        "With a team of seasoned professionals specializing in Salesforce Marketing Cloud and Pardot, InfoDrive Solutions ensures clients receive top-notch, tailored solutions backed by extensive experience",
+        cardDetailedText:
+          "With a team of seasoned professionals specializing in Salesforce Marketing Cloud and Pardot, InfoDrive Solutions ensures clients receive top-notch, tailored solutions backed by extensive experience",
+      },
+      right: {
+        card: "End-to-End Support",
+        cardDetailedText:
+          "InfoDrive Solutions offers a full spectrum of services, covering everything from implementation to ongoing support and optimization. This approach guarantees clients a seamless and integrated experience.",
+      },
+    },
+
+    {
+      left: {
+        card: "Tailored Solutions:",
+
+        cardDetailedText:
+          "Recognizing the uniqueness of every business, InfoDrive Solutions excels in delivering customized solutions. Whether aligning Salesforce Marketing Cloud with specific goals or tailoring Pardot for optimal performance, client-specific needs take center stage.",
+      },
+      right: {
+        card: "Proven Success:",
+
+        cardDetailedText:
+          "InfoDrive Solutions boasts a track record of successfully implementing and optimizing Salesforce Marketing Cloud and Pardot. Case studies and testimonials underscore their commitment to delivering tangible results and driving marketing success.",
+      },
     },
     {
-      title: width <= mobileBreakpoint ? "" : "End-to-End Support",
-      card: "End-to-End Support",
-      cardDetailedText:
-        "InfoDrive Solutions offers a full spectrum of services, covering everything from implementation to ongoing support and optimization. This approach guarantees clients a seamless and integrated experience.",
+      left: {
+        card: "Strategic Planning",
+
+        cardDetailedText:
+          "Beyond implementation, InfoDrive Solutions collaborates with clients on strategic consultation and planning. This involves developing a roadmap for effectively leveraging Salesforce Marketing Cloud and Pardot, ensuring long-term success and ROI.",
+      },
+      right: {
+        card: "Ongoing Support and Training",
+
+        cardDetailedText:
+          "Beyond implementation, InfoDrive Solutions collaborates with clients on strategic consultation and planning. This involves developing a roadmap for effectively leveraging Salesforce Marketing Cloud and Pardot, ensuring long-term success and ROI.",
+      },
     },
     {
-      title: width <= mobileBreakpoint ? "" : "Tailored Solutions:",
-      card: "Tailored Solutions:",
+      left: {
+        card: "Seamless Salesforce Integration",
 
-      cardDetailedText:
-        "Recognizing the uniqueness of every business, InfoDrive Solutions excels in delivering customized solutions. Whether aligning Salesforce Marketing Cloud with specific goals or tailoring Pardot for optimal performance, client-specific needs take center stage.",
-    },
-    {
-      title: width <= mobileBreakpoint ? "" : "Proven Success:",
-      card: "Proven Success:",
+        cardDetailedText:
+          "Thanks to their expertise, InfoDrive Solutions ensures the seamless integration of Salesforce Marketing Cloud and Pardot with the broader Salesforce ecosystem. This unified approach streamlines customer relationship management and marketing efforts.",
+      },
+      right: {
+        card: "Innovation Focus",
 
-      cardDetailedText:
-        "InfoDrive Solutions boasts a track record of successfully implementing and optimizing Salesforce Marketing Cloud and Pardot. Case studies and testimonials underscore their commitment to delivering tangible results and driving marketing success.",
+        cardDetailedText:
+          "In the ever-evolving marketing technology landscape, InfoDrive Solutions remains dedicated to innovation. They  stay current with the latest trends in Salesforce Marketing Cloud and Pardot, ensuring clients benefit from cutting-edge solutions.",
+      },
     },
-    {
-      title: width <= mobileBreakpoint ? "" : "Strategic Planning",
-      card: "Strategic Planning",
 
-      cardDetailedText:
-        "Beyond implementation, InfoDrive Solutions collaborates with clients on strategic consultation and planning. This involves developing a roadmap for effectively leveraging Salesforce Marketing Cloud and Pardot, ensuring long-term success and ROI.",
-    },
-    {
-      title: width <= mobileBreakpoint ? "" : "Ongoing Support and Training",
-      card: "Ongoing Support and Training",
+    // {
+    //   card: "Client-Centric Approach",
 
-      cardDetailedText:
-        "Beyond implementation, InfoDrive Solutions collaborates with clients on strategic consultation and planning. This involves developing a roadmap for effectively leveraging Salesforce Marketing Cloud and Pardot, ensuring long-term success and ROI.",
-    },
-    {
-      title: width <= mobileBreakpoint ? "" : "Seamless Salesforce Integration",
-      card: "Seamless Salesforce Integration",
-
-      cardDetailedText:
-        "Thanks to their expertise, InfoDrive Solutions ensures the seamless integration of Salesforce Marketing Cloud and Pardot with the broader Salesforce ecosystem. This unified approach streamlines customer relationship management and marketing efforts.",
-    },
-    {
-      title: width <= mobileBreakpoint ? "" : "Innovation Focus",
-      card: "Innovation Focus",
-
-      cardDetailedText:
-        "In the ever-evolving marketing technology landscape, InfoDrive Solutions remains dedicated to innovation. They  stay current with the latest trends in Salesforce Marketing Cloud and Pardot, ensuring clients benefit from cutting-edge solutions.",
-    },
-    {
-      title: width <= mobileBreakpoint ? "" : "Client-Centric Approach",
-      card: "Client-Centric Approach",
-
-      cardDetailedText:
-        "InfoDrive Solutions places a high priority on a client-centric approach, understanding the unique challenges and goals of each business. This focus on client satisfaction fosters strong, collaborative partnerships that extend beyond transactional service provision.",
-    },
+    //   cardDetailedText:
+    //     "InfoDrive Solutions places a high priority on a client-centric approach, understanding the unique challenges and goals of each business. This focus on client satisfaction fosters strong, collaborative partnerships that extend beyond transactional service provision.",
+    // },
   ];
 
   return (
@@ -314,10 +316,18 @@ export default function SalesForceDevelopment() {
             className="flex justify-center w-full mt-5"
             style={{ zIndex: 10 }}
           >
-            <img
+            <motion.img
               alt="advantage sale and service "
               src="./pardot2.png"
-              className=" aspect-square w-[40%]"
+              className=" aspect-square md:w-[40%] w-[70%]"
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                rotate: -360,
+                transition: {
+                  duration: 1,
+                },
+              }}
             />
           </div>
           <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5">
@@ -470,6 +480,14 @@ export default function SalesForceDevelopment() {
               </p>
             </motion.div>
           </div>
+          <p className="mt-5">
+            In conclusion, Salesforce Marketing Cloud is a versatile and
+            powerful platform that empowers businesses to deliver personalized,
+            targeted, and effective marketing campaigns. With an array of
+            features, marketers have the tools they need to engage their
+            audience across channels, drive conversions, and achieve success in
+            the ever-evolving landscape of digital marketing.
+          </p>
         </div>
       </section>
 
@@ -497,7 +515,7 @@ export default function SalesForceDevelopment() {
           <div className="flex justify-center w-full ">
             <img
               alt="advantage sale and service "
-              src="./pardot3.png"
+              src="./Pardot-fEATURES.png"
               className=" object-cover w-1/2"
             />
           </div>
@@ -652,11 +670,19 @@ export default function SalesForceDevelopment() {
               </p>
             </motion.div>
           </div>
+          <p className="mt-5">
+            In conclusion, Salesforce Pardots feature-rich platform empowers
+            businesses to execute sophisticated marketing strategies with ease.
+            Whether its personalized lead nurturing, dynamic content creation,
+            or seamless integration with Salesforce CRM, Pardot offers a
+            comprehensive suite of tools designed to drive marketing success in
+            todays dynamic landscape.
+          </p>
         </div>
       </section>
 
       {/* timeline  */}
-      <div
+      {/* <div
         style={{ width: "100vw" }}
         className="flex items-center justify-center md:flex-row flex-col "
       >
@@ -694,7 +720,25 @@ export default function SalesForceDevelopment() {
           </h2>
           <Lottie animationData={Sale2} loop={true} className="mt-20" />
         </div>
-      </div>
+      </div> */}
+      <section className={`newsectionbox p5  h-full md:-mt-20 space-y-5`}>
+        <div className="container max-w-5xl mx-auto    h-full w-full  ">
+          <div className="flex items-center justify-between">
+            <h2 className=" mt-40 w-1/2 ">
+              <span className="text-red-600 text-3xl font-black">Why</span> Opt
+              for
+              <span className="text-red-600  font-black">
+                {" "}
+                InfoDrive’s Solutions
+              </span>{" "}
+              for Salesforce Marketing Cloud and Pardot needs? Here you can
+              figure it out:
+            </h2>
+            <Lottie animationData={Sale2} loop={true} className="w-1/2" />
+          </div>
+          <CustomTimeline data={items} />
+        </div>
+      </section>
 
       <section
         className={`sectionBox aboutUsBox3 salesCloudService p5 -mt-10 pt-10`}
