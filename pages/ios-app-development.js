@@ -1,31 +1,31 @@
-import React from 'react';
-import Head from 'next/head';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormControl from '@mui/material/FormControl';
-import TextField from '@mui/material/TextField';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Stack from '@mui/material/Stack';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import LeadForm from '../components/leadForm';
+import React from "react";
+import Head from "next/head";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Button from "@mui/material/Button";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import Avatar from "@mui/material/Avatar";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import Stack from "@mui/material/Stack";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import LeadForm from "../components/leadForm";
 export default function IosAppDevelopment() {
   return (
     <div>
@@ -35,26 +35,26 @@ export default function IosAppDevelopment() {
           Malaysia, and India
         </title>
         <meta
-          name='description'
-          content='At InfoDrive, we are dedicated to providing top-quality software solutions for businesses and individuals. With a team of experienced and skilled developers, we are able to deliver high-performing iOS applications that meet the unique needs of our clients.'
+          name="description"
+          content="At InfoDrive, we are dedicated to providing top-quality software solutions for businesses and individuals. With a team of experienced and skilled developers, we are able to deliver high-performing iOS applications that meet the unique needs of our clients."
         />
         <meta
-          name='keywords'
-          content='IOS App Development Company, IOS App Development Company in Singapore, IOS App Development Company in Malaysia, IOS App Development Company in Kuala Lumpur, IOS App Development Company in Bangalore, Top IOS App Development Company in Singapore, Top IOS App Development Company in Malaysia, IOS App Developers in Singapore, Top IOS App Developers in Malaysia, IOS App Developers in India, IOS App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, iPhone App Development Companies, Top iPhone App Developers in Singapore, iPhone App Developers in Malaysia, iPhone App Development Company in India'
+          name="keywords"
+          content="IOS App Development Company, IOS App Development Company in Singapore, IOS App Development Company in Malaysia, IOS App Development Company in Kuala Lumpur, IOS App Development Company in Bangalore, Top IOS App Development Company in Singapore, Top IOS App Development Company in Malaysia, IOS App Developers in Singapore, Top IOS App Developers in Malaysia, IOS App Developers in India, IOS App Developers in Bangalore, Mobile App Development Services in Singapore, Mobile App Development Services in Malaysia, iPhone App Development Companies, Top iPhone App Developers in Singapore, iPhone App Developers in Malaysia, iPhone App Development Company in India"
         />
         <link
-          rel='canonical'
-          href='https://infodrive-solutions.com/ios-app-development.html'
+          rel="canonical"
+          href="https://infodrive-solutions.com/ios-app-development.html"
         />
         <meta
-          property='og:title'
-          content='Top iPhone App Development Company & IOS Developers in Singapore,Malaysia, and India'
+          property="og:title"
+          content="Top iPhone App Development Company & IOS Developers in Singapore,Malaysia, and India"
         />
         <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+          property="og:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
-        <link rel='icon' href='/favicon.png' />
+        <link rel="icon" href="/favicon.png" />
 
         <script
           dangerouslySetInnerHTML={{
@@ -68,22 +68,22 @@ export default function IosAppDevelopment() {
       </Head>
       <noscript>
         <iframe
-          src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
-          height='0'
-          width='0'
-          style={{ display: 'none', visibility: 'hidden' }}
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox blockNFT iosSlider'>
+      <div className="sliderBox blockNFT iosSlider">
         <img
-          style={{ width: '100%', opacity: '0.5' }}
-          src='images/Blockchain_background.png'
-          alt='Top iPhone App Development Company in Singapore'
+          style={{ width: "100%", opacity: "0.5" }}
+          src="images/Blockchain_background.png"
+          alt="Top iPhone App Development Company in Singapore"
         />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent'>
+        <Box sx={{ flexGrow: 1 }} className="sliderContent">
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h1' component='div'>
+            <Typography gutterBottom variant="h1" component="div">
               Our team of expert iOS app <br /> developers uses cutting-
               <br />
               edge technologies to build
@@ -91,18 +91,18 @@ export default function IosAppDevelopment() {
               for perfection.
             </Typography>
             <Button
-              href='/contact-us.html'
-              className='readmore white normalCase'
-              variant='text'
+              href="/contact-us.html"
+              className="readmore white normalCase"
+              variant="text"
             >
               Let's Talk <ArrowRightAltIcon />
             </Button>
-            <nav className='socical-network'>
+            <nav className="socical-network">
               <List>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.facebook.com/InfoDrivesolutions/'
+                    component="a"
+                    href="https://www.facebook.com/InfoDrivesolutions/"
                   >
                     <ListItemIcon>
                       <FacebookIcon />
@@ -111,8 +111,8 @@ export default function IosAppDevelopment() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                    component="a"
+                    href="https://in.linkedin.com/company/infodrive-solutions/"
                   >
                     <ListItemIcon>
                       <LinkedInIcon />
@@ -121,8 +121,8 @@ export default function IosAppDevelopment() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.instagram.com/infodrivesolutions/'
+                    component="a"
+                    href="https://www.instagram.com/infodrivesolutions/"
                   >
                     <ListItemIcon>
                       <InstagramIcon />
@@ -136,14 +136,14 @@ export default function IosAppDevelopment() {
       </div>
       <section className={`sectionBox p5`}>
         <Typography
-          className='w100 red'
+          className="w100 red"
           gutterBottom
-          variant='h1'
-          component='h1'
+          variant="h1"
+          component="h1"
         >
           iOS App Development Services
         </Typography>
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
+        <Typography className="w100" gutterBottom variant="h5" component="div">
           iOS is the second most widely used mobile operating system in the
           world, and it powers millions of devices in over 190 countries. As
           such, it is no surprise that the demand for IOS app development
@@ -163,16 +163,17 @@ export default function IosAppDevelopment() {
           of loyal Apple users.
         </Typography>
       </section>
-      <section className={`sectionBox IosAppBox p5`}>
+      <section className={`sectionBox IosAppBox p5 `}>
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0} className='fd1'>
+          <Grid container spacing={0} className="fd1">
             <Grid item xs={8}>
-              <Card className='fp1'>
+              <Card className="fp1 ">
                 <Typography
                   // className='w100'
+                  className="mr-10"
                   gutterBottom
-                  variant='h5'
-                  component='div'
+                  variant="h5"
+                  component="div"
                 >
                   As a leading provider of iOS application development services,
                   we have the expertise and resources to help you bring your app
@@ -191,17 +192,19 @@ export default function IosAppDevelopment() {
                   is reliable and able to handle heavy usage.
                 </Typography>
                 <Typography
-                  className='heading'
+                  className="heading"
                   gutterBottom
-                  variant='h1'
-                  component='div'
+                  variant="h1"
+                  component="div"
                 >
-                  In addition to custom app development, we also offer a range
-                  of other services to help you succeed with your iOS app. These
-                  include:
+                  <h1 className="w-[90%]">
+                    In addition to custom app development, we also offer a range
+                    of other services to help you succeed with your iOS app.
+                    These include:
+                  </h1>
                 </Typography>
                 <CardContent>
-                  <ul>
+                  <ul style={{ listStyleType: "circle" }}>
                     <li>Web application development</li>
                     <li>Mobile application development</li>
                     <li>E-commerce development</li>
@@ -210,12 +213,12 @@ export default function IosAppDevelopment() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={4} className="">
               <Card>
                 <img
-                  alt='IOS App Development Company in Malaysia'
-                  className='Ios_img'
-                  src='images/ios-app-development.png'
+                  alt="IOS App Development Company in Malaysia"
+                  className="Ios_img"
+                  src="images/ios-app-development.png"
                 />
               </Card>
             </Grid>
@@ -224,16 +227,16 @@ export default function IosAppDevelopment() {
       </section>
       <section className={`sectionBox IosAppBox2 p5`}>
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0} className='fd1'>
+          <Grid container spacing={0} className="fd1">
             <Grid item xs={12}>
-              <Card className='ios-app2'>
-                <Typography gutterBottom variant='h2' component='h2'>
+              <Card className="ios-app2">
+                <Typography gutterBottom variant="h2" component="h2">
                   Key benefits of our iOS app development services
                 </Typography>
-                <Typography gutterBottom variant='h5' component='div'>
+                <Typography gutterBottom variant="h5" component="div">
                   We are a full-stack iOS app development company that has
                   released <br />
-                  hundreds of native iOS apps with high App Store ratings and{' '}
+                  hundreds of native iOS apps with high App Store ratings and{" "}
                   <br /> success rates. We use advanced methodologies and
                   technologies to <br /> build apps with the best-in-class
                   features, functionality, and <br /> interface.
@@ -248,22 +251,22 @@ export default function IosAppDevelopment() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard'>
+              <Card sx={{ maxWidth: 400 }} className="IosCard">
                 <Avatar
-                  alt='IOS App Development Company'
-                  src='images/Best-consumer-experience.png'
+                  alt="IOS App Development Company"
+                  src="images/Best-consumer-experience.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15"
+                    component="div"
                   >
                     Best consumer <br /> experience
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     We have an excellent team of <br /> expert designers and
                     developers <br /> with adequate experience to <br /> provide
                     you with real value for
@@ -277,51 +280,51 @@ export default function IosAppDevelopment() {
               </Card>
             </Grid>
             <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard bg'>
+              <Card sx={{ maxWidth: 400 }} className="IosCard bg">
                 <Avatar
-                  alt='IOS App Development Company in Singapore'
-                  src='images/Best-consumer-experience.png'
+                  alt="IOS App Development Company in Singapore"
+                  src="images/Best-consumer-experience.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15 white'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15 white"
+                    component="div"
                   >
                     Appealing app interface
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     In iOS applications, it is possible <br /> to design
                     interface elements and <br /> layouts to change shape and
-                    size <br /> on different devices, during iPad <br />{' '}
+                    size <br /> on different devices, during iPad <br />{" "}
                     multitasking, in split view, when <br /> the screen rotates,
                     and more.
                     <br /> In this way, users are provided with a <br /> better
-                    experience while building <br /> better relationships with{' '}
+                    experience while building <br /> better relationships with{" "}
                     <br /> customers.
                   </Typography>
                 </CardContent>
               </Card>
             </Grid>
             <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard'>
+              <Card sx={{ maxWidth: 400 }} className="IosCard">
                 <Avatar
-                  alt='IOS App Development Company in Malaysia'
-                  src='images/Best-consumer-experience.png'
+                  alt="IOS App Development Company in Malaysia"
+                  src="images/Best-consumer-experience.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15"
+                    component="div"
                   >
                     High security
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Every business needs to choose a <br />
                     platform that offers users not just
                     <br /> appealing features but also the
@@ -337,23 +340,23 @@ export default function IosAppDevelopment() {
             </Grid>
 
             <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard bg'>
+              <Card sx={{ maxWidth: 400 }} className="IosCard bg">
                 <Avatar
-                  alt='IOS App Development Company in Kuala Lumpur'
-                  src='images/Best-consumer-experience.png'
+                  alt="IOS App Development Company in Kuala Lumpur"
+                  src="images/Best-consumer-experience.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15 white'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15 white"
+                    component="div"
                   >
                     Improved branding
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
-                    Being a leading iOS app <br /> development company, we are{' '}
+                  <Typography variant="body2" color="text.secondary">
+                    Being a leading iOS app <br /> development company, we are{" "}
                     <br />
                     very much familiar with the <br />
                     importance of application
@@ -367,26 +370,26 @@ export default function IosAppDevelopment() {
             </Grid>
 
             <Grid item xs={4}>
-              <Card sx={{ maxWidth: 400 }} className='IosCard'>
+              <Card sx={{ maxWidth: 400 }} className="IosCard">
                 <Avatar
-                  alt=' IOS App Development Company in Bangalore'
-                  src='images/Best-consumer-experience.png'
+                  alt=" IOS App Development Company in Bangalore"
+                  src="images/Best-consumer-experience.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h3'
-                    className='pt15 pb15'
-                    component='div'
+                    variant="h3"
+                    className="pt15 pb15"
+                    component="div"
                   >
                     Loyal user base
                   </Typography>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Today people like to purchase just <br /> from the people
                     they trust. Loyal
                     <br /> customers are significant key <br /> resources that
-                    give the company a <br /> manageable upper hand over <br />{' '}
+                    give the company a <br /> manageable upper hand over <br />{" "}
                     competitors. Loyalty improves a <br /> firm's overall
                     financial <br /> performance due to increased <br />
                     purchases.
@@ -401,37 +404,37 @@ export default function IosAppDevelopment() {
       </section>
 
       <section className={`sectionBox IosOurBox p5`}>
-        <div className='IosOurBoxPd'>
+        <div className="IosOurBoxPd">
           <Typography
             gutterBottom
-            variant='h2'
-            component='h3'
-            className='IodHdn'
+            variant="h2"
+            component="h3"
+            className="IodHdn"
           >
             Our iOS application development expertise:
           </Typography>
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
               <Grid item xs={6}>
-                <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
+                <Card sx={{ maxWidth: 550 }} className="IosCard bgf">
                   <Avatar
-                    alt='Top IOS App Development Company in Singapore'
-                    src='images/OurApplication_bg.png'
+                    alt="Top IOS App Development Company in Singapore"
+                    src="images/OurApplication_bg.png"
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
-                      variant='h3'
-                      className='pt15 pb15 hdnclr'
-                      component='div'
+                      variant="h3"
+                      className="pt15 pb15 hdnclr"
+                      component="div"
                     >
                       iOS app Customization & development
                     </Typography>
                     <Typography
-                      variant='body2'
-                      color='text.secondary'
-                      className='hdnclr'
+                      variant="body2"
+                      color="text.secondary"
+                      className="hdnclr"
                     >
                       Infodrive has rich expertise in the overall development
                       <br /> of iOS applications, so, you can be guaranteed the
@@ -446,25 +449,25 @@ export default function IosAppDevelopment() {
                 </Card>
               </Grid>
               <Grid item xs={6}>
-                <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
+                <Card sx={{ maxWidth: 550 }} className="IosCard bgf">
                   <Avatar
-                    alt='Mobile App Development Services in Malaysia'
-                    src='images/OurApplication_bg.png'
+                    alt="Mobile App Development Services in Malaysia"
+                    src="images/OurApplication_bg.png"
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
-                      variant='h3'
-                      className='pt15 pb15 hdnclr'
-                      component='div'
+                      variant="h3"
+                      className="pt15 pb15 hdnclr"
+                      component="div"
                     >
                       Cross-platform development
                     </Typography>
                     <Typography
-                      variant='body2'
-                      color='text.secondary'
-                      className='hdnclr'
+                      variant="body2"
+                      color="text.secondary"
+                      className="hdnclr"
                     >
                       As a top-rated offshore iOS application development
                       <br /> company in India, Infodrive has gained expertise in
@@ -481,32 +484,32 @@ export default function IosAppDevelopment() {
                 </Card>
               </Grid>
               <Grid item xs={6}>
-                <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
+                <Card sx={{ maxWidth: 550 }} className="IosCard bgf">
                   <Avatar
-                    alt='Top iPhone App Developers in Singapore'
-                    src='images/OurApplication_bg.png'
+                    alt="Top iPhone App Developers in Singapore"
+                    src="images/OurApplication_bg.png"
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
-                      variant='h3'
-                      className='pt15 pb15 hdnclr'
-                      component='div'
+                      variant="h3"
+                      className="pt15 pb15 hdnclr"
+                      component="div"
                     >
                       Mobile app integration
                     </Typography>
                     <Typography
-                      variant='body2'
-                      color='text.secondary'
-                      className='hdnclr'
+                      variant="body2"
+                      color="text.secondary"
+                      className="hdnclr"
                     >
-                      Infodrive helps businesses to reach their potential in{' '}
-                      <br /> today’s mobile world by connecting teams and <br />{' '}
-                      customers wherever they may be, at home, in the <br />{' '}
-                      office, or on the go. Our mobile app development team{' '}
-                      <br /> combines deep technical expertise, strong design{' '}
-                      <br /> judgments, and years of practical experience in{' '}
+                      Infodrive helps businesses to reach their potential in{" "}
+                      <br /> today’s mobile world by connecting teams and <br />{" "}
+                      customers wherever they may be, at home, in the <br />{" "}
+                      office, or on the go. Our mobile app development team{" "}
+                      <br /> combines deep technical expertise, strong design{" "}
+                      <br /> judgments, and years of practical experience in{" "}
                       <br /> integrating your mobile solution with your other
                       digital <br /> assets, including websites, web
                       applications, custom <br /> software, etc.
@@ -516,31 +519,31 @@ export default function IosAppDevelopment() {
               </Grid>
 
               <Grid item xs={6}>
-                <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
+                <Card sx={{ maxWidth: 550 }} className="IosCard bgf">
                   <Avatar
-                    alt='iPhone App Developers in Malaysia'
-                    src='images/OurApplication_bg.png'
+                    alt="iPhone App Developers in Malaysia"
+                    src="images/OurApplication_bg.png"
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
-                      variant='h3'
-                      className='pt15 pb15 hdnclr'
-                      component='div'
+                      variant="h3"
+                      className="pt15 pb15 hdnclr"
+                      component="div"
                     >
                       Maintenance and optimisation
                     </Typography>
                     <Typography
-                      variant='body2'
-                      color='text.secondary'
-                      className='hdnclr'
+                      variant="body2"
+                      color="text.secondary"
+                      className="hdnclr"
                     >
-                      Infodrive is focused on offering excellent iOS <br />{' '}
+                      Infodrive is focused on offering excellent iOS <br />{" "}
                       application development and maintenance services.
                       <br /> Regardless of whether it is the full-scale
                       integration of
-                      <br /> your iOS app to an upgraded platform, or a minor{' '}
+                      <br /> your iOS app to an upgraded platform, or a minor{" "}
                       <br /> change is required, our proficient team of
                       dedicated iOS <br />
                       app developers guarantees you ideal coordination with
@@ -551,25 +554,25 @@ export default function IosAppDevelopment() {
               </Grid>
 
               <Grid item xs={6}>
-                <Card sx={{ maxWidth: 550 }} className='IosCard bgf'>
+                <Card sx={{ maxWidth: 550 }} className="IosCard bgf">
                   <Avatar
-                    alt='iPhone App Development Company in India'
-                    src='images/OurApplication_bg.png'
+                    alt="iPhone App Development Company in India"
+                    src="images/OurApplication_bg.png"
                     sx={{ width: 65, height: 65, marginLeft: 2 }}
                   />
                   <CardContent>
                     <Typography
                       gutterBottom
-                      variant='h3'
-                      className='pt15 pb15 hdnclr'
-                      component='div'
+                      variant="h3"
+                      className="pt15 pb15 hdnclr"
+                      component="div"
                     >
                       Testing and QA services
                     </Typography>
                     <Typography
-                      variant='body2'
-                      color='text.secondary'
-                      className='hdnclr'
+                      variant="body2"
+                      color="text.secondary"
+                      className="hdnclr"
                     >
                       We perform robust mobile app testing on multiple
                       <br /> devices, in multiple environments that incorporate
@@ -592,9 +595,9 @@ export default function IosAppDevelopment() {
             <Grid
               item
               xs={5}
-              style={{ padding: '30px', background: '#DE3854' }}
+              style={{ padding: "30px", background: "#DE3854" }}
             >
-              <Typography gutterBottom variant='h5' component='div'>
+              <Typography gutterBottom variant="h5" component="div">
                 Get in touch with us today for a <br /> non-obligation
                 discussion
                 <br />
@@ -604,9 +607,9 @@ export default function IosAppDevelopment() {
               <br />
               <br />
               <Button
-                href='/contact-us.html'
-                className='readmore white pl0'
-                variant='text'
+                href="/contact-us.html"
+                className="readmore white pl0"
+                variant="text"
               >
                 CONTACT US <ArrowRightAltIcon />
               </Button>
@@ -614,8 +617,8 @@ export default function IosAppDevelopment() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt='IOS App Development Company in Kuala Lumpur'
-                  src='images/pexels-prakhar-bansal-732183.jpg'
+                  alt="IOS App Development Company in Kuala Lumpur"
+                  src="images/pexels-prakhar-bansal-732183.jpg"
                 />
               </Card>
             </Grid>
