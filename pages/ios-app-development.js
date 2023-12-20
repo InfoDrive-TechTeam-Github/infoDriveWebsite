@@ -167,7 +167,7 @@ export default function IosAppDevelopment() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0} className="fd1">
             <Grid item xs={8}>
-              <Card className="fp1 ">
+              <Card className="fp1 " style={{ paddingLeft: 40 }}>
                 <Typography
                   // className='w100'
                   className="mr-10"
@@ -436,14 +436,12 @@ export default function IosAppDevelopment() {
                       color="text.secondary"
                       className="hdnclr"
                     >
-                      Infodrive has rich expertise in the overall development
-                      <br /> of iOS applications, so, you can be guaranteed the
-                      best <br />
-                      iPhone development service. We coordinate with our <br />
-                      clients right from the beginning and work with them
-                      <br /> through the design stage until the actual
-                      deployment of <br />
-                      the application.
+                      Infodrive has rich expertise in the overall development of
+                      iOS applications, so, you can be guaranteed the best
+                      iPhone development service. We coordinate with our clients
+                      right from the beginning and work with them through the
+                      design stage until the actual deployment of the
+                      application.
                     </Typography>
                   </CardContent>
                 </Card>
@@ -470,15 +468,13 @@ export default function IosAppDevelopment() {
                       className="hdnclr"
                     >
                       As a top-rated offshore iOS application development
-                      <br /> company in India, Infodrive has gained expertise in
-                      <br /> creating multi-platform app development solutions
-                      for
-                      <br /> both Android and iOS devices. Our team of experts
-                      <br /> builds robust, high-quality, scalable, and
-                      interactive iOS <br />
-                      apps that run flawlessly over different iOS devices. We
-                      <br /> make sure to provide fast and tailored development
-                      <br /> services with top-tier results.
+                      company in India, Infodrive has gained expertise in
+                      creating multi-platform app development solutions for both
+                      Android and iOS devices. Our team of experts builds
+                      robust, high-quality, scalable, and interactive iOS apps
+                      that run flawlessly over different iOS devices. We make
+                      sure to provide fast and tailored development services
+                      with top-tier results.
                     </Typography>
                   </CardContent>
                 </Card>
@@ -505,14 +501,13 @@ export default function IosAppDevelopment() {
                       className="hdnclr"
                     >
                       Infodrive helps businesses to reach their potential in{" "}
-                      <br /> today’s mobile world by connecting teams and <br />{" "}
-                      customers wherever they may be, at home, in the <br />{" "}
-                      office, or on the go. Our mobile app development team{" "}
-                      <br /> combines deep technical expertise, strong design{" "}
-                      <br /> judgments, and years of practical experience in{" "}
-                      <br /> integrating your mobile solution with your other
-                      digital <br /> assets, including websites, web
-                      applications, custom <br /> software, etc.
+                      today’s mobile world by connecting teams and customers
+                      wherever they may be, at home, in the office, or on the
+                      go. Our mobile app development team combines deep
+                      technical expertise, strong design judgments, and years of
+                      practical experience in integrating your mobile solution
+                      with your other digital assets, including websites, web
+                      applications, custom software, etc.
                     </Typography>
                   </CardContent>
                 </Card>
@@ -539,15 +534,13 @@ export default function IosAppDevelopment() {
                       color="text.secondary"
                       className="hdnclr"
                     >
-                      Infodrive is focused on offering excellent iOS <br />{" "}
-                      application development and maintenance services.
-                      <br /> Regardless of whether it is the full-scale
-                      integration of
-                      <br /> your iOS app to an upgraded platform, or a minor{" "}
-                      <br /> change is required, our proficient team of
-                      dedicated iOS <br />
-                      app developers guarantees you ideal coordination with
-                      <br /> the iOS app community.
+                      Infodrive is focused on offering excellent iOS application
+                      development and maintenance services. Regardless of
+                      whether it is the full-scale integration of your iOS app
+                      to an upgraded platform, or a minor change is required,
+                      our proficient team of dedicated iOS app developers
+                      guarantees you ideal coordination with the iOS app
+                      community.
                     </Typography>
                   </CardContent>
                 </Card>
@@ -574,10 +567,10 @@ export default function IosAppDevelopment() {
                       color="text.secondary"
                       className="hdnclr"
                     >
-                      We perform robust mobile app testing on multiple
-                      <br /> devices, in multiple environments that incorporate
-                      <br /> manual testing, visual QA, and automated testing to
-                      <br /> ensure that your application works perfectly.
+                      We perform robust mobile app testing on multiple devices,
+                      in multiple environments that incorporate manual testing,
+                      visual QA, and automated testing to ensure that your
+                      application works perfectly.
                     </Typography>
                   </CardContent>
                 </Card>

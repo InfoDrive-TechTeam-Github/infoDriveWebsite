@@ -44,6 +44,7 @@ import Lottie from "lottie-react";
 import cloufLottie from "../public/new.json";
 import Sale2 from "../public/Sale2.json";
 import Cloud from "../public/cloud.json";
+import SaleforceCient from "components/SaleforceCient";
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -821,7 +822,7 @@ export default function SalesForceDevelopment() {
             </Grid>
           </Grid>
         </Box>
-
+        <SaleforceCient />
         <motion.div className="flex justify-center ">
           <motion.div
             whileHover={{ scale: 1.2, originX: 0, originY: 0 }}
