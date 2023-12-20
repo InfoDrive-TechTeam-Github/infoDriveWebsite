@@ -241,7 +241,7 @@ export default function SalesForceDevelopment() {
             d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
           ></path>
         </svg>
-        <div className="container  mx-auto py-20 h-full font-Poppins text-sm text-gray-700 md:space-y-10 space-y-5 md:flex items-stretch justify-between gap-20">
+        <div className="container  mx-auto py-20 h-full font-Poppins text-sm text-gray-700 md:space-y-10 space-y-5 md:flex items-stretch justify-between gap-20 px-4">
           <div className="left md:space-y-7 space-y-3">
             <span className="whitespace-nowrap text-xs md:text-base text-center md:text-justify">
               Dynamic Salesforce Professional Services with
