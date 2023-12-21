@@ -186,7 +186,7 @@ export default function SalesForceDevelopment() {
         </div> */}
       </section>
 
-      <section className={`newsectionbox p5  h-full salesandservice `}>
+      <section className={`newsectionbox relative p5  h-full salesandservice `}>
         <div className="container max-w-5xl mx-auto    h-full w-full ">
           <h2 className="mb-20 text-center">
             Salesforce Sales Cloud and Service Cloud Services
@@ -255,11 +255,22 @@ export default function SalesForceDevelopment() {
         </div>
       </section>
       {/* advantage */}
-      <section className={`newsectionbox p5  h-full -mt-10 space-y-5`}>
+      <section className={`newsectionbox relative p5  h-full -mt-10 space-y-5`}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="absolute top-5 md:top-0 left-0 right-0 overflow-x-hidden md:h-screen z-10"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="0.1"
+            d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+          ></path>
+        </svg>
         <div className="container max-w-5xl mx-auto    h-full w-full  ">
           <motion.h2
-            style={{ zIndex: 5 }}
-            className="text-center "
+            // style={{ zIndex: 5 }}
+            className="text-center  "
             animate={{
               scale: 1.1,
               textShadow: "0px 0px 8px rgb(255,255,255)",
@@ -462,11 +473,22 @@ export default function SalesForceDevelopment() {
             </motion.div>
           </div>
         </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="absolute bottom-0 left-0 right-0 overflow-x-hidden md:h-screen"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="0.1"
+            d="M0,64L30,101.3C60,139,120,213,180,224C240,235,300,181,360,176C420,171,480,213,540,224C600,235,660,213,720,192C780,171,840,149,900,117.3C960,85,1020,43,1080,32C1140,21,1200,43,1260,80C1320,117,1380,171,1410,197.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          ></path>
+        </svg>{" "}
       </section>
 
       {/* feature of service cloud */}
       {/* advantage */}
-      <section className={`newsectionbox p5  h-full -mt-10 space-y-5`}>
+      <section className={`newsectionbox relative p5  h-full -mt-10 space-y-5`}>
         <div className="container max-w-5xl mx-auto    h-full w-full  ">
           <motion.h2
             className="text-center"
@@ -672,9 +694,31 @@ export default function SalesForceDevelopment() {
       {/* timeline  */}
       <div
         style={{ width: "100vw" }}
-        className="flex items-center justify-center md:flex-row flex-col "
+        className="flex relative items-center justify-center md:flex-row flex-col "
       >
-        <div className="newsectionbox self-start ml-10 md:w-1/2 ">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="absolute top-5 md:top-0 left-0 right-0 overflow-x-hidden md:h-screen"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="0.1"
+            d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+          ></path>
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="absolute bottom-0 left-0 right-0 overflow-x-hidden md:h-screen"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="0.1"
+            d="M0,64L30,101.3C60,139,120,213,180,224C240,235,300,181,360,176C420,171,480,213,540,224C600,235,660,213,720,192C780,171,840,149,900,117.3C960,85,1020,43,1080,32C1140,21,1200,43,1260,80C1320,117,1380,171,1410,197.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          ></path>
+        </svg>{" "}
+        <div className="newsectionbox relative self-start ml-10 md:w-1/2 ">
           <h2>
             <span className="text-red-600 text-3xl font-black">Why</span> Choose
             <span className="text-red-600  font-black"> InfoDrive’s</span>{" "}
