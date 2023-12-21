@@ -513,10 +513,18 @@ export default function SalesForceDevelopment() {
           </motion.h2>
 
           <div className="flex justify-center w-full ">
-            <img
+            <motion.img
               alt="advantage sale and service "
-              src="./Pardot-fEATURES.png"
+              src="./salesforce-pardot-image.png"
               className=" object-cover w-1/2"
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                rotate: -360,
+                transition: {
+                  duration: 1,
+                },
+              }}
             />
           </div>
           <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5">

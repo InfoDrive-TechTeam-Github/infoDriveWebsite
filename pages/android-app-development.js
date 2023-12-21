@@ -195,7 +195,7 @@ export default function AndroidAppDevelopment() {
               android app is scalable, secure, and easy to maintain. Ongoing
               support: We offer a range of services to support the success of
               your android app, including testing, deployment, and ongoing
-              maintenance
+              maintenance.
             </Typography>
           </li>
           <li>
