@@ -2489,8 +2489,8 @@ img.btnLdr {
 #conference-timeline .conference-center-line {
   position: absolute;
   width: 3px;
-  height: 100%;
-  top: 0;
+  height: 80%;
+  top: 10%;
   left: 50%;
   margin-left: -2px;
   background: #00b0bd;
@@ -2603,6 +2603,8 @@ img.btnLdr {
   #conference-timeline .conference-center-line {
     margin-left: 0;
     left: 50px;
+    height: 100%;
+    top: 0;
   }
   .timeline-article .meta-date {
     margin-left: 0;

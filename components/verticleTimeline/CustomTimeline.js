@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 function CustomTimeline({ data }) {
   return (
     <div>
@@ -9,16 +9,26 @@ function CustomTimeline({ data }) {
           {data.map((item, index) => (
             <div class="timeline-article">
               <div class="content-left-container">
-                <div class="content-left rounded-md shadow-md">
+                <motion.div
+                  class="content-left rounded-md shadow-md"
+                  initial={{ opacity: 0, x: -40 }}
+                  whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+                  transition={{ duration: 1.5 }}
+                >
                   <h2 className="text-center">{item.left.card}</h2>
                   <p>{item.left.cardDetailedText}</p>
-                </div>
+                </motion.div>
               </div>
               <div class="content-right-container ">
-                <div class="content-right rounded-md shadow-md ">
+                <motion.div
+                  class="content-right rounded-md shadow-md "
+                  initial={{ opacity: 0, x: 40 }}
+                  whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
+                  transition={{ duration: 1.5 }}
+                >
                   <h2 className="text-center">{item.right.card}</h2>
                   <p>{item.right.cardDetailedText}</p>
-                </div>
+                </motion.div>
               </div>
               <div class="meta-date">
                 <span class="date"></span>

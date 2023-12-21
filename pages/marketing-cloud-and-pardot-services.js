@@ -69,27 +69,27 @@ export default function SalesForceDevelopment() {
         card: "Expert Team",
 
         cardDetailedText:
-          "With a team of seasoned professionals specializing in Salesforce Marketing Cloud and Pardot, InfoDrive Solutions ensures clients receive top-notch, tailored solutions backed by extensive experience",
+          "InfoDrive Solutions ensures clients receive top-notch, tailored solutions backed by extensive experienced skilled & certified resources",
       },
       right: {
         card: "End-to-End Support",
         cardDetailedText:
-          "InfoDrive Solutions offers a full spectrum of services, covering everything from implementation to ongoing support and optimization. This approach guarantees clients a seamless and integrated experience.",
+          "InfoDrive Solutions offers a full spectrum of services, covering everything from implementation to ongoing support and optimization.",
       },
     },
 
     {
       left: {
-        card: "Tailored Solutions:",
+        card: "Tailored Solutions",
 
         cardDetailedText:
-          "Recognizing the uniqueness of every business, InfoDrive Solutions excels in delivering customized solutions. Whether aligning Salesforce Marketing Cloud with specific goals or tailoring Pardot for optimal performance, client-specific needs take center stage.",
+          "InfoDrive Solutions excels in delivering customized solutions whether aligning Salesforce Marketing Cloud with specific goals or tailoring Pardot for optimal performance, client-specific needs take center stage",
       },
       right: {
-        card: "Proven Success:",
+        card: "Proven Success",
 
         cardDetailedText:
-          "InfoDrive Solutions boasts a track record of successfully implementing and optimizing Salesforce Marketing Cloud and Pardot. Case studies and testimonials underscore their commitment to delivering tangible results and driving marketing success.",
+          "InfoDrive Solutions boasts a track record of successfully implementing and optimizing Salesforce Marketing Cloud and Pardot.",
       },
     },
     {
@@ -97,13 +97,13 @@ export default function SalesForceDevelopment() {
         card: "Strategic Planning",
 
         cardDetailedText:
-          "Beyond implementation, InfoDrive Solutions collaborates with clients on strategic consultation and planning. This involves developing a roadmap for effectively leveraging Salesforce Marketing Cloud and Pardot, ensuring long-term success and ROI.",
+          "InfoDrive Solutions involves Team in developing a roadmap for effectively leveraging Salesforce Marketing Cloud and Pardot, ensuring long-term success and ROI.",
       },
       right: {
         card: "Ongoing Support and Training",
 
         cardDetailedText:
-          "Beyond implementation, InfoDrive Solutions collaborates with clients on strategic consultation and planning. This involves developing a roadmap for effectively leveraging Salesforce Marketing Cloud and Pardot, ensuring long-term success and ROI.",
+          "InfoDrive Solutions provides updates and training sessions. This empowers clients to harness the full potential of Salesforce Marketing Cloud and Pardot.",
       },
     },
     {
@@ -111,13 +111,13 @@ export default function SalesForceDevelopment() {
         card: "Seamless Salesforce Integration",
 
         cardDetailedText:
-          "Thanks to their expertise, InfoDrive Solutions ensures the seamless integration of Salesforce Marketing Cloud and Pardot with the broader Salesforce ecosystem. This unified approach streamlines customer relationship management and marketing efforts.",
+          "InfoDrive Solutions ensures the seamless integration of Salesforce Marketing Cloud and Pardot with the broader Salesforce ecosystem.",
       },
       right: {
         card: "Innovation Focus",
 
         cardDetailedText:
-          "In the ever-evolving marketing technology landscape, InfoDrive Solutions remains dedicated to innovation. They  stay current with the latest trends in Salesforce Marketing Cloud and Pardot, ensuring clients benefit from cutting-edge solutions.",
+          " InfoDrive Solutions remains dedicated to innovation, We current with the latest trends in Salesforce Marketing Cloud and Pardot, ensuring clients benefit from cutting-edge solution.",
       },
     },
 
@@ -179,27 +179,22 @@ export default function SalesForceDevelopment() {
       <Header />
 
       <section className="newsectionbox   text-white relative  ocean pb-0 h-screen ">
-        {/* <img
-          src="./SandS.jpg"
-          className="w-full h-[225px] md:h-full object-fit"
-        /> */}
-
         <Lottie
           animationData={cloufLottie}
           loop={true}
           className="absolute top-0 left-0 right-0"
         />
-        <div className="container max-w-5xl mx-auto    h-full w-full  p5 absolute top-16 md:top-60 md:left-10">
-          <div className=" flex md:flex-row flex-col md:items-center md:justify-between gap-10 ">
+        <div className="container md:max-w-5xl  lg:max-w-7xl mx-auto    h-full w-full  p5 absolute top-16 md:top-60 md:left-10  px-4  lg:px-8">
+          <div className=" md:flex   md:items-center md:justify-between  w-full">
             <h1
-              className="text-justify w-1/2  "
+              className="text-justify md:w-1/2 "
               style={{ zIndex: 5, color: "#00000099" }}
             >
               Elevate your marketing achievements through the strategic
               integration of Salesforce Marketing Cloud and Pardot Solutions,
               where the synergy of innovation converges with guaranteed success.
             </h1>
-            <div className="" style={{ zIndex: 10 }}>
+            <div className="md:mr-20" style={{ zIndex: 10 }}>
               <img src="./pardot1.png" />
             </div>
           </div>
@@ -223,7 +218,18 @@ export default function SalesForceDevelopment() {
         </div> */}
       </section>
 
-      <section className={`newsectionbox p5  h-full salesandservice `}>
+      <section className={`newsectionbox p5  h-full salesandservice relative`}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="absolute top-5 md:top-0 left-0 right-0 overflow-x-hidden md:h-screen"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="0.1"
+            d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+          ></path>
+        </svg>
         <div className="container max-w-5xl mx-auto    h-full w-full ">
           <h2 className="mb-20 text-center">
             Salesforce Marketing Cloud and Salesforce Pardot Service
@@ -234,8 +240,8 @@ export default function SalesForceDevelopment() {
               style={{ zIndex: 10 }}
             >
               <img
-                className="md:h-64 h-[156px] w-[80%] border mx-auto -mt-14 shadow-lg rounded-md"
-                src="./businessman-with-cloud-icons.jpg"
+                className="md:h-64 h-[156px] w-[80%] border mx-auto -mt-14 shadow-lg rounded-md object-cover"
+                src="./SFMC.png"
               />
               <Typography
                 gutterBottom
@@ -256,6 +262,17 @@ export default function SalesForceDevelopment() {
                   capabilities of Marketing Cloud Salesforce.
                 </h5>
               </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1440 320"
+                className="absolute bottom-0 left-0 right-0 overflow-x-hidden md:h-screen"
+              >
+                <path
+                  fill="#0099ff"
+                  fill-opacity="0.1"
+                  d="M0,64L30,101.3C60,139,120,213,180,224C240,235,300,181,360,176C420,171,480,213,540,224C600,235,660,213,720,192C780,171,840,149,900,117.3C960,85,1020,43,1080,32C1140,21,1200,43,1260,80C1320,117,1380,171,1410,197.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+                ></path>
+              </svg>
             </div>
             {/* right */}
             <div
@@ -263,8 +280,8 @@ export default function SalesForceDevelopment() {
               style={{ zIndex: 10 }}
             >
               <img
-                className="md:h-64 w-[80%]  border mx-auto -mt-14 shadow-lg rounded-md object-contain"
-                src="./service.jpg"
+                className="md:h-64 w-[80%]  border mx-auto -mt-14 shadow-lg rounded-md object-cover"
+                src="./pardot.png"
               />
               <div>
                 <Typography
@@ -319,7 +336,7 @@ export default function SalesForceDevelopment() {
             <motion.img
               alt="advantage sale and service "
               src="./pardot2.png"
-              className=" aspect-square md:w-[40%] w-[70%]"
+              className=" aspect-square md:w-[30%] w-[70%] object-cover"
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
@@ -481,19 +498,31 @@ export default function SalesForceDevelopment() {
             </motion.div>
           </div>
           <p className="mt-5">
-            In conclusion, Salesforce Marketing Cloud is a versatile and
-            powerful platform that empowers businesses to deliver personalized,
-            targeted, and effective marketing campaigns. With an array of
-            features, marketers have the tools they need to engage their
-            audience across channels, drive conversions, and achieve success in
-            the ever-evolving landscape of digital marketing.
+            <span className="text-red-600 font-bold"> Conclusion,</span>{" "}
+            Salesforce Marketing Cloud is a versatile and powerful platform that
+            empowers businesses to deliver personalized, targeted, and effective
+            marketing campaigns. With an array of features, marketers have the
+            tools they need to engage their audience across channels, drive
+            conversions, and achieve success in the ever-evolving landscape of
+            digital marketing.
           </p>
         </div>
       </section>
 
       {/* feature of service cloud */}
       {/* advantage */}
-      <section className={`newsectionbox p5  h-full -mt-10 space-y-5`}>
+      <section className={`newsectionbox p5 relative h-full -mt-10 space-y-5`}>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="absolute top-5 md:top-0 left-0 right-0 overflow-x-hidden md:h-screen z-10"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="0.1"
+            d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+          ></path>
+        </svg>
         <div className="container max-w-5xl mx-auto    h-full w-full  ">
           <motion.h2
             className="text-center"
@@ -527,7 +556,7 @@ export default function SalesForceDevelopment() {
               }}
             />
           </div>
-          <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5">
+          <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5 relative">
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
@@ -679,14 +708,26 @@ export default function SalesForceDevelopment() {
             </motion.div>
           </div>
           <p className="mt-5">
-            In conclusion, Salesforce Pardots feature-rich platform empowers
-            businesses to execute sophisticated marketing strategies with ease.
-            Whether its personalized lead nurturing, dynamic content creation,
-            or seamless integration with Salesforce CRM, Pardot offers a
-            comprehensive suite of tools designed to drive marketing success in
-            todays dynamic landscape.
+            <span className="text-red-600 font-bold"> Conclusion,</span>{" "}
+            Salesforce Pardots feature-rich platform empowers businesses to
+            execute sophisticated marketing strategies with ease. Whether its
+            personalized lead nurturing, dynamic content creation, or seamless
+            integration with Salesforce CRM, Pardot offers a comprehensive suite
+            of tools designed to drive marketing success in todays dynamic
+            landscape.
           </p>
         </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="absolute bottom-0 left-0 right-0 overflow-x-hidden md:h-screen"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="0.1"
+            d="M0,64L30,101.3C60,139,120,213,180,224C240,235,300,181,360,176C420,171,480,213,540,224C600,235,660,213,720,192C780,171,840,149,900,117.3C960,85,1020,43,1080,32C1140,21,1200,43,1260,80C1320,117,1380,171,1410,197.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          ></path>
+        </svg>
       </section>
 
       {/* timeline  */}
@@ -749,8 +790,19 @@ export default function SalesForceDevelopment() {
       </section>
 
       <section
-        className={`sectionBox aboutUsBox3 salesCloudService p5 -mt-10 pt-10`}
+        className={`sectionBox aboutUsBox3 salesCloudService p5 -mt-10 pt-10 relative`}
       >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="absolute top-5 md:top-0 left-0 right-0 overflow-x-hidden md:h-screen"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="0.1"
+            d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+          ></path>
+        </svg>
         <h2 className="text-center font-bold " style={{ color: "#0b2653" }}>
           Empower Your Business: Partnering with
           <span className="text-[#dd3952]  font-bold text-center ml-1">
@@ -792,6 +844,7 @@ export default function SalesForceDevelopment() {
                     of Salesforce Marketing Cloud and Pardot, globally
                     recognized as the premier customer relationship management
                     (CRM) platform. <br />
+                    <br />
                     <span className="font-bold text-[#dd3952]">
                       {" "}
                       At InfoDrive Solutions,
@@ -817,22 +870,22 @@ export default function SalesForceDevelopment() {
                   loop={true}
                   className="md:w-[90%] ml-5"
                 />
-                <div className="flex items-center justify-between gap-2 mt-5">
-                  <motion.div className="w-20 mt-5">
+                <div className="flex items-center justify-between gap-2 md:-mt-10">
+                  <motion.div className="w-20 ">
                     <motion.img
                       src="./pardot5.png"
                       alt="sale certificate1"
                       className="h-full w-full"
                     />
                   </motion.div>
-                  <div className="w-20 mt-5">
+                  <div className="w-20 ">
                     <img
                       src="./pardot6.png"
                       alt="sale certificate5"
                       className="h-full w-full"
                     />
                   </div>
-                  <div className="w-20 mt-5">
+                  <div className="w-20 ">
                     <img
                       src="./pardot7.png"
                       alt="sale certificate4"
@@ -840,7 +893,7 @@ export default function SalesForceDevelopment() {
                     />
                   </div>
 
-                  <div className="w-20 mt-5">
+                  <div className="w-20">
                     {" "}
                     <img
                       src="./pardot8.png"
@@ -849,21 +902,21 @@ export default function SalesForceDevelopment() {
                     />
                   </div>
 
-                  <div className="w-20 mt-5">
+                  <div className="w-20 ">
                     <img
                       src="./pardot9.png"
                       alt="sale certificate3"
                       className="h-full w-full"
                     />
                   </div>
-                  <div className="w-20 mt-5">
+                  <div className="w-20 ">
                     <img
                       src="./pardot10.png"
                       alt="sale certificate3"
                       className="h-full w-full"
                     />
                   </div>
-                  <div className="w-20 mt-5">
+                  <div className="w-20 ">
                     <img
                       src="./pardot11.png"
                       alt="sale certificate3"
@@ -875,24 +928,34 @@ export default function SalesForceDevelopment() {
             </Grid>
           </Grid>
         </Box>
-        <SaleforceCient />
-        <motion.div className="flex justify-center ">
-          <motion.div
-            whileHover={{ scale: 1.2, originX: 0, originY: 0 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            className="w-max"
-          >
-            <Button
-              href="/contact-us.html"
-              className="bgRed white  poppin upperCase"
-            >
-              Connect with Our Expert
-            </Button>
-          </motion.div>
-        </motion.div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          className="absolute bottom-0 left-0 right-0 overflow-x-hidden md:h-screen"
+        >
+          <path
+            fill="#0099ff"
+            fill-opacity="0.1"
+            d="M0,64L30,101.3C60,139,120,213,180,224C240,235,300,181,360,176C420,171,480,213,540,224C600,235,660,213,720,192C780,171,840,149,900,117.3C960,85,1020,43,1080,32C1140,21,1200,43,1260,80C1320,117,1380,171,1410,197.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          ></path>
+        </svg>
       </section>
-
-      <div className="md:-mt-20 -mt-10">
+      <SaleforceCient />
+      <motion.div className="flex justify-center ">
+        <motion.div
+          whileHover={{ scale: 1.2, originX: 0, originY: 0 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="w-max"
+        >
+          <Button
+            href="/contact-us.html"
+            className="bgRed white  poppin upperCase"
+          >
+            Connect with Our Expert
+          </Button>
+        </motion.div>
+      </motion.div>
+      <div className="">
         <LeadForm />
       </div>
 
