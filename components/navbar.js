@@ -358,8 +358,11 @@ function DrawerAppBar(props) {
                 </ListItemButton>
               </ListItem> */}
               <ListItem disablePadding>
-                <ListItemButton component="a" to="/marketing-cloud.html">
-                  <ListItemText primary={"Marketing Cloud"} />
+                <ListItemButton
+                  component="a"
+                  to="/marketing-cloud-and-pardot-services.html"
+                >
+                  <ListItemText primary={"Marketing Cloud & Pardot Services"} />
                 </ListItemButton>
               </ListItem>
               <ListItem disablePadding>
@@ -795,8 +798,13 @@ function DrawerAppBar(props) {
                       </ListItemButton>
                     </ListItem> */}
                     <ListItem disablePadding>
-                      <ListItemButton component="a" to="/marketing-cloud.html">
-                        <ListItemText primary={"Marketing Cloud"} />
+                      <ListItemButton
+                        component="a"
+                        to="/marketing-cloud-and-pardot-services.html"
+                      >
+                        <ListItemText
+                          primary={"Marketing Cloud & Pardot Services"}
+                        />
                       </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>

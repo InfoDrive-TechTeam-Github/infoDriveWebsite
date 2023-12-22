@@ -16,7 +16,9 @@ function CustomTimeline({ data }) {
                   transition={{ duration: 1.5 }}
                 >
                   <h2 className="text-center">{item.left.card}</h2>
-                  <p>{item.left.cardDetailedText}</p>
+                  <p className="md:text-justify">
+                    {item.left.cardDetailedText}
+                  </p>
                 </motion.div>
               </div>
               <div class="content-right-container ">
@@ -27,7 +29,9 @@ function CustomTimeline({ data }) {
                   transition={{ duration: 1.5 }}
                 >
                   <h2 className="text-center">{item.right.card}</h2>
-                  <p>{item.right.cardDetailedText}</p>
+                  <p className="md:text-justify">
+                    {item.right.cardDetailedText}
+                  </p>
                 </motion.div>
               </div>
               <div class="meta-date">
