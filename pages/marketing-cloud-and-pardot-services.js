@@ -47,7 +47,7 @@ import Cloud from "../public/cloud.json";
 import SaleforceCient from "components/SaleforceCient";
 import CustomTimeline from "components/verticleTimeline/CustomTimeline";
 export default function SalesForceDevelopment() {
-  const [width, setWidth] = React.useState(
+  const [widthI, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
   const handleResize = () => {
@@ -60,7 +60,7 @@ export default function SalesForceDevelopment() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [widthI]);
 
   const mobileBreakpoint = 768;
   const items = [
@@ -188,7 +188,12 @@ export default function SalesForceDevelopment() {
           <div className=" md:flex   md:items-center md:justify-between  w-full">
             <h1
               className="text-justify md:w-1/2 "
-              style={{ zIndex: 5, color: "#00000099" }}
+              style={{
+                zIndex: 5,
+                color: "#00000099",
+                width: widthI < mobileBreakpoint ? "90%" : "",
+                // width: "90%",
+              }}
             >
               Elevate your marketing achievements through the strategic
               integration of Salesforce Marketing Cloud and Pardot Solutions,
@@ -218,7 +223,9 @@ export default function SalesForceDevelopment() {
         </div> */}
       </section>
 
-      <section className={`newsectionbox p5  h-full salesandservice relative`}>
+      <section
+        className={`newsectionbox p5  h-full salesandservice relative -mt-20 md:mt-0`}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -497,7 +504,7 @@ export default function SalesForceDevelopment() {
               </p>
             </motion.div>
           </div>
-          <p className="mt-5">
+          <p className="mt-5 text-justify">
             <span className="text-red-600 font-bold"> Conclusion,</span>{" "}
             Salesforce Marketing Cloud is a versatile and powerful platform that
             empowers businesses to deliver personalized, targeted, and effective
@@ -707,8 +714,8 @@ export default function SalesForceDevelopment() {
               </p>
             </motion.div>
           </div>
-          <p className="mt-5">
-            <span className="text-red-600 font-bold"> Conclusion,</span>{" "}
+          <p className="mt-5 text-justify">
+            <span className="text-red-600 font-bold "> Conclusion,</span>{" "}
             Salesforce Pardots feature-rich platform empowers businesses to
             execute sophisticated marketing strategies with ease. Whether its
             personalized lead nurturing, dynamic content creation, or seamless
@@ -853,7 +860,7 @@ export default function SalesForceDevelopment() {
                     strategic utilization of Salesforce Marketing Cloud and
                     Pardot to enhance sales marketing processes and unlock
                     growth potential. Trust our{" "}
-                    <span className="font-bold text-[#dd3952]">
+                    <span className="font-bold text-[#dd3952] mr-2">
                       {" "}
                       Certified Salesforce Consultants
                     </span>
@@ -863,7 +870,7 @@ export default function SalesForceDevelopment() {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} className="-mt-12">
               <Card>
                 <Lottie
                   animationData={Sale}
