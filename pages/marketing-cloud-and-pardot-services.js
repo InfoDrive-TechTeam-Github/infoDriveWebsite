@@ -191,7 +191,7 @@ export default function SalesForceDevelopment() {
               style={{
                 zIndex: 5,
                 color: "#00000099",
-                width: widthI < mobileBreakpoint ? "90%" : "",
+                width: widthI < mobileBreakpoint && widthI !== 0 ? "90%" : "",
                 // width: "90%",
               }}
             >
