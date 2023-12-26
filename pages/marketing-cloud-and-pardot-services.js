@@ -60,7 +60,7 @@ export default function SalesForceDevelopment() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [widthI]);
+  }, []);
 
   const mobileBreakpoint = 768;
   const items = [
