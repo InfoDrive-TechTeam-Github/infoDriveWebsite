@@ -347,7 +347,7 @@ function DrawerAppBar(props) {
               <ListItem disablePadding>
                 <ListItemButton
                   component="a"
-                  to="/sales-cloud-and-service-cloud.html"
+                  to="/sales-and-service-cloud.html"
                 >
                   <ListItemText primary={"Sales Cloud & Service Cloud"} />
                 </ListItemButton>
@@ -787,7 +787,7 @@ function DrawerAppBar(props) {
                     <ListItem disablePadding>
                       <ListItemButton
                         component="a"
-                        to="/sales-cloud-and-service-cloud.html"
+                        to="/sales-and-service-cloud.html"
                       >
                         <ListItemText primary={"Sales Cloud & Service Cloud"} />
                       </ListItemButton>
