@@ -96,16 +96,16 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in Singapore, Malaysia, and India - InfoDrive Solutions
+          Salesforce Sales Cloud and Service Cloud Services | InfoDrive
+          Solutions
         </title>
         <meta
           name="description"
-          content="Transform your sales process with InfoDrive Solutions' Salesforce Sales Cloud services. Our experts provide implementation, automation, customization, and consulting services globally."
+          content="Maximize efficiency and service quality with our Salesforce Sales Cloud and Service Cloud solutions. Elevate your business performance today."
         />
         <meta
           name="keywords"
-          content="Salesforce Sales Cloud Implementation, Salesforce Sales Cloud automation, Salesforce Sales Cloud customization, Salesforce Sales Cloud Consulting Services, Salesforce Sales Cloud Consulting Services in Singapore, Salesforce Sales Cloud for small business, Salesforce Sales Cloud Consulting Services in Malaysia, Salesforce Sales Cloud Consulting Services in India, Salesforce Sales Cloud implementation services in Singapore, Salesforce Sales Cloud for Malaysian businesses, Salesforce Sales Cloud implementation services in India"
+          content="Salesforce Sales Cloud, Service Cloud Services, Salesforce Consulting, Salesforce Development, CRM Solutions, Customer Service Optimization, Cloud-Based Sales Solutions, Business Efficiency, InfoDrive Solutions"
         />
         <link
           rel="canonical"
@@ -113,8 +113,8 @@ export default function SalesForceDevelopment() {
         />
         <meta
           property="og:title"
-          content=" Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in Singapore, Malaysia, and India - InfoDrive Solutions"
+          content="Salesforce Sales Cloud and Service Cloud Services | InfoDrive
+          Solutions"
         />
         <meta
           property="og:image"
@@ -783,10 +783,13 @@ export default function SalesForceDevelopment() {
                     className="text-justify"
                   >
                     <span className="font-bold text-black">InfoDrive</span> team
-                    of{" "}
-                    <span className="font-bold text-black">
+                    of
+                    <a
+                      className="font-bold text-blue-600 mx-1"
+                      href="https://infodrive-solutions.com/salesforce-professional-services.html"
+                    >
                       certified Salesforce consultants
-                    </span>{" "}
+                    </a>
                     brings substantial experience to the table, aiding
                     businesses in these regions to streamline their sales
                     processes and foster growth through the utilization of
@@ -809,7 +812,7 @@ export default function SalesForceDevelopment() {
                     </span>
                     recognized globally as the premier customer relationship
                     management (CRM) platform. Trust our{" "}
-                    <span className="font-bold text-black">
+                    <span className="font-bold text-black mr-2">
                       certified Salesforce
                     </span>
                     consultants to guide your business in optimizing sales
