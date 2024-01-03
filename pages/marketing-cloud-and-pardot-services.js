@@ -133,25 +133,23 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in Singapore, Malaysia, and India - InfoDrive Solutions
+          Salesforce Marketing Cloud & Pardot Services | InfoDrive Solutions
         </title>
         <meta
           name="description"
-          content="Transform your sales process with InfoDrive Solutions' Salesforce Sales Cloud services. Our experts provide implementation, automation, customization, and consulting services globally."
+          content="Elevate your strategy with Marketing Cloud & Pardot Services. Our experts empower your business with cutting-edge automation, targeted campaigns, and data-driven insights."
         />
         <meta
           name="keywords"
-          content="Salesforce Sales Cloud Implementation, Salesforce Sales Cloud automation, Salesforce Sales Cloud customization, Salesforce Sales Cloud Consulting Services, Salesforce Sales Cloud Consulting Services in Singapore, Salesforce Sales Cloud for small business, Salesforce Sales Cloud Consulting Services in Malaysia, Salesforce Sales Cloud Consulting Services in India, Salesforce Sales Cloud implementation services in Singapore, Salesforce Sales Cloud for Malaysian businesses, Salesforce Sales Cloud implementation services in India"
+          content="Salesforce Marketing Cloud, Pardot Services, Marketing Automation, Lead Nurturing, CRM Solutions, Marketing Excellence, Salesforce Consulting, Salesforce Development, InfoDrive Solution"
         />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/sales-cloud-and-service-cloud.html"
+          href="https://infodrive-solutions.com/marketing-cloud-and-pardot-services.html"
         />
         <meta
           property="og:title"
-          content=" Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in Singapore, Malaysia, and India - InfoDrive Solutions"
+          content=" Salesforce Marketing Cloud & Pardot Services - InfoDrive Solutions"
         />
         <meta
           property="og:image"
@@ -505,7 +503,7 @@ export default function SalesForceDevelopment() {
             </motion.div>
           </div>
           <p className="mt-5 text-justify">
-            <span className="text-red-600 font-bold"> Conclusion,</span>{" "}
+            {/* <span className="text-red-600 font-bold"> Conclusion,</span>{" "} */}
             Salesforce Marketing Cloud is a versatile and powerful platform that
             empowers businesses to deliver personalized, targeted, and effective
             marketing campaigns. With an array of features, marketers have the
@@ -715,7 +713,7 @@ export default function SalesForceDevelopment() {
             </motion.div>
           </div>
           <p className="mt-5 text-justify">
-            <span className="text-red-600 font-bold "> Conclusion,</span>{" "}
+            {/* <span className="text-red-600 font-bold "> Conclusion,</span>{" "} */}
             Salesforce Pardots feature-rich platform empowers businesses to
             execute sophisticated marketing strategies with ease. Whether its
             personalized lead nurturing, dynamic content creation, or seamless

@@ -48,6 +48,7 @@ import Sale2 from "../public/Sale2.json";
 import Cloud from "../public/lightning.json";
 import SaleforceCient from "components/SaleforceCient";
 import CustomTimeline from "components/verticleTimeline/CustomTimeline";
+
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -182,7 +183,7 @@ export default function SalesForceDevelopment() {
       </noscript>
       <Header />
 
-      <section className="newsectionbox text-white relative ocean pb-0 h-screen ">
+      <section className="newsectionbox text-white relative ocean pb-0 h-screen blob-scene">
         <div className="container md:max-w-5xl  lg:max-w-7xl mx-auto h-full w-full p5 absolute top-16 md:top-40 md:left-10   lg:px-8">
           <div className="md:flex md:items-center md:gap-2 ">
             <h1
@@ -197,19 +198,25 @@ export default function SalesForceDevelopment() {
               Consulting and AppExchange App Development Services.
             </h1>
             <div>
-              <div className="md:w-52 relative w-20 mt-10 md:mt-0 -ml-10">
+              <div className="md:w-52 relative w-20 mt-10 md:mt-0 md:mr-10 -ml-10">
                 <Lottie
                   animationData={cloufLottie}
                   loop={true}
                   className="w-full"
                 />
-                <h2 className="absolute md:-right-56 -right-60 top-0 text-xs md:text-base">
+                <h2
+                  className="absolute md:-right-56 -right-60 top-0 text-xs md:text-base"
+                  style={{ color: "#00A1DF" }}
+                >
                   Saleforce App Exchange
                 </h2>
               </div>
-              <div className="md:w-32 w-20 relative mt-0 md:-ml-10 -ml-5">
+              <div className="md:w-32 w-20 relative mt-0 -ml-7 md:ml-5">
                 <Lottie animationData={Light} loop={true} className=" w-full" />
-                <h2 className="absolute md:-right-56 -right-64 top-0 text-xs md:text-base">
+                <h2
+                  className="absolute md:-right-56 -right-64 top-0 text-xs md:text-base"
+                  style={{ color: "#00A1DF" }}
+                >
                   Saleforce Lightning Service
                 </h2>
               </div>
@@ -223,7 +230,11 @@ export default function SalesForceDevelopment() {
               href="/contact-us.html"
               className="buttOnread   normalCase mt-5"
               variant="text"
-              style={{ zIndex: 5, color: "white", background: "#00A1DF" }}
+              style={{
+                zIndex: 5,
+                color: "white",
+                background: "rgb(219 39 119)",
+              }}
             >
               Let's Talk <ArrowRightAltIcon />
             </Button>
@@ -231,9 +242,7 @@ export default function SalesForceDevelopment() {
         </div>
       </section>
 
-      <section
-        className={`newsectionbox   h-full salesandservice relative  mt-16`}
-      >
+      <section className={`newsectionbox   h-full salesandservice relative   `}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -247,15 +256,24 @@ export default function SalesForceDevelopment() {
         </svg>
         <div className="container mx-auto md:px-8  py-16 p5">
           <div className="md:flex items-center justify-between">
-            <div className="left md:w-[40%] rounded-md overflow-hidden">
-              <img
+            <motion.div
+              className="left md:w-[40%] rounded-md overflow-hidden z-10"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              <motion.img
                 alt="app exchange"
                 src="./appExchange1.jpeg"
                 className="w-full object-cover"
-                cl
               />
-            </div>
-            <div className="right md:w-1/2 mt-5 md:mt-0">
+            </motion.div>
+            <motion.div
+              className="right md:w-1/2 mt-5 md:mt-0"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <h2>
                 Tailored Excellence: Crafting Unique Solutions with Salesforce
                 Lightning Development and Migration Expertise.
@@ -273,7 +291,7 @@ export default function SalesForceDevelopment() {
                 specific to your business needs, we drive productivity and
                 optimize operations with finesse.
               </h5>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -465,80 +483,140 @@ export default function SalesForceDevelopment() {
               style={{ listStyleType: "circle" }}
               className="grid grid-col md:grid-cols-2 gap-10 mt-5"
             >
-              <li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">
                   Lightning Component Framework:
                 </span>
                 Building robust and reusable components for efficient app
                 development.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Lightning App Builder:</span>
                 Empowering users to create custom applications with ease.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Impeccable Design:</span>
                 Ensuring a flawless user experience with faultless design
                 principles.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Lightning Snap-ins:</span>
                 Enhancing customer engagement with Lightning-powered chat.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Faster Turnaround Time:</span>
                 Accelerating development cycles for quicker project delivery.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Lightning Voice:</span>
                 Enabling seamless communication within the Salesforce platform.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Lightning Connect:</span>
                 Facilitating seamless integration with external data sources.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Lightning Process Builder:</span>
                 Automating business processes for increased efficiency.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Easy Connection with Outlook:</span>
                 Streamlining communication and data management.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Lightning Experience:</span>
                 Providing a modern and intuitive user interface.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">Reduced App Development Time:</span>
                 Enhancing productivity through quicker app development.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">
                   Salesforce Lightning Configuration:
                 </span>
                 Tailoring Lightning to suit your unique business requirements.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">
                   Excellent Compatibility Feature:
                 </span>
                 Ensuring smooth integration with various systems.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">
                   Lightning Dashboards and Reports:
                 </span>
                 Gaining insights with visually appealing and informative
                 dashboards.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1 }}
+              >
                 <span className="font-bold">
                   AppExchange App Lightning Conversion:
                 </span>
                 Effortlessly converting apps for seamless integration into the
                 AppExchange ecosystem.
-              </li>
+              </motion.li>
             </ul>
           </div>
         </div>
@@ -561,7 +639,12 @@ export default function SalesForceDevelopment() {
         <div className="container mx-auto h-full w-full md:px-8 p5 ">
           <div className="md:flex items-center gap-10 ">
             {/* left */}
-            <div className="left space-y-5 md:w-1/2">
+            <motion.div
+              className="left space-y-5 md:w-1/2"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
+            >
               <span className="text-red-600 block font-bold">
                 Empower Your Business with Innovation: Explore Cutting- Edge
                 Salesforce AppExchange Solutions by InfoDrive
@@ -591,7 +674,7 @@ export default function SalesForceDevelopment() {
                 AppExchange product design, development, review, and
                 publication.
               </h5>
-            </div>
+            </motion.div>
             {/* right */}
             <div className="right h-96 rounded-md overflow-hidden md:ml-20 ">
               <img src="./appExchange3.png" className="h-full " />
@@ -716,7 +799,7 @@ export default function SalesForceDevelopment() {
             </motion.div>
             {/* 6 */}
             <motion.div
-              initial={{ opacity: 0, x: -40 }}
+              initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0, visibility: "visible" }}
               transition={{ duration: 1.5 }}
               className="bg-white p-6 rounded-md shadow-md mb-5"

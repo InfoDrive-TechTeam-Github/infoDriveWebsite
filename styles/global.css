@@ -2645,3 +2645,13 @@ img.btnLdr {
   }
 }
 /*===== // Resonsive Vertical Timeline =====*/
+.blob-scene {
+  background: url("./images/blob-scene.jpg");
+  height: 100vh;
+  width: 100vw;
+}
+@media (max-width: 600px) {
+  .blob-scene {
+    background: white;
+  }
+}
