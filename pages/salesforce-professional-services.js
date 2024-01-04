@@ -350,14 +350,14 @@ export default function SalesForceDevelopment() {
               className="w100 md:text-justify"
               sx={{ mt: -10 }}
             >
-              Salesforce stands as a pinnacle in customer relationship
-              management (CRM), offering a robust platform that empowers
-              businesses to refine and enhance their sales, customer service,
-              and marketing endeavors. It centralizes customer data, enabling
-              streamlined processes and communication automation. As a
-              Salesforce Development Services partner at InfoDrive Solutions, we
-              take pride in our proven proficiency in delivering Salesforce
-              Development Services partner
+              Salesforce stands out as the pinnacle in customer relationship
+              management (CRM), providing a robust platform that empowers
+              businesses to elevate their sales, customer service, and marketing
+              efforts. By centralizing customer data, Salesforce enables
+              streamlined processes and automates communication. As your
+              dedicated Salesforce Development Services partner, we are proud of
+              our proven expertise. Our focus is on delivering tailored
+              solutions that align seamlessly with your business goals.
             </Typography>
           </div>
           <img src="./empower.jpg" alt="empowe" className="md:w-1/2" />

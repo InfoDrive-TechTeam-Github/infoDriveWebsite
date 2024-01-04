@@ -109,7 +109,7 @@ export default function SalesForceDevelopment() {
         />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/sales-cloud-and-service-cloud.html"
+          href="https://infodrive-solutions.com/sales-and-service-cloud.html"
         />
         <meta
           property="og:title"
