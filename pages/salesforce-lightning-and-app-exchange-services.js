@@ -242,7 +242,9 @@ export default function SalesForceDevelopment() {
         </div>
       </section>
 
-      <section className={`newsectionbox   h-full salesandservice relative   `}>
+      <section
+        className={`newsectionbox   h-full salesandservice relative -mt-20 md:mt-0  `}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
