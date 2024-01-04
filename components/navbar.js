@@ -383,7 +383,7 @@ function DrawerAppBar(props) {
               <ListItem disablePadding>
                 <ListItemButton
                   component="a"
-                  to="//salesforce-commerce-cloud-and-einstein-services.html"
+                  to="/salesforce-commerce-cloud-and-einstein-services.html"
                 >
                   <ListItemText
                     primary={"Salesforce Commerce Cloud & Einstein Services"}
