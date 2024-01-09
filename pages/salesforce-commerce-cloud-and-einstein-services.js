@@ -93,25 +93,22 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in Singapore, Malaysia, and India - InfoDrive Solutions
+          Empower Your Business with Salesforce Commerce Cloud and Einstein
+          Services
         </title>
         <meta
           name="description"
-          content="Transform your sales process with InfoDrive Solutions' Salesforce Sales Cloud services. Our experts provide implementation, automation, customization, and consulting services globally."
+          content="Transform your online presence with our Salesforce Commerce Cloud and Einstein Services. Elevate your customer experience, drive sales, and harness the power of AI with Infodrive Solutions."
         />
-        <meta
-          name="keywords"
-          content="Salesforce Sales Cloud Implementation, Salesforce Sales Cloud automation, Salesforce Sales Cloud customization, Salesforce Sales Cloud Consulting Services, Salesforce Sales Cloud Consulting Services in Singapore, Salesforce Sales Cloud for small business, Salesforce Sales Cloud Consulting Services in Malaysia, Salesforce Sales Cloud Consulting Services in India, Salesforce Sales Cloud implementation services in Singapore, Salesforce Sales Cloud for Malaysian businesses, Salesforce Sales Cloud implementation services in India"
-        />
+        <meta name="keywords" content="" />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/sales-and-service-cloud.html"
+          href="https://infodrive-solutions.com/salesforce-commerce-cloud-and-einstein-services.html"
         />
         <meta
           property="og:title"
-          content=" Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in Singapore, Malaysia, and India - InfoDrive Solutions"
+          content="Empower Your Business with Salesforce Commerce Cloud and Einstein
+          Services - InfoDrive Solutions"
         />
         <meta
           property="og:image"
