@@ -15,11 +15,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Tab from "@mui/material/Tab";
-import TabContext from "@mui/lab/TabContext";
-import TabList from "@mui/lab/TabList";
-import TabPanel from "@mui/lab/TabPanel";
-import Avatar from "@mui/material/Avatar";
+
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import Link from "@mui/material/Link";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -138,25 +134,23 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in Singapore, Malaysia, and India - InfoDrive Solutions
+          Expert Salesforce Lightning and AppExchange App Development Services
         </title>
         <meta
           name="description"
-          content="Transform your sales process with InfoDrive Solutions' Salesforce Sales Cloud services. Our experts provide implementation, automation, customization, and consulting services globally."
+          content="Unlock the full potential of Salesforce with our top-notch Lightning and AppExchange App Development Services. Tailored solutions for seamless integration and enhanced business efficiency. Explore our expertise at Infodrive Solutions."
         />
         <meta
           name="keywords"
-          content="Salesforce Sales Cloud Implementation, Salesforce Sales Cloud automation, Salesforce Sales Cloud customization, Salesforce Sales Cloud Consulting Services, Salesforce Sales Cloud Consulting Services in Singapore, Salesforce Sales Cloud for small business, Salesforce Sales Cloud Consulting Services in Malaysia, Salesforce Sales Cloud Consulting Services in India, Salesforce Sales Cloud implementation services in Singapore, Salesforce Sales Cloud for Malaysian businesses, Salesforce Sales Cloud implementation services in India"
+          content="Salesforce AppExchange Development Company, Salesforce AppExchange Development Company in Singapore, Salesforce AppExchange Development Company in Malaysia, Salesforce Appexchange App Development Services in Singapore, Salesforce AppExchange Developers, Salesforce Lightning App Development Services, Salesforce Lightning for small business"
         />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/sales-and-service-cloud.html"
+          href="https://infodrive-solutions.com/salesforce-lightning-and-app-exchange-services.html"
         />
         <meta
           property="og:title"
-          content=" Salesforce Sales Cloud Implementation, Customization, and Consulting
-          Services in Singapore, Malaysia, and India - InfoDrive Solutions"
+          content="Expert Salesforce Lightning and AppExchange App Development Services - InfoDrive Solutions"
         />
         <meta
           property="og:image"
