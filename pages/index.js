@@ -361,18 +361,18 @@ export default function Index() {
             transition={{ duration: 0.5 }}
           >
             <Link
-              href="/blockchain-nft.html"
+              href="/odoo-development-company.html"
               className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer no-underline h-full"
               style={{ textDecoration: "none", color: "gray" }}
             >
               <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <SiHiveBlockchain size={60} />
-                <span> Blockcain and NFT </span>
+                <span> Odoo Development Company</span>
               </div>
               <p className="leading-6 text-sm">
-                We have a team of highly skilled and experienced blockchain
-                developers and NFT specialists who can help you successfully
-                implement these technologies into your business.
+                Odoo Marketing Cloud effortlessly integrates with the Odoo ERP
+                system, providing a complete view of customers enabling
+                real-time data-driven marketing efforts.
               </p>
             </Link>
           </motion.div>

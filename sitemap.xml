@@ -9,78 +9,153 @@
 
 <url>
   <loc>https://infodrive-solutions.com/</loc>
-  <lastmod>2023-03-13T06:55:03+00:00</lastmod>
+  <lastmod>2024-01-15T11:25:35+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://infodrive-solutions.com/contact-us.html</loc>
-  <lastmod>2023-03-13T06:54:41+00:00</lastmod>
+  <lastmod>2024-01-15T11:25:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://infodrive-solutions.com/about-us.html</loc>
-  <lastmod>2023-03-13T06:54:40+00:00</lastmod>
+  <lastmod>2024-01-15T11:25:02+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://infodrive-solutions.com/blog.html</loc>
-  <lastmod>2023-03-13T06:54:40+00:00</lastmod>
+  <lastmod>2024-01-15T11:25:04+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://infodrive-solutions.com/careers.html</loc>
-  <lastmod>2023-03-13T06:54:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://infodrive-solutions.com/customer-relationship-management.html</loc>
-  <lastmod>2023-03-13T06:54:41+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://infodrive-solutions.com/saas-application-development.html</loc>
-  <lastmod>2023-03-13T06:55:03+00:00</lastmod>
+  <lastmod>2024-01-15T11:25:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://infodrive-solutions.com/salesforce-development.html</loc>
-  <lastmod>2023-03-13T06:55:04+00:00</lastmod>
+  <lastmod>2024-01-15T11:25:39+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://infodrive-solutions.com/marketing-cloud.html</loc>
-  <lastmod>2023-03-13T06:55:03+00:00</lastmod>
+  <loc>https://infodrive-solutions.com/custom-software-development.html</loc>
+  <lastmod>2024-01-15T11:25:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://infodrive-solutions.com/sales-cloud.html</loc>
-  <lastmod>2023-03-13T06:55:03+00:00</lastmod>
+  <loc>https://infodrive-solutions.com/staff-augmentation.html</loc>
+  <lastmod>2024-01-15T11:25:40+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://infodrive-solutions.com/service-cloud.html</loc>
-  <lastmod>2023-03-13T06:55:04+00:00</lastmod>
+  <loc>https://infodrive-solutions.com/blockchain-nft.html</loc>
+  <lastmod>2024-01-15T11:25:03+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://infodrive-solutions.com/sap-emarsys.html</loc>
-  <lastmod>2023-03-13T06:55:04+00:00</lastmod>
+  <lastmod>2024-01-15T11:25:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/digital-marketing-services.html</loc>
+  <lastmod>2024-01-15T11:25:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/saas-application-development.html</loc>
+  <lastmod>2024-01-15T11:25:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://infodrive-solutions.com/ios-app-development.html</loc>
-  <lastmod>2023-03-13T06:55:03+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2024-01-15T11:25:35+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://infodrive-solutions.com/android-app-development.html</loc>
-  <lastmod>2023-03-13T06:54:40+00:00</lastmod>
+  <lastmod>2024-01-15T11:25:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/full-stack-development.html</loc>
+  <lastmod>2024-01-15T11:25:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/salesforce-app-exchange.html</loc>
+  <lastmod>2024-01-15T11:25:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/marketing-cloud.html</loc>
+  <lastmod>2024-01-15T11:25:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/sales-cloud.html</loc>
+  <lastmod>2024-01-15T11:25:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/service-cloud.html</loc>
+  <lastmod>2024-01-15T11:25:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/customer-relationship-management.html</loc>
+  <lastmod>2024-01-15T11:25:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://infodrive-solutions.com/blockchain-nft.html</loc>
-  <lastmod>2023-03-13T06:54:40+00:00</lastmod>
+  <loc>https://infodrive-solutions.com/blog/future-proof-your-business-the-importance-of-salesforce-in-todays-market.html</loc>
+  <lastmod>2024-01-15T11:25:03+00:00</lastmod>
   <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/blog/top-reasons-to-invest-in-salesforce-professional-services.html</loc>
+  <lastmod>2024-01-15T11:25:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/blog/discover-your-dream-team-with-our-exceptional-it-staffing-services-and-solutions.html</loc>
+  <lastmod>2024-01-15T11:25:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/blog/unleashing-excellence-meet-our-it-powerhouse-team.html</loc>
+  <lastmod>2024-01-15T11:25:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/blog/top-ios-app-development-services.html</loc>
+  <lastmod>2024-01-15T11:25:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/blog/unlocking-success-evolution-of-crm-software-trends-in-malaysias-corporate-landscape.html</loc>
+  <lastmod>2024-01-15T11:25:04+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/sales-and-service-cloud.html</loc>
+  <lastmod>2024-01-15T11:25:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/salesforce-professional-services.html</loc>
+  <lastmod>2024-01-15T11:25:39+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/blog/how-to-boost-your-business-with-a-salesforce-partner-company.html</loc>
+  <lastmod>2024-01-15T11:25:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://infodrive-solutions.com/blog/what-are-the-services-of-a-salesforce-development-company-offers.html</loc>
+  <lastmod>2024-01-15T11:25:04+00:00</lastmod>
+  <priority>0.41</priority>
 </url>
 
 
