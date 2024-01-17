@@ -367,7 +367,7 @@ export default function Index() {
             >
               <div className="top flex gap-2 items-center text-red-600 font-semibold">
                 <SiHiveBlockchain size={60} />
-                <span> Odoo Development Company</span>
+                <span> Odoo Development</span>
               </div>
               <p className="leading-6 text-sm">
                 Odoo Marketing Cloud effortlessly integrates with the Odoo ERP
