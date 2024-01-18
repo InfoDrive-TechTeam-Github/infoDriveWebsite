@@ -30,19 +30,24 @@ import CustomTimeline from "components/verticleTimeline/CustomTimeline";
 import { FcCheckmark } from "react-icons/fc";
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
+    typeof window !== "undefined" ? window.innerWidth : "50%"
   );
-  const handleResize = () => {
-    setWidth(window.innerWidth);
-  };
-  React.useEffect(() => {
+
+  React.useLayoutEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    // Initial setup
+    handleResize();
+
     window.addEventListener("resize", handleResize);
 
     // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [width]);
+  }, []);
 
   const mobileBreakpoint = 768;
   const items = [
@@ -143,7 +148,7 @@ export default function SalesForceDevelopment() {
               style={{
                 zIndex: 5,
                 width: width <= mobileBreakpoint ? "100%" : "50%",
-                width: "50%",
+
                 color: "#148ED9",
               }}
             >
@@ -241,7 +246,7 @@ export default function SalesForceDevelopment() {
         </div>
       </section>
       {/* advantage */}
-      <section className={`newsectionbox   h-full -mt-40 space-y-5`}>
+      <section className={`newsectionbox relative  h-full -mt-40 space-y-5`}>
         <div className="container md:px-8 mx-auto h-full w-full p5 ">
           <span className=" font-bold text-center block text-red-600 text-lg w-full mx-auto mt-5">
             Why Salesforce CPQ?
@@ -300,24 +305,22 @@ export default function SalesForceDevelopment() {
             </motion.div>
           </div>
         </div>
-      </section>
-      {/* key feature of ligtning */}
-
-      <section
-        className={`newsectionbox  h-full salesandservice relative  mt-16`}
-      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
-          className="absolute top-5 md:top-0 left-0 right-0 overflow-x-hidden md:h-screen"
+          className="absolute bottom-0 left-0 right-0 overflow-x-hidden md:h-screen"
         >
           <path
             fill="#0099ff"
             fill-opacity="0.1"
-            d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
+            d="M0,64L30,101.3C60,139,120,213,180,224C240,235,300,181,360,176C420,171,480,213,540,224C600,235,660,213,720,192C780,171,840,149,900,117.3C960,85,1020,43,1080,32C1140,21,1200,43,1260,80C1320,117,1380,171,1410,197.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
           ></path>
         </svg>
-        <div className="container mx-auto md:px-8 p5 py-16 mt-5  ">
+      </section>
+      {/* key feature of ligtning */}
+
+      <section className={`newsectionbox  h-full salesandservice relative`}>
+        <div className="container mx-auto md:px-8 p5   ">
           <span className="block text-red-600 font-bold text-center mt-5">
             Salesforce CPQ Service Offerings
           </span>
@@ -587,29 +590,33 @@ export default function SalesForceDevelopment() {
                     >
                       {/* first */}
                       <p>
-                        <span className="font-bold">Automated Quoting</span> We
-                        will help you set custom price templates with dynamic
+                        <span className="font-bold mr-1">
+                          Automated Quoting:
+                        </span>{" "}
+                        We will help you set custom price templates with dynamic
                         pricing models. It will automate quotes and rapidly
                         generate branded proposals.
                       </p>
                       {/* second */}
                       <p>
-                        <span className="font-bold">Improved Accuracy</span>{" "}
+                        <span className="font-bold mr-1">
+                          Improved Accuracy:
+                        </span>{" "}
                         There will be no manual configuration and pricing errors
                         in the sales quotes, thanks to the automated quoting
                         process and approval workflows.
                       </p>
                       <p>
-                        <span className="font-bold">
+                        <span className="font-bold mr-1">
                           {" "}
-                          Shortened Sales Cycles{" "}
+                          Shortened Sales Cycles:
                         </span>
                         Leverage the built-in quote automation capabilities of
                         Salesforce CPQ and excellently configure complex product
                         bundles and seamless sales cycle.
                       </p>
-                      <p className="font-bold">
-                        <span className="font-bold">
+                      <p className="font-bold ">
+                        <span className="font-bold mr-1">
                           Effortless Customer Acquisitions:
                         </span>{" "}
                         Benefit from easy and effective customer acquisition
@@ -617,18 +624,18 @@ export default function SalesForceDevelopment() {
                         turning prospects into brand-loyal customers.
                       </p>
                       <p className="font-bold">
-                        <span className="font-bold">
-                          Enhanced Customer Experience
-                        </span>{" "}
+                        <span className="font-bold mr-1">
+                          Enhanced Customer Experience:
+                        </span>
                         Our Salesforce CPQ consulting services help you create
                         personalized sales quotes with special offers &amp;
                         discounts. It improves customer retention rate.
                       </p>
                       <p>
-                        <span className="font-bold">Max Sales</span> Personalize
-                        Our Salesforce CPQ consulting services help you create
-                        personalized sales quotes with special offers &amp;
-                        discounts. It improves customer retention rate.
+                        <span className="font-bold mr-2">Max Sales:</span>{" "}
+                        Personalize Our Salesforce CPQ consulting services help
+                        you create personalized sales quotes with special offers
+                        &amp; discounts. It improves customer retention rate.
                       </p>
                     </Typography>
                   </CardContent>
@@ -748,7 +755,9 @@ export default function SalesForceDevelopment() {
                         accessibility.
                       </p>
                       <p>
-                        <span className="font-bold">Employee Empowerment</span>
+                        <span className="font-bold mr-1">
+                          Employee Empowerment
+                        </span>
                         Give your team the boost it deserves with our custom
                         Salesforce integration services. Improve its
                         productivity and engagement with internal communities.

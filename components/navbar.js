@@ -390,14 +390,16 @@ function DrawerAppBar(props) {
                   />
                 </ListItemButton>
               </ListItem>
-              {/* <ListItem disablePadding>
+              <ListItem disablePadding>
                 <ListItemButton
                   component="a"
-                  to="/salesforce-app-exchange.html"
+                  to="/salesforce-cpq-and-community-cloud-services.html"
                 >
-                  <ListItemText primary={"Salesforce App Exchange"} />
+                  <ListItemText
+                    primary={"Salesforce CPQ & Community Cloud Services"}
+                  />
                 </ListItemButton>
-              </ListItem> */}
+              </ListItem>
 
               <ListItem disablePadding>
                 <ListItemButton
@@ -846,6 +848,17 @@ function DrawerAppBar(props) {
                         />
                       </ListItemButton>
                     </ListItem>
+                    <ListItem disablePadding>
+                      <ListItemButton
+                        component="a"
+                        to="/salesforce-cpq-and-community-cloud-services.html"
+                      >
+                        <ListItemText
+                          primary={"Salesforce CPQ & Community Cloud Services"}
+                        />
+                      </ListItemButton>
+                    </ListItem>
+
                     {/* <ListItem disablePadding>
                       <ListItemButton
                         component="a"
