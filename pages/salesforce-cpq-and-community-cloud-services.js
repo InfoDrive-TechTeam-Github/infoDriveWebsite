@@ -42,7 +42,7 @@ export default function SalesForceDevelopment() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [width]);
 
   const mobileBreakpoint = 768;
   const items = [
@@ -135,23 +135,27 @@ export default function SalesForceDevelopment() {
       </noscript>
       <Header />
 
-      <section className="newsectionbox text-white relative  pb-0 h-[600px] w-full ">
-        <div className="container md:max-w-5xl  lg:max-w-7xl mx-auto h-full w-full p5   lg:px-8">
-          <div className="space-y-5 flex items-center gap-5">
+      <section className="newsectionbox text-white relative  pb-0 h-[450px] w-full ">
+        <div className="container md:max-w-5xl  lg:max-w-7xl md:mx-auto h-full w-full p5   lg:px-8">
+          <div className="space-y-5 flex md:flex-row flex-col items-center gap-5">
             <h1
-              className="text-justify "
+              className="text-justify md:w-[40%] w-full"
               style={{
                 zIndex: 5,
-                width: "40%",
+                width: width <= mobileBreakpoint ? "100%" : "50%",
+                width: "50%",
                 color: "#148ED9",
               }}
             >
-              Simplify your CPQ processes with InfoDrive's Salesforce CPQ
-              services. Work flexibly from any location, on any device,
-              enhancing productivity and increasing deal-closure chances for
-              your organization.
+              Simplify your CPQ processes with{" "}
+              <span className="text-red-500">
+                InfoDrive's Salesforce CPQ services.
+              </span>{" "}
+              Work flexibly from any location, on any device, enhancing
+              productivity and increasing deal-closure chances for your
+              organization.
             </h1>
-            <div className="w-[60%] mx-auto">
+            <div className="md:w-[60%] mx-auto">
               <img
                 src="./salesforce-cpq-implementation.jpg"
                 alt="Community"
@@ -192,7 +196,10 @@ export default function SalesForceDevelopment() {
           ></path>
         </svg>
         <div className="container mx-auto md:px-8  py-16 p5">
-          <div className="md:flex items-center justify-between">
+          <span className=" font-bold text-center block text-red-600 text-lg w-full mx-auto mt-10">
+            InfoDrive Solution’s Salesforce CPQ Services
+          </span>
+          <div className="md:flex items-center gap-3 md:-mt-10">
             <motion.div
               className="left md:w-[40%] rounded-md overflow-hidden z-10 md:mt-20"
               initial={{ opacity: 0, x: -50 }}
@@ -211,9 +218,6 @@ export default function SalesForceDevelopment() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <span className=" font-bold text-center block text-red-600 text-lg w-full mx-auto mt-5">
-                InfoDrive Solution’s Salesforce CPQ Services
-              </span>
               <h5 className="md:text-justify">
                 Enhance your quoting process by leveraging customization rules
                 pricing features of{" "}
@@ -237,13 +241,18 @@ export default function SalesForceDevelopment() {
         </div>
       </section>
       {/* advantage */}
-      <section className={`newsectionbox   h-full -mt-10 space-y-5`}>
+      <section className={`newsectionbox   h-full -mt-40 space-y-5`}>
         <div className="container md:px-8 mx-auto h-full w-full p5 ">
           <span className=" font-bold text-center block text-red-600 text-lg w-full mx-auto mt-5">
             Why Salesforce CPQ?
           </span>
-          <div className="md:flex md:items-center justify-between py-10">
-            <div className="w-[60%]">
+          <div className="md:flex md:items-center gap-2 py-10">
+            <motion.div
+              className="md:w-[60%]"
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <div className="flex items-center gap-2">
                 <FcCheckmark size={32} />
                 <p>
@@ -280,10 +289,15 @@ export default function SalesForceDevelopment() {
                 <FcCheckmark size={32} />
                 <p>Attain effective and profitable sales processes.</p>
               </div>
-            </div>
-            <div className="right">
+            </motion.div>
+            <motion.div
+              className="right"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
               <img src="./community3.png" alt="" className="w-full" />
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -304,6 +318,9 @@ export default function SalesForceDevelopment() {
           ></path>
         </svg>
         <div className="container mx-auto md:px-8 p5 py-16 mt-5  ">
+          <span className="block text-red-600 font-bold text-center mt-5">
+            Salesforce CPQ Service Offerings
+          </span>
           <div className="left md:w-1/2 rounded-md overflow-hidden mx-auto">
             <img
               alt="app exchange"
@@ -312,11 +329,8 @@ export default function SalesForceDevelopment() {
             />
           </div>
 
-          <div className="right ">
-            <span className="block text-red-600 font-bold text-center mt-5">
-              Salesforce CPQ Service Offerings
-            </span>
-            <p>
+          <div className="right  ">
+            <p className="text-justify">
               Enhance your sales strategy with InfoDrive Solutions CPQ services.
               Our tailored solutions streamline quote automation, pricing
               management, and deal closure on Salesforce. Stay ahead of the
@@ -337,8 +351,7 @@ export default function SalesForceDevelopment() {
                 <span className="font-bold text-red-600">
                   Salesforce CPQ Configuration
                 </span>
-                <p>
-                  {" "}
+                <p className="md:text-justify">
                   Create automation of manual processes, configuration of the
                   system based on the unique requirements of your business with
                   our adept Salesforce experts.
@@ -352,7 +365,7 @@ export default function SalesForceDevelopment() {
                 <span className="font-bold text-red-600">
                   Salesforce CPQ Consultation
                 </span>
-                <p>
+                <p className="md:text-justify">
                   Evaluate the effectiveness of Salesforce CPQ for your business
                   with our Salesforce certified experts and show you ways to
                   attain your business objectives.
@@ -366,7 +379,7 @@ export default function SalesForceDevelopment() {
                 <span className="font-bold text-red-600">
                   Salesforce CPQ Maintenance
                 </span>
-                <p>
+                <p className="md:text-justify">
                   Eliminate the need for an expensive in-house team with our
                   Salesforce CPQ maintenance services. Ensure reliable, secure
                   and optimized services for API updates.
@@ -380,7 +393,7 @@ export default function SalesForceDevelopment() {
                 <span className="font-bold text-red-600">
                   Salesforce CPQ Customization
                 </span>
-                <p>
+                <p className="md:text-justify">
                   Render highly customized Salesforce CPQ Services, create quote
                   templates as per your branding guidelines, with the
                   experienced professionals at Cloud Analogy Bring transparency
@@ -395,7 +408,7 @@ export default function SalesForceDevelopment() {
                 <span className="font-bold text-red-600">
                   Salesforce CPQ Implementation
                 </span>
-                <p>
+                <p className="md:text-justify">
                   {" "}
                   We have a team of qualified, dynamic experts with
                   sophisticated expertise and in-depth knowledge in
@@ -411,7 +424,7 @@ export default function SalesForceDevelopment() {
                 <span className="font-bold text-red-600">
                   Salesforce CPQ Integration
                 </span>
-                <p>
+                <p className="md:text-justify">
                   {" "}
                   Cloud Analogy has a strong track record on implementation of
                   Salesforce CPQ Integration services. We ensure secure and
@@ -437,23 +450,23 @@ export default function SalesForceDevelopment() {
             d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
           ></path>
         </svg>
-        <div className="container mx-auto md:px-8 p5 py-16 mt-5  ">
+        <div className="container mx-auto md:px-8 p5  ">
+          <span className="block text-red-600 font-bold text-center mt-5">
+            Salesforce Community Cloud-Salesforce Communities Development
+          </span>
           <div className="left  rounded-md overflow-hidden mx-auto">
             <img
               alt="app exchange"
               src="./community5.png"
-              className=" object-contain mt-10 rounded-md w-1/2 mx-auto"
+              className=" object-contain mt-10 rounded-md md:w-1/2 mx-auto"
             />
-            <span className="text-red-600  text-center block whitespace-nowrap text-sm">
+            <span className="text-red-600  text-center block whitespace-nowrap text-sm mt-5">
               Connect with people important for your business with Community
               Cloud (Salesforce Experience Cloud)
             </span>
           </div>
 
           <div className="right mt-10 ">
-            <span className="block text-red-600 font-bold text-center mt-5">
-              Salesforce Community Cloud-Salesforce Communities Development
-            </span>
             <p>
               Create customized Salesforce Communities for effective engagement
               with customers, employees, and partners. Hire certified Salesforce
@@ -528,27 +541,10 @@ export default function SalesForceDevelopment() {
                   employees, partners and above all your customers.
                 </p>
               </motion.li>
-              <motion.li
-                initial={{ opacity: 0, x: -50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1 }}
-              >
-                <span className="font-bold text-red-600">
-                  Bring Partners into Business Processes in New Ways
-                </span>
-                <p>
-                  Increase the sales by connecting with resellers, distributors,
-                  and partners in a partner community. Access more information
-                  by partners from experts. Update records, generate new leads
-                  and manage funds. Enable to quickly close higher number of
-                  deals.
-                </p>
-              </motion.li>
             </ul>
           </div>
         </div>
       </section>
-
       <section
         className={`newsectionbox aboutUsBox3 salesCloudService  -mt-10 pt-10 relative`}
       >
@@ -563,7 +559,7 @@ export default function SalesForceDevelopment() {
             d="M0,0L26.7,21.3C53.3,43,107,85,160,90.7C213.3,96,267,64,320,58.7C373.3,53,427,75,480,112C533.3,149,587,203,640,234.7C693.3,267,747,277,800,277.3C853.3,277,907,267,960,234.7C1013.3,203,1067,149,1120,122.7C1173.3,96,1227,96,1280,106.7C1333.3,117,1387,139,1413,149.3L1440,160L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z"
           ></path>
         </svg>
-        <div className=" container mx-auto md:px-8 p5 ">
+        <div className=" container mx-auto md:px-8 p5 py-10">
           <h2
             className="text-center font-bold md:whitespace-nowrap "
             style={{ color: "#dd3952" }}
@@ -643,7 +639,7 @@ export default function SalesForceDevelopment() {
                   <img
                     alt="saleforce"
                     src="./community7.png"
-                    className="h-full w-[90%] object-cover ml-16 mt-20"
+                    className="h-full w-[90%] object-cover md:ml-16"
                   />
                 </Card>
               </Grid>
@@ -662,12 +658,13 @@ export default function SalesForceDevelopment() {
           ></path>
         </svg>
       </section>
+
       <section
         className={`newsectionbox aboutUsBox3 salesCloudService  -mt-10 pt-10 relative`}
       >
         <div className=" container mx-auto md:px-8 p5 ">
           <h2
-            className="text-center font-bold md:whitespace-nowrap "
+            className="text-center font-bold md:whitespace-nowrap mt-10"
             style={{ color: "#dd3952" }}
           >
             Community Cloud (Experience Cloud) Services
@@ -679,7 +676,53 @@ export default function SalesForceDevelopment() {
 
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
-              <Grid item xs={6} className="pr30">
+              <Grid item xs={6} className=" w-full mt-10 ">
+                <Card>
+                  <img
+                    alt="saleforce"
+                    src="./community7.jpg"
+                    className="h-full   object-cover  rounded-md w-[90%] "
+                  />
+
+                  <div className="flex items-center gap-5">
+                    <div className="h-24 w-24">
+                      <img
+                        alt="saleforce"
+                        src="./ComC4.png"
+                        className="w-full h-full object-cover  rounded-md "
+                      />
+                    </div>
+                    <div className="h-16 w-16">
+                      <img
+                        alt="saleforce"
+                        src="./comC2.png"
+                        className=" w-full h-full  rounded-md "
+                      />
+                    </div>
+                    <img
+                      alt="saleforce"
+                      src="./ComC6.png"
+                      className="h-16  w-16 object-cover  rounded-md "
+                    />
+                    <img
+                      alt="saleforce"
+                      src="./comC3.png"
+                      className="h-16  w-16 object-cover  rounded-md "
+                    />
+                    <img
+                      alt="saleforce"
+                      src="./ComC5.png"
+                      className="h-20  w-20 object-cover  rounded-md "
+                    />
+                    <img
+                      alt="saleforce"
+                      src="./comC1.png"
+                      className="h-16  w-16 object-cover  rounded-md "
+                    />
+                  </div>
+                </Card>
+              </Grid>
+              <Grid item xs={6} className="pr30 ">
                 <Card>
                   <CardContent>
                     <br />
@@ -733,19 +776,11 @@ export default function SalesForceDevelopment() {
                   </CardContent>
                 </Card>
               </Grid>
-              <Grid item xs={6} className=" w-full md:mt-16">
-                <Card>
-                  <img
-                    alt="saleforce"
-                    src="./community7.jpg"
-                    className="h-full w-[90%] object-cover ml-16 mt-20"
-                  />
-                </Card>
-              </Grid>
             </Grid>
           </Box>
         </div>
       </section>
+
       {/* key feature of ligtning */}
 
       {/* timeline  */}
