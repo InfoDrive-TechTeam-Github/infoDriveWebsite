@@ -164,10 +164,10 @@ export default function Contact() {
 
 try {
   const res= await axios.post("https://mydryve.co/Api/sendMail",inputData)
-     console.log(res.data.msg)
-     if(res.data.msg){
+     console.log(res.data.message)
+     if(res.data.message){
       toast.success(
-        res.data.msg,
+        res.data.message,
         {
           position: "top-right",
           autoClose: 2000,
