@@ -94,10 +94,10 @@ export default function handler(req, res) {
       return new NextResponse("Email not sent");
     } else {
       console.log("Email sent: " + info.response);
-      return NextResponse.json({ msg: "Email sent to Teacher" });
+      return NextResponse.json({ msg: "Email sent " });
     }
   });
  
   console.log(r);
-  return res.status(200).json({ message: 'Signup successful!' });
+  return res.status(200).json({ message: 'successful!' });
 }
