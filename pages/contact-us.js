@@ -164,8 +164,34 @@ export default function Contact() {
 
 try {
   const res= await axios.post("https://mydryve.co/Api/sendMail",inputData)
-     console.log(res.data)
-
+     console.log(res.data.msg)
+     if(res.data.msg){
+      toast.success(
+        res.data.msg,
+        {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        }
+      );
+     
+     }
+     else{
+      toast.warning("Please Try Again", {
+              position: "top-right",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+            });
+     }
+     
       
 
     
