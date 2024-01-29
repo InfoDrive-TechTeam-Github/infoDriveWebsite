@@ -135,23 +135,26 @@ export default function SalesForceDevelopment() {
       </noscript>
       <Header />
 
-      <section className="newsectionbox text-white relative  pb-0 h-[600px] w-full bg-[#48BDE8]">
+      <section className="newsectionbox text-white relative  pb-0 md:h-[600px] h-[800px] w-full bg-[#48BDE8]">
         <div className="container md:max-w-5xl  lg:max-w-7xl mx-auto h-full w-full p5 absolute top-16 md:top-40 md:left-10   lg:px-8">
-          <div className="md:flex md:items-center md:gap-10 px-5 ">
-            <h1
-              className="text-justify "
+          <div className="md:flex md:items-center md:gap-10 md:px-5 ">
+          <span
+              className="md:text-justify block font-bold md:w-1/2 w-full" 
               style={{
+                fontFamily:"Poppins",
+                fontSize:"23px",
+                lineHeight:"33px",
+                color:"white",
                 zIndex: 5,
-                width: "50%",
-                color: "white",
+               
               }}
             >
               Fueling Business Efficiency, Sparking Innovation: Supercharge lead
               generation, elevate conversion rates, and tailor customer services
               with the Expertise of InfoDrive Solutions. Let's Elevate Your
               Enterprise Together using Salesforce Commerce Cloud Services.
-            </h1>
-            <div className="w-[40%]">
+            </span>
+            <div className="md:w-[40%] mt-5 md:mt-0">
               <img src="./commerce2.jpg" alt="saleforce commerce" />
             </div>
           </div>
@@ -232,14 +235,14 @@ export default function SalesForceDevelopment() {
         </div>
       </section>
       {/* advantage */}
-      <section className={`newsectionbox   h-full -mt-10 space-y-5`}>
+      <section className={`newsectionbox   h-full md:-mt-10 space-y-5 -mt-36`}>
         <div className="container md:px-8 mx-auto h-full w-full p5 ">
           <span className=" font-bold text-center block text-red-600 text-lg w-full mx-auto mt-5">
             Empowering Businesses through Our B2B & B2C Salesforce Commerce
             Cloud Solutions
           </span>
           <div className="md:flex md:items-center justify-between py-10">
-            <div className="w-[60%]">
+            <div className="md:w-[60%]">
               <p>
                 Guiding Your Business Growth with Salesforce Commerce Cloud
                 Expertise

@@ -52,7 +52,7 @@ export default function SalesForceDevelopment() {
   const handleResize = () => {
     setWidth(window.innerWidth);
   };
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     window.addEventListener("resize", handleResize);
 
     // Clean up the event listener on component unmount
@@ -177,35 +177,39 @@ export default function SalesForceDevelopment() {
       </noscript>
       <Header />
 
-      <section className="newsectionbox text-white relative  pb-0   md:h-[450px] h-[450px]">
-        <div className="container md:max-w-5xl  lg:max-w-7xl mx-auto h-full w-full p5 absolute top-16 md:top-26 md:left-10   lg:px-8">
+      <section className="newsectionbox text-white relative  pb-0   md:h-[450px] h-[700px] ">
+        <div className="container md:max-w-5xl  lg:max-w-7xl mx-auto h-full w-full p5 absolute top-16 md:top-26 md:left-10   lg:px-8 ">
           <div className="md:flex md:items-center md:gap-2 ">
-            <h1
-              className="text-justify "
+            <span
+              className="md:text-justify block font-bold md:w-1/2 w-full" 
               style={{
+                fontFamily:"Poppins",
+                fontSize:"23px",
+                lineHeight:"33px",
+                color:"#0b2653",
                 zIndex: 5,
-                width: width <= mobileBreakpoint ? "100%" : "50%",
+               
               }}
             >
               Boost Your Business Efficiency and Drive Innovation with InfoDrive
               Solutions: Harness the Expertise of Our Salesforce Lightning
               Consulting and AppExchange App Development Services.
-            </h1>
+            </span>
             <div>
-              <div className="md:w-52 relative w-20 mt-10 md:mt-0 md:mr-10 -ml-10">
+              <div className="md:w-52 relative w-1/2 mt-10 md:mt-0 md:mr-10 -ml-10 ">
                 <Lottie
                   animationData={cloufLottie}
                   loop={true}
                   className="w-full"
                 />
                 <h2
-                  className="absolute md:-right-56 -right-60 top-0 text-xs md:text-base"
+                  className="absolute md:-right-56 -right-56 top-0 text-xs md:text-base"
                   style={{ color: "#00A1DF" }}
                 >
                   Saleforce App Exchange
                 </h2>
               </div>
-              <div className="md:w-32 w-20 relative mt-0 -ml-7 md:ml-5">
+              <div className="md:w-32 w-20 relative mt-0 -ml-3 md:ml-5">
                 <Lottie animationData={Light} loop={true} className=" w-full" />
                 <h2
                   className="absolute md:-right-56 -right-64 top-0 text-xs md:text-base"
