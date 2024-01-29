@@ -58,59 +58,7 @@ export default function leadForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    //https://infodrive.orbiloggiin.com/GetEmailQuery
-    // try {
-    //   const res = await fetch(
-    //     "https://infodrive.orbiloggiin.com/GetEmailQuery",
-    //     {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(inputData),
-    //     }
-    //   );
-
-    //   const { error } = await res.json();
-
-    //   if (error) {
-    //     toast.warning("Please Try Again", {
-    //       position: "top-right",
-    //       autoClose: 2000,
-    //       hideProgressBar: false,
-    //       closeOnClick: true,
-    //       pauseOnHover: true,
-    //       draggable: true,
-    //       progress: undefined,
-    //     });
-    //     return;
-    //   } else {
-    //     setLoading(false);
-
-    //     toast.success(
-    //       "Thank you for your message. We will Response in 2 business days",
-    //       {
-    //         position: "top-right",
-    //         autoClose: 2000,
-    //         hideProgressBar: false,
-    //         closeOnClick: true,
-    //         pauseOnHover: true,
-    //         draggable: true,
-    //         progress: undefined,
-    //       }
-    //     );
-    //   }
-    // } catch (error) {
-    //   toast.error("Something went wrong", {
-    //     position: "top-right",
-    //     autoClose: 2000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: true,
-    //     draggable: true,
-    //     progress: undefined,
-    //   });
-    // }
+  
 
 
     try {
