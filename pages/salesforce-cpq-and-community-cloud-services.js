@@ -98,17 +98,16 @@ export default function SalesForceDevelopment() {
     <div>
       <Head>
         <title>
-          Empower Your Business with Salesforce Commerce Cloud and Einstein
-          Services
+        Salesforce CPQ Service & Community Cloud Services
         </title>
         <meta
           name="description"
-          content="Transform your online presence with our Salesforce Commerce Cloud and Einstein Services. Elevate your customer experience, drive sales, and harness the power of AI with Infodrive Solutions."
+          content="Enhance sales efficiency and community engagement with our expert Salesforce CPQ Service & Community Cloud Services. Empower your teams, delight your customers, and drive business growth."
         />
         <meta name="keywords" content="" />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/salesforce-commerce-cloud-and-einstein-services.html"
+          href="https://infodrive-solutions.com/salesforce-cpq-and-community-cloud-services.html"
         />
         <meta
           property="og:title"
@@ -143,15 +142,18 @@ export default function SalesForceDevelopment() {
       <section className="newsectionbox text-white relative  pb-0 h-[450px] w-full ">
         <div className="container md:max-w-5xl  lg:max-w-7xl md:mx-auto h-full w-full p5   lg:px-8">
           <div className="space-y-5 flex md:flex-row flex-col items-center gap-5">
-            <h1
-              className="text-justify md:w-[40%] w-full"
+          <span
+              className="md:text-justify block font-bold md:w-1/2 w-full" 
               style={{
-                zIndex: 5,
-                width: width <= mobileBreakpoint ? "100%" : "50%",
-
+                fontFamily:"Poppins",
+                fontSize:"23px",
+                lineHeight:"33px",
                 color: "#148ED9",
+                zIndex: 5,
+               
               }}
             >
+             
               Simplify your CPQ processes with{" "}
               <span className="text-red-500">
                 InfoDrive's Salesforce CPQ services.
@@ -159,7 +161,7 @@ export default function SalesForceDevelopment() {
               Work flexibly from any location, on any device, enhancing
               productivity and increasing deal-closure chances for your
               organization.
-            </h1>
+            </span>
             <div className="md:w-[60%] mx-auto">
               <img
                 src="./salesforce-cpq-implementation.jpg"
@@ -174,7 +176,7 @@ export default function SalesForceDevelopment() {
           >
             <Button
               href="/contact-us.html"
-              className="buttOnread   normalCase mt-5"
+              className="buttOnread   normalCase md:-mt-5 mt-5 "
               variant="text"
               style={{
                 zIndex: 5,
@@ -691,7 +693,7 @@ export default function SalesForceDevelopment() {
                     className="h-full   object-cover  rounded-md w-[90%] "
                   />
 
-                  <div className="flex items-center gap-5">
+                  <div className="flex items-center gap-5 flex-wrap">
                     <div className="h-24 w-24">
                       <img
                         alt="saleforce"
