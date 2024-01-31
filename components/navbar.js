@@ -22,6 +22,7 @@ import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ImageRotator from "./ImageRoater";
+import ContactModal from "./ContactModal";
 
 const drawerWidth = 240;
 const navItems = [
@@ -36,6 +37,9 @@ const navItems = [
 ];
 
 function DrawerAppBar(props) {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [mobileOpenBox, setMobileOpenBox] = React.useState(false);
@@ -169,7 +173,7 @@ function DrawerAppBar(props) {
     setSubMobileMenuSaleOpen(false);
     setSubMobileMenuDigitalOpen(false);
   };
-
+// mobile menu
   const drawer = (
     <Box
       className="mobileMenu"
@@ -400,7 +404,14 @@ function DrawerAppBar(props) {
                   />
                 </ListItemButton>
               </ListItem>
-
+              <ListItem disablePadding>
+                <ListItemButton
+                  component="a"
+                  to="/salesforce-integration-services.html"
+                >
+                  <ListItemText primary={"Salesforce Integration Services"} />
+                </ListItemButton>
+              </ListItem>
               <ListItem disablePadding>
                 <ListItemButton
                   component="a"
@@ -493,7 +504,10 @@ function DrawerAppBar(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }} className="navbarMenu">
+    <>  
+    
+    <ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+      <Box sx={{ display: "flex" }} className="navbarMenu">
       <AppBar component="nav">
         <Toolbar>
           <IconButton
@@ -543,7 +557,7 @@ function DrawerAppBar(props) {
           >
             <List className="partnerButton flex items-center gap-2 ">
               <ListItem>
-                <ListItemButton component="a" to="/contact-us.html">
+                <ListItemButton component="a" onClick={handleOpen}>
                   <ListItemText primary={"Let's Partner"} />
                 </ListItemButton>
               </ListItem>
@@ -867,7 +881,16 @@ function DrawerAppBar(props) {
                         <ListItemText primary={"Salesforce App Exchange"} />
                       </ListItemButton>
                     </ListItem> */}
-
+ <ListItem disablePadding>
+                      <ListItemButton
+                        component="a"
+                        to="/salesforce-integration-services.html"
+                      >
+                        <ListItemText
+                          primary={"Salesforce Integration Services"}
+                        />
+                      </ListItemButton>
+                    </ListItem>
                     <ListItem disablePadding>
                       <ListItemButton
                         component="a"
@@ -878,6 +901,7 @@ function DrawerAppBar(props) {
                         />
                       </ListItemButton>
                     </ListItem>
+                   
                   </List>
                 </Menu>
 
@@ -919,7 +943,7 @@ function DrawerAppBar(props) {
                 <ListItemButton component="a" to="/careers.html">
                   <ListItemText primary={"Careers"} />
                 </ListItemButton>
-                <ListItemButton component="a" to="/contact-us.html">
+                <ListItemButton component="a" onClick={handleOpen}>
                   <ListItemText primary={"Contact Us"} />
                 </ListItemButton>
               </ListItem>
@@ -951,6 +975,7 @@ function DrawerAppBar(props) {
         <Toolbar />
       </Box>
     </Box>
+    </>
   );
 }
 
