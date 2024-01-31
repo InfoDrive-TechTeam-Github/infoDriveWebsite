@@ -139,7 +139,7 @@ export default function SalesForceDevelopment() {
       </noscript>
       <Header />
 
-      <section className="newsectionbox text-white relative  pb-0 h-[450px] w-full ">
+      <section className="newsectionbox text-white relative  pb-0 md:h-[450px] w-full h-screen  ">
         <div className="container md:max-w-5xl  lg:max-w-7xl md:mx-auto h-full w-full p5   lg:px-8">
           <div className="space-y-5 flex md:flex-row flex-col items-center gap-5">
           <span
@@ -538,10 +538,18 @@ seamlessly integrating Salesforce with various types of applications
           InfoDrive Solution’s Integration Capabilities
           </span>
           <div className="left  rounded-md overflow-hidden mx-auto">
-            <img
+            <motion.img
               alt="app exchange"
               src="./i3.png"
               className=" object-contain mt-10 rounded-md md:w-1/2 mx-auto"
+              initial={{ opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                rotate: -360,
+                transition: {
+                  duration: 1,
+                },
+              }}
             />
        
           </div>
@@ -560,7 +568,7 @@ seamlessly integrating Salesforce with various types of applications
                 <span className="font-bold text-red-600 flex justify-center" >
                 Salesforce API Integration
                 </span>
-                <p>
+                <p className="md:text-justify">
                 As a leading Salesforce integration firm boasting a team of seasoned consultants, we specialize in Salesforce API
 integration. Benefit from rich functionalities including geo-location services, eCommerce solutions, media services, and
 more
@@ -574,7 +582,7 @@ more
                 <span className="font-bold text-red-600 flex justify-center">
                 Backend System Integration
                 </span>
-                <p>
+                <p className="md:text-justify">
                 Enhance the capabilities of your current backend system with our Salesforce backend integration services. We
 meticulously address specific business requirements, amplifying system performance to meet your needs.
                 </p>
@@ -587,7 +595,7 @@ meticulously address specific business requirements, amplifying system performan
                 <span className="font-bold text-red-600 flex justify-center">
                 User Interface Integration
                 </span>
-                <p>
+                <p className="md:text-justify">
                 InfoDrive Solutions is a leading Salesforce integration service provider globally, ensuring seamless integration for
 impeccable performance across all systems. Whether for customers, employees, or partners, we deliver a unified user
 experience to all stakeholders.
@@ -601,7 +609,7 @@ experience to all stakeholders.
                 <span className="font-bold text-red-600 flex justify-center">
                 Data Integration
                 </span>
-                <p>
+                <p className="md:text-justify">
                 Leveraging Salesforce integration, you can enhance customer engagement and employee experience. With InfoDrive
 Solutions, establish robust connections between key touchpoints and databases across your organization.
                 </p>
@@ -622,20 +630,98 @@ Solutions, establish robust connections between key touchpoints and databases ac
           >
             Frequently Asked Questions (FAQs)
           </h2>
-          <p className="mt-5 text-center text-gray-600 ">
+          <p className="mt-5  text-gray-600 text-justify">
           Salesforce integration is not a simple task. It involves a lengthy, time-consuming, and technical process that often raises
 several questions. Here are some of the most common inquiries.
           </p>
 
           <Box sx={{ flexGrow: 1 }}>
             <Grid container spacing={0}>
-              <Grid item xs={6} className=" w-full mt-10 ">
+              <Grid item xs={12} className=" w-full mt-10 ">
                 <Card>
+                  <div className="top md:flex items-center gap-20">
                   <img
                     alt="saleforce"
                     src="./i4.png"
-                    className="h-full   object-cover  rounded-md w-[90%] "
+                    className="  object-cover  rounded-md w-full "
                   />
+                  <div className="rightimg space-y-5">
+                <div >
+                <span className="text-red-600 font-bold">Why choose InfoDrive Solution’s for Salesforce Integrations?</span>
+                <p className="text-justify">We guarantee swift delivery, access to proficient Salesforce developers, competitive pricing, agile methodologies,
+complete customer satisfaction, ongoing support and maintenance, and being recognized as a Top Salesforce Consulting
+Partner.</p>
+                </div>
+                <div>
+                <span className="text-red-600 font-bold">Why choose InfoDrive Solution’s for Salesforce Integrations?</span>
+                <p className="text-justify">We guarantee swift delivery, access to proficient Salesforce developers, competitive pricing, agile methodologies,
+complete customer satisfaction, ongoing support and maintenance, and being recognized as a Top Salesforce Consulting
+Partner.</p>
+                </div>
+                  </div>
+                  </div>
+
+                  {/* newsection */}
+                  <div className="middle-section grid md:grid-cols-2 grid-cols-1 mt-10 ">
+
+                <div className="left">
+              <span className="text-red-600 font-bold">Top Benefits of Salesforce Integrations</span>
+              <div className="points-box">
+                <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+                <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+                <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+                <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+                <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+              </div>
+                </div>
+
+
+                <div className="right">
+              <span className="text-red-600 font-bold">What Integration Challenges does InfoDrive Solutions Solves?</span>
+              <div className="points-box">
+              <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+                <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+                <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+                <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+                <div className="point flex items-center gap-2">
+                <FcCheckmark />
+                <p>It becomes simpler to link the front office with the back office.</p>
+                </div>
+              </div>
+
+
+                </div>
+
+
+
+                  </div>
 
                   <div className="flex items-center gap-5 flex-wrap mt-5">
                     
@@ -681,47 +767,7 @@ several questions. Here are some of the most common inquiries.
         </div>
       </section>
 
-      {/* key feature of ligtning */}
-
-      {/* timeline  */}
-      {/* <section className="newsectionbox">
-        <div className="container mx-auto md:px-8 -mt-24 p5 py-10">
-          <div className="relative self-start ml-10 md:flex items-center justify-between ">
-            <h2 className="  w-1/2 md:mt-20 ">
-              <span className="text-red-600 text-3xl font-black mr-1">WHY</span>
-              Revitalize Your Business with Salesforce Commerce Cloud
-              Implementation
-            </h2>
-            <Lottie animationData={Sale2} loop={true} className=" md:w-1/2" />
-          </div>
-          <div
-            // style={{ width: "100vw" }}
-            className="flex relative items-center justify-center md:flex-row flex-col "
-          >
-            <Chrono
-              items={items}
-              mode="VERTICAL_ALTERNATING"
-              hideControls="fasle"
-              theme={{
-                primary: "#0b2653",
-                secondary: "",
-                cardBgColor: "white",
-                titleColor: "Red",
-                titleColorActive: "Red",
-                cardTitleColor: "#0b2653",
-              }}
-              allowDynamicUpdate="true"
-            >
-              {items.map((obj) => (
-                <div className="newsectionbox" style={{ padding: "10px 5px" }}>
-                  <h2 className="text-center">{obj.card}</h2>
-                  <p className="text-justify">{obj.cardDetailedText}</p>
-                </div>
-              ))}
-            </Chrono>
-          </div>
-        </div>
-      </section> */}
+     
 
       <SaleforceCient />
       <motion.div className="flex justify-center ">
