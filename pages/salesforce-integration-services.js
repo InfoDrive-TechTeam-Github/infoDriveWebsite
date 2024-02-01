@@ -28,6 +28,12 @@ import Cloud from "../public/lightning.json";
 import SaleforceCient from "components/SaleforceCient";
 import CustomTimeline from "components/verticleTimeline/CustomTimeline";
 import { FcCheckmark } from "react-icons/fc";
+import { FcAcceptDatabase } from "react-icons/fc";
+import { FcBullish } from "react-icons/fc";
+import { FcCalculator } from "react-icons/fc";
+import { FcShipped } from "react-icons/fc";
+import { FcPieChart } from "react-icons/fc";
+import { FcRadarPlot } from "react-icons/fc";
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : "50%"
@@ -97,9 +103,7 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
-        <title>
-        Salesforce CPQ Service & Community Cloud Services
-        </title>
+        <title>Salesforce CPQ Service & Community Cloud Services</title>
         <meta
           name="description"
           content="Enhance sales efficiency and community engagement with our expert Salesforce CPQ Service & Community Cloud Services. Empower your teams, delight your customers, and drive business growth."
@@ -142,19 +146,21 @@ export default function SalesForceDevelopment() {
       <section className="newsectionbox text-white relative  pb-0 md:h-[450px] w-full h-screen  ">
         <div className="container md:max-w-5xl  lg:max-w-7xl md:mx-auto h-full w-full p5   lg:px-8">
           <div className="space-y-5 flex md:flex-row flex-col items-center gap-5">
-          <span
-              className="md:text-justify block font-bold md:w-1/2 w-full" 
+            <span
+              className="md:text-justify block font-bold md:w-1/2 w-full"
               style={{
-                fontFamily:"Poppins",
-                fontSize:"23px",
-                lineHeight:"33px",
+                fontFamily: "Poppins",
+                fontSize: "23px",
+                lineHeight: "33px",
                 color: "#148ED9",
                 zIndex: 5,
-               
               }}
-            >Salesforce Integration Services, effortlessly integrate intricate systems, streamline business processes, reduce costs,
-
-            and effectively manage assets through <span className="text-red-500"> InfoDrive Solution’s </span>{" "}Salesforce Integration Services.
+            >
+              Salesforce Integration Services, effortlessly integrate intricate
+              systems, streamline business processes, reduce costs, and
+              effectively manage assets through{" "}
+              <span className="text-red-500"> InfoDrive Solution’s </span>{" "}
+              Salesforce Integration Services.
             </span>
             <div className="md:w-[60%] mx-auto">
               <img
@@ -184,9 +190,8 @@ export default function SalesForceDevelopment() {
         </div>
       </section>
 
-   
       <section className={`newsectionbox  h-full salesandservice relative`}>
-      <svg
+        <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
           className="absolute top-5 md:top-0 left-0 right-0 overflow-x-hidden md:h-screen"
@@ -198,8 +203,8 @@ export default function SalesForceDevelopment() {
           ></path>
         </svg>
         <div className="container mx-auto md:px-8 p5   ">
-          <span className="block text-red-600 font-bold text-center mt-5">
-          InfoDrive Solution’s Salesforce Integration Services Offerings
+          <span className="block text-red-600 font-bold text-center -mt-2">
+            InfoDrive Solution’s Salesforce Integration Services Offerings
           </span>
           <div className="left md:w-1/2 rounded-md overflow-hidden mx-auto">
             <img
@@ -210,7 +215,6 @@ export default function SalesForceDevelopment() {
           </div>
 
           <div className="right  ">
-          
             <ul
               style={{ listStyleType: "none" }}
               className="grid grid-col md:grid-cols-2 gap-10 mt-10"
@@ -221,12 +225,11 @@ export default function SalesForceDevelopment() {
                 transition={{ duration: 1 }}
               >
                 <span className="font-bold text-red-600 flex justify-center">
-                Premier Salesforce Integration Services
+                  Premier Salesforce Integration Services
                 </span>
                 <p className="md:text-justify">
-                InfoDrive Solutions
-offers top-notch Salesforce integration services tailored to
-enhance business operations.
+                  InfoDrive Solutions offers top-notch Salesforce integration
+                  services tailored to enhance business operations.
                 </p>
               </motion.li>
               <motion.li
@@ -235,13 +238,12 @@ enhance business operations.
                 transition={{ duration: 1 }}
               >
                 <span className="font-bold text-red-600 flex justify-center">
-                Strategic Consulting Approach
+                  Strategic Consulting Approach
                 </span>
                 <p className="md:text-justify">
-                Our seasoned Salesforce
-integration consultants meticulously strategize for each
-integration, ensuring solutions align with your unique
-business requirements.
+                  Our seasoned Salesforce integration consultants meticulously
+                  strategize for each integration, ensuring solutions align with
+                  your unique business requirements.
                 </p>
               </motion.li>
               <motion.li
@@ -250,12 +252,12 @@ business requirements.
                 transition={{ duration: 1 }}
               >
                 <span className="font-bold text-red-600 flex justify-center">
-                Collaborative Solutions
+                  Collaborative Solutions
                 </span>
                 <p className="md:text-justify">
-                Foster collaboration across different
-departments with our Salesforce integration services,
-promoting seamless communication and workflow efficiency.
+                  Foster collaboration across different departments with our
+                  Salesforce integration services, promoting seamless
+                  communication and workflow efficiency.
                 </p>
               </motion.li>
               <motion.li
@@ -264,12 +266,12 @@ promoting seamless communication and workflow efficiency.
                 transition={{ duration: 1 }}
               >
                 <span className="font-bold text-red-600 flex justify-center">
-                Comprehensive Offerings
+                  Comprehensive Offerings
                 </span>
                 <p className="md:text-justify">
-                Our services encompass detailed
-roadmap design, solution configuration, API-enabled
-integration, and ongoing support and maintenance.
+                  Our services encompass detailed roadmap design, solution
+                  configuration, API-enabled integration, and ongoing support
+                  and maintenance.
                 </p>
               </motion.li>
               <motion.li
@@ -278,12 +280,14 @@ integration, and ongoing support and maintenance.
                 transition={{ duration: 1 }}
               >
                 <span className="font-bold text-red-600 flex justify-center">
-                Quality Assurance
+                  Quality Assurance
                 </span>
                 <p className="md:text-justify">
                   {" "}
-                  As your trusted Salesforce integration partner, we prioritize quality, delivering customized solutions
-utilizing a variety of tools and APIs such as SOAP, REST, Jitterbit, Mulesoft, and Dell Boomi.
+                  As your trusted Salesforce integration partner, we prioritize
+                  quality, delivering customized solutions utilizing a variety
+                  of tools and APIs such as SOAP, REST, Jitterbit, Mulesoft, and
+                  Dell Boomi.
                 </p>
               </motion.li>
               <motion.li
@@ -292,12 +296,13 @@ utilizing a variety of tools and APIs such as SOAP, REST, Jitterbit, Mulesoft, a
                 transition={{ duration: 1 }}
               >
                 <span className="font-bold text-red-600 flex justify-center">
-                Specialized Integrations
+                  Specialized Integrations
                 </span>
                 <p className="md:text-justify">
                   {" "}
-                  Benefit from our expertise in social media, accounting, ERP, marketing automation, CTI,
-eCommerce, and collaboration system integrations.
+                  Benefit from our expertise in social media, accounting, ERP,
+                  marketing automation, CTI, eCommerce, and collaboration system
+                  integrations.
                 </p>
               </motion.li>
             </ul>
@@ -315,44 +320,40 @@ eCommerce, and collaboration system integrations.
           ></path>
         </svg>
       </section>
-     
+
       {/* key feature of ligtning */}
       <section className={`newsectionbox   h-full salesandservice relative   `}>
-      
-        <div className="container mx-auto md:px-8  py-16 p5">
-          <span className=" font-bold text-center block text-red-600 text-lg w-full mx-auto mt-10">
-          Integration Choices Across Your Business Departments
+        <div className="container mx-auto md:px-8  p5">
+          <span className=" font-bold text-center block text-red-600 text-lg w-full mx-auto">
+            Integration Choices Across Your Business Departments
           </span>
-          <div className="grid  md:grid-cols-3 grid-cols-1 md:-mt-10 px-8 gap-10">
-          <motion.div
+          <div className="grid  md:grid-cols-3 grid-cols-1 md:-mt-10 px-8 gap-5 gap-y-2">
+            <motion.div
               className="right  mt-5 md:mt-20"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <span className="md:text-justify text-red-600 font-bold flex justify-center">
-              Database Integration
+              <div className="flex items-center gap-2 justify-center">
+                <span className="md:text-justify text-red-600 font-bold flex justify-center">
+                  Database Integration
                 </span>
-              
-               
-                <p className="text-justify">
-                Our certified Salesforce consultants are adept at maximizing your data efficiency. Leverage your data effectively, extract
-actionable insights, and harness data intelligence with expertise in
-                </p>
-                <ul style={{listStyleType:"circle"}} className="ml-5">
-<li style={{color:"#4e4e50"}} >Oracle</li>
-<li style={{color:"#4e4e50"}} >MySQL</li>
-<li style={{color:"#4e4e50"}} >Microsoft SQL</li>
-<li style={{color:"#4e4e50"}} >Teradata</li>
-<li style={{color:"#4e4e50"}} >MongoDB</li>
+                <FcAcceptDatabase size={32} />
+              </div>
 
-
-
-
-
-
-                </ul>
-             
+              <p className="text-justify">
+                Our certified Salesforce consultants are adept at maximizing
+                your data efficiency. Leverage your data effectively, extract
+                actionable insights, and harness data intelligence with
+                expertise in
+              </p>
+              <ul style={{ listStyleType: "circle" }} className="ml-5">
+                <li style={{ color: "#4e4e50" }}>Oracle</li>
+                <li style={{ color: "#4e4e50" }}>MySQL</li>
+                <li style={{ color: "#4e4e50" }}>Microsoft SQL</li>
+                <li style={{ color: "#4e4e50" }}>Teradata</li>
+                <li style={{ color: "#4e4e50" }}>MongoDB</li>
+              </ul>
             </motion.div>
             <motion.div
               className="right  mt-5 md:mt-20"
@@ -360,29 +361,25 @@ actionable insights, and harness data intelligence with expertise in
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <span className="md:text-justify text-red-600 font-bold flex justify-center">
-              Marketing Integration
+              <div className="flex items-center gap-2 justify-center">
+                <span className="md:text-justify text-red-600 font-bold flex justify-center">
+                  Marketing Integration
                 </span>
-              
-               
-                <p className="text-justify">
-                Strengthen cooperation between your marketing and sales teams. Streamline data exchange, expand customer
-outreach, and re-engage cold leads using our Salesforce marketing solutions. Partnering with
-                </p>
-                <ul style={{listStyleType:"circle"}} className="ml-5">
-<li style={{color:"#4e4e50"}} >Marketo</li>
-<li style={{color:"#4e4e50"}} >HubSpot</li>
-<li style={{color:"#4e4e50"}} >MailChimp</li>
-<li style={{color:"#4e4e50"}} >Teradata</li>
-<li style={{color:"#4e4e50"}} >Eloqua</li>
-
-
-
-
-
-
-                </ul>
-             
+                <FcBullish size={32} />
+              </div>
+              <p className="text-justify">
+                Strengthen cooperation between your marketing and sales teams.
+                Streamline data exchange, expand customer outreach, and
+                re-engage cold leads using our Salesforce marketing solutions.
+                Partnering with
+              </p>
+              <ul style={{ listStyleType: "circle" }} className="ml-5">
+                <li style={{ color: "#4e4e50" }}>Marketo</li>
+                <li style={{ color: "#4e4e50" }}>HubSpot</li>
+                <li style={{ color: "#4e4e50" }}>MailChimp</li>
+                <li style={{ color: "#4e4e50" }}>Teradata</li>
+                <li style={{ color: "#4e4e50" }}>Eloqua</li>
+              </ul>
             </motion.div>
             <motion.div
               className="right  mt-5 md:mt-20"
@@ -390,28 +387,24 @@ outreach, and re-engage cold leads using our Salesforce marketing solutions. Par
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <span className="md:text-justify text-red-600 font-bold flex justify-center">
-              Accounting Integration
+              <div className="flex items-center gap-2 justify-center">
+                <span className="md:text-justify text-red-600 font-bold flex justify-center">
+                  Accounting Integration
                 </span>
-              
-               
-                <p className="text-justify">
-                Enhance your sales team capabilities through our Salesforce integration services with accounting systems. Access up-to-
-date financial data and records including invoices, profiles, insights, transactions, and more from:
-                </p>
-                <ul style={{listStyleType:"circle"}} className="ml-5">
-<li style={{color:"#4e4e50"}} >QuickBooks</li>
-<li style={{color:"#4e4e50"}} >Zoho</li>
-<li style={{color:"#4e4e50"}} >Xero</li>
+                <FcCalculator size={32} />
+              </div>
 
-
-
-
-
-
-
-                </ul>
-             
+              <p className="text-justify">
+                Enhance your sales team capabilities through our Salesforce
+                integration services with accounting systems. Access up-to- date
+                financial data and records including invoices, profiles,
+                insights, transactions, and more from:
+              </p>
+              <ul style={{ listStyleType: "circle" }} className="ml-5">
+                <li style={{ color: "#4e4e50" }}>QuickBooks</li>
+                <li style={{ color: "#4e4e50" }}>Zoho</li>
+                <li style={{ color: "#4e4e50" }}>Xero</li>
+              </ul>
             </motion.div>
 
             <motion.div
@@ -420,66 +413,53 @@ date financial data and records including invoices, profiles, insights, transact
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <span className="md:text-justify text-red-600 font-bold flex justify-center">
-              Ecommerce Integration
+              {" "}
+              <div className="flex items-center gap-2 justify-center">
+                <span className="md:text-justify text-red-600 font-bold flex justify-center">
+                  Ecommerce Integration
                 </span>
-              
-               
-                <p className="text-justify">
-                Connect your eCommerce platform with Salesforce CRM for comprehensive 360-degree visibility into your customer
-operations. Unlock capabilities to craft customer journeys, launch hyper-personalized campaigns, and more with
-                </p>
-                <ul style={{listStyleType:"circle"}} className="ml-5">
-<li style={{color:"#4e4e50"}} >Magento</li>
-<li style={{color:"#4e4e50"}} >WordPress</li>
-<li style={{color:"#4e4e50"}} >Shopify</li>
-<li style={{color:"#4e4e50"}} >WooCommerce</li>
-
-
-
-
-
-
-
-
-                </ul>
-             
+                <FcShipped size={32} />
+              </div>
+              <p className="text-justify">
+                Connect your eCommerce platform with Salesforce CRM for
+                comprehensive 360-degree visibility into your customer
+                operations. Unlock capabilities to craft customer journeys,
+                launch hyper-personalized campaigns, and more with
+              </p>
+              <ul style={{ listStyleType: "circle" }} className="ml-5">
+                <li style={{ color: "#4e4e50" }}>Magento</li>
+                <li style={{ color: "#4e4e50" }}>WordPress</li>
+                <li style={{ color: "#4e4e50" }}>Shopify</li>
+                <li style={{ color: "#4e4e50" }}>WooCommerce</li>
+              </ul>
             </motion.div>
-            
+
             <motion.div
               className="right  mt-5 md:mt-20"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <span className="md:text-justify text-red-600 font-bold flex justify-center">
-              ERP Integration
+              <div className="flex items-center gap-2 justify-center">
+                <span className="md:text-justify text-red-600 font-bold flex justify-center">
+                  ERP Integration
                 </span>
-              
-               
-                <p className="text-justify">
-                Integrating Salesforce with Enterprise Resource Planning (ERP) systems streamlines sales and resource management
-workflows. Our expertise includes integrating Salesforce with leading ERP platforms such as
-                </p>
-                <ul style={{listStyleType:"circle"}} className="ml-5">
-<li style={{color:"#4e4e50"}} >NetSuite</li>
-<li style={{color:"#4e4e50"}} >Acumatica</li>
-<li style={{color:"#4e4e50"}} >SAP</li>
-<li style={{color:"#4e4e50"}} >Sage</li>
-<li style={{color:"#4e4e50"}} >Oracle</li>
-<li style={{color:"#4e4e50"}} >Microsoft Dynamics 365</li>
-
-
-
-
-
-
-
-
-
-
-                </ul>
-             
+                <FcPieChart size={32} />
+              </div>
+              <p className="text-justify">
+                Integrating Salesforce with Enterprise Resource Planning (ERP)
+                systems streamlines sales and resource management workflows. Our
+                expertise includes integrating Salesforce with leading ERP
+                platforms such as
+              </p>
+              <ul style={{ listStyleType: "circle" }} className="ml-5">
+                <li style={{ color: "#4e4e50" }}>NetSuite</li>
+                <li style={{ color: "#4e4e50" }}>Acumatica</li>
+                <li style={{ color: "#4e4e50" }}>SAP</li>
+                <li style={{ color: "#4e4e50" }}>Sage</li>
+                <li style={{ color: "#4e4e50" }}>Oracle</li>
+                <li style={{ color: "#4e4e50" }}>Microsoft Dynamics 365</li>
+              </ul>
             </motion.div>
             <motion.div
               className="right  mt-5 md:mt-20"
@@ -487,41 +467,35 @@ workflows. Our expertise includes integrating Salesforce with leading ERP platfo
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <span className="md:text-justify text-red-600 font-bold flex justify-center">
-              Other Integrations
+              <div className="flex items-center gap-2 justify-center">
+                <span className="md:text-justify text-red-600 font-bold flex justify-center">
+                  Other Integrations
                 </span>
-              
-               
-                <p className="text-justify">
-                We excel in tailoring Salesforce integration services to suit your specific business needs. Our expertise extends to
-seamlessly integrating Salesforce with various types of applications
-                </p>
-                <ul style={{listStyleType:"circle"}} className="ml-5">
-<li style={{color:"#4e4e50"}} >Email/Calendar</li>
-<li style={{color:"#4e4e50"}} >Shipping</li>
-<li style={{color:"#4e4e50"}} >EMR (Electronic Medical Records)</li>
-<li style={{color:"#4e4e50"}} >CTI (Computer Telephony Integration)</li>
+                <FcRadarPlot size={32} />
+              </div>
 
-
-
-
-
-
-
-
-
-
-
-                </ul>
-             
+              <p className="text-justify">
+                We excel in tailoring Salesforce integration services to suit
+                your specific business needs. Our expertise extends to
+                seamlessly integrating Salesforce with various types of
+                applications
+              </p>
+              <ul style={{ listStyleType: "circle" }} className="ml-5">
+                <li style={{ color: "#4e4e50" }}>Email/Calendar</li>
+                <li style={{ color: "#4e4e50" }}>Shipping</li>
+                <li style={{ color: "#4e4e50" }}>
+                  EMR (Electronic Medical Records)
+                </li>
+                <li style={{ color: "#4e4e50" }}>
+                  CTI (Computer Telephony Integration)
+                </li>
+              </ul>
             </motion.div>
           </div>
         </div>
       </section>
-     
-      <section
-        className={`newsectionbox  h-full salesandservice relative  mt-16`}
-      >
+
+      <section className={`newsectionbox  h-full salesandservice relative `}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
@@ -534,14 +508,14 @@ seamlessly integrating Salesforce with various types of applications
           ></path>
         </svg>
         <div className="container mx-auto md:px-8 p5  ">
-          <span className="block text-red-600 font-bold text-center mt-5">
-          InfoDrive Solution’s Integration Capabilities
+          <span className="block text-red-600 font-bold text-center ">
+            InfoDrive Solution’s Integration Capabilities
           </span>
           <div className="left  rounded-md overflow-hidden mx-auto">
             <motion.img
               alt="app exchange"
               src="./i3.png"
-              className=" object-contain mt-10 rounded-md md:w-1/2 mx-auto"
+              className=" object-contain mt-10 rounded-md md:w-[40%] mx-auto"
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
@@ -551,11 +525,9 @@ seamlessly integrating Salesforce with various types of applications
                 },
               }}
             />
-       
           </div>
 
           <div className="right mt-10 ">
-            
             <ul
               style={{ listStyleType: "none" }}
               className="grid grid-col md:grid-cols-2 gap-10 mt-10"
@@ -565,13 +537,15 @@ seamlessly integrating Salesforce with various types of applications
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
               >
-                <span className="font-bold text-red-600 flex justify-center" >
-                Salesforce API Integration
+                <span className="font-bold text-red-600 flex justify-center">
+                  Salesforce API Integration
                 </span>
                 <p className="md:text-justify">
-                As a leading Salesforce integration firm boasting a team of seasoned consultants, we specialize in Salesforce API
-integration. Benefit from rich functionalities including geo-location services, eCommerce solutions, media services, and
-more
+                  As a leading Salesforce integration firm boasting a team of
+                  seasoned consultants, we specialize in Salesforce API
+                  integration. Benefit from rich functionalities including
+                  geo-location services, eCommerce solutions, media services,
+                  and more
                 </p>
               </motion.li>
               <motion.li
@@ -580,11 +554,13 @@ more
                 transition={{ duration: 1 }}
               >
                 <span className="font-bold text-red-600 flex justify-center">
-                Backend System Integration
+                  Backend System Integration
                 </span>
                 <p className="md:text-justify">
-                Enhance the capabilities of your current backend system with our Salesforce backend integration services. We
-meticulously address specific business requirements, amplifying system performance to meet your needs.
+                  Enhance the capabilities of your current backend system with
+                  our Salesforce backend integration services. We meticulously
+                  address specific business requirements, amplifying system
+                  performance to meet your needs.
                 </p>
               </motion.li>
               <motion.li
@@ -593,12 +569,14 @@ meticulously address specific business requirements, amplifying system performan
                 transition={{ duration: 1 }}
               >
                 <span className="font-bold text-red-600 flex justify-center">
-                User Interface Integration
+                  User Interface Integration
                 </span>
                 <p className="md:text-justify">
-                InfoDrive Solutions is a leading Salesforce integration service provider globally, ensuring seamless integration for
-impeccable performance across all systems. Whether for customers, employees, or partners, we deliver a unified user
-experience to all stakeholders.
+                  InfoDrive Solutions is a leading Salesforce integration
+                  service provider globally, ensuring seamless integration for
+                  impeccable performance across all systems. Whether for
+                  customers, employees, or partners, we deliver a unified user
+                  experience to all stakeholders.
                 </p>
               </motion.li>
               <motion.li
@@ -607,18 +585,19 @@ experience to all stakeholders.
                 transition={{ duration: 1 }}
               >
                 <span className="font-bold text-red-600 flex justify-center">
-                Data Integration
+                  Data Integration
                 </span>
                 <p className="md:text-justify">
-                Leveraging Salesforce integration, you can enhance customer engagement and employee experience. With InfoDrive
-Solutions, establish robust connections between key touchpoints and databases across your organization.
+                  Leveraging Salesforce integration, you can enhance customer
+                  engagement and employee experience. With InfoDrive Solutions,
+                  establish robust connections between key touchpoints and
+                  databases across your organization.
                 </p>
               </motion.li>
             </ul>
           </div>
         </div>
       </section>
-    
 
       <section
         className={`newsectionbox aboutUsBox3 salesCloudService  -mt-10 pt-10 relative`}
@@ -631,8 +610,9 @@ Solutions, establish robust connections between key touchpoints and databases ac
             Frequently Asked Questions (FAQs)
           </h2>
           <p className="mt-5  text-gray-600 text-justify">
-          Salesforce integration is not a simple task. It involves a lengthy, time-consuming, and technical process that often raises
-several questions. Here are some of the most common inquiries.
+            Salesforce integration is not a simple task. It involves a lengthy,
+            time-consuming, and technical process that often raises several
+            questions. Here are some of the most common inquiries.
           </p>
 
           <Box sx={{ flexGrow: 1 }}>
@@ -640,134 +620,152 @@ several questions. Here are some of the most common inquiries.
               <Grid item xs={12} className=" w-full mt-10 ">
                 <Card>
                   <div className="top md:flex items-center gap-20">
-                  <img
-                    alt="saleforce"
-                    src="./i4.png"
-                    className="  object-cover  rounded-md w-full "
-                  />
-                  <div className="rightimg space-y-5">
-                <div >
-                <span className="text-red-600 font-bold">Why choose InfoDrive Solution’s for Salesforce Integrations?</span>
-                <p className="text-justify">We guarantee swift delivery, access to proficient Salesforce developers, competitive pricing, agile methodologies,
-complete customer satisfaction, ongoing support and maintenance, and being recognized as a Top Salesforce Consulting
-Partner.</p>
-                </div>
-                <div>
-                <span className="text-red-600 font-bold">Why choose InfoDrive Solution’s for Salesforce Integrations?</span>
-                <p className="text-justify">We guarantee swift delivery, access to proficient Salesforce developers, competitive pricing, agile methodologies,
-complete customer satisfaction, ongoing support and maintenance, and being recognized as a Top Salesforce Consulting
-Partner.</p>
-                </div>
-                  </div>
+                    <img
+                      alt="saleforce"
+                      src="./i4.png"
+                      className="  object-cover  rounded-md w-full "
+                    />
+                    <div className="rightimg space-y-5">
+                      <div>
+                        <span className="text-red-600 font-bold">
+                          Why choose InfoDrive Solution’s for Salesforce
+                          Integrations?
+                        </span>
+                        <p className="text-justify">
+                          We guarantee swift delivery, access to proficient
+                          Salesforce developers, competitive pricing, agile
+                          methodologies, complete customer satisfaction, ongoing
+                          support and maintenance, and being recognized as a Top
+                          Salesforce Consulting Partner.
+                        </p>
+                      </div>
+                      <div>
+                        <span className="text-red-600 font-bold">
+                          Why choose InfoDrive Solution’s for Salesforce
+                          Integrations?
+                        </span>
+                        <p className="text-justify">
+                          We guarantee swift delivery, access to proficient
+                          Salesforce developers, competitive pricing, agile
+                          methodologies, complete customer satisfaction, ongoing
+                          support and maintenance, and being recognized as a Top
+                          Salesforce Consulting Partner.
+                        </p>
+                      </div>
+                    </div>
                   </div>
 
                   {/* newsection */}
-                  <div className="middle-section grid md:grid-cols-2 grid-cols-1 mt-10 ">
+                  <div className="md:flex items-center gap-2">
+                    <div className="middle-section grid grid-cols-1 mt-10 ">
+                      <div className="left">
+                        <span className="text-red-600 font-bold">
+                          Top Benefits of Salesforce Integrations
+                        </span>
+                        <div className="points-box">
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>
+                              It becomes simpler to link the front office with
+                              the back office.
+                            </p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>
+                              Enable end-to-end business process automation.
+                            </p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>Improve user experience.</p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>Provide a 360-degree view of customers.</p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>Ensure consistent customer experience.</p>
+                          </div>
+                        </div>
+                      </div>
 
-                <div className="left">
-              <span className="text-red-600 font-bold">Top Benefits of Salesforce Integrations</span>
-              <div className="points-box">
-                <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-                <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-                <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-                <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-                <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-              </div>
-                </div>
+                      <div className="right mt-5">
+                        <span className="text-red-600 font-bold ">
+                          What Integration Challenges does InfoDrive Solutions
+                          Solves?
+                        </span>
+                        <div className="points-box">
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>Integrating Salesforce with multiple systems.</p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>
+                              Integrating Salesforce with on-premise systems.
+                            </p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>Integrating Salesforce with custom solutions.</p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>
+                              Integrating Salesforce with regional branches.
+                            </p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>Real-time data synchronization.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-
-                <div className="right">
-              <span className="text-red-600 font-bold">What Integration Challenges does InfoDrive Solutions Solves?</span>
-              <div className="points-box">
-              <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-                <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-                <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-                <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-                <div className="point flex items-center gap-2">
-                <FcCheckmark />
-                <p>It becomes simpler to link the front office with the back office.</p>
-                </div>
-              </div>
-
-
-                </div>
-
-
-
-                  </div>
-
-                  <div className="flex items-center gap-5 flex-wrap mt-5">
-                    
+                    <div className="grid grid-cols-3 gap-10 mt-5 md:ml-20">
                       <img
                         alt="saleforce"
                         src="./ic1.png"
                         className="w-20 object-cover  rounded-md "
                       />
-                    
-                   
+
                       <img
                         alt="saleforce"
                         src="./ic2.png"
                         className=" w-20 h-full  rounded-md "
                       />
-                   
-                    <img
-                      alt="saleforce"
-                      src="./ic3.png"
-                      className=" w-20 object-cover  rounded-md "
-                    />
-                    <img
-                      alt="saleforce"
-                      src="./ic4.png"
-                      className="w-20 object-cover  rounded-md "
-                    />
-                    <img
-                      alt="saleforce"
-                      src="./ic5.png"
-                      className="w-20 object-cover  rounded-md "
-                    />
-                    <img
-                      alt="saleforce"
-                      src="./ic6.png"
-                      className="w-20 object-cover  rounded-md "
-                    />
+
+                      <img
+                        alt="saleforce"
+                        src="./ic3.png"
+                        className=" w-20 object-cover  rounded-md "
+                      />
+                      <img
+                        alt="saleforce"
+                        src="./ic4.png"
+                        className="w-20 object-cover  rounded-md "
+                      />
+                      <img
+                        alt="saleforce"
+                        src="./ic5.png"
+                        className="w-20 object-cover  rounded-md "
+                      />
+                      <img
+                        alt="saleforce"
+                        src="./ic6.png"
+                        className="w-20 object-cover  rounded-md "
+                      />
+                    </div>
                   </div>
                 </Card>
               </Grid>
-            
             </Grid>
           </Box>
         </div>
       </section>
-
-     
 
       <SaleforceCient />
       <motion.div className="flex justify-center ">
