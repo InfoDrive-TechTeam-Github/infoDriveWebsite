@@ -103,7 +103,7 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
-        <title>Salesforce CPQ Service & Community Cloud Services</title>
+        <title>Salesforce Integration Services</title>
         <meta
           name="description"
           content="Enhance sales efficiency and community engagement with our expert Salesforce CPQ Service & Community Cloud Services. Empower your teams, delight your customers, and drive business growth."
@@ -111,12 +111,11 @@ export default function SalesForceDevelopment() {
         <meta name="keywords" content="" />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/salesforce-cpq-and-community-cloud-services.html"
+          href="https://infodrive-solutions.com/salesforce-integration-services.html"
         />
         <meta
           property="og:title"
-          content="Empower Your Business with Salesforce Commerce Cloud and Einstein
-          Services - InfoDrive Solutions"
+          content="Salesforce Integration Services- InfoDrive Solutions"
         />
         <meta
           property="og:image"
@@ -143,7 +142,7 @@ export default function SalesForceDevelopment() {
       </noscript>
       <Header />
 
-      <section className="newsectionbox text-white relative  pb-0 md:h-[450px] w-full h-screen  ">
+      <section className="newsectionbox text-white relative  pb-0 md:h-[450px] w-full h-[600px]  ">
         <div className="container md:max-w-5xl  lg:max-w-7xl md:mx-auto h-full w-full p5   lg:px-8">
           <div className="space-y-5 flex md:flex-row flex-col items-center gap-5">
             <span
@@ -203,14 +202,14 @@ export default function SalesForceDevelopment() {
           ></path>
         </svg>
         <div className="container mx-auto md:px-8 p5   ">
-          <span className="block text-red-600 font-bold text-center -mt-2">
+          <span className="block text-red-600 font-bold text-center -mt-2 md:text-xl">
             InfoDrive Solution’s Salesforce Integration Services Offerings
           </span>
           <div className="left md:w-1/2 rounded-md overflow-hidden mx-auto">
             <img
               alt="app exchange"
               src="./i2.png"
-              className="w-full object-contain mt-10 rounded-md"
+              className=" object-contain mt-20 rounded-md w-[80%] flex justify-center ml-10 "
             />
           </div>
 
@@ -508,14 +507,14 @@ export default function SalesForceDevelopment() {
           ></path>
         </svg>
         <div className="container mx-auto md:px-8 p5  ">
-          <span className="block text-red-600 font-bold text-center ">
+          <span className="block text-red-600 font-bold text-center text-xl ">
             InfoDrive Solution’s Integration Capabilities
           </span>
           <div className="left  rounded-md overflow-hidden mx-auto">
             <motion.img
               alt="app exchange"
               src="./i3.png"
-              className=" object-contain mt-10 rounded-md md:w-[40%] mx-auto"
+              className=" object-contain mt-10 rounded-md md:w-[37%] mx-auto"
               initial={{ opacity: 0 }}
               whileInView={{
                 opacity: 1,
@@ -609,7 +608,7 @@ export default function SalesForceDevelopment() {
           >
             Frequently Asked Questions (FAQs)
           </h2>
-          <p className="mt-5  text-gray-600 text-justify">
+          <p className="mt-5  text-gray-600 text-center">
             Salesforce integration is not a simple task. It involves a lengthy,
             time-consuming, and technical process that often raises several
             questions. Here are some of the most common inquiries.
@@ -619,145 +618,134 @@ export default function SalesForceDevelopment() {
             <Grid container spacing={0}>
               <Grid item xs={12} className=" w-full mt-10 ">
                 <Card>
-                  <div className="top md:flex items-center gap-20">
+                  <div className="flex justify-center">
                     <img
                       alt="saleforce"
                       src="./i4.png"
-                      className="  object-cover  rounded-md md:w-1/2 "
+                      className="  object-cover  rounded-md md:w-[40%] "
                     />
+                  </div>
+                  <div className="middle-section grid md:grid-cols-2 items-center grid-cols-1 mt-20 gap-10 ">
+                    <div className="right ">
+                      <span className="text-red-600 font-bold ">
+                        What Integration Challenges does InfoDrive Solutions
+                        Solves?
+                      </span>
+                      <div className="points-box">
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>Integrating Salesforce with multiple systems.</p>
+                        </div>
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>Integrating Salesforce with on-premise systems.</p>
+                        </div>
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>Integrating Salesforce with custom solutions.</p>
+                        </div>
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>Integrating Salesforce with regional branches.</p>
+                        </div>
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>Real-time data synchronization.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="left">
+                      <span className="text-red-600 font-bold">
+                        Top Benefits of Salesforce Integrations
+                      </span>
+                      <div className="points-box">
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>
+                            It becomes simpler to link the front office with the
+                            back office.
+                          </p>
+                        </div>
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>Enable end-to-end business process automation.</p>
+                        </div>
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>Improve user experience.</p>
+                        </div>
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>Provide a 360-degree view of customers.</p>
+                        </div>
+                        <div className="point flex items-center gap-2">
+                          <FcCheckmark />
+                          <p>Ensure consistent customer experience.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="rightimg  ">
+                      <span className="text-red-600 font-bold">
+                        Why choose InfoDrive Solution’s for Salesforce
+                        Integrations?
+                      </span>
+                      <p className="text-justify">
+                        We guarantee swift delivery, access to proficient
+                        Salesforce developers, competitive pricing, agile
+                        methodologies, complete customer satisfaction, ongoing
+                        support and maintenance, and being recognized as a Top
+                        Salesforce Consulting Partner.
+                      </p>
+                    </div>
 
-                    <div className="middle-section grid grid-cols-1 mt-10 ">
-                      <div className="right mt-5">
-                        <span className="text-red-600 font-bold ">
-                          What Integration Challenges does InfoDrive Solutions
-                          Solves?
-                        </span>
-                        <div className="points-box">
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>Integrating Salesforce with multiple systems.</p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>
-                              Integrating Salesforce with on-premise systems.
-                            </p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>Integrating Salesforce with custom solutions.</p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>
-                              Integrating Salesforce with regional branches.
-                            </p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>Real-time data synchronization.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="left">
-                        <span className="text-red-600 font-bold">
-                          Top Benefits of Salesforce Integrations
-                        </span>
-                        <div className="points-box">
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>
-                              It becomes simpler to link the front office with
-                              the back office.
-                            </p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>
-                              Enable end-to-end business process automation.
-                            </p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>Improve user experience.</p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>Provide a 360-degree view of customers.</p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>Ensure consistent customer experience.</p>
-                          </div>
-                        </div>
-                      </div>
+                    <div className="left">
+                      <span className="text-red-600 font-bold">
+                        Why choose InfoDrive Solution’s for Salesforce
+                        Integrations?
+                      </span>
+                      <p className="text-justify">
+                        We guarantee swift delivery, access to proficient
+                        Salesforce developers, competitive pricing, agile
+                        methodologies, complete customer satisfaction, ongoing
+                        support and maintenance, and being recognized as a Top
+                        Salesforce Consulting Partner.
+                      </p>
                     </div>
                   </div>
 
-                  {/* newsection */}
-                  <div className="md:flex items-center gap-2">
-                    <div className="rightimg space-y-5 md:w-1/2">
-                      <div>
-                        <span className="text-red-600 font-bold">
-                          Why choose InfoDrive Solution’s for Salesforce
-                          Integrations?
-                        </span>
-                        <p className="text-justify">
-                          We guarantee swift delivery, access to proficient
-                          Salesforce developers, competitive pricing, agile
-                          methodologies, complete customer satisfaction, ongoing
-                          support and maintenance, and being recognized as a Top
-                          Salesforce Consulting Partner.
-                        </p>
-                      </div>
-                      <div>
-                        <span className="text-red-600 font-bold">
-                          Why choose InfoDrive Solution’s for Salesforce
-                          Integrations?
-                        </span>
-                        <p className="text-justify">
-                          We guarantee swift delivery, access to proficient
-                          Salesforce developers, competitive pricing, agile
-                          methodologies, complete customer satisfaction, ongoing
-                          support and maintenance, and being recognized as a Top
-                          Salesforce Consulting Partner.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="grid grid-cols-3 gap-10 mt-5 md:ml-20">
-                      <img
-                        alt="saleforce"
-                        src="./ic1.png"
-                        className="w-20 object-cover  rounded-md "
-                      />
+                  <div className="grid grid-cols-3 md:flex  gap-10  justify-center mt-10">
+                    <img
+                      alt="saleforce"
+                      src="./ic1.png"
+                      className="w-20 object-cover  rounded-md "
+                    />
 
-                      <img
-                        alt="saleforce"
-                        src="./ic2.png"
-                        className=" w-20 h-full  rounded-md "
-                      />
+                    <img
+                      alt="saleforce"
+                      src="./ic2.png"
+                      className=" w-20 h-full  rounded-md "
+                    />
 
-                      <img
-                        alt="saleforce"
-                        src="./ic3.png"
-                        className=" w-20 object-cover  rounded-md "
-                      />
-                      <img
-                        alt="saleforce"
-                        src="./ic4.png"
-                        className="w-20 object-cover  rounded-md "
-                      />
-                      <img
-                        alt="saleforce"
-                        src="./ic5.png"
-                        className="w-20 object-cover  rounded-md "
-                      />
-                      <img
-                        alt="saleforce"
-                        src="./ic6.png"
-                        className="w-20 object-cover  rounded-md "
-                      />
-                    </div>
+                    <img
+                      alt="saleforce"
+                      src="./ic3.png"
+                      className=" w-20 object-cover  rounded-md "
+                    />
+                    <img
+                      alt="saleforce"
+                      src="./ic4.png"
+                      className="w-20 object-cover  rounded-md "
+                    />
+                    <img
+                      alt="saleforce"
+                      src="./ic5.png"
+                      className="w-20 object-cover  rounded-md "
+                    />
+                    <img
+                      alt="saleforce"
+                      src="./ic6.png"
+                      className="w-20 object-cover  rounded-md "
+                    />
                   </div>
                 </Card>
               </Grid>
