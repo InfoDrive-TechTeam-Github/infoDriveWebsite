@@ -623,74 +623,10 @@ export default function SalesForceDevelopment() {
                     <img
                       alt="saleforce"
                       src="./i4.png"
-                      className="  object-cover  rounded-md w-full "
+                      className="  object-cover  rounded-md md:w-1/2 "
                     />
-                    <div className="rightimg space-y-5">
-                      <div>
-                        <span className="text-red-600 font-bold">
-                          Why choose InfoDrive Solution’s for Salesforce
-                          Integrations?
-                        </span>
-                        <p className="text-justify">
-                          We guarantee swift delivery, access to proficient
-                          Salesforce developers, competitive pricing, agile
-                          methodologies, complete customer satisfaction, ongoing
-                          support and maintenance, and being recognized as a Top
-                          Salesforce Consulting Partner.
-                        </p>
-                      </div>
-                      <div>
-                        <span className="text-red-600 font-bold">
-                          Why choose InfoDrive Solution’s for Salesforce
-                          Integrations?
-                        </span>
-                        <p className="text-justify">
-                          We guarantee swift delivery, access to proficient
-                          Salesforce developers, competitive pricing, agile
-                          methodologies, complete customer satisfaction, ongoing
-                          support and maintenance, and being recognized as a Top
-                          Salesforce Consulting Partner.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
 
-                  {/* newsection */}
-                  <div className="md:flex items-center gap-2">
                     <div className="middle-section grid grid-cols-1 mt-10 ">
-                      <div className="left">
-                        <span className="text-red-600 font-bold">
-                          Top Benefits of Salesforce Integrations
-                        </span>
-                        <div className="points-box">
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>
-                              It becomes simpler to link the front office with
-                              the back office.
-                            </p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>
-                              Enable end-to-end business process automation.
-                            </p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>Improve user experience.</p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>Provide a 360-degree view of customers.</p>
-                          </div>
-                          <div className="point flex items-center gap-2">
-                            <FcCheckmark />
-                            <p>Ensure consistent customer experience.</p>
-                          </div>
-                        </div>
-                      </div>
-
                       <div className="right mt-5">
                         <span className="text-red-600 font-bold ">
                           What Integration Challenges does InfoDrive Solutions
@@ -723,8 +659,71 @@ export default function SalesForceDevelopment() {
                           </div>
                         </div>
                       </div>
+                      <div className="left">
+                        <span className="text-red-600 font-bold">
+                          Top Benefits of Salesforce Integrations
+                        </span>
+                        <div className="points-box">
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>
+                              It becomes simpler to link the front office with
+                              the back office.
+                            </p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>
+                              Enable end-to-end business process automation.
+                            </p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>Improve user experience.</p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>Provide a 360-degree view of customers.</p>
+                          </div>
+                          <div className="point flex items-center gap-2">
+                            <FcCheckmark />
+                            <p>Ensure consistent customer experience.</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
 
+                  {/* newsection */}
+                  <div className="md:flex items-center gap-2">
+                    <div className="rightimg space-y-5 w-1/2">
+                      <div>
+                        <span className="text-red-600 font-bold">
+                          Why choose InfoDrive Solution’s for Salesforce
+                          Integrations?
+                        </span>
+                        <p className="text-justify">
+                          We guarantee swift delivery, access to proficient
+                          Salesforce developers, competitive pricing, agile
+                          methodologies, complete customer satisfaction, ongoing
+                          support and maintenance, and being recognized as a Top
+                          Salesforce Consulting Partner.
+                        </p>
+                      </div>
+                      <div>
+                        <span className="text-red-600 font-bold">
+                          Why choose InfoDrive Solution’s for Salesforce
+                          Integrations?
+                        </span>
+                        <p className="text-justify">
+                          We guarantee swift delivery, access to proficient
+                          Salesforce developers, competitive pricing, agile
+                          methodologies, complete customer satisfaction, ongoing
+                          support and maintenance, and being recognized as a Top
+                          Salesforce Consulting Partner.
+                        </p>
+                      </div>
+                    </div>
                     <div className="grid grid-cols-3 gap-10 mt-5 md:ml-20">
                       <img
                         alt="saleforce"
