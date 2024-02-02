@@ -696,7 +696,7 @@ export default function SalesForceDevelopment() {
 
                   {/* newsection */}
                   <div className="md:flex items-center gap-2">
-                    <div className="rightimg space-y-5 w-1/2">
+                    <div className="rightimg space-y-5 md:w-1/2">
                       <div>
                         <span className="text-red-600 font-bold">
                           Why choose InfoDrive Solution’s for Salesforce
