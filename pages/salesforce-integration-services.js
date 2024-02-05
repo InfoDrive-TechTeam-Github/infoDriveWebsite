@@ -627,7 +627,7 @@ export default function SalesForceDevelopment() {
                   </div>
                   <div className="middle-section grid md:grid-cols-2 items-center grid-cols-1 mt-20 gap-10 ">
                     <div className="right ">
-                      <span className="text-red-600 font-bold ">
+                      <span className="text-red-600 font-bold text-center ">
                         What Integration Challenges does InfoDrive Solutions
                         Solves?
                       </span>
