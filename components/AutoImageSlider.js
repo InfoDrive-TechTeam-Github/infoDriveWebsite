@@ -59,11 +59,11 @@ function AutoImageSlider() {
       >
         {imagesData.map((item) => (
           //   <img src={item.url} />
-          <div className="sliderBox ">
+          <div className="sliderBox bg-black">
             <img
-              style={{ width: "100%" }}
+              style={{ width: "100vw" }}
               src={item.url}
-              className=" h-[225px] md:h-full md:object-cover pt-3"
+              className="  md:h-full md:object-fill py-10 "
             />
             <Box sx={{ flexGrow: 1 }} className="sliderContent">
               <Grid container spacing={0}>
