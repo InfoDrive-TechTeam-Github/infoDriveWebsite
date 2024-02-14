@@ -63,7 +63,7 @@ function AutoImageSlider() {
             <img
               style={{ width: "100vw" }}
               src={item.url}
-              className="  md:h-full md:object-fill py-10 "
+              className="  md:h-full md:object-cover pt-10 "
             />
             <Box sx={{ flexGrow: 1 }} className="sliderContent">
               <Grid container spacing={0}>
@@ -75,7 +75,7 @@ function AutoImageSlider() {
                 ></Typography>
                 <Button
                   href="/contact-us.html"
-                  className="letsTalkmin  normalCase bg-white text-black hover:bg-pink-600 hover:text-white "
+                  className="letsTalkmin  normalCase bg-white text-black hover:bg-pink-600 hover:text-white mt-5"
                   variant="text"
                 >
                   Let's Talk <ArrowRightAltIcon />
