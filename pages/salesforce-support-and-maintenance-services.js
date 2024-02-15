@@ -636,12 +636,12 @@ export default function SalesForceDevelopment() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              {" "}
-              <div className="flex   justify-center">
-                <span className="md:text-justify text-red-600 font-bold flex justify-center ">
-                  Optimizing Salesforce Implementations
+              <div className="flex   justify-center  ">
+                <span className=" text-red-600 font-bold flex justify-center  ">
+                  Optimizing Salesforce
+                  <br /> Implementations
                 </span>
-                <FcPieChart size={32} />
+                <FcPieChart size={42} />
               </div>
               <p className="text-justify">
                 We closely monitor emerging trends, features, and
