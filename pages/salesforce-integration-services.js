@@ -103,19 +103,25 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
-        <title>Salesforce Integration Services</title>
+        <title> Salesforce Integration Services - InfoDrive Solutions</title>
         <meta
           name="description"
-          content="Enhance sales efficiency and community engagement with our expert Salesforce CPQ Service & Community Cloud Services. Empower your teams, delight your customers, and drive business growth."
+          content=" Seamlessly connect your systems, streamline processes, and drive efficiency with Infodrive Solutions' Salesforce Integration Services."
         />
-        <meta name="keywords" content="" />
+        <meta
+          name="keywords"
+          content="Salesforce integration, Integration services
+Salesforce connectors, Data synchronization
+API integration, Third-party integration, System integration
+Salesforce automation, Cloud integration, Business process integration"
+        />
         <link
           rel="canonical"
           href="https://infodrive-solutions.com/salesforce-integration-services.html"
         />
         <meta
           property="og:title"
-          content="Salesforce Integration Services- InfoDrive Solutions"
+          content="Salesforce Integration Services - InfoDrive Solutions"
         />
         <meta
           property="og:image"
