@@ -102,7 +102,7 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
-        <title>Salesforce Integration Services</title>
+        <title>Salesforce Support & Maintenance Services</title>
         <meta
           name="description"
           content="Enhance sales efficiency and community engagement with our expert Salesforce CPQ Service & Community Cloud Services. Empower your teams, delight your customers, and drive business growth."
@@ -110,11 +110,11 @@ export default function SalesForceDevelopment() {
         <meta name="keywords" content="" />
         <link
           rel="canonical"
-          href="https://infodrive-solutions.com/salesforce-integration-services.html"
+          href="https://infodrive-solutions.com/salesforce-support-and-maintenance-services.html"
         />
         <meta
           property="og:title"
-          content="Salesforce Integration Services- InfoDrive Solutions"
+          content="Salesforce Support & Maintenance Services"
         />
         <meta
           property="og:image"
