@@ -526,11 +526,7 @@ function DrawerAppBar(props) {
               style={{ float: "right", position: "absolute", right: "0px" }}
               className="logoMobile"
             >
-              <img
-                alt="Logo"
-                style={{ width: 60, height: 43 }}
-                src="https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png"
-              />
+              <img alt="Logo" style={{ width: 60 }} src="/logo.png" />
             </Button>
 
             <Typography
@@ -543,11 +539,7 @@ function DrawerAppBar(props) {
               }}
             >
               <Button href="/" variant="text" className="logoPC">
-                <img
-                  alt="Logo"
-                  style={{ width: 115, height: 77 }}
-                  src="https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png"
-                />
+                <img alt="Logo" style={{ width: 100 }} src="/logo.png" />
               </Button>
             </Typography>
 

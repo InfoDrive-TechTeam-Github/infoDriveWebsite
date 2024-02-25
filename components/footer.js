@@ -32,7 +32,7 @@ export default function Footer() {
         <Grid container spacing={0}>
           <Grid item xs={4} className="logoFooter">
             <div className="flex flex-col items-center mx-auto gap-0 mr-5">
-              <img src="https://cdn.discordapp.com/attachments/949683263386054716/1076906970440814702/logoHeader.png" />
+              <img src="/logo.png" />
               <Typography variant="h3" sx={{ my: 1 }}>
                 Driven by technology
               </Typography>
@@ -172,7 +172,7 @@ export default function Footer() {
                       <CardMedia
                         component="img"
                         style={{ width: "30px", height: "30px" }}
-                        image="https://cdn.discordapp.com/attachments/949683263386054716/1088292931959521280/singapore.png"
+                        image="images/singapore.png"
                         alt="green iguana"
                       />
                       <ListItemButton
@@ -191,7 +191,7 @@ export default function Footer() {
                     <ListItem className="ce">
                       <CardMedia
                         component="img"
-                        image="https://cdn.discordapp.com/attachments/949683263386054716/1088292931632386078/malaysia.png"
+                        image="images/malaysia.png"
                         style={{ width: "30px", height: "30px" }}
                         alt="green iguana"
                       />
@@ -214,7 +214,7 @@ export default function Footer() {
                     <ListItem className="ce">
                       <CardMedia
                         component="img"
-                        image="https://cdn.discordapp.com/attachments/949683263386054716/1088292931410075698/india.png"
+                        image="images/india.png"
                         alt="green iguana"
                         style={{ width: "30px", height: "30px" }}
                       />
