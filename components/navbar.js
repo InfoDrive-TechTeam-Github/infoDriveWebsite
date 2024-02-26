@@ -526,7 +526,7 @@ function DrawerAppBar(props) {
               style={{ float: "right", position: "absolute", right: "0px" }}
               className="logoMobile"
             >
-              <img alt="Logo" style={{ width: 60 }} src="/logo.png" />
+              <img alt="Logo" style={{ width: 60 }} src="/infodriveLogo.png" />
             </Button>
 
             <Typography
@@ -539,7 +539,11 @@ function DrawerAppBar(props) {
               }}
             >
               <Button href="/" variant="text" className="logoPC">
-                <img alt="Logo" style={{ width: 100 }} src="/logo.png" />
+                <img
+                  alt="Logo"
+                  style={{ width: 140 }}
+                  src="/infodriveLogo.png"
+                />
               </Button>
             </Typography>
 
