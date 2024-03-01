@@ -118,7 +118,7 @@ function ContactModal({ open, handleClose, setOpen }) {
               </h2>
               <div>
                 <List>
-                  <ListItem className="ce">
+                  <ListItem className="ce -ml-3">
                     <CardMedia
                       component="img"
                       style={{ width: "30px", height: "30px" }}
@@ -138,7 +138,7 @@ function ContactModal({ open, handleClose, setOpen }) {
                       <ListItemText className="pl5" primary="+65-9238 4299" />
                     </ListItemButton>
                   </ListItem>
-                  <ListItem className="ce">
+                  <ListItem className="ce -ml-3">
                     <CardMedia
                       component="img"
                       image="images/malaysia.png"
@@ -159,7 +159,7 @@ function ContactModal({ open, handleClose, setOpen }) {
                       <ListItemText className="pl5" primary="+60-1 2327 5811" />
                     </ListItemButton>
                   </ListItem>
-                  <ListItem className="ce">
+                  <ListItem className="ce -ml-3">
                     <CardMedia
                       component="img"
                       image="images/india.png"
@@ -186,14 +186,14 @@ function ContactModal({ open, handleClose, setOpen }) {
                       />
                     </ListItemButton>
                   </ListItem>
-                  <ListItem className="footerEmail ce">
+                  <ListItem className="footerEmail -ml-3">
                     <EmailIcon />
                     <ListItemButton
                       component="a"
                       href="mailto:contact@infodrive-solutions.com"
                     >
                       <ListItemText
-                        className="pl5 whitespace-nowrap"
+                        className=" whitespace-nowrap"
                         primary="contact@infodrive-solutions.com"
                       />
                     </ListItemButton>
