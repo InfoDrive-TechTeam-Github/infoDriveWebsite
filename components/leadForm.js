@@ -58,55 +58,47 @@ export default function leadForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-  
-
 
     try {
-      const res= await axios.post("https://mydryve.co/Api/sendMail",inputData)
-         console.log(res.data.message)
-         if(res.data.message){
-          setLoading(false);
-          toast.success(
-            res.data.message,
-            {
-              position: "top-right",
-              autoClose: 2000,
-              hideProgressBar: false,
-              closeOnClick: true,
-              pauseOnHover: true,
-              draggable: true,
-              progress: undefined,
-            }
-          );
-         
-         }
-         else{
-          toast.warning("Please Try Again", {
-                  position: "top-right",
-                  autoClose: 2000,
-                  hideProgressBar: false,
-                  closeOnClick: true,
-                  pauseOnHover: true,
-                  draggable: true,
-                  progress: undefined,
-                });
-         }
-         
-          
-    
-        
-        } catch (error) {
-          toast.error("Something went wrong", {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-          });
-          console.log(error,"error")
-        }
+      const res = await axios.post(
+        "https://mydryve.co/Api/sendMail",
+        inputData
+      );
+      console.log(res.data.message);
+      if (res.data.message) {
+        setLoading(false);
+        toast.success(res.data.message, {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      } else {
+        toast.warning("Please Try Again", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+    } catch (error) {
+      toast.error("Something went wrong", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      console.log(error, "error");
+    }
   };
 
   return (
@@ -241,8 +233,9 @@ export default function leadForm() {
                       InfoDrive Solutions Pte Ltd
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Address: 2 Changi Business Park avenue 1. #02-00,
-                      Singapore <br />
+                      Address: 135 MIDDLE RD, #02-21 BYLANDS BLDG,
+                      SINGAPORE 188975
+                      <br />
                       Phone:{" "}
                       <a href="tel:+6592384299" style={{ color: "#fff" }}>
                         +65-9238 4299{" "}
