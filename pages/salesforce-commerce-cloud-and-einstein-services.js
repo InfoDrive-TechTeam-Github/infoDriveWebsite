@@ -138,15 +138,14 @@ export default function SalesForceDevelopment() {
       <section className="newsectionbox text-white relative  pb-0 md:h-[600px] h-[800px] w-full bg-[#48BDE8]">
         <div className="container md:max-w-5xl  lg:max-w-7xl mx-auto h-full w-full p5 absolute top-16 md:top-40 md:left-10   lg:px-8">
           <div className="md:flex md:items-center md:gap-10 md:px-5 ">
-          <span
-              className="md:text-justify block font-bold md:w-1/2 w-full" 
+            <span
+              className="md:text-justify block font-bold md:w-1/2 w-full"
               style={{
-                fontFamily:"Poppins",
-                fontSize:"23px",
-                lineHeight:"33px",
-                color:"white",
+                fontFamily: "Poppins",
+                fontSize: "23px",
+                lineHeight: "33px",
+                color: "white",
                 zIndex: 5,
-               
               }}
             >
               Fueling Business Efficiency, Sparking Innovation: Supercharge lead
@@ -198,10 +197,10 @@ export default function SalesForceDevelopment() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <span className=" font-bold text-center block text-red-600 text-lg w-full mx-auto mt-5">
+              <span className=" font-bold text-center  text-red-600 text-lg w-full mx-auto mt-5 block">
                 Salesforce Commerce Cloud Services
               </span>
-              <h5 className="md:text-justify">
+              <span className="md:text-justify block">
                 In the era of online shopping and growing eCommerce, Salesforce
                 Commerce Cloud integration is vital. InfoDrives Services, a
                 leading Salesforce Commerce Cloud consulting company, brings
@@ -217,7 +216,7 @@ export default function SalesForceDevelopment() {
                 for your business growth. Choose InfoDrives Services to unlock
                 the full potential of commerce cloud implementation and
                 integration.
-              </h5>
+              </span>
             </motion.div>
             <motion.div
               className="left md:w-[40%] rounded-md overflow-hidden z-10"

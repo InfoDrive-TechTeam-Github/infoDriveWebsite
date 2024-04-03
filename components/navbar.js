@@ -486,8 +486,8 @@ function DrawerAppBar(props) {
         </ListItem>
 
         <ListItem disablePadding>
-          <ListItemButton component="a" to="/contact-us.html">
-            <ListItemText primary={"Contact Us"} />
+          <ListItemButton component="a" to="/partners.html">
+            <ListItemText primary={"Our Partners"} />
           </ListItemButton>
         </ListItem>
       </List>
@@ -958,8 +958,8 @@ function DrawerAppBar(props) {
                   <ListItemButton component="a" to="/careers.html">
                     <ListItemText primary={"Careers"} />
                   </ListItemButton>
-                  <ListItemButton component="a" onClick={handleOpen}>
-                    <ListItemText primary={"Contact Us"} />
+                  <ListItemButton component="a" to="/partners.html">
+                    <ListItemText primary={"Our Partners"} />
                   </ListItemButton>
                 </ListItem>
               </List>
