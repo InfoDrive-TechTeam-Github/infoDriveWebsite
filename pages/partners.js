@@ -56,21 +56,18 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
-        <title>
-          Odoo Development Partner Company: Expert Implementation and Consulting
-          Services in Singapore & Malaysia, and India
-        </title>
+        <title>Our Partners: Driving Success Through Collaboration</title>
         <meta
           name="description"
-          content="Looking for a high-end Odoo Development Company  in Singapore & Malaysia, and India? InfoDrive Solutions is a Leading Odoo Gold Partner, providing unmatchable ERP solutions. Contact us today! "
+          content=" Our Partners: Driving Success Through Collaboration "
         />
         <meta
           name="keywords"
-          content="Odoo Development Company in Singapore, Odoo Development Company in Malaysia, Odoo Development Partner Company"
+          content="Our Partners: Driving Success Through Collaboration"
         />
         <link
           rel="canonical"
-          href=" https://infodrive-solutions.com/odoo-development-company.html"
+          href=" https://infodrive-solutions.com/partners.html"
         />
 
         <meta
@@ -177,18 +174,18 @@ export default function SalesForceDevelopment() {
         <div className="max-w-5xl container mx-auto border-red-600 md:flex items-center  justify-between mt-10 ">
           <motion.div
             className="left "
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
             <img
-              src="images/saleforceP.jpg"
+              src="images/saleforcep.jpg"
               alt="Picture of the author"
               className="h-full w-full"
             />
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="right flex flex-col gap-5 w-full "
@@ -217,7 +214,7 @@ export default function SalesForceDevelopment() {
       <section className={`p5 newsectionbox -mt-14 md:mt-0`}>
         <div className="max-w-5xl container mx-auto border-red-600 md:flex items-center  justify-between">
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="right flex flex-col gap-5 md:w-[70%] "
@@ -240,7 +237,7 @@ export default function SalesForceDevelopment() {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="left basis-1/2 "
@@ -257,7 +254,7 @@ export default function SalesForceDevelopment() {
       <section className={`p5  newsectionbox -mt-14 md:mt-0`}>
         <div className="max-w-5xl container mx-auto border-red-600 md:flex items-center justify-between md:gap-5">
           <motion.div
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", stiffness: 300 }}
             className="right flex flex-col gap-5 basis-1/2 md:mt-5"
@@ -282,7 +279,7 @@ export default function SalesForceDevelopment() {
           <motion.div
             className="left md:basis-1/2 md:order-first order-last -mt-14 md:mt-0"
             style={{ zIndex: 1 }}
-            initial={{ opacity: 0, x: -100 }}
+            initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
