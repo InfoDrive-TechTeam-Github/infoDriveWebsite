@@ -26,13 +26,7 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
-import TextField from "@mui/material/TextField";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import Stack from "@mui/material/Stack";
+import start from "../public/getredy.json";
 import Head from "next/head";
 
 import LeadForm from "../components/leadForm";
@@ -56,6 +50,8 @@ import {
 } from "react-icons/fa";
 import { FcAssistant, FcCollect, FcEnteringHeavenAlive } from "react-icons/fc";
 import { FcEngineering } from "react-icons/fc";
+import Lottie from "lottie-react";
+import { motion } from "framer-motion";
 export default function SalesForceDevelopment() {
   return (
     <div>
@@ -179,19 +175,29 @@ export default function SalesForceDevelopment() {
           Our Partners: Driving Success Through Collaboration
         </h2>
         <div className="max-w-5xl container mx-auto border-red-600 md:flex items-center  justify-between mt-10 ">
-          <div className="left ">
+          <motion.div
+            className="left "
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <img
               src="images/saleforceP.jpg"
               alt="Picture of the author"
               className="h-full w-full"
             />
-          </div>
-          <div className="right flex flex-col gap-5 w-full ">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="right flex flex-col gap-5 w-full "
+          >
             <h2 className="font-extrabold text-2xl md:whitespace-nowrap text-black">
               Salesforce: Transforming Customer Relationships
             </h2>
             {/* <h3 className="font-bold">Your Official Odoo Partner!</h3> */}
-            <p>
+            <p className="text-start md:text-justify">
               InfoDrive Solutions is proud to be a Salesforce partner, enabling
               us to deliver world-class customer relationship management (CRM)
               solutions that drive meaningful interactions and foster lasting
@@ -204,18 +210,23 @@ export default function SalesForceDevelopment() {
               to training and support.
               <br />
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      <section className={`p5 newsectionbox`}>
+      <section className={`p5 newsectionbox -mt-14 md:mt-0`}>
         <div className="max-w-5xl container mx-auto border-red-600 md:flex items-center  justify-between">
-          <div className="right flex flex-col gap-5 w-[70%] ">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="right flex flex-col gap-5 md:w-[70%] "
+          >
             <h2 className="font-extrabold text-2xl md:whitespace-nowrap">
               Odoo: Revolutionizing Business Management
             </h2>
             {/* <h3 className="font-bold">Your Official Odoo Partner!</h3> */}
-            <p>
+            <p className="text-start md:text-justify mr-5">
               As a proud partner of Odoo, the leading provider of open-source
               business management software, we're equipped to help businesses of
               all sizes streamline their operations and drive growth. With
@@ -227,28 +238,35 @@ export default function SalesForceDevelopment() {
               ensuring a seamless transition and ongoing support.
               <br />
             </p>
-          </div>
-          <div className="left basis-1/2 ">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="left basis-1/2 "
+          >
             <img
               src="images/odoop.png"
               alt="Picture of the author"
               className=""
             />
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      <section className={`p5  newsectionbox`}>
-        <div className="max-w-5xl container mx-auto border-red-600 md:flex items-center  justify-between gap-5">
-          <div className="left basis-1/2  ">
-            <img src="images/OneS.jpg" alt="Picture of the author" />
-          </div>
-          <div className="right flex flex-col gap-5 basis-1/2 mt-5">
+      <section className={`p5  newsectionbox -mt-14 md:mt-0`}>
+        <div className="max-w-5xl container mx-auto border-red-600 md:flex items-center justify-between md:gap-5">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="right flex flex-col gap-5 basis-1/2 md:mt-5"
+          >
             <h2 className="font-extrabold text-2xl md:whitespace-nowrap">
               OneSignal: Engaging Audiences with Push Notifications
             </h2>
             {/* <h3 className="font-bold">Your Official Odoo Partner!</h3> */}
-            <p>
+            <p className="text-start md:text-justify" style={{ zIndex: 1 }}>
               As a trusted partner of OneSignal, the leading customer engagement
               platform for push notifications, we enable businesses to reach
               their audiences with targeted, personalized messages that drive
@@ -260,12 +278,21 @@ export default function SalesForceDevelopment() {
               maximum impact with their push notification campaigns, delivering
               tangible results and driving business growth.
             </p>
-          </div>
+          </motion.div>
+          <motion.div
+            className="left md:basis-1/2 md:order-first order-last -mt-14 md:mt-0"
+            style={{ zIndex: 1 }}
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            <img src="images/OneS.jpg" alt="Picture of the author" />
+          </motion.div>
         </div>
       </section>
 
       <section
-        className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 p5 mt-20`}
+        className={`sectionBox whyUsBox pt0 pb0 salesForceServices2 p5 md:mt-20`}
       >
         <Typography gutterBottom variant="h2" className="mb0" component="div">
           Why Partner with InfoDrive Solutions?
@@ -273,10 +300,10 @@ export default function SalesForceDevelopment() {
         <br />
         <br />
         <div className="openSource  grid md:grid-cols-2 grid-cols-1 gap-20">
-          <div className="content shadow-sm rounded-md flex gap-5 border p-5">
+          <div className="content shadow-sm rounded-md md:flex gap-5 border p-5">
             {/* icons */}
             <FcEnteringHeavenAlive size={100} />
-            <div className="w-2/3">
+            <div className="md:w-2/3">
               <h2 className="font-bold">Expertise</h2>
               <p>
                 Our team of seasoned professionals possesses extensive
@@ -285,11 +312,11 @@ export default function SalesForceDevelopment() {
               </p>
             </div>
           </div>
-          <div className="content flex gap-5 border p-5 rounded-md shadow-sm">
+          <div className="content md:flex gap-5 border p-5 rounded-md shadow-sm">
             {/* icons */}
             <FcCollect size={100} />
 
-            <div className="w-2/3">
+            <div className="md:w-2/3">
               <h2 className="font-bold">Innovation</h2>
               <p>
                 By staying at the forefront of technology trends and
@@ -298,10 +325,10 @@ export default function SalesForceDevelopment() {
               </p>
             </div>
           </div>
-          <div className="content  shadow-sm rounded-md flex gap-5 border p-5">
+          <div className="content  shadow-sm rounded-md md:flex gap-5 border p-5">
             {/* icons */}
             <FcEngineering size={90} />
-            <div className="w-2/3">
+            <div className="md:w-2/3">
               <h2 className="font-bold">Customization</h2>
               <p>
                 We understand that every business is unique, which is why we
@@ -310,10 +337,10 @@ export default function SalesForceDevelopment() {
               </p>
             </div>
           </div>
-          <div className="content flex gap-5 shadow-sm rounded-md border p-5">
+          <div className="content md:flex gap-5 shadow-sm rounded-md border p-5">
             {/* icons */}
             <FcAssistant size={90} />
-            <div className="w-2/3">
+            <div className="md:w-2/3">
               <h2 className="font-bold">Support</h2>
               <p>
                 Our commitment to client success doesn't end with
@@ -324,8 +351,21 @@ export default function SalesForceDevelopment() {
           </div>
         </div>
       </section>
-      <br />
-      <br />
+      {/* get start today */}
+      <section className={`newsectionbox  p5  `}>
+        <div className="max-w-5xl container mx-auto border-red-600 ">
+          {" "}
+          <div className="flex items-center ">
+            <h2>Get Started Today</h2>
+            <Lottie animationData={start} loop={true} className=" w-32" />
+          </div>
+          <p>
+            Ready to unlock the full potential of your business with our trusted
+            partners? Contact us today to schedule a consultation and discover
+            how InfoDrive Solutions can help you achieve your goals.
+          </p>
+        </div>
+      </section>
 
       <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
