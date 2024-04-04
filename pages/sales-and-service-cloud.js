@@ -1,38 +1,20 @@
 import * as React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import utilStyles from "../styles/utils.module.css";
+
 import Box from "@mui/material/Box";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
+
 //import Paper from '@mui/material/Paper';
 import Grid from "@mui/material/Grid";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import Tab from "@mui/material/Tab";
-import TabContext from "@mui/lab/TabContext";
-import TabList from "@mui/lab/TabList";
-import TabPanel from "@mui/lab/TabPanel";
-import Avatar from "@mui/material/Avatar";
-import FilterAltIcon from "@mui/icons-material/FilterAlt";
-import Link from "@mui/material/Link";
+
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
-import TextField from "@mui/material/TextField";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import Stack from "@mui/material/Stack";
+
 import Head from "next/head";
 import { motion } from "framer-motion";
 // import { useInView } from "react-intersection-observer";
@@ -41,9 +23,9 @@ import Sale from "../public/saleandservice.json";
 
 import LeadForm from "../components/leadForm";
 import Lottie from "lottie-react";
-import cloufLottie from "../public/new.json";
+
 import Sale2 from "../public/Sale2.json";
-import Cloud from "../public/cloud.json";
+
 import SaleforceCient from "components/SaleforceCient";
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
@@ -199,6 +181,7 @@ export default function SalesForceDevelopment() {
               <img
                 className="md:h-64 h-[156px] w-[80%] border mx-auto -mt-14 shadow-lg rounded-md"
                 src="./businessman-with-cloud-icons.jpg"
+                alt="businessman-with-cloud"
               />
               <Typography
                 gutterBottom
@@ -229,6 +212,7 @@ export default function SalesForceDevelopment() {
               <img
                 className="md:h-64 w-[80%]  border mx-auto -mt-14 shadow-lg rounded-md object-contain"
                 src="./service.jpg"
+                alt="service cloud"
               />
               <div>
                 <Typography
@@ -509,9 +493,9 @@ export default function SalesForceDevelopment() {
 
           <div className="flex justify-center w-full ">
             <img
-              alt="advantage sale and service "
+              alt="advantage sale and service cloud"
               src="./sale14.png"
-              className=" "
+              className="advantage sale and service"
             />
           </div>
           <div className="grid md:grid-cols-2 grid-col-1 gap-3 mt-5">

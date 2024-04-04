@@ -106,7 +106,7 @@ export default function SalesForceDevelopment() {
         <title> Salesforce Integration Services - InfoDrive Solutions</title>
         <meta
           name="description"
-          content=" Seamlessly connect your systems, streamline processes, and drive efficiency with Infodrive Solutions' Salesforce Integration Services."
+          content="From bug fixing to CRM monitoring and customization to app support, experience top quality salesforce support, and maintenance services from InfoDrive Solutions for your salesforce products."
         />
         <meta
           name="keywords"
@@ -170,7 +170,8 @@ Salesforce automation, Cloud integration, Business process integration"
             <div className="md:w-[60%] mx-auto">
               <img
                 src="./i1.png"
-                alt="Community"
+                alt="Salesforce Integration Services
+                "
                 className="w-full  object-contain"
               />
             </div>
@@ -213,7 +214,8 @@ Salesforce automation, Cloud integration, Business process integration"
           </span>
           <div className="left md:w-1/2 rounded-md overflow-hidden mx-auto">
             <img
-              alt="app exchange"
+              alt="InfoDrive Solution’s Salesforce Integration Services Offerings
+              "
               src="./i2.png"
               className=" object-contain mt-20 rounded-md w-[80%] flex justify-center ml-10 "
             />
@@ -518,7 +520,7 @@ Salesforce automation, Cloud integration, Business process integration"
           </span>
           <div className="left  rounded-md overflow-hidden mx-auto">
             <motion.img
-              alt="app exchange"
+              alt="InfoDrive Solution’s Integration Capabilities"
               src="./i3.png"
               className=" object-contain mt-10 rounded-md md:w-[37%] mx-auto"
               initial={{ opacity: 0 }}
@@ -721,29 +723,30 @@ Salesforce automation, Cloud integration, Business process integration"
 
                   <div className="grid grid-cols-3 md:flex  gap-10  justify-center mt-10">
                     <img
-                      alt="saleforce"
+                      alt="Salesforce Support & Maintenance Services"
                       src="./ic1.png"
                       className="w-20 object-cover  rounded-md "
                     />
 
                     <img
-                      alt="saleforce"
+                      alt="Salesforce consulting"
                       src="./ic2.png"
                       className=" w-20 h-full  rounded-md "
                     />
 
                     <img
-                      alt="saleforce"
+                      alt="BEST Salesforce Support Services"
                       src="./ic3.png"
                       className=" w-20 object-cover  rounded-md "
                     />
                     <img
-                      alt="saleforce"
+                      alt="Salesforce CRM Support Services
+                      "
                       src="./ic4.png"
                       className="w-20 object-cover  rounded-md "
                     />
                     <img
-                      alt="saleforce"
+                      alt="Salesforce Support Customization Services"
                       src="./ic5.png"
                       className="w-20 object-cover  rounded-md "
                     />

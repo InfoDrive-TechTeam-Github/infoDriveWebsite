@@ -207,7 +207,7 @@ function applicationDevelopment() {
                 <img
                   src="/images/coding-man.jpg"
                   alt="apllication development"
-                  className="h-full rounded-r-2xl z[-1px]"
+                  className="h-full rounded-r-2xl z[-1px] object-contain"
                 />
                 {/**shape divider */}
                 <div class="custom-shape-divider-bottom-1682618210">
