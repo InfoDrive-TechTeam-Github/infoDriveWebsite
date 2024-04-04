@@ -230,6 +230,7 @@ export default function SaasUsa() {
               <Card>
                 <CardContent>
                   <img
+                    alt="SaaS application development services"
                     style={{ width: "100%" }}
                     src="images/6d692dcf61dcbcfe9c95246438487a13.jpeg"
                   />

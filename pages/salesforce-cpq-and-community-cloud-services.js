@@ -97,9 +97,7 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
-        <title>
-        Salesforce CPQ Service & Community Cloud Services
-        </title>
+        <title>Salesforce CPQ & Community Cloud Services</title>
         <meta
           name="description"
           content="Enhance sales efficiency and community engagement with our expert Salesforce CPQ Service & Community Cloud Services. Empower your teams, delight your customers, and drive business growth."
@@ -142,18 +140,16 @@ export default function SalesForceDevelopment() {
       <section className="newsectionbox text-white relative  pb-0 h-[450px] w-full ">
         <div className="container md:max-w-5xl  lg:max-w-7xl md:mx-auto h-full w-full p5   lg:px-8">
           <div className="space-y-5 flex md:flex-row flex-col items-center gap-5">
-          <span
-              className="md:text-justify block font-bold md:w-1/2 w-full" 
+            <span
+              className="md:text-justify block font-bold md:w-1/2 w-full"
               style={{
-                fontFamily:"Poppins",
-                fontSize:"23px",
-                lineHeight:"33px",
+                fontFamily: "Poppins",
+                fontSize: "23px",
+                lineHeight: "33px",
                 color: "#148ED9",
                 zIndex: 5,
-               
               }}
             >
-             
               Simplify your CPQ processes with{" "}
               <span className="text-red-500">
                 InfoDrive's Salesforce CPQ services.
@@ -165,7 +161,7 @@ export default function SalesForceDevelopment() {
             <div className="md:w-[60%] mx-auto">
               <img
                 src="./salesforce-cpq-implementation.jpg"
-                alt="Community"
+                alt="Salesforce CPQ services"
                 className="w-full  object-contain"
               />
             </div>
@@ -214,7 +210,7 @@ export default function SalesForceDevelopment() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <motion.img
-                alt="app exchange"
+                alt="InfoDrive Solutions Salesforce CPQ services"
                 src="./community2.png"
                 className="w-full object-cover"
               />
@@ -303,7 +299,12 @@ export default function SalesForceDevelopment() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ type: "spring", stiffness: 300 }}
             >
-              <img src="./community3.png" alt="" className="w-full" />
+              <img
+                src="./community3.png"
+                alt="Salesforce Community Cloud-Salesforce Communities Development
+"
+                className="w-full"
+              />
             </motion.div>
           </div>
         </div>
@@ -328,7 +329,7 @@ export default function SalesForceDevelopment() {
           </span>
           <div className="left md:w-1/2 rounded-md overflow-hidden mx-auto">
             <img
-              alt="app exchange"
+              alt="Salesforce CPQ Service Offerings"
               src="./community4.png"
               className="w-full object-contain mt-10 rounded-md"
             />
@@ -461,7 +462,7 @@ export default function SalesForceDevelopment() {
           </span>
           <div className="left  rounded-md overflow-hidden mx-auto">
             <img
-              alt="app exchange"
+              alt="Salesforce Community Cloud-Salesforce Communities Development"
               src="./community5.png"
               className=" object-contain mt-10 rounded-md md:w-1/2 mx-auto"
             />
@@ -646,7 +647,7 @@ export default function SalesForceDevelopment() {
               <Grid item xs={6} className=" w-full md:mt-16">
                 <Card>
                   <img
-                    alt="saleforce"
+                    alt="Top Benefits of Salesforce CPQ Implementation Services"
                     src="./community7.png"
                     className="h-full w-[90%] object-cover md:ml-16"
                   />
@@ -688,7 +689,7 @@ export default function SalesForceDevelopment() {
               <Grid item xs={6} className=" w-full mt-10 ">
                 <Card>
                   <img
-                    alt="saleforce"
+                    alt="Community Cloud (Experience Cloud) Services"
                     src="./community7.jpg"
                     className="h-full   object-cover  rounded-md w-[90%] "
                   />

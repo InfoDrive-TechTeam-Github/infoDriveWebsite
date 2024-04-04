@@ -107,7 +107,7 @@ export default function SalesForceDevelopment() {
         <img
           style={{ width: "100%" }}
           src="images/odoo.jpg"
-          alt="Salesforce Marketing Cloud Implementation"
+          alt="Odoo Development Partner Company"
         />
         <Box sx={{ flexGrow: 1 }} className="sliderContent salePart">
           <Grid container spacing={0}>
@@ -203,7 +203,10 @@ export default function SalesForceDevelopment() {
       <section className={`p5 `}>
         <div className="max-w-5xl container mx-auto border-red-600 md:flex items-center  justify-between">
           <div className="left basis-1/2 ">
-            <img src="images/odoo1.jpg" alt="Picture of the author" />
+            <img
+              src="images/odoo1.jpg"
+              alt="Odoo Partner Company InfoDrive Solutions"
+            />
           </div>
           <div className="right flex flex-col gap-5 basis-1/2">
             <h2 className="font-extrabold text-3xl">

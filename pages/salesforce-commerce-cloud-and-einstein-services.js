@@ -154,7 +154,7 @@ export default function SalesForceDevelopment() {
               Enterprise Together using Salesforce Commerce Cloud Services.
             </span>
             <div className="md:w-[40%] mt-5 md:mt-0">
-              <img src="./commerce2.jpg" alt="saleforce commerce" />
+              <img src="./commerce2.jpg" alt="saleforce commerce cloud" />
             </div>
           </div>
           <motion.div
@@ -225,7 +225,7 @@ export default function SalesForceDevelopment() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <motion.img
-                alt="app exchange"
+                alt="Salesforce Commerce Cloud Services"
                 src="./c2.jpeg"
                 className="w-full object-cover"
               />
@@ -257,7 +257,11 @@ export default function SalesForceDevelopment() {
               </p>
             </div>
             <div className="right">
-              <img src="./c3.png" alt="" className="w-full" />
+              <img
+                src="./c3.png"
+                alt="B2B & B2C Salesforce Commerce Cloud Solutions"
+                className="w-full"
+              />
             </div>
           </div>
           {/* new slide */}
@@ -409,7 +413,7 @@ export default function SalesForceDevelopment() {
         <div className="container mx-auto md:px-8 p5 py-16 mt-5  ">
           <div className="left md:w-1/2 rounded-md overflow-hidden mx-auto">
             <img
-              alt="app exchange"
+              alt="Salesforce Einstein Analytics Cloud Consulting Solutions"
               src="./c4.png"
               className="w-full object-cover mt-10 rounded-md"
               cl

@@ -474,6 +474,12 @@ function DrawerAppBar(props) {
         </ListItem>
 
         <ListItem disablePadding>
+          <ListItemButton component="a" to="/partners.html">
+            <ListItemText primary={"Our Partners"} />
+          </ListItemButton>
+        </ListItem>
+
+        <ListItem disablePadding>
           <ListItemButton component="a" to="/blog.html">
             <ListItemText primary={"Blog"} />
           </ListItemButton>
@@ -482,12 +488,6 @@ function DrawerAppBar(props) {
         <ListItem disablePadding>
           <ListItemButton component="a" to="/careers.html">
             <ListItemText primary={"Careers"} />
-          </ListItemButton>
-        </ListItem>
-
-        <ListItem disablePadding>
-          <ListItemButton component="a" to="/partners.html">
-            <ListItemText primary={"Our Partners"} />
           </ListItemButton>
         </ListItem>
       </List>
@@ -951,15 +951,14 @@ function DrawerAppBar(props) {
                     </List>
                   </Menu>
                   {/**our products menu ends */}
-
+                  <ListItemButton component="a" to="/partners.html">
+                    <ListItemText primary={"Our Partners"} />
+                  </ListItemButton>
                   <ListItemButton component="a" to="/blog.html">
                     <ListItemText primary={"Blog"} />
                   </ListItemButton>
                   <ListItemButton component="a" to="/careers.html">
                     <ListItemText primary={"Careers"} />
-                  </ListItemButton>
-                  <ListItemButton component="a" to="/partners.html">
-                    <ListItemText primary={"Our Partners"} />
                   </ListItemButton>
                 </ListItem>
               </List>

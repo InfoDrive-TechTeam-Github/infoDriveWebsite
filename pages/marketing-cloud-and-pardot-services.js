@@ -198,7 +198,10 @@ export default function SalesForceDevelopment() {
               where the synergy of innovation converges with guaranteed success.
             </h1>
             <div className="md:mr-20" style={{ zIndex: 10 }}>
-              <img src="./pardot1.png" />
+              <img
+                src="./pardot1.png"
+                alt="Salesforce Marketing Cloud & Pardot Services"
+              />
             </div>
           </div>
           <motion.div
@@ -247,6 +250,7 @@ export default function SalesForceDevelopment() {
               <img
                 className="md:h-64 h-[156px] w-[80%] border mx-auto -mt-14 shadow-lg rounded-md object-cover"
                 src="./SFMC.png"
+                alt="Marketing Automation"
               />
               <Typography
                 gutterBottom
@@ -287,6 +291,7 @@ export default function SalesForceDevelopment() {
               <img
                 className="md:h-64 w-[80%]  border mx-auto -mt-14 shadow-lg rounded-md object-cover"
                 src="./pardot.png"
+                alt="marketing-cloud"
               />
               <div>
                 <Typography

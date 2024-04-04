@@ -497,7 +497,7 @@ export default function SalesForceDevelopment() {
             WHAT ALL WE DO ?
           </h2>
 
-          <div className="middle-section flex px-auto  justify-center gap-40 mt-5 ">
+          <div className="middle-section md:flex px-auto  justify-center gap-40 mt-5 ">
             <div className="right ">
               <div className="points-box">
                 <div className="point flex items-center gap-2">

@@ -22,7 +22,7 @@ import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import Link from "@mui/material/Link";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import { motion } from "framer-motion";
-
+import { FaAppStoreIos } from "react-icons/fa";
 import Carousel from "react-material-ui-carousel";
 
 import StarIcon from "@mui/icons-material/Star";
@@ -42,6 +42,7 @@ import { SiDigitalocean, SiHiveBlockchain, SiSap } from "react-icons/si";
 import "react-toastify/dist/ReactToastify.css";
 import LeadForm from "../components/leadForm";
 import AutoImageSlider from "components/AutoImageSlider";
+import { AppBlocking } from "@mui/icons-material";
 
 export default function Index() {
   const [value, setValue] = React.useState("1");
@@ -123,7 +124,7 @@ export default function Index() {
         />
         <meta
           property="og:title"
-          content="Software Development & Digital Transformation Solutions Company inSingapore, Malaysia & India - InfoDrive Solutions"
+          content="Software Development & Digital Transformation Solutions Company in Singapore, Malaysia & India - InfoDrive Solutions"
         />
         <meta
           property="og:image"
@@ -384,18 +385,19 @@ export default function Index() {
             onMouseLeave={() => setMouse("none")}
           >
             <Link
-              href="/sap-emarsys.html"
+              href="/application-development.html"
               className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline "
               style={{ textDecoration: "none", color: "gray" }}
             >
               <div className="top flex gap-2 items-center text-red-600 font-semibold">
-                <SiSap size={60} />
-                <span> SAP Emarsys</span>
+                <FaAppStoreIos size={60} />
+                <span> App Development</span>
               </div>
               <p className="leading-6 text-sm">
-                SAP Emarsys Customer Engagement is a powerful and comprehensive
-                customer engagement platform that enables businesses to deliver
-                relevant communications to their customers.
+                Our application development process begins with a thorough
+                understanding of your business needs and goals.We believe that
+                every business is unique, which is why we take a customized
+                approach to application development.
               </p>
             </Link>
           </motion.div>

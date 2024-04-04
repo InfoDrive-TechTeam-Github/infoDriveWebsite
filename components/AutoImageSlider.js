@@ -37,12 +37,15 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 const imagesData = [
   {
     url: "/1.png",
+    alt: "Trusted Software Development & Salesforce Partner Company",
   },
   {
     url: "./images/odoop.jpg",
+    alt: "IT Technology Service Company",
   },
   {
     url: "/5.png",
+    alt: "IT Technology Service Company",
   },
 ];
 
@@ -64,6 +67,7 @@ function AutoImageSlider() {
               style={{ width: "100vw" }}
               src={item.url}
               className="  md:h-full md:object-cover pt-10 "
+              alt={item.alt}
             />
             <Box sx={{ flexGrow: 1 }} className="sliderContent">
               <Grid container spacing={0}>

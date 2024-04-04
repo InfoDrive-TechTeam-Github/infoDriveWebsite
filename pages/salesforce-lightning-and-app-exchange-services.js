@@ -181,14 +181,13 @@ export default function SalesForceDevelopment() {
         <div className="container md:max-w-5xl  lg:max-w-7xl mx-auto h-full w-full p5 absolute top-16 md:top-26 md:left-10   lg:px-8 ">
           <div className="md:flex md:items-center md:gap-2 ">
             <span
-              className="md:text-justify block font-bold md:w-1/2 w-full" 
+              className="md:text-justify block font-bold md:w-1/2 w-full"
               style={{
-                fontFamily:"Poppins",
-                fontSize:"23px",
-                lineHeight:"33px",
-                color:"#0b2653",
+                fontFamily: "Poppins",
+                fontSize: "23px",
+                lineHeight: "33px",
+                color: "#0b2653",
                 zIndex: 5,
-               
               }}
             >
               Boost Your Business Efficiency and Drive Innovation with InfoDrive
@@ -263,7 +262,7 @@ export default function SalesForceDevelopment() {
               transition={{ type: "spring", stiffness: 300 }}
             >
               <motion.img
-                alt="app exchange"
+                alt="Salesforce Lightning and AppExchange App Development"
                 src="./appExchange1.jpeg"
                 className="w-full object-cover"
               />
@@ -464,7 +463,7 @@ export default function SalesForceDevelopment() {
         <div className="container mx-auto md:px-8 p5 py-16 mt-5  ">
           <div className="left md:w-1/2 rounded-md overflow-hidden mx-auto">
             <img
-              alt="app exchange"
+              alt="Salesforce Lightning App Development"
               src="./appExchange2.jpeg"
               className="w-full object-cover"
               cl
@@ -672,7 +671,11 @@ export default function SalesForceDevelopment() {
             </motion.div>
             {/* right */}
             <div className="right h-96 rounded-md overflow-hidden md:ml-20 ">
-              <img src="./appExchange3.png" className="h-full " />
+              <img
+                src="./appExchange3.png"
+                className="h-full "
+                alt="AppExchange App Development"
+              />
             </div>
           </div>
           <h5>
