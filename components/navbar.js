@@ -242,11 +242,11 @@ function DrawerAppBar(props) {
                 </ListItemButton>
               </ListItem>
 
-              <ListItem disablePadding>
+              {/* <ListItem disablePadding>
                 <ListItemButton component="a" to="/sap-emarsys.html">
                   <ListItemText primary={"SAP Emarsys"} />
                 </ListItemButton>
-              </ListItem>
+              </ListItem> */}
 
               <ListItem disablePadding>
                 <ListItemButton component="a" to="/services-for-start-ups.html">
@@ -254,14 +254,14 @@ function DrawerAppBar(props) {
                 </ListItemButton>
               </ListItem>
 
-              <ListItem disablePadding>
+              {/* <ListItem disablePadding>
                 <ListItemButton
                   component="a"
                   to="/business-process-management.html"
                 >
                   <ListItemText primary={"Business Process Management"} />
                 </ListItemButton>
-              </ListItem>
+              </ListItem> */}
 
               <ListItem disablePadding>
                 <ListItemButton component="a" to="/staff-augmentation.html">
@@ -636,11 +636,11 @@ function DrawerAppBar(props) {
                           />
                         </ListItemButton>
                       </ListItem>
-                      <ListItem disablePadding>
+                      {/* <ListItem disablePadding>
                         <ListItemButton component="a" to="/sap-emarsys.html">
                           <ListItemText primary={"SAP Emarsys"} />
                         </ListItemButton>
-                      </ListItem>
+                      </ListItem> */}
 
                       <ListItem disablePadding>
                         <ListItemButton
@@ -653,7 +653,7 @@ function DrawerAppBar(props) {
                         </ListItemButton>
                       </ListItem>
 
-                      <ListItem disablePadding>
+                      {/* <ListItem disablePadding>
                         <ListItemButton
                           component="a"
                           to="/business-process-management.html"
@@ -662,7 +662,7 @@ function DrawerAppBar(props) {
                             primary={"Business Process Management"}
                           />
                         </ListItemButton>
-                      </ListItem>
+                      </ListItem> */}
                       <ListItem disablePadding>
                         <ListItemButton
                           component="a"
