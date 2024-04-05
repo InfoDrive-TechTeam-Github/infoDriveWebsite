@@ -105,7 +105,7 @@ export default function SalesForceDevelopment() {
         <title>Salesforce Support & Maintenance Services</title>
         <meta
           name="description"
-          content="Enhance sales efficiency and community engagement with our expert Salesforce CPQ Service & Community Cloud Services. Empower your teams, delight your customers, and drive business growth."
+          content="From bug fixing to CRM monitoring and customization to app support, experience top quality salesforce support, and maintenance services from InfoDrive Solutions for your salesforce products."
         />
         <meta name="keywords" content="" />
         <link
@@ -179,7 +179,7 @@ export default function SalesForceDevelopment() {
             <div className="md:w-1/2 mx-auto">
               <img
                 src="./sm1.png"
-                alt="Community"
+                alt="Salesforce Support & Maintenance Services"
                 className="w-full  object-contain"
               />
             </div>
@@ -208,7 +208,7 @@ export default function SalesForceDevelopment() {
           </span>
           <div className="md:flex items-center  rounded-md overflow-hidden mx-auto gap-5 ">
             <img
-              alt="app exchange"
+              alt="Salesforce consulting "
               src="./sm2.png"
               className=" object-contain  rounded-md w-[80%] flex justify-center  "
             />
@@ -256,7 +256,7 @@ export default function SalesForceDevelopment() {
           </span>
           <div className="left  rounded-md overflow-hidden mx-auto ">
             <motion.img
-              alt="app exchange"
+              alt="BEST Salesforce Support Services"
               src="./sm3.png"
               className=" object-contain mt-10 rounded-md md:w-[37%] mx-auto"
               initial={{ opacity: 0 }}
@@ -393,7 +393,7 @@ export default function SalesForceDevelopment() {
                 <Card>
                   <div className="flex justify-center">
                     <img
-                      alt="saleforce"
+                      alt="Salesforce CRM Support Services"
                       src="./sm4.png"
                       className="  object-cover  rounded-md md:w-[40%] "
                     />

@@ -106,7 +106,7 @@ export default function SalesForceDevelopment() {
         <title> Salesforce Integration Services - InfoDrive Solutions</title>
         <meta
           name="description"
-          content="From bug fixing to CRM monitoring and customization to app support, experience top quality salesforce support, and maintenance services from InfoDrive Solutions for your salesforce products."
+          content="Optimize your business processes with our Salesforce Integration Services. Connect and synchronize your data across platforms effortlessly."
         />
         <meta
           name="keywords"
@@ -723,35 +723,34 @@ Salesforce automation, Cloud integration, Business process integration"
 
                   <div className="grid grid-cols-3 md:flex  gap-10  justify-center mt-10">
                     <img
-                      alt="Salesforce Support & Maintenance Services"
+                      alt=""
                       src="./ic1.png"
                       className="w-20 object-cover  rounded-md "
                     />
 
                     <img
-                      alt="Salesforce consulting"
+                      alt=""
                       src="./ic2.png"
                       className=" w-20 h-full  rounded-md "
                     />
 
                     <img
-                      alt="BEST Salesforce Support Services"
+                      alt=""
                       src="./ic3.png"
                       className=" w-20 object-cover  rounded-md "
                     />
                     <img
-                      alt="Salesforce CRM Support Services
-                      "
+                      alt=""
                       src="./ic4.png"
                       className="w-20 object-cover  rounded-md "
                     />
                     <img
-                      alt="Salesforce Support Customization Services"
+                      alt=""
                       src="./ic5.png"
                       className="w-20 object-cover  rounded-md "
                     />
                     <img
-                      alt="saleforce"
+                      alt=""
                       src="./ic6.png"
                       className="w-20 object-cover  rounded-md "
                     />
