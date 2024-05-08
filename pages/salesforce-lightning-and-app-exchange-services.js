@@ -36,7 +36,8 @@ import { Chrono } from "react-chrono";
 import Sale from "../public/marketing.json";
 
 import LeadForm from "../components/leadForm";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import cloufLottie from "../public/apppexchange.json";
 import Light from "../public/lightning2.json";
 
@@ -44,6 +45,7 @@ import Sale2 from "../public/Sale2.json";
 import Cloud from "../public/lightning.json";
 import SaleforceCient from "components/SaleforceCient";
 import CustomTimeline from "components/verticleTimeline/CustomTimeline";
+import dynamic from "next/dynamic";
 
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
@@ -130,6 +132,12 @@ export default function SalesForceDevelopment() {
     },
   ];
 
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true); // Set isClient to true when component mounts
+  }, []);
+
   return (
     <div>
       <Head>
@@ -200,11 +208,13 @@ export default function SalesForceDevelopment() {
             </span>
             <div>
               <div className="md:w-52 relative w-1/2 mt-10 md:mt-0 md:mr-10 -ml-10 ">
-                <Lottie
-                  animationData={cloufLottie}
-                  loop={true}
-                  className="w-full"
-                />
+                {isClient && (
+                  <DynamicLottie
+                    animationData={cloufLottie}
+                    loop={true}
+                    className="w-full"
+                  />
+                )}
                 <h2
                   className="absolute md:-right-56 -right-56 top-0 text-xs md:text-base"
                   style={{ color: "#00A1DF" }}
@@ -213,7 +223,13 @@ export default function SalesForceDevelopment() {
                 </h2>
               </div>
               <div className="md:w-32 w-20 relative mt-0 -ml-3 md:ml-5">
-                <Lottie animationData={Light} loop={true} className=" w-full" />
+                {isClient && (
+                  <DynamicLottie
+                    animationData={Light}
+                    loop={true}
+                    className=" w-full"
+                  />
+                )}
                 <h2
                   className="absolute md:-right-56 -right-64 top-0 text-xs md:text-base"
                   style={{ color: "#00A1DF" }}
@@ -832,7 +848,13 @@ export default function SalesForceDevelopment() {
               </span>{" "}
               for Your Salesforce Lightning and Salesforce AppExchange Needs?
             </h2>
-            <Lottie animationData={Sale2} loop={true} className=" md:w-1/2" />
+            {isClient && (
+              <DynamicLottie
+                animationData={Sale2}
+                loop={true}
+                className=" md:w-1/2"
+              />
+            )}
           </div>
           <div
             // style={{ width: "100vw" }}

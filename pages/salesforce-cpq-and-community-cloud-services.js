@@ -19,7 +19,8 @@ import { Chrono } from "react-chrono";
 import Sale from "../public/marketing.json";
 
 import LeadForm from "../components/leadForm";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import cloufLottie from "../public/apppexchange.json";
 import Light from "../public/lightning2.json";
 
@@ -28,6 +29,8 @@ import Cloud from "../public/lightning.json";
 import SaleforceCient from "components/SaleforceCient";
 import CustomTimeline from "components/verticleTimeline/CustomTimeline";
 import { FcCheckmark } from "react-icons/fc";
+import dynamic from "next/dynamic";
+
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : "50%"
@@ -93,6 +96,12 @@ export default function SalesForceDevelopment() {
         " Deliver hyper-personalized experiences, boost revenue, and increase cart size with Salesforce Commerce Cloud's Einstein AI, offering reliable recommendations based on predictive insights.",
     },
   ];
+
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true); // Set isClient to true when component mounts
+  }, []);
 
   return (
     <div>

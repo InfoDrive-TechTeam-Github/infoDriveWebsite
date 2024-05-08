@@ -50,9 +50,18 @@ import {
 } from "react-icons/fa";
 import { FcAssistant, FcCollect, FcEnteringHeavenAlive } from "react-icons/fc";
 import { FcEngineering } from "react-icons/fc";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+
 export default function SalesForceDevelopment() {
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true); // Set isClient to true when component mounts
+  }, []);
+
   return (
     <div>
       <Head>
@@ -358,7 +367,13 @@ export default function SalesForceDevelopment() {
           {" "}
           <div className="flex items-center ">
             <h2>Get Started Today</h2>
-            <Lottie animationData={start} loop={true} className=" w-32" />
+            {isClient && (
+              <DynamicLottie
+                animationData={start}
+                loop={true}
+                className=" w-32"
+              />
+            )}
           </div>
           <p>
             Ready to unlock the full potential of your business with our trusted
