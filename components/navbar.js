@@ -23,6 +23,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ImageRotator from "./ImageRoater";
 import ContactModal from "./ContactModal";
+import EventsComponent from "../pages/events";
 
 const drawerWidth = 240;
 const navItems = [
@@ -34,6 +35,7 @@ const navItems = [
   { name: "Ios App Development", slug: "ios-app-development.html" },
   { name: "About Us", slug: "about-us.html" },
   { name: "Contact Us", slug: "contact-us.html" },
+  { name: "Events", slug: "events.html" },
 ];
 
 function DrawerAppBar(props) {
@@ -44,6 +46,12 @@ function DrawerAppBar(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [mobileOpenBox, setMobileOpenBox] = React.useState(false);
   const [mobileSubOpenBox, setSubMobileOpenBox] = React.useState(false);
+
+  const [showEvents, setShowEvents] = useState(false);
+
+  const handleEventButtonClick = () => {
+    setShowEvents(true);
+  };
 
   const handleDrawerToggle = () => {
     // alert(!mobileSubOpenBox);
@@ -281,14 +289,14 @@ function DrawerAppBar(props) {
                   className="customIcon"
                 />
               </ListItem>
-              <ListItem disablePadding>
+              {/* <ListItem disablePadding>
                 <ListItemButton
                   component="a"
                   to="/odoo-development-company.html"
                 >
                   <ListItemText primary={"Odoo ERP Development"} />
                 </ListItemButton>
-              </ListItem>
+              </ListItem> */}
             </List>
           </Menu>
           {/**sub mobile web */}
@@ -488,6 +496,12 @@ function DrawerAppBar(props) {
         <ListItem disablePadding>
           <ListItemButton component="a" to="/careers.html">
             <ListItemText primary={"Careers"} />
+          </ListItemButton>
+        </ListItem>
+
+        <ListItem disablePadding>
+          <ListItemButton component="a" to="/events.html">
+            <ListItemText primary={"Events"} />
           </ListItemButton>
         </ListItem>
       </List>
@@ -691,14 +705,14 @@ function DrawerAppBar(props) {
                           }}
                         />
                       </ListItem>
-                      <ListItem disablePadding>
+                      {/* <ListItem disablePadding>
                         <ListItemButton
                           component="a"
                           to="/odoo-development-company.html"
                         >
                           <ListItemText primary={"Odoo ERP Development"} />
                         </ListItemButton>
-                      </ListItem>
+                      </ListItem> */}
                     </List>
                   </Menu>
                   <Menu
@@ -959,6 +973,9 @@ function DrawerAppBar(props) {
                   </ListItemButton>
                   <ListItemButton component="a" to="/careers.html">
                     <ListItemText primary={"Careers"} />
+                  </ListItemButton>
+                  <ListItemButton component="a" to="/events.html">
+                    <ListItemText primary={"Events"} />
                   </ListItemButton>
                 </ListItem>
               </List>
