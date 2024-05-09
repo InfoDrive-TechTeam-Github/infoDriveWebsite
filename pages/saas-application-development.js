@@ -1,41 +1,41 @@
-import * as React from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import utilStyles from '../styles/utils.module.css';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import * as React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import utilStyles from "../styles/utils.module.css";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
 //import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
-import Avatar from '@mui/material/Avatar';
-import FilterAltIcon from '@mui/icons-material/FilterAlt';
-import Link from '@mui/material/Link';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Input from '@mui/material/Input';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
-import FormControl from '@mui/material/FormControl';
-import TextField from '@mui/material/TextField';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Stack from '@mui/material/Stack';
-import Head from 'next/head';
+import Grid from "@mui/material/Grid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabList from "@mui/lab/TabList";
+import TabPanel from "@mui/lab/TabPanel";
+import Avatar from "@mui/material/Avatar";
+import FilterAltIcon from "@mui/icons-material/FilterAlt";
+import Link from "@mui/material/Link";
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
+import AccountCircle from "@mui/icons-material/AccountCircle";
+import Stack from "@mui/material/Stack";
+import Head from "next/head";
 
-import LeadForm from '../components/leadForm';
+import LeadForm from "../components/leadForm";
 export default function SalesForceDevelopment() {
   return (
     <div>
@@ -45,76 +45,76 @@ export default function SalesForceDevelopment() {
           Malaysia, and India
         </title>
         <meta
-          name='description'
-          content='InfoDrive Solutions is a leading SaaS application development company offering comprehensive services in Singapore, Malaysia, and India. Our expertise in SaaS model software development and platform building helps clients build custom SaaS apps from scratch.'
+          name="description"
+          content="InfoDrive Solutions is a leading SaaS application development company offering comprehensive services in Singapore, Malaysia, and India. Our expertise in SaaS model software development and platform building helps clients build custom SaaS apps from scratch."
         />
         <meta
-          name='keywords'
-          content='SaaS application development, SaaS development company, SaaS application development services, SaaS application development company, SaaS software development company, SaaS application development platform, build a SaaS app from scratch, SaaS model software development, SaaS software development services, SaaS application development company in Singapore, SaaS application development company in Malaysia, SaaS application development company in Singapore'
+          name="keywords"
+          content="SaaS application development, SaaS development company, SaaS application development services, SaaS application development company, SaaS software development company, SaaS application development platform, build a SaaS app from scratch, SaaS model software development, SaaS software development services, SaaS application development company in Singapore, SaaS application development company in Malaysia, SaaS application development company in Singapore"
         />
         <link
-          rel='canonical'
-          href='https://infodrive-solutions.com/saas-application-development.html'
+          rel="canonical"
+          href="https://infodrive-solutions.com/saas-application-development.html"
         />
 
         <meta
-          property='og:title'
-          content='SaaS application development company & Services in Singapore,
-          Malaysia, and India'
+          property="og:title"
+          content="SaaS application development company & Services in Singapore,
+          Malaysia, and India"
         />
         <meta
-          property='og:image'
-          content='https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png'
+          property="og:image"
+          content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
-        <link rel='icon' href='/favicon.png' />
+        <link rel="icon" href="/favicon.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-MB38MVS');`,
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PPS8R594');`,
           }}
         />
       </Head>
       <noscript>
         <iframe
-          src='https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS'
-          height='0'
-          width='0'
-          style={{ display: 'none', visibility: 'hidden' }}
+          src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
       <Header />
-      <div className='sliderBox'>
+      <div className="sliderBox">
         <img
-          style={{ width: '100%' }}
-          src='images/8472ccba2259312408b9731d8ee9fcd1.jpeg'
-          alt='SaaS application development company in Singapore'
+          style={{ width: "100%" }}
+          src="images/8472ccba2259312408b9731d8ee9fcd1.jpeg"
+          alt="SaaS application development company in Singapore"
         />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent '>
+        <Box sx={{ flexGrow: 1 }} className="sliderContent ">
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h3' component='div'></Typography>
+            <Typography gutterBottom variant="h3" component="div"></Typography>
 
-            <Typography gutterBottom variant='h1' component='div'>
+            <Typography gutterBottom variant="h1" component="div">
               Transform Your Ideas into <br />
               Reality with Our Expert SaaS <br />
               Application Development Services: <br />
               Power Up Your Business Today
             </Typography>
             <Button
-              href='/contact-us.html'
-              className='readmore white normalCase'
-              variant='text'
+              href="/contact-us.html"
+              className="readmore white normalCase"
+              variant="text"
             >
               Let's Talk <ArrowRightAltIcon />
             </Button>
-            <nav className='socical-network'>
+            <nav className="socical-network">
               <List>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.facebook.com/InfoDrivesolutions/'
+                    component="a"
+                    href="https://www.facebook.com/InfoDrivesolutions/"
                   >
                     <ListItemIcon>
                       <FacebookIcon />
@@ -123,8 +123,8 @@ export default function SalesForceDevelopment() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                    component="a"
+                    href="https://in.linkedin.com/company/infodrive-solutions/"
                   >
                     <ListItemIcon>
                       <LinkedInIcon />
@@ -133,8 +133,8 @@ export default function SalesForceDevelopment() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.instagram.com/infodrivesolutions/'
+                    component="a"
+                    href="https://www.instagram.com/infodrivesolutions/"
                   >
                     <ListItemIcon>
                       <InstagramIcon />
@@ -148,11 +148,11 @@ export default function SalesForceDevelopment() {
       </div>
 
       <section className={`sectionBox p5`}>
-        <Typography gutterBottom variant='h1' component='h1'>
+        <Typography gutterBottom variant="h1" component="h1">
           SaaS Application Development
         </Typography>
 
-        <Typography className='w100' gutterBottom variant='h5' component='div'>
+        <Typography className="w100" gutterBottom variant="h5" component="div">
           SaaS (Software as a Service) application development is a popular
           delivery model for software applications. With SaaS, customers can
           access and use software applications over the internet, typically on a
@@ -177,7 +177,7 @@ export default function SalesForceDevelopment() {
       <section
         className={`sectionBox whyUsBox serviceOffer pb0 salesForceServices p5`}
       >
-        <Typography className='mb0' gutterBottom variant='h2' component='div'>
+        <Typography className="mb0" gutterBottom variant="h2" component="div">
           SaaS applications are also highly scalable, which makes them a good
           choice for businesses that are growing or expecting to see an increase
           in demand for their products or services.
@@ -190,9 +190,9 @@ export default function SalesForceDevelopment() {
               <Card>
                 <CardContent>
                   <Typography
-                    className='pr30'
-                    variant='body2'
-                    color='text.secondary'
+                    className="pr30"
+                    variant="body2"
+                    color="text.secondary"
                   >
                     With a traditional software model, businesses may need to
                     purchase additional licenses or hardware to accommodate
@@ -208,7 +208,7 @@ export default function SalesForceDevelopment() {
             <Grid item xs={6}>
               <Card>
                 <CardContent>
-                  <Typography variant='body2' color='text.secondary'>
+                  <Typography variant="body2" color="text.secondary">
                     Because they are accessed over the internet, users can
                     access them from any device with an internet connection.
                     This means that businesses can allow employees to work
@@ -232,8 +232,8 @@ export default function SalesForceDevelopment() {
               <Card>
                 <CardContent>
                   <img
-                    style={{ width: '100%' }}
-                    src='images/6d692dcf61dcbcfe9c95246438487a13.jpeg'
+                    style={{ width: "100%" }}
+                    src="images/6d692dcf61dcbcfe9c95246438487a13.jpeg"
                   />
                 </CardContent>
               </Card>
@@ -244,9 +244,9 @@ export default function SalesForceDevelopment() {
                 <CardContent>
                   <Typography
                     gutterBottom
-                    variant='h2'
-                    component='div'
-                    className='w100 pl30'
+                    variant="h2"
+                    component="div"
+                    className="w100 pl30"
                   >
                     At InfoDrive Solutions, we have a team of skilled developers
                     who are experienced in developing a wide range of SaaS
@@ -255,9 +255,9 @@ export default function SalesForceDevelopment() {
                     more.
                   </Typography>
                   <Typography
-                    variant='body2'
-                    color='text.secondary'
-                    className='pl30'
+                    variant="body2"
+                    color="text.secondary"
+                    className="pl30"
                   >
                     Our developers are proficient in a variety of programming
                     languages and technologies, including Python, Java, and Ruby
@@ -279,15 +279,15 @@ export default function SalesForceDevelopment() {
       <section className={`sectionBox connectUs backDrop mb0 p5`}>
         <Typography
           gutterBottom
-          variant='h3'
-          className='white pb15 pt15 poppin'
-          component='div'
+          variant="h3"
+          className="white pb15 pt15 poppin"
+          component="div"
         >
           Take Your Business to the Next Level with Custom SaaS Solutions.
         </Typography>
         <Button
-          href='/contact-us.html'
-          className='bgRed white pl15 pr15 poppin upperCase'
+          href="/contact-us.html"
+          className="bgRed white pl15 pr15 poppin upperCase"
         >
           Connect with Our Expert
         </Button>

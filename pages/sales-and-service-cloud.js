@@ -22,11 +22,14 @@ import { Chrono } from "react-chrono";
 import Sale from "../public/saleandservice.json";
 
 import LeadForm from "../components/leadForm";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 import Sale2 from "../public/Sale2.json";
 
 import SaleforceCient from "components/SaleforceCient";
+import dynamic from "next/dynamic";
+
 export default function SalesForceDevelopment() {
   const [width, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -73,6 +76,12 @@ export default function SalesForceDevelopment() {
         "Our Sales/Service cloud implementation services are rapid, and help you keep your business run faster and smoother",
     },
   ];
+
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true); // Set isClient to true when component mounts
+  }, []);
 
   return (
     <div>
@@ -712,7 +721,13 @@ export default function SalesForceDevelopment() {
             <span className="text-red-600  font-black"> InfoDrive’s</span>{" "}
             Salesforce Sales and Service Cloud Implementation Services?
           </h2>
-          <Lottie animationData={Sale2} loop={true} className="mt-20" />
+          {isClient && (
+            <DynamicLottie
+              animationData={Sale2}
+              loop={true}
+              className="mt-20"
+            />
+          )}
         </div>
         <Chrono
           items={items}
@@ -852,7 +867,7 @@ export default function SalesForceDevelopment() {
             </Grid>
             <Grid item xs={6}>
               <Card>
-                <Lottie animationData={Sale} loop={true} />
+                {isClient && <DynamicLottie animationData={Sale} loop={true} />}
               </Card>
             </Grid>
           </Grid>

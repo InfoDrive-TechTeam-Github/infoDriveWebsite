@@ -1,26 +1,26 @@
-import * as React from 'react';
-import Head from 'next/head';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import utilStyles from '../styles/utils.module.css';
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
+import * as React from "react";
+import Head from "next/head";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import utilStyles from "../styles/utils.module.css";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
 //import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Grid from "@mui/material/Grid";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
-import InstagramIcon from '@mui/icons-material/Instagram';
+import InstagramIcon from "@mui/icons-material/Instagram";
 
-import LeadForm from '../components/leadForm';
+import LeadForm from "../components/leadForm";
 
 export default function WebMobileApp() {
   return (
@@ -31,39 +31,39 @@ export default function WebMobileApp() {
           Malaysia, and India
         </title>
         <meta
-          name='description'
-          content='Looking for a reliable website development and design company? Our expert website developers and designers in Singapore, Malaysia, and India can help you build a custom website that reflects your brand and meets your business needs.'
+          name="description"
+          content="Looking for a reliable website development and design company? Our expert website developers and designers in Singapore, Malaysia, and India can help you build a custom website that reflects your brand and meets your business needs."
         />
         <meta
-          name='keywords'
-          content='Website Development Services, Website Development Services in Singapore, Website Development Services in Malaysia, Website Development Company, Website Development Company in Singapore, Website Development Company in Malaysia, Website Development Company in India, Website Developers in Singapore, Best Website Developers in Malaysia, Web Design Services in Singapore, Web Design Services in Malaysia, Web Design Company in Malaysia'
+          name="keywords"
+          content="Website Development Services, Website Development Services in Singapore, Website Development Services in Malaysia, Website Development Company, Website Development Company in Singapore, Website Development Company in Malaysia, Website Development Company in India, Website Developers in Singapore, Best Website Developers in Malaysia, Web Design Services in Singapore, Web Design Services in Malaysia, Web Design Company in Malaysia"
         />
         <link
-          rel='canonical'
-          href='https://infodrive-solutions.com/website-design.html'
+          rel="canonical"
+          href="https://infodrive-solutions.com/website-design.html"
         />
 
-        <link rel='icon' href='/favicon.png' />
+        <link rel="icon" href="/favicon.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-MB38MVS');`,
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PPS8R594');`,
           }}
         />
       </Head>
       <Header />
-      <div className='sliderBox'>
+      <div className="sliderBox">
         <img
-          style={{ width: '100%' }}
-          src='images/woman-using-computer_53876-47103.jpeg'
-          alt='Professional Website Development'
+          style={{ width: "100%" }}
+          src="images/woman-using-computer_53876-47103.jpeg"
+          alt="Professional Website Development"
         />
-        <Box sx={{ flexGrow: 1 }} className='sliderContent'>
+        <Box sx={{ flexGrow: 1 }} className="sliderContent">
           <Grid container spacing={0}>
-            <Typography gutterBottom variant='h1' component='div'>
+            <Typography gutterBottom variant="h1" component="div">
               Your website is often the first <br />
               impression customers have <br />
               of your business. Make sure it's a great <br />
@@ -72,18 +72,18 @@ export default function WebMobileApp() {
               services from InfoDrive Solutions.
             </Typography>
             <Button
-              href='/contact-us.html'
-              className='readmore white normalCase'
-              variant='text'
+              href="/contact-us.html"
+              className="readmore white normalCase"
+              variant="text"
             >
               Let's Talk <ArrowRightAltIcon />
             </Button>
-            <nav className='socical-network'>
+            <nav className="socical-network">
               <List>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.facebook.com/InfoDrivesolutions/'
+                    component="a"
+                    href="https://www.facebook.com/InfoDrivesolutions/"
                   >
                     <ListItemIcon>
                       <FacebookIcon />
@@ -92,8 +92,8 @@ export default function WebMobileApp() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://in.linkedin.com/company/infodrive-solutions/'
+                    component="a"
+                    href="https://in.linkedin.com/company/infodrive-solutions/"
                   >
                     <ListItemIcon>
                       <LinkedInIcon />
@@ -102,8 +102,8 @@ export default function WebMobileApp() {
                 </ListItem>
                 <ListItem>
                   <ListItemButton
-                    component='a'
-                    href='https://www.instagram.com/infodrivesolutions/'
+                    component="a"
+                    href="https://www.instagram.com/infodrivesolutions/"
                   >
                     <ListItemIcon>
                       <InstagramIcon />
@@ -117,14 +117,14 @@ export default function WebMobileApp() {
       </div>
       <section className={`sectionBox introSectionBox p5`}>
         <Typography
-          className='w100 red'
+          className="w100 red"
           gutterBottom
-          variant='h1'
-          component='h1'
+          variant="h1"
+          component="h1"
         >
           Best Web Development Services
         </Typography>
-        <Typography gutterBottom variant='h5' component='div' className=''>
+        <Typography gutterBottom variant="h5" component="div" className="">
           InfoDrive Solutions is a premier website development company based in
           Singapore, Malaysia, and India. With a team of skilled and experienced
           developers, we have a reputation for delivering high-quality and
@@ -155,14 +155,14 @@ export default function WebMobileApp() {
         </Typography>
       </section>
       {/**main body start from here grid */}
-      <h2 className='Poppins container mx-auto font-bold text-xl text-blue-950 mb-12 text-center p5'>
+      <h2 className="Poppins container mx-auto font-bold text-xl text-blue-950 mb-12 text-center p5">
         In addition to website development, we also offer a range of related
         services, including:
       </h2>
-      <main className='grid max-w-6xl md:mx-auto md:grid-cols-3 content-start items-center md:gap-x-5 md:gap-y-0 gap-y-5 grid-cols-1 p5'>
-        <div className='cart'>
-          <h2 className='text-pink-700 font-semibold'>Website design</h2>
-          <p className='text-gray-500 Poppins text-sm'>
+      <main className="grid max-w-6xl md:mx-auto md:grid-cols-3 content-start items-center md:gap-x-5 md:gap-y-0 gap-y-5 grid-cols-1 p5">
+        <div className="cart">
+          <h2 className="text-pink-700 font-semibold">Website design</h2>
+          <p className="text-gray-500 Poppins text-sm">
             Our team of experienced designers can create a visually appealing
             and user-friendly website that reflects your brand and engages your
             audience. We use the latest design trends and best practices to
@@ -171,16 +171,16 @@ export default function WebMobileApp() {
           </p>
         </div>
         <img
-          src='images/website1.png'
-          alt='user-friendly website '
-          className='rounded-xl object-cover border-4 boxshadow'
+          src="images/website1.png"
+          alt="user-friendly website "
+          className="rounded-xl object-cover border-4 boxshadow"
         />
-        <div className='cart'>
-          <h2 className='text-pink-700 font-semibold'>
+        <div className="cart">
+          <h2 className="text-pink-700 font-semibold">
             Search engine optimization (SEO)
           </h2>
-          <p className='text-gray-500 Poppins text-sm'>
-            {' '}
+          <p className="text-gray-500 Poppins text-sm">
+            {" "}
             We can help you optimize your website for search engines, making it
             more visible and easily found by potential customers. By
             incorporating relevant keywords and optimizing your website's
@@ -189,13 +189,13 @@ export default function WebMobileApp() {
           </p>
         </div>
         <img
-          src='images/website2.png'
-          alt='optimizing your website'
-          className='rounded-xl object-cover border-4 boxshadow'
+          src="images/website2.png"
+          alt="optimizing your website"
+          className="rounded-xl object-cover border-4 boxshadow"
         />
-        <div className='cart'>
-          <h2 className='text-pink-700 font-semibold'>Digital marketing</h2>
-          <p className='text-gray-500 Poppins text-sm'>
+        <div className="cart">
+          <h2 className="text-pink-700 font-semibold">Digital marketing</h2>
+          <p className="text-gray-500 Poppins text-sm">
             In addition to developing your website, we can also help you promote
             it through various digital marketing channels, including social
             media, email marketing, and pay-per-click (PPC) advertising. Our
@@ -204,13 +204,13 @@ export default function WebMobileApp() {
           </p>
         </div>
         <img
-          src='images/website3.png'
-          alt='digital marketing channels'
-          className='rounded-xl object-cover border-4 boxshadow'
+          src="images/website3.png"
+          alt="digital marketing channels"
+          className="rounded-xl object-cover border-4 boxshadow"
         />
-        <div className='cart'>
-          <h2 className='text-pink-700 font-semibold'>Mobile development</h2>
-          <p className='text-gray-500 Poppins text-sm'>
+        <div className="cart">
+          <h2 className="text-pink-700 font-semibold">Mobile development</h2>
+          <p className="text-gray-500 Poppins text-sm">
             With the increasing use of mobile devices, it's important to ensure
             that your website is responsive and easy to use on mobile phones and
             tablets. Our team can develop a mobile-friendly website that looks
@@ -219,15 +219,15 @@ export default function WebMobileApp() {
           </p>
         </div>
         <img
-          src='images/website4.png'
-          alt='Mobile development'
-          className='rounded-xl object-cover border-4 boxshadow'
+          src="images/website4.png"
+          alt="Mobile development"
+          className="rounded-xl object-cover border-4 boxshadow"
         />
-        <div className='cart'>
-          <h2 className='text-pink-700 font-semibold'>
+        <div className="cart">
+          <h2 className="text-pink-700 font-semibold">
             Maintenance and support
           </h2>
-          <p className='text-gray-500 Poppins text-sm '>
+          <p className="text-gray-500 Poppins text-sm ">
             After your website is launched, we can provide ongoing maintenance
             and support to ensure that it stays up-to-date and functioning
             smoothly. This can include updates to content, design, and
@@ -236,8 +236,8 @@ export default function WebMobileApp() {
         </div>
       </main>
 
-      <section className='boxshadowInset   mx-auto max-w-6xl  mt-10 p-3 rounded-xl text-gray-500 mb-10 mx-5'>
-        <p className=''>
+      <section className="boxshadowInset   mx-auto max-w-6xl  mt-10 p-3 rounded-xl text-gray-500 mb-10 mx-5">
+        <p className="">
           We pride ourselves on delivering high-quality websites that exceed our
           clients' expectations. Our team is committed to delivering top-notch
           service and support, and we strive to build long-term partnerships
@@ -250,48 +250,48 @@ export default function WebMobileApp() {
       </section>
 
       <section className={`sectionBox  pb0 mt-0 mb-10 p5`}>
-        <Typography gutterBottom variant='h2' className='' component='h2'>
+        <Typography gutterBottom variant="h2" className="" component="h2">
           Why Choose InfoDrive Solutions for Website Development?
         </Typography>
         <br />
-        <div className='grid md:grid-cols-4 md:gap-x-5 grid-cols-1 gap-y-5'>
-          <article className='py-5'>
-            <h2 className='text-pink-700 font-semibold text-lg mb-3'>
+        <div className="grid md:grid-cols-4 md:gap-x-5 grid-cols-1 gap-y-5">
+          <article className="py-5">
+            <h2 className="text-pink-700 font-semibold text-lg mb-3">
               Customized solutions
             </h2>
-            <p className='text-base text-gray-600'>
+            <p className="text-base text-gray-600">
               We don't believe in a one-size-fits-all approach. We create
               websites that are tailored to your business needs and design
               preferences.
             </p>
           </article>
-          <article className='py-5'>
-            <h2 className='text-pink-700 font-semibold text-lg mb-3'>
+          <article className="py-5">
+            <h2 className="text-pink-700 font-semibold text-lg mb-3">
               Experienced team
             </h2>
-            <p className='text-base text-gray-600'>
+            <p className="text-base text-gray-600">
               Our developers have years of experience creating websites for
               businesses across various industries. We stay up-to-date with the
               latest technologies and best practices to ensure your website is
               fast, secure, and responsive.
             </p>
           </article>
-          <article className='py-5'>
-            <h2 className='text-pink-700 font-semibold text-lg mb-3'>
+          <article className="py-5">
+            <h2 className="text-pink-700 font-semibold text-lg mb-3">
               Collaborative approach
             </h2>
-            <p className='text-base text-gray-600'>
+            <p className="text-base text-gray-600">
               We work closely with you to understand your business goals, target
               audience, and design preferences. We keep you involved throughout
               the website development process to ensure your website meets your
               expectations.
             </p>
           </article>
-          <article className='py-5'>
-            <h2 className='text-pink-700 font-semibold text-lg mb-3'>
+          <article className="py-5">
+            <h2 className="text-pink-700 font-semibold text-lg mb-3">
               Ongoing support
             </h2>
-            <p className='text-base text-gray-600'>
+            <p className="text-base text-gray-600">
               We offer ongoing maintenance and support to ensure your website is
               always up-to-date, secure, and performing optimally.
             </p>
@@ -301,16 +301,16 @@ export default function WebMobileApp() {
       <section className={`sectionBox connectUs backDrop p5`}>
         <Typography
           gutterBottom
-          variant='h3'
-          className='white pb15 pt15 poppin'
-          component='div'
+          variant="h3"
+          className="white pb15 pt15 poppin"
+          component="div"
         >
           If you're ready to take your website to the next level, contact us
           today!
         </Typography>
         <Button
-          href='/contact-us.html'
-          className='bgRed white pl15 pr15 poppin upperCase'
+          href="/contact-us.html"
+          className="bgRed white pl15 pr15 poppin upperCase"
         >
           Connect with Our Expert
         </Button>
