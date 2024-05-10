@@ -36,13 +36,23 @@ import {
   BsCardChecklist,
   BsLayoutTextSidebarReverse,
 } from "react-icons/bs";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import crmanimation from "../components/crm.json";
+import dynamic from "next/dynamic";
+
 function crm() {
   // const [inView, setInView] = React.useState(false);
   // const ref = React.useRef(null);
 
   // useInView(ref, () => setInView(true));
+
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true); // Set isClient to true when component mounts
+  }, []);
+
   return (
     <>
       <Head>
@@ -213,7 +223,12 @@ function crm() {
             </div>
           </div>
           <div className="h-[400px]  mr-36 w-full ">
-            <Lottie animationData={crmanimation} className="h-full w-full" />
+            {isClient && (
+              <DynamicLottie
+                animationData={crmanimation}
+                className="h-full w-full"
+              />
+            )}
           </div>
         </div>
       </section>

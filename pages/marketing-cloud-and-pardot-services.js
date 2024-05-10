@@ -40,13 +40,23 @@ import { Chrono } from "react-chrono";
 import Sale from "../public/marketing.json";
 
 import LeadForm from "../components/leadForm";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
 import cloufLottie from "../public/wave.json";
 import Sale2 from "../public/Sale2.json";
 import Cloud from "../public/cloud.json";
 import SaleforceCient from "components/SaleforceCient";
 import CustomTimeline from "components/verticleTimeline/CustomTimeline";
+import dynamic from "next/dynamic";
+
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
+
 export default function SalesForceDevelopment() {
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true); // Set isClient to true when component mounts
+  }, []);
+
   const [widthI, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
@@ -155,20 +165,24 @@ export default function SalesForceDevelopment() {
           property="og:image"
           content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
+        <meta
+          name="google-site-verification"
+          content="JcRwQCIELBAZJX2iIdAkVHip-fPEjV_icDXuaLBIXfE"
+        />
         <link rel="icon" href="/favicon.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-MB38MVS');`,
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PPS8R594');`,
           }}
         />
       </Head>
       <noscript>
         <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-PPS8R594"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}
@@ -177,11 +191,13 @@ export default function SalesForceDevelopment() {
       <Header />
 
       <section className="newsectionbox   text-white relative  ocean pb-0 h-screen ">
-        <Lottie
-          animationData={cloufLottie}
-          loop={true}
-          className="absolute top-0 left-0 right-0"
-        />
+        {isClient && (
+          <DynamicLottie
+            animationData={cloufLottie}
+            loop={true}
+            className="absolute top-0 left-0 right-0"
+          />
+        )}
         <div className="container md:max-w-5xl  lg:max-w-7xl mx-auto    h-full w-full  p5 absolute top-16 md:top-60 md:left-10  px-4  lg:px-8">
           <div className=" md:flex   md:items-center md:justify-between  w-full">
             <h1
@@ -793,7 +809,13 @@ export default function SalesForceDevelopment() {
               for Salesforce Marketing Cloud and Pardot needs? Here you can
               figure it out:
             </h2>
-            <Lottie animationData={Sale2} loop={true} className="w-1/2" />
+            {isClient && (
+              <DynamicLottie
+                animationData={Sale2}
+                loop={true}
+                className="w-1/2"
+              />
+            )}
           </div>
           <CustomTimeline data={items} />
         </div>
@@ -875,11 +897,13 @@ export default function SalesForceDevelopment() {
             </Grid>
             <Grid item xs={6} className="-mt-12">
               <Card>
-                <Lottie
-                  animationData={Sale}
-                  loop={true}
-                  className="md:w-[90%] ml-5"
-                />
+                {isClient && (
+                  <DynamicLottie
+                    animationData={Sale}
+                    loop={true}
+                    className="md:w-[90%] ml-5"
+                  />
+                )}
                 <div className="flex items-center justify-between gap-2 md:-mt-10">
                   <motion.div className="w-20 ">
                     <motion.img

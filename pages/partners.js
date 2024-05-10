@@ -50,9 +50,18 @@ import {
 } from "react-icons/fa";
 import { FcAssistant, FcCollect, FcEnteringHeavenAlive } from "react-icons/fc";
 import { FcEngineering } from "react-icons/fc";
-import Lottie from "lottie-react";
+// import Lottie from "lottie-react";
+const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+
 export default function SalesForceDevelopment() {
+  const [isClient, setIsClient] = React.useState(false);
+
+  React.useEffect(() => {
+    setIsClient(true); // Set isClient to true when component mounts
+  }, []);
+
   return (
     <div>
       <Head>
@@ -78,20 +87,24 @@ export default function SalesForceDevelopment() {
           property="og:image"
           content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
+        <meta
+          name="google-site-verification"
+          content="JcRwQCIELBAZJX2iIdAkVHip-fPEjV_icDXuaLBIXfE"
+        />
         <link rel="icon" href="/favicon.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-MB38MVS');`,
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PPS8R594');`,
           }}
         />
       </Head>
       <noscript>
         <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-PPS8R594"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}
@@ -354,7 +367,13 @@ export default function SalesForceDevelopment() {
           {" "}
           <div className="flex items-center ">
             <h2>Get Started Today</h2>
-            <Lottie animationData={start} loop={true} className=" w-32" />
+            {isClient && (
+              <DynamicLottie
+                animationData={start}
+                loop={true}
+                className=" w-32"
+              />
+            )}
           </div>
           <p>
             Ready to unlock the full potential of your business with our trusted

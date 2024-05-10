@@ -56,6 +56,10 @@ Remote Based Staff Augumation Services in Malaysia,
 Contract Based Staffing Services in Malaysia,
 Remote Based Staff Augumation Services in USA,"
         />
+        <meta
+          name="google-site-verification"
+          content="JcRwQCIELBAZJX2iIdAkVHip-fPEjV_icDXuaLBIXfE"
+        />
         <link
           rel="canonical"
           href="https://infodrive-solutions.com/staff-augmentation.html"
@@ -65,16 +69,17 @@ Remote Based Staff Augumation Services in USA,"
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id=GTM-MB38MVS'+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-MB38MVS');`,
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PPS8R594');`,
           }}
         />
       </Head>
+
       <noscript>
         <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-MB38MVS"
+          src="https://www.googletagmanager.com/ns.html?id=GTM-PPS8R594"
           height="0"
           width="0"
           style={{ display: "none", visibility: "hidden" }}
