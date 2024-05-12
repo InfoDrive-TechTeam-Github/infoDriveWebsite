@@ -96,7 +96,7 @@ const EventsForm = () => {
       <div
         className="w-full h-full bg-cover bg-center grid grid-cols-2"
         style={{
-          backgroundImage: "./images/pexels-helena-lopes-933964-min.jpg",
+          backgroundImage: "url('/images/pexels-helena-lopes-933964-min.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-red-500 opacity-80"></div>
