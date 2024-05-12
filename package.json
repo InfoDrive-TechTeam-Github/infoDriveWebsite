@@ -46,6 +46,7 @@
     "react-multi-carousel": "^2.8.4",
     "react-phone-number-input": "^3.2.19",
     "react-responsive-carousel": "^3.2.23",
+    "react-select": "^5.8.0",
     "react-share": "^4.4.1",
     "react-toastify": "^9.1.1",
     "react-water-wave": "^2.0.1",
