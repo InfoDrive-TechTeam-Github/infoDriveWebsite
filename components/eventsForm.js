@@ -6,11 +6,12 @@ import axios from "axios";
 const EventsForm = () => {
   const [submissionStatus, setSubmissionStatus] = useState(null);
   const [inputData, setInputData] = useState({
-    full_name: "",
+    first_name: "",
+    last_name: "",
     email_address: "",
     contact_number: "",
-    industry: "",
     message: "",
+    events: [],
   });
 
   const handleChange = (e) => {
@@ -27,19 +28,37 @@ const EventsForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      // Combine first name and last name into full_name
-      const fullName = `${inputData.first_name} ${inputData.last_name}`;
-      const combinedMessage = `Events: ${inputData.events
-        .map((event) => event.label)
-        .join(", ")}\n\nMessage: ${inputData.message}`;
+    const fullName = `${inputData.first_name} ${inputData.last_name}`;
+    const combinedMessage = `Events: ${inputData.events
+      .map((event) => event.label)
+      .join(", ")}\n\nMessage: ${inputData.message}`;
 
-      const dataToSend = {
-        full_name: fullName,
-        email_address: inputData.email_address,
-        contact_number: inputData.contact_number,
-        message: combinedMessage,
-      };
+    const dataToSend = {
+      full_name: fullName,
+      email_address: inputData.email_address,
+      contact_number: inputData.contact_number,
+      message: combinedMessage,
+    };
+
+    try {
+      if (
+        !inputData.first_name ||
+        !inputData.last_name ||
+        !inputData.email_address ||
+        !inputData.contact_number ||
+        !inputData.events.length
+      ) {
+        toast.error("Please fill in all required fields", {
+          position: "top-right",
+          autoClose: 2000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        return;
+      }
 
       const res = await axios.post(
         "https://mydryve.co/Api/sendMail",
@@ -57,8 +76,7 @@ const EventsForm = () => {
           draggable: true,
           progress: undefined,
         });
-        console.log(success, "success");
-        console.log(dataToSend);
+        console.log(res.data.message, "success");
       } else {
         setSubmissionStatus("error");
         toast.warning("Please Try Again", {
@@ -84,6 +102,7 @@ const EventsForm = () => {
       });
       console.log(error, "error");
     }
+    console.log(dataToSend);
   };
 
   const eventOptions = [
@@ -94,7 +113,7 @@ const EventsForm = () => {
   return (
     <div className="relative w-screen h-screen mt-16 mb-36">
       <div
-        className="w-full h-full bg-cover bg-center grid grid-cols-2"
+        className="w-full h-full bg-cover bg-center grid grid-cols-1 md:grid-cols-2"
         style={{
           backgroundImage: "url('/images/pexels-helena-lopes-933964-min.jpg')",
         }}
@@ -127,13 +146,10 @@ const EventsForm = () => {
         <div className="w-full h-full z-10 flex flex-col justify-center items-center text-blue">
           <div className="max-w-md mx-auto">
             {" "}
-            {/* Adjusted width and centered */}
             <div className="mt-5 border border-purple-600 rounded-lg p-4 bg-white">
               {" "}
-              {/* Added bg-white */} {/* Reduced padding */}
               <h1 className="text-center text-3xl font-bold mb-4">
                 {" "}
-                {/* Reduced font size */}
                 <span className="text-red-400 font-bold">
                   Let's Get Connected &{" "}
                 </span>
@@ -155,6 +171,7 @@ const EventsForm = () => {
                       placeholder="Your first name"
                       onChange={handleChange}
                       name="first_name"
+                      required
                     />
                   </div>
                   <div className="w-full md:w-1/2 px-2">
@@ -171,6 +188,7 @@ const EventsForm = () => {
                       placeholder="Your last name"
                       onChange={handleChange}
                       name="last_name"
+                      required
                     />
                   </div>
                 </div>
@@ -189,6 +207,7 @@ const EventsForm = () => {
                       placeholder="Your contact number"
                       onChange={handleChange}
                       name="contact_number"
+                      required
                     />
                   </div>
                 </div>
@@ -203,10 +222,11 @@ const EventsForm = () => {
                     <input
                       className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-3 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="grid-email"
-                      type="text"
+                      type="email"
                       placeholder="Your email address"
                       onChange={handleChange}
                       name="email_address"
+                      required
                     />
                   </div>
                 </div>
@@ -223,6 +243,7 @@ const EventsForm = () => {
                       onChange={handleEventSelect}
                       isMulti
                       placeholder="Select event(s)"
+                      required
                     />
                   </div>
                 </div>
@@ -244,6 +265,7 @@ const EventsForm = () => {
                       placeholder="Your message"
                       onChange={handleChange}
                       name="message"
+                      required
                     ></textarea>
                   </div>
                 </div>
@@ -264,7 +286,7 @@ const EventsForm = () => {
                   className="bg-blue-500 hover:bg-blue-700 text-white flex flex-col items-center font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="submit"
                 >
-                  Submit
+                  Book A Meeting
                 </button>
               </form>
             </div>
