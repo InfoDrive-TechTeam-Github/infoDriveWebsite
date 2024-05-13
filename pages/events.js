@@ -36,6 +36,7 @@ export default function EventsComponent() {
           rel="canonical"
           href="https://infodrive-solutions.com/events.html"
         />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
 

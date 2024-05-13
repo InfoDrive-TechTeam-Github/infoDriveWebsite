@@ -37,6 +37,7 @@ const EventsForm = () => {
       full_name: fullName,
       email_address: inputData.email_address,
       contact_number: inputData.contact_number,
+      industry: "",
       message: combinedMessage,
     };
 
