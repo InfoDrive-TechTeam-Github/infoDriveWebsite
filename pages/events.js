@@ -42,13 +42,12 @@ export default function EventsComponent() {
 
       <EventsForm />
 
-      <div>
-        <h4 className="text-center text-1xl font-bold text-gray-900 dark:text-white md:text-2xl lg:text-3xl">
+      <div className="mt-10">
+        <h4 className="text-center text-2xl font-bold text-gray-900 dark:text-white">
           Let's Meet & Greet Each Other
         </h4>
-
-        <h2 className="text-center text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-          <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+        <h2 className="text-center font-bold dark:text-white text-3xl" >
+          <span className="text-transparent bg-clip-text bg-gradient-to-r to-red-800 from-rose-700">
             With Our Amazing Team
           </span>
         </h2>
@@ -225,17 +224,17 @@ export default function EventsComponent() {
       </section>
       {/* Why Should You Join Us At The Event? */}
 
-      <h2 className="-mt-16 text-center text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+      <h2 className="-mt-10 text-center text-2xl font-extrabold text-gray-900 dark:text-white">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r to-red-800 from-rose-700">
           Why Should You
         </span>{" "}
         Join Us{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r to-red-800 from-rose-700">
           At The Event?
         </span>{" "}
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-white p-10 pt-28">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-white p-10 pt-10">
         <FeatureCard
           icon={
             <img

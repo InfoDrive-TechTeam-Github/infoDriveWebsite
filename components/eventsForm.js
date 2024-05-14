@@ -3,7 +3,7 @@ import Select from "react-select";
 import { toast } from "react-toastify";
 import axios from "axios";
 
-const EventsForm = () => {
+function EventsForm() {
   const [submissionStatus, setSubmissionStatus] = useState(null);
   const [inputData, setInputData] = useState({
     first_name: "",
@@ -112,133 +112,143 @@ const EventsForm = () => {
   ];
 
   return (
-    <div className="relative w-screen h-screen mt-16 mb-36">
-      <div
-        className="w-full h-full bg-cover bg-center grid grid-cols-1 md:grid-cols-2"
-        style={{
-          backgroundImage: "url('/images/pexels-helena-lopes-933964-min.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 bg-red-500 opacity-80"></div>
-
-        {/* Left side */}
-        <div className="w-full h-full z-10 ml-10 flex flex-col justify-center items-center text-center text-white">
-          <h1 className="text-5xl font-bold mb-8">
-            If{" "}
-            <span className="text-sky-300 font-bold">
-              Success is Your Thing
-            </span>
-            , Don't Miss the Chance to{" "}
-            <span className="text-green-300 font-bold underline">Meet us!</span>
-          </h1>
-          <p className="text-white mb-4">
-            Join us across the Globe - USA & EUROPE <br />
-            This May to July 2024, Get the chance to meet industry-leading
-            experts, business tycoons, inspiring tech enthusiasts, and more!
-          </p>
-          <h2 className=" text-white">
-            Let's <span className="text-blue-300 font-bold">Engage</span>,{" "}
-            <span className="text-yellow-300 font-bold">Evolve</span>, and{" "}
-            <span className="text-green-300 font-bold">Elate</span> Together!
-          </h2>
+    <div
+      className="relative px-6 lg:px-8 w-full"
+      style={{
+        backgroundImage: "url('/images/pexels-helena-lopes-933964-min.jpg')",
+        backgroundBlendMode: "multiply",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="absolute inset-0 bg-red-600 opacity-70"></div>
+      <div className="flex flex-wrap items-center relative z-10">
+        <div className="w-full md:p-5 md:w-1/2 xs:mt-20">
+          <div className="mx-auto max-w-xl flex flex-col items-center justify-center text-white text-center">
+            <p className="font-bold text-2xl">
+              <span>If </span>
+              <span className="text-blue-500">Success is Your Thing</span>
+              <span>, Don't Miss the Chance to </span>
+              <span className="text-lime-500 font-bold underline">
+                Meet us!
+              </span>
+            </p>
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tight ">
+              Join us across the Globe - USA & EUROPE
+            </h1>
+            <p className="mt-3 text-1xl ">
+              This May to July 2024, Get the chance to meet industry-leading
+              experts, business tycoons, inspiring tech enthusiasts, and more!
+            </p>
+            <h2 className="text-2xl md:text-2xl font-bold tracking-tight ">
+              <span>Let's</span>{" "}
+              <span className="text-blue-500 font-bold">Engage</span>,{" "}
+              <span className="text-yellow-500 font-bold">Evolve</span>, and{" "}
+              <span className="text-lime-500 font-bold">Elate</span> Together!
+            </h2>
+          </div>
         </div>
-
-        {/* Right side */}
-        <div className="w-full h-full z-10 flex flex-col justify-center items-center text-blue">
-          <div className="max-w-md mx-auto">
-            {" "}
-            <div className="mt-5 border border-purple-600 rounded-lg p-4 bg-white">
+        <div className="w-full mx-auto max-w-xl sm:mt-10 md:w-1/2 p-10">
+          <div className="w-auto border border-red-600 rounded-lg p-7 bg-white">
+            <h1 className="text-center text-3xl font-bold mb-4">
               {" "}
-              <h1 className="text-center text-3xl font-bold mb-4">
-                {" "}
-                <span className="text-red-400 font-bold">
-                  Let's Get Connected &{" "}
-                </span>
-                Grab New Opportunities
-              </h1>
-              <form className="w-full max-w-lg" onSubmit={handleSubmit}>
-                <div className="flex flex-wrap -mx-2 mb-1">
-                  <div className="w-full md:w-1/2 px-2 mb-2 md:mb-0">
+              <span className="text-red-800 font-bold">
+                Let's Get Connected &{" "}
+              </span>
+              <span>Grab New Opportunities</span>
+            </h1>
+            <form className="" onSubmit={handleSubmit}>
+              <div>
+                <div className="grid md:grid-cols-2 gap-x-4 gap-y-6">
+                  <div>
                     <label
-                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1"
-                      htmlFor="grid-first-name"
+                      htmlFor="first-name"
+                      className="block text-sm font-semibold leading-6 text-gray-900"
                     >
-                      First Name
+                      First name
                     </label>
-                    <input
-                      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-3 mb-1 leading-tight focus:outline-none focus:bg-white"
-                      id="grid-first-name"
-                      type="text"
-                      placeholder="Your first name"
-                      onChange={handleChange}
-                      name="first_name"
-                      required
-                    />
+                    <div className="">
+                      <input
+                        id="grid-first-name"
+                        type="text"
+                        onChange={handleChange}
+                        name="first_name"
+                        required
+                        autoComplete="given-name"
+                        placeholder="Your First Name"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
                   </div>
-                  <div className="w-full md:w-1/2 px-2">
+                  <div>
                     <label
-                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1"
-                      htmlFor="grid-last-name"
+                      htmlFor="last-name"
+                      className="block text-sm font-semibold leading-6 text-gray-900"
                     >
-                      Last Name
+                      Last name
                     </label>
-                    <input
-                      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-                      id="grid-last-name"
-                      type="text"
-                      placeholder="Your last name"
-                      onChange={handleChange}
-                      name="last_name"
-                      required
-                    />
+                    <div className="">
+                      <input
+                        id="grid-last-name"
+                        type="text"
+                        onChange={handleChange}
+                        name="last_name"
+                        required
+                        autoComplete="family-name"
+                        placeholder="Your Last Name"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                      />
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-wrap -mx-2 mb-1">
-                  <div className="w-full px-2">
-                    <label
-                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1"
-                      htmlFor="grid-contact-number"
-                    >
-                      Contact Number
-                    </label>
+                <div className="sm:col-span-2 mt-2">
+                  <label
+                    htmlFor="contact-number"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
+                    Contact Number
+                  </label>
+                  <div className="">
                     <input
-                      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-3 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="grid-contact-number"
-                      type="number"
+                      type="tel"
                       placeholder="Your contact number"
                       onChange={handleChange}
                       name="contact_number"
                       required
+                      autoComplete="tel"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
-                <div className="flex flex-wrap -mx-2 mb-1">
-                  <div className="w-full px-2">
-                    <label
-                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1"
-                      htmlFor="grid-email"
-                    >
-                      Email
-                    </label>
+                <div className="sm:col-span-2 mt-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
+                    Email
+                  </label>
+                  <div className="">
                     <input
-                      className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-2 px-3 mb-1 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                       id="grid-email"
                       type="email"
-                      placeholder="Your email address"
                       onChange={handleChange}
                       name="email_address"
                       required
+                      autoComplete="email"
+                      placeholder="Your Email Address"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                     />
                   </div>
                 </div>
-                <div className="flex flex-wrap -mx-2 mb-2">
-                  <div className="w-full px-2">
-                    <label
-                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1"
-                      htmlFor="grid-select-event"
-                    >
-                      Select Event
-                    </label>
+                <div className="sm:col-span-2 mt-2">
+                  <label
+                    htmlFor="select-event"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
+                    Select Event
+                  </label>
+                  <div className="">
                     <Select
                       options={eventOptions}
                       onChange={handleEventSelect}
@@ -248,29 +258,31 @@ const EventsForm = () => {
                     />
                   </div>
                 </div>
-                <p className="mb-1 text-sm">
+                <p className="w-full mt-2 md:w-full">
                   If you are unable to attend the event but prefer to meet us,
                   drop us a message here.
                 </p>
-                <div className="flex flex-wrap -mx-2 mb-2">
-                  <div className="w-full px-2">
-                    <label
-                      className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-1"
-                      htmlFor="grid-message"
-                    >
-                      Message
-                    </label>
+                <div className="sm:col-span-2 mt-1">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-semibold leading-6 text-gray-900"
+                  >
+                    Message
+                  </label>
+                  <div className="">
                     <textarea
-                      className="resize border rounded-md w-full h-24 py-2 px-3 bg-gray-200 text-gray-700 border-gray-200 focus:outline-none focus:border-gray-500"
                       id="grid-message"
                       placeholder="Your message"
                       onChange={handleChange}
                       name="message"
                       required
+                      rows="4"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                     ></textarea>
                   </div>
                 </div>
-
+              </div>
+              <div className="mt-2">
                 {/* Submission status message */}
                 {submissionStatus === "success" && (
                   <p className="text-green-500 text-center">
@@ -282,20 +294,22 @@ const EventsForm = () => {
                     Submission failed. Please try again.
                   </p>
                 )}
+              </div>
 
+              <div className="mt-2">
                 <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white flex flex-col items-center font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                   type="submit"
+                  className="bg-blue-600 text-white rounded-sm py-2 w-full block"
                 >
-                  Book A Meeting
+                  Book A Meeting →
                 </button>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default EventsForm;
