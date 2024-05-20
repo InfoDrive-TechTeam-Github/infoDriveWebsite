@@ -19,7 +19,16 @@ import Avatar from "@mui/material/Avatar";
 import LeadForm from "components/leadForm";
 import { green, pink } from "@mui/material/colors";
 import dateFormat, { masks } from "dateformat";
+
+import ScheduleCallButton from '../../components/callSchedule/ScheduleCallButton';
+import ContactModal from '../../components/ContactModal';
+
 export default function SalesForceDevelopment({ data }) {
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   console.log("data0000__", data);
   const [page, setPage] = useState(1);
   const itemsPerPage = 6;
@@ -98,6 +107,9 @@ export default function SalesForceDevelopment({ data }) {
         ></iframe>
       </noscript>
       <Header />
+
+      <ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+
       <section className={` textAlignCenter blog upperCase mt-10 Poppins `}>
         <div className="container mx-auto  bg-white p-5 Poppins rounded-lg shadow-sm max-w-6xl">
           <h1 className="w100 font-extrabold text-4xl text-blue-950 Poppins ">
@@ -312,6 +324,7 @@ export default function SalesForceDevelopment({ data }) {
         </Button>
       </section>
       <LeadForm />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
       <Footer />
     </div>
   );

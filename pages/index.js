@@ -44,7 +44,18 @@ import LeadForm from "../components/leadForm";
 import AutoImageSlider from "components/AutoImageSlider";
 import { AppBlocking } from "@mui/icons-material";
 
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import ContactModal from '../components/ContactModal';
+
+{/* <ContactModal open={open} handleClose={handleClose} setOpen={setOpen} /> */}
+{/* <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} /> */}
+
 export default function Index() {
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   const [value, setValue] = React.useState("1");
   const [mouse, setMouse] = useState("none");
 
@@ -183,6 +194,9 @@ export default function Index() {
       </noscript>
       <Header />
       {/* <Slider /> */}
+
+      <ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+
       <AutoImageSlider />
 
       <section className={` sectionBox p5`}>
@@ -1083,6 +1097,7 @@ export default function Index() {
         </Carousel>
       </section>
       <LeadForm />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
       <Footer />
     </>
   );

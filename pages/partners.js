@@ -55,7 +55,14 @@ const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import ContactModal from '../components/ContactModal';
+
 export default function SalesForceDevelopment() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   const [isClient, setIsClient] = React.useState(false);
 
   React.useEffect(() => {
@@ -111,6 +118,9 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
+
+<ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+
       <div className="sliderBox marketingSlider">
         <img
           style={{ width: "100%" }}
@@ -401,6 +411,7 @@ export default function SalesForceDevelopment() {
         </Button>
       </section>
       <LeadForm />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
       <Footer />
     </div>
   );

@@ -28,7 +28,15 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Head from "next/head";
 
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import ContactModal from '../components/ContactModal';
+
 export default function About() {
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div>
       <Head>
@@ -81,6 +89,9 @@ export default function About() {
         ></iframe>
       </noscript>
       <Header />
+
+<ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+
       <div className="sliderBox">
         <img
           style={{ width: "100%" }}
@@ -1030,6 +1041,7 @@ export default function About() {
           </Grid>
         </Box>
       </section>
+            <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
 
       <Footer />
     </div>
