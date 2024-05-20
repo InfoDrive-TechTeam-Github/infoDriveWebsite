@@ -68,7 +68,16 @@ import {
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import JobDescription from 'components/JobDescription';
 import { useHeadStore } from "externalhooks/Zoostand";
+
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import ContactModal from '../components/ContactModal';
+
 export default function SalesForceDevelopment() {
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+  
   const head = useHeadStore();
   console.log("head", head);
   const [jobs, setJobs] = useState(null);
@@ -428,6 +437,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         ></iframe>
       </noscript>
       <Header />
+
+<ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+
       <div className="sliderBox">
         <img
           style={{ width: "100%" }}
@@ -1005,6 +1017,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <Button onClick={handleClickShowMore}>Close</Button>
         </DialogActions>
       </Dialog>
+
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
     </div>
   );
 }
