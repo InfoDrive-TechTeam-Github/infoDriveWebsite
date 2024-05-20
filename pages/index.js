@@ -47,14 +47,28 @@ import { AppBlocking } from "@mui/icons-material";
 import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
 import ContactModal from '../components/ContactModal';
 
-{/* <ContactModal open={open} handleClose={handleClose} setOpen={setOpen} /> */}
-{/* <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} /> */}
-
 export default function Index() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  React.useEffect(() => {
+    const updateScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= 600);
+    };
+
+    // Update screen size on mount
+    updateScreenSize();
+
+    // Update screen size on resize
+    window.addEventListener('resize', updateScreenSize);
+
+    // Clean up event listener on unmount
+    return () => window.removeEventListener('resize', updateScreenSize);
+  }, []);
+
 
   const [value, setValue] = React.useState("1");
   const [mouse, setMouse] = useState("none");
@@ -1097,7 +1111,7 @@ export default function Index() {
         </Carousel>
       </section>
       <LeadForm />
-      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} isSmallScreen={isSmallScreen} />
       <Footer />
     </>
   );

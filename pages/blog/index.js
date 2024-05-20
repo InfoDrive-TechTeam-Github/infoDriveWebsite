@@ -28,6 +28,23 @@ export default function SalesForceDevelopment({ data }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  React.useEffect(() => {
+    const updateScreenSize = () => {
+      setIsSmallScreen(window.innerWidth <= 600);
+    };
+
+    // Update screen size on mount
+    updateScreenSize();
+
+    // Update screen size on resize
+    window.addEventListener('resize', updateScreenSize);
+
+    // Clean up event listener on unmount
+    return () => window.removeEventListener('resize', updateScreenSize);
+  }, []);
+
 
   console.log("data0000__", data);
   const [page, setPage] = useState(1);
@@ -324,7 +341,7 @@ export default function SalesForceDevelopment({ data }) {
         </Button>
       </section>
       <LeadForm />
-      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} isSmallScreen={isSmallScreen} />
       <Footer />
     </div>
   );
