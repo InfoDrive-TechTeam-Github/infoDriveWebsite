@@ -29,7 +29,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import Head from "next/head";
 
 import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
-import ContactModal from '../components/ContactModal';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 export default function About() {
 
@@ -90,7 +90,7 @@ export default function About() {
       </noscript>
       <Header />
 
-<ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
 
       <div className="sliderBox">
         <img
@@ -1041,7 +1041,7 @@ export default function About() {
           </Grid>
         </Box>
       </section>
-            <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+            <ScheduleCallButton text="Schedule a Call" onClick={handleOpen}/>
 
       <Footer />
     </div>

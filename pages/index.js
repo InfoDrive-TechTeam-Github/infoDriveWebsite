@@ -45,10 +45,7 @@ import AutoImageSlider from "components/AutoImageSlider";
 import { AppBlocking } from "@mui/icons-material";
 
 import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
-import ContactModal from '../components/ContactModal';
-
-{/* <ContactModal open={open} handleClose={handleClose} setOpen={setOpen} /> */}
-{/* <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} /> */}
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 export default function Index() {
 
@@ -195,7 +192,7 @@ export default function Index() {
       <Header />
       {/* <Slider /> */}
 
-      <ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
 
       <AutoImageSlider />
 

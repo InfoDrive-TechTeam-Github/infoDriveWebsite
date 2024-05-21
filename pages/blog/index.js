@@ -21,7 +21,7 @@ import { green, pink } from "@mui/material/colors";
 import dateFormat, { masks } from "dateformat";
 
 import ScheduleCallButton from '../../components/callSchedule/ScheduleCallButton';
-import ContactModal from '../../components/ContactModal';
+import CallScheduleModal from '../../components/callSchedule/CallScheduleModal';
 
 export default function SalesForceDevelopment({ data }) {
 
@@ -108,7 +108,7 @@ export default function SalesForceDevelopment({ data }) {
       </noscript>
       <Header />
 
-      <ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
 
       <section className={` textAlignCenter blog upperCase mt-10 Poppins `}>
         <div className="container mx-auto  bg-white p-5 Poppins rounded-lg shadow-sm max-w-6xl">

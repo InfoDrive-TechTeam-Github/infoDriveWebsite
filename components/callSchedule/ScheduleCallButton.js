@@ -4,9 +4,11 @@ import styles from './ScheduleCallButton.module.css';
 
 const ScheduleCallButton = ({ text, onClick }) => {
   return (
-    <button className={styles.fab} onClick={onClick}>
-      {text}
-    </button>
+    <div>
+        <button className={styles.fab} onClick={onClick}>
+          {text}
+        </button>
+    </div>
   );
 };
 

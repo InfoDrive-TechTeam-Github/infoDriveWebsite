@@ -56,7 +56,7 @@ import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
-import ContactModal from '../components/ContactModal';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 export default function SalesForceDevelopment() {
   const [open, setOpen] = React.useState(false);
@@ -119,7 +119,7 @@ export default function SalesForceDevelopment() {
       </noscript>
       <Header />
 
-<ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
 
       <div className="sliderBox marketingSlider">
         <img
