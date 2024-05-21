@@ -70,31 +70,14 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { useHeadStore } from "externalhooks/Zoostand";
 
 import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
-import ContactModal from '../components/ContactModal';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 export default function SalesForceDevelopment() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  React.useEffect(() => {
-    const updateScreenSize = () => {
-      setIsSmallScreen(window.innerWidth <= 600);
-    };
-
-    // Update screen size on mount
-    updateScreenSize();
-
-    // Update screen size on resize
-    window.addEventListener('resize', updateScreenSize);
-
-    // Clean up event listener on unmount
-    return () => window.removeEventListener('resize', updateScreenSize);
-  }, []);
-
-  
   const head = useHeadStore();
   console.log("head", head);
   const [jobs, setJobs] = useState(null);
@@ -455,7 +438,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </noscript>
       <Header />
 
-<ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
 
       <div className="sliderBox">
         <img
@@ -1035,7 +1018,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </DialogActions>
       </Dialog>
 
-      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} isSmallScreen={isSmallScreen} />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
     </div>
   );
 }

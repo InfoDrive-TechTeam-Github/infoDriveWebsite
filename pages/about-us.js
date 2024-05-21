@@ -29,29 +29,13 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import Head from "next/head";
 
 import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
-import ContactModal from '../components/ContactModal';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 export default function About() {
 
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
-  React.useEffect(() => {
-    const updateScreenSize = () => {
-      setIsSmallScreen(window.innerWidth <= 600);
-    };
-
-    // Update screen size on mount
-    updateScreenSize();
-
-    // Update screen size on resize
-    window.addEventListener('resize', updateScreenSize);
-
-    // Clean up event listener on unmount
-    return () => window.removeEventListener('resize', updateScreenSize);
-  }, []);
 
   return (
     <div>
@@ -106,7 +90,7 @@ export default function About() {
       </noscript>
       <Header />
 
-<ContactModal open={open} handleClose={handleClose} setOpen={setOpen} />
+<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
 
       <div className="sliderBox">
         <img
@@ -1057,7 +1041,7 @@ export default function About() {
           </Grid>
         </Box>
       </section>
-            <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} isSmallScreen={isSmallScreen} />
+            <ScheduleCallButton text="Schedule a Call" onClick={handleOpen}/>
 
       <Footer />
     </div>
