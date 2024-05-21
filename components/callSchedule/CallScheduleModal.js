@@ -3,6 +3,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
+import { Height } from '@mui/icons-material';
 
 const CallScheduleModal = ({ open, handleClose, setOpen }) => {
     const [isLoading, setLoading] = useState(false);
@@ -72,7 +73,6 @@ const CallScheduleModal = ({ open, handleClose, setOpen }) => {
         transform: 'translate(-50%, -50%)',
         width: '90%',
         maxWidth: 450,
-        maxHeight: '90vh',
         overflowY: 'auto',
         bgcolor: 'background.paper',
         border: 'none',
@@ -83,9 +83,9 @@ const CallScheduleModal = ({ open, handleClose, setOpen }) => {
 
     return (
         <Modal open={open} onClose={handleClose}>
-            <Box sx={style}>
+            <Box sx={style} className="no-scrollbar">
                 <div className="flex justify-between items-center">
-                <h2 className="text-2xl font-bold mb-4">Request a call back</h2>
+                <h2 className="font-bold mb-4 text-lg md:text-2xl">Request a call back</h2>
                     <button onClick={handleClose} className="text-gray-700 hover:text-red-500 -mt-4">
                         <svg 
                             className="w-6 h-6" 
