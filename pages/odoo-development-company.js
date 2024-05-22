@@ -83,10 +83,6 @@ export default function SalesForceDevelopment() {
           property="og:image"
           content="https://c5cea5.n3cdn1.secureserver.net/wp-content/uploads/2020/09/INFORDRIVE-LOGO-FINAL-01-1-1-1-1.png"
         />
-        <meta
-          name="google-site-verification"
-          content="JcRwQCIELBAZJX2iIdAkVHip-fPEjV_icDXuaLBIXfE"
-        />
         <link rel="icon" href="/favicon.png" />
         <script
           dangerouslySetInnerHTML={{
