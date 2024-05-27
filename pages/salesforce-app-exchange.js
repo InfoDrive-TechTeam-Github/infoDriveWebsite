@@ -53,8 +53,13 @@ import {
 import { SiGoogletagmanager, SiLeetcode, SiTimescale } from "react-icons/si";
 import { AiOutlineHeart } from "react-icons/ai";
 import { motion } from "framer-motion";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 function SalesforceAppExchange() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <div className="relative">
       <Head>
@@ -87,6 +92,8 @@ function SalesforceAppExchange() {
         />
       </Head>
       <Header />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <motion.div
         className="sliderBox"
         initial={{ opacity: 0, scale: 0.5, left: "-100%" }}

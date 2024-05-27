@@ -33,7 +33,13 @@ import { FcCalculator } from "react-icons/fc";
 import { FcShipped } from "react-icons/fc";
 import { FcPieChart } from "react-icons/fc";
 import { FcRadarPlot } from "react-icons/fc";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
+
 export default function SalesForceDevelopment() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const [width, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : "50%"
   );
@@ -144,7 +150,8 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <section className="newsectionbox text-white relative  pb-0 w-full   ">
         <div className="container md:max-w-5xl  lg:max-w-7xl md:mx-auto h-full w-full p5   lg:px-8">
           <div className="space-y-5 flex md:flex-row flex-col items-center gap-5">

@@ -38,8 +38,14 @@ import axios from "axios";
 import Head from "next/head";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ScheduleCallButton from "../components/callSchedule/ScheduleCallButton";
+import CallScheduleModal from "../components/callSchedule/CallScheduleModal";
 
 export default function Contact() {
+
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   // const sendEmail = (e) => {
   //   e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
@@ -250,6 +256,8 @@ export default function Contact() {
         ></iframe>
       </noscript>
       <Header />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <section className={`sectionBox contactUs`}>
         <Typography
           className="widthInitial red"

@@ -34,9 +34,15 @@ import TextField from "@mui/material/TextField";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Stack from "@mui/material/Stack";
 import Head from "next/head";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 import LeadForm from "../components/leadForm";
 export default function SalesForceDevelopment() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <div>
       <Head>
@@ -76,6 +82,8 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <div className="sliderBox customerRelationshipManagement onlineSlider">
         <img
           style={{ width: "100%" }}

@@ -29,8 +29,13 @@ import Sale2 from "../public/Sale2.json";
 
 import SaleforceCient from "components/SaleforceCient";
 import dynamic from "next/dynamic";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 export default function SalesForceDevelopment() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const [width, setWidth] = React.useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
@@ -135,7 +140,8 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <section className="newsectionbox  text-white relative  ocean pb-0  ">
         <img
           src="./SandS.jpg"

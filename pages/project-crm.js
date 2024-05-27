@@ -40,8 +40,13 @@ import {
 const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 import crmanimation from "../components/crm.json";
 import dynamic from "next/dynamic";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 function crm() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   // const [inView, setInView] = React.useState(false);
   // const ref = React.useRef(null);
 
@@ -59,6 +64,8 @@ function crm() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <div className="sliderBox">
         <img
           style={{ width: "100%" }}

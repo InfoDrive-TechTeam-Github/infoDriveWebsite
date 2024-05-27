@@ -18,8 +18,13 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import EventsForm from "../components/eventsForm";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 export default function EventsComponent() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <div>
       <Head>
@@ -39,6 +44,8 @@ export default function EventsComponent() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
 
       <EventsForm />
 
