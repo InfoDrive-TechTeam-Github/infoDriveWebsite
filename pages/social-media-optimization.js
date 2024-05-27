@@ -36,7 +36,13 @@ import Stack from "@mui/material/Stack";
 import Head from "next/head";
 
 import LeadForm from "../components/leadForm";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
+
 export default function SalesForceDevelopment() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <div>
       <Head>
@@ -80,6 +86,8 @@ SMO Services in Singapore, Facebook Advertising Services in Bangalore, Facebook 
         ></iframe>
       </noscript>
       <Header />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+        <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <div className="sliderBox customerRelationshipManagement">
         <img
           style={{ width: "100%" }}

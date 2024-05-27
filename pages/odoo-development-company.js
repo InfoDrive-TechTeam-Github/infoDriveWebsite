@@ -54,7 +54,13 @@ import {
   FaStar,
   FaStarHalfAlt,
 } from "react-icons/fa";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
+
 export default function SalesForceDevelopment() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <div>
       <Head>
@@ -103,6 +109,8 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <div className="sliderBox marketingSlider">
         <img
           style={{ width: "100%" }}

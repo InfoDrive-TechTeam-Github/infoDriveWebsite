@@ -47,10 +47,15 @@ import Cloud from "../public/cloud.json";
 import SaleforceCient from "components/SaleforceCient";
 import CustomTimeline from "components/verticleTimeline/CustomTimeline";
 import dynamic from "next/dynamic";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 const DynamicLottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 export default function SalesForceDevelopment() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const [isClient, setIsClient] = React.useState(false);
 
   React.useEffect(() => {
@@ -189,7 +194,8 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <section className="newsectionbox   text-white relative  ocean pb-0 h-screen ">
         {isClient && (
           <DynamicLottie

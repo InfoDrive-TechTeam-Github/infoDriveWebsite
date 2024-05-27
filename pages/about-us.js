@@ -1041,7 +1041,7 @@ export default function About() {
           </Grid>
         </Box>
       </section>
-            <ScheduleCallButton text="Schedule a Call" onClick={handleOpen}/>
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen}/>
 
       <Footer />
     </div>

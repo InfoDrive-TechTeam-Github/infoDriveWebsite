@@ -35,7 +35,13 @@ import TextField from "@mui/material/TextField";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import Stack from "@mui/material/Stack";
 import LeadForm from "../components/leadForm";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
+
 export default function ServicesForStartUps() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <>
       <div>
@@ -95,6 +101,8 @@ export default function ServicesForStartUps() {
           ></iframe>
         </noscript>
         <Header />
+        <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+        <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
         <div className="sliderBox">
           <img
             style={{ width: "100%" }}

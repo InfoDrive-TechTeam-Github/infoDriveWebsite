@@ -55,8 +55,13 @@ import { FcConferenceCall } from "react-icons/fc";
 import { FcRefresh } from "react-icons/fc";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 export default function SalesForceDevelopment() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   const [count100, setCount100] = React.useState(1);
   const numberRef = React.useRef(null);
 
@@ -231,7 +236,8 @@ export default function SalesForceDevelopment() {
         ></iframe>
       </noscript>
       <Header />
-
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <section className="headSaleforce container max-w-7xl md:h-screen text-black relative md:p-5 md:min-h-screen p5">
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -17,16 +17,18 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 import Avatar from "@mui/material/Avatar";
-
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import FacebookIcon from "@mui/icons-material/Facebook";
-
 import InstagramIcon from "@mui/icons-material/Instagram";
-
 import Head from "next/head";
+import ScheduleCallButton from "../components/callSchedule/ScheduleCallButton";
+import CallScheduleModal from "../components/callSchedule/CallScheduleModal";
 
 import LeadForm from "../components/leadForm";
 export default function AndroidAppDevelopment() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <>
       <Head>
@@ -78,6 +80,10 @@ export default function AndroidAppDevelopment() {
         ></iframe>
       </noscript>
       <Header />
+
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
+
       <div className="sliderBox">
         <img
           style={{ width: "100%" }}

@@ -37,14 +37,21 @@ import {
 } from 'react-icons/bs';
 import { FaPlane } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import ScheduleCallButton from '../components/callSchedule/ScheduleCallButton';
+import CallScheduleModal from '../components/callSchedule/CallScheduleModal';
 
 function crm() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <>
       <Head>
         <link rel='icon' href='/favicon.png' />
       </Head>
       <Header />
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <div className='sliderBox'>
         <img
           style={{ width: '100%' }}
