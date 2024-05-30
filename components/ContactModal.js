@@ -27,13 +27,13 @@ import { ToastContainer, toast } from "react-toastify";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import { motion } from "framer-motion";
 import axios from "axios";
+
 const style = {
   position: "absolute",
-  top: "56%",
+  top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  //   width: 400,
-  width: "60vw",
+  width: { xs: "90vw", sm: "80vw", md: "60vw" },
   bgcolor: "#f3f4f6",
   border: "2px solid #000",
   boxShadow: 24,
@@ -54,7 +54,6 @@ function ContactModal({ open, handleClose, setOpen }) {
   });
 
   const handleChange = (e) => {
-    // setInputData({ ...inputData, [e.target.name]: e.target.value });
     setInputData((pre) => ({ ...pre, [e.target.name]: e.target.value }));
   };
 
@@ -111,11 +110,9 @@ function ContactModal({ open, handleClose, setOpen }) {
     <div>
       <Modal open={open} onClose={handleClose}>
         <Box sx={style}>
-          <div className="flex justify-between ">
-            <div className="left space-y-5 p-4 w-1/2">
-              <h2 className="font-bold text-2xl text-gray-500">
-                Speak To Sales
-              </h2>
+          <div className="flex flex-col md:flex-row justify-between">
+            <div className="left space-y-5 p-4 w-full md:w-1/2">
+              <h2 className="font-bold text-2xl text-gray-500">Speak To Sales</h2>
               <div>
                 <List>
                   <ListItem className="ce -ml-3">
@@ -150,7 +147,6 @@ function ContactModal({ open, handleClose, setOpen }) {
                       href="tel:+60123275811"
                       style={{
                         color: "#000",
-
                         display: "inline-block",
                         flexGrow: 0,
                         paddingRight: 0,
@@ -193,7 +189,7 @@ function ContactModal({ open, handleClose, setOpen }) {
                       href="mailto:contact@infodrive-solutions.com"
                     >
                       <ListItemText
-                        className=" whitespace-nowrap"
+                        className="whitespace-nowrap"
                         primary="contact@infodrive-solutions.com"
                       />
                     </ListItemButton>
@@ -263,41 +259,35 @@ function ContactModal({ open, handleClose, setOpen }) {
                 </List>
               </div>
             </div>
-            <div className="right shadow-md p-4 pl-8 rounded-md bg-white space-y-3 w-1/2">
-              <h2 className="font-bold text-2xl text-gray-500">
-                Request a call back
-              </h2>
+            <div className="right shadow-md p-4 pl-8 rounded-md bg-white space-y-3 w-full md:w-1/2">
+              <h2 className="font-bold text-2xl text-gray-500">Request a call back</h2>
               <input
-                placeholder="full name"
-                className="border border-gray-300 rounded-md p-2"
+                placeholder="Full Name"
+                className="border border-gray-300 rounded-md p-2 w-full"
                 name="full_name"
                 onChange={handleChange}
               />
               <input
                 placeholder="Email Address"
-                className="border border-gray-300 rounded-md p-2"
+                className="border border-gray-300 rounded-md p-2 w-full"
                 name="email_address"
                 onChange={handleChange}
               />
               <input
                 placeholder="Contact Number"
-                className="border border-gray-300 rounded-md p-2"
+                className="border border-gray-300 rounded-md p-2 w-full"
                 name="contact_number"
                 onChange={handleChange}
               />
               <textarea
-                placeholder="message"
-                className="border border-gray-300 rounded-md p-2"
+                placeholder="Message"
+                className="border border-gray-300 rounded-md p-2 w-full"
                 name="message"
                 cols={25}
                 onChange={handleChange}
               />
-              {/* <ReCAPTCHA
-    sitekey="6LcqzWEpAAAAALwrGPJ7XPd3Z9sMfIGci_V-SfOM"
-    onChange={onChange}
-  /> */}
               <button
-                className="p-2 text-white shadow-md bg-red-600 rounded-md"
+                className="p-2 text-white shadow-md bg-red-600 rounded-md w-full"
                 onClick={handleSubmit}
               >
                 Send Message
