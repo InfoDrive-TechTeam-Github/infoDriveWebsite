@@ -1,39 +1,6 @@
 import * as React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import utilStyles from "../styles/utils.module.css";
-import Box from "@mui/material/Box";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-//import Paper from '@mui/material/Paper';
-import Grid from "@mui/material/Grid";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
-import Tab from "@mui/material/Tab";
-import TabContext from "@mui/lab/TabContext";
-import TabList from "@mui/lab/TabList";
-import TabPanel from "@mui/lab/TabPanel";
-import Avatar from "@mui/material/Avatar";
-import FilterAltIcon from "@mui/icons-material/FilterAlt";
-import Link from "@mui/material/Link";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import Input from "@mui/material/Input";
-import InputLabel from "@mui/material/InputLabel";
-import InputAdornment from "@mui/material/InputAdornment";
-import FormControl from "@mui/material/FormControl";
-import TextField from "@mui/material/TextField";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import { useState } from "react";
 import axios from "axios";
 import Head from "next/head";
 import { ToastContainer, toast } from "react-toastify";
@@ -42,36 +9,15 @@ import ScheduleCallButton from "../components/callSchedule/ScheduleCallButton";
 import CallScheduleModal from "../components/callSchedule/CallScheduleModal";
 
 export default function Contact() {
-
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  // const sendEmail = (e) => {
-  //   e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
-
-  //   emailjs
-  //     .sendForm(
-  //       'service_mrxeobj',
-  //       'template_bwbn41u',
-  //       e.target,
-  //       '8A4PON3sVCyhdpw3U'
-  //     )
-  //     .then(
-  //       (result) => {
-  //         window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
-  const [isLoading, setLoading] = useState(false);
-  ///onsole.log('isLoading', isLoading);
-  const [inputData, setInputData] = useState({
-    full_name: "",
-    email_address: "",
-    contact_number: "",
+  const [isLoading, setLoading] = React.useState(false);
+  const [inputData, setInputData] = React.useState({
+    firstName: "",
+    lastName: "",
     industry: "",
+    email: "",
     message: "",
   });
 
@@ -80,94 +26,9 @@ export default function Contact() {
   };
 
   const handleSubmit = async (e) => {
+    console.log(inputData);
     e.preventDefault();
     setLoading(true);
-    // console.log('input____', inputData);
-    // const response = await axios.post(
-    //   `https://infodrive.orbiloggiin.com/GetEmailQuery`,
-    //   inputData
-    // );
-    // console.log(response.status, response);
-    // if (response.statusText == 'OK') {
-    //   toast.success(
-    //     'Thank you for your message. We will Response in 2 business days',
-    //     {
-    //       position: 'top-right',
-    //       autoClose: 2000,
-    //       hideProgressBar: false,
-    //       closeOnClick: true,
-    //       pauseOnHover: true,
-    //       draggable: true,
-    //       progress: undefined,
-    //     }
-    //   );
-    // } else {
-    //   toast.success('Please Try Again', {
-    //     position: 'top-right',
-    //     autoClose: 2000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: true,
-    //     draggable: true,
-    //     progress: undefined,
-    //   });
-    // }
-
-    // old
-    // try {
-    //   const res = await fetch(
-    //     "https://infodrive.orbiloggiin.com/GetEmailQuery",
-    //     {
-    //       method: "POST",
-    //       headers: {
-    //         "Content-Type": "application/json",
-    //       },
-    //       body: JSON.stringify(inputData),
-
-    //     }
-    //   );
-
-    //   const { error } = await res.json();
-
-    //   if (error) {
-    //     toast.warning("Please Try Again", {
-    //       position: "top-right",
-    //       autoClose: 2000,
-    //       hideProgressBar: false,
-    //       closeOnClick: true,
-    //       pauseOnHover: true,
-    //       draggable: true,
-    //       progress: undefined,
-    //     });
-    //     return;
-    //   } else {
-    //     setLoading(false);
-    //     toast.success(
-    //       "Thank you for your message. We will Response in 2 business days",
-    //       {
-    //         position: "top-right",
-    //         autoClose: 2000,
-    //         hideProgressBar: false,
-    //         closeOnClick: true,
-    //         pauseOnHover: true,
-    //         draggable: true,
-    //         progress: undefined,
-    //       }
-    //     );
-    //   }
-    // } catch (error) {
-    //   toast.error("Something went wrong", {
-    //     position: "top-right",
-    //     autoClose: 2000,
-    //     hideProgressBar: false,
-    //     closeOnClick: true,
-    //     pauseOnHover: true,
-    //     draggable: true,
-    //     progress: undefined,
-    //   });
-    //   console.log(error,"error")
-    // }
-
     try {
       const res = await axios.post(
         "https://mydryve.co/Api/sendMail",
@@ -207,6 +68,7 @@ export default function Contact() {
       });
       console.log(error, "error");
     }
+    setLoading(false);
   };
 
   return (
@@ -240,10 +102,10 @@ export default function Contact() {
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-PPS8R594');`,
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PPS8R594');`,
           }}
         />
       </Head>
@@ -256,220 +118,263 @@ export default function Contact() {
         ></iframe>
       </noscript>
       <Header />
-      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
-<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
-      <section className={`sectionBox contactUs`}>
-        <Typography
-          className="widthInitial red"
-          gutterBottom
-          variant="h2"
-          component="div"
-        >
-          Contact Us
-        </Typography>
-        <Typography
-          className="widthInitial"
-          gutterBottom
-          variant="h1"
-          component="div"
-        >
-          Need to get in touch with us? Either call one of the numbers of the
-          responding country or fill the form and we will get back to you
-        </Typography>
-      </section>
+      <div className="fixed bottom-4 right-4 z-50">
+        <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
+      </div>
+      <CallScheduleModal
+        open={open}
+        handleClose={handleClose}
+        setOpen={setOpen}
+      />
 
-      <section className={`sectionBox locationBox contactUsArea pt0`}>
-        <Box sx={{ flexGrow: 1 }} className="locationContent">
-          <Grid container spacing={0}>
-            <Grid item xs="8">
-              <form className="contact-form" onSubmit={handleSubmit}>
-                <Box
-                  sx={{
-                    "& > :not(style)": {
-                      ml: 6,
-                      mt: 7,
-                      maxWidth: "41%",
-                      width: "41%",
-                    },
-                  }}
-                >
-                  <TextField
-                    id="input-with-icon-textfield"
-                    label="Name"
-                    name="full_name"
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position="start"></InputAdornment>
-                      ),
-                    }}
-                    onChange={handleChange}
-                    variant="standard"
-                  />
-                  <TextField
-                    id="input-with-icon-textfield"
-                    label="Email"
-                    name="email_address"
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position="start"></InputAdornment>
-                      ),
-                    }}
-                    onChange={handleChange}
-                    variant="standard"
-                  />
+      <div
+        className="relative w-full"
+        style={{
+          height: "40rem",
+          backgroundImage: "url('/images/contactimg1.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-black  to-transparent"></div>
+        <div className="flex items-center h-full px-6 lg:px-8 relative z-10">
+          <div className="w-full md:w-1/2 p-5">
+            <div className="text-white text-center md:text-left">
+              <h1 className="font-bold text-4xl">Contact Us</h1>
+              <br />
+              <p className="font-bold text-1.5xl">
+                We're ready to turn your vision to value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                  <TextField
-                    id="input-with-icon-textfield"
-                    label="Phone"
-                    name="contact_number"
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position="start"></InputAdornment>
-                      ),
-                    }}
-                    onChange={handleChange}
-                    variant="standard"
-                  />
-                  <TextField
-                    id="input-with-icon-textfield"
-                    label="Industry"
-                    name="industry"
-                    InputProps={{
-                      startAdornment: (
-                        <InputAdornment position="start"></InputAdornment>
-                      ),
-                    }}
-                    onChange={handleChange}
-                    variant="standard"
-                  />
-                  <FormControl fullWidth sx={{ m: 1 }} variant="standard">
-                    <InputLabel htmlFor="standard-adornment-amount">
-                      Message
-                    </InputLabel>
-                    <Input
-                      id="standard-adornment-amount"
-                      startAdornment={""}
-                      placeholder="Message"
-                      name="message"
-                      onChange={handleChange}
-                    />
-                  </FormControl>
+      <div className="my-6">
+        <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-7xl px-6 lg:px-8 bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] font-[sans-serif]">
+          <div>
+            <h1 className="text-3xl font-extrabold">Let's Talk</h1>
+            <p className="text-sm text-gray-400 mt-3">
+              Have some idea or brand to develop and need help? Then reach out
+              we'd love to hear about your project and provide help.
+            </p>
+            <div className="mt-12">
+              <h2 className="text-lg font-extrabold">Email</h2>
+              <ul className="mt-3">
+                <li className="flex items-center">
+                  <div className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      fill="#007bff"
+                      viewBox="0 0 479.058 479.058"
+                    >
+                      <path
+                        d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
+                        data-original="#000000"
+                      />
+                    </svg>
+                  </div>
+                  <a
+                    target="_blank"
+                    href="mailto:contact@infodrive-solutions.com"
+                    className="text-[#007bff] text-sm ml-3"
+                  >
+                    <small className="block">Mail</small>
+                    <strong>contact@infodrive-solutions.com</strong>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="mt-12">
+              <h2 className="text-lg font-extrabold">Socials</h2>
+              <ul className="flex mt-3 space-x-4">
+                <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <a href="https://www.facebook.com/InfoDrivesolutions/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      fill="#007bff"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M6.812 13.937H9.33v9.312c0 .414.335.75.75.75l4.007.001a.75.75 0 0 0 .75-.75v-9.312h2.387a.75.75 0 0 0 .744-.657l.498-4a.75.75 0 0 0-.744-.843h-2.885c.113-2.471-.435-3.202 1.172-3.202 1.088-.13 2.804.421 2.804-.75V.909a.75.75 0 0 0-.648-.743A26.926 26.926 0 0 0 15.071 0c-7.01 0-5.567 7.772-5.74 8.437H6.812a.75.75 0 0 0-.75.75v4c0 .414.336.75.75.75zm.75-3.999h2.518a.75.75 0 0 0 .75-.75V6.037c0-2.883 1.545-4.536 4.24-4.536.878 0 1.686.043 2.242.087v2.149c-.402.205-3.976-.884-3.976 2.697v2.755c0 .414.336.75.75.75h2.786l-.312 2.5h-2.474a.75.75 0 0 0-.75.75V22.5h-2.505v-9.312a.75.75 0 0 0-.75-.75H7.562z"
+                        data-original="#000000"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li className="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                  <a href="https://www.instagram.com/infodrivesolutions/">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      fill="#007bff"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M12 9.3a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Zm0-1.8a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9Zm5.85-.225a1.125 1.125 0 1 1-2.25 0 1.125 1.125 0 0 1 2.25 0ZM12 4.8c-2.227 0-2.59.006-3.626.052-.706.034-1.18.128-1.618.299a2.59 2.59 0 0 0-.972.633 2.601 2.601 0 0 0-.634.972c-.17.44-.265.913-.298 1.618C4.805 9.367 4.8 9.714 4.8 12c0 2.227.006 2.59.052 3.626.034.705.128 1.18.298 1.617.153.392.333.674.632.972.303.303.585.484.972.633.445.172.918.267 1.62.3.993.047 1.34.052 3.626.052 2.227 0 2.59-.006 3.626-.052.704-.034 1.178-.128 1.617-.298.39-.152.674-.333.972-.632.304-.303.485-.585.634-.972.171-.444.266-.918.299-1.62.047-.993.052-1.34.052-3.626 0-2.227-.006-2.59-.052-3.626-.034-.704-.128-1.18-.299-1.618a2.619 2.619 0 0 0-.633-.972 2.595 2.595 0 0 0-.972-.634c-.44-.17-.914-.265-1.618-.298-.993-.047-1.34-.052-3.626-.052ZM12 3c2.445 0 2.75.009 3.71.054.958.045 1.61.195 2.185.419A4.388 4.388 0 0 1 19.49 4.51c.457.45.812.994 1.038 1.595.222.573.373 1.227.418 2.185.042.96.054 1.265.054 3.71 0 2.445-.009 2.75-.054 3.71-.045.958-.196 1.61-.419 2.185a4.395 4.395 0 0 1-1.037 1.595 4.44 4.44 0 0 1-1.595 1.038c-.573.222-1.227.373-2.185.418-.96.042-1.265.054-3.71.054-2.445 0-2.75-.009-3.71-.054-.958-.045-1.61-.196-2.185-.419A4.402 4.402 0 0 1 4.51 19.49a4.414 4.414 0 0 1-1.037-1.595c-.224-.573-.374-1.227-.419-2.185C3.012 14.75 3 14.445 3 12c0-2.445.009-2.75.054-3.71s.195-1.61.419-2.185A4.392 4.392 0 0 1 4.51 4.51c.45-.458.994-.812 1.595-1.037.574-.224 1.226-.374 2.185-.419C9.25 3.012 9.555 3 12 3Z"></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form className="ml-auo space-y-4" onSubmit={handleSubmit}>
+            <div className="grid grid-cols-2 gap-4">
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                value={inputData.firstName}
+                onChange={handleChange}
+                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+              />
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                value={inputData.lastName}
+                onChange={handleChange}
+                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+              />
+            </div>
+            <input
+              type="text"
+              name="industry"
+              placeholder="Industry"
+              value={inputData.industry}
+              onChange={handleChange}
+              className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={inputData.email}
+              onChange={handleChange}
+              className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="6"
+              value={inputData.message}
+              onChange={handleChange}
+              className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"
+            ></textarea>
+            <button
+              type="submit"
+              className="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full"
+              disabled={isLoading}
+            >
+              {isLoading ? "Sending..." : "Send"}
+            </button>
+          </form>
+        </div>
+      </div>
 
-                  <Stack spacing={2} direction="row">
-                    {isLoading ? (
-                      ""
-                    ) : (
-                      <Button
-                        type="submit"
-                        style={{ background: "#000" }}
-                        className="bgRed white"
-                        variant="contained"
-                      >
-                        Send Message
-                      </Button>
-                    )}
-                    {isLoading ? (
-                      <div className="btnLodrShw">
-                        <h4 style={{ color: "#000000" }}>
-                          Message Sending....
-                        </h4>
-                        <img
-                          style={{ width: 50, height: 50, marginTop: 15 }}
-                          src="loading.gif"
-                          alt="Loder"
-                          className="btnLdr"
-                        />
-                      </div>
-                    ) : (
-                      ""
-                    )}
-                    <br />
-                  </Stack>
-                  <br />
-                </Box>
-              </form>
-            </Grid>
+      <section className="mt-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-1xl font-semibold mb-2 text-gray-600">
+              OUR GLOBAL OFFICES
+            </h2>
+            <div className="mx-auto w-40">
+              <hr className="border-red-500 h-1 mb-4" />
+            </div>
+            <p className="text-4xl mb-3">
+              We bring global perspective to our local clients.
+            </p>
+            <span style={{ fontFamily: '"Source Sans Pro", sans-serif' }}>
+              With our presence in Asia Pacific, Europe, and America, we provide
+              exceptional services to our global clients.
+            </span>
+          </div>
 
-            <Grid item xs={4}>
-              <Grid item xs={12} className="contactUsB contactUsB1">
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                      InfoDrive Solutions Pte Ltd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Address: 135 MIDDLE RD, #02-21 BYLANDS BLDG,
-                      SINGAPORE 188975 <br />
-                      Phone:{" "}
-                      <a href="tel:+6592384299" style={{ color: "#fff" }}>
-                        +65-9238 4299
-                      </a>
-                      <br />
-                      Email:{" "}
-                      <a
-                        href="mailto: contact@infodrive-solutions.com"
-                        style={{ color: "#fff" }}
-                      >
-                        contact@infodrive-solutions.com
-                      </a>
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item xs={12} className="contactUsB contactUsB1">
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                      InfoDrive Solutions Sdn Bhd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen
-                      Sentral 2, 50470 Kuala Lumpur, Malaysia <br />
-                      Phone:{" "}
-                      <a href="tel:+60123275811" style={{ color: "#fff" }}>
-                        +60-1 2327 5811
-                      </a>
-                      <br />
-                      Email:{" "}
-                      <a
-                        href="mailto: contact@infodrive-solutions.com"
-                        style={{ color: "#fff" }}
-                      >
-                        contact@infodrive-solutions.com
-                      </a>
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-              <Grid item xs={12} className="contactUsB contactUsB1">
-                <Card>
-                  <CardContent>
-                    <Typography gutterBottom variant="h7" component="div">
-                      InfoDriven Solutions Pvt Ltd
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Address: #88, Borewell Road, opposite Whitefield Post
-                      Office, Whitefield, Bangalore – 560066
-                      <br />
-                      Phone:{" "}
-                      <a href="tel:+919606188081" style={{ color: "#fff" }}>
-                        +91-960 61880 81{" "}
-                      </a>
-                      <br />
-                      Email:{" "}
-                      <a
-                        href="mailto: contact@infodrive-solutions.com"
-                        style={{ color: "#fff" }}
-                      >
-                        contact@infodrive-solutions.com
-                      </a>
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </Grid>
-            </Grid>
-          </Grid>
-        </Box>
+          <div className="grid grid-cols-1 gap-y-12 gap-x-8 lg:grid-cols-3">
+  <div className="bg-white shadow-sm rounded-lg overflow-hidden">
+    <img
+      src="/singapore.jpg"
+      alt="InfoDrive Solutions Pte Ltd"
+      className="w-full h-48 object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-lg font-semibold text-gray-900">InfoDrive Solutions Pte Ltd</h3>
+      <p className="mt-2 text-gray-600">
+        <span className="font-semibold">Address:</span> 135 MIDDLE RD, #02-21 BYLANDS BLDG, SINGAPORE 188975 <br />
+        <span className="font-semibold">Phone:</span>{" "}
+        <a href="tel:+6592384299" className="text-blue-500">
+          +65-9238 4299
+        </a>
+        <br />
+        <span className="font-semibold">Email:</span>{" "}
+        <a href="mailto:contact@infodrive-solutions.com" className="text-blue-500">
+          contact@infodrive-solutions.com
+        </a>
+      </p>
+    </div>
+  </div>
+  <div className="bg-white shadow-sm rounded-lg overflow-hidden">
+    <img
+      src="/malaysia.jpg"
+      alt="InfoDrive Solutions Sdn Bhd"
+      className="w-full h-48 object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-lg font-semibold text-gray-900">InfoDrive Solutions Sdn Bhd</h3>
+      <p className="mt-2 text-gray-600">
+        <span className="font-semibold">Address:</span> 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br />
+        <span className="font-semibold">Phone:</span>{" "}
+        <a href="tel:+60123275811" className="text-blue-500">
+          +60-1 2327 5811
+        </a>
+        <br />
+        <span className="font-semibold">Email:</span>{" "}
+        <a href="mailto:contact@infodrive-solutions.com" className="text-blue-500">
+          contact@infodrive-solutions.com
+        </a>
+      </p>
+    </div>
+  </div>
+  <div className="bg-white shadow-sm rounded-lg overflow-hidden">
+    <img
+      src="/india.jpg"
+      alt="InfoDriven Solutions Pvt Ltd"
+      className="w-full h-48 object-cover"
+    />
+    <div className="p-6">
+      <h3 className="text-lg font-semibold text-gray-900">InfoDriven Solutions Pvt Ltd</h3>
+      <p className="mt-2 text-gray-600">
+        <span className="font-semibold">Address:</span> #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066 <br />
+        <span className="font-semibold">Phone:</span>{" "}
+        <a href="tel:+919606188081" className="text-blue-500">
+          +91-960 61880 81
+        </a>
+        <br />
+        <span className="font-semibold">Email:</span>{" "}
+        <a href="mailto:contact@infodrive-solutions.com" className="text-blue-500">
+          contact@infodrive-solutions.com
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+          <div className="mt-12 mb-10">
+            <iframe
+              src="https://www.google.com/maps/d/embed?mid=1cTVYYOspcQmhrz3CdrJYSzacFNh3jzY&ehbc=2E312F&noprof=1"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              title="Google Maps Embed"
+            ></iframe>
+          </div>
+        </div>
       </section>
       <Footer />
       <ToastContainer />
