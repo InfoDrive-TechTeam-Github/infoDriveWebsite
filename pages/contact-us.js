@@ -150,15 +150,17 @@ export default function Contact() {
         </div>
       </div>
 
-      <div className="my-6">
-        <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-7xl px-6 lg:px-8 bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333] font-[sans-serif]">
-          <div>
-            <h1 className="text-3xl font-extrabold">Let's Talk</h1>
-            <p className="text-sm text-gray-400 mt-3">
-              Have some idea or brand to develop and need help? Then reach out
-              we'd love to hear about your project and provide help.
+      <div className="my-6 flex flex-wrap">
+        <div className="grid sm:grid-cols-2 gap-16 md:mt-5 p-8 mx-auto max-w-7xl px-6 lg:px-8 opacity-70 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md text-[#333]">
+          <div className="md:mt-6">
+            <h1 className="text-base">SEND US A MESSAGE</h1>
+            <div className="w-40">
+              <hr className="border-red-500 h-1 mb-4" />
+            </div>
+            <p className="text-1xl md:text-3xl text-black font-bold mt-3">
+              Please fill in the form and we will get back to you soon.
             </p>
-            <div className="mt-12">
+            {/* <div className="mt-12">
               <h2 className="text-lg font-extrabold">Email</h2>
               <ul className="mt-3">
                 <li className="flex items-center">
@@ -220,25 +222,30 @@ export default function Contact() {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
-          <form className="ml-auo space-y-4" onSubmit={handleSubmit}>
-            <div className="grid grid-cols-2 gap-4">
+          <form
+            className="-mt-8 md:mt-0 space-y-4 w-auto border rounded-lg bg-white p-4"
+            onSubmit={handleSubmit}
+          >
+            <div className="grid md:grid-cols-2 gap-4">
               <input
                 type="text"
                 name="firstName"
-                placeholder="First Name"
+                placeholder="First Name*"
                 value={inputData.firstName}
                 onChange={handleChange}
-                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+                className="w-full py-4 px-4 border text-base outline-[#007bff]"
+                required
               />
               <input
                 type="text"
                 name="lastName"
-                placeholder="Last Name"
+                placeholder="Last Name*"
                 value={inputData.lastName}
                 onChange={handleChange}
-                className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+                className="w-full py-4 px-4 border text-base outline-[#007bff]"
+                required
               />
             </div>
             <input
@@ -247,27 +254,28 @@ export default function Contact() {
               placeholder="Industry"
               value={inputData.industry}
               onChange={handleChange}
-              className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+              className="w-full py-4 px-4 border text-base outline-[#007bff]"
             />
             <input
               type="email"
               name="email"
-              placeholder="Email"
+              placeholder="Email*"
               value={inputData.email}
               onChange={handleChange}
-              className="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]"
+              className="w-full py-4 px-4 border text-base outline-[#007bff"
+              required
             />
             <textarea
               name="message"
-              placeholder="Message"
-              rows="6"
+              placeholder="Please send a message to get the conversation started"
+              rows="4"
               value={inputData.message}
               onChange={handleChange}
-              className="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"
+              className="w-full py-4 px-4 border text-base outline-[#007bff]"
             ></textarea>
             <button
               type="submit"
-              className="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full"
+              className="text-white bg-[#ff0000] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full"
               disabled={isLoading}
             >
               {isLoading ? "Sending..." : "Send"}
@@ -279,89 +287,109 @@ export default function Contact() {
       <section className="mt-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-1xl font-semibold mb-2 text-gray-600">
+            <h2 className="text-sm md:text-xl font-semibold mb-2 text-gray-600">
               OUR GLOBAL OFFICES
             </h2>
-            <div className="mx-auto w-40">
+            <div className="mx-auto w-36 md:w-52">
               <hr className="border-red-500 h-1 mb-4" />
             </div>
-            <p className="text-4xl mb-3">
+            <p className="text-1xl font-bold md:text-4xl mb-3">
               We bring global perspective to our local clients.
             </p>
-            <span style={{ fontFamily: '"Source Sans Pro", sans-serif' }}>
-              With our presence in Asia Pacific, Europe, and America, we provide
+            <span className="text-xs md:text-base">
+              With our presence in Singapore, Malaysia, and India, we provide
               exceptional services to our global clients.
             </span>
           </div>
 
           <div className="grid grid-cols-1 gap-y-12 gap-x-8 lg:grid-cols-3">
-  <div className="bg-white shadow-sm rounded-lg overflow-hidden">
-    <img
-      src="/singapore.jpg"
-      alt="InfoDrive Solutions Pte Ltd"
-      className="w-full h-48 object-cover"
-    />
-    <div className="p-6">
-      <h3 className="text-lg font-semibold text-gray-900">InfoDrive Solutions Pte Ltd</h3>
-      <p className="mt-2 text-gray-600">
-        <span className="font-semibold">Address:</span> 135 MIDDLE RD, #02-21 BYLANDS BLDG, SINGAPORE 188975 <br />
-        <span className="font-semibold">Phone:</span>{" "}
-        <a href="tel:+6592384299" className="text-blue-500">
-          +65-9238 4299
-        </a>
-        <br />
-        <span className="font-semibold">Email:</span>{" "}
-        <a href="mailto:contact@infodrive-solutions.com" className="text-blue-500">
-          contact@infodrive-solutions.com
-        </a>
-      </p>
-    </div>
-  </div>
-  <div className="bg-white shadow-sm rounded-lg overflow-hidden">
-    <img
-      src="/malaysia.jpg"
-      alt="InfoDrive Solutions Sdn Bhd"
-      className="w-full h-48 object-cover"
-    />
-    <div className="p-6">
-      <h3 className="text-lg font-semibold text-gray-900">InfoDrive Solutions Sdn Bhd</h3>
-      <p className="mt-2 text-gray-600">
-        <span className="font-semibold">Address:</span> 32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia <br />
-        <span className="font-semibold">Phone:</span>{" "}
-        <a href="tel:+60123275811" className="text-blue-500">
-          +60-1 2327 5811
-        </a>
-        <br />
-        <span className="font-semibold">Email:</span>{" "}
-        <a href="mailto:contact@infodrive-solutions.com" className="text-blue-500">
-          contact@infodrive-solutions.com
-        </a>
-      </p>
-    </div>
-  </div>
-  <div className="bg-white shadow-sm rounded-lg overflow-hidden">
-    <img
-      src="/india.jpg"
-      alt="InfoDriven Solutions Pvt Ltd"
-      className="w-full h-48 object-cover"
-    />
-    <div className="p-6">
-      <h3 className="text-lg font-semibold text-gray-900">InfoDriven Solutions Pvt Ltd</h3>
-      <p className="mt-2 text-gray-600">
-        <span className="font-semibold">Address:</span> #88, Borewell Road, opposite Whitefield Post Office, Whitefield, Bangalore – 560066 <br />
-        <span className="font-semibold">Phone:</span>{" "}
-        <a href="tel:+919606188081" className="text-blue-500">
-          +91-960 61880 81
-        </a>
-        <br />
-        <span className="font-semibold">Email:</span>{" "}
-        <a href="mailto:contact@infodrive-solutions.com" className="text-blue-500">
-          contact@infodrive-solutions.com
-        </a>
-      </p>
-    </div>
-  </div>
-</div>
+            <div className="bg-white shadow-sm rounded-lg overflow-hidden">
+              <img
+                src="/singapore.jpg"
+                alt="InfoDrive Solutions Pte Ltd"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  InfoDrive Solutions Pte Ltd
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-semibold">Address:</span> 135 MIDDLE RD,
+                  #02-21 BYLANDS BLDG, SINGAPORE 188975 <br />
+                  <span className="font-semibold">Phone:</span>{" "}
+                  <a href="tel:+6592384299" className="text-blue-500">
+                    +65-9238 4299
+                  </a>
+                  <br />
+                  <span className="font-semibold">Email:</span>{" "}
+                  <a
+                    href="mailto:contact@infodrive-solutions.com"
+                    className="text-blue-500"
+                  >
+                    contact@infodrive-solutions.com
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="bg-white shadow-sm rounded-lg overflow-hidden">
+              <img
+                src="/malaysia.jpg"
+                alt="InfoDrive Solutions Sdn Bhd"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  InfoDrive Solutions Sdn Bhd
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-semibold">Address:</span> 32-07 Level
+                  32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur,
+                  Malaysia <br />
+                  <span className="font-semibold">Phone:</span>{" "}
+                  <a href="tel:+60123275811" className="text-blue-500">
+                    +60-1 2327 5811
+                  </a>
+                  <br />
+                  <span className="font-semibold">Email:</span>{" "}
+                  <a
+                    href="mailto:contact@infodrive-solutions.com"
+                    className="text-blue-500"
+                  >
+                    contact@infodrive-solutions.com
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div className="bg-white shadow-sm rounded-lg overflow-hidden">
+              <img
+                src="/india.jpg"
+                alt="InfoDriven Solutions Pvt Ltd"
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  InfoDriven Solutions Pvt Ltd
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  <span className="font-semibold">Address:</span> #88, Borewell
+                  Road, opposite Whitefield Post Office, Whitefield, Bangalore –
+                  560066 <br />
+                  <span className="font-semibold">Phone:</span>{" "}
+                  <a href="tel:+919606188081" className="text-blue-500">
+                    +91-960 61880 81
+                  </a>
+                  <br />
+                  <span className="font-semibold">Email:</span>{" "}
+                  <a
+                    href="mailto:contact@infodrive-solutions.com"
+                    className="text-blue-500"
+                  >
+                    contact@infodrive-solutions.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
 
           <div className="mt-12 mb-10">
             <iframe
