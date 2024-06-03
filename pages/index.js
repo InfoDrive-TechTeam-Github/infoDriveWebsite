@@ -52,18 +52,9 @@ export default function Index() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-
-  const [value, setValue] = React.useState("1");
   const [mouse, setMouse] = useState("none");
-
-  const [inputData, setInputData] = useState({
-    full_name: "",
-    email_address: "",
-    contact_number: "",
-    industry: "",
-    message: "",
-  });
   const [show, setShow] = useState(true);
+
   const variants = {
     open: { opacity: 1, scale: 1 },
     closed: { opacity: 0, scale: 0.5 },
@@ -75,10 +66,6 @@ export default function Index() {
       y: 20,
     },
     closed: { opacity: 1, y: 0 },
-  };
-
-  const handleChange = (e) => {
-    setInputData({ ...inputData, [e.target.name]: e.target.value });
   };
 
   var items = [
@@ -115,6 +102,7 @@ export default function Index() {
     },
   ];
   console.log("items", items);
+
   return (
     <>
       <Head>
@@ -662,8 +650,7 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt="Software Development Company in
-          Singapore"
+                  alt="Software Development Company in Singapore"
                   src="images/profitable-solutions.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -689,8 +676,7 @@ export default function Index() {
             <Grid item xs={4}>
               <Card sx={{ maxWidth: 345 }}>
                 <Avatar
-                  alt="Software Development Company in
- Malaysia"
+                  alt="Software Development Company in Malaysia"
                   src="images/clinet-satisfaction.png"
                   sx={{ width: 65, height: 65, marginLeft: 2 }}
                 />
@@ -798,8 +784,7 @@ export default function Index() {
             <Grid item xs={7}>
               <Card>
                 <img
-                  alt="Digital Transformation Solutions Company in
-          Singapore"
+                  alt="Digital Transformation Solutions Company in Singapore"
                   src="images/pexels-ketut-subiyanto-4350210.jpg"
                 />
               </Card>
@@ -869,7 +854,7 @@ export default function Index() {
         </Box>
       </section>
 
-      <section className={`sectionBox locationBox   testmonial p5`}>
+      <section className={`sectionBox locationBox  testmonial p5`}>
         <Typography gutterBottom variant="h2" component="div">
           What do clients say about us?
         </Typography>
@@ -897,8 +882,7 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt="Digital Transformation Solutions Company in
- Malaysia"
+                      alt="Digital Transformation Solutions Company in Malaysia"
                       src="images/user-icon.jpeg"
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />
@@ -943,8 +927,7 @@ export default function Index() {
                 <Grid item xs={6}>
                   <Card sx={{ maxWidth: 345 }}>
                     <Avatar
-                      alt="Digital Transformation Solutions Company in
-          India"
+                      alt="Digital Transformation Solutions Company in India"
                       src="images/user-icon.jpeg"
                       sx={{ width: 65, height: 65, marginLeft: 2 }}
                     />

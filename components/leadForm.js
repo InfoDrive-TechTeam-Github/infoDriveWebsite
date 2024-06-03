@@ -34,12 +34,11 @@ import { Paper } from "@mui/material";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import StarIcon from "@mui/icons-material/Star";
-//import ImgGet from "./../public/images/loder.gif";
-
 import { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 export default function leadForm() {
   const [value, setValue] = React.useState("1");
   const [isLoading, setLoading] = useState(false);
@@ -191,7 +190,13 @@ export default function leadForm() {
 
                   <Stack spacing={2} direction="row">
                     {isLoading ? (
-                      ""
+                      <Button
+                      type="submit"
+                      className="bgRed"
+                      variant="contained"
+                    >
+                      Message Sending....
+                    </Button>
                     ) : (
                       <Button
                         type="submit"
