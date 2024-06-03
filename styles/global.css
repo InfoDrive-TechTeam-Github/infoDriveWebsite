@@ -414,6 +414,9 @@ img {
 .sectionBox {
   background: #fff;
   padding: 97px 97px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 60px
 }
 .sectionBox .MuiTypography-h3 {
   font-size: 16px;
@@ -568,32 +571,6 @@ img {
   background: url("images/salesforce-8.jpg");
   background-size: contain;
   width: 100vw;
-}
-.polygon {
-  /* -webkit-clip-path: polygon(
-    50% 0%,
-    80% 10%,
-    100% 35%,
-    100% 70%,
-    80% 90%,
-    50% 100%,
-    20% 90%,
-    0% 70%,
-    0% 35%,
-    20% 10%
-  );
-  clip-path: polygon(
-    50% 0%,
-    80% 10%,
-    100% 35%,
-    100% 70%,
-    80% 90%,
-    50% 100%,
-    20% 90%,
-    0% 70%,
-    0% 35%,
-    20% 10%
-  ); */
 }
 .wave {
   background: url("images/wave.jpeg");
@@ -841,7 +818,7 @@ img {
   font-family: Poppins;
 }
 .locationBox {
-  margin-top: 80px;
+  margin-top: 140px;
 }
 .locationContent {
   background: url("images/pexels-timo-volz-1842332.jpg");
@@ -1835,11 +1812,6 @@ img.btnLdr {
   }
   .logoMobile {
     display: block !important;
-  }
-  .sectionBox {
-    padding: 15px 0px;
-    margin-left: 0;
-    margin-right: 0;
   }
   .sectionBox .MuiTypography-h1 {
     width: initial;
