@@ -677,9 +677,9 @@ export default function About() {
               <Card>
                 <CardMedia
                   component="img"
-                  className="h-[260px] boxshadow rounded-lg"
+                  className="h-[290px] boxshadow rounded-lg"
                   image="images/team-photos/pradeep.png"
-                  alt="we are helping many start-ups"
+                  alt="We are helping many start-ups"
                 />
                 <CardContent>
                   <Typography
@@ -718,7 +718,7 @@ export default function About() {
               <Card>
                 <CardMedia
                   component="img"
-                  className="h-[260px] boxshadow rounded-lg"
+                  className="h-[290px] boxshadow rounded-lg"
                   image="images/team-photos/kapil.png"
                   alt="InfoDrive Solutions is a leading IT solution provider"
                 />
@@ -756,37 +756,38 @@ export default function About() {
       <section className={`sectionBox ourCoreTeam ourCoreTeamOther pt0`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
-            <Grid
+
+          <Grid
               item
               xs={3}
               className="rightOurCoreTeam"
-              style={{ padding: "10px" }}
+              style={{ padding: "30px" }}
             >
               <Card>
                 <CardMedia
                   component="img"
-                  className="h-[260px] boxshadow rounded-lg"
+                  className="h-[290px] boxshadow rounded-lg"
                   image="images/team-photos/shashank.png"
                   alt="IT Solutions Company in Singapore"
                 />
                 <CardContent>
                   <Typography
-                    className="widthInitial fs20"
+                    className="widthInitial"
                     gutterBottom
                     variant="h3"
                     component="div"
                   >
                     <span>Shashank Jain</span>
                     <a
-                      target="_blank"
                       className="red"
+                      target="_blank"
                       href="https://www.linkedin.com/in/shashank-jain-%E2%98%81-00913550/"
                     >
                       <LinkedInIcon />
                     </a>
                   </Typography>
                   <Typography
-                    className="widthInitial fs18"
+                    className="widthInitial"
                     gutterBottom
                     variant="h4"
                     component="div"
@@ -801,33 +802,33 @@ export default function About() {
               item
               xs={3}
               className="rightOurCoreTeam"
-              style={{ padding: "10px" }}
+              style={{ padding: "30px" }}
             >
               <Card>
                 <CardMedia
                   component="img"
-                  className="h-[260px] boxshadow rounded-lg"
+                  className="h-[290px] boxshadow rounded-lg"
                   image="images/team-photos/bharani.png"
                   alt="IT Solutions Company in Kuala Lumpur"
                 />
                 <CardContent>
                   <Typography
-                    className="widthInitial fs20"
+                    className="widthInitial"
                     gutterBottom
                     variant="h3"
                     component="div"
                   >
                     <span>Bharani Kumar</span>
                     <a
+                      className="red"
                       target="_blank"
                       href="https://www.linkedin.com/in/bharani-kumar-8b929641/"
-                      className="red"
                     >
                       <LinkedInIcon />
                     </a>
                   </Typography>
                   <Typography
-                    className="widthInitial fs18"
+                    className="widthInitial"
                     gutterBottom
                     variant="h4"
                     component="div"
@@ -838,37 +839,38 @@ export default function About() {
               </Card>
             </Grid>
 
+
             <Grid
               item
               xs={3}
               className="rightOurCoreTeam"
-              style={{ padding: "15px" }}
+              style={{ padding: "30px" }}
             >
               <Card>
                 <CardMedia
                   component="img"
-                  className="h-[260px] boxshadow rounded-lg"
+                  className="h-[290px] boxshadow rounded-lg"
                   image="images/team-photos/maria.png"
                   alt="InfoDrive Solutions"
                 />
                 <CardContent>
                   <Typography
-                    className="widthInitial fs20"
+                    className="widthInitial"
                     gutterBottom
                     variant="h3"
                     component="div"
                   >
                     <span>Maria Aileen</span>
                     <a
+                      className="red"
                       target="_blank"
                       href="https://www.linkedin.com/in/maria-aileen-abendanio-b6802518/"
-                      className="red"
                     >
                       <LinkedInIcon />
                     </a>
                   </Typography>
                   <Typography
-                    className="widthInitial fs18"
+                    className="widthInitial"
                     gutterBottom
                     variant="h4"
                     component="div"
@@ -879,16 +881,17 @@ export default function About() {
               </Card>
             </Grid>
 
+
             <Grid
               item
               xs={3}
               className="rightOurCoreTeam"
-              style={{ padding: "15px" }}
+              style={{ padding: "30px" }}
             >
               <Card>
                 <CardMedia
                   component="img"
-                  className="h-[260px] boxshadow rounded-lg"
+                  className="h-[290px] boxshadow rounded-lg"
                   image="images/team-photos/Sudhir-2.JPG"
                   alt="IT Solutions Company in  India"
                 />
@@ -909,7 +912,7 @@ export default function About() {
                     </a>
                   </Typography>
                   <Typography
-                    className="widthInitial fs18"
+                    className="widthInitial"
                     gutterBottom
                     variant="h4"
                     component="div"
@@ -920,87 +923,6 @@ export default function About() {
               </Card>
             </Grid>
 
-            {/* <Grid
-              item
-              xs={2}
-              className='rightOurCoreTeam'
-              style={{ padding: '15px' }}
-            >
-              <Card>
-                <CardMedia
-                  component='img'
-                  height='240'
-                  image='images/team-photos/kyna.png'
-                    alt='IT Solutions Company in Singapore, Malaysia, and India |
-          InfoDrive Solutions'
-                />
-                <CardContent>
-                  <Typography
-                    className='widthInitial fs20'
-                    gutterBottom
-                    variant='h3'
-                    component='div'
-                  >
-                    <span>Kyna Lim</span>
-                    <a
-                      href='https://www.linkedin.com/in/lxmyitian/'
-                      className='red'
-                    >
-                      <LinkedInIcon />
-                    </a>
-                  </Typography>
-                  <Typography
-                    className='widthInitial fs18'
-                    gutterBottom
-                    variant='h4'
-                    component='div'
-                  >
-                    Senior Sales Executive | APAC
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid> */}
-
-            {/* <Grid
-              item
-              xs={2}
-              className='rightOurCoreTeam'
-              style={{ padding: '15px' }}
-            >
-              <Card>
-                <CardMedia
-                  component='img'
-                  className='h-[260px] boxshadow rounded-lg'
-                  image='images/team-photos/dev.png'
-                  alt='IT Solutions Company in Malaysia'
-                />
-                <CardContent>
-                  <Typography
-                    className='widthInitial fs20'
-                    gutterBottom
-                    variant='h3'
-                    component='div'
-                  >
-                    <span>Devraj Singh</span>
-                    <a
-                      href='https://www.linkedin.com/in/devrajsinghrawat/'
-                      className='red'
-                      target='_blank'
-                    >
-                      <LinkedInIcon />
-                    </a>
-                  </Typography>
-                  <Typography
-                    className='widthInitial fs18'
-                    gutterBottom
-                    variant='h4'
-                    component='div'
-                  >
-                    Blockchain Lead at InfoDrive Solutions
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid> */}
           </Grid>
         </Box>
       </section>

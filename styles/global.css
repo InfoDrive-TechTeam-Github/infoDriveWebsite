@@ -413,7 +413,7 @@ img {
 /* sectionbox */
 .sectionBox {
   background: #fff;
-  padding: 97px 97px;
+  padding: 97px;
 }
 .sectionBox .MuiTypography-h3 {
   font-size: 16px;
@@ -994,8 +994,7 @@ img {
   margin-right: 97px;
   padding-left: 0;
   padding-right: 0;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
   position: relative;
 }
 .companiesBox::before {
@@ -1160,7 +1159,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 5);
 }
 .contactUsArea .contactUsB1 {
   background: url("images/pexels-timo-volz-1842332.jpg");
@@ -1837,7 +1836,7 @@ img.btnLdr {
     display: block !important;
   }
   .sectionBox {
-    padding: 15px 0px;
+    padding: 15px 10px 0px 10px;
     margin-left: 0;
     margin-right: 0;
   }
@@ -1981,6 +1980,7 @@ img.btnLdr {
   }
   .companiesBox {
     margin-top: 0px;
+    margin-bottom: 0px;
   }
   .companiesBox div {
     padding-left: 0px;
@@ -2653,5 +2653,11 @@ img.btnLdr {
 @media (max-width: 600px) {
   .blob-scene {
     background: white;
+  }
+}
+
+@media (min-width: 1700px) {
+  .locationBox {
+    margin-top: 250px;
   }
 }
