@@ -150,7 +150,7 @@ export default function About() {
         </Box>
       </div>
 
-      <section className={`sectionBox`}>
+      <section className={`sectionBox`} >
         <Typography gutterBottom variant="h3" component="div">
           ABOUT US
         </Typography>
