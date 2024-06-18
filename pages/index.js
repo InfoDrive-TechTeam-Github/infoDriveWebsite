@@ -434,7 +434,7 @@ export default function Index() {
           </motion.div>
         </motion.article>
 
-        {/**container grid  development*/}
+        {/**container grid development*/}
         <motion.article
           animate={!show ? "open" : "closed"}
           variants={variants}
