@@ -191,12 +191,12 @@ export default function leadForm() {
                   <Stack spacing={2} direction="row">
                     {isLoading ? (
                       <Button
-                      type="submit"
-                      className="bgRed"
-                      variant="contained"
-                    >
-                      Message Sending....
-                    </Button>
+                        type="submit"
+                        className="bgRed"
+                        variant="contained"
+                      >
+                        Message Sending....
+                      </Button>
                     ) : (
                       <Button
                         type="submit"
@@ -239,7 +239,7 @@ export default function leadForm() {
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       Address: 135 MIDDLE RD, #02-21 BYLANDS BLDG,
-                      SINGAPORE 188975
+                      SINGAPORE - 188975
                       <br />
                       Phone:{" "}
                       <a href="tel:+6592384299" style={{ color: "#fff" }}>
@@ -268,8 +268,8 @@ export default function leadForm() {
                       InfoDrive Solutions Sdn Bhd
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen
-                      Sentral 2, 50470 Kuala Lumpur, Malaysia <br />
+                      Address: Lot 10-03A, 10th Floor, Tower 1, Faber Towers, Jalan Desa Bahagia,
+                      Taman Desa, Kuala Lumpur, Malaysia - 58100 <br />
                       Phone:{" "}
                       <a href="tel:+60123275811" style={{ color: "#fff" }}>
                         +60-1 2327 5811
@@ -295,7 +295,7 @@ export default function leadForm() {
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       Address: #88, Borewell Road, opposite Whitefield Post
-                      Office, Whitefield, Bangalore – 560066
+                      Office, Whitefield, Bangalore - 560066
                       <br />
                       Phone:{" "}
                       <a href="tel:+919606188081" style={{ color: "#fff" }}>

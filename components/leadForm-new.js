@@ -116,7 +116,7 @@ export default function LeadForm() {
               },
               {
                 title: "InfoDrive Solutions Sdn Bhd",
-                address: "32-07 Level 32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur, Malaysia",
+                address: "Lot 10-03A, 10th Floor, Tower 1, Faber Towers, Jalan Desa Bahagia, Taman Desa, Kuala Lumpur, Malaysia - 58100",
                 phone: "+60-1 2327 5811",
                 email: "contact@infodrive-solutions.com",
               },

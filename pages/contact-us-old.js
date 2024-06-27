@@ -257,7 +257,7 @@ export default function Contact() {
       </noscript>
       <Header />
       <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
-<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
       <section className={`sectionBox contactUs`}>
         <Typography
           className="widthInitial red"
@@ -423,8 +423,9 @@ export default function Contact() {
                       InfoDrive Solutions Sdn Bhd
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                      Address: 32-07 Level 32, Q Sentral, 2A, Jalan Stesen
-                      Sentral 2, 50470 Kuala Lumpur, Malaysia <br />
+                      Address: Lot 10-03A, 10th Floor, Tower 1,
+                      Faber Towers, Jalan Desa Bahagia, Taman Desa,
+                      Kuala Lumpur, Malaysia - 58100 <br />
                       Phone:{" "}
                       <a href="tel:+60123275811" style={{ color: "#fff" }}>
                         +60-1 2327 5811

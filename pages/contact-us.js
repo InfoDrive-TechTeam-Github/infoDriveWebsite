@@ -315,7 +315,7 @@ export default function Contact() {
                 </h3>
                 <p className="mt-2 text-gray-600">
                   <span className="font-semibold">Address:</span> 135 MIDDLE RD,
-                  #02-21 BYLANDS BLDG, SINGAPORE 188975 <br />
+                  #02-21 BYLANDS BLDG, SINGAPORE - 188975 <br />
                   <span className="font-semibold">Phone:</span>{" "}
                   <a href="tel:+6592384299" className="text-blue-500">
                     +65-9238 4299
@@ -342,9 +342,10 @@ export default function Contact() {
                   InfoDrive Solutions Sdn Bhd
                 </h3>
                 <p className="mt-2 text-gray-600">
-                  <span className="font-semibold">Address:</span> 32-07 Level
-                  32, Q Sentral, 2A, Jalan Stesen Sentral 2, 50470 Kuala Lumpur,
-                  Malaysia <br />
+                  <span className="font-semibold">Address:</span> Lot 10-03A, 10th Floor, Tower 1,
+                  Faber Towers, Jalan Desa Bahagia, Taman Desa,
+                  Kuala Lumpur, Malaysia - 58100
+                  <br />
                   <span className="font-semibold">Phone:</span>{" "}
                   <a href="tel:+60123275811" className="text-blue-500">
                     +60-1 2327 5811
@@ -372,7 +373,7 @@ export default function Contact() {
                 </h3>
                 <p className="mt-2 text-gray-600">
                   <span className="font-semibold">Address:</span> #88, Borewell
-                  Road, opposite Whitefield Post Office, Whitefield, Bangalore –
+                  Road, Opposite Whitefield Post Office, Whitefield, Bangalore -
                   560066 <br />
                   <span className="font-semibold">Phone:</span>{" "}
                   <a href="tel:+919606188081" className="text-blue-500">
