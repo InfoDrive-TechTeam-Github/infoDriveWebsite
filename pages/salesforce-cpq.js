@@ -111,12 +111,15 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
-        <title>Salesforce CPQ</title>
+        <title>Expert Salesforce CPQ Services | Implementation & Consulting</title>
         <meta
           name="description"
-          content="Enhance sales efficiency and community engagement with our expert Salesforce CPQ Service. Empower your teams, delight your customers, and drive business growth."
+          content="Transform your sales operations with Salesforce CPQ services from InfoDrive Solutions. We provide expert CPQ consulting and implementation to help you optimize pricing and quoting processes. Get in touch to enhance your sales efficiency!"
         />
-        <meta name="keywords" content="" />
+        <meta
+          name="keywords"
+          content="Salesforce CPQ, Salesforce CPQ services, Salesforce CPQ implementation, Salesforce CPQ consulting, CPQ solutions, CPQ implementation services, Salesforce CPQ experts, CPQ consulting partners, salesforce cpq consultant"
+        />
         <link
           rel="canonical"
           href="https://infodrive-solutions.com/salesforce-cpq.html"

@@ -95,14 +95,15 @@ export default function SalesForceDevelopment() {
   return (
     <div>
       <Head>
-        <title>
-          Empower Your Business with Salesforce Commerce Cloud
-        </title>
+        <title>Salesforce Commerce Cloud Services | Implementation & Consulting</title>
         <meta
           name="description"
-          content="Transform your online presence with our Salesforce Commerce Cloud. Elevate your customer experience, drive sales, and harness the power of AI with Infodrive Solutions."
+          content="InfoDrive Solutions provides expert Salesforce Commerce Cloud services, including implementation and consulting. Optimize your eCommerce experience with our tailored solutions and expert consultants. Contact us today!"
         />
-        <meta name="keywords" content="" />
+        <meta
+          name="keywords"
+          content="Salesforce Commerce Cloud Services, Salesforce Commerce Cloud Implementation, Salesforce Commerce Cloud Consulting, Salesforce Commerce Cloud Consulting Services, Salesforce Commerce Cloud implementation, Salesforce Commerce Cloud consultant, Salesforce Commerce Cloud implementation partners, Salesforce Commerce Cloud consulting providers"
+        />
         <link
           rel="canonical"
           href="https://infodrive-solutions.com/salesforce-commerce-cloud.html"
