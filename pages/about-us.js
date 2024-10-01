@@ -90,7 +90,7 @@ export default function About() {
       </noscript>
       <Header />
 
-<CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
+      <CallScheduleModal open={open} handleClose={handleClose} setOpen={setOpen} />
 
       <div className="sliderBox">
         <img
@@ -637,7 +637,8 @@ export default function About() {
           </nav>
         </div>
       </section>
-      <section className={`sectionBox ourCoreTeam pb0`}>
+      <br />
+      {/* <section className={`sectionBox ourCoreTeam pb0`}>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0}>
             <Grid item xs={6} style={{ padding: "30px" }}>
@@ -925,7 +926,7 @@ export default function About() {
 
           </Grid>
         </Box>
-      </section>
+      </section> */}
 
       <section className={`sectionBox ourValueBox ourBeliefBox`}>
         <Box sx={{ flexGrow: 1 }}>
@@ -963,7 +964,7 @@ export default function About() {
           </Grid>
         </Box>
       </section>
-      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen}/>
+      <ScheduleCallButton text="Schedule a Call" onClick={handleOpen} />
 
       <Footer />
     </div>

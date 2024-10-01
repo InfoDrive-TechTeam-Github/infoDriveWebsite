@@ -223,6 +223,26 @@ function DrawerAppBar(props) {
                   className="customIcon"
                 />
               </ListItem>
+
+              {/*  */}
+              <ListItem disablePadding>
+                <ListItemButton
+                  component="a"
+                  to="/data-analytics.html"
+                >
+                  <ListItemText primary={"Data & Analytics"} />
+                </ListItemButton>
+              </ListItem>
+              {/*  */}
+              <ListItem disablePadding>
+                <ListItemButton
+                  component="a"
+                  to="/infrastructure-modernization.html"
+                >
+                  <ListItemText primary={"Infrastructure Modernization"} />
+                </ListItemButton>
+              </ListItem>
+
               <ListItem disablePadding>
                 <ListItemButton
                   component="a"
@@ -487,11 +507,11 @@ function DrawerAppBar(props) {
           </ListItemButton>
         </ListItem>
 
-        <ListItem disablePadding>
+        {/* <ListItem disablePadding>
           <ListItemButton component="a" to="/blog.html">
             <ListItemText primary={"Blog"} />
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
 
         <ListItem disablePadding>
           <ListItemButton component="a" to="/careers.html">
@@ -566,7 +586,7 @@ function DrawerAppBar(props) {
               className="mainMenu"
               sx={{ display: { xs: "none", sm: "block" } }}
             >
-              <List className="partnerButton flex items-center gap-2 ">
+              <List className="flex items-center gap-2 partnerButton ">
                 <ListItem>
                   <ListItemButton component="a" onClick={handleOpen}>
                     <ListItemText primary={"Let's Partner"} />
@@ -615,6 +635,26 @@ function DrawerAppBar(props) {
                           }}
                         />
                       </ListItem>
+
+                      {/*  */}
+                      <ListItem disablePadding>
+                        <ListItemButton
+                          component="a"
+                          to="/data-analytics.html"
+                        >
+                          <ListItemText primary={"Data & Analytics "} />
+                        </ListItemButton>
+                      </ListItem>
+                      {/*  */}
+                      <ListItem disablePadding>
+                        <ListItemButton
+                          component="a"
+                          to="/infrastructure-modernization.html"
+                        >
+                          <ListItemText primary={"Infrastructure Modernization "} />
+                        </ListItemButton>
+                      </ListItem>
+
                       <ListItem disablePadding>
                         <ListItemButton
                           component="a"
@@ -968,9 +1008,9 @@ function DrawerAppBar(props) {
                   <ListItemButton component="a" to="/partners.html">
                     <ListItemText primary={"Our Partners"} />
                   </ListItemButton>
-                  <ListItemButton component="a" to="/blog.html">
+                  {/* <ListItemButton component="a" to="/blog.html">
                     <ListItemText primary={"Blog"} />
-                  </ListItemButton>
+                  </ListItemButton> */}
                   <ListItemButton component="a" to="/careers.html">
                     <ListItemText primary={"Careers"} />
                   </ListItemButton>
