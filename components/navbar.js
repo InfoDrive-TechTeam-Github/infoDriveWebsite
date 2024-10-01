@@ -297,7 +297,7 @@ function DrawerAppBar(props) {
                 </ListItemButton>
               </ListItem>
 
-              <ListItem disablePadding>
+              {/* <ListItem disablePadding>
                 <ListItemButton
                   component="a"
                   to="/digital-marketing-services.html"
@@ -308,7 +308,7 @@ function DrawerAppBar(props) {
                   onClick={recordSubMobileButtonPositionDigital}
                   className="customIcon"
                 />
-              </ListItem>
+              </ListItem> */}
               {/* <ListItem disablePadding>
                 <ListItemButton
                   component="a"
@@ -725,7 +725,7 @@ function DrawerAppBar(props) {
                           <ListItemText primary={"Staff Augmentation"} />
                         </ListItemButton>
                       </ListItem>
-                      <ListItem disablePadding>
+                      {/* <ListItem disablePadding>
                         <ListItemButton
                           component="a"
                           to="/digital-marketing-services.html"
@@ -744,7 +744,7 @@ function DrawerAppBar(props) {
                             marginLeft: "-12px",
                           }}
                         />
-                      </ListItem>
+                      </ListItem> */}
                       {/* <ListItem disablePadding>
                         <ListItemButton
                           component="a"
