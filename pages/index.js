@@ -407,7 +407,7 @@ export default function Index() {
             transition={{ duration: 0.5 }}
           >
             <Link
-              href="/digital-marketing-services.html"
+              href="/infrastructure-modernization.html"
               className="card p-10 flex flex-col gap-5 shadow-md rounded-md  text-[#00000099] cursor-pointer h-full no-underline"
               style={{ textDecoration: "none", color: "gray" }}
             >
