@@ -193,39 +193,35 @@ export default function Index() {
           Transformation
         </Typography>
         <Typography className="w100" gutterBottom variant="h5" component="div">
-          InfoDrive Solutions is a Software Development and Digital
-          Transformation Solutions company, we are headquartered in Singapore
-          with regional offices in Malaysia (KL) & India (Bangalore). We deliver
-          cutting-edge Digital Transformation Solutions to many of our
-          prestigious customers in South East Asia. Our expertise lies in
-          providing cutting edge IT Development, Digital Transformation,
-          Salesforce Consulting Services & Outsourcing Engineering Services.
+          InfoDrive Solutions is an IT Solutions and Digital Transformation
+          services company, we are headquartered in Singapore with regional
+          offices in Malaysia (KL) & India (Bangalore). We deliver cutting-edge Digital
+          Transformation Solutions to many of our prestigious customers in
+          South East Asia & worldwide. Our expertise lies in providing cutting edge
+          IT Solutions, Development, Digital Transformation, Data & Analytics, Infrastructure
+          Modernization, Cybersecurity, Salesforce Consulting Services & Outsourcing  Services.
         </Typography>
 
         <Typography className="w100" gutterBottom variant="h5" component="div">
-          We specialize in creating custom software solutions that drive digital
-          transformation for businesses of all sizes. Our team of experienced
-          developers uses the latest technologies to build and implement
-          solutions that streamline processes, improve efficiency, and enhance
-          the user experience.
+          We specialize in software solutions that drive digital transformation
+          for businesses of all sizes. Our team of experienced Consultant
+          uses the latest technologies to build and implement solutions that streamline processes,
+          improve efficiency & security, and enhance the user experience.
         </Typography>
 
         <Typography className="w100" gutterBottom variant="h5" component="div">
-          Our services include web and mobile application development, cloud
-          migration, API development, Digital Marketing, Salesforce Services and
-          more. We work closely with our clients to understand their unique
-          needs and goals, and we deliver solutions that are tailored to their
-          specific requirements.
+          Our services include providing solutions & services in  cloud migration, API development,
+          Salesforce, Data & Analytics, Infrastructure Modernization, Cybersecurity and more.
+          We work closely with our clients to understand their unique needs and goals,
+          and we deliver solutions that are tailored to their specific requirements.
           <br />
           <br />
-          In addition to our technical expertise, we also offer strategic
-          consulting to help our clients navigate the constantly-evolving world
-          of digital transformation. Our team can help you assess your current
-          technology stack, identify areas for improvement, and create a roadmap
-          for success. With a strong track record of delivering successful
-          projects for clients across a range of industries, InfoDrive Solutions
-          is a trusted partner for businesses seeking to drive innovation and
-          growth through the power of technology.
+          In addition to our technical expertise, we also offer strategic consulting
+          to help our clients navigate the constantly-evolving world of digital transformation.
+          Our team can help you assess your current technology stack, identify areas for improvement,
+          and create a roadmap for success. With a strong track record of delivering successful
+          projects for clients across a range of industries, InfoDrive Solutions is a trusted partner for businesses
+          seeking to drive innovation and growth through the power of technology.
         </Typography>
       </section>
 
@@ -417,13 +413,13 @@ export default function Index() {
             >
               <div className="flex items-center gap-2 font-semibold text-red-600 top">
                 <SiDigitalocean size={60} />
-                <span>Digital Marketing</span>
+                <span>EUC and Cyber Security</span>
               </div>
               <p className="text-sm leading-6">
-                InfoDrive Solutions is a leading digital marketing company
-                offering marketing services. As a top digital marketing
-                consultant, we provide customized strategies to help businesses
-                succeed online.
+                Our End-User Computing solutions are designed to empower your workforce with secure,
+                efficient, and reliable access to the tools they need, anytime, anywhere. Our Cyber
+                Security services offer multi-layered protection, from network security to
+                endpoint protection, ensuring your data and operations remain secure.
               </p>
             </Link>
           </motion.div>
