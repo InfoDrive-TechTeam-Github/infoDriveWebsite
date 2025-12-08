@@ -997,9 +997,9 @@ function DrawerAppBar(props) {
                       <ListItem disablePadding>
                         <ListItemButton
                           component="a"
-                          to="/project-digital-will.html"
+                          to="/loan-management-system.html"
                         >
-                          <ListItemText primary={"Digital Will"} />
+                          <ListItemText primary={"LMS"} />
                         </ListItemButton>
                       </ListItem>
                     </List>
