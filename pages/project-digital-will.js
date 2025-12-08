@@ -118,7 +118,7 @@ function crm() {
           variant='h1'
           component='h1'
         >
-          Our Cutting-Edge Digital Will Solution
+          Our Cutting-Edge Digital Will Solution update
         </Typography>
         <Typography className='w100' gutterBottom variant='h2' component='div'>
           Welcome to the future of estate planning

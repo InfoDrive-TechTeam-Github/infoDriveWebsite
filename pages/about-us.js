@@ -152,7 +152,7 @@ export default function About() {
 
       <section className={`sectionBox`} >
         <Typography gutterBottom variant="h3" component="div">
-          ABOUT US 2
+          ABOUT US 
         </Typography>
         <Typography gutterBottom variant="h1" component="h1">
           InfoDrive Solutions is a leading Technology solution provider and we
