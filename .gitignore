@@ -10,4 +10,4 @@
 
 # production
 /build
-/.next
+.next/
